@@ -1,0 +1,28 @@
+{
+  "standard_lecture": {
+    "name": "Standard Lecture Flow",
+    "slide_types": ["Title", "Agenda", "Content", "Summary", "End"],
+    "prompts": {
+      "content_generation": "You are an expert university lecturer. Your audience is undergraduate students. Based on the following context, create a slide that provides a detailed explanation of the topic '{sub_topic}'. The content should be structured with bullet points for key details. Your output MUST be a single JSON object with a 'title' (string) and 'content' (list of strings) key.",
+      "summary_generation": "You are an expert university lecturer creating a summary slide. Based on the following list of topics covered in this session, generate a concise summary of the key takeaways. The topics are: {topic_list}. Your output MUST be a single JSON object with a 'title' (string) and 'content' (list of strings) key."
+    },
+    "slide_schemas": {
+      "Content": {"title": "string", "content": "list[string]"},
+      "Summary": {"title": "string", "content": "list[string]"}
+    }
+  },
+  "apply_topic_interactive": {
+    "name": "Interactive Lecture Flow",
+    "slide_types": ["Title", "Agenda", "Content", "Application", "Summary", "End"],
+    "prompts": {
+      "content_generation": "You are an expert university lecturer in Digital Forensics. Your audience is undergraduate students. Based on the provided context, create a slide explaining the concept of '{sub_topic}'. The content should be clear, concise, and structured with bullet points for easy understanding. Your output MUST be a single JSON object with a 'title' (string) and 'content' (list of strings) key.",
+      "application_generation": "You are an engaging university lecturer creating an interactive slide. Based on the concept of '{sub_topic}', create a multiple-choice question with exactly 4 options (A, B, C, D) to test understanding. The slide title must be 'Let's Apply This:'. Clearly indicate the correct answer within the content. Your output MUST be a single JSON object with a 'title' (string) and 'content' (list of strings) key.",
+      "summary_generation": "You are an expert university lecturer creating a summary slide. Based on the following list of concepts and applications covered in this session, generate a concise summary of the key takeaways. The topics are: {topic_list}. Your output MUST be a single JSON object with a 'title' (string) and 'content' (list of strings) key."
+    },
+    "slide_schemas": {
+      "Content": {"title": "string", "content": "list[string]"},
+      "Application": {"title": "string", "content": "list[string]"},
+      "Summary": {"title": "string", "content": "list[string]"}
+    }
+  }
+}

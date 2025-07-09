@@ -1,0 +1,112 @@
+{
+  "unitInformation": {
+    "unitCode": "ICT312",
+    "unitName": "Digital Forensic",
+    "creditPoints": 6,
+    "unitRationale": "Course topics include principles of forensic analysis, forensics and the law, forensics on various types of infrastructure, and management of forensic methodologies, along with a variety of real-life case studies. Students will apply forensic methods in controlled environments and gain an understanding of the technical process of uncovering hidden data and other metadata that may reveal user behaviour.",
+    "prerequisites": null
+  },
+  "learningOutcomes": [
+    "On successful completion of this unit, students will be able to: Evaluate theories of digital forensics",
+    "Understand the structure of forensic evidence",
+    "Implement forensically sound digital security practices in the industry",
+    "Demonstrate competence in applying industry-standard forensic analysis techniques",
+    "Manage, research, and write comprehensive forensic reports and essays using various resources, such as books, newspapers, and journal articles."
+  ],
+  "assessments": [
+    {
+      "taskName": "Assessment task 1: Quiz",
+      "dueWeek": "Week 4",
+      "weighting %": "10%",
+      "learningOutcomesAssessed": "b"
+    },
+    {
+      "taskName": "Assessment task 2: Case Study",
+      "dueWeek": "Week 5",
+      "weighting %": "10%",
+      "learningOutcomesAssessed": "a,b, c,d,e"
+    },
+    {
+      "taskName": "Assessment task 3: Skills tests - ",
+      "dueWeeks": [
+        "Week 2",
+        "Week 3",
+        "Week 6&7"
+      ],
+      "weighting %": "20%",
+      "learningOutcomesAssessed": "b,c,d"
+    },
+    {
+      "taskName": "Task 4: Weekly lab concepts assessment",
+      "dueWeeks": [
+        "Week 8",
+        "Week 9",
+        "Week 10&11"
+      ],
+      "weighting %": "20%",
+      "learningOutcomesAssessed": "d"
+    }
+  ],
+  "weeklySchedule": [
+    {
+      "week": 1,
+      "contentTopic": "Understanding the Digital Forensics Profession and Investigations.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 1"
+    },
+    {
+      "week": 2,
+      "contentTopic": "The Investigator's Office and Laboratory.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 2"
+    },
+    {
+      "week": 3,
+      "contentTopic": "Data Acquisition.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 3"
+    },
+    {
+      "week": 4,
+      "contentTopic": "Processing Crime and Incident Scenes.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 4"
+    },
+    {
+      "week": 5,
+      "contentTopic": "Working with Windows and CLI Systems.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 5"
+    },
+    {
+      "week": 6,
+      "contentTopic": "Current Computer Forensics Tools.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 6"
+    },
+    {
+      "week": 7,
+      "contentTopic": "Linux Boot Processes and File Systems.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapters 7 &8"
+    },
+    {
+      "week": 8,
+      "contentTopic": "Digital Forensics Analysis and Validation. Virtual Machine Forensics, Live Acquisitions and Cloud Forensics.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapters 9 &10"
+    },
+    {
+      "week": 9,
+      "contentTopic": "Email and Social Media.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 11"
+    },
+    {
+      "week": 10,
+      "contentTopic": "Mobile Device Forensics and the Internet of Anything. Cloud Forensics.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 12 & 13"
+    },
+    {
+      "week": 11,
+      "contentTopic": "Report Writing for High-Tech Investigations. Expert Testimony in Digital Forensic Investigations.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 14 & 15"
+    },
+    {
+      "week": 12,
+      "contentTopic": "Ethics for the Digital Forensic Examiner and Expert Witness.",
+      "requiredReading": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 16"
+    }
+  ]
+}

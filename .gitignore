@@ -1,0 +1,8 @@
+# Ignore the data directory
+data/
+extracted_images/
+generated_plans/
+Parse_data/
+
+*.iso
+*.zip

@@ -1,0 +1,120 @@
+{
+  "unitInformation": {
+    "unitCode": "ICT311",
+    "unitName": "Applied Cryptography",
+    "creditPoints": 6,
+    "unitRationale": "Cryptography is one of the foundations of information security that has a history of thousand years of development and still evolving. In this unit, the students will learn the foundation of cryptography, contemporary cryptographic systems and techniques and recent development in cryptography.",
+    "prerequisites": null
+  },
+  "learningOutcomes": [
+    "Demonstrate a detailed understanding of Cryptography and encryption concepts and various technology associated with cryptographic systems.",
+    "Develop idea and managing cryptographic and encryption systems based on various methods.",
+    "Understand and explain the Private and Public key based encryption system and its application in our digital communication.",
+    "Demonstrate critical thinking by analyzing various cryptographic systems and their weaknesses and application in various scenarios.",
+    "Understand the impact of encryption towards secure communication, End to end workflow of of Digital certificate, Public Key Infrastructure, Transport Layer Security, and role of Cryptography to provide data confidentiality, integrity and availability.",
+    "Ensure active participation in class, do group work, and give individual and group project work, report, and presentations to the class to improve analytical, teamwork, oral, interpersonal, and written communication skills."
+  ],
+  "assessments": [
+    {
+      "taskName": "Assessment 1: Problem Solving Task",
+      "description": "This task will require you to solve various cryptographic problems using the techniques presented in the classical cryptography section of the unit. You will submit reports outlining the process you have followed and the solutions obtained.",
+      "dueWeek": "Week 7",
+      "weightingPercent": 30,
+      "learningOutcomesAssessed": "a, b, c"
+    },
+    {
+      "taskName": "Assessment 2: Group Report",
+      "description": "This assessment item will require you to work in a group, preparing a report on the analysis of an information security issue, based on topics covered in the course. The task will allow you to demonstrate the knowledge of cryptographic algorithms you have acquired in the unit and their application in the context of a network security.",
+      "dueWeek": "Week 11",
+      "weightingPercent": 30,
+      "learningOutcomesAssessed": "b, c , d, f"
+    },
+    {
+      "taskName": "Final Examination",
+      "description": "The final examination (2-hours) allows student to demonstrate a thorough understanding of the whole unit. The examination will include short and broad questions which requires discussion and examples of the key concepts, tools, frameworks, scenarios discussed in this unit.",
+      "dueWeek": "Examination Week",
+      "weightingPercent": 40,
+      "learningOutcomesAssessed": "a, b, c, d, e"
+    }
+  ],
+  "weeklySchedule": [
+    {
+      "week": 1,
+      "contentTopic": "Introduction and Classical Cryptography",
+      "requiredReading": "Katz, J., Lindell, Y. (2020). Chapter 1 & 2."
+    },
+    {
+      "week": 2,
+      "contentTopic": "Private Key Encryption",
+      "requiredReading": "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Chapter 3."
+    },
+    {
+      "week": 3,
+      "contentTopic": "Message Authentication Code and Authenticated Encryption",
+      "requiredReading": "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Chapter 4 & 5."
+    },
+    {
+      "week": 4,
+      "contentTopic": "Hash Functions and Applications",
+      "requiredReading": "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Chapter 6."
+    },
+    {
+      "week": 5,
+      "contentTopic": "Symmetric-Key Ciphers",
+      "requiredReading": "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Chapter 7."
+    },
+    {
+      "week": 6,
+      "contentTopic": "Number Theory and Cryptographic Hardness Assumptions",
+      "requiredReading": "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Chapter 9."
+    },
+    {
+      "week": 7,
+      "contentTopic": "Algorithms for Factoring and Computing Discrete Logarithms",
+      "requiredReading": "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Chapter 10."
+    },
+    {
+      "week": 8,
+      "contentTopic": "Key Management and the Public-Key Revolution",
+      "requiredReading": "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Chapter 11."
+    },
+    {
+      "week": 9,
+      "contentTopic": "Public-Key Encryption",
+      "requiredReading": "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Chapter 12."
+    },
+    {
+      "week": 10,
+      "contentTopic": "Digital Signature",
+      "requiredReading": "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Chapter 13."
+    },
+    {
+      "week": 11,
+      "contentTopic": "Advanced Topics in Public-Key Encryption",
+      "requiredReading": "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Chapter 14 & 15."
+    },
+    {
+      "week": 12,
+      "contentTopic": "Summary and revision",
+      "requiredReading": null
+    }
+  ],
+  "requiredReadings": [
+    "Katz,\u00a0J.,\u00a0Lindell,\u00a0Y.\u00a0(2020).\u00a0Introduction to Modern Cryptography.",
+    "Recommended Readings: Menezes, A. J., van Oorschot, P. C., & Vanstone, S. A. (2021). Handbook of applied cryptography.",
+    "Aumasson,\u00a0J.\u00a0(2017).\u00a0Serious Cryptography: A Practical Introduction to Modern Encryption.",
+    "Ateniese, G., & Venturi, D. Applied Cryptography and Network Security.",
+    "Paterson, K. G. (2021). The Cyber Security Body of Knowledge."
+  ],
+  "recommendedReadings": [
+    "Online Reading 1: An Intensive Introduction to Cryptography",
+    "Online Reading 2: A Graduate Course in Applied Cryptography",
+    "Fully homomorphic encryption: Introduction and bootstrapping",
+    "Exploring Fully Homomorphic Encryption",
+    "Lattice based cryptography",
+    "Quantum computing and cryptography"
+  ],
+  "requiredMaterials": [
+    "All students are required to have an electronic device (e.g., laptop computer, tablet, iPad, etc.) which is essential to access content and resources in ExO and to prepare and complete assessment tasks."
+  ]
+}
