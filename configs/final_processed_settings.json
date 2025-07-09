@@ -1,9 +1,9 @@
 {
   "course_id": "ICT312",
   "unit_name": "Digital Forensic",
-  "interactive": true,
+  "interactive": false,
   "interactive_deep": false,
-  "teaching_flow_id": "apply_topic_interactive",
+  "teaching_flow_id": "standard_lecture",
   "parameters_slides": {
     "slides_per_hour": 18,
     "time_per_content_slides_min": 3,
@@ -11,20 +11,20 @@
     "time_for_framework_slides_min": 6
   },
   "week_session_setup": {
-    "sessions_per_week": 2,
+    "sessions_per_week": 1,
     "distribution_strategy": "even",
-    "session_time_duration_in_hour": 1,
-    "interactive_time_in_hour": 0,
-    "total_session_time_in_hours": 0
+    "session_time_duration_in_hour": 4,
+    "interactive_time_in_hour": 0.0,
+    "total_session_time_in_hours": 3.7
   },
   "slide_count_strategy": {
     "method": "per_week",
-    "target_total_slides": 36,
-    "slides_content_per_session": 18,
+    "target_total_slides": 72,
+    "slides_content_per_session": 72,
     "interactive_slides_per_week": 0,
     "interactive_slides_per_session": 0,
-    "total_slides_deck_week": 0,
-    "total_slides_session": 0
+    "total_slides_deck_week": 76,
+    "total_slides_session": 76
   },
   "generation_scope": {
     "weeks": [

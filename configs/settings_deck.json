@@ -1,7 +1,7 @@
 {
   "course_id": "",
   "unit_name": "",
-  "interactive": false,
+  "interactive": true,
   "interactive_deep": false,
   "teaching_flow_id": "Standard Lecture Flow",
   "parameters_slides": {
@@ -11,9 +11,9 @@
     "time_for_framework_slides_min": 6
   },
   "week_session_setup": {
-    "sessions_per_week": 1,
+    "sessions_per_week": 2,
     "distribution_strategy": "even",
-    "session_time_duration_in_hour": 2,
+    "session_time_duration_in_hour": 1,
     "interactive_time_in_hour": 0,
     "total_session_time_in_hours": 0
   },
@@ -27,6 +27,6 @@
     "total_slides_session": 0    
   },  
   "generation_scope": {
-    "weeks": "all"
+    "weeks": [1]
   }
 }
