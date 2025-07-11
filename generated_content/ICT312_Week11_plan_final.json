@@ -1,0 +1,1448 @@
+{
+  "week": 11,
+  "overall_topic": "Report Writing for High-Tech Investigations. Expert Testimony in Digital Forensic Investigations.",
+  "weekly_slide_summary": {
+    "total_slides_for_week": 49,
+    "total_framework_slides": 8,
+    "total_content_slides": 34,
+    "total_interactive_slides": 7,
+    "number_of_decks": 2
+  },
+  "weekly_time_summary_minutes": {
+    "total_time_for_week_minutes": 149,
+    "total_framework_time": 12,
+    "total_content_and_interactive_time": 137
+  },
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "total_slides_in_deck": 25,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 16,
+        "interactive": 5
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 73,
+        "total_deck_time": 79
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Report Writing for High-Tech Investigations. Expert Testimony in Digital Forensic Investigations.",
+            "deck_title": "Week 11, Lecture 1"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Understanding the Importance of Reports",
+              "Generating Report Findings with Forensics Software Tools",
+              "Preparing for Testimony",
+              "Preparing for a Deposition or Hearing",
+              "Preparing Forensics Evidence for Testimony"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Understanding the Importance of Reports",
+              "toc_id": 469,
+              "chunk_count": 19,
+              "total_chunks_in_branch": 31,
+              "budget_slides_content": 2,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "chunks_sorted": [
+                6625,
+                6626,
+                6627,
+                6628,
+                6629,
+                6630,
+                6631,
+                6632,
+                6633,
+                6634,
+                6635,
+                6636,
+                6637,
+                6638,
+                6639,
+                6640,
+                6641,
+                6642,
+                6643
+              ],
+              "content": "Understanding the Importance of Reports\n\nYou write a report to communicate the results of your forensic examination of a computer, network system, or digital device. A forensic report presents evidence that might support further investigation and, in some situations, be admissible in court, at an administrative hearing, or as an affidavit to support issuing an arrest or a search warrant. A report can also provide justification for collecting more evidence and be used at a probable cause hearing, as evidence in a grand jury hearing, or at a motion hearing in civil or criminal cases. In addition, if an employer is investigating employee misconduct, a report might be the basis for disciplinary action. Besides presenting facts, reports can communicate expert opinion. You should look at your report as your first testimony in a case.\n\ncan communicate expert opinion. You should look at your report as your first testimony in a case. You must expect to be examined and cross-examined about it. Opposing counsel will look for an opportunity to attack the facts you present, whether you determined them yourself or extracted them from other reports or the expected testimony of other witnesses. You need to know what facts affect your opinion and what facts don’t.\n\nFor civil cases, including those involving digital forensics investigations, U.S. district courts require that expert witnesses submit written reports; state courts are also starting to require reports from expert witnesses, although the details of these requirements vary. Therefore, if you’re a digital forensics examiner involved in a civil case, you must write a report explaining your investigation and findings. Specifically, Rule 26, Federal Rules of Civil Procedure (FRCP; see www.law.cornell.edu/rules/frcp/Rule26.htm), requires that parties who anticipate calling an expert witness to testify must provide a copy of the expert’s written report that includes all opinions, the basis for the opinions, and the information considered in coming to those opinions. The report must also include\n\nopinions, and the information considered in coming to those opinions. The report must also include related exhibits, such as photographs or diagrams, and the witness’s curriculum vitae listing all publications he or she contributed to during the preceding 10 years. (These publications don’t have to be relevant to the case.)\n\nIn addition, federal courts, as a matter of rule, require all fact or expert witnesses to provide a report before trial in civil cases. See FRCP 26 (a) (2); Federal Rules of Evidence (FRE) 702, 703, and 705; and the rule stated in Daubert v. Merrell Dow Pharmaceuticals, Inc., 509 U.S. 579, which is that testimony is based on sufficient facts or data, testimony is the product of reliable principles and methods, and the witness has applied the principles and methods reliably to the facts of the case. This rule is followed in more than half the states. The remaining states generally follow the rule established in Frye v. United States, 293 F. 1013 (D.C. Cir. 1923), which states that testimony is inadmissible unless it is “testimony deduced from a well-recognized scientific principle or\n\nis inadmissible unless it is “testimony deduced from a well-recognized scientific principle or discovery; the thing from which the deduction is made must be sufficiently established to have gained general acceptance in the particular field in which it belongs.”\n\nIn addition to opinions and exhibits, the written report must specify fees paid for the expert’s services and list all other civil or criminal cases in which the expert has testified (in trials and depositions) for the preceding 4 years. This list doesn’t need to include cases in which the expert acted as a consulting expert and didn’t provide expert testimony or cases in which the expert testified as a lay witness A person whose testimony is based on personal observation; not considered to be an expert in a particular field. (a witness testifying to personally observed facts).\n\nAlthough the requirements for information in reports aren’t specific, you should keep a copy of any deposition notice or subpoena so that you can include the following information:\n\nJurisdiction (for example, U.S. District Court for Eastern District of Washington)\n\nStyle of the case (the format used for official court documents—for example, using a header such as John Smith, Plaintiff v. Paul Jones, Defendant)\n\nCause number\n\nDate and location of the deposition\n\nName of the deponent (the person testifying at deposition)\n\nThere are no requirements to include details of your previous testimony in a report, although you should summarize key points of your testimony for future reference and keep transcripts of your previous testimony, if available.\n\nAs an expert witness, you should be aware that lawyers use services called deposition banks Libraries of previously given testimony that law firms can access. (libraries), which store examples of expert witnesses’ previous testimony. Some of these services have hundreds of thousands of depositions on file and might have several depositions for expert witnesses who testify regularly. After a case is resolved, a lawyer sends copies of the opposing expert witnesses’ depositions to the bank to be stored. In preparation for a trial, when the opposing party has identified an expert witness, the attorney might request copies of this witness’s previous testimony. Lawyers might also request transcripts of previous testimony by their own potential experts to ensure that the experts haven’t testified\n\nof previous testimony by their own potential experts to ensure that the experts haven’t testified previously to a contrary position. Lawyers who are members of associations also use electronic mailing lists to ask other members for copies of previous depositions by a specific expert witness.\n\nNote\n\nAttorneys can submit documents electronically in many courts; the standard format in U.S. federal courts and most state courts is Portable Document Format (PDF).",
+              "children": [
+                {
+                  "title": "Limiting a Report to Specifics",
+                  "toc_id": 470,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 3,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    6644,
+                    6645,
+                    6646
+                  ],
+                  "content": "Limiting a Report to Specifics\n\nThe client (who might be an attorney, a detective, or an investigator) should define the investigation’s goal or mission. All reports to the client should start by stating this mission or goal, which is usually to find information on a specific subject, recover certain important documents, or recover certain types of files or files with specific dates and times. Clearly defining the goals reduces the time and cost of the examination and is especially important with the increasing size of hard drives and complexity of networks.\n\nBefore you begin writing, identify your audience and the purpose of the report to help you focus on specifics. Remember that if the audience has little technical knowledge, you might have to dedicate part of the report to educating readers on technical issues. You can do this with a set of several stock paragraphs that you keep on hand, although you should update these stock definitions periodically.",
+                  "children": []
+                },
+                {
+                  "title": "Types of Reports",
+                  "toc_id": 471,
+                  "chunk_count": 9,
+                  "total_chunks_in_branch": 9,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    6647,
+                    6648,
+                    6649,
+                    6650,
+                    6651,
+                    6652,
+                    6653,
+                    6654,
+                    6655
+                  ],
+                  "content": "Types of Reports\n\nDigital forensics examiners are required to create different types of reports, such as a formal report consisting of facts from your findings, a preliminary written or verbal report to your attorney, and an examination plan for the attorney who has retained you.\n\nAn examination plan A document that lets you know what questions to expect when you’re testifying. is a document that serves as a guideline for knowing what questions to expect when you’re testifying (see Figure 14-1). Your attorney uses the examination plan as an outline and a guide for your testimony. You can propose changes to clarify or define information or to include substantive information the attorney might have omitted. You can also use the examination plan to help your attorney learn the terms and functions used in digital forensics.\n\nA verbal report is less structured than a written report. Typically, it takes place in an attorney’s office, where the attorney requests the consultant’s report. An expert hired as a trial consultant uses verbal reports often. Keep in mind that others can’t force your attorney to repeat what you’ve told him or her in a verbal report. A verbal report is usually a preliminary report and addresses areas of investigation yet to be completed, such as the following:\n\nTests that haven’t been concluded\n\nInterrogatories that the lawyer might want to address to opposing parties\n\nDocument production, either requests for production (to parties) or subpoenas (to nonparties, people who have information but aren’t a named party in the case)\n\nDetermining who should be deposed and the plan for deposing them\n\nWith preliminary reports, mention to your client that your factual statement and opinion are still tentative and subject to change as more information comes in. A written report is frequently an affidavit or a declaration. Because this type of report is sworn to under oath (and penalty of perjury or comparable false-swearing statute), it demands attention to detail, carefully limiting what you write, and thorough documentation and support of what you write. See the following section for more guidelines on written reports.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding the Importance of Reports (Interactive Activity)",
+                "toc_id": 469,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Generating Report Findings with Forensics Software Tools",
+              "toc_id": 487,
+              "chunk_count": 2,
+              "total_chunks_in_branch": 78,
+              "budget_slides_content": 5,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 6,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 20
+              },
+              "chunks_sorted": [
+                6801,
+                6802
+              ],
+              "content": "Generating Report Findings with Forensics Software Tools\n\nWith many forensics software tools, log files of analysis activities and reports can be created that provide information about the findings for a case. Although forensics software reports what was found and where, remember that it’s your responsibility to explain the significance of the evidence you recover and, if necessary, define any limitations or uncertainty that applies to your findings. These reports and logs are typically in text, word processing, spreadsheet, or HTML format. In this section, you learn how to integrate a software-generated report into the official investigation report that you present to your attorney or client.",
+              "children": [
+                {
+                  "title": "Using Autopsy to Generate Reports",
+                  "toc_id": 488,
+                  "chunk_count": 76,
+                  "total_chunks_in_branch": 76,
+                  "budget_slides_content": 5,
+                  "direct_slides_content": 5,
+                  "total_slides_in_branch": 5,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 15,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 15
+                  },
+                  "chunks_sorted": [
+                    6803,
+                    6804,
+                    6805,
+                    6806,
+                    6807,
+                    6808,
+                    6809,
+                    6810,
+                    6811,
+                    6812,
+                    6813,
+                    6814,
+                    6815,
+                    6816,
+                    6817,
+                    6818,
+                    6819,
+                    6820,
+                    6821,
+                    6822,
+                    6823,
+                    6824,
+                    6825,
+                    6826,
+                    6827,
+                    6828,
+                    6829,
+                    6830,
+                    6831,
+                    6832,
+                    6833,
+                    6834,
+                    6835,
+                    6836,
+                    6837,
+                    6838,
+                    6839,
+                    6840,
+                    6841,
+                    6842,
+                    6843,
+                    6844,
+                    6845,
+                    6846,
+                    6847,
+                    6848,
+                    6849,
+                    6850,
+                    6851,
+                    6852,
+                    6853,
+                    6854,
+                    6855,
+                    6856,
+                    6857,
+                    6858,
+                    6859,
+                    6860,
+                    6861,
+                    6862,
+                    6863,
+                    6864,
+                    6865,
+                    6866,
+                    6867,
+                    6868,
+                    6869,
+                    6870,
+                    6871,
+                    6872,
+                    6873,
+                    6874,
+                    6875,
+                    6876,
+                    6877,
+                    6878
+                  ],
+                  "content": "Using Autopsy to Generate Reports\n\nNote\n\nBefore starting the activity, create a Work\\Chap14\\Chapter folder on your system (referred to as your “work folder” in steps). Your folder name will likely differ from what’s shown in screenshots. Download to your work folder the Ch14Inchp01.exe file from this chapter’s downloads section on the student companion site for this book.\n\nFor this activity, you do an inventory of software on Tom Johnson’s computer. Management at Superior Bicycles, Inc., wants to know the authorized and unauthorized applications on his and several other employees’ computer to make sure everyone is compliant with software licensing. In this activity, you use Autopsy for Windows to find the evidence and create a report of your findings.\n\nIn Chapter 9, you generated an Excel report listing hash values for Special Project-A. For this activity, you produce a similar report listing all application files on Tom Johnson’s computer in HTML format for Harry Mudd, the IT manager at Superior Bicycles. The report should be divided into authorized applications (consisting of all Microsoft products) and unauthorized applications (that aren’t Microsoft products). Follow these steps:\n\n1.\n\nIn File Explorer, double-click the Ch14Inchp01.exe file and click Extract to uncompress it into GCFI-tj01.001.\n\n2.\n\nStart Autopsy for Windows, and click the Create New Case button. In the New Case Information window, enter InChap14 in the Case Name text box, and click Browse next to the Base Directory text box. Navigate to and click your work folder, and then click Next.\n\n3.\n\nIn the Additional Information window, type InChap14 in the Case Number text box and your name in the Examiner text box, and then click Finish to start the Add Data Source Wizard.\n\n4.\n\nIn the Select Data Source window, click the Browse button next to the “Browse for an image file” text box, navigate to your work folder, click the GCFI-tj01.001 file, and click Open. Click Next.\n\n5.\n\nIn the Configure Ingest Modules window, click Deselect All, and click the File Type Identification check box. Click Next and then Finish.\n\n6.\n\nWhen Autopsy finishes its analysis, go to the Tree Viewer pane. Click to expand Data Sources, GCFI-tj01.001, Users, and Tom Johnson, and then click Desktop to display its contents, as shown in Figure 14-2.\n\n7.\n\nIn the Result Viewer pane, right-click Acrobat Reader DC.lnk , point to Tag File, and click Tag and Comment. In the Create Tag dialog box, click the New Tag Name button, type Unauthorized Applications in the Tag Name text box, and then click OK twice.\n\n8.\n\nNext, right-click Google Chrome.lnk , point to Tag File and Quick Tag, and then click Unauthorized Applications.\n\n9.\n\nRepeat Step 8 to tag the following files (see Figure 14-3):\n\nGPA.lnk\n\nKleopatra.lnk\n\nMozilla Firefox.lnk\n\nMozilla Thunderbird.lnk\n\nOpera Mail.lnk\n\nOpera Browser.lnk\n\nStellar MBOX to PST Converter.lnk\n\ntj-pub-key\n\nWinRAR.lnk\n\n10.\n\nIn the Tree Viewer pane, under GCFI-tj01.001, click to expand Program Files. In the Result Viewer pane, tag the following application folders as Unauthorized Applications (see Figure 14-4):\n\nByteFence\n\nCamouflage\n\nFileZilla FTP Client\n\nGNU\n\nGoogle\n\nJava\n\nMozilla Firefox\n\nMozilla Maintenance Service\n\nMozilla Thunderbird\n\nNorton Security\n\nNortonInstaller\n\nNVIDIA Corporation\n\nQuick Stego\n\nRealtek\n\nSpeccy\n\nSteganofile\n\nUNP\n\n11.\n\nRight-click Internet Explorer in the Result Viewer pane, point to Tag File, and click Tag and Comment. In the Create Tag dialog box, click the New Tag Name button, type Authorized Applications in the Tag Name text box, and then click OK twice.\n\n12.\n\nNext, right-click Microsoft Analysis Services, point to Tag File and Quick Tag, and then click Authorized Applications.\n\n13.\n\nRepeat Step 12 to tag the following folders:\n\nMicrosoft Office\n\nMicrosoft Security Client\n\nMicrosoft.NET\n\nMSBuild\n\nWindows Defender\n\nWindows Mail\n\nWindows Media Player\n\nWindows NT\n\nWindows Photo Viewer\n\nWindows Security\n\nWindows PowerShell\n\n14.\n\nClick Generate Report. In the Generate Report window, click the Results - HTML option button in the Report Modules section, and then click Next.\n\n15.\n\nIn the Configure Artifact Reports window, click the Tagged Results button, click Select All, and then click Finish.\n\n16.\n\nIn the Report Generation Progress Complete window, click the Results - HTML link to open the report. With the report open in your Web browser, click the Tagged Files link and print the report in landscape mode to review its contents.\n\n17.\n\nClick Close, and then exit Autopsy.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Generating Report Findings with Forensics Software Tools (Interactive Activity)",
+                "toc_id": 487,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Preparing for Testimony",
+              "toc_id": 497,
+              "chunk_count": 15,
+              "total_chunks_in_branch": 53,
+              "budget_slides_content": 3,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 4,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 14
+              },
+              "chunks_sorted": [
+                7090,
+                7091,
+                7092,
+                7093,
+                7094,
+                7095,
+                7096,
+                7097,
+                7098,
+                7099,
+                7100,
+                7101,
+                7102,
+                7103,
+                7104
+              ],
+              "content": "Preparing for Testimony\n\nWhen cases go to trial or a hearing involving testimony, you as a forensics examiner can play one of two roles: a fact witness This type of testimony reports only the facts (findings of an investigation); no opinion is given in court. providing technical or scientific evidence or an expert witness This type of testimony reports opinions based on experience and facts gathered during an investigation. . As a fact witness, you provide only the facts you have found in your investigation—any evidence that meets the relevance standard and is more probative than prejudicial. When you give technical or scientific testimony, you present this evidence and explain what it is and how it was obtained. You don’t offer conclusions, only the facts and ordinary inferences based on that evidence. However,\n\ndon’t offer conclusions, only the facts and ordinary inferences based on that evidence. However, as an expert witness, you have opinions about what you have found or observed. You form these opinions from experience and deductive reasoning based on facts found during an investigation. In fact, it’s your opinion that makes you an expert witness.\n\nFor either type of testimony, you need to prepare thoroughly. Establish communication early with your attorney. Before you start processing evidence, learn about the victim, the complainant, opposing experts or fact witnesses, and the opposing attorney as soon as possible. Learn the basic points of the dispute. As you learn about the case, take notes, but keep them in rough draft form and record only the facts, keeping your opinions to a minimum. (As explained in Chapter 14, any written material is subject to discovery, so use caution in what you put in written form.)\n\nNote\n\nYour attorney can give you specific guidelines in preparing for the case. Remember that as an expert witness, you work for the attorney, not the client (plaintiff or defendant), so if you discover negative findings, communicate them as soon as possible to your attorney.\n\nAs part of your preparation, you might want to review your own documentation and confirm your findings by corroborating them with other digital forensics professionals. Return to the notes you took during your investigation. If you’re working with electronic notes, use care in storing them. In your analysis and reporting, develop and maintain a standard method of processing to minimize confusion and help you prepare for testimony later. Digital forensics is only now developing a peer review process. To get a peer review, often you have to search outside your region. Learn to take advantage of your professional network and request peer reviews to help support your findings.\n\nYou might also want to use the Internet to research opposing experts and try to find their strengths and weaknesses in previous testimony. Review their curriculum vitae, if possible, and see how they present themselves. To do otherwise is to go into battle without trying to know your opponent. Your attorney might be able to get copies of depositions they have given in other cases, usually from the deposition banks mentioned in Chapter 14, but also from lectures, classes, and presentations that have been summarized or recorded and posted online. Some organizations of forensics investigators also maintain e-mail lists that you can use to query members about other expert witnesses.\n\nReview the following questions when preparing your testimony:\n\nWhat’s the client’s overall theory of the case?\n\nWhat’s my story of the case (the central facts relevant to my testimony)?\n\nWhat can I say with confidence?\n\nHow does my opinion fit into the theory of the case?\n\nWhat’s the scope of the case? Have I gone too far?\n\nHave I identified the client’s needs for how my testimony fits into the overall theory of the case?",
+              "children": [
+                {
+                  "title": "Documenting and Preparing Evidence",
+                  "toc_id": 498,
+                  "chunk_count": 12,
+                  "total_chunks_in_branch": 12,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    7105,
+                    7106,
+                    7107,
+                    7108,
+                    7109,
+                    7110,
+                    7111,
+                    7112,
+                    7113,
+                    7114,
+                    7115,
+                    7116
+                  ],
+                  "content": "Documenting and Preparing Evidence\n\nAs emphasized in previous chapters, document your steps in gathering and preserving evidence to make sure they’re repeatable, in case you’re challenged. If your findings can’t be repeated, they lose credibility as evidence. In addition, validate your tools and verify your evidence with hash algorithms to ensure its integrity. (Refer to Chapter 9 for guidelines on using hash algorithms.) The following guidelines are also useful in ensuring the integrity of your evidence:\n\nIf you need a checklist to analyze evidence, create it only for a specific case. Don’t create a formal checklist of your procedures that’s applied to all your cases or include such a checklist in your report. If opposing counsel gets this checklist through discovery, you might be challenged during cross-examination about inconsistencies in your performance if you deviated from the checklist.\n\nAs a standard practice, collect evidence and record the tools you used in designated file folders or evidence containers. This method helps organize your evidence and tools. Follow a system to record where items are kept for each case and how documentation is stored.\n\nRemember that the chain of custody of evidence supports the integrity of your evidence; do whatever you can to prevent contamination of the evidence. You should also document any lapse or gap in evidence preservation or custody. Lapses and gaps don’t necessarily result in evidence being inadmissible, but they might affect the weight given to the evidence.\n\nWhen collecting evidence, be careful not to get too little or too much information. For litigation, you’re responsible for collecting only what’s asked for, no more. In some circumstances, collecting and identifying evidence on facts unrelated to the case could cause problems for your attorney.\n\nMake sure you note the date and time of your forensic workstation when starting your analysis. If precise time is an issue, consider using an Internet clock, such as the one at www.time.gov or www.nist.gov/pml/div688/grp40/its.cfm (downloading nistime-32bit.exe), or an atomic clock to verify the accuracy of your workstation’s clock. Many retailers, such as Walmart and Radio Shack, now sell atomic clocks.\n\nKeep only successful output when running analysis tools; don’t keep previous runs, such as those missing necessary switch or output settings. Note that you used the tool, but it didn’t generate results because of these missing settings.\n\nWhen searching for keyword results, rerun searches with well-defined keywords and search parameters. You might even want to state how they relate to the case, such as being business or personal names. Narrow the search to reduce false hits, and eliminate search results containing false-positive hits.\n\nWhen taking notes of your findings, keep them simple and specific to the investigation. You should avoid any personal comments so that you don’t have to explain them to opposing counsel.\n\nWhen writing your report, list only the evidence that’s relevant to the case; do not include unrelated findings.\n\nDefine any procedures you use to conduct your analysis as scientific and conforming to your profession’s standards. Listing textbooks, technical books, articles by recognized experts, and procedures from highly respected professional organizations that you relied on or referenced during your examination is a common way to prove your conformity with scientific and professional standards.",
+                  "children": []
+                },
+                {
+                  "title": "Creating and Maintaining Your CV",
+                  "toc_id": 500,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    7126,
+                    7127,
+                    7128,
+                    7129,
+                    7130,
+                    7131,
+                    7132,
+                    7133
+                  ],
+                  "content": "Creating and Maintaining Your CV\n\nYour curriculum vitae (CV) An extensive outline of your professional history that includes education, training, work, and what cases you have worked on as well as training you have conducted, publications you have contributed to, and professional associations and awards. lists your education, training, and professional experience and is used to qualify your testimony. For forensics examiners, keeping this document updated and complete is crucial to supporting your role as an expert and showing that you’re constantly enhancing your skills through training, teaching, and experience.\n\nYour CV should describe tasks you’ve performed that define specific accomplishments and your basic and advanced skills. You should also list your general and professional education and professional training. If the list of training is extremely lengthy, use a heading such as “Selected Training Attended.” Be sure to include coursework sponsored by government agencies or organizations that train government agency personnel and courses sponsored or approved by professional associations, such as bar associations. Also, note any professional training you provided or contributed to. You must also include a testimony log that reflects every testimony you have given as an expert.\n\nMake sure your CV reflects your professional background. Unlike a job resume, it should not be geared toward a specific trial. Most important, keep your CV current and date it for version control. If your CV is more than three months old, you probably need to update it to reflect new cases and additional training.\n\nNote\n\nKeep a separate list of books on your area of expertise that you’ve read, but don’t include this list in your CV because it might suggest that you approve of everything written in these books.\n\nTip\n\nFor more information on how to write a CV, see www.testifyingtraining.com/write-curriculum-vitae-cv-expert-witness-work/ and www.academyofexperts.org/guidance/expert-witnesses/expert-witness-cv-template.",
+                  "children": []
+                },
+                {
+                  "title": "Preparing Technical Definitions",
+                  "toc_id": 501,
+                  "chunk_count": 12,
+                  "total_chunks_in_branch": 12,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    7134,
+                    7135,
+                    7136,
+                    7137,
+                    7138,
+                    7139,
+                    7140,
+                    7141,
+                    7142,
+                    7143,
+                    7144,
+                    7145
+                  ],
+                  "content": "Preparing Technical Definitions\n\nBefore you testify in court, prepare definitions of technical concepts you can use when questioned by your attorney and the opposing attorney. Make sure you use your own words, and remember that you’re explaining these concepts for a nontechnical audience. You might want to practice explaining your definitions and concepts with a person who has limited technical skills to confirm that your statements are understandable. You don’t need to make the jury subject matter experts; you’re simply explaining the general meaning of these terms. The following are examples of definitions to prepare ahead of time for your testimony:\n\nDigital forensics or computer forensics\n\nCRC-32, MD5, and SHA-1 hashing algorithms\n\nImage files and bit-stream copies\n\nFile slack and unallocated (free) space\n\nFile timestamps\n\nComputer log files\n\nFolder or directory\n\nHardware\n\nSoftware\n\nOperating system",
+                  "children": []
+                },
+                {
+                  "title": "Preparing to Deal with the News Media",
+                  "toc_id": 502,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    7146,
+                    7147,
+                    7148,
+                    7149,
+                    7150,
+                    7151
+                  ],
+                  "content": "Preparing to Deal with the News Media\n\nSome legal actions generate interest from the news media, but you should avoid contact with news media, especially during a case, for the following reasons:\n\nYour comments could harm the case and create a record that can be used against you.\n\nYou have no control over the context of the information a journalist publishes.\n\nYou can’t rely on a journalist’s promises of confidentiality. Journalists have been known to be aggressive in getting information, and their interests do not coincide with yours or your client’s. Be on guard at all times because your comments could be interpreted in a manner that taints your impartiality in this case and future cases. Even after the case is resolved, avoid discussing details with the press.\n\nIf you’re solicited for information or opinions by journalists (or anyone else), refrain from saying anything, and refer them to your client (the attorney who retained you). If you can’t avoid a journalist, consult with your attorney and determine how to handle the situation. Plan to record any attempted interviews so that you have your own record of what occurred. (Note, however, that state laws on consent for recording vary.) This recording can be important if you’re misquoted or quoted out of context. Reporters often look for a sensational sound bite or controversial quote.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Preparing for Testimony (Interactive Activity)",
+                "toc_id": 497,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Preparing for a Deposition or Hearing",
+              "toc_id": 512,
+              "chunk_count": 6,
+              "total_chunks_in_branch": 33,
+              "budget_slides_content": 2,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "chunks_sorted": [
+                7307,
+                7308,
+                7309,
+                7310,
+                7311,
+                7312
+              ],
+              "content": "Preparing for a Deposition or Hearing\n\nA deposition A formal examination in which you’re questioned under oath with only the opposing parties, your attorney, and a court reporter present. There’s no judge or jury. Its purpose is to give the opposing counsel a chance to preview testimony before trial. differs from trial testimony because there’s no jury or judge. Both attorneys are present and ask you questions. (With current technology, the concept of “present” is expanding to include “virtually present.”) The purpose of the deposition is for the opposing attorney to preview your testimony before trial. The attorney who requests a deposition usually establishes its location, which might be in his or her office or your forensics laboratory.\n\nThere are two types of depositions: discovery and testimony preservation. A discovery deposition The opposing attorney sets this deposition and often conducts the equivalent of both direct and cross-examination; it’s considered part of the discovery process. See also deposition. is part of the discovery process for trial. The opposing attorney who requested the deposition often conducts the equivalent of a direct examination and a cross-examination. Your attorney usually asks only questions needed to clarify a point that could be subject to misinterpretation in your direct testimony. Although a discovery deposition can be video recorded, a written transcript is more common and is required in addition to the video recording. If the deposition is video recorded, court rules generally require\n\naddition to the video recording. If the deposition is video recorded, court rules generally require a longer notice period to schedule it than a stenographically recorded one.\n\nA testimony preservation deposition A deposition held to preserve testimony in case of schedule conflicts or health problems; it’s usually videotaped as well as recorded by a stenographer. See also deposition. is usually requested by your client to preserve your testimony in case of schedule conflicts or health problems. These depositions are often video recorded in addition to the written transcript, and your testimony is entered by playing the video recording for the jury. In some cases, you can set the deposition at your laboratory or have lab facilities available, which can make it easier to conduct demonstrations and produce better testimony. This deposition follows the pattern of trial testimony, with your attorney calling you as a witness and conducting a direct examination,\n\ntrial testimony, with your attorney calling you as a witness and conducting a direct examination, opposing counsel conducting cross-examination, and the attorneys conducting redirect and recross examination, if necessary. The judge rules on objections and, based on objections that are sustained, decides which portions of the testimony are omitted from the copy presented to the jury.",
+              "children": [
+                {
+                  "title": "Guidelines for Testifying at Depositions",
+                  "toc_id": 513,
+                  "chunk_count": 10,
+                  "total_chunks_in_branch": 19,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    7313,
+                    7314,
+                    7315,
+                    7316,
+                    7317,
+                    7318,
+                    7319,
+                    7320,
+                    7321,
+                    7322
+                  ],
+                  "content": "Guidelines for Testifying at Depositions\n\nOften attorneys are more combative during discovery depositions than they are during trial (or video-recorded depositions). For this reason, a deposition can be more stressful than trial testimony. Therefore, strive to stay calm and convey a relaxed, confident appearance during a deposition. For example, try to keep your hands on top of the table, and make sure your chair is at the right height to avoid sitting below the opposing attorney’s eye level. Maintain a professional demeanor and try not to be influenced by the opposing attorney’s tone, expression, or tactics. Learn the opposing attorney’s name before the deposition and include it in your responses to project a sense of equality in position between you and the opposing attorney. Look the opposing attorney directly in the eyes, even\n\nbetween you and the opposing attorney. Look the opposing attorney directly in the eyes, even if she attempts to avoid eye contact.\n\nRemember that during a deposition, opposing attorneys use all the techniques available to them at trial, so keep the guidelines for testimony in mind when answering questions, and be assertive in your responses. If you’re particularly concerned about the deposition, ask your attorney to record a practice session, and then evaluate your performance. Here are some general rules to follow during depositions:\n\nBe professional and polite.\n\nUse facts when describing your opinion.\n\nUnderstand that being deposed in a discovery deposition is an unnatural process; it’s intended to get you to make mistakes.\n\nIf you prepared a written report, the opposing attorney might attempt to use it against you by leading you to testify contrary to what you had previously written. If the attorney is concealing the report or any other document from your view, ask to see the document. When the opposing attorney asks you about something specific in your written report, ask what page number he’s referring to. If you don’t have the report in your hands, you can ask to review it.\n\nIf your attorney objects to a question from the opposing attorney, pause and think of what direction your attorney might want you to go in your answer. Keep your answers short and simple. Strive for a relaxed, friendly demeanor, especially if you’re being recorded. To gain time and control, ask the opposing attorney questions to clarify what he’s asking for, such as asking him to repeat the question.\n\nBe prepared at the end of a deposition to spell any specialized or technical words you used. To aid court reporters, give them a list of technical or scientific words you use often, including definitions and correct spellings.",
+                  "children": [
+                    {
+                      "title": "Recognizing Deposition Problems",
+                      "toc_id": 514,
+                      "chunk_count": 9,
+                      "total_chunks_in_branch": 9,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        7323,
+                        7324,
+                        7325,
+                        7326,
+                        7327,
+                        7328,
+                        7329,
+                        7330,
+                        7331
+                      ],
+                      "content": "Recognizing Deposition Problems\n\nDiscuss any potential problems with your attorney before the deposition. Identify anything that might affect your client negatively and could be used by opposing counsel. If you don’t disclose this information, the opposing attorney might be aware of it and use it against you in court. Be prepared to defend yourself if there are problems. The following guidelines can also help you avoid problems during depositions:\n\nAvoid omitting information in your testimony; omissions can cause major problems. Although you don’t have to volunteer more information than an attorney asks for, make sure you’re telling the truth at all times.\n\nTo respond to difficult questions that could jeopardize your client’s case, pause before answering, allowing your attorney to object before you answer.\n\nTo avoid having the opposing attorney box you into a corner or lead you to contradict previous statements, answer only the questions you’re asked, using short answers that are narrow in scope when possible.\n\nRealize that excessively detailed questions from opposing counsel are an attempt to get you to contradict yourself. Avoid trying to educate the opposing attorney, especially if the questions seem to be beyond the scope of your expertise or the questions you were retained to answer. Feel free to give answers such as “I don’t know” or “I don’t understand.”\n\nWhen asked whether you know about an opposing fact or expert witness, your response should be as professional as possible. A good standard answer is “I have heard Mr. Smith is a competent examiner, but I have not reviewed the body of his work.” If you have specific and verifiable information that’s damaging to the opposing expert’s reputation, you can note it, but do it in an understated manner. This technique emphasizes your professional demeanor, especially if you have negative information about the opposing expert’s skills or competency.\n\nKeep in mind that you can correct any minor errors you make during your examination by referring back to the error and correcting it. You also have an opportunity after the deposition, but you have to ask for it. You’ll be asked at the end of the deposition if you waive signature; if you want to review the deposition, you shouldn’t waive signature because you then get a chance to review, make corrections on the corrections page, and sign the deposition.\n\nDiscovery deposition testimony generally doesn’t make it to the jury, except for the purpose of showing previous inconsistent testimony by the witness. This process is called “publishing the deposition.” The witness can then be examined about inconsistent testimony in the deposition.",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "Guidelines for Testifying at Hearings",
+                  "toc_id": 515,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    7332,
+                    7333,
+                    7334,
+                    7335,
+                    7336,
+                    7337,
+                    7338,
+                    7339
+                  ],
+                  "content": "Guidelines for Testifying at Hearings\n\nTestifying at a hearing is generally comparable to testifying at a trial, so follow the same general guidelines you would for courtroom testimony. A hearing can be before an administrative agency or a legislative body or in a court (when it typically addresses specific issues). An administrative or legislative hearing generally addresses the agency’s or committee’s subject matter and seeks evidence in your testimony on a subject for which it’s contemplating making a rule or legislation. A presiding officer or committee chairperson is present, and the format of questioning depends on the agency’s or committee’s rules and the purpose of the hearing. Often administrative or legislative hearings are related to events that previously resulted in litigation. Testifying at administrative hearings\n\nare related to events that previously resulted in litigation. Testifying at administrative hearings isn’t as common as testifying in depositions or at trials.\n\nNote\n\nThe federal government has thousands of administrative agencies, and states often have hundreds of administrative agencies.\n\nA judicial hearing is held in court to determine the admissibility of certain evidence before trial. No jury is present, but evidentiary suppression hearings are usually held early in the case to determine whether a criminal case moves forward or is dismissed. Generally, they focus more on your procedure in obtaining and preserving evidence than on the substance of the evidence or your opinion. They can also include the basis or authority (warrant or probable cause) for you conducting the examination. In most criminal cases, the defense attorney seeks to suppress any evidence for which there’s an arguable basis for rejection.\n\nNote\n\nFor more information and examples of how to give expert witness testimony, see www.youtube.com/watch?v=yGughpPXbt4 for depositions and www.youtube.com/results?search_query=expert+witness+testimony+in+court for hearings.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Preparing for a Deposition or Hearing (Interactive Activity)",
+                "toc_id": 512,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Preparing Forensics Evidence for Testimony",
+              "toc_id": 516,
+              "chunk_count": 34,
+              "total_chunks_in_branch": 65,
+              "budget_slides_content": 4,
+              "direct_slides_content": 2,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 6,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "chunks_sorted": [
+                7340,
+                7341,
+                7342,
+                7343,
+                7344,
+                7345,
+                7346,
+                7347,
+                7348,
+                7349,
+                7350,
+                7351,
+                7352,
+                7353,
+                7354,
+                7355,
+                7356,
+                7357,
+                7358,
+                7359,
+                7360,
+                7361,
+                7362,
+                7363,
+                7364,
+                7365,
+                7366,
+                7367,
+                7368,
+                7369,
+                7370,
+                7371,
+                7372,
+                7373
+              ],
+              "content": "Preparing Forensics Evidence for Testimony\n\nIn this section, you learn the steps for extracting information to be presented to a court. You also learn how to prepare to testify on digital evidence you have collected. You should be ready to answer specific questions from your attorney as well as opposing counsel.\n\nBased on your analysis of Tom Johnson’s computer in Chapter 14, Ralph Benson, the general counsel at Superior Bicycles, Inc., has obtained an electronic discovery demand and received a forensic disk image of former employee Jim Shu’s personal computer. Mr. Benson sent you the forensic disk image and instructed you to search for all e-mails from Mr. Johnson. The e-mail accounts to look for are 1060waddisonst@gmx.com and jtom88917@gmail.com. After you have collected the e-mails, Mr. Benson wants you to prepare to testify at a deposition hearing about their contents. He also stated that you need to testify on how you extracted the e-mails and how the chain of custody was maintained. Another examiner has already created a forensic image of Mr. Shu’s computer, and a paralegal gave you this\n\nexaminer has already created a forensic image of Mr. Shu’s computer, and a paralegal gave you this file, ChInchp15-01.001.\n\nNote\n\nBefore beginning the following activity, create a folder called Work\\Chap15\\Chapter folder (referred to as your “work folder” in steps).\n\nTo perform this task, you use Autopsy for Windows to extract and examine e-mails in the forensic image GCFI-js01.001. Follow these steps:\n\n1\n\nDownload Ch15Proj01.exe from this chapter’s downloads section of the student companion site for this book. In File Explorer, double-click this file and click Extract to extract it to your work folder.\n\n2\n\nStart Autopsy for Windows. Click the Create New Case button. In the New Case Information window, enter InChap15 in the Case Name text box, and click Browse next to the Base Directory text box. Navigate to and click your work folder, and then click Next.\n\n3\n\nIn the Additional Information window, type InChap15 in the Case Number text box and your name in the Examiner text box, and then click Finish.\n\n4\n\nIn the Select Data Source window, click the Browse button next to the “Browse for an image file” text box, navigate to your work folder and click the GCFI-js01.001 file, and click Open and then Next.\n\n5\n\nIn the Configure Ingest Modules window, click Deselect All, click the Email Parser check box, and click Next and then Finish.\n\n6\n\nWhen Autopsy finishes its analysis, go to the Tree Viewer pane, and click to expand E-Mail Messages, Default (Default), and Default.\n\n7\n\nIn the Result Viewer pane, click the E-Mail From column header to sort the e-messages by e-mail address in ascending order (see Figure 15-1).\n\n8\n\nIn the Result Viewer pane, Ctrl+click all e-mails from 1060waddisonst@gmx.us and jtom88917@gmail.com. Right-click this selection, point to Tag Results, and click Tag and Comments. In the Create Tag dialog box, click the New Tag Name button, type Message-from-TJohnson in the Tag Name text box, and click OK twice.\n\n9\n\nClick Generate Report. In the Generate Report window, click the Results - Excel option button in the Report Modules section, and then click Next. In the Configure Artifacts Report window, click the Tagged Results button, click Select All, and then click Finish.\n\n10\n\nIn the Report Generation Progress Complete window, click the Results - Excel link to open the report. Leave Excel running for the next steps.\n\nTo examine the contents of the Excel report, follow these steps:\n\n1\n\nIn Excel, click the E-Mail Messages tab, and then adjust the column widths and formula bar height so that you can view the cells’ contents better (see Figure 15-2).\n\n2\n\nClick cells K2 through K27 and read the content of each e-mail.\n\n3\n\nAfter reading all e-mails, save this spreadsheet as Ch15Inchp-TJohnson-msg.xlsx , and exit Autopsy and Excel.",
+              "children": [
+                {
+                  "title": "Preparing a Defense of Your Evidence-Collection Methods",
+                  "toc_id": 517,
+                  "chunk_count": 31,
+                  "total_chunks_in_branch": 31,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    7374,
+                    7375,
+                    7376,
+                    7377,
+                    7378,
+                    7379,
+                    7380,
+                    7381,
+                    7382,
+                    7383,
+                    7384,
+                    7385,
+                    7386,
+                    7387,
+                    7388,
+                    7389,
+                    7390,
+                    7391,
+                    7392,
+                    7393,
+                    7394,
+                    7395,
+                    7396,
+                    7397,
+                    7398,
+                    7399,
+                    7400,
+                    7401,
+                    7402,
+                    7403,
+                    7404
+                  ],
+                  "content": "Preparing a Defense of Your Evidence-Collection Methods\n\nTo prepare for testimony, you should prepare answers for questions on what steps you took to extract e-mails from the image of Jim Shu’s computer. You might also be asked to explain specific features of the computer, OS, and applications (such as Mozilla Thunderbird or Microsoft Outlook) and explain how these applications and digital forensics tools work.\n\nMs. Gallagher, from the law firm CR PLLC, plans to ask you the following questions when you’re called to testify. Prepare your answers, referring to these examples as guidelines, so that you can answer the questions with confidence and professionalism.\n\nQuestion 1:\n\nHow did you find e-mails in the image of Mr. Shu’s computer?\n\nAnswer 1:\n\nI used Sleuth Kit’s Autopsy for Windows to access and search the GCFI-js01.001 image of Mr. Shu’s computer.\n\nQuestion 2:\n\nHow did you search for e-mails on Mr. Shu’s computer?\n\nAnswer 2:\n\nIn Autopsy, I used the Email Parser ingest module to find all Mr. Shu’s e-mails. I then sorted the received e-mails and found all from Mr. Johnson.\n\nQuestion 3:\n\nAfter you found these e-mails, what did you do?\n\nAnswer 3:\n\nI used Autopsy to extract specific data items—in this case, e-mails—and copy them to a report. Then I used Autopsy to create an Excel spreadsheet of the extracted data.\n\nQuestion 4:\n\nWhat’s an image file?\n\nAnswer 4:\n\nAn image file is a copy of a computer’s disk drive. It copies all areas of a disk drive, including deleted files.\n\nQuestion 5:\n\nWhen did you perform this examination?\n\nAnswer 5:\n\nI performed this examination on November 15, 2017, at about 2:00 p.m.\n\nQuestion 6:\n\nHow many e-mails on Mr. Shu’s computer were from Mr. Johnson?\n\nAnswer 6:\n\nI found twenty-six e-mails.\n\nQuestion 7:\n\nAfter finishing your examination, what did you do?\n\nAnswer 7:\n\nI sent the case report with the spreadsheet data to Mr. Benson, the general counsel. I then closed Autopsy and secured the external disk drive containing the forensic image of Mr. Shu’s computer in the evidence locker.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Preparing Forensics Evidence for Testimony (Interactive Activity)",
+                "toc_id": 516,
+                "slides_allocated": 1
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          }
+        }
+      ]
+    },
+    {
+      "deck_number": 2,
+      "total_slides_in_deck": 24,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 18,
+        "interactive": 2
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 64,
+        "total_deck_time": 70
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Report Writing for High-Tech Investigations. Expert Testimony in Digital Forensic Investigations.",
+            "deck_title": "Week 11, Lecture 2"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Guidelines for Writing Reports",
+              "Testifying in Court"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Guidelines for Writing Reports",
+              "toc_id": 472,
+              "chunk_count": 19,
+              "total_chunks_in_branch": 138,
+              "budget_slides_content": 8,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 8,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 26
+              },
+              "chunks_sorted": [
+                6656,
+                6657,
+                6658,
+                6659,
+                6660,
+                6661,
+                6662,
+                6663,
+                6664,
+                6665,
+                6666,
+                6667,
+                6668,
+                6669,
+                6670,
+                6671,
+                6672,
+                6673,
+                6674
+              ],
+              "content": "Guidelines for Writing Reports\n\nThe method for expressing an opinion is to have an attorney frame a hypothetical question based on available factual evidence. The law requires that an expert who doesn’t have personal knowledge about the system or occurrence must state opinions by response to hypothetical questions, which ask the expert witness to express an opinion based on hypothetical facts without referring to a particular system or situation. In this regard, you as a forensics investigator (an expert witness) differ from an ordinary witness. You didn’t see or hear the incident in dispute; you’re giving evidence as an opinion based on professional knowledge and experience, even if you might never have seen the system, data, or scene.\n\nAlthough the rules of evidence have relaxed requirements on the way an expert renders an opinion, structuring hypothetical questions for your own use helps ensure that you’re basing your opinion on facts expected to be supported by evidence. State the facts needed to answer the question, and don’t include any unnecessary facts. You might want to address alternative facts, however, if they allow your opinion to remain the same. The expression “alternative facts” might seem contradictory, but it simply means competing facts. In a civil case, if there weren’t alternative possible facts, the case wouldn’t be at trial; it would have been decided at summary judgment.\n\nNote\n\nAn expert’s opinion is governed by FRE, Rule 705, and the corresponding rule in many states. For more information on Rule 705, visit www.law.cornell.edu/rules/fre/rule_705.\n\nThe following text from a court transcript illustrates an exchange using a hypothetical question between an attorney and a digital forensics expert. The word “presented” is used in this transcript to mean the attorney handed the expert something while asking a question.\n\nMr. Stiubhard:\n\nMr. Noriki, presented with a hard drive of 1 TB, an attached Maxtor manufacturer’s data sheet indicating it was manufactured in May 2017, previous testimony by a detective that the notebook computer in which this drive was found was manufactured by Dell Computer Corporation in June 2017 and purchased by the owner in June 2017. Based on these facts testified to, do you have an opinion whether this is original equipment on this system?\n\nMr. Noriki:\n\nYes.\n\nMr. Stiubhard:\n\nMr. Noriki, what is your opinion on whether this hypothetical hard drive would be the original equipment with the system?\n\nMr. Noriki:\n\nBased on facts you have provided, it’s my professional opinion that the hard drive would…\n\nHypothetical questions can be abused and made so complex that the expert might not be able to remember enough of the question to evaluate the answer. Another abuse of the hypothetical question is that it effectively allows attorneys to recite their favored facts to the jury repeatedly and in the order and with the emphasis they want to use. As an expert witness, you can testify to an opinion or a conclusion if these basic conditions are met:\n\nThe opinion, inferences, or conclusions depend on special knowledge, skill, or training not within the ordinary experience of lay witnesses or jurors.\n\nThe witness must be shown to be qualified as a true expert in the field (which is why a curriculum vitae is important).\n\nThe witness must testify to a reasonable degree of certainty (probability) about his or her opinion, inference, or conclusion.\n\nAt minimum, expert witnesses must know the relevant data (facts) on which their opinion, inference, or conclusion is based, and they must be prepared to testify in response to a hypothetical question that sets forth the underlying evidence.",
+              "children": [
+                {
+                  "title": "What to Include in Written Preliminary Reports",
+                  "toc_id": 473,
+                  "chunk_count": 9,
+                  "total_chunks_in_branch": 9,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    6675,
+                    6676,
+                    6677,
+                    6678,
+                    6679,
+                    6680,
+                    6681,
+                    6682,
+                    6683
+                  ],
+                  "content": "What to Include in Written Preliminary Reports\n\nRemember that anything you write down as part of your examination for a report in a civil litigation case is subject to discovery from the opposing attorney, meaning what you write can or will be given to the opposing attorney. Discovery Efforts to gather information before a trial by demanding documents, depositions, interrogatories (written questions answered in writing under oath), and written requests for admissions of fact. is the process of opposing attorneys seeking information from each other. Therefore, a written preliminary report, such as one created in a software tool before all the data analysis is complete, is considered a high-risk document A written report containing sensitive information that could create an opening for the opposing attorney to discredit you. because\n\ninformation that could create an opening for the opposing attorney to discredit you. because opposing counsel can demand discovery on it.\n\nIf the written preliminary report states a contrary or more equivocal position than you take in your final report or testimony, you should expect opposing counsel to try to discredit your testimony by using the written report. It’s simply better if there’s no written report to provide. If you must write a preliminary report, don’t use words such as “preliminary copy,” “draft copy,” or “working draft.” These words give opposing counsel an opening for discrediting you and make it seem as though the attorney who retained you contributed to what should be your independent professional judgment. In addition, if you do write a preliminary report, don’t destroy it before a final resolution of the case or any discovery issue related to the report. Destroying the report could be considered\n\nof the case or any discovery issue related to the report. Destroying the report could be considered destroying or concealing evidence; among lawyers, this action is called spoliation, and it could subject your client to monetary or evidentiary sanctions. If you’ve been identified on a witness list provided to the court and opposing counsel, all your work related to the case is potentially subject to discovery.\n\nFor written preliminary reports, therefore, include the same information you would supply in an informal verbal report. First, restate the assignment to confirm with your client that the work you have done is focused correctly. Next, summarize what has been accomplished. Identify the systems you have examined, what tools you have used, and what you have seen. State evidence preservation or protection processes you have used. (See Chapters 3 and 9 for more information on these processes.) The following list shows additional items to include in your report:\n\nSummarize your billing to date and estimate costs to complete the effort.\n\nIdentify the tentative conclusion (rather than the preliminary conclusion).\n\nIdentify areas for further investigation and get confirmation from the attorney on the scope of your examination.",
+                  "children": []
+                },
+                {
+                  "title": "Report Structure",
+                  "toc_id": 474,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    6684,
+                    6685,
+                    6686,
+                    6687,
+                    6688,
+                    6689,
+                    6690,
+                    6691
+                  ],
+                  "content": "Report Structure\n\nA report usually includes the sections shown in the following list, although the order varies depending on organizational guidelines or case requirements:\n\nAbstract (or summary)\n\nTable of contents\n\nBody of report\n\nConclusion\n\nReferences\n\nGlossary",
+                  "children": []
+                },
+                {
+                  "title": "Writing Reports Clearly",
+                  "toc_id": 475,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 17,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    6699,
+                    6700,
+                    6701,
+                    6702,
+                    6703,
+                    6704,
+                    6705,
+                    6706
+                  ],
+                  "content": "Writing Reports Clearly\n\nTo produce clear, concise reports, you should assess the quality of your writing, using the following criteria:\n\nCommunicative quality—Is it easy to read? Think of your readers and how to make the report appealing to them.\n\nIdeas and organization—Is the information relevant and clearly organized?\n\nGrammar and vocabulary—Is the language simple and direct so that the meaning is clear and the text isn’t repetitive? However, technical terms should be used consistently; you shouldn’t try to use variety for these terms. Using different words for the same thing might raise questions.\n\nPunctuation and spelling—Are they accurate and consistent?\n\nGood expert reports share many of the qualities of other kinds of writing. To write is to think, so a report should lay out ideas in a logical order that facilitates logical thinking. Make each sentence follow from the previous one, building an argument piece by piece. Group related ideas and sentences into paragraphs, and group paragraphs into sections. Create a flow from the beginning of the report to the end.\n\nThe report should be grammatically sound, have correct spelling, and be free of writing errors. Avoid jargon, slang, or colloquial terms. Most lawyers, judges, and jurors aren’t technically trained, so if technical terms must be used, define them in ordinary language (or refer readers to your glossary). Defining acronyms and any abbreviations not used as standard measurement units is particularly important; spell out all acronyms the first time they’re used. If there’s any possibility of misinterpreting an abbreviation, define it or use the full expression. For example, “m” is used routinely in scientific and technical writing as an abbreviation for “meter,” but nontechnical readers (especially in the United States) might think it’s an abbreviation for “mile.”",
+                  "children": [
+                    {
+                      "title": "Considering Writing Style",
+                      "toc_id": 476,
+                      "chunk_count": 6,
+                      "total_chunks_in_branch": 6,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        6707,
+                        6708,
+                        6709,
+                        6710,
+                        6711,
+                        6712
+                      ],
+                      "content": "Considering Writing Style\n\nStyle means the tone of language you use to address the reader. When writing a report, use a natural language style. For instance, talk about yourself in the first person, not the third person; don’t call yourself “your affiant” when “I” is appropriate and clearly more natural. (However, keep in mind that too many sentences containing “I” can become repetitive.) A natural language style helps keep readers interested in what you have to say. However, you should also follow formal writing guidelines, so pay attention to word usage, grammar, and spelling.\n\nBe sure to avoid vague language and generalizations, as in “There was a problem.” Instead, state the problem specifically and describe what you or others did to solve it. Be careful about repetition, too; repeat only what’s necessary, such as key words or technical terms.\n\nMost of the report describes what you did, so it should be in past tense, but use present or future tense as appropriate. Use active rather than passive voice to avoid boring writing and contorted phrases. For example, “The software recovered the following data” is more direct and, therefore, more interesting to read than “The following data was recovered by the software.”\n\nAvoid including too many details and personal observations. Your only agenda should be finding the truth, so don’t think in terms of catching somebody or proving something. It’s not your job to win the case. Don’t become an advocate for anything other than the truth and your honest objective opinion.\n\nA final caution in writing style: Project objectivity. You must communicate calm, detached observations in your report, so don’t become emotionally involved in the investigation. Always try to identify the flaws in your thinking or examination; it’s better to identify flaws than to allow opposing counsel to do it for you at an embarrassing moment.",
+                      "children": []
+                    },
+                    {
+                      "title": "Including Signposts",
+                      "toc_id": 477,
+                      "chunk_count": 3,
+                      "total_chunks_in_branch": 3,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        6713,
+                        6714,
+                        6715
+                      ],
+                      "content": "Including Signposts\n\nAnother aspect of writing clearly is choosing language that gives your readers signposts to what you’re trying to communicate, draws their attention to a point, and shows them the sequence of a process. Signposts assist readers in scanning the text quickly by highlighting the main points and logical development of information.\n\nFor example, the first substantive section of your report could start with “This is the report of findings from the forensic examination of computer SN 123456.” The discussion of your examination procedures could be introduced with “The first step in this examination was,” “The second step in this examination was,” and so on. “First” and “second” are signposts that show the sequence of information or tasks. When you want to evaluate something, you might include a signpost such as “The problem with this is…” To show that you’re drawing a conclusion, introduce the point with “This means that ...” or “The result shows that.…”",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "Designing the Layout and Presentation of Reports",
+                  "toc_id": 478,
+                  "chunk_count": 44,
+                  "total_chunks_in_branch": 85,
+                  "budget_slides_content": 5,
+                  "direct_slides_content": 3,
+                  "total_slides_in_branch": 4,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 9,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 12
+                  },
+                  "chunks_sorted": [
+                    6716,
+                    6717,
+                    6718,
+                    6719,
+                    6720,
+                    6721,
+                    6722,
+                    6723,
+                    6724,
+                    6725,
+                    6726,
+                    6727,
+                    6728,
+                    6729,
+                    6730,
+                    6731,
+                    6732,
+                    6733,
+                    6734,
+                    6735,
+                    6736,
+                    6737,
+                    6738,
+                    6739,
+                    6740,
+                    6741,
+                    6742,
+                    6743,
+                    6744,
+                    6745,
+                    6746,
+                    6747,
+                    6748,
+                    6749,
+                    6750,
+                    6751,
+                    6752,
+                    6753,
+                    6754,
+                    6755,
+                    6756,
+                    6757,
+                    6758,
+                    6759
+                  ],
+                  "content": "Designing the Layout and Presentation of Reports\n\nLayout and presentation involve many factors, including using clear titles and section headings. A numbering system is also part of the layout. Typically, report writers use one of two numbering systems: decimal numbering or legal-sequential numbering. After you choose a system, be sure to follow it consistently throughout the report.\n\nA report using the decimal numbering system divides material into sections and restarts numbering with each main section, as shown in the following example. With this system, readers can scan the headings and understand how one part of the report relates to the other.\n\nI.\n\nAbstract\n\n1.1\n\nThis report includes a review of data found on hard drives on Computer A and Computer B. Both systems were Dell desktop computers. Computer A had no image files other than those that would have been found in routine office applications. Computer B had more than 2 TB of image data (approximately 120,000 JPG files with dates from January 30, 2017, to March 15, 2018).\n\nII.\n\nDetailed Analysis\n\nComputer A\n\n2.1.\n\nThe hard drives of Computer A are designated drive C and drive D.\n\n2.2.\n\nBoth hard drives are 1 TB Maxtor drives.\n\n2.3.\n\nBoth hard drives are less than 20% full.\n\nComputer B\n\n2.4\n\nThe hard drives of Computer B are designated drive C and drive D.\n\n2.5.\n\nBoth hard drives are 750 GB Seagate drives.\n\n2.6.\n\nBoth drives are more than 90% full.\n\nThe legal-sequential numbering system is often used in legal pleadings. Each Roman numeral represents a major aspect of the report, and each Arabic numeral is an important piece of supporting information, as shown in the following example. This system is meaningful to lawyers but might not be as effective with nonlawyers because the sequential numbering doesn’t indicate a hierarchy that shows the relative importance of information in the report.\n\nI.\n\nAbstract\n\n1.\n\nThis report includes a review of data found on hard drives on Computer A and Computer B. Both systems were Dell desktop computers. Computer A had no image files other than those that would have been found in routine office applications. Computer B had more than 2 TB of image data (approximately 120,000 JPG files with dates from January 30, 2017, to March 15, 2018).\n\nII.\n\nDetailed Analysis\n\nComputer A\n\n2.\n\nThe hard drives of Computer A are designated drive C and drive D.\n\n3.\n\nBoth hard drives are 1 TB Maxtor drives.\n\n4.\n\nBoth hard drives are less than 20% full.\n\nComputer B\n\n5.\n\nThe hard drives of Computer B are designated drive C and drive D.\n\n6.\n\nBoth hard drives are 750 GB Seagate drives.\n\n7.\n\nBoth drives are more than 90% full.",
+                  "children": [
+                    {
+                      "title": "Providing Supporting Material",
+                      "toc_id": 479,
+                      "chunk_count": 3,
+                      "total_chunks_in_branch": 3,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        6760,
+                        6761,
+                        6762
+                      ],
+                      "content": "Providing Supporting Material\n\nUse supporting material such as figures, tables, data, and equations to help tell the story as it unfolds. Refer to this material in the text and integrate the points they make into your writing. Number figures and tables sequentially as they’re introduced (for example, Figure 1, Figure 2, and so forth with another sequence for Table 1, Table 2, and so on).\n\nFigure captions should supply descriptive information. In charts, label all axes and include units of measure. Insert a figure or table after the paragraph in which it’s first mentioned, or gather all supporting material in one place after the references section (before any appendixes).",
+                      "children": []
+                    },
+                    {
+                      "title": "Formatting Consistently",
+                      "toc_id": 480,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        6763,
+                        6764
+                      ],
+                      "content": "Formatting Consistently\n\nHow you format text is less important than being consistent in applying formatting. For example, if you indent paragraphs, be sure all are indented. Use fonts consistently, and use consistent heading styles throughout (for example, major headings in bold with initial capitals, minor headings in italics, and so forth). Follow the same guideline throughout for units of measure; for example, use “%” or “percent,” but don’t use both. In other words, establish a template and stick to it.",
+                      "children": []
+                    },
+                    {
+                      "title": "Explaining Examination and Data Collection Methods",
+                      "toc_id": 481,
+                      "chunk_count": 3,
+                      "total_chunks_in_branch": 3,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        6765,
+                        6766,
+                        6767
+                      ],
+                      "content": "Explaining Examination and Data Collection Methods\n\nExplain how you studied the problem, which should follow logically from the report’s purpose. Depending on the kind of data, this section might contain subsections on examination procedures, materials or equipment, data collection and sources, and analytical or statistical techniques. Supply enough detail for readers to understand what you did.\n\nData collection is a critical portion of the report. Without good data recording in a lab notebook or file, completing a report beyond this point is futile. If your data collection process becomes the subject of discovery or examination, presenting data in a well-organized manner is important. Use tables in your report to illustrate how data was handled and examined. As mentioned, tables should be labeled clearly as to their content and numbered for easy referral.",
+                      "children": []
+                    },
+                    {
+                      "title": "Including Calculations",
+                      "toc_id": 482,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        6768,
+                        6769
+                      ],
+                      "content": "Including Calculations\n\nIn most cases, hashing algorithms are calculated in digital forensics investigations. If you use any hashing algorithms, be sure to give the common name, such as “Message Digest 5 (MD5) hash.” Generally, you don’t need to give examples of each type of hash if you’re using standard tools; you explain generally what they do and cite the authority or policy you rely on for using the tool. For example, to explain why you’re using the MD5 hash, you might cite the National Software Reference Library (NSRL; www.nsrl.nist.gov) as an authority. You could also cite a court case in which a tool’s validity had been accepted previously.",
+                      "children": []
+                    },
+                    {
+                      "title": "Providing for Uncertainty and Error Analysis",
+                      "toc_id": 483,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        6770,
+                        6771
+                      ],
+                      "content": "Providing for Uncertainty and Error Analysis\n\nIn digital forensics, many results can be absolutely true if stated conservatively but might be a guess if you overreach. Therefore, a statement of limitations of knowledge and uncertainty is necessary to protect your credibility. For example, if you’re using the timestamp for a file in a Windows OS to indicate that the file was created at a certain time, you need to acknowledge that a PC clock could be reset easily. In addition, you should state that there’s no absolute assurance that a file’s timestamp is a reflection of its creation time, but there might be other reliable indicators, such as timestamps of other files, creation timestamps for directories, creation order of certain files, and information in automatic backups.",
+                      "children": []
+                    },
+                    {
+                      "title": "Explaining Results and Conclusions",
+                      "toc_id": 484,
+                      "chunk_count": 3,
+                      "total_chunks_in_branch": 3,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        6772,
+                        6773,
+                        6774
+                      ],
+                      "content": "Explaining Results and Conclusions\n\nExplain your findings, using subheadings to divide the discussion into logical parts. Make comments on results as they’re presented, discussing the importance of what you found in light of the overall report objectives. Take a step back from the details and synthesize what has (and has not) been learned about the problem and what the information means. Describe what you actually found, not what you hoped to find. Including this discussion as you present results can often improve clarity and readers’ understanding.\n\nLink your discussion to figures and tables as you present results, and describe and interpret what these supporting materials show. If you have many similar figures, select representative examples for the main report and put the rest in an appendix. Save broader generalizations and summaries for the report’s conclusion. The conclusion should restate the objectives, aims, and key questions and summarize your findings with clear, concise statements. Keep the conclusion brief and to the point.",
+                      "children": []
+                    },
+                    {
+                      "title": "Providing References",
+                      "toc_id": 485,
+                      "chunk_count": 20,
+                      "total_chunks_in_branch": 20,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        6775,
+                        6776,
+                        6777,
+                        6778,
+                        6779,
+                        6780,
+                        6781,
+                        6782,
+                        6783,
+                        6784,
+                        6785,
+                        6786,
+                        6787,
+                        6788,
+                        6789,
+                        6790,
+                        6791,
+                        6792,
+                        6793,
+                        6794
+                      ],
+                      "content": "Providing References\n\nWhen you write a report, you must cite references to all material you have used as sources for the content of your work. These citations are made wherever you quote, paraphrase, or summarize someone else’s opinions, theories, or data. References can include books, periodicals, newspapers, Web sites, conference proceedings, personal communications, and interviews.\n\nIn the main section of your report, typically you cite references with the author’s last name and year of publication enclosed in parentheses. (Sometimes page numbers are required, too; check the style manual you’re following for guidance.) In the references section, you list sources alphabetically by author and provide publication information. Give enough detail so that someone else could track down the information. Follow a standard format, such as the one shown in the following examples, for use of italics, capitalization, volume and page numbers, publisher address, and other style concerns. Many good style manuals are available, and having one handy is worthwhile.\n\nThe following examples show how different sources are presented in the references section; keep in mind that formatting might differ slightly depending on the style manual you follow:\n\nPersonal (unpublished) communications:\n\nCited in the text only, as in “x is recoverable by using tool A (Koenick, F., pers. comm.).”\n\nLecture notes:\n\nStiubhard, C. K. “The Curriculum Vitae.” Lecture for CIS 411/511, CTIN and City University, Seattle, WA, May 1, 2018.\n\nWeb site:\n\nLaw Office of Christopher K. Stiubhard. ww w.stiubhardlaw.com, 2016.\n\nSingle-author journal article:\n\nO’Herlighy, T. A. “Development of Relationships on the Internet.” Journal of the Advocate 7, 2018, pp. 130–142.\n\nMultiple-author journal article:\n\nNoriki, H. W., C. K. Stiubhard, and M. D. Clay. “Investigation of Counterfeiting of Spare Parts—A Statistical Analysis.” The Frontline Journal of Aviation 8, 2015, pp. 150–152.\n\nBook:\n\nClark, F. and K. Diliberto. Investigating Computer Crime. CRC Press, New York, 2008.\n\nGovernment or technical report:\n\nU.S. Department of Justice. “The Examination of Computers.” Report XYZ-001, Washington, DC, 2018.\n\nChapter in an edited volume:\n\nPellegrino, A. “Investigation of the Automated Backup Copies of Microsoft Application Files.” In Noriki, H. W. et al, Computer Forensics. Learning Technology, Springfield, MA, 2017.",
+                      "children": []
+                    },
+                    {
+                      "title": "Including Appendixes",
+                      "toc_id": 486,
+                      "chunk_count": 6,
+                      "total_chunks_in_branch": 6,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        6795,
+                        6796,
+                        6797,
+                        6798,
+                        6799,
+                        6800
+                      ],
+                      "content": "Including Appendixes\n\nIf necessary, you can include appendixes containing material such as raw data, figures not used in the body of the report, and anticipated exhibits. Arrange them in the order referred to in the report. They are considered additional material and might not be examined by readers. Some portions of appendixes might be considered optional, but others are required. For example, exhibits are required under FRCP, Rule 26, as is your curriculum vitae (unless bona fides are integrated into the report).\n\nTip\n\nWhether you’re working for a law firm, digital forensics company, research lab, or law enforcement agency, these organizations have established formats for reports. Be sure to get samples or templates from them before beginning your report.\n\nNote\n\nFor an example of a report, see Vincenzo D. Crawford’s report at www.academia.edu/12324822/Example_of_An_Expert_Witness_Digital_forensics_Report?auto=download. Another source is available at https://allegiantinvestigation.com/writing-a-forensics-expert-report/.",
+                      "children": []
+                    }
+                  ]
+                }
+              ],
+              "interactive_activity": {
+                "title": "Guidelines for Writing Reports (Interactive Activity)",
+                "toc_id": 472,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Testifying in Court",
+              "toc_id": 503,
+              "chunk_count": 2,
+              "total_chunks_in_branch": 155,
+              "budget_slides_content": 10,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 12,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 38
+              },
+              "chunks_sorted": [
+                7152,
+                7153
+              ],
+              "content": "Testifying in Court\n\nBefore you’re called to testify in court, you should become familiar with the usual procedures followed during a trial. First, your attorney examines you about your qualifications to demonstrate to the court that you’re competent as an expert witness or a fact witness. The opposing counsel might then cross-examine you on your qualifications (perhaps in an attempt to discredit you). Next, your attorney guides you through your testimony, and then opposing counsel can cross-examine you on your testimony. Your attorney might then have an opportunity for redirect examination of material addressed in cross-examination. After your testimony, you might be called back to update your testimony, or you might be called as a rebuttal witness.",
+              "children": [
+                {
+                  "title": "Understanding the Trial Process",
+                  "toc_id": 504,
+                  "chunk_count": 10,
+                  "total_chunks_in_branch": 10,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    7154,
+                    7155,
+                    7156,
+                    7157,
+                    7158,
+                    7159,
+                    7160,
+                    7161,
+                    7162,
+                    7163
+                  ],
+                  "content": "Understanding the Trial Process\n\nThe typical order of trial proceedings, whether civil or criminal, is as follows:\n\nMotion in limine—A pretrial motion to exclude or limit the use of certain evidence because its potential to prejudice the jury would exceed its probative value. Effectively, this motion is a written list of objections to certain testimony or exhibits. It allows the judge to decide whether certain evidence should be admitted when the jury isn’t present. Some evidence is so prejudicial that just the jury knowing it exists is enough to damage the case. In this situation, getting a ruling on the evidence before trial is crucial.\n\nImpaneling the jury—This process includes voir dire of venireman (questioning potential jurors to see whether they’re qualified), strikes (rejecting potential jurors), and seating of jurors.\n\nOpening statements—Both attorneys provide an overview of the case, with the plaintiff’s attorney going first.\n\nPlaintiff—The plaintiff’s attorney presents the case.\n\nDefense—The defense’s attorney presents the case.\n\nRebuttal—Rebuttal from both the plaintiff’s and defense’s attorneys is an optional phase of the trial. Generally, it’s allowed to cover an issue raised during cross-examination of a witness.\n\nClosing arguments—Statements that organize the evidence and state the applicable law. The plaintiff’s attorney goes first and gets a rebuttal opportunity at the end, which should be limited to issues raised by the defense’s attorney.\n\nJury instructions—The attorneys propose instructions to the jury on how to consider the evidence, and then the judge approves or disapproves; if the instructions are approved, the judge reads them to the jury.",
+                  "children": []
+                },
+                {
+                  "title": "Providing Qualifications for Your Testimony",
+                  "toc_id": 505,
+                  "chunk_count": 59,
+                  "total_chunks_in_branch": 59,
+                  "budget_slides_content": 4,
+                  "direct_slides_content": 4,
+                  "total_slides_in_branch": 4,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 12,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 12
+                  },
+                  "chunks_sorted": [
+                    7164,
+                    7165,
+                    7166,
+                    7167,
+                    7168,
+                    7169,
+                    7170,
+                    7171,
+                    7172,
+                    7173,
+                    7174,
+                    7175,
+                    7176,
+                    7177,
+                    7178,
+                    7179,
+                    7180,
+                    7181,
+                    7182,
+                    7183,
+                    7184,
+                    7185,
+                    7186,
+                    7187,
+                    7188,
+                    7189,
+                    7190,
+                    7191,
+                    7192,
+                    7193,
+                    7194,
+                    7195,
+                    7196,
+                    7197,
+                    7198,
+                    7199,
+                    7200,
+                    7201,
+                    7202,
+                    7203,
+                    7204,
+                    7205,
+                    7206,
+                    7207,
+                    7208,
+                    7209,
+                    7210,
+                    7211,
+                    7212,
+                    7213,
+                    7214,
+                    7215,
+                    7216,
+                    7217,
+                    7218,
+                    7219,
+                    7220,
+                    7221,
+                    7222
+                  ],
+                  "content": "Providing Qualifications for Your Testimony\n\nDuring the qualification phase of your testimony, your attorney asks questions to elicit the qualifications that make you an expert witness. This qualification phase is called voir dire The qualification phase of testimony, in which an attorney asks questions to establish an expert witness’s credentials. The process of qualifying jurors is also called voir dire. (in French, literally “to see, to say”). Typically, your attorney guides you through your CV. The amount of detail in this examination depends on several factors, but they all relate to how much advantage the attorney sees in your qualifications. After your attorney has completed this examination, he or she asks the court to accept you as an expert on digital forensics. However, opposing counsel might object and is allowed to\n\nyou as an expert on digital forensics. However, opposing counsel might object and is allowed to examine you, too; usually, cross-examination happens only if the opposing attorney thinks there’s something to gain from it.\n\nTip\n\nIf you know that the opposing expert witness taught or took a course that used a publication you wrote or co-authored, tell your attorney about it. He could emphasize that you’re the author and examine the opposing witness on this fact to give you more credibility as a recognized expert in the field.\n\nThe following example is a short direct-examination voir dire:\n\nQ:\n\nPlease state your name and spell your last name for the record.\n\nA:\n\nWilma Nokiki, N-O-K-I-K-I.\n\nQ:\n\nWhat is your profession?\n\nA:\n\nI am a digital forensics examiner.\n\nQ:\n\nHow long have you been a digital forensics examiner?\n\nA:\n\nTwelve years.\n\nQ:\n\nWhere are you currently employed?\n\nA:\n\nI am currently employed by IT Forensics, Incorporated, of Seattle, Washington.\n\nQ:\n\nHow long have you been with IT Forensics?\n\nA:\n\nEight years.\n\nQ:\n\nWhat is your title with IT Forensics?\n\nA:\n\nI am a senior case manager.\n\nQ:\n\nWhat training have you received in digital forensics?\n\nA:\n\nI have been trained at the Federal Law Enforcement Training Center in 2000, I trained with NTI in 1996, and I have received training from the International Association of Computer Investigative Specialists since 1999, most recently on large disk acquisitions and network monitoring. I have taken dozens of short courses with many different investigative training organizations over the past fifteen years.\n\nQ:\n\nWhere have you been an instructor?\n\nA:\n\nI have taught classes on digital forensics at City College, Highline Community College, Bellevue Community College, and Lake Washington Technical College. I taught the digital forensics instructors for the state of Washington in 2012. I have made many shorter presentations, including continuing legal education programs approved by the Washington State Bar Association.\n\nQ:\n\nHave you been published?\n\nA:\n\nYes, I am co-author of the college textbook Digital Investigations and Forensics.\n\nQ:\n\nHave you testified previously?\n\nA:\n\nYes, I have most recently in United States versus Smith. A detailed list of occasions when I have testified is in my CV.\n\nPlaintiff’s Attorney:\n\nYour witness.\n\nDefense Attorney:\n\nNo questions for the witness.\n\nPlaintiff’s Attorney:\n\nYour Honor, Plaintiff would move that Ms. Nokiki be accepted as an expert witness on digital forensics.\n\nJudge:\n\nAny objection, Ms. Defense Attorney?\n\nDefense Attorney:\n\nNo objection, Your Honor.\n\nJudge:\n\nMs. Nokiki is accepted as an expert witness on digital forensics. You may proceed, Mr. Plaintiff’s Attorney.\n\nIf you have especially strong qualifications and have been qualified as an expert on several occasions, opposing counsel might offer to accept you as an expert without your qualifications being stated formally. Generally, your attorney bypasses that offer in favor of impressing the jury with your qualifications.",
+                  "children": []
+                },
+                {
+                  "title": "General Guidelines on Testifying",
+                  "toc_id": 506,
+                  "chunk_count": 27,
+                  "total_chunks_in_branch": 47,
+                  "budget_slides_content": 3,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
+                  },
+                  "chunks_sorted": [
+                    7223,
+                    7224,
+                    7225,
+                    7226,
+                    7227,
+                    7228,
+                    7229,
+                    7230,
+                    7231,
+                    7232,
+                    7233,
+                    7234,
+                    7235,
+                    7236,
+                    7237,
+                    7238,
+                    7239,
+                    7240,
+                    7241,
+                    7242,
+                    7243,
+                    7244,
+                    7245,
+                    7246,
+                    7247,
+                    7248,
+                    7249
+                  ],
+                  "content": "General Guidelines on Testifying\n\nWhether you’re serving as an expert witness or a fact witness, be professional and polite when presenting yourself to any attorney or the court. Before the trial, try to learn the jury, judge, and other attorneys’ level of knowledge on and attitudes toward computers and technology. Talk to local attorneys to learn more about the type of people typically serving on local juries. With this knowledge, you can gauge your presentation to your audience’s educational level, and incorporate appropriate analogies into your explanations. Remember that the judge is well educated but not necessarily in the field of digital evidence. Jurors typically average around 12 years of education and an eighth-grade reading level. The attorneys might have a thorough background in the field, but you’re the expert\n\nreading level. The attorneys might have a thorough background in the field, but you’re the expert with experience. You could also be dealing with an arbiter or mediator who may or may not have a background in digital forensics.\n\nThere are two responses you should be prepared to use often as a witness. First, if asked a question you can’t answer, respond by saying, “That is beyond the scope of my expertise” or “I was not asked to investigate that.” These statements make it clear that you understand your limitations. You won’t seem less of an expert for knowing and expressing your limitations. If anything, acknowledging your limitations enhances your standing with a jury. Second, if you don’t understand a question or find it confusing, simply say, “Can you please rephrase the question?” Typically, this response gets the attorney to reorganize the question and is one method you can use to control the pace and direction of the examination. If the question is stated awkwardly or you aren’t sure of the intent, ask the\n\nof the examination. If the question is stated awkwardly or you aren’t sure of the intent, ask the attorney for clarification.\n\nIf opposing counsel tries to reframe your answer in a way that you don’t believe is accurate, reject his restatement by saying “No, that isn’t what I said,” and then restate your position accurately, starting with “What I said was.” Be respectful and even pleasant, but be firm.\n\nAnother aspect of acknowledging your limitations is making sure you avoid overstating opinions. Part of what you have to deliver to the jury is a person they can trust to help them figure out something that’s beyond their expertise. Overstating an opinion creates the potential for the jury to mistrust or doubt you; like a teacher, you should admit your limitations and the limitations of your results.\n\nYour delivery is an important part of how you answer questions and affects the impact you have on the jury. The following list offers some general guidelines on delivery and presentation:\n\nAlways acknowledge the jury and direct your testimony to them, using an enthusiastic, sincere tone to keep the jury interested in what you have to say. When an attorney or the judge asks you a question, turn toward the questioner, and then turn back to the jury to give the answer.\n\nIf a microphone is present, place it 6 to 8 inches from you, and remember to speak loudly and clearly so that the jury can hear and understand you.\n\nUse simple, direct language to help the jury understand you. For example, use “test” instead of “analyze,” as in “I ran a test on the files I found.” Also, make sure you use specific, articulate speech when speaking; for clarity, avoid contractions and slang, unless you’re quoting a fact related to the case.\n\nAvoid humor. What one person thinks is funny, another won’t. In addition, limit your responses to what you perceive as attempts at humor from anybody else.\n\nBuild repetition into your explanations and descriptions for the jury.\n\nUse chronological order to describe events when testifying, and use hand gestures to help the audience understand what you’re emphasizing. For example, point to graphics while talking. (Graphics are discussed more later in “Using Graphics During Testimony.”)\n\nIf you’re using technical terms, identify and define these terms for the jury, using analogies and graphics as appropriate. List any important technical elements, showing how you verified and validated each element.\n\nWhen giving an opinion, cite the source of the evidence the opinion is based on. Then express your opinion and explain your methodology—how you arrived at your opinion.\n\nIf the witness chair is adjustable, make sure the height is comfortable, and turn the chair so that it faces the jury.\n\nTo enhance your image with the jury, dress in a manner conforming to the community’s dress code for business professionals, or dress like the attorneys in the case. If your testimony is being videotaped, avoid fine stripes in suits or ties because they can generate a strobing effect in video recordings under artificial light. Men should wear conservative ties with a base color of red; women should wear suits in conservative colors or a dress that allows freedom of movement.\n\nDon’t memorize your testimony; you should strive for a natural, extemporaneous tone. Also, make sure you have alternative ways to describe or explain key facts.\n\nFor direct examinations, state your opinion, identify evidence to support your opinion, explain the method you used to arrive at your opinion from your analysis, and then restate your opinion.\n\nAs mentioned, have definitions and explanations aimed at a nontechnical audience ready for technical terms you must use in your testimony. Learn how to describe the tools you use as a standardized process for your work. Make sure you’re knowledgeable about the fallibility of digital forensics so that you can resist counterattacks from opposing counsel. Lengthy explanations might be good for some jury cases but not for others, so seek your attorney’s opinion.\n\nPrepare your testimony with the attorney who hired you. The following are specific questions you should prepare for:\n\nHow is data (or evidence) stored on a hard drive?\n\nWhat is an image or a bit-stream copy of a drive?\n\nHow is deleted data recovered from a drive?\n\nWhat are Windows temporary files, and how are they related to data or evidence?\n\nWhat are system or network log files?",
+                  "children": [
+                    {
+                      "title": "Using Graphics During Testimony",
+                      "toc_id": 507,
+                      "chunk_count": 10,
+                      "total_chunks_in_branch": 10,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        7250,
+                        7251,
+                        7252,
+                        7253,
+                        7254,
+                        7255,
+                        7256,
+                        7257,
+                        7258,
+                        7259
+                      ],
+                      "content": "Using Graphics During Testimony\n\nGraphical exhibits, such as charts and tables, illustrate and clarify your findings. As a general rule, memory retention is much weaker for audio material and stronger for visual material. Therefore, oral testimony supported by graphical presentations is an effective way to impart information and help your listeners retain it. Your exhibits must be clear and easy to understand. Graphics should be big, bold, and simple so that the jury can see them easily, and consider factors such as glare and adequate contrast to ensure easy visibility. If necessary, make smaller copies of graphics for jurors so that they can see details better.\n\nThe goal of using graphics is to provide information the jury needs to know (such as how hardware and software work), an explanation of your findings, and the role the evidence plays in the case. Make sure each graphic conveys only one concept or point; don’t try to include too much information in a single graphic. If you’re using graphics to explain a complex technical concept or procedure, use two or more graphics, with the first graphic providing an overview.\n\nNote\n\nDon’t include vendor logos on your charts, and don’t use charts created by someone else, unless you commissioned someone to create them or have documented permission to use them. In this way, you can avoid possible copyright issues. Another advantage of creating your own charts is you can make sure you’re comfortable with—and can explain—their content.\n\nReview all graphics with your attorney before trial, and make sure you’ve practiced using them so that you appear comfortable and confident. In most courts, you need at least three extra copies of your graphics: one for your attorney, one for the opposing attorney, and one for the judge. However, it’s the attorney’s responsibility to have graphical exhibits admitted into evidence.\n\nCourtrooms are becoming more audiovisual capable, and you might be able to use a projector system. If one is available, discuss using it with your attorney. You might also talk about the possibility of giving jurors copies of your presentation on removable storage media, such as a CD or a USB drive.\n\nMake sure the jury can see your graphics, and face the jury during your presentation. If your graphics haven’t been placed near the jury box, ask the judge if you can move them so that the jury can see them better. When you’re talking about specific areas of an illustration, use a pointer to direct jurors’ attention to details. You can also use your hands to help emphasize certain information or direct attention to specific points. Make sure any gestures are above the waist so that the jury can see them. If an attorney asks you questions as you explain the graphics, face the jury and answer the questions in full sentences.\n\nTip\n\nWhen you’re standing in front of the jury, leave your jacket unbuttoned and keep your elbows bent to show that you’re comfortable, confident, and at ease.",
+                      "children": []
+                    },
+                    {
+                      "title": "Avoiding Testimony Problems",
+                      "toc_id": 508,
+                      "chunk_count": 7,
+                      "total_chunks_in_branch": 7,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        7260,
+                        7261,
+                        7262,
+                        7263,
+                        7264,
+                        7265,
+                        7266
+                      ],
+                      "content": "Avoiding Testimony Problems\n\nAlthough you should recognize when conflict-of-interest issues apply to your case and discuss any concerns with the attorney who hires you, be aware of a practice called conflicting out The practice of opposing attorneys trying to prevent you from testifying by claiming you have discussed the case with them and, therefore, have a conflict of interest. . It’s an attempt by opposing attorneys to prevent you from serving on an important case and is most common in the private sector when you work as an independent consultant. Opposing attorneys might call to discuss the case with you and then claim you can’t testify because of a conflict of interest caused by you discussing the case with another attorney besides the one who hired you. As a result, you might be excluded from working for an\n\nattorney besides the one who hired you. As a result, you might be excluded from working for an attorney needing your services. (The issue of conflict is raised by motion after witness lists are exchanged.)\n\nIn addition, avoid agreeing to review a case unless you’re under contract with that person. Also, avoid conversations with opposing attorneys—there’s no such thing as an “off the record” conversation with opposing attorneys after you have been retained; refer them to the attorney who retained you. Have a fee agreement for your case review ready to e-mail or fax to opposing attorneys to protect yourself from this practice; this agreement serves as proof that they didn’t want to retain you. If you aren’t retained, you’re in a better position to collect a fee for the service you did provide, and it deters them from attempting to manufacture a conflict issue to disqualify you later as an expert witness.\n\nEarly in direct examination, your attorney should ask whether you were hired to perform an analysis and testify. He or she might ask how much you charged for your services and whether you have already been paid; you should receive payment before testifying. If you haven’t been paid, it might seem that you have a contingent interest in the litigation—that your payment depends on the resolution of the case. Fees and payment schedules are appropriate subjects for examination, although the judge might limit these questions. If your attorney doesn’t ask you questions about payment, the opposing counsel could examine you on it in an effort to discredit you or lessen your credibility as a witness. However, the opposing counsel knows that this tactic might be used on his expert witnesses, too, so\n\nHowever, the opposing counsel knows that this tactic might be used on his expert witnesses, too, so he might touch on the subject but not dwell on it, unless you say you haven’t been paid completely.\n\nWhen you’re testifying, don’t talk to anyone during court recess. If the opposing attorney sees you having a conversation with anyone, including the attorney who retained you, he or she could cross-examine you again and demand that you explain and repeat your conversation. However, be aware that your attorney might want to notify you of updates during breaks, so make sure you conduct any conferences in a private setting. If a juror approaches and says anything to you, decline to talk with him or her and promptly report the contact to the attorney who retained you. This event must be reported to the court.",
+                      "children": []
+                    },
+                    {
+                      "title": "Understanding Prosecutorial Misconduct",
+                      "toc_id": 509,
+                      "chunk_count": 3,
+                      "total_chunks_in_branch": 3,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        7267,
+                        7268,
+                        7269
+                      ],
+                      "content": "Understanding Prosecutorial Misconduct\n\nIf you’re working for a prosecutor in a criminal case and believe you have found exculpatory evidence (evidence that exonerates or diminishes the defendant’s liability), you have an obligation to ensure that the evidence isn’t concealed. Initially, you should report the evidence (emphasizing its exculpatory nature) to the prosecutor handling the case. Be sure you document communicating your concern to the prosecutor. If this information isn’t disclosed to the defense attorney in a reasonable time, you can report it to the prosecutor’s supervisor. Be sure to document this communication, too. Documentation of each attempt to induce disclosure and your reasoning is important to protect your reputation.\n\nIf these efforts still don’t result in disclosure, you can report the lack of disclosure to the judge. Be sure you have documented your attempts to bring the matter to the prosecutor’s attention before bringing it to the judge. Don’t communicate directly with the defense attorney; reporting evidence to the judge fulfills your obligation. The rules that apply to defense expert witnesses are different.",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "Testifying During Direct Examination",
+                  "toc_id": 510,
+                  "chunk_count": 12,
+                  "total_chunks_in_branch": 12,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    7270,
+                    7271,
+                    7272,
+                    7273,
+                    7274,
+                    7275,
+                    7276,
+                    7277,
+                    7278,
+                    7279,
+                    7280,
+                    7281
+                  ],
+                  "content": "Testifying During Direct Examination\n\nYou provide direct testimony when you answer questions from the attorney who hired you. This direct examination is the most important part of testimony at a trial. Cross-examination is not as important, even if the opposing attorney is attempting to discredit you.\n\nWhen preparing your testimony for direct examination, keep some guidelines and techniques in mind. You should work with your attorney to get the right language that communicates your message to the jury effectively. Also, your attorney might advise you to be wary of your inclination to be helpful. This trait is natural, but it can hurt your testimony. You shouldn’t volunteer any information or be overly friendly (or hostile) to the opposing attorney.\n\nReview the examination plan your attorney has prepared to see whether you can make any suggestions for improvement; this plan is structured to ensure that questions elicit relevant evidence during direct examination. Make sure you’ve prepared a clear overview of your findings and have a systematic and easy-to-follow plan for describing your evidence-collection methods. Practice testifying with your graphics so that you’re comfortable using them.\n\nYour attorney might also help you develop a theme to follow when presenting your testimony, but make sure you use your own words when answering questions. Generally, the best approach your attorney can take in direct examination is to ask you open-ended questions and let you give your testimony.\n\nIn addition, make sure you know the following terms before giving testimony because your attorney will likely use them during the direct examination:\n\nIndependent recollection—Information you know about this case and others without being prompted\n\nCustomary practice—Procedures that are traditionally followed in similar cases\n\nDocumentation of the case—The written records you have maintained\n\nWhen your attorney questions you about your background and qualifications, your answers should show why you are an expert able to give testimony. Give answers that emphasize your factual findings and opinions. Remember to tailor your language to the jury’s educational level, and try to strike a balance between technical language and layperson language when describing complex matters.\n\nAvoid vagueness in your wording choices, too. For example, don’t use expressions such as “very large” or “a long time.” The meaning of these expressions varies, depending on what they’re compared with, and this comparison might be different for every juror. Use precise numbers and units of measurement, and if relevant, cite numbers’ statistical position, relationship to the mean, or an expected value or range.\n\nWhen you’re using graphics in a presentation, keep in mind that you’re instructing the jury in what you did to collect evidence, so follow some of the same guidelines teachers use in a classroom to make sure the jury understands your explanations.",
+                  "children": []
+                },
+                {
+                  "title": "Testifying During Cross-Examination",
+                  "toc_id": 511,
+                  "chunk_count": 25,
+                  "total_chunks_in_branch": 25,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    7282,
+                    7283,
+                    7284,
+                    7285,
+                    7286,
+                    7287,
+                    7288,
+                    7289,
+                    7290,
+                    7291,
+                    7292,
+                    7293,
+                    7294,
+                    7295,
+                    7296,
+                    7297,
+                    7298,
+                    7299,
+                    7300,
+                    7301,
+                    7302,
+                    7303,
+                    7304,
+                    7305,
+                    7306
+                  ],
+                  "content": "Testifying During Cross-Examination\n\nWhen answering questions from the opposing attorney, use your own words. Keep in mind that certain words have additional meanings that an opposing attorney can exploit. For example, the word “suspicious” is more value laden than the more neutral “concerned.”\n\nBe aware of leading questions from the opposing attorney, too. An ambiguous question—such as “Isn’t it true that forensics experts always destroy their handwritten notes?,”—is an attempt to lead you to say something that could be construed as wrong. (The answer to that question should be “I don’t know.”) Leading questions call for yes or no answers and are sometimes referred to as “setup questions”—setting you up for a response that could be damaging to your client’s case. They’re often phrased in a complex structure, designed to limit your freedom in answering. Getting to the real question opposing counsel is asking might take many questions.\n\nIf opposing attorneys ask you a question such as “Did you use more than one tool to verify the evidence?” they’re checking to make sure you validated the findings from one tool by using another tool. Opposing attorneys often ask the following questions, too:\n\nWhat tools did you use, and what are their known problems or weaknesses?\n\nAre the tools you used reliable? Are they consistent, and do they produce the same results?\n\nHave other professionals called on you as a consultant on how to use tools?\n\nDo you keep up with the latest technologies used in digital forensics, such as by reading journal articles?\n\nDuring examinations, lawyers aren’t supposed to ask another question until you have finished answering the current question. However, the opposing counsel sometimes uses rapid-fire questions during cross-examination that are meant to throw you off. Taking a moment to turn toward the jury before you answer gives you more control over the timing and speed of the opposing attorney’s examination. Even though your attorney should object by saying, “Counsel has not allowed the witness to answer the question,” don’t be afraid to regroup and restate your answers if you get confused during your testimony. Jurors will sympathize because often they’re confused by the opposing attorney’s questions, too.\n\nIf the opposing attorney declares that you aren’t answering the questions, she could be making an attempt to get you to change your testimony. You aren’t giving the answer she wants, or she’s attempting to get you to say something that contradicts part of your previous testimony. Don’t take this attempt personally, but think carefully about what the opposing attorney is trying to do.\n\nDuring a jury trial, keep a comfortable level of eye contact with the jury. You might find yourself competing with the opposing attorney, but do your best to keep the jury’s attention on you during your testimony. As the opposing attorney asks you questions, avoid strict yes or no answers, if possible; add facts to clarify your answer, when appropriate, before the opposing attorney can hit you with a “killer question.” This type of question, contrived based on a change in a basic underlying fact, is one that you seemingly can’t answer or deny. It can derail your testimony and your client’s case; however, the judge will usually support you in stating conditions or limits. The most effective process for success in cross-examination is to establish the hypothetical facts that are the basis of\n\nfor success in cross-examination is to establish the hypothetical facts that are the basis of your opinion. Hypothetical facts should be based on evidence presented at trial as well as stipulations and standard facts that all professional digital forensics examiners rely on, such as the fact that a kilobyte is composed of 1024 bytes.\n\nOn some occasions, you have to bring in another examiner or agency to collect more evidence because of the nature of the case. As an examiner working on a civil case, for example, sometimes you need to hand off evidence you have gathered to another company’s security group or a government agency to develop the case further. Consult with your supervisor or the party who retained you to determine the correct procedure.\n\nSometimes opposing attorneys ask several questions inside one question; this practice is called a compound question, and your attorney should object to it. If your attorney doesn’t, you can respond by saying, “Could you please break your last question into separate questions?” Another tactic opposing attorneys use in cross-examinations is to make a speech and phrase it as a question. You have no obligation to respond to statements by opposing counsel. The judge usually catches this error, and your attorney should also object. Other methods opposing attorneys use to challenge your credibility are putting words in your mouth and summarizing your testimony to fit their needs, creating assumptions or speculation, and controlling the pace of your testimony. Other tactics are stating minor\n\nor speculation, and controlling the pace of your testimony. Other tactics are stating minor inconsistencies that cause you to make conflicting statements and encouraging you to volunteer information.\n\nYour response to cross-examination tactics should challenge the opposing attorney to be more sensible, a response that often plays well with juries. Take your time answering questions. Be thoughtful, professional, and courteous in your responses. The more patient you are during cross-examination, the better you’ll weather any possible attacks. If the opposing attorney becomes assertive or upset with your testimony, be as professional and courteous as possible. If he continues to lose control, staying calm and professional strengthens your image by comparison. Responding to a question with a sentence that communicates limitations or qualifications might be important, if a simple yes or no doesn’t answer the question completely and accurately. If you need to have your attorney expand a line\n\nanswer the question completely and accurately. If you need to have your attorney expand a line of questions on redirect, have an agreed-on expression you can use to signal him, such as “This question requires a more complex answer, but the short answer is yes (or no).”\n\nIn addition to direct examination and cross-examination, most jurisdictions now allow the judge and jurors to ask questions. These questions are subject to the same rules of evidence that any other question is. Attorneys can object to these questions but generally won’t unless they are an especially serious breach of the rules, such as a question that was specifically excluded in a motion in limine. Answering a question from the judge or a juror should be viewed as an opportunity. As a witness, you usually have to guess at what’s important to the judge and jury, but you don’t when responding to a question directly from them.\n\nMany factors contribute to your stress when testifying, including the judge, the attorneys, the jury, and the feeling of losing control. Don’t think you’re responsible for the outcome. If you make a mistake, correct it, and get back on track with your testimony. You should avoid showing that you have lost control, such as by the following behaviors:\n\nBeing argumentative when being badgered by the opposing attorney or being nervous about testifying\n\nHaving poor listening skills or defensive body language, such as crossing your arms\n\nBeing too talkative or talking too fast when answering questions\n\nBeing too technical for an ordinary juror to understand your testimony\n\nActing surprised and unprepared to respond when presented with unknown or new information\n\nNever have unrealistically high self-expectations when testifying; everyone makes mistakes. Who controls the testimony is the most important part for the attorney, in both direct examination and cross-examination. The key to successful cross-examination is to continue selling yourself to the jury, no matter how much the opposing attorney tries to discredit you or your testimony. In addition, remember that for every expert witness, there’s a first time testifying. Good technical credentials and related experience are the most effective defense against cross-examination voir dire when testifying. You should also remember that the number of times you’ve testified isn’t a condition of qualifying as an expert witness.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Testifying in Court (Interactive Activity)",
+                "toc_id": 503,
+                "slides_allocated": 1
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          }
+        }
+      ]
+    }
+  ]
+}

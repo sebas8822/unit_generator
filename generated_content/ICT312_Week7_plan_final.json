@@ -1,0 +1,1282 @@
+{
+  "week": 7,
+  "overall_topic": "Linux Boot Processes and File Systems. Recovering Graphics Files.",
+  "weekly_slide_summary": {
+    "total_slides_for_week": 46,
+    "total_framework_slides": 8,
+    "total_content_slides": 31,
+    "total_interactive_slides": 7,
+    "number_of_decks": 2
+  },
+  "weekly_time_summary_minutes": {
+    "total_time_for_week_minutes": 140,
+    "total_framework_time": 12,
+    "total_content_and_interactive_time": 128
+  },
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "total_slides_in_deck": 22,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 16,
+        "interactive": 2
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 58,
+        "total_deck_time": 64
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Linux Boot Processes and File Systems. Recovering Graphics Files.",
+            "deck_title": "Week 7, Lecture 1"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Examining Linux File Structures",
+              "Understanding Data Compression"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Examining Linux File Structures",
+              "toc_id": 272,
+              "chunk_count": 77,
+              "total_chunks_in_branch": 131,
+              "budget_slides_content": 9,
+              "direct_slides_content": 5,
+              "total_slides_in_branch": 10,
+              "time_allocation_minutes": {
+                "direct_content_time": 15,
+                "direct_interactive_time": 5,
+                "total_branch_time": 32
+              },
+              "chunks_sorted": [
+                3624,
+                3625,
+                3626,
+                3627,
+                3628,
+                3629,
+                3630,
+                3631,
+                3632,
+                3633,
+                3634,
+                3635,
+                3636,
+                3637,
+                3638,
+                3639,
+                3640,
+                3641,
+                3642,
+                3643,
+                3644,
+                3645,
+                3646,
+                3647,
+                3648,
+                3649,
+                3650,
+                3651,
+                3652,
+                3653,
+                3654,
+                3655,
+                3656,
+                3657,
+                3658,
+                3659,
+                3660,
+                3661,
+                3662,
+                3663,
+                3664,
+                3665,
+                3666,
+                3667,
+                3668,
+                3669,
+                3670,
+                3671,
+                3672,
+                3673,
+                3674,
+                3675,
+                3676,
+                3677,
+                3678,
+                3679,
+                3680,
+                3681,
+                3682,
+                3683,
+                3684,
+                3685,
+                3686,
+                3687,
+                3688,
+                3689,
+                3690,
+                3691,
+                3692,
+                3693,
+                3694,
+                3695,
+                3696,
+                3697,
+                3698,
+                3699,
+                3700
+              ],
+              "content": "Examining Linux File Structures\n\nUNIX was created in the early 1970s to be a multiuser, multithreaded, secure OS, and many UNIX-based OSs followed. They came in many “flavors” (the term often used for different distributions), but the Open Group was created as a neutral standards consortium that determines and certifies when an OS meets UNIX requirements. For more information, see www.unix.org/online.html.\n\nSome notable UNIX distributions included Silicon Graphics, Inc. (SGI) IRIX, Santa Cruz Operation (SCO) UnixWare, Sun Solaris, IBM AIX, and HP-UX. Most are no longer available, however. Referring to Linux as a “UNIX system” or “UNIX variety” isn’t technically correct, as it isn’t UNIX certified. However, it’s available in even more flavors than UNIX had in its heyday. In addition, the Linux kernel is usually packaged with other software components, such as a GUI and applications, so that users don’t have to combine several open-source elements to create a working environment.\n\nThe most widely used distributions include Ubuntu, CentOS, Mint, Fedora, and Gentoo. The term “kernel” is often used when discussing Linux because technically, Linux is only the core of the OS. Linus Torvalds, the inventor of Linux, maintains the official kernel. All other tools, graphical interfaces, and so forth are maintained and developed by others. Despite the association of the word “kernel” with Linux terminology, all UNIX-like OSs have a kernel, and so do all Windows OSs.\n\nNote\n\nUbuntu 16.04 is a long-term support (LTS) version of Ubuntu, meaning it will be supported for the next five years. In some activities in this book, Ubuntu 14.04 is used; it’s also an LTS version.\n\nNote\n\nIn Ubuntu 15.x and later, the upstart init (initialization) system (/sbin/init) was replaced with the systemd init system (/sbin/upstart). This new init system affects keywords and services but not the location of files. For a full list of comparisons between init systems, see https://wiki.ubuntu.com/SystemdForUpstartUsers.\n\nTable 7-1 lists several Linux system files containing information about users and their activities, and Table 7-2 lists important top-level directories in Linux.\n\nTable 7-1. Linux System Files\n\nSystem\nfile Contents /etc/exports File systems exported to remote hosts;\nmight include remote drive mappings /etc/fstab File system table of devices and mount\npoints /var/log/lastlog User’s last logon /var/log/wtmp Logon and logoff history\ninformation /var/run/utmp Current user’s logon information /var/log/dmesg System messages log /var/log/syslog System log, occasionally called system.log or kernel.log /etc/shadow Master password file, containing hashed\npasswords for the local system /etc/group Group memberships for the local\nsystem /etc/passwd Account information for the local\nsystem\n\nTable 7-2. Core Top-Level Directories of a Linux System\n\nDirectory Contents /usr Most applications and commands are in\nthis directory or its subdirectories bin (stands for “binary” and contains binary files required at boot time)\nand sbin (which requires superuser\npermission to run the binaries in it). /etc Most system configuration files are\nstored in this directory. /home The home directories for all users,\nusually named after their usernames. /root The home directory for the root user\n(superuser), which is kept separate from other user home\ndirectories. /dev Device files that act as stand-ins for\nthe devices they represent, as described in Chapter\n3 ; for example, /dev/sda is the\nfirst non-IDE disk drive on the system, usually the main hard\n\n3 ; for example, /dev/sda is the\nfirst non-IDE disk drive on the system, usually the main hard\ndrive. /var Subdirectories such as log (often useful for investigations), mail (storing e-mail accounts), and spool (where print jobs are spooled).\n\nNote\n\nBefore beginning this activity, create a C:\\Work\\Chap07\\Chapter folder (referred to as your “work folder” in steps). Download to this work folder any files in this chapter’s downloads section on the student companion site for this book.\n\nChapter 3 covered Linux commands for acquiring images. In this section, you use standard commands to find information about your Linux system. Most of the commands used in this activity work the same in all UNIX-like OSs, including Mac OSs. Remember that UNIX and Linux commands are case sensitive. The wrong capitalization can mean your commands are rejected as incorrect or interpreted as something different. If you don’t have Ubuntu 16.04 installed, follow these steps to create a virtual machine for running it.\n\n1\n\nStart VirtualBox, and click the New icon at the upper left to start the Create Virtual Machine Wizard.\n\n2\n\nIn the Name and operating system window, type Ubuntu 16.04 for the virtual machine name. Accept the default settings, and click Next.\n\n3\n\nIn the Memory size window, increase the setting to 1024, and then click Next.\n\n4\n\nIn the Hard drive window, click Create a virtual hard drive now, and then click Create. In the Hard drive file type window, click Virtual Machine Disk (VMDK), and then click Next. In the “Storage on physical hard drive” window, click the Dynamically allocated option button, and then click Next.\n\n5\n\nIn the File location and size window, increase the setting to 20 GB, and then click Create. Leave VirtualBox open.\n\n6\n\nStart a Web browser, go to www.ubuntu.com/download/desktop, and download the ISO image for Ubuntu 16.04.\n\n7\n\nIn the Oracle VM VirtualBox Manager, click the Settings icon.\n\n8\n\nClick Storage in the left pane. In the Storage Tree section, click Empty under Controller: IDE. In the Attributes section on the right, click the CD icon (see Figure 7-1). Click Choose Virtual Optical Disk File. Navigate to the folder where the ISO file is stored, double-click the ISO file, and then click OK.\n\n9\n\nIn the Oracle VM VirtualBox Manager, click the Ubuntu 16.04 virtual machine, and then click the Start icon. The VM should follow a standard OS installation. Accept the default settings. Leave the virtual machine running for the next activity.\n\nBefore moving on to working with Linux forensics tools, the following activity gives you a chance to review some commands. For example, being able to find a machine’s name is always useful; the uname command is used for this task. Displaying file listings and permissions is also useful for investigators. To help with these tasks, you can use the > character to redirect the output of the command preceding it to a file you specify. If the file exists, it’s overwritten with a new one; if the file doesn’t exist, it’s created. The double >> adds output at the end of a specified file, if it already exists.\n\nFor all the commands in the following activity, you can see their output in the terminal window or add the output to your log file by entering >> ~/my.log at the end of each command. (The ~ character specifies the current user’s home directory.) Use the echo command to add notes or headings in the log, and add blank lines to make the contents easier to read. Just don’t forget that a single > character replaces the entire file instead of appending to it. You aren’t prompted that you’re overwriting the file.\n\nAs you’ve learned, Linux commands use options to create variations of a command. There’s no difference between grouping letter arguments (such as l and a) or entering them separately. Therefore, ls -la functions the same as ls -l -a. Arguments consisting of multiple letters must be preceded by two -- characters instead of one and can’t be grouped together, as in ls --all.\n\nAs you’ve learned in previous chapters, the pipe (|) character also redirects the output of the command preceding it. Unlike the > character, however, it redirects output as input for the following command. As you see in this activity, the output of the cat command (which would have displayed the entire file in the terminal window) is sent to the grep command to search for occurrences of your username. The grep command then displays only lines matching search criteria.\n\n1.\n\nStart Ubuntu 16.04, if necessary. On the left side of the desktop are icons for different categories of applications. You can use these desktop icons to select an application, or click the Ubuntu icon and start typing the name of the application you want to have the system make a suggestion (see Figure 7-2). Type term (in this case, to suggest opening the terminal window), and click the Terminal icon.\n\n2.\n\nTo find the name of your computer and the Linux kernel revision number, type uname -a and press Enter. To record the results in a file, type uname -a > ~/my.log and press Enter. Nothing is displayed in the terminal window, but a file called my.log is created in your user profile folder, and the output of the uname -a command is redirected to it.\n\n3.\n\nTo identify your current path, type pwd (which stands for “print working directory”) and press Enter. In a new terminal window, it’s likely the user’s home directory.\n\n4.\n\nTo see a list of the directory’s contents, type ls and press Enter. For comparison, try typing ls -l and pressing Enter, and then typing ls -la and pressing Enter. (Note: In listings, all files beginning with the . character are usually omitted, unless you add the a option, which stands for “all.”)\n\n5.\n\nTo record the full listing in the same log file you created earlier, type echo \"\" >> ~/my.log and press Enter, and then type echo \"Full listing:\" >> ~/my.log and press Enter. Finally, type ls -la >> ~/my.log and press Enter. These commands add a blank line, followed by the heading Full listing:, and finally the listing of the directory’s contents in your log file.\n\n6.\n\nTo see the updated contents of your log file, type cat ~/my.log and press Enter.\n\nTip\n\nIn current versions of Gnome, which is the Ubuntu desktop, the terminal window’s scrollbar doesn’t show, but you can display it by moving your mouse pointer to where a scrollbar is usually placed.\n\n7.\n\nType ifconfig and press Enter to see your network interfaces: wired, wireless, FireWire, lo (the loopback device), and so forth. They’re displayed with their MAC addresses (in the “HWaddr” column) and currently assigned IP addresses (in the “inet addr” column). Try the same command with -a , and observe the difference in the output. Append the output of this command to your log file.\n\n8.\n\nNavigate to the root directory by typing cd / and pressing Enter. Confirm that you’re at the top of the directory tree by typing pwd and pressing Enter.\n\n9.\n\nTo identify the username you’re currently using, type whoami and press Enter.\n\n10.\n\nTo see a listing of all user accounts configured on the system, type sudo cat/etc/passwd and press Enter, and then type the password and press Enter. The output displays the contents of the user account configuration file, passwd. It contains the superuser account “root,” the regular user account you’re currently using, and a long list of system accounts for system services, such as lp, sys, daemon, and sync. For each account, you see the username, numeric user and group IDs, possibly a formatted display name, the home directory (which is /root for the superuser), and the standard command shell, which is usually /bin/bash for regular and root users.\n\n11.\n\nTo see just the information for your user account, type cat /etc/passwd | grep user (replacing user with your own username) and press Enter.\n\n12.\n\nAppend the /etc/passwd file to your log file by typing cat /etc/passwd >> ~/my.log and pressing Enter. The /etc/passwd file doesn’t contain user passwords, although it used to store hashed passwords. Because everyone can read this file, storing even hashed passwords was considered a security risk, so they were moved to the /etc/shadow file, which can be accessed only by the root user.\n\n13.\n\nTo get a detailed listing of the /etc/shadow file, type ls -l /etc/shadow and press Enter. If permission is denied, repeat this command preceded by sudo .\n\n14.\n\nType sudo cat /etc/shadow and press Enter, and then type the password and press Enter. The file’s contents are shown, but only regular user accounts contain a password hash. You should see this information for your user account.\n\n15.\n\nTo append just the entry for your user account to your log file, type sudo cat/etc/shadow | grep user >> ~/my.log (replacing user with your username) and press Enter. This command redirects the output of cat as input to grep, which leaves only the line containing your username, and then appends it to your log file. You can have multiple | pipes in a single command but only one redirection to a file (using > or >>) because the file is a like a dead end—there can be no output after it’s redirected to a file.\n\n16.\n\nClose the terminal window by typing exit and pressing Enter, and leave Ubuntu running for the next activity.\n\nNext, you examine deconstructing password hash values in the etc/shadow file. The entries in /etc/shadow are separated by colons. The first field is the username, and the second is the password hash, if available. (For more details, see www.cyberciti.biz/faq/understanding-etcshadow-file/.) The remaining fields are numeric settings, including the maximum time before a password must be changed. Take a look at a typical password hash field:\n\nIt begins with a $ symbol, followed by a digit representing the hashing algorithm (which is 6 for SHA-512). Next is another $ symbol followed by a short hash string, which is the password salt, used to make password hashes different even if two users have the same password. Finally, there’s another $ symbol followed by a long hash string, which is the salted password hash. Even though passwords aren’t stored in plaintext, two users having the same password normally results in identical hashes, which could make cracking passwords easier. In addition, without password salting, it’s possible for others to create rainbow tables (discussed in more detail in Chapter 9) to look up passwords.\n\nThe salt and hash are stored in an encoded format with letters, numbers, dots, and slashes that’s similar to base-64 encoding. Assuming the password hash field starts with $6$, meaning SHA-512 is being used, you can use the following command to find a salted password hash, replacing ShortHashString and password with the information from your own entry in the /etc/shadow file:\n\nThis command returns the salted password hash and is used internally by the OS to check whether the correct password was entered. However, knowing how password hash values are created is helpful in case you need to attempt cracking passwords.",
+              "children": [
+                {
+                  "title": "File Structures in Ext4",
+                  "toc_id": 273,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 54,
+                  "budget_slides_content": 4,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 4,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 12
+                  },
+                  "chunks_sorted": [
+                    3701,
+                    3702,
+                    3703,
+                    3704,
+                    3705,
+                    3706,
+                    3707,
+                    3708
+                  ],
+                  "content": "File Structures in Ext4\n\nLinux supports a wide range of file systems. The early standard was Second Extended File System (Ext2) An early Linux file system. , and then Third Extended File System (Ext3) A Linux file system that made improvements to Ext2, such as adding journaling as a built-in file recovery mechanism. replaced Ext2 in most Linux distributions. Its major difference from Ext2 was being a journaling file system, which has a built-in file recovery mechanism used after a crash.\n\nA few years later, Fourth Extended File System (Ext4) A Linux file system that added support for partitions larger than 16 TB, improved management of large files, and offered a more flexible approach to adding file system features. was introduced. Among other features, it added support for partitions larger than 16 TB, improved management of large files, and offered a more flexible approach to adding file system features. Because these changes affected the way the Linux kernel interacts with the file system, adoption of Ext4 was slower in some Linux distributions, but it’s now considered the standard file system for most distributions. The Ubuntu version you used previously, for example, has an Ext4 partition at its core, unless you select another file system during installation.\n\nIn UNIX and Linux, everything is considered a file, including disk drives, monitors, tape drives, network interface cards, system memory, and directories. UNIX files are defined as objects, which means a file, like an object in an object-oriented programming language, has properties and methods (actions such as writing, deleting, and reading) that can be performed on it.\n\nUNIX/Linux has four components defining the file system: boot block, superblock, inode block, and data block. A block is the smallest disk allocation unit in the UNIX/Linux file system and can be 512 bytes and up; block size depends on how the disk volume is initiated. The boot block A block in the Linux file system containing the bootstrap code used to start the system. contains the bootstrap code—instructions for startup. A UNIX/Linux computer has only one boot block, on the main hard disk.\n\nThe superblock A block in the Linux file system that specifies and keeps track of the disk geometry and available space and manages the file system. contains vital information about the system and is considered part of the metadata. It specifies the disk geometry and available space and keeps track of all inodes (discussed in more detail in the following section). The superblock also manages the file system, including configuration information, such as block size for the drive, file system names, blocks reserved for inodes, and volume name. Multiple copies of the superblock are kept in different locations on the disk to prevent losing such important information.\n\nInode blocks Blocks in the Linux file system that contain the first data after the superblock and consist of a grouping of inodes. See also inodes. contain the first data after the superblock. An inode is assigned to every file allocation unit. As files or directories are created or deleted, inodes are also created or deleted. The link between inodes associated with files and directories controls access to those files or directories.\n\nThe data block A block in the Linux file system where directories and files are stored on a drive. is where directories and files are stored on a disk drive. This location is linked directly to inodes. As in Microsoft file systems, the Linux file system on a PC has 512-byte sectors. A data block is equivalent to a cluster of disk sectors on a FAT or NTFS volume. Blocks range from 1024 to 4096 bytes each on a Linux volume.",
+                  "children": [
+                    {
+                      "title": "Inodes",
+                      "toc_id": 274,
+                      "chunk_count": 22,
+                      "total_chunks_in_branch": 22,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        3709,
+                        3710,
+                        3711,
+                        3712,
+                        3713,
+                        3714,
+                        3715,
+                        3716,
+                        3717,
+                        3718,
+                        3719,
+                        3720,
+                        3721,
+                        3722,
+                        3723,
+                        3724,
+                        3725,
+                        3726,
+                        3727,
+                        3728,
+                        3729,
+                        3730
+                      ],
+                      "content": "Inodes\n\nInodes A key part of the Linux file system, these information nodes contain descriptive file or directory data, such as UIDs, GIDs, modification times, access times, creation times, and file locations. contain file and directory metadata and provide a mechanism for linking data stored in data blocks. When a file or directory is created on a Linux file system, an inode is assigned that contains the following information:\n\nThe mode and type of the file or directory\n\nThe number of links to a file or directory\n\nThe UID and GID of the file’s or directory’s owner\n\nThe number of bytes in the file or directory\n\nThe file’s or directory’s last access time and last modified time\n\nThe inode’s last file status change time\n\nThe block address for the file data\n\nThe indirect, double-indirect, and triple-indirect block addresses for the file data\n\nCurrent usage status of the inode\n\nThe number of actual blocks assigned to a file\n\nFile generation number and version number\n\nThe continuation inode’s link\n\nThe only pieces of metadata not in an inode are the filename and path. Inodes contain modification, access, and creation (MAC) times, not filenames. An assigned inode has 13 pointers that link to data blocks and other pointers where files are stored. Pointers 1 through 10 link directly to data storage blocks in the disk’s data block and contain block addresses indicating where data is stored on the disk. These pointers are direct pointers because each one is associated with one block of data storage.\n\nAs a file grows, the OS provides up to three layers of additional inode pointers. In a file’s inode, the first 10 pointers are called indirect pointers The inode pointers in the first layer or group of an OS. See also inodes. . The pointers in the second layer are called double-indirect pointers The inode pointers in the second layer or group of an OS. See also inodes. , and the pointers in the last or third layer are called triple-indirect pointers The inode pointers in the third layer or group of an OS. See also inodes. .\n\nTo expand storage allocation, the OS initiates the original inode’s 11th pointer, which links to 128 pointer inodes. Each pointer links directly to 128 blocks located in the drive’s data block. If all 10 pointers in the original inode are consumed with file data, the 11th pointer links to another 128 pointers. The first pointer in this indirect group of inodes points to the 11th block. The last block of these 128 inodes is block 138.\n\nNote\n\nThe term “indirect inode” refers to the 11th pointer in the original inode, which points to another group of inode pointers. In other words, it’s linked indirectly to the original inode.\n\nIf more storage is needed, the 12th pointer of the original inode is used to link to another 128 inode pointers. From each of these pointers, another 128 pointers are created. This second layer of inode pointers is then linked directly to blocks in the drive’s data block. The first block these double-indirect pointers point to is block 139. If more storage is needed, the 13th pointer links to 128 pointer inodes, each pointing to another 128 pointers, and each pointer in this second layer points to a third layer of 128 pointers. File data is stored in these data blocks, as shown in Figure 7-3.\n\nAll disks have more storage capacity than the manufacturer states. For example, a 240 GB disk might actually have 240.5 GB free space because disks always have bad sectors. Windows doesn’t keep track of bad sectors, but Linux does in an inode called the bad block inode In the Linux file system, the inode that tracks bad sectors on a drive. . The root inode is inode 2, and the bad block inode is inode 1. Some forensics tools ignore inode 1 and fail to recover valuable data for cases. Someone trying to mislead an investigator can access the bad block inode, list good sectors in it, and then hide information in these supposedly “bad” sectors.\n\nTo find bad blocks on your Linux computer, you can use the badblocks command, although you must log in as root to do so. Linux includes two other commands that supply bad block information: mke2fs and e2fsck. The badblocks command can destroy valuable data, but the mke2fs and e2fsck commands include safeguards that prevent them from overwriting important information.",
+                      "children": []
+                    },
+                    {
+                      "title": "Hard Links and Symbolic Links",
+                      "toc_id": 275,
+                      "chunk_count": 24,
+                      "total_chunks_in_branch": 24,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "chunks_sorted": [
+                        3731,
+                        3732,
+                        3733,
+                        3734,
+                        3735,
+                        3736,
+                        3737,
+                        3738,
+                        3739,
+                        3740,
+                        3741,
+                        3742,
+                        3743,
+                        3744,
+                        3745,
+                        3746,
+                        3747,
+                        3748,
+                        3749,
+                        3750,
+                        3751,
+                        3752,
+                        3753,
+                        3754
+                      ],
+                      "content": "Hard Links and Symbolic Links\n\nA hard link In the Linux file system, a pointer that allows accessing the same file by different filenames, which refer to the same inode and physical location on the drive. is a pointer that allows accessing the same file by different filenames (Rute-Users-Guide/Linux Dictionary V 0.16, www.tldp.org/LDP/Linux-Dictionary/html/index.html). The filenames refer to the same inode and physical location on a drive. Originally, hard links were used so that people with different logins could access the same physical file. If one person changed the file, the changes would be apparent when another user opened the file.\n\nFigure 7-4 shows three hard-linked files pointing to the same inode: 23509. You use the ln command to create a hard link. The main requirement is that all files pointing to the same inode have to be on the same physical drive, not on another volume.\n\nTo see files and their inode numbers, you use the ls -ia command. Inside each inode is a field called link count A field in each inode that specifies the number of hard links. See also hard link. that specifies the number of hard links. The link count for directories is higher than for other file types. If two files have the same inode number, the link count is two. If one file is deleted, the link count drops by one. When the hard link count drops to zero, the file is effectively deleted. Most forensics tools, however, can retrieve these files.\n\nTo see the contents of a directory, you use the ls -a command. The first two items are . (called “dot”), which refers to the directory, and .. (called “dot-dot”), which refers to the parent directory (see Figure 7-5). Both dot and dot-dot count as links, so most directories have at least two hard links. Every subdirectory has a dot-dot reference to the corresponding parent directory; therefore, each one adds to the parent directory’s link count.\n\nSymbolic links Pointers to other files; they can point to items on other drives or other parts of the network and don’t affect the link count. See also hard link. (also known as “soft links” or “symlinks”) are simply pointers to other files and aren’t included in the link count. Unlike hard links, they can point to items on other drives or other parts of the network; they simply need an absolute path. Symbolic links have an inode of their own, which isn’t the same as the inode of the item they’re pointing to. Unlike hard links, they depend on the continued existence of the destination they’re pointing to, and they’re easier to identify on a running Linux system than hard links are. Unlike hard links, which point to their destination with an inode number, symbolic links identify their\n\nhard links, which point to their destination with an inode number, symbolic links identify their destination by name and path. If a name and path no longer exist, the symbolic link stops working. You create symbolic links with the ln -s command.\n\nTo see how hard and symbolic links work, follow these steps:\n\n1.\n\nStart Ubuntu, if necessary, and open a terminal window. Type ls -l and press Enter.\n\n2.\n\nThe number in the second column shows the hard link count (see Figure 7-6). Notice the number of hard links for the Music directory. Type cd Music and press Enter. Create a subdirectory called PopTunes by typing mkdir PopTunes and pressing Enter.\n\n3.\n\nReturn to your home directory by typing cd and pressing Enter. Next, type ls -l and press Enter, and notice that the link count for the Music directory has increased.\n\n4.\n\nTo create a hard link, first create a new file by typing touch originalfile and pressing Enter. Then create a new subdirectory in the /tmp directory by typing mkdir /tmp/chap07 and pressing Enter. Switch to your home directory again, if necessary, and type ln originalfile /tmp/chap07/newfile and press Enter.\n\n5.\n\nType ls -i and press Enter to see originalfile’s inode number. Change to the /tmp/chap07 directory and repeat this command. Newfile should have the same inode number as originalfile (see Figure 7-7).\n\n6.\n\nTo create a symbolic link, switch to the /tmp directory, and type mkdir testsym and press Enter to create a new subdirectory. Switch to this subdirectory, and create two files by typing touch test1 test2 and pressing Enter. If necessary, type cd .. and press Enter to return to the /tmp directory. Finally, create the symbolic link by typing ln -s /tmp/testsym mysym and pressing Enter.\n\n7.\n\nType ls -1 mysym (using the numeral one, not a lowercase L, for the option after the hyphen) and press Enter. The files you created in the testsym directory are also in mysym. Finally, type ls -l mysym and press Enter. An arrow points from mysym to the testsym directory, as shown in Figure 7-8, to indicate the symbolic link.\n\n8.\n\nLeave Ubuntu running and the terminal window open for the next activity.",
+                      "children": []
+                    }
+                  ]
+                }
+              ],
+              "interactive_activity": {
+                "title": "Examining Linux File Structures (Interactive Activity)",
+                "toc_id": 272,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Understanding Data Compression",
+              "toc_id": 299,
+              "chunk_count": 2,
+              "total_chunks_in_branch": 101,
+              "budget_slides_content": 7,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 8,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 26
+              },
+              "chunks_sorted": [
+                4113,
+                4114
+              ],
+              "content": "Understanding Data Compression\n\nMost graphics file formats, including GIF and JPEG, compress data to save disk space and reduce the file’s transmission time. Other formats, such as BMP, rarely compress data or do so inefficiently. In this case, you can use compression tools to compact data and reduce file size. Data compression The process of coding data from a larger form to a smaller form. is the process of coding data from a larger form to a smaller form. Graphics files and most compression tools use one of two data compression schemes: lossless or lossy. You need to understand how compression schemes work to know what happens when an image is altered.",
+              "children": [
+                {
+                  "title": "Lossless and Lossy Compression",
+                  "toc_id": 300,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    4115,
+                    4116,
+                    4117,
+                    4118,
+                    4119,
+                    4120,
+                    4121,
+                    4122
+                  ],
+                  "content": "Lossless and Lossy Compression\n\nThis section describes how lossless and lossy compression work, explains their advantages and disadvantages, and discusses what they mean in terms of digital forensics.\n\nLossless compression A compression method in which no data is lost. With this type of compression, a large file can be compressed to take up less space and then uncompressed without any loss of information. techniques reduce file size without removing data. When you uncompress a file that uses lossless compression, you restore all its information. GIF and Portable Network Graphics (PNG) file formats reduce file size with lossless compression, which saves file space by using mathematical formulas to represent data in a file. These formulas generally use one of two algorithms: Huffman or Lempel-Ziv-Welch (LZW) coding. Each algorithm uses a code to represent redundant bits of data. For example, if a graphics file contains a large red area, the algorithm can set 1 byte to red and set another\n\nif a graphics file contains a large red area, the algorithm can set 1 byte to red and set another byte to specify 200 red bytes instead of having to store 200 red bytes. Therefore, only 2 bytes are used.\n\nLossy compression A compression method that permanently discards bits of information in a file. The removed bits of information reduce image quality. is much different because it compresses data by permanently discarding bits of information in the file. Some discarded bits are redundant, but others are not. When you uncompress a graphics file that uses lossy compression, you lose information, although most people don’t notice the difference unless they print the image on a high-resolution printer or increase the image size. In either case, the removed bits of information reduce image quality. The JPEG format is one that uses lossy compression. If you open a JPEG file in a graphics program, for example, and save it as a JPEG file with a different name, lossy compression is reapplied\n\nfor example, and save it as a JPEG file with a different name, lossy compression is reapplied automatically, which removes more bits of data and, therefore, reduces image quality. If you simply rename a file by using File Explorer or the command line, however, the file doesn’t lose any more data.\n\nAnother form of lossy compression, vector quantization (VQ) A form of compression that uses an algorithm similar to rounding off decimal values to eliminate unnecessary bits of data. , uses complex algorithms to determine what data to discard based on vectors in the graphics file. In simple terms, VQ discards bits in much the same way rounding off decimal values discards numbers.\n\nSome widely used lossless compression utilities include WinZip, PKZip, Stufflt, and FreeZip. Lzip is a lossy compression utility. You use compression tools to compact folders and files for data storage and transmission. Remember that the difference between lossless and lossy compression is the way data is represented after it has been uncompressed. Lossless compression produces an exact replica of the original data after it has been uncompressed; lossy compression typically produces an altered replica of the data.",
+                  "children": []
+                },
+                {
+                  "title": "Locating and Recovering Graphics Files",
+                  "toc_id": 301,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    4123,
+                    4124,
+                    4125,
+                    4126,
+                    4127,
+                    4128
+                  ],
+                  "content": "Locating and Recovering Graphics Files\n\nIn a digital forensics investigation involving graphics files, you need to locate and recover all graphics files on the suspect drive and determine which ones are pertinent to your case. Because images aren’t always stored in standard graphics file formats, you should examine all files your forensics tools find, even if they aren’t identified as graphics files.\n\nSome OSs have built-in tools for recovering graphics files, but they’re time consuming, and the results are difficult to verify. Instead, you can use digital forensics tools dedicated to analyzing graphics files. As you work with these tools and built-in OS tools, develop standard procedures for your organization and continue to refine them so that other investigators can benefit from your experience. You should also follow standard procedures for each case to make sure your analysis is thorough.\n\nAs discussed earlier in “Examining the Exchangeable Image File Format,” you can use digital forensics tools to analyze images based on information in graphics files. Each graphics file contains a header with instructions for displaying the image; this header information helps you identify the file format. The header is complex and difficult to remember, however; instead of memorizing header information, you can compare a known good file header with that of a suspected file. For example, if you find an image that you suspect is a JPEG file but can’t display it with a bitmap graphics program, compare its file header with a known JPEG file header to determine whether the header has been altered. You could then use the information in the known JPEG file header to supply instructions for\n\nYou could then use the information in the known JPEG file header to supply instructions for displaying the image. In other words, you use the known JPEG header information to create a baseline analysis.\n\nBefore you can examine a graphics file header, often you need to reconstruct a fragmented graphics file. To do so, you need to identify the data patterns the graphics file uses. If part of the file header has been overwritten with other data, you might also need to repair the damaged header. By rebuilding the file header, you can then perform a forensics analysis on the graphics file. These techniques are described in the following sections.",
+                  "children": []
+                },
+                {
+                  "title": "Identifying Graphics File Fragments",
+                  "toc_id": 302,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 3,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    4129,
+                    4130,
+                    4131
+                  ],
+                  "content": "Identifying Graphics File Fragments\n\nIf a graphics file is fragmented across areas on a disk, you must recover all the fragments before re-creating the file. Recovering any type of file fragments is called carving The process of recovering file fragments that are scattered across a disk. , also known as salvaging Another term for carving, used outside North America. See carving. outside North America. To carve a graphics file’s data from file slack space and free space, you should be familiar with the data patterns of known graphics file types. Many digital forensics programs, such as X-Ways Forensics, OSForensics, EnCase, and FTK, can recognize these data patterns and carve the graphics files from slack and free space automatically, however. After you recover fragments of a graphics file, you restore them to continue your\n\nhowever. After you recover fragments of a graphics file, you restore them to continue your examination. You use Autopsy and WinHex later in this chapter to copy known data patterns from files you recover, and then restore this information to view the graphics file.",
+                  "children": []
+                },
+                {
+                  "title": "Repairing Damaged Headers",
+                  "toc_id": 303,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    4132,
+                    4133,
+                    4134,
+                    4135,
+                    4136,
+                    4137
+                  ],
+                  "content": "Repairing Damaged Headers\n\nWhen you’re examining recovered fragments from files in slack or free space, you might find data that appears to be a header for a common graphics file type. If you locate header data that’s partially overwritten, you must reconstruct the header to make it readable by comparing the hexadecimal values of known graphics file formats with the pattern of the file header you found.\n\nEach graphics file type has a unique header value. As you become familiar with these header values, you can spot data from partially overwritten headers in file slack or free space. For example, a JPEG file has the hexadecimal header value FFD8, followed by the label JFIF for a standard JPEG or Exif file at offset 6.\n\nSuppose you’re investigating a possible intellectual property theft by a new employee of Superior Bicycles, Inc. This employee, Tom Johnson, is the cousin of Jim Shu, an employee who had been terminated. Bob Aspen is an external contractor and investor who gets a strange e-mail from Terry Sadler about Jim Shu’s new project, as shown in Figure 8-5. Bob forwards the e-mail to Chris Robinson (the president of Superior Bicycles) to inquire about any special projects that might need capital investments. Chris forwards the e-mail to the general counsel, Ralph Benson, asking him to look into it. He also forwards it to Bob Swartz, asking him to have IT look for any e-mails with attachments. After a little investigation, Bob Swartz forwards an e-mail IT found with the subject “You might be\n\nAfter a little investigation, Bob Swartz forwards an e-mail IT found with the subject “You might be interested” to Chris Robinson (see Figure 8-6).\n\nFor this examination, you need to search for all possible places data might be hidden. To do this, in the next section you use Autopsy’s search function with hexadecimal search strings to look for known data.",
+                  "children": []
+                },
+                {
+                  "title": "Searching for and Carving Data from Unallocated Space",
+                  "toc_id": 304,
+                  "chunk_count": 9,
+                  "total_chunks_in_branch": 39,
+                  "budget_slides_content": 3,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
+                  },
+                  "chunks_sorted": [
+                    4138,
+                    4139,
+                    4140,
+                    4141,
+                    4142,
+                    4143,
+                    4144,
+                    4145,
+                    4146
+                  ],
+                  "content": "Searching for and Carving Data from Unallocated Space\n\nAt this time, you have to think about what to look for in the e-mails and on the mail servers. You need to ask some basic questions and make some assumptions based on available information to proceed in your search for information.\n\nThe message from t_sadler@zoho.com is addressed to b_aspen@aol.com, which matches the contractor’s name, Bob Aspen. Next, look at the time and date stamps in this message. The date and time are July 10, 2017 3:32 PM, and farther down is a header from Terry Sadler with a time and date stamp of July 10, 2017, 3:28 PM. Therefore, it seems Jim Shu sent the original message to the t_sadler@zoho.com account.\n\nNow examine the second e-mail, which contains the following pieces of information:\n\nJim Shu had a tour of the new kayak factory.\n\nAnother party might be interested in competing in manufacturing kayaks.\n\nJim Shu smuggled out JPEG photos he modified with a hexadecimal editor so that they wouldn’t be detected by any Web or e-mail filters.\n\nJim Shu provides instructions on how to reedit the digital photos and add the .jpg extension so that they can be viewed.\n\nWith these collected facts and your knowledge of JPEG file structures, you can use the steps in the following sections to determine whether these allegations are true.",
+                  "children": [
+                    {
+                      "title": "Planning Your Examination",
+                      "toc_id": 305,
+                      "chunk_count": 4,
+                      "total_chunks_in_branch": 4,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        4147,
+                        4148,
+                        4149,
+                        4150
+                      ],
+                      "content": "Planning Your Examination\n\nIn the e-mail from Tom Johnson to Jim Shu, Tom states, “So to view them you have to re-edit each file to the proper JPEG header of offset 0x FF D8 FF E0 and offset 6 of 4A.” From this statement, you can assume that any kayak photographs from the e-mail or on the drive contain unknown characters in the first four bytes and the sixth byte. Because this is all Tom said about the JPEG files, you need to assume that the seventh, eighth, and ninth bytes have the original correct information for the JPEG file.\n\nIn “Examining the Exchangeable Image File Format,” you learned the difference between a standard JFIF JPEG and an Exif JPEG file: The JFIF format has 0x FFD8 FFE0 in the first four bytes, and the Exif format has 0x FFD8 FFE1. In the sixth byte, the JPEG label is listed as JFIF or Exif. In the second e-mail, Jim Shu mentions 0x FF D8 FF E0, which is a JFIF JPEG format. He also says to change the sixth byte to 0x 4A, which is the uppercase letter “J” in ASCII.\n\nBecause the files have been extracted from the mail server, you should be thorough in your examination and analysis. You need to search all sectors of the drive for deleted files, both allocated space (in case Bob didn’t modify the files) and unallocated space. In the next section, you use Autopsy for Windows to search for and recover these JPEG files.",
+                      "children": []
+                    },
+                    {
+                      "title": "Searching for and Recovering Digital Photograph Evidence",
+                      "toc_id": 306,
+                      "chunk_count": 26,
+                      "total_chunks_in_branch": 26,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "chunks_sorted": [
+                        4151,
+                        4152,
+                        4153,
+                        4154,
+                        4155,
+                        4156,
+                        4157,
+                        4158,
+                        4159,
+                        4160,
+                        4161,
+                        4162,
+                        4163,
+                        4164,
+                        4165,
+                        4166,
+                        4167,
+                        4168,
+                        4169,
+                        4170,
+                        4171,
+                        4172,
+                        4173,
+                        4174,
+                        4175,
+                        4176
+                      ],
+                      "content": "Searching for and Recovering Digital Photograph Evidence\n\nIn this section, you learn how to use Autopsy for Windows to search for and extract (recover) possible evidence of JPEG files from the USB drive the EMTS manager gave you. The search string to use for this examination is “FIF.” Because it’s part of the label name of the JFIF JPEG format, you might have several false hits if the USB drive contains several other JPEG files. These false hits, referred to as false positives The results of keyword searches that contain the correct match but aren’t relevant to the investigation. , require examining each search hit to verify whether it’s what you are looking for. In this activity, you see that Autopsy has an Exif parser.\n\nNote\n\nBefore starting this activity, create the C:\\Work\\Chap08\\Chapter folder on your system (referred to as your “work folder” in steps). Then download the C08InChp.exe file in the downloads section for this chapter on the student companion site for this book. You should extract this file to your work folder.\n\nTo begin the examination, follow these steps to load the image file:\n\n1.\n\nStart Autopsy for Windows, and click the Create New Case button. In the New Case Information window, type C08InChp for the case name, and click Browse next to the Base Directory text box. Navigate to and click your work folder, and then click Next. In the Additional Information window, type C08InChp for the case number, enter your name for the examiner, and then click Finish.\n\n2.\n\nIn the Add Data Source window, leave the default selection Disk Image or VM file in the Type of Data Source to Add section, and then click Next.\n\n3.\n\nIn the Select Data Source window, click the Browse button, navigate to your work folder, click C08InChp.dd , and click Open. Then click Next.\n\n4.\n\nIn the Configure Ingest Modules window, you can select what type of processing you want, such as a hash lookup or an Exif parser (see Figure 8-7). Leave the default selections, click Next, and then click Finish.\n\n5.\n\nIn the left pane of Autopsy’s main window, click to expand Extracted Content, if necessary, and then click EXIF Metadata. Examine the files displayed in the upper-right pane (see Figure 8-8). As you scroll through these files, notice that the hexadecimal codes haven’t been altered. (In the e-mail Tom Johnson sent, the JFIF code was supposedly altered.)\n\n6.\n\nClick the Keyword Search down arrow at the upper right. To verify that no other codes have been altered, you should check whether a change has been made to the FIF format. In the text box, type FIF (all uppercase letters), click the Exact Match option, and then click Search. There are no results. Next, type fif (all lowercase letters), click the Substring Search option, and then click Search. Your results should be similar to what’s shown in Figure 8-9.\n\nNote\n\nIn Figure 8-10, the header for this JPEG file has been overwritten with zzzz. This unique header information might give you additional search values that could minimize false-positive hits in subsequent searches.\n\n7.\n\nTo view the changes made to the file header, you need to see the hexadecimal code. To do this, click the Hex tab in the lower-right pane, if necessary, and scroll down through the files until you see “zzzz” in the file header, as shown in Figure 8-10. You should be viewing the gametour2.exe file.\n\n8.\n\nClick the File Metadata tab to view the written, accessed, and created dates and times along with the sectors used by the file (see Figure 8-11).\n\n9.\n\nIn the search results, right-click the gametour2.exe file and click Extract File(s). In the Save As dialog box, navigate to your work folder, type Recover1.jpg for the filename, and then click Save. Autopsy then creates an Export subfolder of your work folder to store this file. In the confirmation message box, click OK, and then exit Autopsy.\n\nThe next section shows you how to rebuild header data from this recovered file by using WinHex, although any hexadecimal editor has the capability to examine and repair damaged file headers. From a digital forensics view, this procedure can be considered corrupting the evidence, but knowing how to reconstruct data, as in the preceding example, is part of an investigator’s job. When you change data as part of the recovery and analysis process, make sure you document each step as part of your reporting procedures. Your documentation should be detailed enough that other investigators could repeat the steps, which increases the credibility of your findings. When you’re rebuilding a corrupted evidence image file, create a new file and leave the original file in its initial corrupt condition.",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "Rebuilding File Headers",
+                  "toc_id": 307,
+                  "chunk_count": 22,
+                  "total_chunks_in_branch": 22,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    4177,
+                    4178,
+                    4179,
+                    4180,
+                    4181,
+                    4182,
+                    4183,
+                    4184,
+                    4185,
+                    4186,
+                    4187,
+                    4188,
+                    4189,
+                    4190,
+                    4191,
+                    4192,
+                    4193,
+                    4194,
+                    4195,
+                    4196,
+                    4197,
+                    4198
+                  ],
+                  "content": "Rebuilding File Headers\n\nBefore attempting to edit a graphics file you have recovered, try to open it with an image viewer, such as the default Microsoft tool. To test whether you can view the image, double-click the recovered file in its current location in File Explorer. If you can open and view the image, you have recovered the graphics file successfully. If the image isn’t displayed, you have to inspect and correct the header values manually.\n\nIf some of the data you recovered from the graphics file header is corrupt, you might need to recover more pieces of the file before you can view the image, as you’ll see in the next section. Because the deleted file you recovered in the previous activity, Recoverl.jpg, was altered intentionally, you might see an error message similar to the one in Figure 8-12 when you attempt to open the file.\n\nIf you can’t open a graphics file in an image viewer, the next step is to examine the file’s header data to see whether it matches the header in a good JPEG file. If the header doesn’t match, you must insert the correct hexadecimal values manually with a hexadecimal editor. To inspect a file with WinHex, follow these steps:\n\n1.\n\nStart WinHex, and click File, Open from the menu. Navigate to your work folder, and then double-click Recover1.jpg . If necessary, click OK. Figure 8-13 shows this file open in WinHex.\n\n2.\n\nAt the top of the WinHex window, notice that the hexadecimal values starting at the first byte position (offset 0) are 7A 7A 7A 7A, and the sixth position (offset 6) is also 7A. Leave WinHex open for the next activity.\n\nAs mentioned, a standard JFIF JPEG file has a header value of FF D8 FF E0 from offset 0 and the label name JFIF starting at offset 6. Using WinHex, you can correct this file header manually by following these steps:\n\n1.\n\nIn the center pane, click to the left of the first 7A hexadecimal value. Then type FF D8 FF E0, which are the correct hexadecimal values for the first 4 bytes of a JPEG file.\n\n2.\n\nIn the right pane at offset 6, click the z, and then type J, as shown in Figure 8-14.\n\nTip\n\nIn WinHex, when you type a keyboard character in the right pane, the corresponding hexadecimal value appears in the center pane. So, for example, when you type J in the right pane, the hexadecimal value 4A appears in the center pane.\n\n3.\n\nClick File, Save As from the menu. In the Save File As dialog box, navigate to your work folder, type Fixed1.jpg as the filename, and then click Save. If you’re using the demo version of WinHex, you get an error message because of the file size. Exit WinHex.\n\nNote\n\nIn WinHex Demo, you can save only up to 200 KB of data in a file.\n\nEvery two hexadecimal values you entered in the previous steps are equivalent to one ASCII character. For example, an uppercase “A” has the hexadecimal value 41, and a lowercase “a” has the hexadecimal value 61. Most disk editors have a reference chart for converting hexadecimal values to ASCII characters, such as in Figure 8-15.\n\nAfter you repair a graphics file header, you can test the updated file by opening it in an image viewer, such as Windows Photo Viewer, IrfanView, ThumbsPlus, QuickView, or ACDSee. If the file displays the image, as shown in Figure 8-16, you have performed the recovery correctly.\n\nThe process of repairing file headers isn’t limited to JPEG files. You can apply the same technique to any file you can determine the header value for, including Microsoft Word, Excel, and PowerPoint documents and other image formats. You need to know only the correct header format for the type of file you’re attempting to repair.",
+                  "children": []
+                },
+                {
+                  "title": "Reconstructing File Fragments",
+                  "toc_id": 308,
+                  "chunk_count": 15,
+                  "total_chunks_in_branch": 15,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    4199,
+                    4200,
+                    4201,
+                    4202,
+                    4203,
+                    4204,
+                    4205,
+                    4206,
+                    4207,
+                    4208,
+                    4209,
+                    4210,
+                    4211,
+                    4212,
+                    4213
+                  ],
+                  "content": "Reconstructing File Fragments\n\nYou might occasionally encounter corrupt data that prevents you from recovering data fragments for files. Whether the data corruption is accidental or intentional, you need to know how to examine a suspect drive and extract possible data fragments to reconstruct files for evidentiary purposes. In this section, you learn how to locate noncontiguous clusters that make up a deleted file. Current digital forensics tools can typically follow the links between clusters for FAT and NTFS file systems. However, sometimes the pointer information in a FAT or an NTFS Master File Table (MFT) file doesn’t list this information.\n\nThe JPEG file you recovered in the previous activity was fragmented into several clusters. The following activity shows you how to recover a fragmented graphics file on a suspect drive. To perform this data-carving task, you need to locate the starting and ending sectors for each fragmented group of sectors. Here’s an overview of the procedure:\n\n1.\n\nLocate and export all sectors of the fragmented file.\n\n2.\n\nDetermine the starting and ending cluster numbers for each fragmented group of sectors.\n\n3.\n\nCopy each fragmented group of sectors in their correct sequence to a recovery file.\n\n4.\n\nRebuild the file’s header to make it readable in a graphics viewer.\n\n5.\n\nAdd a .txt extension on all the copied sectors.\n\nTo view and rebuild a file, you use the techniques described previously in “Rebuilding File Headers.” (Remember to save the updated recovered data with a .jpg extension.) You should notice that it’s the same data that enabled you to re-create Fixed1.jpg. Other JPEG files with altered header information, such as gametour4.exe, can be recovered by using the same techniques. Because gametour4.exe is larger than 200 KB, you would have to extract its data into two separate files if you were using WinHex. Next, you would repair the first file containing the overwritten data of zzzz, such as fragment1.txt, and then combine the two files into one file. To combine them, you can use the DOS command type fragment2.txt >> fragment1.txt, and then use the DOS command ren to rename fragment1.txt as\n\ntype fragment2.txt >> fragment1.txt, and then use the DOS command ren to rename fragment1.txt as Fixed2.jpg. Another disk editor you can use is Hex Workshop (www.hexworkshop.com), which has a 30-day use policy for a demo version and no file size limits.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding Data Compression (Interactive Activity)",
+                "toc_id": 299,
+                "slides_allocated": 1
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          }
+        }
+      ]
+    },
+    {
+      "deck_number": 2,
+      "total_slides_in_deck": 24,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 15,
+        "interactive": 5
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 70,
+        "total_deck_time": 76
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Linux Boot Processes and File Systems. Recovering Graphics Files.",
+            "deck_title": "Week 7, Lecture 2"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Understanding Macintosh File Structures",
+              "Using Linux Forensics Tools",
+              "Recognizing a Graphics File",
+              "Identifying Unknown File Formats",
+              "Understanding Copyright Issues with Graphics"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Understanding Macintosh File Structures",
+              "toc_id": 276,
+              "chunk_count": 6,
+              "total_chunks_in_branch": 58,
+              "budget_slides_content": 4,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "chunks_sorted": [
+                3755,
+                3756,
+                3757,
+                3758,
+                3759,
+                3760
+              ],
+              "content": "Understanding Macintosh File Structures\n\nThe current Macintosh OS is macOS, version 10.13, code-named High Sierra. Other versions still in use include 10.12.5 (Sierra), 10.11 (El Capitan), 10.9 (Yosemite), 10.6 (Snow Leopard), 10.7 (Lion), and 10.8 (Mountain Lion). macOS is built with the new Apple File System (APFS). The current version offers better security, encryption, and performance speeds, and users can still mount HFS+ drives. Apple’s OSs have been developing since 1984 with the introduction of Apple System 1. In 1997, Apple introduced Mac OS 8, followed by Mac OS 9 and then OS X. With OS X, Macintosh moved to the Intel processor and became UNIX based.\n\nNote\n\nVersion 10.13 is also known as just “macOS” to conform with names such as iPod, tvOS, and so forth. You can find updated information on it at www.macworld.co.uk/news/mac-software/macos-sierra-latest-version-updates-beta-features-3630374/.\n\nBefore OS X, the Hierarchical File System (HFS) An older Mac OS file system, consisting of directories and subdirectories that can be nested. was used, in which files are stored in directories (folders) that can be nested in other directories. With Mac OS 8.1, Apple introduced Extended Format File System (HFS+) File system used by Mac OS 8.1 and later. HFS+ supports smaller file sizes on larger volumes, resulting in more efficient disk use. . The main difference between HFS and HFS+ is that HFS was limited to 65,536 blocks (512 bytes per block) per volume, and HFS+ raised the number of blocks to more than 4 billion. Consequently, HFS+ supports smaller file sizes on larger volumes, resulting in more efficient disk use. macOS High Sierra also supports the Unix File System (UFS), which isn’t\n\nin more efficient disk use. macOS High Sierra also supports the Unix File System (UFS), which isn’t covered in this book. In macOS High Sierra, the Apple File System (APFS) The file system introduced in macOS High Sierra. It was designed to be used with flash memory and offers better security, encryption, and performance speeds than HFS+. was introduced. It differs from many file systems in that when data is written to a device, the metadata is also copied to help with crash protection.",
+              "children": [
+                {
+                  "title": "An Overview of Mac File Structures",
+                  "toc_id": 277,
+                  "chunk_count": 23,
+                  "total_chunks_in_branch": 23,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    3761,
+                    3762,
+                    3763,
+                    3764,
+                    3765,
+                    3766,
+                    3767,
+                    3768,
+                    3769,
+                    3770,
+                    3771,
+                    3772,
+                    3773,
+                    3774,
+                    3775,
+                    3776,
+                    3777,
+                    3778,
+                    3779,
+                    3780,
+                    3781,
+                    3782,
+                    3783
+                  ],
+                  "content": "An Overview of Mac File Structures\n\nIn macOS, a file consists of two parts: a data fork The part of a macOS file containing the file’s actual data, both usercreated data and data written by applications, as well as resource map and header information, window locations, and icons. See also resource fork. , where data is stored, and a resource fork The part of a macOS file containing file metadata and application information, such as menus, dialog boxes, icons, executable code, and controls. Also contains resource map and header information, window locations, and icons. See also data fork. , where file metadata and application information are stored (see Figure 7-9). Both forks contain the following essential information for each file:\n\nResource map\n\nResource header information for each file\n\nWindow locations\n\nIcons\n\nThe data fork typically contains data the user creates, such as text or spreadsheets. Applications, such as Microsoft Word or Excel, also read and write to the data fork. When you’re working with an application file, the resource fork contains additional information, such as menus, dialog boxes, icons, executable code, and controls. In macOS, the resource or data fork can be empty.\n\nA volume is any storage medium used to store files. It can be all or part of the storage media for hard disks; however, in Mac OS 9 and earlier, a volume on a floppy disk was always the entire floppy. With larger disks, the user or administrator now defines a volume.\n\nVolumes have allocation blocks and logical blocks. A logical block In the macOS file system, a collection of data that can’t exceed 512 bytes. Logical blocks are assembled in allocation blocks to store files in a volume. See also allocation block. is a collection of data that can’t exceed 512 bytes. When you save a file, it’s assigned to an allocation block In the macOS file system, a group of consecutive logical blocks assembled in a volume when a file is saved. See also logical block. , which is a group of consecutive logical blocks. As volumes increase in size, one allocation block might be composed of three or more logical blocks. Figure 7-10 shows the relationship between these two types of blocks. If a file contains information, it always occupies one allocation block. For example,\n\nof blocks. If a file contains information, it always occupies one allocation block. For example, if a data fork contains only 11 bytes of data, it occupies one allocation block (512 bytes) on a disk, which leaves more than 500 bytes empty in the data fork.\n\nThe HFS and HFS+ file systems have two descriptors for the end of a file (EOF)—the logical EOF and the physical EOF. The logical EOF In the macOS file system, the actual ending of a file’s data. is the actual ending of a file’s data, so if file B has 510 bytes of data, byte 510 is the logical EOF. The physical EOF In the macOS file system, the number of bytes allotted on a volume for a file. is the number of bytes allotted on the volume for a file, so for file B, it’s byte 1023, as shown in Figure 7-11.\n\nIn macOS, file fragmentation is reduced by using clumps In the macOS file system, groups of contiguous allocation blocks used to keep file fragmentation to a minimum. , which are groups of contiguous allocation blocks. As a file increases in size, it occupies more of the clump. Volume fragmentation is kept to a minimum by adding more clumps to larger files.\n\nFor older HFS-formatted drives, the first two logical blocks, 0 and 1, on the volume (or disk) are the boot blocks containing system startup instructions. Optional executable code for system files can also be placed in boot blocks.\n\nOlder Mac OSs use the Master Directory Block (MDB) On older Mac OS systems, the location where all volume information is stored. A copy of the MDB is kept in the next-to-last block on the volume. Called the Volume Information Block (VIB) in HFS+. for HFS, which is the Volume Information Block (VIB) in HFS+. All information about a volume is stored in the MDB and written to it when the volume is initialized. A copy of the MDB is also written to the next-to-last block on the volume to support disk utility functions. When the OS mounts a volume, some information from the MDB is written to a Volume Control Block (VCB) An area of the macOS file system containing information from the MDB. See also Master Directory Block (MDB). , stored in system memory. When a user no longer needs the volume and\n\nMaster Directory Block (MDB). , stored in system memory. When a user no longer needs the volume and unmounts it, the VCB is removed.\n\nThe copy of the MDB is updated when the extents overflow file or catalog increases in size. The extents overflow file A file in HFS and HFS+ that’s used by the catalog to coordinate file allocations to a volume when the list of a file’s contiguous blocks becomes too long. Any file extents not in the MDB or a VCB are also contained in this file. See also catalog, Master Directory Block (MDB), and Volume Control Block (VCB). is used to store any file information not in the MDB or a VCB. The catalog An area of the macOS file system used to maintain the relationships between files and directories on a volume. is the listing of all files and directories on the volume and is used to maintain relationships between files and directories on a volume.\n\nVolume Bitmap, a system application, tracks each block on a volume to determine which blocks are in use and which ones are available to receive data. It has information about the blocks’ use but not about their content. Volume Bitmap’s size depends on the number of allocated blocks for the volume.\n\nFile-mapping information is stored in two locations: the extents overflow file and the file’s catalog entry. In earlier Mac versions, the B*-tree A macOS file that organizes the directory hierarchy and file block mapping for File Manager. Files are represented as nodes (objects); leaf nodes contain the actual file data. file system is also used to organize the directory hierarchy and file block mapping. In this file system, files are nodes (records or objects) containing file data. Each node is 512 bytes. The nodes containing actual file data are called leaf nodes; they’re the bottom level of the B*-tree. The B*-tree also has the following nodes that handle file information:\n\nThe header node A node that stores information about the B*-tree file. See also B*-tree. stores information about the B*-tree file.\n\nThe index node A B*-tree node that stores link information to the previous and next nodes. See also B*-tree. stores link information to previous and next nodes.\n\nThe map node A B*-tree node that stores a node descriptor and map record. See also B*-tree. stores a node descriptor and map record.\n\nTip\n\nFor more information on HFS and HFS+, see http://wiki.sleuthkit.org/index.php?title=HFS and https://developer.apple.com/library/mac/documentation/Darwin/Reference/Manpages/man1/RezWack.1.html.",
+                  "children": []
+                },
+                {
+                  "title": "Forensics Procedures in Mac",
+                  "toc_id": 278,
+                  "chunk_count": 18,
+                  "total_chunks_in_branch": 29,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    3784,
+                    3785,
+                    3786,
+                    3787,
+                    3788,
+                    3789,
+                    3790,
+                    3791,
+                    3792,
+                    3793,
+                    3794,
+                    3795,
+                    3796,
+                    3797,
+                    3798,
+                    3799,
+                    3800,
+                    3801
+                  ],
+                  "content": "Forensics Procedures in Mac\n\nAlthough understanding Linux file structures can help you learn about macOS file structures, there are some differences between the Linux and macOS file systems. For example, Linux has the /home/username and /root directories. In macOS, the corresponding folders are /users/username and /private/var/root. The /home directory exists in macOS, but it’s empty. In addition, macOS users have limited access to other user accounts’ files, and the guest account is disabled by default. If it’s enabled, it has no password, and guest files are deleted at logout.\n\nFor forensics procedures in macOS, you must know where file system components are located and how both files and file components are stored. Application settings are in three formats: plaintext, plist files (which include plain XML plists and binary plists, which are condensed XML), and the SQLite database. Plaintext files, of course, can be viewed in any text editor.\n\nPlist files In macOS, preference files for installed applications on a system. are preference files for installed applications on a system, usually stored in /Library/Preferences. To view them, you use special editors, such as the one available at the Apple Developer Web site (https://developer.apple.com) or PlistEdit Pro (www.macupdate.com/app/mac/14363/plistedit-pro).\n\nTo view the SQLite database, use the SQLite Database Browser (http://sqlitebrowser.org). You can also use the new macOS feature called unified logging A new feature in macOS that records log files for a macOS system. , which is located in /var/db/diagnostics (where log files are stored) and /var/db/uuid.text. It includes three new utilities—log, log collect, and log show—that a forensics examiner can use. For more details, see https://developer.apple.com/videos/play/wwdc2016/721/.\n\nOther files that might contain information useful for an investigation include the following:\n\n/System/Library/CoreServices/SystemVersion.plist—Contains the OS version.\n\n/Library/Preferences/SystemConfiguration/NetworkInterfaces.plist—Shows all existing network interfaces. If an interface has been used recently, it’s listed in the /private/var/db/dhcpclient/leases directory.\n\n/private/var/db/DirectoryService/flatfile.db—A list of users on a system; used before Mac OS X v10.7 and is similar to the Linux/UNIX /etc/passwd file.\n\n/private/var/db/dslocal/nodes/Default/users—Contains users’ plist files in Mac OS X after v10.7.\n\n/private/var/db/shadow/hash—Contains account passwords.\n\nFileVault, introduced with version 10.3, is used to encrypt and decrypt a user’s /users directory. It has master keys and recovery keys, which research later proved could be retrieved from RAM and used to crack encryption. In response to these security vulnerabilities, the improved FileVault2 was introduced, which encrypts the whole disk with 128-bit AES encryption.\n\nOther encrypted information you’re likely to find during an investigation is passwords. Since Mac OS 8.6, keychains A macOS feature used to track a user’s passwords for applications, Web sites, and other system files. have been used to manage passwords for applications, Web sites, and other system files (www.macworld.com/article/2013756/how-to-manage-passwords-with-keychain-access.html). You can find keychain files in a variety of places, including /System/Library/Keychains and /Library/Keychains, and they can be useful to show what applications and files require passwords. The Mac application Keychain Access enables you to restore passwords.\n\nYou need to find deleted files in most investigations, too. In macOS, deleted files are in the Trash folder. If a file is deleted at the command line, however, it doesn’t show up in the trash, which is similar to the Recycle Bin in Windows.\n\nNote\n\nUnlike Windows, macOS files retain their filenames in the trash. In addition, when you copy a file in Windows, the timestamp is reset. In macOS, the creation time is copied, so the timestamps are more accurate.\n\nSeveral vendors have software for examining the macOS file system. In the following section, you look at BlackBag Technologies (www.blackbagtech.com/software-products.html).\n\nAnother product for Mac forensics is SubRosaSoft MacForensicsLab (www.macforensicslab.com). Other vendors have added the capability to analyze macOS file systems, such as ProDiscover Forensic Edition and the freeware tools Sleuth Kit and Autopsy (www.sleuthkit.org). Sleuth Kit is discussed in “Using Linux Forensics Tools” later in this chapter.",
+                  "children": [
+                    {
+                      "title": "Acquisition Methods in macOS",
+                      "toc_id": 279,
+                      "chunk_count": 11,
+                      "total_chunks_in_branch": 11,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        3802,
+                        3803,
+                        3804,
+                        3805,
+                        3806,
+                        3807,
+                        3808,
+                        3809,
+                        3810,
+                        3811,
+                        3812
+                      ],
+                      "content": "Acquisition Methods in macOS\n\nTo examine a computer running macOS, you need to make an image of the drive, using the same techniques described in Chapter 5. You should be aware of some exceptions, however, caused by Apple design and engineering. (In addition, removing the drive from a Mac Mini case is difficult, and attempting to do so without Apple factory training could damage the computer. A MacBook Air poses similar problems, as you need special Apple screwdrivers to open the case.) You need a macOS-compatible forensic boot CD/DVD to make an image, which then must be written to an external drive, such as a FireWire or USB drive. Larger macOS systems are constructed much like desktop PCs, making removal of the hard drive easier.\n\nBlackBag Technologies sells acquisition tools for OS 9 and OS X and offers a forensic boot CD called MacQuisition for making a drive image (see www.blackbagtech.com/software-products/macquisition-2/macquisition.html). It also offers some free tools for forensics examiners (www.blackbagtech.com/resources/freetools.html).\n\nAfter making an acquisition, the next step is examining the image of the file system with a forensics tool. The tool you use depends on the image file’s format. For example, if you used EnCase, FTK, or X-Ways Forensics to create an Expert Witness (.e0l) image, you must use one of these tools to analyze the image. If you made a raw format image, you can use any of the following tools:\n\nBlackBag Technologies Macintosh Forensic Software (OS X only)\n\nSubRosaSoft MacForensicsLab (OS X only)\n\nGuidance Software EnCase\n\nRecon Mac OS X Forensics with Palladin (https://sumuri.com/software/recon/)\n\nX-Ways Forensics\n\nAccessData FTK\n\nBlackBag Technologies Macintosh Forensic Software and SubRosaSoft MacForensicsLab have a function for disabling and enabling Disk Arbitration, which is a macOS feature for disabling and enabling automatic mounting when a drive is connected via a USB or FireWire device (see www.appleexaminer.com). Being able to turn off the mount function in macOS allows you to connect a suspect drive to a Mac without a write-blocking device.",
+                      "children": []
+                    }
+                  ]
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding Macintosh File Structures (Interactive Activity)",
+                "toc_id": 276,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Using Linux Forensics Tools",
+              "toc_id": 280,
+              "chunk_count": 5,
+              "total_chunks_in_branch": 68,
+              "budget_slides_content": 5,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 6,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 20
+              },
+              "chunks_sorted": [
+                3813,
+                3814,
+                3815,
+                3816,
+                3817
+              ],
+              "content": "Using Linux Forensics Tools\n\nLearning how to use Linux forensics tools can come in handy when Windows tools don’t work or you’re having trouble getting a Windows machine to boot. Several commercial and freeware tools are available for analyzing UNIX and Linux file systems. Most commercial forensics tools, such as OSForensics, X-Ways Forensics, Guidance Software EnCase, and AccessData FTK, can analyze Linux Ext2, Ext3, Ext4, ReiserFS, and Reiser4 file systems.\n\nFreeware tools include Sleuth Kit and its Web browser interface, Autopsy Forensic Browser, maintained by Brian Carrier (see www.sleuthkit.org). Sleuth Kit, previously called TASK, is partially based on The Coroner’s Toolset (TCT) by Dan Farmer and Wietse Venema and designed as a network analysis tool for investigating attackers.\n\nThe U.S. Air Force Office of Special Investigations and the Center for Information Systems Security Studies and Research developed another specialized freeware tool called Foremost (see http://foremost.sourceforge.net). Foremost is a carving tool that can read many image file formats, such as raw and Expert Witness. It has a configuration file, foremost.conf, listing the most common file headers, footers, and data structures. If a file format isn’t included in this file, it can be added by using a hex editor to determine the new format’s header and footer values and a text editor to update the file. This file is typically in the /usr/local/etc directory and contains instructions on updating it. If your installation is different, read the makefile script in the Foremost tarball to see how\n\nit. If your installation is different, read the makefile script in the Foremost tarball to see how the current version is installed. A tarball A highly compressed data file containing one or more files or directories and their contents. is a highly compressed data file containing one or more files or directories and their contents. It’s similar to Windows zip utilities and typically has a .tar or .gz extension.",
+              "children": [
+                {
+                  "title": "Installing Sleuth Kit and Autopsy",
+                  "toc_id": 281,
+                  "chunk_count": 21,
+                  "total_chunks_in_branch": 21,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    3818,
+                    3819,
+                    3820,
+                    3821,
+                    3822,
+                    3823,
+                    3824,
+                    3825,
+                    3826,
+                    3827,
+                    3828,
+                    3829,
+                    3830,
+                    3831,
+                    3832,
+                    3833,
+                    3834,
+                    3835,
+                    3836,
+                    3837,
+                    3838
+                  ],
+                  "content": "Installing Sleuth Kit and Autopsy\n\nIn Chapter 1, you installed Autopsy for Windows. Version 2 can be installed in Linux or macOS. You can find current and past versions of Sleuth Kit and Autopsy Forensic Browser at www.sleuthkit.org.\n\nNote\n\nOlder versions of Sleuth Kit and Autopsy are available at Web sites listed on Sleuth Kit’s main page. The RPM Package Manager utility makes installing these tools in Red Hat and Fedora Linux much easier. Several other Linux distributions have tools for installing RPM packages. Check their documentation to see how they handle RPM packages.\n\nCaution\n\nIn Linux, Sleuth Kit must be installed before Autopsy Forensic Browser, or Autopsy isn’t installed correctly. In Windows, however, you just need to install Autopsy. In addition, when you’re running Autopsy Forensic Browser in Mac or Linux, you must preface all commands with sudo.\n\nTo install Sleuth Kit and Autopsy Forensic Browser in Ubuntu 16.04, you need root user privileges. Follow these steps:\n\n1.\n\nIf necessary, start Ubuntu and open a terminal window.\n\n2.\n\nTo install Sleuth Kit, type sudo apt-get install sleuthkit and press Enter, and then install Autopsy by typing sudo apt-get install autopsy and pressing Enter.\n\n3.\n\nTo confirm that you’re in your home directory, type pwd and press Enter. Next, create the evidence locker for storing files by typing mkdir Documents/Evidence_Locker and pressing Enter.\n\n4.\n\nTo start Autopsy and let it know where to store files, type autopsy -d /home/username/Documents/Evidence_Locker (see Figure 7-12) and press Enter.\n\n5.\n\nRight-click the URL http://localhost:9999/autopsy shown in the terminal window and click Open Link. Figure 7-13 shows the Autopsy main window.\n\nTip\n\nIf you see a warning message at the top stating that JavaScript is enabled, you have to reconfigure your browser to disable it. After reconfiguring the browser, you might have to exit and restart. If the Autopsy terminal session is still running, simply paste the Autopsy URL into the Address text box again.\n\n6.\n\nLeave Autopsy running and your Web browser open for the next activity.",
+                  "children": []
+                },
+                {
+                  "title": "Examining a Case with Sleuth Kit and Autopsy",
+                  "toc_id": 282,
+                  "chunk_count": 42,
+                  "total_chunks_in_branch": 42,
+                  "budget_slides_content": 3,
+                  "direct_slides_content": 3,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 9,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
+                  },
+                  "chunks_sorted": [
+                    3839,
+                    3840,
+                    3841,
+                    3842,
+                    3843,
+                    3844,
+                    3845,
+                    3846,
+                    3847,
+                    3848,
+                    3849,
+                    3850,
+                    3851,
+                    3852,
+                    3853,
+                    3854,
+                    3855,
+                    3856,
+                    3857,
+                    3858,
+                    3859,
+                    3860,
+                    3861,
+                    3862,
+                    3863,
+                    3864,
+                    3865,
+                    3866,
+                    3867,
+                    3868,
+                    3869,
+                    3870,
+                    3871,
+                    3872,
+                    3873,
+                    3874,
+                    3875,
+                    3876,
+                    3877,
+                    3878,
+                    3879,
+                    3880
+                  ],
+                  "content": "Examining a Case with Sleuth Kit and Autopsy\n\nIn this section, you use Sleuth Kit and Autopsy Forensic Browser to examine an older Linux file system. In digital forensics, sometimes you have to reevaluate cases that are several years old, and this activity gives you a chance to do that. Before starting the examination, copy the GCFI-LX.00n (with n representing a number from 1 to 5) image files from your work folder to the evidence locker you set up in the previous activity. Autopsy uses the evidence locker to save results from examinations. To start the examination, follow these steps:\n\n1\n\nIn Autopsy’s main window, click the New Case button shown previously in Figure 7-13. When the Create a New Case dialog box opens, enter InChap7 for the case name (see Figure 7-14), a description (optional), and your name, and then click the New Case button to continue.\n\n2\n\nIn the Creating Case dialog box, click Add Host to continue. In the Add a New Host dialog box, enter TestUbuntu12-04 for the hostname (see Figure 7-15), and then click Add Host.\n\n3\n\nIn the Adding host dialog box, click Add Image to continue. In the Open Image dialog box, click Add Image File.\n\nNote\n\nIf you don’t click Partition in Step 4, the image is read as raw data, and file and directory structures aren’t visible to Autopsy.\n\n4\n\nIn the Add a New Image dialog box, type the complete path to the evidence locker in the Location text box, click the Partition and Move option buttons, and then click Next. (Remember that Linux commands are case sensitive. If you enter a lowercase filename and the filename is uppercase, Autopsy can’t find and load the file.)\n\nNote\n\nIf you have multiple segment volumes that are sequentially numbered or lettered (the dd command with the split option without the -d switch), use an asterisk as the extension (for example, GCFI-LX.*) so that all segments are read sequentially.\n\n5\n\nIn the Split Image Confirmation dialog box, verify that all images are correctly loaded; if they are, click Next. If not, click Cancel. (If this data is incorrect, it’s probably caused by an error in the pathname to the evidence locker or image files.)\n\n6\n\nIn the Image File Details section, click the Calculate the hash value for this image option button, and then click Add. In the Calculating MD5 message box, click OK.\n\n7\n\nIn the “Select a volume to analyze or add a new image file” dialog box, click Analyze and then Keyword Search to start a search for keywords of interest to the investigation.\n\n8\n\nIn the Keyword Search of Allocated and Unallocated Space dialog box, type the name martha in the text box, and then click Search.\n\n9\n\nWhen the search is finished, Autopsy displays a summary of the search results. To see detailed search results, click the link to results link at the upper left.\n\n10\n\nExamine the search results by scrolling through the left pane, and then click the Fragment 236019 “Ascii” link to view details of the search. Repeat this examination by clicking other ASCII and Hex links for the remaining hits. When you’re finished examining the search hits, close the Searching for ASCII and Searching for Unicode dialog box to return to the “Select a volume to analyze or add a new image file” dialog box. Exit Autopsy, and log off Ubuntu.\n\nKali Linux has several forensics tools in its arsenal. For the full list of these tools, see https://tools.kali.org/tools-listing. Many are command-line tools. You can find the GUI tools in the Kali menu. To explore some of Kali’s tools, follow these steps:\n\n1\n\nStart a Web browser, and go to www.kali.org/downloads/. Download the Kali ISO image.\n\n2\n\nStart Virtual Box, and create a VM named Kali. Allow at least 2 GB of RAM and increase the storage to 20 GB.\n\n3\n\nInstall Kali, accepting the defaults. Set the password to password. (Remember that in the real world, you would set a more complex password for security reasons.)\n\n4\n\nRestart Kali, and enter root for the username and password for the password.\n\n5\n\nClick the Applications down arrow, and click Forensics (see Figure 7-16). Notice that Autopsy is listed first.\n\n6\n\nNext, click the Forensic Carving Tools category, and see the available tools (see Figure 7-17). They tend to be command-line tools; building GUI commercial tool suites requires a lot of work.\n\n7\n\nExit Kali, and power off the VM.\n\nYou have the chance to research and use some of these tools in the hands-on projects.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Using Linux Forensics Tools (Interactive Activity)",
+                "toc_id": 280,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Recognizing a Graphics File",
+              "toc_id": 291,
+              "chunk_count": 4,
+              "total_chunks_in_branch": 54,
+              "budget_slides_content": 4,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 4,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 14
+              },
+              "chunks_sorted": [
+                4059,
+                4060,
+                4061,
+                4062
+              ],
+              "content": "Recognizing a Graphics File\n\nGraphics files contain digital photographs, line art, three-dimensional images, text data converted to images, and scanned replicas of printed pictures. You might have used a graphics program, such as Microsoft Paint, Adobe Photoshop, or Gnome GIMP, to create or edit an image. A graphics program creates one of three types of graphics files: bitmap, vector, and metafile. Bitmap images Collections of dots, or pixels, in a grid format that form a graphic. See also pixels. are collections of dots, or pixels, in a grid format that form a graphic. Vector graphics Graphics based on mathematical instructions to form lines, curves, text, and other geometric shapes. are based on mathematical instructions that define lines, curves, text, ovals, and other geometric shapes. Metafile graphics Graphics\n\nthat define lines, curves, text, ovals, and other geometric shapes. Metafile graphics Graphics files that are combinations of bitmap and vector images. See also bitmap images and vector graphics. are combinations of bitmap and vector images.\n\nYou can use two types of programs to work with graphics files: graphics editors and image viewers. You use graphics editors to create, modify, and save bitmap, vector, and metafile graphics. You use image viewers to open and view graphics files, but you can’t change their contents. When you use a graphics editor or an image viewer, you can open a file in one of many graphics file formats, such as BMP, GIF, and JPEG. Each format has different qualities, including the amount of color and compression it uses. If you open a graphics file in a graphics editor that supports multiple file formats, you can save the file in another file format. However, converting graphics files in this way can change the image quality, as you see in a hands-on project at the end of this chapter.",
+              "children": [
+                {
+                  "title": "Understanding Bitmap and Raster Images",
+                  "toc_id": 292,
+                  "chunk_count": 13,
+                  "total_chunks_in_branch": 13,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    4063,
+                    4064,
+                    4065,
+                    4066,
+                    4067,
+                    4068,
+                    4069,
+                    4070,
+                    4071,
+                    4072,
+                    4073,
+                    4074,
+                    4075
+                  ],
+                  "content": "Understanding Bitmap and Raster Images\n\nBitmap images store graphics information as grids of pixels Small dots used to create images; the term comes from “picture element.” , short for “picture elements.” Raster images Collections of pixels stored in rows rather than a grid, as with bitmap images, to make graphics easier to print; usually created when a vector graphic is converted to a bitmap image. See also pixels. are also collections of pixels, but they store pixels in rows to make images easy to print. In most cases, printing an image converts (rasterizes) it to print pixels line by line instead of processing the complete collection of pixels.\n\nA bitmap’s image quality on a monitor is governed by resolution The density of pixels displayed onscreen, which governs image quality. , which determines the amount of detail that’s displayed. Resolution is related to the density of pixels onscreen and depends on a combination of hardware and software. Monitors can display a range of resolutions; the higher the resolution, the sharper the image. Computers also use a video card containing a certain amount of memory for displaying images. The more advanced the video card’s electronics and the more memory it has, the more detailed instructions it can accept, resulting in higher-quality images.\n\nFor example, the monitor and video card on a Windows computer might support a 4096 × 2160 resolution, which means displaying 4096 pixels horizontally and 2160 pixels vertically. Because a bitmap image is defined by pixel size, high-resolution images use smaller pixels than low-resolution images do.\n\nSoftware also contributes to image quality. Software includes drivers, which are coded instructions that set a video card’s display parameters, and programs used to create, modify, and view images. With some programs, such as IrfanView (www.irfanview.com), you can view many types of images; with other programs, you can view or work with only the graphics files they create. Digital graphics professionals use programs that support high resolutions to have more control over the display of bitmap images. However, bitmaps, especially those with low resolution, usually lose quality when you enlarge them.\n\nAnother setting that affects image quality is the number of colors the monitor displays. Graphics files can have different amounts of color per pixel, but each file must support colors with bits of space. The following list shows the number of bits per colored pixel:\n\n1 bit = 2 colors\n\n4 bits = 16 colors\n\n8 bits = 256 colors\n\n16 bits = 65,536 colors\n\n24 bits = 16,777,216 colors\n\n32 bits = 4,294,967,296 colors\n\nBitmap and raster files use as much of the color palette as possible. However, when you save a bitmap or raster file, the resolution and color might change, depending on the colors in the original file and whether the file format supports these colors.",
+                  "children": []
+                },
+                {
+                  "title": "Understanding Vector Graphics",
+                  "toc_id": 293,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 2,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    4076,
+                    4077
+                  ],
+                  "content": "Understanding Vector Graphics\n\nVector graphics, unlike bitmap and raster images, use lines instead of dots to make up an image. A vector file stores only the calculations for drawing lines and shapes; a graphics program converts these calculations into an image. Because vector files store calculations, not images, they are generally smaller than bitmap files, thereby saving disk space. You can also enlarge a vector graphic without affecting image quality—to make an image twice as large, a vector graphics program, such as CorelDRAW and Adobe Illustrator, computes the image mathematically.",
+                  "children": []
+                },
+                {
+                  "title": "Understanding Metafile Graphics",
+                  "toc_id": 294,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 2,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    4078,
+                    4079
+                  ],
+                  "content": "Understanding Metafile Graphics\n\nMetafile graphics combine raster and vector graphics and can have the characteristics of both file types. For example, if you scan a photograph (a bitmap image) and then add text or arrows (vector drawings), you create a metafile graphic. Although metafile graphics have the features of both bitmap and vector files, they share the limitations of both. For example, if you enlarge a metafile graphic, the area created with a bitmap loses some resolution, but the vector-formatted area remains sharp and clear.",
+                  "children": []
+                },
+                {
+                  "title": "Understanding Graphics File Formats",
+                  "toc_id": 295,
+                  "chunk_count": 14,
+                  "total_chunks_in_branch": 14,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    4080,
+                    4081,
+                    4082,
+                    4083,
+                    4084,
+                    4085,
+                    4086,
+                    4087,
+                    4088,
+                    4089,
+                    4090,
+                    4091,
+                    4092,
+                    4093
+                  ],
+                  "content": "Understanding Graphics File Formats\n\nGraphics files are created and saved in a graphics editor, such as Microsoft Paint, Adobe Freehand MX, Adobe Photoshop, or Gnome GIMP. Some graphics editors, such as Freehand MX, work only with vector graphics, and some programs, such as Photoshop, work with both.\n\nMost graphics editors enable you to create and save files in one or more of the standard graphics file formats Common graphics file formats that most graphics programs and image viewers can open. . Standard bitmap file formats include Portable Network Graphic (.png), Graphics Interchange Format (.gif), Joint Photographic Experts Group (.jpg or .jpeg), Tagged Image File Format (.tif or .tiff), and Windows Bitmap (.bmp). Standard vector file formats include Hewlett-Packard Graphics Language (.hpgl) and AutoCad (.dxf).\n\nNonstandard graphics file formats Less common graphics file formats, including proprietary formats, newer formats, formats that most image viewers don’t recognize, and old or obsolete formats. include less common formats, such as Targa (.tga) and Raster Transfer Language (.rtl); proprietary formats, such as Photoshop (.psd), Illustrator (.ai), and Freehand (.fh11); newer formats, such as Scalable Vector Graphics (.svg); and old or obsolete formats, such as Paintbrush (.pcx). Because you can open standard graphics files in most or all graphics programs, they are easier to work with in a digital forensics investigation. If you encounter files in nonstandard formats, you might need to rely on your investigative skills to identify the file as a graphics file, and then find the right tools for\n\ninvestigative skills to identify the file as a graphics file, and then find the right tools for viewing it.\n\nTo determine whether a file is a graphics file and to find a program for viewing a nonstandard graphics file, you can search the Web or consult a dictionary Web site. For example, suppose you find a file with a .tga extension during an investigation. None of the programs on your forensic workstation can open the file, and you suspect it could provide crucial evidence. To learn more about this file format, see www.garykessler.net/library/file_sigs.html, or follow these steps:\n\n1.\n\nStart your Web browser, and go to www.webopedia.com.\n\n2.\n\nType tga in the “Enter a term” text box, and click Search. Webopedia lists links to additional Web pages describing the .tga file format.\n\n3.\n\nIn the Webopedia search results Web page, click the Data Formats and File Extensions: T Web link, which is www.webopedia.com/quick_ref/graphics_formats.asp.\n\n4.\n\nScroll down until you find a definition of this format, and write it down. When you’re finished, exit your Web browser.",
+                  "children": []
+                },
+                {
+                  "title": "Understanding Digital Photograph File Formats",
+                  "toc_id": 296,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 19,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    4094,
+                    4095
+                  ],
+                  "content": "Understanding Digital Photograph File Formats\n\nDigital photographs have had an impact on digital forensics; witnesses or suspects can create them easily with smartphones, digital cameras and closed-circuit television surveillance. As a digital forensics investigator, you might need to examine a digital photo created by a witness to an accident, for example. Crimes such as child pornography might involve hundreds of digital photos of alleged victims, and knowing how to analyze the data structures of graphics files can give you additional evidence for a case. In addition, knowing how digital photos are created and how they store unique information can contribute to your credibility when presenting evidence. Most, if not all, digital cameras produce digital photos in raw or Exif format, described in the following sections.",
+                  "children": [
+                    {
+                      "title": "Examining the Raw File Format",
+                      "toc_id": 297,
+                      "chunk_count": 5,
+                      "total_chunks_in_branch": 5,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        4096,
+                        4097,
+                        4098,
+                        4099,
+                        4100
+                      ],
+                      "content": "Examining the Raw File Format\n\nReferred to as a digital negative, the raw file format A file format typically found on higher-end digital cameras; the camera performs no enhancement processing—hence the term “raw.” This format maintains the best picture quality, but because it’s a proprietary format, not all image viewers can display it. is typically used on many higher-end digital cameras. A camera performs no enhancement processing—hence the term “raw” for this format. Sensors in a digital camera simply record pixels on the memory card. One advantage of this format is that it maintains the best picture quality.\n\nFrom a digital forensics perspective, the biggest disadvantage of the raw file format is that it’s proprietary, and not all image viewers can display these formats. To view a raw graphics file, you might need to get the viewing and conversion software from the camera manufacturer. Each manufacturer has its own program with an algorithm to convert raw data to other standard formats, such as JPEG or TIF. The process of converting raw picture data to another format is called demosaicing The process of converting raw picture data to another format, such as JPEG or TIF. .\n\nNote\n\nFor more information on raw format images, see http://helpx.adobe.com/photoshop/digital-negative.html.",
+                      "children": []
+                    },
+                    {
+                      "title": "Examining the Exchangeable Image File Format",
+                      "toc_id": 298,
+                      "chunk_count": 12,
+                      "total_chunks_in_branch": 12,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        4101,
+                        4102,
+                        4103,
+                        4104,
+                        4105,
+                        4106,
+                        4107,
+                        4108,
+                        4109,
+                        4110,
+                        4111,
+                        4112
+                      ],
+                      "content": "Examining the Exchangeable Image File Format\n\nMost digital photographs are stored in the Exchangeable Image File (Exif) A file format the Japan Electronics and Information Technology Industries Association (JEITA) developed as a standard for storing metadata in JPEG and TIF files. format. The Japan Electronics and Information Technology Industries Association (JEITA) developed it as a standard for storing metadata in JPEG and TIF files (see http://home.jeita.or.jp/tsc/std-pdf/CP3451C.pdf). When a digital photo is taken, information about the device (such as model, make, and serial number) and settings (such as shutter speed, focal length, resolution, date, and time) are stored in the graphics file. Most digital devices store graphics files as Exif JPEG files. In addition, if the device has GPS capability, the latitude and longitude\n\nfiles as Exif JPEG files. In addition, if the device has GPS capability, the latitude and longitude location data might be recorded in the Exif section of the file. Location data stored in digital images is discussed in more detail in Chapter 12.\n\nBecause the Exif format collects metadata, investigators can learn more about the type of digital device and the environment in which photos were taken. Viewing an Exif JPEG file’s metadata requires special programs, such as Exif Reader (www.takenet.or.jp/~ryuuji/minisoft/exifread/english/), IrfanView (www.irfanview.com), or Magnet Forensics AXIOM (www.magnetforensics.com), which has a built-in Exif viewer.\n\nOriginally, JPEG and TIF formats were designed to store only digital photo data. Exif is an enhancement of these formats that modifies the beginning of a JPEG or TIF file so that metadata can be inserted. In the similar photos in Figure 8-1, the one on the left is an Exif JPEG file, and the one on the right is a standard JPEG file.\n\nFigure 8-2 shows the differences between file headers in Exif and standard JPEG files. Sawtoothmt.jpg is an Exif file, and Sawtoothmtn.jpg is a standard JPEG file. The first 160 (hexadecimal 0x9F) bytes are displayed for both files.\n\nAll JPEG files, including Exif, start from offset 0 (the first byte of a file) with hexadecimal FFD8. The current standard header for regular JPEG files is JPEG File Interchange Format (JFIF), which has the hexadecimal value FFE0 starting at offset 2. For Exif JPEG files, the hexadecimal value starting at offset 2 is FFE1. In addition, the hexadecimal values at offset 6 specify the label name (refer to Figure 8-2). For all JPEG files, the ending hexadecimal marker, also known as the end of image (EOI), is FFD9 (see Figure 8-3).\n\nWith tools such as Autopsy and Exif Reader, you can extract metadata as evidence for your case. As you can see in Figure 8-4, Autopsy shows that the picture was taken on July 10, 2017, at 5:50 p.m. PDT.\n\nAs in any digital forensics investigation, determining date and time for a file is important. Getting this information might not be possible, however, for a variety of reasons, such as suspects losing cameras after transferring photo files to their computers. You should list this type of evidence as subjective in your report because intentional and unintentional acts make date and time difficult to confirm. For example, suspects could alter a camera’s clock intentionally to record an incorrect date and time when a picture is taken. An unintentional act could be the battery or camera’s electronics failing, for example, which causes an incorrect date and time to be recorded. When you’re dealing with date and time values in Exif metadata, always look for corroborating information, such as\n\nwith date and time values in Exif metadata, always look for corroborating information, such as where the picture was taken or whether the device is set to Coordinated Universal Time (abbreviated as UTC), to help support what you find in metadata.\n\nFor example, the photograph in Figure 8-1 was taken in Sante Fe, New Mexico, on September 10, 2013. If the camera’s date and time had been set to UTC, you would need to adjust for local time. In September, Sante Fe’s local time is mountain daylight saving (MDT), which is -6 hours from UTC time. So the actual local time might be 7:09 p.m. MDT. Because 7:09 p.m. is early evening, you should determine when sunset occurred on that date by using online tools, such as Time and Date (www.timeanddate.com/worldclock/sunrise.html) or SunriseSunset (www.sunrisesunset.com/sun.html). The Time and Date Web site shows that sunset for this location and time happened at 7:18 p.m. If the camera is set to 7:09 p.m. local time, you might assume sunlight would cast long shadows. Because the shadows look short,\n\np.m. local time, you might assume sunlight would cast long shadows. Because the shadows look short, the date and time might not be accurate. In addition, if latitude and longitude values are available in the Exif file, you could approximate the time of day based on the length and angle of shadows to the sun. Of course, this calculation applies only to photos taken outside on sunny days.",
+                      "children": []
+                    }
+                  ]
+                }
+              ],
+              "interactive_activity": {
+                "title": "Recognizing a Graphics File (Interactive Activity)",
+                "toc_id": 291,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Identifying Unknown File Formats",
+              "toc_id": 309,
+              "chunk_count": 14,
+              "total_chunks_in_branch": 47,
+              "budget_slides_content": 3,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "chunks_sorted": [
+                4214,
+                4215,
+                4216,
+                4217,
+                4218,
+                4219,
+                4220,
+                4221,
+                4222,
+                4223,
+                4224,
+                4225,
+                4226,
+                4227
+              ],
+              "content": "Identifying Unknown File Formats\n\nWith the continuing changes in technology and digital graphics, eventually you’ll encounter graphics file formats you’re not familiar with. In addition, suspects might use older systems with programs that create files in uncommon or obsolete file formats. Therefore, you must research both old and new file types. Knowing the purpose of each format and how it stores data is part of the investigation process.\n\nThe Internet is the best source for learning more about file formats and their extensions. You have already used the Webopedia site to research the TGA file format. You can also use a search engine to search for “file type” or “file format” and find the latest list of Web sites with information on file extensions. If you still can’t find a specific file extension, try refining your search by entering the file extension along with the words “file format” in a search engine. One nonstandard graphics file format is XIF. To search for information on this file format, follow these steps:\n\n1.\n\nStart your Web browser, and go to www.google.com.\n\n2.\n\nType XIF file format in the text box and press Enter.\n\n3.\n\nClick a few links in the search results to learn more about this file format. When you’re finished, exit your Web browser.\n\nNuance PaperPort is a scanning program that produces images in the XIF (also referred to as XIFF) format, which is derived from the TIF file format. (It’s not related to the Exif format.) Older versions of PaperPort had a free viewer utility for XIF files, but you can also use Solvusoft FileViewPro (www.solvusoft.com/en/file-extensions/file-extension-xif/) to view these files.\n\nThe following sites have information to help you analyze file formats. Keep in mind that information on the Web changes frequently; use a search engine to find graphics file information if you can’t access these Web sites:\n\nwww.fileformat.info/format/all.htm\n\nhttp://extension.informer.com/\n\nwww.martinreddy.net/gfx/",
+              "children": [
+                {
+                  "title": "Analyzing Graphics File Headers",
+                  "toc_id": 310,
+                  "chunk_count": 5,
+                  "total_chunks_in_branch": 5,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    4228,
+                    4229,
+                    4230,
+                    4231,
+                    4232
+                  ],
+                  "content": "Analyzing Graphics File Headers\n\nYou should analyze graphics file headers when you find new or unique file types that forensics tools don’t recognize. The simplest way to access a file header is to use a hexadecimal editor, such as WinHex. You can then record the hexadecimal values in the header and use them to define a file type.\n\nFor example, suppose you encounter an XIF file. Because this format is so old, not much information on it is available. If you need to look for hidden or deleted XIF files, you must build your own header search string. To do this, you need a hexadecimal editor, such as WinHex. To see the differences between XIF and TIF, viewing and comparing header values for these file formats is good practice.\n\nTIF is a well-established file format for transmitting faxes and for use in printed publications. All TIF files start at offset 0 with hexadecimal 49 49 2A. These hexadecimal values translate to the letters “II” in ASCII. Figure 8-17 shows a sample TIF file open in WinHex.\n\nThe first 3 bytes of an XIF file are the same as a TIF file, followed by other hexadecimal values that distinguish it from a TIF file (see Figure 8-18). As you can see, the XIF header starts with hexadecimal 49 49 2A and has an offset of 4 bytes of 5C 01 00 00 20 65 58 74 65 6E 64 65 64 20 03. (Some values have been cut off in this figure to conserve space.) With this information, you can configure your forensics tool to detect an XIF file header. For more information on XIF, go to www.fileformat.info/info/mimetype/image/vnd.xiff/index.htm or www.vincent-net.com/luc/papers/99isdm_document_talk.pdf.",
+                  "children": []
+                },
+                {
+                  "title": "Tools for Viewing Images",
+                  "toc_id": 311,
+                  "chunk_count": 5,
+                  "total_chunks_in_branch": 5,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    4233,
+                    4234,
+                    4235,
+                    4236,
+                    4237
+                  ],
+                  "content": "Tools for Viewing Images\n\nThroughout this chapter, you have been learning about recognizing file formats, using compression techniques, salvaging header information, recovering graphics files, and saving your modifications. After you recover a graphics file, you can use an image viewer to open and view it. Several hundred image viewers are available that can read many graphics file formats, although no one viewer program can read every file format. Therefore, having many different viewer programs for investigations is best.\n\nMany viewer utilities are freeware or shareware programs that can be used to view a wide range of graphics file formats. Most GUI forensics tools include image viewers that display only common image formats, especially GIF and JPEG, which are often found in Internet-related investigations. For less common file formats, such as PCX, integrated viewers often simply identify the data as a graphics file or might not recognize the data at all. Being unable to view all formats can prevent you from finding critical evidence for a case. Be sure that you analyze, identify, and inspect every unknown file on a drive.\n\nNote\n\nWith many forensics tools, you can open files with external viewers.",
+                  "children": []
+                },
+                {
+                  "title": "Understanding Steganography in Graphics Files",
+                  "toc_id": 312,
+                  "chunk_count": 16,
+                  "total_chunks_in_branch": 16,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    4238,
+                    4239,
+                    4240,
+                    4241,
+                    4242,
+                    4243,
+                    4244,
+                    4245,
+                    4246,
+                    4247,
+                    4248,
+                    4249,
+                    4250,
+                    4251,
+                    4252,
+                    4253
+                  ],
+                  "content": "Understanding Steganography in Graphics Files\n\nWhen you open some graphics files in an image viewer, they might not seem to contain information related to your investigation. However, someone might have hidden information inside the image by using a data-hiding technique called steganography (discussed in more detail in Chapter 9), which uses a host file to cover the contents of a secret message.\n\nSteganography has been used since ancient times. Greek rulers used this technique to send covert messages to diplomats and troops via messengers. To hide messages, rulers shaved their messengers’ heads and tattooed messages on their scalps. After the messengers’ hair grew enough to cover the message, they left for their destinations, where they shaved their heads so that recipients could read the message. This method was a clever way to send and retrieve encrypted information, but it was inefficient because the messengers’ hair took a long time to grow back, and only a limited amount of space was available to write messages. However, it enabled the Greeks to send secret messages until their enemies discovered this early form of steganography and began intercepting messengers.\n\nTip\n\nContemporary steganography has limits because a graphics file can hide only a certain amount of information before its size and structure change. However, it does allow someone to send covert information to a recipient, unless someone else detects the hidden data.\n\nThe two major forms of steganography are insertion and substitution. Insertion places data from the secret file into the host file. When you view the host file in its associated program, the inserted data is hidden unless you analyze the data structure carefully. For example, if you create a Web page with HTML, you can display images and text in a Web browser without revealing the HTML code. Figure 8-19 shows a typical Web page intended to be viewed in a Web browser. It contains hidden text, which is shown in Figure 8-20 along with the source HTML code. To detect hidden text, you need to compare what the file displays and what the file contains. Depending on your skill level, this process can be difficult and time consuming.\n\nThe second type of steganography, substitution, replaces bits of the host file with other bits of data. With a bitmap file, for example, you could replace bits used for pixels and colors with hidden data. To avoid detection, you substitute only those bits that result in the least amount of change.\n\nFor example, if you use an 8-bit graphics file, each pixel is represented by 8 bits of data containing information about the color each pixel displays onscreen. The bits are prioritized from left to right, such as 11101100. The first bit on the left is the most significant bit (MSB) The highest bit value in a byte. , and the last bit on the right is the least significant bit (LSB) The lowest bit value in a byte. In Microsoft OSs, bits are displayed from right to left, so the rightmost bit is the LSB. OSs that read bits from right to left are called “little endian.” OSs that display the LSB from left to right are called “big endian.” . As the names suggest, changing the MSB affects the pixel display more than changing the LSB does. Furthermore, you can usually change only the last two LSBs\n\ndisplay more than changing the LSB does. Furthermore, you can usually change only the last two LSBs in an image without producing a noticeable change in the shade of color the pixel displays. To detect a change to the last two LSBs in a graphics file, you need to use a steganalysis tool, which is software designed to identify steganography techniques.\n\nFor example, if your secret message is converted to binary form to equal 01101100 and you want to embed this secret message into a picture, you alter the last 2 bits of four pixels. You break the binary form into sections of two, as in 01 10 11 00, and insert the bits into the last 2 bits of each pixel, as shown in Table 8-1.\n\nTable 8-1. Bit Breakdown of a Secret Message\n\nOriginal pixel Altered pixel 1010 1010 1010 1001 1001 1101 1001 1110 1111 0000 1111 0011 0011 1111 0011 1100\n\nThe sequence of 2 bits is substituted for the last 2 bits of the pixel. This bit substitution can’t be detected by the human eye, which can see only about 6 bits of color. Figure 8-21 shows the original image on the left and the altered image on the right. The altered image contains the hidden message shown in Figure 8-22.\n\nWhether insertion or substitution is used, you should inspect files for evidence of steganography, especially if your suspect is technically savvy or you see signs that steganography has been used. Clues to look for are duplicate files, such as images, with different hash values, or steganography programs installed on the suspect’s drive.\n\nTip\n\nSteganography can be used with file formats other than graphics files, such as MPEG and AVI files.",
+                  "children": []
+                },
+                {
+                  "title": "Using Steganalysis Tools",
+                  "toc_id": 313,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    4254,
+                    4255,
+                    4256,
+                    4257,
+                    4258,
+                    4259,
+                    4260
+                  ],
+                  "content": "Using Steganalysis Tools\n\nYou can use several different steganalysis tools (also called “steg tools”) to detect, decode, and record hidden data, even in files that have been renamed to protect their contents. A steganalysis tool can also detect variations of an image. If a graphics file has been renamed, a steganalysis tool can identify the file format from the file header and indicate whether the file contains an image. Although steganalysis tools can help identify hidden data, steganography is generally difficult to detect. In fact, if steganography is done correctly, in most cases you can’t detect the hidden data unless you can compare the altered file with the original file. Check to see whether the file size, image quality, or file extensions have changed. If so, you might be dealing with a steganography\n\nimage quality, or file extensions have changed. If so, you might be dealing with a steganography image. As an example of the difficulty of detecting the use of steganography, Niels Provos and Peter Honeyman at the University of Michigan conducted a study of more than two million images used in eBay auctions to see whether hidden data might have been placed in photos (see www2.sans.org/reading-room/whitepapers/stenganography/steganography-whats-real-risk-555). They were unable to determine whether any graphics files contained hidden messages.\n\nNote\n\nSteganography and steganalysis tools change as rapidly as some OSs. Current steg tools include Steg Suite from WetStone and Outguess StegDetect and StegBreak. For a list of other steg tools, do an Internet search on “steganography,” “steganalysis,” or “blind steganalysis.”\n\nTip\n\nFor more information on steganography, read “Steganography: Hiding Data Within Data” at www.garykessler.net/library/steganography.html.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Identifying Unknown File Formats (Interactive Activity)",
+                "toc_id": 309,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Understanding Copyright Issues with Graphics",
+              "toc_id": 314,
+              "chunk_count": 19,
+              "total_chunks_in_branch": 19,
+              "budget_slides_content": 1,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 2,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 8
+              },
+              "chunks_sorted": [
+                4261,
+                4262,
+                4263,
+                4264,
+                4265,
+                4266,
+                4267,
+                4268,
+                4269,
+                4270,
+                4271,
+                4272,
+                4273,
+                4274,
+                4275,
+                4276,
+                4277,
+                4278,
+                4279
+              ],
+              "content": "Understanding Copyright Issues with Graphics\n\nSteganography has also been used to protect copyrighted material by inserting digital watermarks into a file. When working with graphics files, digital investigators need to be aware of copyright laws, especially in the corporate environment, where they often work closely with the legal department to guard against copyright violations. Investigators might also need to determine whether a photo is from a known copyrighted source, such as a news photo being posted on a Web page without permission.\n\nThe U.S. Copyright Office Web site defines precisely how copyright laws pertain to graphics (see www.copyright.gov for information on the 1976 Copyright Act). Copyright laws as they pertain to the Internet, however, aren’t as clear. For example, a server in another country might host a Web site, which could mean it’s regulated by copyright laws in that country. Because each country has its own copyright laws, enforcement can be difficult. Contrary to what some might believe, there’s no international copyright law that applies to all countries, but there are international copyright treaties between several countries. Typically, enforcing international copyright treaties requires legal action in the country where the infringement occurred. For more information, see\n\nrequires legal action in the country where the infringement occurred. For more information, see www.mondaq.com/unitedstates/x/171306/Copyright/International+Copyright+Protection+How+Does+It+Work or www.rightsdirect.com/international-copyright-basics/.\n\nThe U.S. Copyright Office (www.copyright.gov/circs/circ01.pdf) identifies what can and can’t be covered under copyright law in the United States:\n\nCopyright protects “original works of authorship” that are fixed in a tangible form of expression. The fixation need not be directly perceptible so long as it may be communicated with the aid of a machine or device. Copyrightable works include the following categories:\n\nliterary works;\n\nmusical works, including any accompanying words;\n\ndramatic works, including any accompanying music;\n\npantomimes and choreographic works;\n\npictorial, graphic, and sculptural works;\n\nmotion pictures and other audiovisual works;\n\nsound recordings;\n\narchitectural works.\n\nThese categories should be viewed broadly. For example, computer programs and most “compilations” may be registered as “literary works”; maps and architectural plans may be registered as “pictorial, graphic, and sculptural works.”\n\nAnything that would ordinarily be copyrighted through noncomputer means and is now being created on digital media is considered to be copyrighted, as long as the process for obtaining a copyright has been followed.\n\nDigital watermarks can be visible or imperceptible in media such as digital photos and audio files. Visible watermarks are usually an image, such as the copyright symbol or a company logo, layered on top of a photo. Imperceptible watermarks don’t change the appearance or sound quality of a copyrighted file. Methods used for imperceptible watermarks sometimes involve modifying a file’s LSBs into a unique pattern.\n\nAnother guideline to consider is fair use A guideline that describes the free use of copyrighted material for news reports, critiques, noncommercial use, and educational purposes. . A short direct quote for news reporting or critiques is considered fair use, and the material’s originator or owner doesn’t have to be paid. Material used for noncommercial and educational purposes also falls under the fair use guideline. These distinctions can get complicated, however. For example, an instructor copying parts of a book to use as handouts in a class setting is operating within the fair use guideline. On the other hand, if the instructor sends the book to a printer to copy and pays the printer, a copyright violation has occurred because a commercial printer was paid to copy the book, even though\n\nviolation has occurred because a commercial printer was paid to copy the book, even though the copies were to be used for educational purposes.",
+              "children": [],
+              "interactive_activity": {
+                "title": "Understanding Copyright Issues with Graphics (Interactive Activity)",
+                "toc_id": 314,
+                "slides_allocated": 1
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          }
+        }
+      ]
+    }
+  ]
+}

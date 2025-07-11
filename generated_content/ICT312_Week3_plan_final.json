@@ -1,0 +1,1152 @@
+{
+  "week": 3,
+  "overall_topic": "Data Acquisition.",
+  "weekly_slide_summary": {
+    "total_slides_for_week": 49,
+    "total_framework_slides": 8,
+    "total_content_slides": 33,
+    "total_interactive_slides": 8,
+    "number_of_decks": 2
+  },
+  "weekly_time_summary_minutes": {
+    "total_time_for_week_minutes": 151,
+    "total_framework_time": 12,
+    "total_content_and_interactive_time": 139
+  },
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "total_slides_in_deck": 24,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 15,
+        "interactive": 5
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 70,
+        "total_deck_time": 76
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Data Acquisition.",
+            "deck_title": "Week 3, Lecture 1"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Understanding Storage Formats for Digital Evidence",
+              "Validating Data Acquisitions",
+              "Performing RAID Data Acquisitions",
+              "Using Remote Network Acquisition Tools",
+              "Using Other Forensics Acquisition Tools"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Understanding Storage Formats for Digital Evidence",
+              "toc_id": 103,
+              "chunk_count": 5,
+              "total_chunks_in_branch": 31,
+              "budget_slides_content": 3,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "chunks_sorted": [
+                1319,
+                1320,
+                1321,
+                1322,
+                1323
+              ],
+              "content": "Understanding Storage Formats for Digital Evidence\n\nThe data a forensics acquisition tool collects is stored as an image file, typically in an open-source or proprietary format. Each vendor has unique features, so several different proprietary formats are available. Depending on the proprietary format, many forensics analysis tools can read other vendors’ formatted acquisitions. Many acquisition tools create a disk-to-image file in an older open-source format, known as raw, as well as their own proprietary formats. The new open-source format, Advanced Forensic Format (AFF), is gaining recognition from some forensics examiners.\n\nEach data acquisition format has unique features along with advantages and disadvantages. The following sections summarize each format to help you choose which one to use.\n\nNote\n\nFor additional information on digital evidence handling and documenting, see ISO/IEC 27037: 2012, www.iso.org/iso/catalogue_detail?csnumber=44381. Downloading ISO documents requires paying a fee, so you might check with a college or public library about getting a copy.",
+              "children": [
+                {
+                  "title": "Raw Format",
+                  "toc_id": 104,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    1324,
+                    1325,
+                    1326,
+                    1327
+                  ],
+                  "content": "Raw Format\n\nIn the past, there was only one practical way of copying data for the purpose of evidence preservation and examination. Examiners performed a bit-by-bit copy from one disk to another disk the same size or larger. As a practical way to preserve digital evidence, vendors (and some OS utilities, such as the Linux/UNIX dd command) made it possible to write bit-stream data to files. This copy technique creates simple sequential flat files of a suspect drive or data set. The output of these flat files is referred to as a raw format A data acquisition format that creates simple sequential flat files of a suspect drive or data set. . This format has unique advantages and disadvantages to consider when selecting an acquisition format.\n\nThe advantages of the raw format are fast data transfers and the capability to ignore minor data read errors on the source drive. In addition, most forensics tools can read the raw format, making it a universal acquisition format for most tools. One disadvantage of the raw format is that it requires as much storage space as the original disk or data set. Another disadvantage is that some raw format tools, typically freeware versions, might not collect marginal (bad) sectors on the source drive, meaning they have a low threshold of retry reads on weak media spots on a drive. Many commercial tools have a much higher threshold of retry reads to ensure that all data is collected.\n\nSeveral commercial acquisition tools can produce raw format acquisitions and typically perform a validation check by using Cyclic Redundancy Check (CRC32), Message Digest 5 (MD5), and Secure Hash Algorithm (SHA-1 or later) hashing functions. These validation checks, however, usually create a separate file containing the hash value.",
+                  "children": []
+                },
+                {
+                  "title": "Proprietary Formats",
+                  "toc_id": 105,
+                  "chunk_count": 11,
+                  "total_chunks_in_branch": 11,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    1328,
+                    1329,
+                    1330,
+                    1331,
+                    1332,
+                    1333,
+                    1334,
+                    1335,
+                    1336,
+                    1337,
+                    1338
+                  ],
+                  "content": "Proprietary Formats\n\nMost commercial forensics tools have their own formats for collecting digital evidence. Proprietary formats typically offer several features that complement the vendor’s analysis tool, such as the following:\n\nThe option to compress or not compress image files of a suspect drive, thus saving space on the target drive\n\nThe capability to split an image into smaller segmented files for archiving purposes, such as to CDs or DVDs, with data integrity checks integrated into each segment\n\nThe capability to integrate metadata into the image file, such as date and time of the acquisition, hash value (for self-authentication) of the original disk or medium, investigator or examiner name, and comments or case details\n\nNote\n\nForensics examiners have several ways of referring to copying evidence data to files: bit-stream copy, bit-stream image, image, mirror, and sector copy, to name a few. For the purposes of this book, “image” is generally used to refer to all forensics acquisitions saved to a data file.\n\nOne major disadvantage of proprietary format acquisitions is the inability to share an image between different vendors’ computer forensics analysis tools. For example, the ILookIX imaging tool IXImager (www.perlustro.com/solutions/e-forensics/iximager) produces three proprietary formats—IDIF, IRBF, and IEIF—that can be read only by ILookIX (see www.perlustro.com for additional information on ILookIX).\n\nAnother problem with proprietary and raw formats is a file size limitation for each segmented volume. Typically, proprietary format tools produce a segmented file of 650 MB. The file size can be adjusted up or down, with a maximum file size per segment of no more than 2 GB. Most proprietary format tools go up to only 2 GB because many examiners use target drives formatted as FAT, which has a file size limit of 2 GB.\n\nOf all the proprietary formats for image acquisitions, the Expert Witness Compression format is currently the unofficial standard. This format, the default for Guidance Software EnCase, produces both compressed and uncompressed image files. These files (or volumes) write an extension starting with .e01 and increment it for each additional segmented image volume.\n\nSeveral forensics analysis tools can generate generic versions of the Expert Witness Compression format and analyze it, including X-Ways Forensics, AccessData Forensic Toolkit (FTK), Belkasoft, and SMART. For more information on the Expert Witness Compression format, see http://asrdata.com/E01-format.html.",
+                  "children": []
+                },
+                {
+                  "title": "Advanced Forensic Format",
+                  "toc_id": 106,
+                  "chunk_count": 11,
+                  "total_chunks_in_branch": 11,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    1339,
+                    1340,
+                    1341,
+                    1342,
+                    1343,
+                    1344,
+                    1345,
+                    1346,
+                    1347,
+                    1348,
+                    1349
+                  ],
+                  "content": "Advanced Forensic Format\n\nDr. Simson L. Garfinkel developed an open-source acquisition format called Advanced Forensic Format (AFF) An open-source data acquisition format that stores image data and metadata. File extensions include .afd for segmented image files and .afm for AFF metadata. . This format has the following design goals:\n\nCapable of producing compressed or uncompressed image files\n\nNo size restriction for disk-to-image files\n\nSpace in the image file or segmented files for metadata\n\nSimple design with extensibility\n\nOpen source for multiple computing platforms and OSs\n\nInternal consistency checks for self-authentication\n\nFile extensions include .afd for segmented image files and .afm for AFF metadata. Because AFF is open source, digital forensics vendors have no implementation restrictions on this format. For more information on AFF, see www.afflib.sourceforge.net and www.basistech.com/wp-content/uploads/datasheets/Digital-Forensics-Toolsets-EN.pdf.\n\nTip\n\nFor more information on forensics acquisition file formats, see www.sleuthkit.org/informer, issues #19 and #23.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding Storage Formats for Digital Evidence (Interactive Activity)",
+                "toc_id": 103,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Validating Data Acquisitions",
+              "toc_id": 117,
+              "chunk_count": 5,
+              "total_chunks_in_branch": 32,
+              "budget_slides_content": 3,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "chunks_sorted": [
+                1553,
+                1554,
+                1555,
+                1556,
+                1557
+              ],
+              "content": "Validating Data Acquisitions\n\nProbably the most critical aspect of computer forensics is validating digital evidence. The weakest point of any digital investigation is the integrity of the data you collect, so validation is essential. In this section, you learn how to use several tools to validate data acquisitions.\n\nValidating digital evidence requires using a hashing algorithm utility, which is designed to create a binary or hexadecimal number that represents the uniqueness of a data set, such as a file or disk drive. This unique number is referred to as a “digital fingerprint.” With a few exceptions, making any alteration in one of the files—even changing one letter from uppercase to lowercase—produces a completely different hash value.\n\nThese exceptions, known as “collisions,” have been found to occur in a small number of files with MD5, and SHA-1 might also be subject to collisions. For forensic examinations of data files on a disk drive, however, collisions are of little concern. If two files with different content have the same MD5 hash value, a comparison of each byte of a file can be done to see the differences. Currently, several tools can do a byte-by-byte comparison of files. Programs such as X-Ways Forensics, X-Ways WinHex, and IDM Computing Solution’s UltraCompare can analyze and compare data files. For more information on MD5 collisions, see www.x-ways.net/md5collision.html or www.mscs.dal.ca/~selinger/md5collision/. Chapter 4 discusses methods of using MD5 and SHA-1.\n\nFor imaging an evidence drive, many tools offer validation techniques ranging from CRC-32, MD5, and SHA-1 to SHA-512. These hashing algorithm utilities are available as stand-alone programs or are integrated into many acquisition tools. The following sections discuss how to perform validation with some currently available acquisition programs.",
+              "children": [
+                {
+                  "title": "Linux Validation Methods",
+                  "toc_id": 118,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 21,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
+                  },
+                  "chunks_sorted": [
+                    1558,
+                    1559,
+                    1560
+                  ],
+                  "content": "Linux Validation Methods\n\nLinux is rich in commands and functions. The two Linux shell commands shown earlier in this chapter, dd and dcfldd, have several options that can be combined with other commands to validate data. The dcfldd command has other options that validate data collected from an acquisition. Validating acquired data with the dd command requires using other shell commands.\n\nCurrent distributions of Linux include two hashing algorithm utilities: md5sum and sha1sum. Both utilities can compute hashes of a single file, multiple files, individual or multiple disk partitions, or an entire disk drive.",
+                  "children": [
+                    {
+                      "title": "Validating dd-Acquired Data",
+                      "toc_id": 119,
+                      "chunk_count": 12,
+                      "total_chunks_in_branch": 12,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "chunks_sorted": [
+                        1561,
+                        1562,
+                        1563,
+                        1564,
+                        1565,
+                        1566,
+                        1567,
+                        1568,
+                        1569,
+                        1570,
+                        1571,
+                        1572
+                      ],
+                      "content": "Validating dd-Acquired Data\n\nAs shown earlier, the following command produces segmented volumes of the /dev/sdb drive, with each segmented volume named image_sdb and an incrementing extension of .aa, .ab, .ac, and so on:\n\nTo validate all segmented volumes of a suspect drive with the md5sum utility, you use the Linux shell commands shown in the following steps. For the saved images, remember to change to the directory where the data was saved, or list the exact path for the saved images. To use sha1sum instead of md5sum, just replace all md5sum references in commands with sha1sum. The drive should still be connected to your acquisition workstation.\n\nIf necessary, start Linux, open a shell window, and navigate to the directory where image files are saved. To calculate the hash value of the original drive, type md5sum/dev/sdb > md5_sdb.txt and press Enter.\n\nNote\n\nThe redirect (>) option saves the computed MD5 hash value in the md5_sdb.txt file. This file should be saved with image files as validation of the evidence.\n\nTo compute the MD5 hash value for the segmented volumes and append the output to the md5_sdb.txt file, type cat image_sdb.*| md5sum >> md5_sdb.txt and press Enter.\n\nNote\n\nBy using the cat (concatenate) command with an asterisk (*) as the extension value, all segmented volumes are read sequentially as one big contiguous file, as though they were the original drive or partition. The pipe (|) function outputs the cat command read data to the input of the md5sum command. The >> option adds the md5sum hash results to the end of the md5_sdb.txt file’s content.\n\nExamine the md5_sdb.txt file to see whether both hashes match by typing cat md5_sdb.txt and pressing Enter. If the data acquisition is successful, the two hash numbers should be identical. If not, the acquisition didn’t work correctly. You should see output similar to the following:\n\nClose the Linux shell window by typing exit and pressing Enter.\n\nWith the dd command, the md5sum or sha1sum utilities should be run on all suspect disks and volumes or segmented volumes.",
+                      "children": []
+                    },
+                    {
+                      "title": "Validating dcfldd-Acquired Data",
+                      "toc_id": 120,
+                      "chunk_count": 6,
+                      "total_chunks_in_branch": 6,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        1573,
+                        1574,
+                        1575,
+                        1576,
+                        1577,
+                        1578
+                      ],
+                      "content": "Validating dcfldd-Acquired Data\n\nBecause dcfldd is designed for forensics data acquisition, it has validation options integrated: hash and hashlog. You use the hash option to designate a hashing algorithm of md5, sha1, sha256, sha384, or sha512. The hashlog option outputs hash results to a text file that can be stored with image files. To create an MD5 hash output file during a dcfldd acquisition, you enter the following command (in one line) at the shell prompt:\n\nTo see the results of files generated with the split command, you enter the list directory (ls) command at the shell prompt. You should see the following output:\n\nNote that the first segmented volume has the extension .000 rather than .001. Some Windows forensics tools might not be able to read segmented file extensions starting with .000. They’re typically looking for .001. If your forensics tool requires starting with an .001 extension, the files need to be renamed incrementally. So segmented file .000 should be renamed .001, .001 should be renamed .002, and so on.\n\nAnother useful dcfldd option is vf (verify file), which compares the image file with the original medium, such as a partition or drive. The vf option applies only to a nonsegmented image file. To validate segmented files from dcfldd, use the md5sum or sha1sum command described previously. To use the vf option, you enter the following command at the shell prompt:\n\nFor additional information on dcfldd, see the man page.",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "Windows Validation Methods",
+                  "toc_id": 121,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    1579,
+                    1580,
+                    1581,
+                    1582,
+                    1583,
+                    1584
+                  ],
+                  "content": "Windows Validation Methods\n\nUnlike Linux, Windows has no built-in hashing algorithm tools for digital forensics. However, many Windows third-party programs do have a variety of built-in tools. These third-party programs range from hexadecimal editors, such as X-Ways WinHex or Breakpoint Software Hex Workshop, to forensics programs, such as OSForensics, Autopsy, EnCase, and FTK. In Chapter 9, you learn how to hash specific data by using a hexadecimal editor to locate and verify groups of data that have no file association or are sections within a file.\n\nCommercial forensics programs also have built-in validation features. Each program has its own validation technique used with acquisition data in its proprietary format. For example, Autopsy uses MD5 to validate an image. It reads the metadata in Expert Witness Compression or AFF image files to get the original hash. If the hashes don’t match, Autopsy notifies you that the acquisition is corrupt and can’t be considered reliable evidence.\n\nIn Autopsy and many other forensics tools, however, raw format image files don’t contain metadata. As mentioned, a separate manual validation is recommended for all raw acquisitions at the time of analysis. The previously generated validation file for raw format acquisitions is essential to the integrity of digital evidence. The saved validation file can be used later to check whether the acquisition file is still good.\n\nIn FTK Imager Lite, when you select the Expert Witness Compression (.e01) or the SMART (.s01) format, additional options for validation are displayed. This validation report also lists the MD5 and SHA-1 hash values. The MD5 hash value is added to the proprietary format image or segmented files. When this image is loaded into FTK, SMART, or X-Ways Forensics (which can read only .e01 and raw files), the MD5 hash is read and compared with the image to verify whether the acquisition is correct.\n\nYou can find other open-source hashing tools online; just search for “windows open source hash” to find the latest available Windows hashing tools. For example, a recent search turned up SourceForge md5deep at http://md5deep.sourceforge.net and Software Informer at http://softwaresolution.informer.com/Hash-Tool.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Validating Data Acquisitions (Interactive Activity)",
+                "toc_id": 117,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Performing RAID Data Acquisitions",
+              "toc_id": 122,
+              "chunk_count": 2,
+              "total_chunks_in_branch": 30,
+              "budget_slides_content": 3,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 4,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 14
+              },
+              "chunks_sorted": [
+                1585,
+                1586
+              ],
+              "content": "Performing RAID Data Acquisitions\n\nAcquisitions of RAID drives can be challenging and frustrating for digital forensics examiners because of how RAID systems are designed, configured, and sized. Size is the biggest concern because many RAID systems are now pushing into exabytes or more of data. The following sections review common RAID configurations and discuss ways to acquire data on these large storage devices.",
+              "children": [
+                {
+                  "title": "Understanding RAID",
+                  "toc_id": 123,
+                  "chunk_count": 15,
+                  "total_chunks_in_branch": 15,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    1587,
+                    1588,
+                    1589,
+                    1590,
+                    1591,
+                    1592,
+                    1593,
+                    1594,
+                    1595,
+                    1596,
+                    1597,
+                    1598,
+                    1599,
+                    1600,
+                    1601
+                  ],
+                  "content": "Understanding RAID\n\nRedundant array of independent disks (RAID) Two or more disks combined into one large drive in several configurations for special needs. Some RAID systems are designed for redundancy to ensure continuous operation if one disk fails. Another configuration spreads data across several disks to improve access speeds for reads and writes. is a computer configuration involving two or more physical disks. Originally, RAID was developed as a data-redundancy measure to minimize data loss caused by a disk failure. As technology improved, RAID also provided increased storage capabilities.\n\nSeveral levels of RAID can be implemented through software (known as “software RAID”) or special hardware controllers (known as “hardware RAID”). Software RAID is typically implemented from the host computer’s OS. Hardware RAID uses its own controller as well as a processor and memory connected to the host computer. For more information on RAID configurations, see www.adaptec.com/nr/rdonlyres/14b2fd84-f7a0-4ac5-a07a-214123ea3dd6/0/4423_sw_hwraid_10.pdf.\n\nFor Windows XP, 2000, and NT servers and workstations, RAID 0 or 1 is available. For a high-end data-processing environment, RAID 5 is common and is often based in special RAID towers. These high-end RAID systems usually have integrated controllers that connect to high-end servers or mainframes. These systems provide redundancy and high-speed data access and can make many small disks appear as one very large drive.\n\nNote\n\nOther variations of RAID besides 0, 1, and 5 are specific to their vendor or application.\n\nRAID 0 provides rapid access and increased data storage (see Figure 3-8). In RAID 0, two or more disk drives become one large volume, so the computer views the disks as a single disk. The tracks of data on this mode of storage cross over to each disk. The logical addressing scheme makes it seem as though each track of data is continuous throughout all disks. If you have two disks configured as RAID 0, track one starts on the first physical disk and continues to the second physical disk. When viewed from a booted OS, such as Windows XP or later, the two disks appear as one large disk. The advantage of RAID 0 is increased speed and data storage capability spread over two or more disks that can be one large disk partition. Its biggest disadvantage is lack of redundancy; if a disk fails, data\n\nbe one large disk partition. Its biggest disadvantage is lack of redundancy; if a disk fails, data isn’t continuously available.\n\nRAID 1, shown in Figure 3-9, is made up of two disks for each volume and is designed for data recovery in the event of a disk failure. The contents of the two disks in RAID 1 are identical. When data is written to a volume, the OS writes the data twice—once to each disk at the same time. If one drive fails, the OS switches to the other disk.\n\nRAID 1 ensures that data isn’t lost and helps prevent computer downtime. The main disadvantage of RAID 1 is that it takes two disks for each volume, which doubles the cost of disk storage.\n\nLike RAID 1, RAID 2 (see Figure 3-10) provides rapid access and increased storage by configuring two or more disks as one large volume. The difference with RAID 2 is that data is written to disks on a bit level. An error-correcting code (ECC) is used to verify whether the write is successful. RAID 2, therefore, has better data integrity checking than RAID 0. Because of the bit-level writes and the ECC, however, RAID 2 is slower than RAID 0.\n\nRAID 3 uses data striping and dedicated parity and requires at least three disks. Similar to RAID 0, RAID 3 stripes tracks across all disks that make up one volume. RAID 3 also implements dedicated parity of data to ensure recovery if data is corrupted. Dedicated parity is stored on one disk in the RAID 3 array. Like RAID 3, RAID 4 uses data striping and dedicated parity (block writing), except data is written in blocks rather than bytes.\n\nRAID 5 (see Figure 3-11) is similar to RAID 0 and RAID 3 in that it uses distributed data and distributed parity and stripes data tracks across all disks in the RAID array. Unlike RAID 3, however, RAID 5 places parity data on each disk. If a disk in a RAID array has a data failure, the parity on other disks rebuilds the corrupt data automatically when the failed drive is replaced.\n\nIn RAID 6, distributed data and distributed parity (double parity) function the same way as RAID 5, except each disk in the RAID array has redundant parity. The advantage of RAID 6 over RAID 5 is that it recovers any two disks that fail because of the additional parity stored on each disk.\n\nRAID 10, or mirrored striping, also known as RAID 1+0, is a combination of RAID 1 and RAID 0. It provides fast access and redundancy of data storage. RAID 15, or mirrored striping with parity, also known as RAID 1+5, is a combination of RAID 1 and RAID 5. It offers the most robust data recovery capability and speed of access of all RAID configurations and is also more costly.",
+                  "children": []
+                },
+                {
+                  "title": "Acquiring RAID Disks",
+                  "toc_id": 124,
+                  "chunk_count": 13,
+                  "total_chunks_in_branch": 13,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    1602,
+                    1603,
+                    1604,
+                    1605,
+                    1606,
+                    1607,
+                    1608,
+                    1609,
+                    1610,
+                    1611,
+                    1612,
+                    1613,
+                    1614
+                  ],
+                  "content": "Acquiring RAID Disks\n\nThere’s no simple method for getting an image of a RAID server’s disks. You need to address the following concerns:\n\nHow much data storage is needed to acquire all data for a forensics image?\n\nWhat type of RAID is used? Is it Windows RAID 0 or 1 or an integrated hardware-firmware vendor’s RAID 5, 10, or 15? Is it another unknown configuration or OS?\n\nIf it’s a RAID 1, 10, or 15 server, do you need to have all drives connected so that the OS sees their contents? Some older RAID 1 systems required connecting both drives to make the data readable, which might also apply to RAID 10 and 15.\n\nDo you have an acquisition tool capable of copying the data correctly?\n\nCan the tool read a forensic copy of a RAID image?\n\nCan the tool read split data saves of each RAID disk, and then combine all images of each disk into one RAID virtual drive for analysis?\n\nWith the larger disks now available, copying small RAID systems to one large disk is possible, similar to the way non-RAID suspect drives are copied. For example, a small server running eight 36 GB SCSI drives in a RAID 0 tower requires about a 300 GB SATA or IDE (PATA) drive. Less data storage is needed if a proprietary format acquisition is used with compression applied. All forensics analysis tools can analyze an image because they see the acquired data as one large drive, not eight separate drives.\n\nSeveral forensics vendors have added RAID recovery features. These vendors typically specialize in one or two types of RAID formats. The following are some vendors offering RAID acquisition functions:\n\nGuidance Software EnCase\n\nX-Ways Forensics\n\nAccessData FTK",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Performing RAID Data Acquisitions (Interactive Activity)",
+                "toc_id": 122,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Using Remote Network Acquisition Tools",
+              "toc_id": 125,
+              "chunk_count": 5,
+              "total_chunks_in_branch": 39,
+              "budget_slides_content": 4,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "chunks_sorted": [
+                1621,
+                1622,
+                1623,
+                1624,
+                1625
+              ],
+              "content": "Using Remote Network Acquisition Tools\n\nRecent improvements in forensics tools include the capability to acquire disk data or data fragments (sparse or logical) remotely. With this feature, you can connect to a suspect computer remotely via a network connection and copy data from it. Remote acquisition tools vary in configurations and capabilities. Some require manual intervention on remote suspect computers to initiate the data copy. Others can acquire data surreptitiously through an encrypted link by pushing a remote access program to the suspect’s computer. From an investigation perspective, being able to connect to a suspect’s computer remotely to perform an acquisition has tremendous appeal. It saves time because you don’t have to go to a suspect’s computer, and it minimizes the chances of a suspect discovering that an\n\nhave to go to a suspect’s computer, and it minimizes the chances of a suspect discovering that an investigation is taking place. Most remote acquisitions have to be done as live acquisitions, not static acquisitions. When performing remote acquisitions, advanced privileges are required to push agent applications to the remote system.\n\nThere are some drawbacks to consider, such as antivirus, antispyware, and firewall tools. Most of these security programs can be configured to ignore remote access programs. However, if suspects have administrator rights on their computers, they could easily install their own security tools that trigger an alarm to notify them of remote access intrusions.\n\nThe following sections describe methods used by digital forensics tools that have the capability to perform remote acquisitions. An older version of ProDiscover is used as an example to show how remote acquisitions work. Other vendors’ remote acquisition functions work similarly. Chapter 10 covers other resources for data copying and explains how to perform a live forensics acquisition.",
+              "children": [
+                {
+                  "title": "Remote Acquisition with ProDiscover",
+                  "toc_id": 126,
+                  "chunk_count": 20,
+                  "total_chunks_in_branch": 20,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    1626,
+                    1627,
+                    1628,
+                    1629,
+                    1630,
+                    1631,
+                    1632,
+                    1633,
+                    1634,
+                    1635,
+                    1636,
+                    1637,
+                    1638,
+                    1639,
+                    1640,
+                    1641,
+                    1642,
+                    1643,
+                    1644,
+                    1645
+                  ],
+                  "content": "Remote Acquisition with ProDiscover\n\nProDiscover Incident Response is designed to be integrated as a network intrusion analysis tool and is useful for performing remote acquisitions. When connected to a remote computer, it uses the same ProDiscover acquisition method described previously. After the connection is established, the remote computer is displayed in the Capture Image dialog box. This tool offers all the functions and features of other tools in the ProDiscover suite plus the following:\n\nCapture volatile system state information.\n\nAnalyze current running processes on a remote system.\n\nLocate unseen files and processes on a remote system that might be running malware or spyware.\n\nRemotely view and listen to IP ports on a compromised system.\n\nRun hash comparisons on a remote system to search for known Trojans and rootkits.\n\nCreate a hash inventory of all files on a system remotely (a negative hash search capability) to establish a baseline if it gets attacked.\n\nThe ProDiscover utility for remote access is the PDServer remote agent, which must be loaded on the suspect computer before ProDiscover Incident Response can access it. This remote agent can be installed in three different ways:\n\nTrusted CD—For this manual installation method, ProDiscover can create a special CD/DVD or USB drive containing the PDServer remote agent. It’s used to load PDServer manually on the suspect computer.\n\nPreinstallation—For networks with a configured OS, the PDServer remote agent can be added to the standard installation of high-risk computers, which enables network security administrators to respond to network attacks and malware contaminations quickly. Any network management tool, such as DameWare (www.dameware.com) or Hyena (www.systemtools.com/hyena/), can be used to initiate a connection with ProDiscover. This is a remote method of installing the remote acquisition tool.\n\nPushing out and running remotely—Downloading PDServer to a remote computer helps investigators respond quickly to incidents. Data is collected in real time when using this function. This is a remote method of installing the remote acquisition tool.\n\nWith PDServer, you have the option of running it in a stealth mode to hide it from the suspect. Note that Windows Task Manager lists the process as PDServer. To disguise it, you can change the process name so that it appears to be an OS function in the suspect computer’s Task Manager. In addition, the following security features are available for remote connections:\n\nPassword protection—PDServer on the target computer is password-protected, and the password is encrypted at all times.\n\nEncryption—All communication between PDServer on the suspect’s and investigator’s computers can be encrypted. ProDiscover provides 256-bit Advanced Encryption Standard (AES) or Twofish encryption for the connection.\n\nSecure communication protocol—All connections between the suspect’s and examiner’s computers have globally unique identifiers (GUIDs) to prevent inserting packets in the data stream.\n\nWrite-protected trusted binaries—PDServer can run from a write-protected device, such as a CD.\n\nDigital signatures—PDServer and its removal device driver, PARemoval.sys, are digitally signed to verify that they haven’t been tampered with before and during the remote connection.\n\nNote\n\nFor more information on ProDiscover, see www.arcgroupny.com.",
+                  "children": []
+                },
+                {
+                  "title": "Remote Acquisition with EnCase Enterprise",
+                  "toc_id": 127,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    1646,
+                    1647,
+                    1648,
+                    1649,
+                    1650,
+                    1651,
+                    1652
+                  ],
+                  "content": "Remote Acquisition with EnCase Enterprise\n\nGuidance Software was the first forensics vendor to develop a remote acquisition and analysis tool based on its desktop tool EnCase. This remote tool, EnCase Endpoint Investigator, can perform the following functions:\n\nSearch and collect internal and external network systems over a wide geographical area\n\nSupport multiple OSs and file systems\n\nTriage to help determine systems’ relevance to an investigation\n\nPerform simultaneous searches of up to five systems at a time\n\nFor more information, see www.guidancesoftware.com/docs/default-source/document-library/product-brief/encase-endpoint-investigator-product-overview.pdf.",
+                  "children": []
+                },
+                {
+                  "title": "Remote Acquisition with R-Tools R-Studio",
+                  "toc_id": 128,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 2,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    1653,
+                    1654
+                  ],
+                  "content": "Remote Acquisition with R-Tools R-Studio\n\nThe R-Tools suite of software is designed for data recovery. As part of this recovery capability, the R-Studio network edition can remotely access networked computer systems. Data acquired with R-Studio network edition creates raw format acquisitions, and it’s capable of recovering many different file systems, including ReFS. For more information on R-Studio, see www.r-studio.com.",
+                  "children": []
+                },
+                {
+                  "title": "Remote Acquisition with WetStone US-LATT PRO",
+                  "toc_id": 129,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 2,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    1655,
+                    1656
+                  ],
+                  "content": "Remote Acquisition with WetStone US-LATT PRO\n\nUS-LATT PRO, part of a suite of tools developed by WetStone, can connect to a networked computer remotely and perform a live acquisition of all drives connected to it. For more information on this tool, see www.wetstonetech.com/product/us-latt/.",
+                  "children": []
+                },
+                {
+                  "title": "Remote Acquisition with F-Response",
+                  "toc_id": 130,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 3,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    1657,
+                    1658,
+                    1659
+                  ],
+                  "content": "Remote Acquisition with F-Response\n\nF-Response is a vendor-neutral specialty remote access utility designed to work with any digital forensics program. When installed on a remote computer, it sets up a security read-only connection that allows forensics examiners to access it. With F-Response, examiners can access remote drives at the physical level and view raw data. After the F-Response connection has been set up, any forensics acquisition tool can be used to collect digital evidence.\n\nF-Response is sold in four different versions: Enterprise Edition, Consultant + Convert Edition, Consultant Edition, and TACTICAL Edition. For the latest information on F-Response, see www.f-response.com.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Using Remote Network Acquisition Tools (Interactive Activity)",
+                "toc_id": 125,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Using Other Forensics Acquisition Tools",
+              "toc_id": 131,
+              "chunk_count": 2,
+              "total_chunks_in_branch": 27,
+              "budget_slides_content": 3,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "chunks_sorted": [
+                1660,
+                1661
+              ],
+              "content": "Using Other Forensics Acquisition Tools\n\nIn addition to the tools you’ve learned about already, you can use other commercial acquisition tools, described in the following sections. Prices for some tools are discounted for law enforcement officers working in digital forensics.",
+              "children": [
+                {
+                  "title": "PassMark Software ImageUSB",
+                  "toc_id": 132,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 2,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    1662,
+                    1663
+                  ],
+                  "content": "PassMark Software ImageUSB\n\nPassMark Software has an acquisition tool called ImageUSB for its OSForensics analysis product. To create a bootable flash drive, you need Windows XP or later and ImageUSB downloaded from the OSForensics Web site. For more information on ImageUSB, see www.osforensics.com/tools/write-usb-images.html.",
+                  "children": []
+                },
+                {
+                  "title": "ASR Data SMART",
+                  "toc_id": 133,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    1664,
+                    1665,
+                    1666,
+                    1667,
+                    1668,
+                    1669,
+                    1670
+                  ],
+                  "content": "ASR Data SMART\n\nASR Data SMART is a Linux forensics analysis tool that can make image files of a suspect drive. SMART can produce proprietary or raw format images and includes the following capabilities:\n\nRobust data reading of bad sectors on drives\n\nMounting suspect drives in write-protected mode\n\nMounting target drives, including NTFS drives, in read/write mode\n\nOptional compression schemes to speed up acquisition or reduce the amount of storage needed for acquired digital evidence\n\nFor more information on SMART, see www.asrdata.com.",
+                  "children": []
+                },
+                {
+                  "title": "Runtime Software",
+                  "toc_id": 134,
+                  "chunk_count": 12,
+                  "total_chunks_in_branch": 12,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    1615,
+                    1616,
+                    1617,
+                    1618,
+                    1619,
+                    1620,
+                    1671,
+                    1672,
+                    1673,
+                    1674,
+                    1675,
+                    1676
+                  ],
+                  "content": "Runtime Software\n\nR-Tools Technologies\n\nYou should know which vendor supports which RAID format and keep up to date on the latest improvements in these products.\n\nBeing able to separate each physical disk into smaller save sets eliminates the need to have one large drive for storing acquired data. Acquiring RAID data requires only similar-size drives that match each disk in the RAID array. For example, with a RAID 0 array of three 2 TB disks, all you need are three target drives of the same size. If each acquisition is compressed, you might be able to get by with slightly smaller target drives.\n\nTools such as Runtime Software (www.runtime.org) and R-Tools Technologies (www.r-tt.com) are designed as data recovery tools. Although not intended as forensics acquisition tools, they have unique features that can aid in recovering corrupted RAID data and can perform raw format acquisitions and repair broken RAID 0 and 5 systems. The Runtime RAID Reconstructor tool copies the original RAID to a raw format file, which must then be restored on another RAID-configured system where repairs can be performed. It also scans and corrects errors on the newly copied RAID. R-Tools R-Studio creates a virtual volume of the RAID image file. All repairs are made on the virtual volume, which can then be restored to the original RAID.\n\nOccasionally, a RAID system is too large for a static acquisition. Under ideal circumstances, your goal is to collect a complete image of evidence drives. Because RAID systems can have dozens or more terabytes of data storage, copying all data isn’t always practical. For these occasions, retrieving only the data relevant to the investigation with the sparse or logical acquisition method is the only practical solution. When dealing with very large RAID servers, consult with the forensics vendor to determine how to best capture RAID data. Another possible solution is renting a portable RAIDBank for your acquisition.\n\nRuntime Software\n\nIn addition to RAID Reconstructor, Runtime Software offers several compact shareware programs for data acquisition and recovery, including DiskExplorer for FAT and DiskExplorer for NTFS. Runtime has designed its tools to be file system specific, so DiskExplorer versions for both FAT and NTFS are available. These tools offer the following features for acquisition needs:\n\nCreate a raw format image file.\n\nSegment the raw format or compressed image for archiving purposes.\n\nAccess network computers’ drives.\n\nFor more information on Runtime Software, see www.runtime.org/raid.htm.",
+                  "children": []
+                },
+                {
+                  "title": "ILookIX IXImager",
+                  "toc_id": 135,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 2,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    1677,
+                    1678
+                  ],
+                  "content": "ILookIX IXImager\n\nIXImager runs from a bootable thumb drive or CD/DVD. It’s a stand-alone proprietary format acquisition tool designed to work only with ILookIX. It can acquire single drives and RAID drives. It supports IDE (PATA), SCSI, USB, and FireWire devices. The IXImager proprietary format can be converted to a raw format if other analysis tools are used. For more information on IXImager, see www.perlustro.com/solutions/e-forensics/iximager.",
+                  "children": []
+                },
+                {
+                  "title": "SourceForge",
+                  "toc_id": 136,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 2,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    1679,
+                    1680
+                  ],
+                  "content": "SourceForge\n\nSourceForge provides several applications for security, analysis, and investigations. For a listing of its current tools, see https://sourceforge.net/directory/os:windows/. SourceForge also offers a Windows version of dcfldd; for updates, go to https://sourceforge.net/projects/dcfldd/?source=typ_redirect.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Using Other Forensics Acquisition Tools (Interactive Activity)",
+                "toc_id": 131,
+                "slides_allocated": 1
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          }
+        }
+      ]
+    },
+    {
+      "deck_number": 2,
+      "total_slides_in_deck": 25,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 18,
+        "interactive": 3
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 69,
+        "total_deck_time": 75
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Data Acquisition.",
+            "deck_title": "Week 3, Lecture 2"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Determining the Best Acquisition Method",
+              "Contingency Planning for Image Acquisitions",
+              "Using Acquisition Tools"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Determining the Best Acquisition Method",
+              "toc_id": 107,
+              "chunk_count": 20,
+              "total_chunks_in_branch": 20,
+              "budget_slides_content": 2,
+              "direct_slides_content": 2,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 6,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "chunks_sorted": [
+                1350,
+                1351,
+                1352,
+                1353,
+                1354,
+                1355,
+                1356,
+                1357,
+                1358,
+                1359,
+                1360,
+                1361,
+                1362,
+                1363,
+                1364,
+                1365,
+                1366,
+                1367,
+                1368,
+                1369
+              ],
+              "content": "Determining the Best Acquisition Method\n\nAs mentioned, there are two types of acquisitions: static acquisitions A data acquisition method used when a suspect drive is write-protected and can’t be altered. If disk evidence is preserved correctly, static acquisitions are repeatable. and live acquisitions A data acquisition method used when a suspect computer can’t be shut down to perform a static acquisition. Captured data might be altered during the acquisition because it’s not write-protected. Live acquisitions aren’t repeatable because the suspect computer’s OS is continuously altering data. . Typically, a static acquisition is done on a computer seized during a police raid, for example. If the computer has an encrypted drive, a live acquisition is done if the password or passphrase is available—meaning the computer is powered\n\nlive acquisition is done if the password or passphrase is available—meaning the computer is powered on and has been logged on to by the suspect. Static acquisitions are always the preferred way to collect digital evidence. However, they do have limitations in some situations, such as an encrypted drive that’s readable only when the computer is powered on or a computer that’s accessible only over a network. Some solutions can help decrypt a drive that has been encrypted with whole disk encryption, such as Elcomsoft Forensic Disk Decryptor (www.elcomsoft.com/efdd.html).\n\nNote\n\nIn Chapter 11, you learn how to perform live acquisitions, including data collection of digital media and dynamic/volatile memory (RAM) on a computing system.\n\nFor both types of acquisitions, data can be collected with four methods: creating a disk-to-image file, creating a disk-to-disk copy, creating a logical disk-to-disk or disk-to-data file, or creating a sparse copy of a folder or file. Determining the best acquisition method depends on the circumstances of the investigation.\n\nNote\n\nSee ISO/IEC 27037: 2012 (section 5.4.4 Acquisition and section 6.5 Use reasonable care) for additional discussions on when to perform sparse acquisitions.\n\nCreating a disk-to-image file is the most common method and offers the most flexibility for your investigation. With this method, you can make one or many copies of a suspect drive. These copies are bit-for-bit replications of the original drive. In addition, you can use many commercial forensics tools to read the most common types of disk-to-image files you create. These programs read the disk-to-image file as though it were the original disk. Older MS-DOS tools can only read data from a drive. To use MS-DOS tools, you have to duplicate the original drive to perform the analysis. GUI programs save time and disk resources because they can read and interpret directly from the disk-to-image file of a copied drive.\n\nSometimes you can’t make a disk-to-image file because of hardware or software errors or incompatibilities. This problem is more common when you have to acquire older drives. For these drives, you might have to create a disk-to-disk copy of the suspect drive. Several imaging tools can copy data exactly from an older disk to a newer disk. These programs can adjust the target disk’s geometry (its cylinder, head, and track configuration) so that the copied data matches the original suspect drive. These imaging tools include EnCase and X-Ways Forensics. See the vendors’ manuals for instructions on using these tools for disk-to-disk copying.\n\nTip\n\nFor more information on current and older drives, see www.t13.org.\n\nCollecting evidence from a large drive can take several hours. If your time is limited, consider using a logical acquisition or sparse acquisition data copy method. A logical acquisition This data acquisition method captures only specific files of interest to the case or specific types of files, such as Outlook .pst files. See also sparse acquisition. captures only specific files of interest to the case or specific types of files. A sparse acquisition Like logical acquisitions, this data acquisition method captures only specific files of interest to the case, but it also collects fragments of unallocated (deleted) data. See also logical acquisition. is similar but also collects fragments of unallocated (deleted) data; use this method only when you don’t need to examine the entire drive. An\n\n(deleted) data; use this method only when you don’t need to examine the entire drive. An example of a logical acquisition is an e-mail investigation that requires collecting only Outlook .pst or .ost files. Another example is collecting only specific records from a large RAID server. If you have to recover data from a RAID or storage area network (SAN) server with several exabytes (EB) or more of data storage, the logical method might be the only way you can acquire the evidence. In e-discovery for the purpose of litigation, a logical acquisition is becoming the preferred method, especially with large data storage systems.\n\nTo determine which acquisition method to use for an investigation, consider the size of the source (suspect) disk, whether you can retain the source disk as evidence or must return it to the owner, how much time you have to perform the acquisition, and where the evidence is located.\n\nIf the source disk is very large, such as 4 terabytes (TB) or more, make sure you have a target disk that can store a disk-to-image file of the large disk. If you don’t have a target disk of comparable size, review alternatives for reducing the size of data to create a verifiable copy of the suspect drive. Older Microsoft disk compression tools, such as DoubleSpace or DriveSpace, eliminate only slack disk space between files. Other compression methods use an algorithm to reduce file size. Popular archiving tools, such as PKZip, WinZip, and WinRAR, use an algorithm referred to as “lossless compression.” Compression algorithms for graphics files use what’s called “lossy compression,” which can change data. For example, lossy compression is used with .jpeg files to reduce file size and\n\ncan change data. For example, lossy compression is used with .jpeg files to reduce file size and doesn’t affect image quality when the file is restored and viewed. Because lossy compression alters original data, however, it isn’t used for forensics acquisitions. Both compression methods are discussed in more detail in Chapter 8.\n\nMost imaging tools have an option to use lossless compression to save disk space, which means the target drive doesn’t have to be as large as the suspect drive. For example, if you’re examining a 3 TB SATA drive, you might be able to use lossless compression to create the disk-to-image file on a 2 TB target drive. Image files can be reduced by as much as 50% of the original. If the suspect drive already contains several zip files, however, the imaging tool can’t compress them any further. This is because zip files have already been compressed, so any additional compression results in very little size reduction. For additional information on lossless compression, see www.data-compression.com/lossless.shtml or www.cise.ufl.edu/~sahni/papers/encycloimage.pdf.\n\nAn easy way to test lossless compression is to perform an MD5 or SHA-1 hash on a file before and after it’s compressed. If the compression is done correctly, both versions have the same hash value. If the hashes don’t match, that means something corrupted the compressed file, such as a hardware or software error. As an added precaution, perform two separate hashes with different algorithms, such as MD5 and SHA-1. This step isn’t mandatory; however, it’s a good way to establish that nothing has changed during data processing.\n\nIf you can’t retain the original evidence drive and must return it to the owner, as in a discovery demand for a civil litigation case, check with the requester (your lawyer or supervisor, for example), and ask whether a logical acquisition is acceptable. If not, you have to refer the matter back to the requester. When performing an acquisition under these conditions, make sure you have a good copy because most discovery demands give you only one chance to capture data. In addition, make sure you have a reliable forensics tool that you know how to use.",
+              "children": [],
+              "interactive_activity": {
+                "title": "Determining the Best Acquisition Method (Interactive Activity)",
+                "toc_id": 107,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Contingency Planning for Image Acquisitions",
+              "toc_id": 108,
+              "chunk_count": 10,
+              "total_chunks_in_branch": 10,
+              "budget_slides_content": 1,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 2,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 8
+              },
+              "chunks_sorted": [
+                1370,
+                1371,
+                1372,
+                1373,
+                1374,
+                1375,
+                1376,
+                1377,
+                1378,
+                1379
+              ],
+              "content": "Contingency Planning for Image Acquisitions\n\nBecause you’re working with digital evidence, you must take precautions to protect it from loss. You should also make contingency plans in case software or hardware doesn’t work or you encounter a failure during an acquisition. The most common and time-consuming technique for preserving evidence is creating a duplicate of your disk-to-image file. Many digital investigators don’t make duplicates of their evidence because they don’t have enough time or resources to make a second image. However, if the first copy doesn’t work correctly, having a duplicate is worth the effort and resources. Be sure you take steps to minimize the risk of failure in your investigation.\n\nAs a standard practice, make at least two images of the digital evidence you collect. If you have more than one imaging tool, such as FTK Imager Lite and X-Ways Forensics, make the first copy with one tool and the second copy with the other tool. Different acquisition tools use different methods to copy data, and one tool might, for example, make more attempts to copy corrupted areas of a drive. So using more than one tool can be helpful in making sure data has been copied correctly.\n\nIf you have only one tool, however, consider making two images of the drive with the same tool, especially for critical investigations. With many tools, you can make one copy with no compression and compress the other copy. Remember that Murphy’s Law applies to digital forensics, too: If anything can go wrong, it will.\n\nSome acquisition tools don’t copy data in the host protected area (HPA) An area of a disk drive reserved for booting utilities and diagnostic programs. It’s not visible to the computer’s OS. of a disk drive. Check the vendor’s documentation to see whether its tool can copy a drive’s HPA. If not, consider using a hardware acquisition tool that can access the drive at the BIOS level, such as Belkasoft or ILookIX IXImager, with a write-blocker, Image MASSter Solo, or X-Ways Replica. These tools can read a disk’s HPA.\n\nMicrosoft has added whole disk encryption An encryption technique that performs a sector-by-sector encryption of an entire drive. Each sector is encrypted in its entirety, making it unreadable when copied with a static acquisition method. with BitLocker to its newer operating systems, such as Windows Vista, 7, 8, and 10, which makes performing static acquisitions more difficult. (Several other third-party whole disk encryption tools are available, and you should be familiar with as many as possible.) As part of contingency planning, you must be prepared to deal with encrypted drives. A static acquisition on most whole disk—encrypted drives currently involves decrypting the drives, which requires the user’s cooperation in providing the decryption key. Most whole disk encryption tools at\n\nthe user’s cooperation in providing the decryption key. Most whole disk encryption tools at least have a manual process for decrypting data, which is converting the encrypted disk to an unencrypted disk. This process can take several hours, depending on the disk size. One good thing about encryption is that data isn’t altered, in that free and slack space aren’t changed. The biggest concern with whole disk encryption is getting the decryption key—that is, the password or code used to access encrypted data. If you can recover the whole disk key with tools such as Elcomsoft Forensic Disk Decryptor, mentioned previously, you need to learn how to use it to decrypt the drive. In criminal investigations, this might be impossible because if a disk contains evidence supporting the crime, a\n\nthis might be impossible because if a disk contains evidence supporting the crime, a suspect has a strong motivation not to supply the decryption key.\n\nNote\n\nResearchers at Princeton University have produced a technique to recover passwords and passphrases from RAM; for more information, see www.usenix.org/legacy/event/sec08/tech/full_papers/halderman/halderman.pdf or https://jhalderm.com/pub/papers/coldboot-cacm09.pdf.",
+              "children": [],
+              "interactive_activity": {
+                "title": "Contingency Planning for Image Acquisitions (Interactive Activity)",
+                "toc_id": 108,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Using Acquisition Tools",
+              "toc_id": 109,
+              "chunk_count": 5,
+              "total_chunks_in_branch": 173,
+              "budget_slides_content": 16,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 16,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 50
+              },
+              "chunks_sorted": [
+                1380,
+                1381,
+                1382,
+                1383,
+                1384
+              ],
+              "content": "Using Acquisition Tools\n\nMany forensics software vendors have developed acquisition tools that run in Windows. These tools make acquiring evidence from a suspect drive more convenient, especially when you use them with hot-swappable devices, such as USB-3, FireWire 1394A and 1394B, or SATA, to connect disks to your workstation.\n\nUsing acquisition tools with current OSs, such as Windows and Linux, has some drawbacks, however. Because Windows and Linux can easily contaminate an evidence drive when it’s mounted, you must protect it with a well-tested write-blocking hardware device. The automatic mounting process updates boot files by changing metadata, such as the most recent access time. (Chapter 6 discusses write-blocking devices in more detail.) In addition, some countries haven’t yet accepted the use of write-blocking devices for data acquisitions. Check with your legal counsel for evidence standards in your community or country.\n\nNote\n\nAlthough many digital forensics vendors have improved their acquisition tools, some older Windows and Linux tools (such as the dd or dcfldd commands) can’t acquire data from a disk’s HPA.",
+              "children": [
+                {
+                  "title": "Mini-WinFE Boot CDs and USB Drives",
+                  "toc_id": 110,
+                  "chunk_count": 9,
+                  "total_chunks_in_branch": 9,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    1385,
+                    1386,
+                    1387,
+                    1388,
+                    1389,
+                    1390,
+                    1391,
+                    1392,
+                    1393
+                  ],
+                  "content": "Mini-WinFE Boot CDs and USB Drives\n\nAccessing a disk drive directly might not be practical for a forensics acquisition. For example, a laptop’s design could make removing the disk drive to mount it on a write-blocker difficult, or you might not have the right connector for a drive. In these situations, a forensic boot CD/DVD or USB drive gives you a way to acquire data from a suspect computer and write-protect the disk drive. These forensic boot discs or drives can be Windows or Linux.\n\nOne forensically sound Windows boot utility is Mini-WinFE. It enables you to build a Windows forensic boot CD/DVD or USB drive with a modification in its Windows Registry file so that connected drives are mounted as read-only. Before booting a suspect’s computer with Mini-WinFE, you need to connect your target drive, such as a USB drive. After Mini-WinFE is booted, you can list all connected drives and alter your target USB drive to read-write mode so that you can run an acquisition program.\n\nTo create your own Mini-WinFE boot CD or USB drive, review the documentation and download the software from the following Web sites:\n\nFor an overview of WinFE, see http://brettshavers.cc/index.php/brettsblog/tags/tag/winfe. For the latest information and instructions, review the Downloads and Using WinFE menus.\n\nFor download instructions on Mini-WinFE, see http://brettshavers.cc/index.php/brettsblog/entry/mini-winfe-and-xwf.\n\nAnother download site for Mini-WinFE is http://reboot.pro/files/file/375-mini-winfe.\n\nFor complete instructions on Mini-WinFE, see www.forensicfocus.com/downloads/WinFE.pdf.\n\nIn addition, you need a Windows installation DVD (version 8 or later) and FTK Imager Lite or X-Ways Forensics installed on your workstation. Follow the instructions in the preceding Web sites to create the Mini-WinFE ISO file and then burn it to CD or transfer it to a USB drive. If you want to use a USB drive, you need a tool to transfer an ISO image to a USB drive. A freeware tool called ISO to USB is available at www.isotousb.com.",
+                  "children": []
+                },
+                {
+                  "title": "Acquiring Data with a Linux Boot CD",
+                  "toc_id": 111,
+                  "chunk_count": 5,
+                  "total_chunks_in_branch": 113,
+                  "budget_slides_content": 11,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 10,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 30
+                  },
+                  "chunks_sorted": [
+                    1394,
+                    1395,
+                    1396,
+                    1397,
+                    1398
+                  ],
+                  "content": "Acquiring Data with a Linux Boot CD\n\nThe Linux OS has many features that are applicable to digital forensics, especially data acquisitions. One unique feature of older Linux versions is that it can access a drive that isn’t mounted. Physical access for the purpose of reading data can be done on a connected media device, such as a disk drive, a USB drive, or other storage devices. In Windows OSs and newer Linux kernels, when you connect a drive via USB, FireWire, external SATA, or even internal PATA or SATA controllers, both OSs automatically mount and access the drive. On Windows drives, an acquisition workstation can access and alter data in the Recycle Bin; on Linux drives, the workstation most likely alters metadata, such as mount point configurations for an Ext3 or later drive. If you need to acquire a USB drive that\n\nas mount point configurations for an Ext3 or later drive. If you need to acquire a USB drive that doesn’t have a write-lock switch, use one of the forensic Linux Live CDs (discussed in the next section) to access the device.\n\nCaution\n\nUse caution when working with newer Linux distributions with KDE or Gnome GUIs. Many newer distributions mount most media devices automatically. If you’re using a nonforensic Linux distribution, you should test it before using it on actual evidence to see how it handles attached storage devices. If in doubt, always use a physical write-blocker for an acquisition from Linux.",
+                  "children": [
+                    {
+                      "title": "Using Linux Live CD Distributions",
+                      "toc_id": 112,
+                      "chunk_count": 17,
+                      "total_chunks_in_branch": 17,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "chunks_sorted": [
+                        1399,
+                        1400,
+                        1401,
+                        1402,
+                        1403,
+                        1404,
+                        1405,
+                        1406,
+                        1407,
+                        1408,
+                        1409,
+                        1410,
+                        1411,
+                        1412,
+                        1413,
+                        1414,
+                        1415
+                      ],
+                      "content": "Using Linux Live CD Distributions\n\nSeveral Linux distributions, such as Ubuntu, openSUSE, Arch Linux, Fedora, and Slackware, provide ISO images that can be burned to a CD or DVD. They’re called “Linux Live CDs.” Most of these Linux distributions are for Linux OS recovery, not for digital forensics acquisition and analysis. For a list of the most current Linux Live CDs, see https://livecdlist.com/.\n\nA few Linux ISO images are designed specifically for digital forensics, however. These images contain additional utilities that aren’t typically installed in normal Linux distributions. They’re also configured not to mount, or to mount as read-only, any connected storage media, such as USB drives. This feature protects the media’s integrity for the purpose of acquiring and analyzing data. To access media, you have to give specific instructions to the Live CD boot session through a GUI utility or a shell command prompt. Mounting drives from a shell gives you more control over them. See the man page for the mount command (by typing man mount at the shell prompt) to learn what options are available for your Linux distribution.\n\nTip\n\nThe man command displays pages from the online help manual for information on Linux commands and their options.\n\nLinux can read data from a physical device without having to mount it. As a usual practice, don’t mount a suspect media device as a precaution against any writes to it. Later in this section, you learn how to make a forensics acquisition in Linux without mounting the device.\n\nThe following are some well-designed Linux Live CDs for digital forensics:\n\nPenguin Sleuth Kit (www.linux-forensics.com or https://sourceforge.net/projects/psk/?source=directory)\n\nCAINE (www.caine-live.net)\n\nDeft (www.deftlinux.net)\n\nKali Linux (www.kali.org), previously known as BackTrack (www.backtrack-linux.org/wiki/index.php/Forensics_Boot)\n\nKnoppix (www.knopper.net/knoppix/index-en.html)\n\nSANS Investigate Forensic Toolkit (SIFT; http://computer-forensics.sans.org/community/downloads)\n\nYou can download these ISO images to any computer, including a Windows system, and then burn them to CD/DVD with burner software, such as Roxio or Nero. Creating a bootable image from an ISO file is different from copying data or music files to a CD or DVD. If you aren’t familiar with how to do it, see the Help menu in your burner software for instructions on creating a bootable CD or DVD. For example, Roxio Creator Classic and Nero Express have a Bootable CD or DVD option. An alternative is using a USB drive instead of a CD or DVD. For this option, you need a tool such as ISO to USB, mentioned previously (or another tool for transferring an ISO image to a USB drive).\n\nNote\n\nFor an alternative Windows-based USB boot drive, see http://osforensics.com/tools/write-usb-images.html.\n\nAfter creating a Linux Live CD, test it on your workstation. Remember to check your workstation’s BIOS to see whether it boots first from the CD or DVD on the system. To test the Live CD, simply place it in the CD or DVD drive and reboot your system. If successful, Linux loads into your computer’s memory, and a common GUI for Linux is displayed. If you have problems with the video display on your workstation, try another computer with a different video card. No one Live CD distribution has all video drivers. Linux Live CDs load the OS into a computer’s RAM, so performance can be affected when you’re using GUI tools. The following sections explain how to use Linux to make forensically sound data acquisitions.",
+                      "children": []
+                    },
+                    {
+                      "title": "Preparing a Target Drive for Acquisition in Linux",
+                      "toc_id": 113,
+                      "chunk_count": 45,
+                      "total_chunks_in_branch": 45,
+                      "budget_slides_content": 4,
+                      "direct_slides_content": 4,
+                      "total_slides_in_branch": 4,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 12,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 12
+                      },
+                      "chunks_sorted": [
+                        1416,
+                        1417,
+                        1418,
+                        1419,
+                        1420,
+                        1421,
+                        1422,
+                        1423,
+                        1424,
+                        1425,
+                        1426,
+                        1427,
+                        1428,
+                        1429,
+                        1430,
+                        1431,
+                        1432,
+                        1433,
+                        1434,
+                        1435,
+                        1436,
+                        1437,
+                        1438,
+                        1439,
+                        1440,
+                        1441,
+                        1442,
+                        1443,
+                        1444,
+                        1445,
+                        1446,
+                        1447,
+                        1448,
+                        1449,
+                        1450,
+                        1451,
+                        1452,
+                        1453,
+                        1454,
+                        1455,
+                        1456,
+                        1457,
+                        1458,
+                        1459,
+                        1460
+                      ],
+                      "content": "Preparing a Target Drive for Acquisition in Linux\n\nThe Linux OS has many tools you can use to modify non-Linux file systems. Current Linux distributions can create Microsoft FAT and NTFS partition tables. Linux kernel version 2.6.17.7 and earlier can format and read only the FAT file system, although an NTFS driver, NTFS-3G, is available that allows Linux to mount and write data only to NTFS partitions. You can download this driver from http://sourceforge.net/projects/ntfs-3g, where you can also find information about NTFS and instructions for installing the driver. For information on macOS file systems and acquisitions, see Chapter 7.\n\nIn this section, you learn how to partition and format a Microsoft FAT drive from Linux so that you don’t have to switch OSs or computers to prepare a FAT target disk. If you have a previously used target drive, you can use the following procedure to format it as a FAT32 drive. After you make the acquisition, you can then transfer the FAT disk to a Windows system to use a Windows analysis tool.\n\nNote\n\nWhen preparing a drive to be used on a Linux system for forensics acquisition or analysis, do it in a separate boot session with no suspect drive attached.\n\nTip\n\nLinux/UNIX commands are case sensitive, so make sure you type commands exactly as shown in this section’s steps.\n\nAssuming you have a functioning Linux computer or one running with a Linux Live CD, perform the following steps from a shell prompt:\n\nNote\n\nDepending on which version and distribution of Linux you use, your screen prompts might be slightly different from those shown in this section.\n\nFirst, boot Linux on your computer.\n\nConnect the USB, FireWire, or SATA external drive to the Linux computer and power it on.\n\nIf a shell window isn’t already open, start one.\n\nAt the shell prompt, type su and press Enter to log in as the superuser (root). Then type the root password and press Enter.\n\nNote\n\nIf you’re using one of the Live CDs listed previously, these distributions are typically already in superuser (root) mode, so there’s no need to use the su command. Other Linux Live CDs might have no password set and simply require pressing Enter.\n\nTo list the current disk devices connected to the computer, type fdisk -l (lowercase L) and press Enter. You should see output similar to the following:\n\nNote\n\nLinux lists all IDE (also known as PATA) drives as hda, hdb, and so on. All SCSI, SATA, FireWire, and USB-connected drives are listed as sda, sdb, and so forth.\n\nNote\n\nIn the preceding output, the /dev/sda device has no partition listed. These steps show how to create a Microsoft FAT partition on this disk. If there’s a partition on this drive, it can be deleted with the Linux fdisk utility. For additional information on fdisk, refer to the man page.\n\nType fdisk/dev/sda and press Enter to partition the disk drive as a FAT file system. You should see output similar to the following:\n\nDisplay fdisk menu options by typing m and pressing Enter. You should see output similar to the following:\n\nDetermine whether there are any partitions on /dev/sda by typing p and pressing Enter. You should see output similar to the following:\n\nNote\n\nIn this example, the disk has no previously configured partitions. If it did, there would be data under each column heading describing each partition’s configuration.\n\nNext, you create a new primary partition on /dev/sda. To use the defaults and select the entire drive, type n and press Enter. To create a primary partition table, type p and press Enter, and then type 1 (the numeral) to select the first partition and press Enter. At the remaining prompts, press Enter. Your output should be similar to the following:\n\nNote\n\nIn Linux, the first logical partition created after the primary and extended partitions is numbered 5; any additional logical partitions are numbered 6, 7, and so on. For example, the C partition is typically /dev/hda1, and the D partition is /dev/hda2.\n\nList the newly defined partitions by typing p and pressing Enter, which produces the following output:\n\nTo list the menu again so that you can select the change partition ID, type m and press Enter. You should see output similar to the following:\n\nTo change the newly created partition to the Windows 95 FAT32 file system, first type t and press Enter, which produces the following output:\n\nList available file systems and their code values by typing l (lowercase L) and pressing Enter. You should see output similar to what’s shown in Figure 3-1.\n\nChange the newly created partition to the Windows 95 FAT32 file system by typing c and pressing Enter. Your output should look similar to the following:\n\nTo display partitions of the newly changed drive, type p and press Enter, which produces the following output:\n\nSave (write) the newly created partition to the /dev/sda drive by typing w and pressing Enter. Your output should look similar to the following:\n\nNote\n\nFdisk exits back to the shell prompt after updating the partition table on the /dev/sda drive.\n\nShow the known drives connected to your computer by typing fdisk -l and pressing Enter, which produces the following output:\n\nTo format a FAT file system from Linux, type mkfs.msdos -vF32 /dev/sda1 and press Enter, which produces the following output:\n\nNote\n\nIf your Linux distribution is missing the mkfs.msdos command, download and install your distribution’s dosfstools package. To find these files, search for mkfs.msdos Fedora or dostools Debian, for example.\n\nNote\n\nNewer Linux distributions automatically sync a newly created partition and format the drive. The sync feature eliminates the need to reboot the computer, unlike with Microsoft OSs.\n\nClose the shell window for this session by typing exit and pressing Enter. This drive can now be mounted and used to receive an image of a suspect drive. Later in this section, you learn how to mount and write to this Microsoft FAT target drive.",
+                      "children": []
+                    },
+                    {
+                      "title": "Acquiring Data with dd in Linux",
+                      "toc_id": 114,
+                      "chunk_count": 32,
+                      "total_chunks_in_branch": 32,
+                      "budget_slides_content": 3,
+                      "direct_slides_content": 3,
+                      "total_slides_in_branch": 3,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 9,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 9
+                      },
+                      "chunks_sorted": [
+                        1461,
+                        1462,
+                        1463,
+                        1464,
+                        1465,
+                        1466,
+                        1467,
+                        1468,
+                        1469,
+                        1470,
+                        1471,
+                        1472,
+                        1473,
+                        1474,
+                        1475,
+                        1476,
+                        1477,
+                        1478,
+                        1479,
+                        1480,
+                        1481,
+                        1482,
+                        1483,
+                        1484,
+                        1485,
+                        1486,
+                        1487,
+                        1488,
+                        1489,
+                        1490,
+                        1491,
+                        1492
+                      ],
+                      "content": "Acquiring Data with dd in Linux\n\nA unique feature of a forensics Linux Live CD is that it can mount and read most drives. To perform a data acquisition on a suspect computer, all you need are the following:\n\nA forensics Linux Live CD\n\nA USB, FireWire, or SATA external drive with cables\n\nKnowledge of how to alter the suspect computer’s BIOS to boot from the Linux Live CD\n\nKnowledge of which shell commands to use for the data acquisition\n\nTip\n\nIf you want to learn more about Linux and shell commands, review a Linux tutorial, such as Nix Tutor at www.nixtutor.com/linux/all-the-best-linux-cheat-sheets.\n\nThe dd command, available on all UNIX and Linux distributions, means “data dump.” This command, which has many functions and switches, can be used to read and write data from a media device and a data file. The dd command isn’t bound by a logical file system’s data structures, meaning the drive doesn’t have to be mounted for dd to access it. For example, if you list a physical device name, the dd command copies the entire device—all data files, slack space, and free space (unallocated data) on the device. The dd command creates a raw format file that most forensics analysis tools can read, which makes it useful for data acquisitions.\n\nCaution\n\nUse extreme caution with the dd command. Make sure you know which drives are the suspect drive and target drive. Although you might not have mounted the suspect drive, if you reverse the input field (if=) of the suspect and target drives with the output field (of=), data is written to the wrong drive, thus destroying the original evidence drive.\n\nAs powerful as this command is, it does have some shortcomings. One major problem is that it requires more advanced skills than the average computer user might have. Also, because it doesn’t compress data, the target drive needs to be equal to or larger than the suspect drive. It’s possible to divide the output to other drives if a large enough target drive isn’t available, but this process can be cumbersome and prone to mistakes when you’re trying to keep track of which data blocks to copy to which target drive.\n\nThe dd command combined with the split command segments output into separate volumes. Use the split command with the -b switch to adjust the size of segmented volumes the dd command creates. As a standard practice for archiving purposes, create segmented volumes that fit on a CD or DVD. For additional information on dd and split, see their man pages. Follow these steps to make an image of an NTFS disk on a FAT32 disk by using the dd command:\n\nAssuming that your workstation is the suspect computer and is booted from a Linux Live CD, connect the USB, FireWire, or SATA external drive containing the FAT32 target drive, and turn the external drive on.\n\nIf you’re not at a shell prompt, start a shell window, switch to superuser (su) mode, type the root password, and press Enter.\n\nAt the shell prompt, list all drives connected to the computer by typing fdisk -l and pressing Enter, which produces the following output:\n\nTo create a mount point for the USB, FireWire, or SATA external drive and partition, make a directory in /mnt by typing mkdir /mnt/sda5 and pressing Enter.\n\nTo mount the target drive partition, type mount -t vfat /dev/sda5 /mnt/sda5 and press Enter.\n\nTo change your default directory to the target drive, type cd /mnt/sda5 and press Enter.\n\nList the contents of the target drive’s root level by typing ls -al and pressing Enter. Your output should be similar to the following:\n\nTo make a target directory to receive image saves of the suspect drive, type mkdir case01 and press Enter.\n\nTo change to the newly created target directory, type cd case01 and press Enter. Don’t close the shell window.\n\nNext, you perform a raw format image of the entire suspect drive to the target directory. To do this, you use the split command with the dd command. The split command creates a two-letter extension for each segmented volume. The -d switch creates numeric rather than letter extensions. As a general rule, if you plan to use a Windows forensics tool to examine a dd image file created with this switch, the segmented volumes shouldn’t exceed 2 GB each because of FAT32 file size limits. This 2 GB limit allows you to copy only up to 198 GB of a suspect’s disk. If you need to use the dd command, it’s better to use the split command’s default of incremented letter extensions and make smaller segments. To adjust the segmented volume size, change the value for the -b switch from the 650 MB used in\n\nTo adjust the segmented volume size, change the value for the -b switch from the 650 MB used in the following example to 2000 MB.\n\nType dd if=/dev/sdb | split -b 650m - image_sdb. and press Enter. You should see output similar to the following:\n\nTip\n\nWhen using the split command, type a period at the end of the filename as shown, with no space between it and the filename. Otherwise, the extension is appended to the filename with no “.” delimiter.\n\nList the raw images that have been created from the dd and split commands by typing ls -l and pressing Enter. You should see output similar to the following:\n\nTo complete this acquisition, dismount the target drive by typing umount /dev/sda5 and pressing Enter.\n\nDepending on the Windows forensics analysis tool you’re using, renaming each segmented volume’s extension with incremented numbers instead of letters might be necessary. For example, rename image_sdb.aa as image_sdb.01, and so on. Several Windows forensics tools can read only disk-to-image segmented files that have numeric extensions. Most Linux forensics tools can read segments with numeric or lettered extensions.\n\nAcquiring a specific partition on a drive works the same way as acquiring the entire drive. Instead of typing /dev/sdb as you would for the entire drive, add the partition number to the device name, such as /dev/sdb1. For drives with additional partitions, use the number that would be listed in the fdisk -l output. For example, to copy only the partition of the previous NTFS drive, you use the following dd command:\n\nRemember to use caution with the dd command in your forensics data acquisitions.",
+                      "children": []
+                    },
+                    {
+                      "title": "Acquiring Data with dcfldd in Linux",
+                      "toc_id": 115,
+                      "chunk_count": 14,
+                      "total_chunks_in_branch": 14,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        1493,
+                        1494,
+                        1495,
+                        1496,
+                        1497,
+                        1498,
+                        1499,
+                        1500,
+                        1501,
+                        1502,
+                        1503,
+                        1504,
+                        1505,
+                        1506
+                      ],
+                      "content": "Acquiring Data with dcfldd in Linux\n\nThe dd command is intended as a data management tool; it’s not designed for forensics acquisitions. Because of these shortcomings, Nicholas Harbour of the Defense Computer Forensics Laboratory (DCFL) developed a tool that can be added to most UNIX/Linux OSs. This tool, the dcfldd command, works similarly to the dd command but has many features designed for forensics acquisitions. The following are important functions dcfldd offers that aren’t possible with dd:\n\nSpecify hexadecimal patterns or text for clearing disk space.\n\nLog errors to an output file for analysis and review.\n\nUse the hashing options MD5, SHA-1, SHA-256, SHA-384, and SHA-512 with logging and the option of specifying the number of bytes to hash, such as specific blocks or sectors.\n\nRefer to a status display indicating the acquisition’s progress in bytes.\n\nSplit data acquisitions into segmented volumes with numeric extensions (unlike dd’s limit of 99).\n\nVerify the acquired data with the original disk or media data.\n\nWhen using dcfldd, you should follow the same precautions as with dd. The dcfldd command can also write to the wrong device, if you aren’t careful.\n\nThe following examples show how to use the dcfldd command to acquire data from a 64 MB USB drive, although you can use the command on a larger media device. All commands need to be run from a privileged root shell session. To acquire an entire media device in one image file, type the following command at the shell prompt:\n\nIf the suspect media or disk needs to be segmented, use the dcfldd command with the split command, placing split before the output file field (of=), as shown here:\n\nThis command creates segmented volumes of 2 MB each. To create segmented volumes that fit on a CD of 650 MB, change the split=2M to split=650M. This command also saves the MD5 value of the acquired data in a text file named usbimgmd5.txt.\n\nTip\n\nFor additional information on the dcfldd command, see http://dcfldd.sourceforge.net. Information on how to download and install dcfldd is available for many UNIX, Linux, and Macintosh OSs. You can also use the man page to find more information on dcfldd features and switches.",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "Capturing an Image with AccessData FTK Imager Lite",
+                  "toc_id": 116,
+                  "chunk_count": 46,
+                  "total_chunks_in_branch": 46,
+                  "budget_slides_content": 4,
+                  "direct_slides_content": 4,
+                  "total_slides_in_branch": 4,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 12,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 12
+                  },
+                  "chunks_sorted": [
+                    1507,
+                    1508,
+                    1509,
+                    1510,
+                    1511,
+                    1512,
+                    1513,
+                    1514,
+                    1515,
+                    1516,
+                    1517,
+                    1518,
+                    1519,
+                    1520,
+                    1521,
+                    1522,
+                    1523,
+                    1524,
+                    1525,
+                    1526,
+                    1527,
+                    1528,
+                    1529,
+                    1530,
+                    1531,
+                    1532,
+                    1533,
+                    1534,
+                    1535,
+                    1536,
+                    1537,
+                    1538,
+                    1539,
+                    1540,
+                    1541,
+                    1542,
+                    1543,
+                    1544,
+                    1545,
+                    1546,
+                    1547,
+                    1548,
+                    1549,
+                    1550,
+                    1551,
+                    1552
+                  ],
+                  "content": "Capturing an Image with AccessData FTK Imager Lite\n\nThe following activity assumes you have removed the suspect drive and connected it to a USB or FireWire write-blocker device connected to your forensic workstation. The acquisition is written to a work folder on your C drive, assuming it has enough free space for the acquired data. Follow these steps to perform the first task of connecting the suspect’s drive to your workstation:\n\nDocument the chain of evidence for the drive you plan to acquire.\n\nRemove the drive from the suspect’s computer.\n\nFor IDE drives, configure the suspect drive’s jumpers as needed. (Note: This step doesn’t apply to SATA or USB drives.)\n\nConnect the suspect drive to the USB or FireWire write-blocker device.\n\nCreate a storage folder on the target drive. For this activity, you use your work folder (C:\\Work\\Chap03\\Chapter), but in real life, you’d use a folder name such as C:\\Evidence.\n\nFTK Imager is a data acquisition tool included with a licensed copy of AccessData Forensic Toolkit. Like most Windows data acquisition tools, it requires using a USB dongle for licensing. FTK Imager Lite, Debian and Ubuntu x64 command-line interfaces, and macOS 10.5 and 10.6x command-line interfaces are free and require no dongle license. To download FTK Imager Lite, see http://accessdata.com/product-download/digital-forensics/ftk-imager-lite-version-3.1.1. To download Debian and Ubuntu x64, see http://accessdata.com/product-download/digital-forensics/debian-and-ubuntu-x64-3.1.1#release-information. To download macOS 10.5 and 10.6x, see http://accessdata.com/product-download/digital-forensics/mac-os-10.5-and-10.6x-version-3.1.1.\n\nFTK Imager is designed for viewing evidence disks and disk-to-image files created from other proprietary formats. It can read AccessData .ad1, Expert Witness Compression (EnCase) .e01, SMART .s01, Advanced Forensic Format (AFF), and raw format files. In addition to disk media, FTK Imager can read CD and DVD file systems. This program shows a view of a disk partition or an image file as though it’s a mounted partition, with additional panes showing the contents of the selected file (see Figure 3-2).\n\nFTK Imager can make disk-to-image copies of evidence drives and enables you to acquire an evidence drive from a logical partition level or a physical drive level. You can also define the size of each disk-to-image file volume, allowing you to segment the image into one or many split volumes. For example, you can specify 650 MB volume segments if you plan to store volumes on 650 MB CD-Rs or 2.0 GB volume segments so that you can record volumes on DVD-/+Rs. An additional feature of FTK Imager is that it can image RAM on a live computer. The evidence drive you’re acquiring data from must have a hardware write-blocking device or run from a Live CD, such as Mini-WinFE.\n\nFTK Imager can’t acquire a drive’s HPA and device configuration overlay (DCO), however. In other words, if the drive’s specifications indicate it has 11,000,000 sectors and the BIOS display indicates 9,000,000, a host protected area of 2,000,000 sectors might be assigned to the drive. If you suspect an evidence drive has a host protected area, you must use an advanced acquisition tool to include this area when copying data. With older MS-DOS tools, you might have to define the exact sector count to make sure you include more than what the BIOS shows as the number of known sectors on a drive. Review vendors’ manuals to determine how to account for a drive’s host protected area.\n\nIn the following activity, you use FTK Imager Lite to make an image file. (If you haven’t installed it already, do so now. You download it at http://accessdata.com/product-download/digital-forensics/ftk-imager-lite-version-3.1.1.) Use a write-blocking device to protect the suspect drive, and then follow these steps:\n\nNote\n\nBefore starting this activity, create a work folder named Work\\Chap03\\Chapter. Note that work folder names might differ slightly in screenshots.\n\n1.\n\nBoot your forensic workstation to Windows, using an installed write-blocker.\n\n2.\n\nConnect the evidence drive to a write-blocking device or USB device.\n\n3.\n\nConnect the target drive to a USB external drive, if you’re using a write-blocker.\n\n4.\n\nStart FTK Imager Lite. If prompted by the User Account Control message box, click Yes.\n\n5.\n\nIn the FTK Imager main window, click File, Create Disk Image from the menu.\n\n6.\n\nIn the Select Source dialog box, click the Physical Drive option button, if necessary, and then click Next.\n\n7.\n\nIn the Select Drive dialog box, click the Source Drive Selection list arrow (see Figure 3-3), click the suspect drive, and then click Finish.\n\n8.\n\nIn the Create Image dialog box, click to select the Verify images after they are created check box, if necessary, and then click Add. In the Select Image Type dialog box that opens (see Figure 3-4), click the Raw (dd) option button, if necessary, and then click Next.\n\n9.\n\nIn the Evidence Item Information dialog box, complete the case information, as shown in Figure 3-5, and then click Next.\n\n10.\n\nIn the Select Image Destination dialog box (see Figure 3-6), click Browse, navigate to the location for the image file (your work folder), and click to clear the Use AD Encryption check box, if necessary.\n\nNote\n\nYou can adjust the amount in the Image Fragment Size text box, but for this activity, leave the default value of 1500 MB.\n\n11.\n\nIn the Image Filename (Excluding Extension) text box, type InChp03-ftk, and then click Finish.\n\n12.\n\nNext, in the Create Image dialog box, click Start to initiate the acquisition.\n\n13.\n\nWhen FTK Imager finishes the acquisition, review the information in the Drive/Image Verify Results dialog box, and then click Close. Click Close again in the Creating Image dialog box (see Figure 3-7).\n\n14.\n\nExit FTK Imager Lite by clicking File, Exit from the menu.\n\nNote\n\nFor additional information, see the Help menu in FTK Imager Lite to learn more about its many features.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Using Acquisition Tools (Interactive Activity)",
+                "toc_id": 109,
+                "slides_allocated": 1
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          }
+        }
+      ]
+    }
+  ]
+}

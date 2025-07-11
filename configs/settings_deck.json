@@ -1,12 +1,12 @@
 {
   "course_id": "",
   "unit_name": "",
-  "interactive": false,
+  "interactive": true,
   "interactive_deep": false,
   "teaching_flow_id": "Standard Lecture Flow",
   "parameters_slides": {
     "slides_per_hour": 18,
-    "time_per_content_slides_min": 5,
+    "time_per_content_slides_min": 3,
     "time_per_interactive_slide_min": 5,
     "time_for_framework_slides_min": 6
   },

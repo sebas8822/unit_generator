@@ -1,0 +1,1343 @@
+{
+  "week": 5,
+  "overall_topic": "Working with Windows and CLI Systems.",
+  "weekly_slide_summary": {
+    "total_slides_for_week": 50,
+    "total_framework_slides": 8,
+    "total_content_slides": 35,
+    "total_interactive_slides": 7,
+    "number_of_decks": 2
+  },
+  "weekly_time_summary_minutes": {
+    "total_time_for_week_minutes": 152,
+    "total_framework_time": 12,
+    "total_content_and_interactive_time": 140
+  },
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "total_slides_in_deck": 23,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 17,
+        "interactive": 2
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 61,
+        "total_deck_time": 67
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Working with Windows and CLI Systems.",
+            "deck_title": "Week 5, Lecture 1"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Understanding File Systems",
+              "Examining NTFS Disks"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Understanding File Systems",
+              "toc_id": 185,
+              "chunk_count": 3,
+              "total_chunks_in_branch": 33,
+              "budget_slides_content": 2,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 4,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 14
+              },
+              "chunks_sorted": [
+                2448,
+                2449,
+                2450
+              ],
+              "content": "Understanding File Systems\n\nTo investigate digital evidence effectively, you must understand how the most commonly used OSs work and how they store files. In addition to this section on file systems, you should review books on Computer Technology Industry Association (CompTIA) A+ certifications in hardware and firmware startup tasks and operations. A file system The way files are stored on a disk; gives an OS a road map to data on a disk. gives an OS a road map to data on a disk. The type of file system an OS uses determines how data is stored on the disk. When you need to access a suspect’s computer to acquire or inspect data related to your investigation, you should be familiar with both the computer’s OS and file system so that you can access and modify system settings when necessary. This chapter examines Windows\n\nso that you can access and modify system settings when necessary. This chapter examines Windows and CLI OSs in detail; Chapter 7 covers information on Linux and Macintosh. For other OSs, consult system administrators and vendor manuals.",
+              "children": [
+                {
+                  "title": "Understanding the Boot Sequence",
+                  "toc_id": 186,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2451,
+                    2452,
+                    2453,
+                    2454,
+                    2455,
+                    2456,
+                    2457,
+                    2458
+                  ],
+                  "content": "Understanding the Boot Sequence\n\nThis section explains the boot sequence for desktop and laptop computers. For tablets and smartphones, it’s best to review vendors’ documentation. To ensure that you don’t contaminate or alter data on a suspect’s system, you must know how to access and modify Complementary Metal Oxide Semiconductor (CMOS), BIOS, Extensible Firmware Interface (EFI), and Unified Extensible Firmware Interface (UEFI) settings. A computer stores system configuration and date and time information in the CMOS when power to the system is off. The system BIOS or EFI contains programs that perform input and output at the hardware level. BIOS is designed for x86 computers and typically used on disk drives with Master Boot Records (MBRs). EFI is designed for x64 computers and uses GUID Partition Table (GPT)–formatted\n\nRecords (MBRs). EFI is designed for x64 computers and uses GUID Partition Table (GPT)–formatted disks. BIOS and EFI are designed for specific firmware. In an effort to reduce the relationship with firmware, Intel developed UEFI, which defines the interface between a computer’s firmware and the OS. (For more information on Windows boot processes, see “Overview of Boot Options in Windows Vista and Later” (https://msdn.microsoft.com/en-us/windows/hardware/drivers/devtest/boot-options-in-windows-vista-and-later.)\n\nNote\n\nThe following paragraph describes how a BIOS boot works. For more information on the differences in these boot utilities, see www.cs.rutgers.edu/~pxk/416/notes/02-boot.html.\n\nWhen a subject’s computer starts, you must make sure it boots to a forensically configured CD, DVD, or USB drive, as described in Chapters 1 and 3, because booting to the hard disk overwrites and changes evidentiary data. To do this, you access the CMOS setup by monitoring the computer during the bootstrap process to identify the correct key or keys to use. The bootstrap process Information stored in ROM that a computer accesses during startup; this information tells the computer how to access the OS and hard drive. , which is contained in ROM, tells the computer how to proceed. As the computer starts, the screen usually displays the key or keys, such as the Delete key, you press to open the CMOS setup screen. You can also try unhooking the keyboard to force the system to tell you what\n\nthe CMOS setup screen. You can also try unhooking the keyboard to force the system to tell you what keys to use. The key you press to access CMOS depends on the computer’s BIOS. Many BIOS manufacturers use the Delete key to access CMOS; other manufacturers use Ctrl+Alt+Insert, Ctrl+A, Ctrl+S, or Ctrl+F1, F2, or F10. A safe method for verifying the BIOS is removing all hard drives from the computer, which enables you to start the computer to verify its BIOS date and time without accessing the disk drive.\n\nFigure 5-1 shows a typical CMOS setup screen, where you check a computer’s boot sequence. If necessary, you can change the boot sequence so that the OS accesses the CD/DVD drive, for example, before any other boot device. Each BIOS vendor’s screen is different, but you can refer to the vendor’s documentation or Web site for instructions on changing the boot sequence.",
+                  "children": []
+                },
+                {
+                  "title": "Understanding Disk Drives",
+                  "toc_id": 187,
+                  "chunk_count": 14,
+                  "total_chunks_in_branch": 14,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2459,
+                    2460,
+                    2461,
+                    2462,
+                    2463,
+                    2464,
+                    2465,
+                    2466,
+                    2467,
+                    2468,
+                    2469,
+                    2470,
+                    2471,
+                    2472
+                  ],
+                  "content": "Understanding Disk Drives\n\nYou should be familiar with disk drives and how data is organized on a disk so that you can find data effectively. Disk drives are made up of one or more platters coated with magnetic material, and data is stored on platters in a particular way. The following disk drive components are illustrated in Figure 5-2:\n\nGeometry— Geometry A disk drive’s internal organization of platters, tracks, and sectors. refers to a disk’s logical structure of platters, tracks, and sectors.\n\nHead—The head The device that reads and writes data to a disk drive. is the device that reads and writes data to a drive. There are two heads per platter that read and write the top and bottom sides.\n\nTracks— Tracks Concentric circles on a disk platter where data is stored. are concentric circles on a disk platter where data is located.\n\nCylinders—A cylinder A column of tracks on two or more disk platters. is a column of tracks on two or more disk platters. Typically, each platter has two surfaces: top and bottom.\n\nSectors—A sector A section on a track, typically made up of 512 bytes. is a section on a track, usually made up of 512 bytes.\n\nTip\n\nFor more information on disk drive configurations, see www.storagereview.com/guide2000/ref/hdd/index.html.\n\nThe manufacturer engineers a disk to have a certain number of sectors per track, and a typical disk drive stores 512 bytes per sector. (For an update on Advanced Format [4K] disk compatibility, see https://msdn.microsoft.com/windows/compatibility/advanced-format-disk-compatibility-update.) To determine the total number of addressable bytes on a disk, multiply the number of cylinders by the number of heads (actually tracks) and by the number of sectors (groups of 512 or more bytes), as shown in Figure 5-3. Disk drive vendors refer to this formula as a “cylinder, head, and sector (CHS) calculation.” Tracks also follow a numbering scheme starting from 0, which is the first value in computing. If a disk lists 79 tracks, you actually have 80 tracks from 0 to 79.\n\nOther disk properties, such as zone bit recording (ZBR) The method most manufacturers use to deal with a platter’s inner tracks being shorter than the outer tracks. Grouping tracks by zones ensures that all tracks hold the same amount of data. , track density The space between tracks on a disk. The smaller the space between tracks, the more tracks on a disk. Older drives with wider track densities allowed the heads to wander. , areal density The number of bits per square inch of a disk platter. , and head and cylinder skew A method manufacturers use to minimize lag time. The starting sectors of tracks are slightly offset from each other to move the read-write head. , are handled at the drive’s hardware or firmware level. ZBR is how most manufacturers deal with a platter’s inner tracks\n\nhardware or firmware level. ZBR is how most manufacturers deal with a platter’s inner tracks having a smaller circumference (and, therefore, less space to store data) than its outer tracks. Grouping tracks by zones ensures that all tracks hold the same amount of data.\n\nTrack density is the space between each track. As with old vinyl records, the smaller the space between each track, the more tracks you can place on the platter.\n\nAreal density is the number of bits in one square inch of a disk platter. This number includes the unused space between tracks. Head and cylinder skew are used to improve disk performance. As the read-write head moves from one track to another, starting sectors are offset to minimize lag time.",
+                  "children": []
+                },
+                {
+                  "title": "Solid-State Storage Devices",
+                  "toc_id": 188,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2473,
+                    2474,
+                    2475,
+                    2476,
+                    2477,
+                    2478,
+                    2479,
+                    2480
+                  ],
+                  "content": "Solid-State Storage Devices\n\nFlash memory storage devices used in USB drives, laptops, tablets, and cell phones can be a challenge for digital forensics examiners because if deleted data isn’t recovered immediately, it might be lost forever. The reason is a feature all flash memory devices have: wear-leveling An internal firmware feature used in solid-state drives that ensures even wear of read/writes for all memory cells. .\n\nWhen data is deleted on a hard drive, only the references to it are removed, which leaves the original data in unallocated disk space. With forensics recovery tools, recovering data from magnetic media is fairly easy; you just copy the unallocated space. USB drives and other solid-state drive systems are different, in that memory cells shift data at the physical level to other cells that have had fewer reads and writes continuously. The purpose of shifting (or rotating) data from one memory cell to another is to make sure all memory cells on the flash drive wear evenly. Memory cells are designed to perform only 10,000 to 100,000 reads/writes, depending on the manufacturer’s design. When they reach their defined limits, they can no longer retain data. When you attempt to connect to the\n\nthey reach their defined limits, they can no longer retain data. When you attempt to connect to the device, you get an access failure message. This process is controlled on the flash device’s firmware.\n\nIn addition, when data is rotated to another memory cell, the old memory cell addresses are listed in a firmware file called a “garbage collector.” At some point, the flash drive’s firmware erases data in unallocated cells by overwriting the value of 1 in all cells listed in the garbage collector file.\n\nWhen dealing with solid-state devices, making a full forensic copy as soon as possible is crucial in case you need to recover data from unallocated disk space. You can test this feature with a USB drive easily by copying data to it, deleting it, and then making a forensic acquisition with any acquisition tool, such as OSForensics or X-Ways Forensics, immediately after the data is deleted. The first acquisition produces recoverable artifacts. If you let the USB drive sit and write no additional data to it, wear-leveling automatically overwrites the unallocated space. All solid-state drives have an internal power source for memory cells (both allocated and unallocated) so that they can preserve data. If you make another acquisition of the USB drive a day or more later, it reveals that the\n\ndata. If you make another acquisition of the USB drive a day or more later, it reveals that the previously recoverable deleted data no longer exists. For mobile device forensics, this feature is extremely important, especially if a suspect deleted relevant messages, for example, just before the device was seized and taken into evidence.\n\nDepending on your jurisdiction and country’s laws on search and seizure, there might be some limitations on when an acquisition can take place in criminal cases. For criminal investigations, you should get guidance from your local prosecutor’s office on how to handle this type of evidence.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding File Systems (Interactive Activity)",
+                "toc_id": 185,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Examining NTFS Disks",
+              "toc_id": 193,
+              "chunk_count": 14,
+              "total_chunks_in_branch": 168,
+              "budget_slides_content": 13,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 15,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 47
+              },
+              "chunks_sorted": [
+                2552,
+                2553,
+                2554,
+                2555,
+                2556,
+                2557,
+                2558,
+                2559,
+                2560,
+                2561,
+                2562,
+                2563,
+                2564,
+                2565
+              ],
+              "content": "Examining NTFS Disks\n\nNT File System (NTFS) The file system Microsoft created to replace FAT. NTFS uses security features, allows smaller cluster sizes, and uses Unicode, which makes it a more versatile system. NTFS is used mainly on newer OSs, starting with Windows NT. was introduced when Microsoft created Windows NT and is still the main file system in Windows 10. Each generation of Windows since NT has included minor changes in NTFS configuration and features. The NTFS design was partially based on, and incorporated many features from, Microsoft’s project for IBM with the OS/2 operating system; in this OS, the file system was High Performance File System (HPFS) The file system IBM uses for its OS/2 operating system. . When Microsoft created Windows NT, it provided backward-compatibility so that NT could read\n\n. When Microsoft created Windows NT, it provided backward-compatibility so that NT could read OS/2 HPFS disk drives. Since the release of Windows 2000, this backward-compatibility is no longer available. For a detailed explanation of NTFS structures, see www.ntfs.com/ntfs.htm.\n\nNTFS offers substantial improvements over FAT file systems. It provides more information about a file, including security features, file ownership, and other file attributes. With NTFS, you also have more control over files and folders (directories) than with FAT file systems.\n\nNTFS was Microsoft’s move toward a journaling file system. The system keeps track of transactions such as file deleting or saving. This journaling feature is helpful because it records a transaction before the system carries it out. That way, in a power failure or other interruption, the system can complete the transaction or go back to the last good setting.\n\nIn NTFS, everything written to the disk is considered a file. On an NTFS disk, the first data set is the Partition Boot Sector The first data set of an NTFS disk. It starts at sector [0] of the disk drive and can expand up to 16 sectors. , which starts at sector [o] of the disk and can expand to 16 sectors. Immediately after the Partition Boot Sector is the Master File Table (MFT) NTFS uses this database to store and link to files. It contains information about access rights, date and time stamps, system attributes, and other information about files. . The MFT, similar to FAT in earlier Microsoft OSs, is the first file on the disk. An MFT file is created at the same time a disk partition is formatted as an NTFS volume and usually consumes about 12.5% of the disk when it’s created. As data\n\nformatted as an NTFS volume and usually consumes about 12.5% of the disk when it’s created. As data is added, the MFT can expand to take up 50% of the disk. (The MFT is covered in more detail in “NTFS System Files.”)\n\nAn important advantage of NTFS over FAT is that it results in much less file slack space. Compare the cluster sizes in Table 5-3 with Table 5-2, which showed FAT cluster sizes. Clusters are smaller for smaller disk drives. This feature saves more space on all disks using NTFS.\n\nTable 5-3. Cluster Sizes in an NTFS Disk\n\nDrive size Sectors per\ncluster Cluster size 7–512 MB 8 4 KB 512 MB–1 GB 8 4 KB 1–2 GB 8 4 KB 2 GB–2 TB 8 4 KB 2–16 TB 8 4 KB 16–32 TB 16 8 KB 32–64 TB 32 16 KB 64–128 TB 64 32 KB 128–256 TB 128 64 KB\n\nTip\n\nFor more information on Microsoft file system sizes, see http://support.microsoft.com/kb/140365.\n\nNTFS (and VFAT for long filenames) also uses Unicode A character code representation that’s replacing ASCII. It’s capable of representing more than 64,000 characters and non-European-based languages. , an international data format. Unlike the American Standard Code for Information Interchange (ASCII) An 8-bit coding scheme that assigns numeric values to up to 256 characters, including letters, numerals, punctuation marks, control characters, and other symbols. 8-bit configuration, Unicode uses an 8-bit, a 16-bit, or a 32-bit configuration. These configurations are known as UTF-8 (Unicode Transformation Format) One of three formats Unicode uses to translate languages for digital representation. , UTF-16, and UTF-32. For Western-language alphabetic characters, UTF-8 is identical to ASCII\n\n, UTF-16, and UTF-32. For Western-language alphabetic characters, UTF-8 is identical to ASCII (see www.unicode.org/versions for more details). Knowing this feature of Unicode comes in handy when you perform keyword searches for evidence on a disk drive. (This feature is discussed in more detail in Chapter 9.) Because NTFS offers many more features than FAT, more utilities are used to manage it.",
+              "children": [
+                {
+                  "title": "NTFS System Files",
+                  "toc_id": 194,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2566,
+                    2567,
+                    2568,
+                    2569,
+                    2570,
+                    2571
+                  ],
+                  "content": "NTFS System Files\n\nBecause everything on an NTFS disk is a file, the first file, the MFT, contains information about all files on the disk, including the system files the OS uses. In the MFT, the first 15 records are reserved for system files. Records in the MFT are called metadata In NTFS, this term refers to information stored in the MFT. See also Master File Table (MFT). . Table 5-4 lists the first 16 metadata records you find in the MFT.\n\nTable 5-4. Metadata records in the MFT\n\nFilename System file Record position Description $Mft MFT 0 Base file record for each folder on the\nNTFS volume; other record positions in the MFT are allocated if more\nspace is needed. $MftMirr MFT 2 1 The first four records of the MFT are\nsaved in this position. If a single sector fails in the first MFT, the\nrecords can be restored, allowing recovery of the MFT. $LogFile Log file 2 Previous transactions are stored here to\nallow recovery after a system failure in the NTFS volume. $Volume Volume 3 Information specific to the volume, such\nas label and version, is stored here. $AttrDef Attribute definitions 4 A table listing attribute names,\nnumbers, and definitions. $ Root filename index 5 This is the root folder on the NTFS\n\nnumbers, and definitions. $ Root filename index 5 This is the root folder on the NTFS\nvolume. $Bitmap Boot sector 6 A map of the NTFS partition shows which\nclusters are in use and which are available. $Boot Boot sector 7 Used to mount the NTFS volume during the\nbootstrap process; additional code is listed here if it’s the boot drive\nfor the system. $BadClus Bad cluster file 8 For clusters that have unrecoverable\nerrors, an entry of the cluster location is made in this file. $Secure Security file 9 Unique security descriptors for the\nvolume are listed in this file. It’s where the access control list (ACL)\nis maintained for all files and folders on the NTFS volume. $Upcase Upcase table 10 Converts all lowercase characters to\n\nuppercase Unicode characters for the NTFS volume. $Extend NTFS extension file 11 Optional extensions are listed here,\nsuch as quotas, object identifiers, and reparse point data. 12–15 Reserved for future use.",
+                  "children": []
+                },
+                {
+                  "title": "MFT and File Attributes",
+                  "toc_id": 195,
+                  "chunk_count": 20,
+                  "total_chunks_in_branch": 20,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    2572,
+                    2573,
+                    2574,
+                    2575,
+                    2576,
+                    2577,
+                    2578,
+                    2579,
+                    2580,
+                    2581,
+                    2582,
+                    2583,
+                    2584,
+                    2585,
+                    2586,
+                    2587,
+                    2588,
+                    2589,
+                    2590,
+                    2591
+                  ],
+                  "content": "MFT and File Attributes\n\nWhen Microsoft introduced NTFS, the way the OS stores data on disks changed substantially. In the NTFS MFT, all files and folders are stored in separate records of 1024 bytes each. Each record contains file or folder information. This information is divided into record fields containing metadata about the file or folder and the file’s data or links to the file’s data. A record field is referred to as an attribute ID In NTFS, an MFT record field containing metadata about the file or folder and the file’s data or links to the file’s data. .\n\nFile or folder information is typically stored in one of two ways in an MFT record: resident and nonresident. For very small files, about 512 bytes or less, all file metadata and data are stored in the MFT record. These types of records are called resident files because all their information is stored in the MFT record.\n\nFiles larger than 512 bytes are stored outside the MFT. The file or folder’s MFT record provides cluster addresses where the file is stored on the drive’s partition. These cluster addresses are called data runs Cluster addresses where files are stored on a drive’s partition outside the MFT record. Data runs are used for nonresident MFT file records. A data run record field consists of three components; the first component defines the size in bytes needed to store the second and third components’ content. . This type of MFT record is referred to as “nonresident” because the file’s data is stored in its own separate file outside the MFT.\n\nEach MFT record starts with a header identifying it as a resident or nonresident attribute. The first 4 bytes (characters) for all MFT records are FILE. The header information contains additional data specifying where the first attribute ID starts, which is typically at offset 0x14 from the beginning of the record. Each attribute ID has a length value in hexadecimal defining where it ends and where the next attribute starts. The length value is located 4 bytes from the attribute ID.\n\nTable 5-5 lists the types of attributes in an MFT record. For more details on how the MFT is configured, search on MFT and NTFS at http://technet.microsoft.com/en-us/library/cc781134.aspx.\n\nTable 5-5. Attributes in the MFT\n\nAttribute ID Purpose 0x10 $Standard Information This field contains data on file creation, alterations, MFT changes,\nread dates and times, and DOS file permissions. 0x20 $Attribute_List Attributes that don’t fit in the MFT (nonresident attributes) are\nlisted here along with their locations. 0x30 $File_Name The long and short names for a file are contained here. Up to 255\nUnicode bytes are available for long filenames. For POSIX requirements,\nadditional names or hard links can also be listed. Files with short\nfilenames have only one attribute ID 0x30. In older Windows OSs, long\nfilenames have two ID 0x30s in the MFT record: one for the short name\nand one for the long name. In Windows 10, there’s only one 0x30 that\ncombines the short and long filenames. 0x40 $Object_ID ($Volume_Version in\n\ncombines the short and long filenames. 0x40 $Object_ID ($Volume_Version in\nWindows NT) Ownership and who has access rights to the file or folder are listed\nhere. Every MFT record is assigned a unique GUID. Depending on your NTFS\nsetup, some file records might not contain this attribute ID. 0x50 $Security_Descriptor Contains the access control list (ACL) for the file. 0x60 $Volume_Name The volume-unique file identifier is listed here. Not all files need\nthis unique identifier. 0x70 $Volume_Information This field indicates the version and state of the volume. 0x80 $Data File data for resident files or data runs for nonresident\n\nfiles. 0x90 $Index_Root Implemented for use of folders and indexes. 0xA0 $Index_Allocation Implemented for use of folders and indexes. 0xB0 $Bitmap A bitmap indicating cluster status, such as which clusters are in use\nand which are available. 0xC0 $Reparse_Point This field is used for volume mount points and Installable File\nSystem (IFS) filter drivers. For the IFS, it marks specific files used by drivers. 0xD0 $EA_lnformation For use with OS/2 HPFS. 0xE0 For use with OS/2 HPFS. 0x100 $Logged_Utility_Stream This field is used by Encrypting File System (EFS) in Windows 2000\nand later .\n\nFigure 5-10 is an MFT record showing the resident attributes of a small file viewed in a hexadecimal editor. Note that on line 035B3530 near the bottom, there’s text data in the right pane. In Figure 5-11, the bottom half of the hexadecimal editor window shows the remaining portion of this resident file’s MFT record.\n\nFigure 5-12 is an example of a nonresident file’s hexadecimal view. Notice that on line 35B3D50 near the bottom, there’s no text data. This file is a longer version of the file shown in Figure 5-10. Current forensics tools, such as OSForensics, EnCase, Forensic Explorer, FTK, and X-Ways Forensics, can interpret the MFT from an image file.\n\nTo understand how data runs are assigned for nonresident MFT records, you should know that when a disk is created as an NTFS file structure, the OS assigns logical clusters to the entire disk partition. These assigned clusters, called logical cluster numbers (LCNs) The numbers sequentially assigned to each cluster when an NTFS disk partition is created and formatted. The first cluster on an NTFS partition starts at count 0. LCNs become the addresses that allow the MFT to read and write data to the disk’s nonresident attribute area. See also data runs and virtual cluster number (VCN). , are sequentially numbered from the beginning of the disk partition, starting with the value 0. LCNs become the addresses that allow the MFT to link to nonresident files (files outside the MFT) on the disk’s\n\nthe addresses that allow the MFT to link to nonresident files (files outside the MFT) on the disk’s partition.\n\nWhen data is first written to nonresident files, an LCN address is assigned to the file in the attribute 0x80 field of the MFT. This LCN becomes the file’s virtual cluster number (VCN) When a large file is saved in NTFS, it’s assigned a logical cluster number specifying a location on the partition. Large files are referred to as nonresident files. If the disk is highly fragmented, VCNs are assigned and list the additional space needed to store the file. The LCN is a physical location on the NTFS partition; VCNs are the offset from the previous LCN data run. See also data runs and logical cluster numbers (LCNs). , which is listed as zero: VCN(0). If there’s not enough space at VCN(0)’s location because of excessive disk fragmentation, another data run is added. More VCNs are added as\n\nlocation because of excessive disk fragmentation, another data run is added. More VCNs are added as needed, and each additional VCN is sequentially numbered as VCN(1), VCN(2), and so on until all data is written to the drive.\n\nThe value in VCN(0) is the first cluster for the file; this value is the cluster’s actual LCN. VCN(1) and other VCNs are the offset of the cluster’s number from the previous VCN cluster position in the data run. For example, to determine the next data run location for VCN(0) for a fragmented file, simply add VCN(0)’s LCN value to the next VCN’s offset value. So if VCN(0)’s LCN is 10000 and VCN(1) is 120, add VCN(1)’s 120 to VCN(0)’s LCN value of 10000 to get the starting LCN cluster for VCN(1), which is the LCN address 10120. If the file is fragmented more and there’s a VCN(2), add VCN(1)’s LCN value to VCN(2)’s LCN value. This process is repeated for any additional VCNs assigned to a file.\n\nVCNs are also signed integers so that if the next largest unused disk space is at a lower address than the previous VCN, the lower value address can be computed by simply adding a negative number to the VCN. For example, if the previous VCN data run is at offset 3000000 and the next available open area to receive data is at LCN 2900000, the VCN is − 100000‍(3000000+[−100000]=2900000) .\n\nThe following two sections explain the basic configuration of resident and nonresident files managed by the MFT. By learning how data is stored in the MFT, a forensics examiner can manually reconstruct any residual data on NTFS-formatted disk media. You need to understand how these offsets are calculated for activities in Chapter 16.\n\nThe following descriptions of the values and functions of NTFS and the MFT aren’t exhaustive, and future Windows updates could change these configurations. This discussion should be used as a quick reference for locating and interpreting data artifacts where you might find residual fragments from partially overwritten MFT records.",
+                  "children": []
+                },
+                {
+                  "title": "MFT Structures for File Data",
+                  "toc_id": 196,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 69,
+                  "budget_slides_content": 5,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 6,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 18
+                  },
+                  "chunks_sorted": [
+                    2592,
+                    2593,
+                    2594
+                  ],
+                  "content": "MFT Structures for File Data\n\nWhen you’re viewing an MFT record with a hexadecimal editor, the data is displayed in little endian format, meaning it’s read from right to left. For example, the hexadecimal value 400 is displayed as 00 04 00 00, and the number 0x40000 is displayed as 00 00 04 00.\n\nThe first section of an MFT record is the header that defines the size and starting position of the first attribute. Following the header are attributes that are specific for the file type, such as an application file or a data file. MFT records for directories and system files have additional attributes that don’t appear in a file MFT record. The following sections explain how data files are configured in the MFT. In Chapter 16, you see how these fields apply to data recovery.",
+                  "children": [
+                    {
+                      "title": "MFT Header Fields",
+                      "toc_id": 197,
+                      "chunk_count": 7,
+                      "total_chunks_in_branch": 7,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        2595,
+                        2596,
+                        2597,
+                        2598,
+                        2599,
+                        2600,
+                        2601
+                      ],
+                      "content": "MFT Header Fields\n\nFor the header of all MFT records, the record fields of interest are as follows:\n\nAt offset 0x00—The MFT record identifier FILE; the letter F is at offset 0.\n\nAt offset 0x1C to 0x1F—Size of the MFT record; the default is 0x400 (1024) bytes, or two sectors.\n\nAt offset 0x14—Length of the header, which indicates where the next attribute starts; it’s typically 0x38 bytes.\n\nAt offset 0x32 and 0x33—The update sequence array, which stores the last 2 bytes of the first sector of the MFT record. It’s used only when MFT data exceeds 512 bytes. The update sequence array is used as a checksum for record integrity validation.\n\nFigure 5-13 shows these fields and their relationships in the MFT record.",
+                      "children": []
+                    },
+                    {
+                      "title": "Attribute 0x10: Standard Information",
+                      "toc_id": 198,
+                      "chunk_count": 8,
+                      "total_chunks_in_branch": 8,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        2602,
+                        2603,
+                        2604,
+                        2605,
+                        2606,
+                        2607,
+                        2608,
+                        2609
+                      ],
+                      "content": "Attribute 0x10: Standard Information\n\nFollowing the MFT header for a data file is the Standard Information attribute, 0x10, which has the following fields (see Figure 5-14):\n\nAt offset 0x38 from the beginning of the MFT record—The start of attribute 0x10.\n\nAt offset 0x04 and 0x05 from the beginning of attribute 0x10—Size of the 0x10 attribute.\n\nAt offset 0x18 to 0x1F—The file’s create date and time; all dates and times are stored in the Win32 Filetime format.\n\nAt offset 0x20 to 0x27—The last modified date and time for the file.\n\nAt offset 0x28 to 0x2F—The last access date and time.\n\nAt offset 0x30 to 0x2F—The record access date and time.",
+                      "children": []
+                    },
+                    {
+                      "title": "Attribute 0x30: File Name",
+                      "toc_id": 199,
+                      "chunk_count": 18,
+                      "total_chunks_in_branch": 18,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        2610,
+                        2611,
+                        2612,
+                        2613,
+                        2614,
+                        2615,
+                        2616,
+                        2617,
+                        2618,
+                        2619,
+                        2620,
+                        2621,
+                        2622,
+                        2623,
+                        2624,
+                        2625,
+                        2626,
+                        2627
+                      ],
+                      "content": "Attribute 0x30: File Name\n\nFor files with filenames of eight or fewer characters, the MFT record has only one attribute 0x30. If a filename is longer than eight characters, there are two attribute 0x30s. The following description shows an MFT record with a short and long filename in attribute 0x30. The fields of interest for the short filename attribute 0x30 are as follows:\n\nAt offset 0x04 and 0x05 from the beginning of attribute 0x30—The size of attribute 0x30.\n\nAt offset 0x5A from the 0x30 attribute’s starting position—The short filename; note that it’s in Unicode.\n\nAt offset 0x20 to 0x27—The file’s create date and time; all dates and times are stored in Win32 Filetime format.\n\nAt offset 0x28 to 0x2F—The last modified date and time for the file.\n\nAt offset 0x30 to 0x37—The last access date and time.\n\nAt offset 0x38 to 0x3F—The record update date and time.\n\nNote\n\nThe date and time values in attribute 0x30 are usually the same as in attribute 0x10. On occasion, depending how data is copied to a disk and the Windows OS version, these values might differ substantially.\n\nThe following are fields of interest for the long filename attribute 0x30:\n\nAt offset 0x04 and 0x05 from the beginning of attribute 0x30—The size of attribute 0x30.\n\nAt offset 0x5A from the 0x30 attribute’s starting position—The long filename; note that it’s in Unicode.\n\nAt offset 0x20 to 0x27—The file’s create date and time; all dates and times are stored in Win32 Filetime format.\n\nAt offset 0x28 to 0x2F—The last modified date and time for the file.\n\nAt offset 0x30 to 0x37—The last access date and time.\n\nAt offset 0x38 to 0x3F—The record update date and time.\n\nFigure 5-15 shows these fields and their relationships in the MFT record.",
+                      "children": []
+                    },
+                    {
+                      "title": "Attribute 0x40: Object_ID",
+                      "toc_id": 200,
+                      "chunk_count": 10,
+                      "total_chunks_in_branch": 10,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        2628,
+                        2629,
+                        2630,
+                        2631,
+                        2632,
+                        2633,
+                        2634,
+                        2635,
+                        2636,
+                        2637
+                      ],
+                      "content": "Attribute 0x40: Object_ID\n\nDepending on the Windows version, sometimes attribute 0x40 is listed in the MFT. This attribute contains file ownership and access control information and has the following fields:\n\nAt offset 0x04 and 0x05 from the beginning of attribute 0x40—The size of attribute 0x40\n\nAt offset 0x14—Starting offset position for GUID data\n\nAt offset 0x18 to 0x27—Starting position for GUID Object_ID data\n\nIn this example, only the GUID Object_ID is listed. In large enterprise systems, typically additional information is listed, such as the following:\n\nGUID Birth Volume ID\n\nGUID Birth Object ID\n\nGUID Birth Domain ID\n\nFigure 5-16 shows these fields and their relationships in the MFT record.",
+                      "children": []
+                    },
+                    {
+                      "title": "Attribute 0x80: Data for a Resident File",
+                      "toc_id": 201,
+                      "chunk_count": 8,
+                      "total_chunks_in_branch": 8,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        2638,
+                        2639,
+                        2640,
+                        2641,
+                        2642,
+                        2643,
+                        2644,
+                        2645
+                      ],
+                      "content": "Attribute 0x80: Data for a Resident File\n\nFor a resident file’s attribute 0x80, the fields of interest are as follows (see Figure 5-17):\n\nAt offset 0x04 and 0x05 from the beginning of attribute 0x80—Size of the attribute.\n\nAt offset 0x08—The resident/nonresident flag; for resident data, it’s set to 0x00.\n\nAt offset 0x10—Number of bytes in the data run.\n\nAt offset 0x18—Start of the resident data run.\n\nAt offset 0x1E and 0x1F from the beginning of the MFT header—The sector checksum value, used to validate the first 512 bytes of the MFT record. The break between the first and second sectors is referred to as the sector boundary. The 2 bytes at positions 0x32 and 0x33 of the MFT header in the update sequence array field are where the actual values for these bytes are stored.\n\nThe end of the MFT record is indicated by the hexadecimal values FF FF FF FF at the end of the record.",
+                      "children": []
+                    },
+                    {
+                      "title": "Attribute 0x80: Data for a Nonresident File",
+                      "toc_id": 202,
+                      "chunk_count": 6,
+                      "total_chunks_in_branch": 6,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        2646,
+                        2647,
+                        2648,
+                        2649,
+                        2650,
+                        2651
+                      ],
+                      "content": "Attribute 0x80: Data for a Nonresident File\n\nFor a nonresident file, the fields of interest for attribute 0x80 are as follows:\n\nAt offset 0x04 and 0x05 from the beginning of attribute 0x80—Size of the attribute.\n\nAt offset 0x08—The resident/nonresident flag; for nonresident data, it’s set to 0x01.\n\nAt offset 0x40—The start of the data run. The first run is the LCN; if the file is fragmented, additional data runs follow, as shown in Figure 5-18. In this example, there are a total of six data runs, which means this file has several fragments.\n\nFollowing the last data run, the value 0x00 indicates the end of the Data attribute. Figure 5-18 shows these fields and their relationships in the MFT record.",
+                      "children": []
+                    },
+                    {
+                      "title": "Interpreting a Data Run",
+                      "toc_id": 203,
+                      "chunk_count": 9,
+                      "total_chunks_in_branch": 9,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        2652,
+                        2653,
+                        2654,
+                        2655,
+                        2656,
+                        2657,
+                        2658,
+                        2659,
+                        2660
+                      ],
+                      "content": "Interpreting a Data Run\n\nAs discussed, the first data run for a nonresident attribute 0x80 field starts at offset 0x40 from the beginning of the attribute. In this discussion, a file called SanteFe001.jpg is used as an example of how data runs are interpreted. Data runs have three components: The first component declares how many bytes in the attribute field are needed to store the values for the second and third components. The second component stores the number of clusters assigned to the data run, and the third component contains the starting cluster address value (the LCN or the VCN). This discussion uses a file with six fragments (data runs).\n\nFor the first component—the 32 shown in Figure 5-19 as the data run’s starting position—the second digit, 2, means that the next 2 bytes contain the number of clusters assigned to this data run. The first digit, 3, means that the next 3 bytes (after the number of clusters assigned) contain the cluster address value VCN(0); for the first data run, this value is the LCN.\n\nIn Figure 5-20, the second component shows the 2 bytes needed to store the hexadecimal value (in little endian) for the number of clusters assigned to this data run. The number of clusters assigned to this data run is 7B1 (hexadecimal) or 1969 in decimal.\n\nAs shown in Figure 5-21, for the third component, the starting assigned cluster address is 0x8C8C (hexadecimal), or 35980 in decimal. Because it’s the first data run of the file, this address is the LCN.\n\nFigures 5-22 and 5-23 show the second and third data runs for the SanteFe001.jpg file. For the second and all other data runs, the third component is a signed integer; for example, in Figure 5-22, this value is converted from a hexadecimal number to a negative decimal number. In NTFS, if the next available open area of a highly fragmented disk is at a lower address, a negative number is assigned as the VCN value. The way NTFS navigates to this second open area is by adding the VCN to the previous LCN. For example, the first data run has the LCN address 35980, and the second data run has the value -4715. The OS adds the two numbers, but because the second data run has a negative number, they’re actually subtracted: 35980 + (−4715) = 31265 .\n\nAs you can see in the assigned cluster lists in Figure 5-23, the second fragment has a starting cluster number (an LCN) of 31265. In the third data run, the VCN value is a positive number.\n\nTip\n\nFor additional information on NTFS and its design, see http://dubeyko.com/development/FileSystems/NTFS/ntfsdoc.pdf or http://download.paragon-software.com/doc/manual_NTFS-HFS_for_Linux_8.1_User_Manual.pdf.",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "title": "NTFS Alternate Data Streams",
+                  "toc_id": 204,
+                  "chunk_count": 14,
+                  "total_chunks_in_branch": 14,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2661,
+                    2662,
+                    2663,
+                    2664,
+                    2665,
+                    2666,
+                    2667,
+                    2668,
+                    2669,
+                    2670,
+                    2671,
+                    2672,
+                    2673,
+                    2674
+                  ],
+                  "content": "NTFS Alternate Data Streams\n\nOf particular interest when you’re examining NTFS disks are alternate data streams Ways in which data can be appended to a file (intentionally or not) and potentially obscure evidentiary data. In NTFS, alternate data streams become an additional file attribute. , which are ways data can be appended to existing files. When you’re examining a disk, be aware that alternate data streams can obscure valuable evidentiary data, intentionally or by coincidence.\n\nIn NTFS, an alternate data stream becomes an additional file attribute and allows the file to be associated with different applications. As a result, it remains one data unit. You can also store information about a file in an alternate data stream. In its resource documentation Web page, Microsoft states: “For example, a graphics program can store a thumbnail image of a bitmap in a named data stream within the NTFS file containing the image.” At a command prompt in Windows NT and later, you can create an alternate data stream with this DOS command:\n\nC:\\echo text_string > myfile.txt:stream_name\n\nYou can also use the following type command to redirect the contents of a small file to an alternate data stream:\n\nC:\\type textfile.txt > myfile.txt:stream1\n\nIn these commands, the alternate data stream is defined in the MFT by the colon between the file extension and the stream label. To display an alternate data stream’s content as a simple text string, use this command:\n\nC:\\more > myfile.txt:stream1\n\nNote\n\nIf you save a file with alternate data streams attached to a FAT volume, the alternate data streams aren’t transferred.\n\nIf you perform a keyword search and retrieve a file associated with a keyword, you might not be able to open the alternate data stream. An alternate data stream isn’t displayed when you open a file in a text editor. The only way you can tell whether a file has an alternate data stream attached is by examining the file’s MFT record entry. Figure 5-24 shows the MFT record of a file containing a text alternate data stream. Note that there are two attribute 0x80 fields.\n\nFigure 5-25 shows what larger nonresident files look like in an MFT record. Note that the sector boundary’s checksum value (item R) must be swapped with the update sequence array’s value (item C).\n\nTip\n\nFor more information on alternate data streams, see “Dissecting NTFS Hidden Streams” at www.forensicfocus.com/dissecting-ntfs-hidden-streams.",
+                  "children": []
+                },
+                {
+                  "title": "NTFS Compressed Files",
+                  "toc_id": 205,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 3,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2675,
+                    2676,
+                    2677
+                  ],
+                  "content": "NTFS Compressed Files\n\nTo improve data storage on disk drives, NTFS provides compression similar to FAT DriveSpace 3, a Windows 98 compression utility. With NTFS, you can compress files, folders, or entire volumes. With FAT16, you can compress only a volume. On a Windows NT or later system, compressed data is displayed normally when you view it in Windows Explorer or applications such as Microsoft Word.\n\nDuring an investigation, typically you work from an image of a compressed disk, folder, or file. Most forensics tools can uncompress and analyze compressed Windows data, including data compressed with the Lempel-Ziv-Huffman (LZH) algorithm and in formats such as PKZip, WinZip, and GNU gzip. However, forensics tools might have difficulty with third-party compression utilities, such as the .rar format. If you identify third-party compressed data, you need to uncompress it with the utility that created it.",
+                  "children": []
+                },
+                {
+                  "title": "NTFS Encrypting File System",
+                  "toc_id": 206,
+                  "chunk_count": 5,
+                  "total_chunks_in_branch": 5,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2678,
+                    2679,
+                    2680,
+                    2681,
+                    2682
+                  ],
+                  "content": "NTFS Encrypting File System\n\nWhen Microsoft introduced Windows 2000, it added optional built-in encryption to NTFS called Encrypting File System (EFS) A public/ private key encryption first used in Windows 2000 on NTFS-formatted disks. The file is encrypted with a symmetric key, and then a public/private key is used to encrypt the symmetric key. . EFS uses public key In encryption, the key used to encrypt a file; it’s held by a certificate authority, such as a global registry, network server, or company such as VeriSign. and private key In encryption, the key used to decrypt the file. The file owner keeps the private key. methods of encrypting files, folders, or disk volumes (partitions). Only the owner or user who encrypted the data can access encrypted files. The owner holds the private key, and the public key is\n\nthe data can access encrypted files. The owner holds the private key, and the public key is held by a certification authority, such as a global registry, network server, or company such as VeriSign.\n\nWhen EFS is used in Windows 2000 and later, a recovery certificate A method NTFS uses so that a network administrator can recover encrypted files if the file’s user/creator loses the private key encryption code. is generated and sent to the local Windows administrator account. The purpose of the recovery certificate is to provide a mechanism for recovering files encrypted with EFS if there’s a problem with the user’s original private key. The recovery key is stored in one of two places. When a network user initiates EFS, the recovery key is sent to the local domain server’s administrator account. On a stand-alone workstation, the recovery key is sent to the local administrator account.\n\nUsers can apply EFS to files stored on their local workstations or a remote server. Windows 2000 and later decrypt the data automatically when a user or an application accesses an EFS file, folder, or disk volume. In Windows Server 2003 and later, users can grant other users access to their EFS data. If a user copies a file encrypted with EFS to a folder that isn’t encrypted, the copied data is saved in unencrypted format.",
+                  "children": []
+                },
+                {
+                  "title": "EFS Recovery Key Agent",
+                  "toc_id": 207,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2683,
+                    2684,
+                    2685,
+                    2686,
+                    2687,
+                    2688,
+                    2689,
+                    2690
+                  ],
+                  "content": "EFS Recovery Key Agent\n\nThe Recovery Key Agent implements the recovery certificate, which is in the Windows administrator account. Windows administrators can recover a key in two ways: through Windows or from a command prompt. These two commands are available from a command prompt: cipher and copy.\n\nFor information on how to use these commands, enter the question mark switch after each command. For example, type cipher /? and press Enter. Encrypted files aren’t part of the FAT12, FAT16, or FAT32 file systems, so cipher works only on NTFS systems running Windows 2000 Professional or later. The copy command, however, works in both FAT and NTFS.\n\nNote\n\nIn Vista Business Edition and later, Microsoft has added features to the cipher command that aren’t available when encrypting data in Windows Explorer or File Explorer. One is the /w switch that overwrites all deleted files, making them impossible to recover with data recovery or forensics carving tools.\n\nTip\n\nIf you copy an encrypted file from an EFS-enabled NTFS disk or folder to a non-EFS storage media or folder, it’s unencrypted automatically.\n\nTo recover an encrypted EFS file, a user can e-mail it or copy the file to the administrator, who can then run the Recovery Key Agent function to restore the file. For additional information, see “How It Works” (https://technet.microsoft.com/en-us/library/cc962103.aspx) and “The Encrypting File System” (https://technet.microsoft.com/en-us/library/cc700811.aspx).",
+                  "children": []
+                },
+                {
+                  "title": "Deleting NTFS Files",
+                  "toc_id": 208,
+                  "chunk_count": 20,
+                  "total_chunks_in_branch": 20,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    2691,
+                    2692,
+                    2693,
+                    2694,
+                    2695,
+                    2696,
+                    2697,
+                    2698,
+                    2699,
+                    2700,
+                    2701,
+                    2702,
+                    2703,
+                    2704,
+                    2705,
+                    2706,
+                    2707,
+                    2708,
+                    2709,
+                    2710
+                  ],
+                  "content": "Deleting NTFS Files\n\nTypically, you use File Explorer to delete files from a disk. When a file is deleted in Windows NT and later, the OS renames it and moves it to the Recycle Bin. Another method is using the del (delete) MS-DOS command. This method doesn’t rename and move the file to the Recycle Bin, but it eliminates the file from the MFT listing in the same way FAT does.\n\nWhen you delete a file in Windows or File Explorer, you can restore it from the Recycle Bin. The OS takes the following steps when you delete a file or a folder in Windows or File Explorer:\n\n1.\n\nWindows changes the filename and moves the file to a subdirectory with a unique identity in the Recycle Bin.\n\n2.\n\nWindows stores information about the original path and filename in the Info2 file In Windows NT through Vista, the control file for the Recycle Bin. It contains ASCII data, Unicode data, and date and time of deletion. , which is the control file for the Recycle Bin. It contains ASCII data, Unicode data, and the date and time of deletion for each file or folder.\n\nNTFS files deleted at a command prompt function much like FAT files. (The following steps also apply when a user empties the Recycle Bin.) The OS performs the following tasks:\n\n1.\n\nThe associated clusters are designated as free—that is, marked as available for new data.\n\n2.\n\nThe $Bitmap file attribute in the MFT is updated to reflect the file’s deletion, showing that this space is available.\n\n3.\n\nThe file’s record in the MFT is marked as being available.\n\n4.\n\nVCN/LCN cluster locations linked to deleted nonresident files are then removed from the original MFT record.\n\n5.\n\nA run list is maintained in the MFT of all cluster locations on the disk for nonresident files. When the list of links is deleted, any reference to the links is lost.\n\nNote\n\nNTFS is more efficient than FAT at reclaiming deleted space. Deleted files are overwritten more quickly.",
+                  "children": []
+                },
+                {
+                  "title": "Resilient File System",
+                  "toc_id": 209,
+                  "chunk_count": 9,
+                  "total_chunks_in_branch": 9,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2711,
+                    2712,
+                    2713,
+                    2714,
+                    2715,
+                    2716,
+                    2717,
+                    2718,
+                    2719
+                  ],
+                  "content": "Resilient File System\n\nWith the release of Windows Server 2012, Microsoft created a new file system: Resilient File System (ReFS) A file system developed for Windows Server 2012. It allows increased scalability for disk storage and has improved features for data recovery and error checking. . ReFS is designed to address very large data storage needs, such as the cloud. The following features are incorporated into ReFS’s design:\n\nMaximized data availability\n\nImproved data integrity\n\nDesigned for scalability\n\nReFS is an outgrowth of NTFS designed to provide a large-scale data storage access capability. It’s intended only for data storage, so as of this writing, it can’t be used as a boot drive. Windows 8/8.1 and later and Windows Server 2012 and later are the only Windows OSs that can access ReFS disk drives.\n\nReFS uses disk structures similar to the MFT in NTFS. Its storage engine uses a B+-tree sort method for fast access to large data sets. It also uses a method called “allocate-on-write” that copies updates of data files to new locations; similar to shadow paging, it prevents overwriting the original data files. The purpose of writing updates to new locations is to ensure that the original data can be recovered easily if a failure occurs in the update write to disk.\n\nTip\n\nFor more information on ReFS and other storage methods, see http://msdn.microsoft.com/en-us/library/windows/desktop/hh848060(v=vs.85).aspx or https://technet.microsoft.com/en-us/windows-server-docs/storage/refs/refs-overview.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Examining NTFS Disks (Interactive Activity)",
+                "toc_id": 193,
+                "slides_allocated": 1
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          }
+        }
+      ]
+    },
+    {
+      "deck_number": 2,
+      "total_slides_in_deck": 27,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 18,
+        "interactive": 5
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 79,
+        "total_deck_time": 85
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Working with Windows and CLI Systems.",
+            "deck_title": "Week 5, Lecture 2"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Exploring Microsoft File Structures",
+              "Understanding Whole Disk Encryption",
+              "Understanding the Windows Registry",
+              "Understanding Microsoft Startup Tasks",
+              "Understanding Virtual Machines"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Exploring Microsoft File Structures",
+              "toc_id": 189,
+              "chunk_count": 5,
+              "total_chunks_in_branch": 71,
+              "budget_slides_content": 5,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 6,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 20
+              },
+              "chunks_sorted": [
+                2481,
+                2482,
+                2483,
+                2484,
+                2485
+              ],
+              "content": "Exploring Microsoft File Structures\n\nBecause most PCs use Microsoft software products, you should understand Microsoft file systems so that you know how Windows and DOS computers store files. In particular, you need to understand clusters, File Allocation Table (FAT), and NT File System (NTFS). The method an OS uses to store files determines where data can be hidden. When you examine a computer for forensic evidence, you need to explore these hiding places to determine whether they contain files or parts of files that might be evidence of a crime or policy violation.\n\nIn Microsoft file structures, sectors are grouped to form clusters Storage allocation units composed of groups of sectors. Clusters are 512, 1024, 2048, or 4096 bytes each. , which are storage allocation units of one or more sectors. Clusters range from 512 bytes up to 32,000 bytes each. Combining sectors minimizes the overhead of writing or reading files to a disk. The OS groups one or more sectors into a cluster. The number of sectors in a cluster varies according to the disk size. For example, a double-sided floppy disk has one sector per cluster; a hard disk has four or more sectors per cluster.\n\nClusters are numbered sequentially, starting at 0 in NTFS and 2 in FAT. The first sector of all disks contains a system area, the boot record, and a file structure database. The OS assigns these cluster numbers, referred to as logical addresses When files are saved, they are assigned to clusters, which the OS numbers sequentially starting at 2. Logical addresses point to relative cluster positions, using these assigned cluster numbers. . They point to relative cluster positions; for example, cluster address 100 is 98 clusters from cluster address 2. Sector numbers, however, are referred to as physical addresses The actual sectors in which files are located. Sectors reside at the hardware and firmware level. because they reside at the hardware or firmware level and go from address 0 (the\n\nfirmware level. because they reside at the hardware or firmware level and go from address 0 (the first sector on the disk) to the last sector on the disk. Clusters and their addresses are specific to a logical disk drive, which is a disk partition.",
+              "children": [
+                {
+                  "title": "Disk Partitions",
+                  "toc_id": 190,
+                  "chunk_count": 39,
+                  "total_chunks_in_branch": 39,
+                  "budget_slides_content": 3,
+                  "direct_slides_content": 3,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 9,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
+                  },
+                  "chunks_sorted": [
+                    2486,
+                    2487,
+                    2488,
+                    2489,
+                    2490,
+                    2491,
+                    2492,
+                    2493,
+                    2494,
+                    2495,
+                    2496,
+                    2497,
+                    2498,
+                    2499,
+                    2500,
+                    2501,
+                    2502,
+                    2503,
+                    2504,
+                    2505,
+                    2506,
+                    2507,
+                    2508,
+                    2509,
+                    2510,
+                    2511,
+                    2512,
+                    2513,
+                    2514,
+                    2515,
+                    2516,
+                    2517,
+                    2518,
+                    2519,
+                    2520,
+                    2521,
+                    2522,
+                    2523,
+                    2524
+                  ],
+                  "content": "Disk Partitions\n\nMany hard disks are partitioned, or divided, into two or more sections. A partition A logical drive on a disk. It can be the entire disk or part of the disk. is a logical drive. Windows OSs can have three primary partitions followed by an extended partition that can contain one or more logical drives. Someone who wants to hide data on a hard disk can create hidden partitions or voids—large unused gaps between partitions on a disk drive. For example, partitions containing unused space can be created between the primary partitions or logical partitions. This unused space between partitions is called the partition gap Unused space or void between the primary partition and the first logical partition. . It’s possible to create a partition, add data to it, and then remove references to the\n\npartition. . It’s possible to create a partition, add data to it, and then remove references to the partition so that it can be hidden in Windows. If data is hidden in this partition gap, a disk editor utility could be used to access it. Another technique is to hide incriminating digital evidence at the end of a disk by declaring a smaller number of bytes than the actual drive size. With disk-editing tools, however, you can access these hidden or empty areas of the disk.\n\nOne way to examine a partition’s physical level is to use a disk editor, such as WinHex or Hex Workshop. These tools enable you to view file headers and other critical parts of a file. Both tasks involve analyzing the key hexadecimal codes the OS uses to identify and maintain the file system. Table 5-1 lists the hexadecimal codes in a partition table and identifies some common file system structures.\n\nTip\n\nTo understand hexadecimal numbering better, see www.i-programmer.info/babbages-bag/478-hexadecimal.html.\n\nTable 5-1. Hexadecimal Codes in the Partition Table\n\nHexadecimal code File system 01 DOS 12-bit FAT (floppy disks) 04 DOS 16-bit FAT for partitions smaller\nthan 32 MB 05 Extended partition 06 DOS 16-bit FAT for partitions larger\nthan 32 MB 07 NTFS and exFAT 08 AIX bootable partition 09 AIX data partition 0B DOS 32-bit FAT 0C DOS 32-bit FAT for interrupt 13\nsupport 0F Extended Partition with Logical Block\nAddress (LBA) 17 Hidden NTFS partition (XP and\nearlier) 1B Hidden FAT32 partition 1E Hidden VFAT partition 3C Partition Magic recovery partition 66–69 Novell partitions 81 Linux 82 Linux swap partition (can also be\nassociated with Solaris partitions) 83 Linux native file systems (Ext2, Ext3,\nExt4, Reiser, Xiafs) 86 FAT16 volume/stripe set (Windows\nNT) 87 High Performance File System (HPFS)\n\nExt4, Reiser, Xiafs) 86 FAT16 volume/stripe set (Windows\nNT) 87 High Performance File System (HPFS)\nfault-tolerant mirrored partition or NTFS volume/stripe set A5 FreeBSD and BSD/386 A6 OpenBSD A9 NetBSD C7 Typical of a corrupted NTFS\nvolume/stripe set EB BeOS\n\nThe partition table is in the Master Boot Record (MBR) On Windows and DOS computers, this boot disk file contains information about partitions on a disk and their locations, size, and other important items. , located at sector 0 of the disk drive. In a hexadecimal editor, such as WinHex, you can find the first partition starting at offset 0x1BE. The second partition starts at 0x1CE, the third partition starts at 0x1DE, and the fourth partition starts at 0x1EE (see Figure 5-4).\n\nTip\n\nFor more information on the Master Boot Record, see https://technet.microsoft.com/en-us/library/cc976786.aspx.\n\nThe file system’s hexadecimal code is offset 3 bytes from 0x1BE for the first partition. The sector address of where this partition starts on the drive is offset 8 bytes from 0x1BE. The number of sectors assigned to the partition are offset 12 bytes for position 0x1BE. These offsets are duplicated for any additional partitions created on the disk, as shown in Figure 5-4. For the extended part of the drive, all partitions are logical partitions. In the first logical partition’s boot sector, there’s a partition table similar to the MBR.\n\nIn some instances, you might need to identify the OS on an unknown disk. You can use WinHex or another hexadecimal editor, such as Hex Workshop, for this task. The following steps show you how to determine a disk’s OS by using WinHex:\n\nNote\n\nBefore beginning the following activity, create a Work\\Chap05\\Chapter work folder on your system.\n\n1.\n\nStart a Web browser, and go to http://x-ways.net. Under the Software Products heading, click WinHex. Download and install this program, after checking with your instructor about where to install it on your computer.\n\n2.\n\nInsert a USB drive into a USB port.\n\n3.\n\nRight-click the WinHex desktop icon and click Run as administrator. If necessary, click Continue or Yes in the UAC message box.\n\nTip\n\nIn Windows 10 or later, it’s recommended that you create a desktop shortcut in File Explorer for the WinHex.exe file, which is usually in the C:\\Program Files\\WinHex folder. In older Windows versions, the path might be C:\\Program Files (x86)\\Winhex. To start the program, you right-click the WinHex desktop icon and click “Run as administrator.”\n\n4.\n\nClick Tools, Open Disk from the menu to see a list of logical drives. Click the C drive (or your working drive), and click OK. Figure 5-5 shows a typical hard disk in the WinHex window. If an error message is displayed, you can ignore it because it won’t affect your analysis for this activity.\n\n5.\n\nClick Tools, Open Disk again, but this time, click your USB drive in the Edit Disk list, and then click OK. Compare the file system label for this drive with the one you saw in Step 4. Leave WinHex open for the next activity.\n\nWith tools such as WinHex, you can also identify file headers to determine the file types, with or without an extension. Before performing the following steps in WinHex, use File Explorer to find a bitmap (.bmp) file and a Word document (.docx). (In the Hands-On Projects, you apply these techniques to other file types.) Then follow these steps:\n\n1.\n\nTo open a bitmap file on your computer, click File, Open from the WinHex menu (the main menu, not the File item in the Case Data menu). In the Open Files dialog box, navigate to a folder containing a bitmap file, and then double-click the .bmp file. If you get a WinHex evaluation warning message, click OK to continue.\n\n2.\n\nAs shown in Figure 5-6, the WinHex window identifies the file type for the graphic. For .bmp files, it shows “BM6,” “BM,” or “BMF.” As shown in the figure, “42 4D” is also displayed to indicate a BMP file signature.\n\n3.\n\nTo open a Word document, click File, Open from the menu. Navigate to a folder containing a Word document, and then double-click the .docx file. As shown in Figure 5-7, the first line contains the hexadecimal values “50 4B 03 04 14 00 06 00,” which identify the file as a Microsoft Office 2010 or later document. The same file header is displayed for an Excel or a PowerPoint file but doesn’t apply to Access databases. For Microsoft Office 2007 and earlier, the first eight hexadecimal values are “D0 CF 11 E0 A1 B1 1A E1.”\n\n4.\n\nExit WinHex.\n\nTip\n\nDepending on the hexadecimal editor, hex values can be grouped in sets of two or four digits. For more information on file header hexadecimal information, see www.garykessler.net/library/file_sigs.html.",
+                  "children": []
+                },
+                {
+                  "title": "Examining FAT Disks",
+                  "toc_id": 191,
+                  "chunk_count": 24,
+                  "total_chunks_in_branch": 27,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    2525,
+                    2526,
+                    2527,
+                    2528,
+                    2529,
+                    2530,
+                    2531,
+                    2532,
+                    2533,
+                    2534,
+                    2535,
+                    2536,
+                    2537,
+                    2538,
+                    2539,
+                    2540,
+                    2541,
+                    2542,
+                    2543,
+                    2544,
+                    2545,
+                    2546,
+                    2547,
+                    2548
+                  ],
+                  "content": "Examining FAT Disks\n\nFile Allocation Table (FAT) The original Microsoft file structure database. It’s written to the outermost track of a disk and contains information about each file stored on the drive. PCs use the FAT to organize files on a disk so that the OS can find the files it needs. The variations are FAT12, FAT16, FAT32, VFAT, and FATX. is the file structure database that Microsoft designed for floppy disks. It’s used to organize files on a disk so that the OS can find the files it needs. Since its development, other OSs, such as Linux and Macintosh, can format, read, and write to FAT storage devices such as USB drives and SD cards. The FAT database is typically written to a disk’s outermost track and contains filenames, directory names, date and time stamps, the starting cluster number, and file\n\ncontains filenames, directory names, date and time stamps, the starting cluster number, and file attributes (archive, hidden, system, and read-only).\n\nThere are three current versions of FAT—FAT16, FAT32, and exFAT (used for mobile personal storage devices)—and three older FAT formats, which are FATX, Virtual FAT (VFAT), and FAT12. The FAT version in Microsoft DOS 6.22 had a limitation of eight characters for filenames and three characters for extensions. The following list summarizes the evolution of FAT versions:\n\nFAT12—This version is used specifically for floppy disks, so it has a limited amount of storage space. It was originally designed for MS-DOS 1.0, the first Microsoft OS, used for floppy disk drives and drives up to 16 MB.\n\nFAT16—To handle larger disks, Microsoft developed FAT16, which is still used on older Microsoft OSs, such as MS-DOS 3.0 through 6.22, Windows 95 (first release), and Windows NT 3.5 and 4.0. FAT16 supports disk partitions with a maximum storage capacity of 4 GB.\n\nFAT32—When disk technology improved and disks larger than 2 GB were developed, Microsoft released FAT32, which can access larger drives.\n\nexFAT—Developed for mobile personal storage devices, such as flash memory devices, secure digital eXtended capacity (SDCX), and memory sticks. The exFAT file system can store very large files, such as digital images, video, and audio files.\n\nVFAT—Developed to handle files with more than eight-character filenames and three-character extensions; introduced with Windows 95. VFAT is an extension of other FAT file systems.\n\nTip\n\nFor additional information on the specifications for FAT, exFAT, and NTFS, see www.ntfs.com/ntfs_vs_fat.htm.\n\nCluster sizes vary according to the hard disk size and file system. Table 5-2 lists the number of sectors and bytes assigned to a cluster on FAT16 disk according to hard disk size. For FAT32 file systems, cluster sizes are determined by the OS. Clusters can range from 1 sector consisting of 512 bytes to 128 sectors of 64 KB.\n\nTable 5-2. Sectors and Bytes per Cluster\n\nDrive size Sectors per\ncluster FAT16 8–32 MB 1 512 bytes 32–64 MB 2 1 KB 64–128 MB 4 2 KB 128–256 MB 8 4 KB 256–512 MB 16 8 KB 512–1024 MB 32 16 KB 1024–2048 MB 64 32 KB 2048–4096 MB 128 64 KB\n\nMicrosoft OSs allocate disk space for files by clusters. This practice results in drive slack Unused space in a cluster between the end of an active file and the end of the cluster. It can contain deleted files, deleted e-mail, or file fragments. Drive slack is made up of both file slack and RAM slack. See also file slack and RAM slack. , composed of the unused space in a cluster between the end of an active file’s content and the end of the cluster. Drive slack includes RAM slack The unused space between the end of the file (EOF) and the end of the last sector used by the active file in the cluster. Any data residing in RAM at the time the file is saved, such as logon IDs and passwords, can appear in this area, whether the information was saved or not. RAM slack is found mainly in older\n\nappear in this area, whether the information was saved or not. RAM slack is found mainly in older Microsoft OSs. (found mainly in older Microsoft OSs) and file slack The unused space created when a file is saved. If the allocated space is larger than the file, the remaining space is slack space and can contain passwords, logon IDs, file fragments, and deleted e-mails. . In newer Windows OSs, when data is written to disk, the remaining RAM slack is zeroed out and contains no RAM data.\n\nFor example, suppose you create a text document containing 5000 characters—that is, 5000 bytes of data. If you save this file on a FAT16 1.6 GB disk, a Microsoft OS reserves one cluster for it automatically. For a 1.6 GB disk, the OS allocates about 32,000 bytes, or 64 sectors (512 bytes per sector), for your file. The unused space, 27,000 bytes, is the file slack (see Figure 5-8). That is, RAM slack is the portion of the last sector used in the last assigned cluster, and the remaining sectors are referred to as “file slack.” The 5000-byte text document uses up 10 sectors, or 5120 bytes, so 120 bytes of a sector aren’t used; however, DOS must write in full 512-byte chunks of data (sectors). The data to fill the 120-byte void is pulled from RAM and placed in the area between the end of the\n\nThe data to fill the 120-byte void is pulled from RAM and placed in the area between the end of the file (EOF) and the end of the last sector used by the active file in the cluster. Any information in RAM at that point, such as logon IDs or passwords, is placed in RAM slack on older Microsoft OSs when you save a file. File fragments, deleted e-mails, and passwords are often found in RAM and file slack.\n\nAn unintentional side effect of FAT16 allowing large clusters was that it reduced fragmentation as cluster size increased. The OS added extra data to the end of the file and allowed the file to expand to this assigned cluster until it consumed the remaining reserved 27,000 bytes. This increased cluster size resulted in inefficient use of disk space. Because of this inefficient allocation of sectors to clusters, when nearly full FAT16 drives were converted to FAT32, users discovered they had a lot of extra free disk space because the files wasted less space.\n\nWhen you run out of room for an allocated cluster, the OS allocates another cluster for your file. As files grow and require more disk space, assigned clusters are chained together. Typically, chained clusters are contiguous on the disk. However, as some files are created and deleted and other files are expanded, the chain can be broken or fragmented. With a tool such as WinHex, you can view the cluster-chaining sequence and see how FAT addresses linking clusters to one another (see Figure 5-9).\n\nWhen the OS stores data in a FAT file system, it assigns a starting cluster position to a file. Data for the file is written to the first sector of the first assigned cluster. When this first assigned cluster is filled and runs out of room, FAT assigns the next available cluster to the file. If the next available cluster isn’t contiguous to the current cluster, the file becomes fragmented. In the FAT for each cluster on the volume (the partitioned disk), the OS writes the address of the next assigned cluster. Think of clusters as buckets that can hold a specific number of bytes. When a cluster (or bucket) fills up, the OS allocates another cluster to collect the extra data.\n\nOn rare occasions, such as a system failure or sabotage, these cluster chains can break. If they do, data can be lost because it’s no longer associated with the previous chained cluster. FAT looks forward for the next cluster assignment but doesn’t provide pointers to the previous cluster. Rebuilding these broken chains can be difficult.\n\nNote\n\nMany disk forensics tools have automated much of the file-rebuilding process. These improved features make recovering data easier.",
+                  "children": [
+                    {
+                      "title": "Deleting FAT Files",
+                      "toc_id": 192,
+                      "chunk_count": 3,
+                      "total_chunks_in_branch": 3,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        2549,
+                        2550,
+                        2551
+                      ],
+                      "content": "Deleting FAT Files\n\nWhen a file is deleted in Windows Explorer or with the MS-DOS delete command, the OS inserts a HEX E5 (0xE5) in the filename’s first letter position in the associated directory entry. This value tells the OS that the file is no longer available and a new file can be written to the same cluster location.\n\nIn the FAT file system, when a file is deleted, the only modifications made are that the directory entry is marked as a deleted file, with the HEX E5 character replacing the first letter of the filename, and the FAT chain for that file is set to 0. The data in the file remains on the disk drive. The area of the disk where the deleted file resides becomes unallocated disk space Partition disk space that isn’t allocated to a file. This space might contain data from files that have been deleted previously. (also called “free disk space”). The unallocated disk space is now available to receive new data from newly created files or other files needing more space as they grow. Most forensics tools can recover data still residing in this area.",
+                      "children": []
+                    }
+                  ]
+                }
+              ],
+              "interactive_activity": {
+                "title": "Exploring Microsoft File Structures (Interactive Activity)",
+                "toc_id": 189,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Understanding Whole Disk Encryption",
+              "toc_id": 210,
+              "chunk_count": 11,
+              "total_chunks_in_branch": 26,
+              "budget_slides_content": 2,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "chunks_sorted": [
+                2720,
+                2721,
+                2722,
+                2723,
+                2724,
+                2725,
+                2726,
+                2727,
+                2728,
+                2729,
+                2730
+              ],
+              "content": "Understanding Whole Disk Encryption\n\nLoss of personal identity information (PII) Any information that can be used to create bank or credit card accounts, such as name, home address, Social Security number, and driver’s license number. and trade secrets caused by computer theft has become more of a concern. Company PII might consist of employees’ full names, home addresses, and Social Security numbers. With this information, criminals could easily apply for credit card accounts in these employees’ names. Trade secrets are any information a business keeps confidential because it provides a competitive edge over other companies. The inadvertent public release of this information could devastate a business’s competitive edge.\n\nOf particular concern is the theft of laptops and handheld devices, such as smartphones. If data on these devices isn’t secured correctly, the owners could be liable for any damages incurred, such as stolen identities, credit card fraud, or loss of business caused by the release of trade secrets to the competition. Because of the PII problem, many states have enacted laws requiring any person or business to notify potential victims of the loss as soon as possible. To help prevent loss of information, software vendors, including Microsoft, now provide whole disk encryption (WDE, introduced in Chapter 3). This feature creates new challenges in examining and recovering data from drives.\n\nWhole disk encryption tools offer the following features that forensics examiners should be aware of:\n\nPreboot authentication, such as a single sign-on password, fingerprint scan, or token (USB device)\n\nFull or partial disk encryption with secure hibernation, such as activating a password-protected screen saver\n\nAdvanced encryption algorithms, such as Advanced Encryption Standard (AES) and International Data Encryption Algorithm (IDEA)\n\nKey management function that uses a challenge-and-response method to reset passwords or passphrases\n\nWDE tools encrypt each sector of a drive separately. Many of these tools encrypt the drive’s boot sector to prevent any efforts to bypass the secured drive’s partition. To examine an encrypted drive, you must decrypt it first. An encryption tool’s key management function typically uses a challenge-and-response method for decryption, which means you must run a vendor-specific program to decrypt the drive. Many vendors use a bootable CD or USB drive that prompts for a one-time passphrase A password used to access special accounts or programs requiring a high level of security, such as a decryption utility for an encrypted drive. This passphrase can be used only once, and then it expires. generated by the key management function. If you need to decrypt the same computer a second time, you\n\nby the key management function. If you need to decrypt the same computer a second time, you need a new one-time passphrase.\n\nThe biggest drawback to decrypting a drive is the several hours required to read, decrypt, and write each sector. The larger the drive, the longer decryption takes. After you’ve decrypted the drive, however, you can use standard acquisition methods to retrieve data.",
+              "children": [
+                {
+                  "title": "Examining Microsoft BitLocker",
+                  "toc_id": 211,
+                  "chunk_count": 9,
+                  "total_chunks_in_branch": 9,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2731,
+                    2732,
+                    2733,
+                    2734,
+                    2735,
+                    2736,
+                    2737,
+                    2738,
+                    2739
+                  ],
+                  "content": "Examining Microsoft BitLocker\n\nBitLocker, introduced briefly in Chapter 3, is Microsoft’s utility for protecting drive data. It’s available in Windows Vista Enterprise and Ultimate editions, Windows 7, 8, and 10 Professional and Enterprise editions, and Windows Server 2008 and later. Guidance Software Encase can decrypt BitLocker drives, although the process can take a lot of time. BitLocker’s current hardware and software requirements are as follows:\n\nA computer capable of running Windows Vista or later (non-home editions)\n\nThe Trusted Platform Module (TPM) microchip, version 1.2 or newer\n\nA computer BIOS compliant with Trusted Computing Group (TCG)\n\nTwo NTFS partitions for the OS and an active system volume with available space\n\nThe BIOS configured so that the hard drive boots first before checking the CD/DVD drive or other bootable peripherals\n\nTip\n\nFor more information on BitLocker, see http://technet.microsoft.com/en-us/library/cc732774.aspx or go to http://technet.microsoft.com and search on “BitLocker.”",
+                  "children": []
+                },
+                {
+                  "title": "Examining Third-Party Disk Encryption Tools",
+                  "toc_id": 212,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2740,
+                    2741,
+                    2742,
+                    2743,
+                    2744,
+                    2745
+                  ],
+                  "content": "Examining Third-Party Disk Encryption Tools\n\nSeveral vendors offer third-party WDE utilities that often have more features than BitLocker. For example, BitLocker can encrypt only NTFS drives. If you want to encrypt a FAT drive, you need a third-party solution. Decrypting with third-party utilities typically follows the same process as in BitLocker, with some exceptions. Before using one of these utilities, make sure you investigate its features thoroughly. The following list describes some available third-party WDE utilities:\n\nEndpoint Encryption (www.symantec.com/products/endpoint-encryption) can be used on PCs, laptops, and removable media to secure an entire disk volume. This tool works in Windows Server 2008 and later and Windows 7 and later.\n\nVoltage SecureFile (www.voltage.com/products/data-security/hpe-securefile/) is designed for an enterprise computing environment.\n\nJetico BestCrypt Volume Encryption (www.jetico.com/products/personal-privacy/bestcrypt-volume-encryption) provides WDE for older MS-DOS and current Windows systems.\n\nWith improved encryption methods, extracting digital evidence will become more difficult. Because of these challenges, you need to know how to make remote live acquisitions, discussed in Chapter 10.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding Whole Disk Encryption (Interactive Activity)",
+                "toc_id": 210,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Understanding the Windows Registry",
+              "toc_id": 213,
+              "chunk_count": 9,
+              "total_chunks_in_branch": 56,
+              "budget_slides_content": 4,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "chunks_sorted": [
+                2746,
+                2747,
+                2748,
+                2749,
+                2750,
+                2751,
+                2752,
+                2753,
+                2754
+              ],
+              "content": "Understanding the Windows Registry\n\nWhen Microsoft created Windows 95, it consolidated initialization (.ini) files into the Registry A Windows database containing information about hardware and software configurations, network connections, user preferences, setup information, and other critical information. , a database that stores hardware and software configuration information, network connections, user preferences (including usernames and passwords), and setup information. The Registry has been updated and is still used in Windows Vista and later.\n\nFor investigative purposes, the Registry can contain valuable evidence. To view the Registry, you can use the Regedit (Registry Editor) program for Windows 9x and Regedt32 for Windows 2000, XP, and Vista. For Windows 7 and 8, both Regedit and Regedt32 are available.\n\nTip\n\nFor more information on using Regedit and Regedt32, see the Windows Resource Kit documentation for the OS version. You can find it at https://support.microsoft.com/en-us/help/141377/differences-between-regedit.exe-and-regedt32.exe.\n\nIn general, you can use the Edit, Find menu command in Registry Editor to locate entries that might contain trace evidence, such as information identifying the last person who logged on to the computer, which is usually stored in user account information. You can also use the Registry to determine the most recently accessed files and peripheral devices. In addition, all installed programs store information in the Registry, such as Web sites accessed, recent files, and even chat rooms accessed.\n\nAs a digital forensics investigator, you should explore the Registry of all Windows systems. On a live system, be careful not to alter any Registry setting to avoid corrupting the system and possibly making it unbootable.\n\nNote\n\nSeveral third-party tools, such as FTK Registry Viewer, are also available for accessing the Registry.",
+              "children": [
+                {
+                  "title": "Exploring the Organization of the Windows Registry",
+                  "toc_id": 214,
+                  "chunk_count": 18,
+                  "total_chunks_in_branch": 18,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2755,
+                    2756,
+                    2757,
+                    2758,
+                    2759,
+                    2760,
+                    2761,
+                    2762,
+                    2763,
+                    2764,
+                    2765,
+                    2766,
+                    2767,
+                    2768,
+                    2769,
+                    2770,
+                    2771,
+                    2772
+                  ],
+                  "content": "Exploring the Organization of the Windows Registry\n\nThe Windows Registry is organized in a specific way that has changed slightly with each new version of Windows. However, the major Registry sections have been consistent, with some minor changes, since Windows 2000; they’re slightly different in Windows 9x/Me. Before proceeding, review the following list of Registry terminology:\n\nRegistry—A hierarchical database containing system and user information.\n\nRegistry Editor—A Windows utility for viewing and modifying data in the Registry. There are two Registry Editors: Regedit and Regedt32 (introduced in Windows 2000).\n\nHKEY—Windows splits the Registry into categories with the prefix HKEY_. Windows 9x systems have six HKEY categories and Windows 2000 and later have five. Windows programmers refer to the “H” as the handle for the key.\n\nKey—Each HKEY contains folders referred to as keys. Keys can contain other key folders or values.\n\nSubkey—A key displayed under another key is a subkey, similar to a subfolder in Windows or File Explorer.\n\nBranch—A key and its contents, including subkeys, make up a branch in the Registry.\n\nValue—A name and value in a key; it’s similar to a file and its data content.\n\nDefault value—All keys have a default value that may or may not contain data.\n\nHives—Hives are specific branches in HKEY_USER and HKEY_LOCAL_MACHINE. Hive branches in HKEY_LOCAL_MACHINE\\Software are SAM, Security, Components, and System. For HKEY_USER, each user account has its own hive link to Ntuser.dat.\n\nThe next piece of the puzzle is learning where data files that the Registry reads are located. The number of files the Registry uses depends on the Windows version. In Windows 9x/Me, it uses only two files, User.dat and System.dat. In Windows NT and later, there are six files: Ntuser.dat, System.dat, SAM.dat, Software.dat, Security.dat, and Default.dat. When examining Registry data from a suspect drive after you have made an acquisition and are reviewing it in a forensics tool, you need to know the location of these files. Table 5-6 shows how Registry data files are organized and explains these files’ purposes in Windows Vista and later. For information on older Windows Registry files, see http://support.microsoft.com/kb/250410.\n\nTable 5-6. Registry file locations and purposes\n\nFilename and\nlocation Purpose of file Users\\ user-account \\ Ntuser.dat User-protected storage area; contains\nthe list of most recently used files and desktop configuration\nsettings Windows\\system32\\config\\ Default.dat Contains the computer’s system\nsettings Windows\\system32\\config\\ SAM.dat Contains user account management and\nsecurity settings Windows\\system32\\config\\ Security.dat Contains the computer’s security\nsettings Windows\\system32\\config\\ Software.dat Contains installed programs’ settings\nand associated usernames and passwords Windows\\system32\\config\\ System.dat Contains additional computer system\nsettings Windows\\system32\\config\\systemprofile Contains additional NTUSER\ninformation\n\nWhen viewing the Registry with Registry Editor, you can see the HKEYs used in Windows (see Figure 5-26).\n\nTable 5-7 describes the functions of Registry HKEYs.\n\nTable 5-7. Registry HKEYs and their functions\n\nHKEY Function HKEY_CLASSES_ROOT A symbolic link to\nHKEY_LOCAL_MACHINE\\SOFTWARE\\Classes; provides file type and file\nextension information, URL protocol prefixes, and so forth HKEY_CURRENT_USER A symbolic link to HKEY_USERS; stores\nsettings for the currently logged-on user HKEY_LOCAL_MACHINE Contains information about installed\nhardware and software HKEY_USERS Stores information for the currently\nlogged-on user; only one key in this HKEY is linked to\nHKEY_CURRENT_USER HKEY_CURRENT_CONFIG A symbolic link to\nHKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Hardware ProfileVxxxx (with\nxxxx representing the current hardware profile); contains hardware\nconfiguration settings HKEY_DYN_DATA Used only in Windows 9x/Me systems;\nstores hardware configuration settings",
+                  "children": []
+                },
+                {
+                  "title": "Examining the Windows Registry",
+                  "toc_id": 215,
+                  "chunk_count": 29,
+                  "total_chunks_in_branch": 29,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    2773,
+                    2774,
+                    2775,
+                    2776,
+                    2777,
+                    2778,
+                    2779,
+                    2780,
+                    2781,
+                    2782,
+                    2783,
+                    2784,
+                    2785,
+                    2786,
+                    2787,
+                    2788,
+                    2789,
+                    2790,
+                    2791,
+                    2792,
+                    2793,
+                    2794,
+                    2795,
+                    2796,
+                    2797,
+                    2798,
+                    2799,
+                    2800,
+                    2801
+                  ],
+                  "content": "Examining the Windows Registry\n\nSome forensics tools, such as X-Ways Forensics, OSForensics, Forensic Explorer, and FTK, have built-in or add-on Registry viewers. For this next activity, your company’s Legal Department has asked you to search for any references to any e-mail addresses containing the name Denise or Robinson with the domain name outlook.com. A paralegal gives you a raw (dd) image file containing InCh05.img, a forensic image of a Windows 8 computer’s hard drive used by Superior Bicycle employee Denise Robinson.\n\nFor this activity, you use OSForensics to examine Denise Robinson’s NTUser.dat file. If you find any items of interest, add them to an OSForensics case report that you can give to the paralegal. The following steps explain how to generate a case report in OSForensics.\n\nNote\n\nBefore beginning this activity, download the zipped file in the downloads section for this chapter on the student companion site to your Work\\Chap05\\Chapter folder. When the download is finished, double-click the zipped file in File Explorer to extract the InChap05.img file. The work folder pathname you see in screenshots might differ.\n\nTo examine Registry files with OSForensics, follow these steps:\n\n1.\n\nStart OSForensics with the Run as administrator option, and click Continue Using Trial Version.\n\n2.\n\nIn the left pane, click Manage Case, if necessary. In the Manage Case pane on the right, click the New Case button. In the New Case dialog box, type InChap05 in the Case Name text box and your name in the Investigator text box. For the Acquisition Type setting, click the Investigate Disk(s) from Another Machine option button (see Figure 5-27). Click Custom Location for the Case Folder option. Click the Browse button on the lower right, navigate to and click your work folder, and then click OK twice.\n\nTip\n\nNotice the drive letter in the OSFMount - Mount drive dialog box, which you use in Step 3. This image is mounted as read-only as an attached drive on your computer and becomes accessible to OSForensics.\n\n3.\n\nCopy the InChap05.img file to the Work \\Chap05\\Chapter folder, if necessary. To mount this disk image, scroll down the navigation bar on the left, and click Mount Drive Image. In the Mounted virtual disks window, click the Mount new button. In the OSFMount - Mount drive dialog box that opens (see Figure 5-28), click the … button next to the Image file text box, navigate to your work folder, click InCh05.img , click Open, and then click OK.\n\n4.\n\nIn the navigation bar on the left, click Registry Viewer. In the “Select registry hive file to open” dialog box, click the Select Drive list arrow, and then click the drive letter that was shown in Step 3 (see Figure 5-29). The drive letter on your system is likely to be different. In the list of files on the right, click DriveLetter \\users\\Denise\\NTUSER.DAT, and then click Open.\n\n5.\n\nIn the OSForensics Registry Viewer, click Search, Find from the menu to open the Find dialog box. In the Search For text box, type Outlook.com (see Figure 5-30), and then click the Find button.\n\n6.\n\nIn the Registry Viewer pane on the right, right-click the first search hit and click Add to Case to open the Please Enter New Case Item Details dialog box. In the Title text box, type Outlook e-mail address for Denise Robinson, and then click OK.\n\n7.\n\nIn the Find dialog box, click Find again. Right-click the next search hit and click Add to Case. Type Outlook e-mail Web site in the Title text box, and then click OK.\n\n8.\n\nIn the Find dialog box, click Find again. Right-click the next search hit and click Add to Case. Type Denise Robinson’s e-mail address in the Title text box, and then click OK. Exit Registry Viewer.\n\n9.\n\nIn the main OSForensics window, click Manage Case in the navigation bar on the left. In the Manage Current Case pane on the right, click the Generate Report button. In the Export Report window, click Browse next to the Output Location text box, navigate to your work folder, and click OK to open the report in your Web browser. Scroll to the bottom of the navigation bar and click Exit. In the “Mounted virtual disks” window, click the Dismount all & Exit button. Click Yes in the OSMount warning message, and then click OK again to exit OSMount.\n\n10.\n\nReview the contents of your report, and then exit your Web browser.\n\nAn extensive amount of information is stored in the Registry. With Registry data, you can ascertain when users went online, when they accessed a printer, and many other events. A lot of the information in the Registry is beyond the scope of this book, so you’re encouraged to expand your knowledge by attending training sessions or classes.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding the Windows Registry (Interactive Activity)",
+                "toc_id": 213,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Understanding Microsoft Startup Tasks",
+              "toc_id": 216,
+              "chunk_count": 3,
+              "total_chunks_in_branch": 47,
+              "budget_slides_content": 4,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 4,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 14
+              },
+              "chunks_sorted": [
+                2802,
+                2803,
+                2804
+              ],
+              "content": "Understanding Microsoft Startup Tasks\n\nYou should have a good understanding of what happens to disk data at startup. In some investigations, you must preserve data on the disk exactly as the suspect last used it. Any access to a computer system after it was used for illicit purposes alters your disk evidence. As you learned in Chapter 3, altering disk data lessens its evidentiary quality considerably. In some instances, accessing a suspect computer incorrectly could make the digital evidence corrupt and less credible for litigation.\n\nIn the following sections, you learn what files are accessed when Windows starts. This information helps you determine when a suspect’s computer was last accessed, which is particularly important with computers that might have been used after an incident was reported.",
+              "children": [
+                {
+                  "title": "Startup in Windows 7, Windows 8, and Windows 10",
+                  "toc_id": 217,
+                  "chunk_count": 5,
+                  "total_chunks_in_branch": 5,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2805,
+                    2806,
+                    2807,
+                    2808,
+                    2809
+                  ],
+                  "content": "Startup in Windows 7, Windows 8, and Windows 10\n\nSince Windows Vista, Microsoft has changed its approach to OS boot processes. In addition, Windows 8 and 10 are multiplatform OSs that can run on desktops, laptops, tablets, and smartphones. This discussion covers desktop and laptop computers running Windows 10, although Windows Vista, 7, and 8 are very similar.\n\nAll Windows 8 and 10 boot processes are designed to run on multiple devices, ranging from desktop or laptop systems to tablets and smartphones. In Windows Vista and later, the boot process uses a boot configuration data (BCD) store. For desktops and laptops (BIOS-designed systems), a BCD Registry file in the \\Boot\\Bcd folder is maintained to control the boot process. To access this file, you use the BCD Editor; Regedit and Regedt32 aren’t associated with this file.\n\nIn Windows 8 and 10, the BCD contains the boot loader that initiates the system’s bootstrap process when Windows starts. To access the Advanced Boot Options menu during the bootstrap process, press F8 or F12 when the system is starting. This menu enables you to choose between Safe Mode (or Enable Safe Mode, in Windows 8 and 10), Enable boot logging, or Disable Driver Signature Enforcement.\n\nTo access the computer’s firmware to modify the boot priority order, press F2 or Delete. Follow the onscreen instructions to save the updates and reboot the computer. For additional information on Windows boot processes, refer to “Insight of Operating System booting process – Windows 10” (Vinit Pandey, https://vinitpandey.wordpress.com/2016/10/21/insight-of-operating-system-booting-process-windows-10/). For information on IBM-compatible laptop and desktop computers, see “The BIOS/MBR Boot Process” (https://neosmart.net/wiki/mbr-boot-process/). To learn more about changing the boot order of a Windows OS, see “Computer Boot Order: How to change computer boot order for booting from a CD/DVD, USB disk or floppy” (Margus Saluste, www.winhelp.us/computer-boot-order.html).",
+                  "children": []
+                },
+                {
+                  "title": "Startup in Windows NT and Later",
+                  "toc_id": 218,
+                  "chunk_count": 10,
+                  "total_chunks_in_branch": 39,
+                  "budget_slides_content": 4,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
+                  },
+                  "chunks_sorted": [
+                    2810,
+                    2811,
+                    2812,
+                    2813,
+                    2814,
+                    2815,
+                    2816,
+                    2817,
+                    2818,
+                    2819
+                  ],
+                  "content": "Startup in Windows NT and Later\n\nAlthough Windows NT is much different from Windows 95 and 98, the startup method for the NT OSs—NT, 2000, and XP—is about the same. There are some minor differences in how certain system start files function, but they accomplish the same orderly startup.\n\nAny computer using NTFS performs the following steps when the computer is turned on:\n\nPower-on self test (POST)\n\nInitial startup\n\nBoot loader\n\nHardware detection and configuration\n\nKernel loading\n\nUser logon\n\nWindows OSs use the files discussed in the following sections to start. These files can be located on the system partition or boot partition.",
+                  "children": [
+                    {
+                      "title": "Startup Files for Windows Vista",
+                      "toc_id": 219,
+                      "chunk_count": 6,
+                      "total_chunks_in_branch": 6,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        2820,
+                        2821,
+                        2822,
+                        2823,
+                        2824,
+                        2825
+                      ],
+                      "content": "Startup Files for Windows Vista\n\nWhen Microsoft developed Vista, it updated the boot process to use the new Extensible Firmware Interface (EFI) as well as the older BIOS system. The EFI boot firmware is designed to provide better protection against malware than BIOS does. EFI Vista’s boot processes have also changed since Windows XP. The Ntldr program in Windows XP used to load the OS has been replaced with these three boot utilities:\n\nBootmgr.exe—The Windows Boot Manager program controls boot flow and allows booting multiple OSs, such as booting Vista along with XP.\n\nWinload.exe—The Windows Vista OS loader installs the kernel and the Hardware Abstraction Layer (HAL) and loads memory with the necessary boot drivers.\n\nWinresume.exe—This tool restarts Vista after the OS goes into hibernation mode.\n\nWindows Vista also includes the BCD editor for modifying boot options and updating the BCD registry file. The BCD store replaces the Windows XP Boot.ini file. For additional information on the BCD, see https://msdn.microsoft.com/en-us/library/windows/hardware/dn653287(v=vs.85).aspx.",
+                      "children": []
+                    },
+                    {
+                      "title": "Startup Files for Windows XP",
+                      "toc_id": 220,
+                      "chunk_count": 17,
+                      "total_chunks_in_branch": 17,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "chunks_sorted": [
+                        2826,
+                        2827,
+                        2828,
+                        2829,
+                        2830,
+                        2831,
+                        2832,
+                        2833,
+                        2834,
+                        2835,
+                        2836,
+                        2837,
+                        2838,
+                        2839,
+                        2840,
+                        2841,
+                        2842
+                      ],
+                      "content": "Startup Files for Windows XP\n\nUnless otherwise specified, most startup files for Windows XP are in the root folder of the system partition. NT Loader (Ntldr) A program in the root folder of the system partition that loads the OS. See also BootSect.dos. loads the OS. When the system is powered on, Ntldr reads the Boot.ini A file that specifies the Windows path installation and a variety of other startup options. file, which displays a boot menu. After you select the mode to boot to, Boot.ini runs Ntoskrnl.exe and reads Bootvid.dll, Hal.dll, and startup device drivers. Boot.ini specifies the Windows XP path installation and contains options for selecting the Windows version.\n\nIf a system has multiple boot OSs, including older ones such as Windows 9x or DOS, Ntldr reads BootSect.dos If a machine has multiple booting OSs, NTLDR reads this hidden file to determine the address (boot sector location) of each OS. See also NT Loader (Ntldr). (a hidden file), which contains the address (boot sector location) of each OS.\n\nWhen the boot selection is made, Ntldr runs NTDetect.com A 16-bit program that identifies hardware components during startup and sends the information to Ntldr. , a 16-bit real-mode program that queries the system for device and configuration data, and then passes its findings to Ntldr. This program identifies components and values on the computer system, such as the following:\n\nCMOS time and date value\n\nBuses attached to the motherboard, such as Industry Standard Architecture (ISA) or Peripheral Component Interconnect (PCI)\n\nDisk drives connected to the system\n\nMouse input devices connected to the system\n\nParallel ports connected to the system\n\nNTBootdd.sys A device driver that allows the OS to communicate with SCSI or ATA drives that aren’t related to the BIOS. is the device driver that allows the OS to communicate with SCSI or ATA drives that aren’t related to the BIOS. (On some workstations, a SCSI disk is used as the primary boot disk.) Controllers that don’t use Interrupt 13 (INT-13) use NTBootdd.sys. It runs in privileged processor mode with direct access to hardware and system data.\n\nNtoskrnl.exe The kernel for the Windows NT family of OSs. is the Windows XP OS kernel, located in the systemroot\\Windows\\System32 folder.\n\nHal.dll The Hardware Abstraction Layer dynamic link library allows the OS kernel to communicate with hardware. is the Hardware Abstraction Layer (HAL) dynamic link library, located in the systemroot\\Windows\\System32 folder. The HAL allows the OS kernel to communicate with the computer’s hardware.\n\nAt startup, data and instruction code are moved in and out of the Pagefile.sys At startup, data and instruction code are moved in and out of this file to optimize the amount of physical RAM available during startup. file to optimize the amount of physical RAM available.\n\nThe HKEY_LOCAL_MACHINE\\SYSTEM Registry key contains information the OS requires to start system services and devices. This system Registry file is located in the systemroot\\Windows\\System32\\Config\\System folder.\n\nDevice drivers Files containing instructions for the OS for hardware devices, such as the keyboard, mouse, and video card. contain instructions for the OS for hardware devices, such as the keyboard, mouse, and video card, and are stored in the systemroot\\Windows\\System32\\Drivers folder.\n\nNote\n\nTo identify the specific path for systemroot at a DOS prompt, type set with no switches or parameters and press Enter. This command displays all current systemroot paths.",
+                      "children": []
+                    },
+                    {
+                      "title": "Windows XP System Files",
+                      "toc_id": 221,
+                      "chunk_count": 4,
+                      "total_chunks_in_branch": 4,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        2843,
+                        2844,
+                        2845,
+                        2846
+                      ],
+                      "content": "Windows XP System Files\n\nNext, you need to examine the core OS files that Windows XP, 2000, and NT use, usually located in systemroot\\Windows\\System32 or systemroot\\Winnt\\System32. Table 5-8 lists the system files Windows XP uses. Although a few of these files are repeats of previous table entries, you should be aware of their key roles.\n\nTable 5-8. Windows XP system files\n\nFilename Description Ntoskrnl.exe The XP executable and kernel Ntkrnlpa.exe The physical address support program for\naccessing more than 4 GB of physical RAM Hal.dll The Hardware Abstraction Layer\n(described earlier) Win32k.sys The kernel-mode portion of the Win32\nsubsystem Ntdll.dll System service dispatch stubs to\nexecutable functions and internal support functions Kernel32.dll Core Win32 subsystem DLL file Advapi32.dll Core Win32 subsystem DLL file User32.dll Core Win32 subsystem DLL file Gdi32.dll Core Win32 subsystem DLL file",
+                      "children": []
+                    },
+                    {
+                      "title": "Contamination Concerns with Windows XP",
+                      "toc_id": 222,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "chunks_sorted": [
+                        2847,
+                        2848
+                      ],
+                      "content": "Contamination Concerns with Windows XP\n\nWhen you start a Windows XP NTFS workstation, several files are accessed immediately. When any of these or other related OS files are accessed at startup, the last access date and time stamp for the files changes to the current date and time. This change destroys any potential evidence that shows when a Windows XP workstation was last used. For this reason, you should have a strong working knowledge of the startup process.",
+                      "children": []
+                    }
+                  ]
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding Microsoft Startup Tasks (Interactive Activity)",
+                "toc_id": 216,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Understanding Virtual Machines",
+              "toc_id": 223,
+              "chunk_count": 10,
+              "total_chunks_in_branch": 48,
+              "budget_slides_content": 4,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "chunks_sorted": [
+                2849,
+                2850,
+                2851,
+                2852,
+                2853,
+                2854,
+                2855,
+                2856,
+                2857,
+                2858
+              ],
+              "content": "Understanding Virtual Machines\n\nNew versions of OSs and applications are released frequently, but older versions are still widely used. As an investigator, you’ll face the challenge of having enough resources to support the variety of software you’re likely to encounter. More companies are turning to virtualization to reduce the cost of hardware purchases, so the number of investigations involving virtual machines will increase as this practice continues.\n\nAs an investigator, you might need a virtual server to view legacy systems, and you might need to forensically examine suspects’ virtual machines. Virtual machines Emulated computer environments that simulate hardware and can be used for running OSs separate from the physical (host) computer. For example, a computer running Windows Vista could have a virtual Windows 98 OS, allowing the user to switch between OSs. enable you to run another OS on an existing physical computer (known as the host computer) by emulating a computer’s hardware environment. Figure 5-31 shows an Oracle VM VirtualBox virtual machine running Windows 8.1 on the desktop of a host computer. Typically, a virtual machine consists of several files. The two main files are the configuration file containing hardware settings,\n\nof several files. The two main files are the configuration file containing hardware settings, such as RAM, network configurations, port settings, and so on, and the virtual hard disk file, which contains the boot loader program, OS files, and users’ data files. (Depending on the virtualization software, these files might be organized differently.)\n\nAnother reason for using a virtual machine in an investigation is to emulate actions taken by a suspect or even by malware. Several forensics analysis tools can convert a forensic image to an ISO image A bootable file that can be copied to CD or DVD; typically used for installing operating systems. It can also be read by virtualization software when creating a virtual boot disk. or a virtual hard disk (VHD) A file representing a system’s hard drive that can be booted in a virtualization application and allows running a suspect’s computer in a virtual environment. file, which enables you to run a suspect’s computer in a virtual environment. This feature is useful for analyzing malware to see how it behaves without corrupting or contaminating your workstation.\n\nA virtual machine acts like any other computer but with a twist: It performs all the tasks the OS running on the physical computer can, up to a certain point. The virtual machine recognizes hardware components of the host computer it’s loaded on, such as the mouse, keyboard, and CD/DVD drive. However, the guest OS (the one running on a virtual machine) is limited by the host computer’s OS, which might block certain operations. For example, most virtual machines recognize a CD/DVD drive because the host computer defaults to autodetect. Some virtual machines don’t recognize a USB drive; this capability varies with the virtualization software. Although networking capabilities are beyond the scope of this book, be aware that virtual machines can use bridged, Network Address Translation (NAT),\n\nof this book, be aware that virtual machines can use bridged, Network Address Translation (NAT), or other network configurations to determine how they access the Internet and communicate with systems on the local network.\n\nSay your company has upgraded to Windows 10, but you still have a few applications that require Windows XP. Not a problem! Choose your virtualization software, install the Windows XP OS and the applications you want to run, and you’re ready to go. Depending on the host computer’s hard drive size and amount of RAM, you can have an entire virtual network running on one physical computer. One advantage is that if you’re running several virtual machines, you can pause some of the guest OSs to keep them from consuming CPU cycles and then resume them when needed.\n\nIn digital forensics, virtual machines make it possible to restore a suspect drive on a virtual machine and run nonstandard software the suspect might have loaded, for example. You can browse through the drive’s contents, and then go back to the forensic image and test the items you found. Remember that in forensics, everything should be reproducible. Therefore, anything you found in the virtual machine re-creation of the suspect drive should exist in the forensic image, too.\n\nFrom a network forensics standpoint, you need to be aware of some potential issues, such as a virtual machine used to attack another system or network. The technology is still developing, so it’s unclear how much of the physical drive is represented in the virtual disk file. File slack, unallocated space, and so forth don’t exist on a virtual machine, so many standard items don’t work on virtual drives.",
+              "children": [
+                {
+                  "title": "Creating a Virtual Machine",
+                  "toc_id": 224,
+                  "chunk_count": 38,
+                  "total_chunks_in_branch": 38,
+                  "budget_slides_content": 3,
+                  "direct_slides_content": 3,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 9,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
+                  },
+                  "chunks_sorted": [
+                    2859,
+                    2860,
+                    2861,
+                    2862,
+                    2863,
+                    2864,
+                    2865,
+                    2866,
+                    2867,
+                    2868,
+                    2869,
+                    2870,
+                    2871,
+                    2872,
+                    2873,
+                    2874,
+                    2875,
+                    2876,
+                    2877,
+                    2878,
+                    2879,
+                    2880,
+                    2881,
+                    2882,
+                    2883,
+                    2884,
+                    2885,
+                    2886,
+                    2887,
+                    2888,
+                    2889,
+                    2890,
+                    2891,
+                    2892,
+                    2893,
+                    2894,
+                    2895,
+                    2896
+                  ],
+                  "content": "Creating a Virtual Machine\n\nSome common applications for creating virtual machines are VMware Server, VMware Player and VMware Workstation, Oracle VM VirtualBox, Microsoft Virtual PC, and Microsoft HyperV, available in current versions of Windows Server. VirtualBox is an open-source program that can be downloaded from www.virtualbox.org.\n\nConsult with your instructor before doing the following activity, which shows you how to create a virtual machine in VirtualBox and install Windows 7 as the virtual OS. You can use these steps to install other legacy and current OSs.\n\n1.\n\nStart a Web browser, and go to www.virtualbox.org. Download and install VirtualBox.\n\n2.\n\nStart VirtualBox. In the Oracle VM VirtualBox Manager, click the New icon at the upper left (see Figure 5-32) to start the Create Virtual Machine Wizard.\n\n3.\n\nIn the “Name and operating system” window, type Windows 7 GCFI for the virtual machine name (see Figure 5-33). If necessary, click the Type list arrow, and click Microsoft Windows; then click the Version list arrow, and click Windows 7 (32-bit). (If you have another version of Windows, click that version.) Click Next.\n\n4.\n\nIn the “Memory size” window, adjust the allocated memory to about 50% of your workstation’s total amount of RAM, and then click Next.\n\n5.\n\nIn the “Hard drive” window, click Create a virtual drive now, and then click Create.\n\n6.\n\nIn the “Hard drive file type” window, click VHD (Virtual Hard Disk), and then click Next\n\nNote\n\nVirtualBox offers versatility in its virtual hard disk file options. By selecting the VHD option, you can load the virtual hard disk file into other virtualization programs, such as VMware.\n\n7.\n\nIn the “Storage on physical hard drive” window, click Dynamically allocated, and then click Next.\n\n8.\n\nIn the File location and size window, expand the default 25 GB if you think you need more storage space allocated, and then click Create. When VirtualBox finishes creating the virtual machine, the window shown in Figure 5-34 is displayed. Leave VirtualBox running for the next activity.\n\nIn the following activity, you use an ISO image that your instructor will provide for installing Windows 7 as a guest OS. (You can also install other Windows OSs and most Linux distributions as guest OSs.) For any guest OS, you must have a valid product key to install it. You can get the product key from your instructor.\n\n1.\n\nIn the Oracle VM VirtualBox Manager, click the Settings icon. In the Windows 7 Settings dialog box, click System in the left pane, and click to clear the Floppy check box for the boot order (leaving the CD/DVD and Hard Disk check boxes selected).\n\n2.\n\nNext, click Display in the left pane, and click the Screen tab, if necessary. Adjust the Video Memory slider to at least 27 MB (see Figure 5-35).\n\nNote\n\nDepending on the amount of video memory on your workstation, you might need to adjust it so that your monitor can display the virtual session correctly. For more information on this setting and other VirtualBox features, see www.virtualbox.org/wiki/Documentation.\n\n3.\n\nClick Storage in the left pane, click Empty in the Storage Tree section, and then click the down arrow with the disk icon in the Attributes section, as shown in Figure 5-36. If you have a Windows ISO file, click Choose Virtual Optical Disk File, click an ISO image to install, and then click OK. If you have a Windows installation DVD, click Host Drive ‘D:’, and then click OK. In the Oracle VM VirtualBox Manager, click Start.\n\nNote\n\nIn this example, the installation disc for the source OS, Windows 7, is in the DVD drive, lettered D. Your workstation might show a different drive letter, such as E, if your hard drive has only one partition.\n\nTip\n\nIf VirtualBox displays the error message “Failed to open a session for the virtual machine,” restart your computer, access the BIOS or UEFI firmware, and enable virtualization. For instructions, see your computer’s hardware documentation. For additional information on BIOS, see “How to Enable Intel Virtualization Technology (VT-x) and AMD-V in BIOS on a Laptop or Desktop” (Dinesh, www.sysprobs.com/disable-enable-virtualization-technology-bios). For information on UEFI, see “How to Enable Intel VT-x in Your Computer’s BIOS or UEFI Firmware” (Chris Hoffman, www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/).\n\n4.\n\nFollow the prompts to continue installing Windows 7 as a guest OS on your virtual machine. If the “Which type of installation do you want?” window is displayed, click Custom (advanced), as shown in Figure 5-37. Exit VirtualBox.\n\nTo start a virtual session in VirtualBox, select a virtual machine you created, and then click the Start icon (see Figure 5-38). You see standard boot prompts for the logon name and password you defined during the OS installation. The guest OS works as though it were running on a stand-alone workstation. You can add other applications to this virtual environment to perform tasks as needed. To terminate the session, simply perform the usual Windows shutdown procedure.\n\nBe aware that as you install software and perform other tasks, you might encounter problems with recognition of the CD/DVD drive, for example. Virtual machines present some challenges because they are limited by the host computer they’re loaded on. For this reason, many legal issues need to be addressed before these systems are accepted for use in court.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding Virtual Machines (Interactive Activity)",
+                "toc_id": 223,
+                "slides_allocated": 1
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          }
+        }
+      ]
+    }
+  ]
+}

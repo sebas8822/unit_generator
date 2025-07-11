@@ -1,0 +1,948 @@
+{
+  "week": 4,
+  "overall_topic": "Processing Crime and Incident Scenes.",
+  "weekly_slide_summary": {
+    "total_slides_for_week": 47,
+    "total_framework_slides": 8,
+    "total_content_slides": 31,
+    "total_interactive_slides": 8,
+    "number_of_decks": 2
+  },
+  "weekly_time_summary_minutes": {
+    "total_time_for_week_minutes": 145,
+    "total_framework_time": 12,
+    "total_content_and_interactive_time": 133
+  },
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "total_slides_in_deck": 23,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 16,
+        "interactive": 3
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 63,
+        "total_deck_time": 69
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Processing Crime and Incident Scenes.",
+            "deck_title": "Week 4, Lecture 1"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Identifying Digital Evidence",
+              "Securing a Digital Incident or Crime Scene",
+              "Seizing Digital Evidence at the Scene"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Identifying Digital Evidence",
+              "toc_id": 145,
+              "chunk_count": 13,
+              "total_chunks_in_branch": 76,
+              "budget_slides_content": 8,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 9,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 29
+              },
+              "chunks_sorted": [
+                1861,
+                1862,
+                1863,
+                1864,
+                1865,
+                1866,
+                1867,
+                1868,
+                1869,
+                1870,
+                1871,
+                1872,
+                1873
+              ],
+              "content": "Identifying Digital Evidence\n\nDigital evidence Evidence consisting of information stored or transmitted in electronic form. can be any information stored or transmitted in digital form. Because you can’t see or touch digital data directly, it’s difficult to explain and describe. Is digital evidence real or virtual? Does data on a disk or other storage medium physically exist, or does it merely represent real information? U.S. courts accept digital evidence as physical evidence, which means digital data is treated as a tangible object, such as a weapon, paper document, or visible injury, that’s related to a criminal or civil incident. In addition, ISO standard 27037 gives guidance on what procedures countries should have in place for digital evidence. However, each country has its own interpretation of what can or can’t\n\nplace for digital evidence. However, each country has its own interpretation of what can or can’t be presented in court or accepted as evidence. Some countries used to require that all digital evidence be printed to be presented in court, and this requirement, at one time, was true for many U.S. states. Groups such as the Scientific Working Group on Digital Evidence A group that sets standards for recovering, preserving, and examining digital evidence. ( SWGDE ; www.swgde.org) set standards for recovering, preserving, and examining digital evidence.\n\nNote\n\nFor more information on digital evidence, read “Electronic Crime Scene Investigation: A Guide for First Responders, 2nd edition,” available at www.ncjrs.gov/pdffiles1/nij/219941.pdf. It has guidelines for U.S. law enforcement and other responders who protect an electronic crime scene and search for, collect, and preserve electronic evidence.\n\nFollowing are the general tasks investigators perform when working with digital evidence:\n\nIdentify digital information or artifacts that can be used as evidence.\n\nCollect, preserve, and document evidence.\n\nAnalyze, identify, and organize evidence.\n\nRebuild evidence or repeat a situation to verify that the results can be reproduced reliably.\n\nCollecting digital devices while processing a crime or incident scene must be done systematically. To minimize confusion, reduce the risk of losing evidence, and avoid damaging evidence, only one team should collect and catalog digital evidence at a crime scene or lab, if practical. If there’s too much evidence or too many systems to make it practical for one team to perform these tasks, all examiners must follow the same established operating procedures, and a lead or managing examiner should control collecting and cataloging evidence. You should also use standardized forms (discussed later in “Documenting Evidence”) for tracking evidence to ensure that you consistently handle evidence in a safe, secure manner.\n\nAn important challenge investigators face is establishing recognized standards for digital evidence. For example, there are cases involving police raids being conducted simultaneously in many countries as well as anti-cartel investigations taking place in several locations around the world. As a result, hundreds of pieces of digital evidence, including hard drives, cell phones, and other storage devices, are seized in multiple sites. If law enforcement and civil organizations in these countries have agreed on proper procedures (generally, the highest control standard should be applied to evidence collection in all jurisdictions), the evidence can be presented in any jurisdiction confidently. Evidence collection is now even more complicated as mobile devices and cloud storage become the\n\nEvidence collection is now even more complicated as mobile devices and cloud storage become the norm.",
+              "children": [
+                {
+                  "title": "Understanding Rules of Evidence",
+                  "toc_id": 146,
+                  "chunk_count": 63,
+                  "total_chunks_in_branch": 63,
+                  "budget_slides_content": 7,
+                  "direct_slides_content": 7,
+                  "total_slides_in_branch": 7,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 21,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 21
+                  },
+                  "chunks_sorted": [
+                    1874,
+                    1875,
+                    1876,
+                    1877,
+                    1878,
+                    1879,
+                    1880,
+                    1881,
+                    1882,
+                    1883,
+                    1884,
+                    1885,
+                    1886,
+                    1887,
+                    1888,
+                    1889,
+                    1890,
+                    1891,
+                    1892,
+                    1893,
+                    1894,
+                    1895,
+                    1896,
+                    1897,
+                    1898,
+                    1899,
+                    1900,
+                    1901,
+                    1902,
+                    1903,
+                    1904,
+                    1905,
+                    1906,
+                    1907,
+                    1908,
+                    1909,
+                    1910,
+                    1911,
+                    1912,
+                    1913,
+                    1914,
+                    1915,
+                    1916,
+                    1917,
+                    1918,
+                    1919,
+                    1920,
+                    1921,
+                    1922,
+                    1923,
+                    1924,
+                    1925,
+                    1926,
+                    1927,
+                    1928,
+                    1929,
+                    1930,
+                    1931,
+                    1932,
+                    1933,
+                    1934,
+                    1935,
+                    1936
+                  ],
+                  "content": "Understanding Rules of Evidence\n\nConsistent practices help verify your work and enhance your credibility, so you must handle all evidence consistently. Apply the same security and accountability controls for evidence in a civil lawsuit as in a major crime to comply with your state’s rules of evidence or with the Federal Rules of Evidence (FRE). Also, keep in mind that evidence admitted in a criminal case might also be used in a civil suit, and vice versa. For example, suppose someone is charged with murder and acquitted at the criminal trial because the jury isn’t convinced beyond a reasonable doubt of the person’s guilt. If enough evidence shows that the accused’s negligence contributed to a wrongful death, however, the victim’s relatives can use the evidence in a civil lawsuit to recover damages.\n\nTip\n\nYou can review the Federal Rules of Evidence at www.uscourts.gov/uscourts/rules/rules-evidence.pdf.\n\nAs part of your professional growth, keep current on the latest rulings and directives on collecting, processing, storing, and admitting digital evidence. The following sections discuss some key concepts of digital evidence. You can find additional information at the U.S. Department of Justice Web site (www.usdoj.gov) and by searching the Internet for “digital evidence,” “best evidence rule,” “hearsay,” and other relevant keywords. Consult with your prosecuting attorney, Crown attorney, corporate general counsel, or the attorney who retained you to learn more about managing evidence for your investigation.\n\nIn Chapter 3, you learned how to make an image of a disk as part of the process of gathering digital evidence. The data you discover from a forensic examination falls under your state’s rules of evidence or the FRE. However, digital evidence is unlike other physical evidence because it can be changed more easily. The only way to detect these changes is to compare the original data with a duplicate. Furthermore, distinguishing a duplicate from the original electronically is challenging, so digital evidence requires special legal consideration.\n\nTip\n\nIf you’re working in a country outside the United States, you need to verify its rules of evidence for electronic evidence. One resource is “An Investigation of Digital Forensics Concepts in an International Environment” (https://scholarworks.alaska.edu/handle/11122/4615), and you can also learn more about data and privacy laws by country at www.dlapiperdataprotection.com.\n\nAnother concern when dealing with digital records is the concept of hearsay, which is a statement made while testifying at a hearing by someone other than an actual witness to the event. For example, a rumor has been circulating around an office about an incident, or a friend mentioned it to the person being questioned; both situations are considered hearsay. The determination of what is or isn’t hearsay can become particularly challenging when examining the contents of documents, text messages, e-mails, and other electronic files. The existence of these electronic files can’t be disputed; however, their contents require eyewitness testimony or corroborating evidence. The definition of hearsay isn’t difficult to understand, but it can be confusing when considering all the exceptions to the\n\nisn’t difficult to understand, but it can be confusing when considering all the exceptions to the general rule against hearsay.\n\nLike most common law nations, the United States excludes hearsay as spelled out in FRE Article VIII, Rule 802. Rules 803 and 804 cite more than 20 exceptions for when hearsay can be used. The following are some that apply to digital forensics investigations:\n\nBusiness records, including those of a public agency\n\nCertain public records and reports\n\nEvidence of the absence of a business record or entry\n\nLearned treatises used to question an expert witness\n\nStatements of the absence of a public record or entry\n\nTip\n\nTo see more exceptions to the hearsay rule, consult sources such as www.FindLaw.com.\n\nThe business-record exception, for example, allows “records of regularly conducted activity,” such as business memos, reports, records, or data compilations. Business records are authenticated by verifying that they were created “at or near the time by, or from information transmitted by, a person with knowledge …” and are admissible “if the record was kept in the course of a regularly conducted business activity, and it was the regular practice of that business activity to make the record” (FRE, 803(6); see Section V, Evidence, in “Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations,” www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).\n\nIn early 2017, changes were proposed to Rule 803 and are expected to be accepted into law by December 2017. Currently, if documents are older than 20 years (referred to as “ancient documents”), no testimony of their authenticity is needed. Because of e-mails and potential advances in technology, only documents created before 1998 will fall into this category. Updates to the FRE are also being made to address topics such as hash values.\n\nTip\n\nFor further discussion of the topic, go to www.discoveryadvocate.com/2017/01/17/ancient-data-and-documents-prepare-for-federal-changes-to-a-long-standing-hearsay-exception/.\n\nIn other common law countries, a distinction is made between “real computer evidence” and “hearsay computer evidence.” A simplified explanation of this distinction states that you can, for example, prove an e-mail was sent and perhaps opened by a logged-in user. However, you can’t necessarily verify the e-mail’s contents. Generally, digital records are considered admissible if they qualify as a business record.\n\nAnother way of categorizing digital records is by dividing them into computer-generated records and computer-stored records. Computer-generated records Data generated by a computer, such as system log files or proxy server logs. are data the system maintains, such as system log files and proxy server logs. They are output generated from a computer process or algorithm, not usually data a person creates. Computer-stored records Digital files generated by a person, such as electronic spreadsheets. , however, are electronic data that a person creates and saves on a computer or digital device, such as a spreadsheet or word processing document. Some records combine computer-generated and computer-stored evidence, such as a spreadsheet containing mathematical operations (computer-generated\n\nevidence, such as a spreadsheet containing mathematical operations (computer-generated records) generated from a person’s input (computer-stored records).\n\nComputer-generated and computer-stored records must also be shown to be authentic and trustworthy to be admitted into evidence. Computer-generated records are considered authentic if the program that created the output is functioning correctly. These records are usually considered exceptions to the hearsay rule. For computer-stored records to be admitted into court, they must also satisfy an exception to the hearsay rule, usually the business-record exception, so they must be authentic records of regularly conducted business activity. To show that computer-stored records are authentic, the person offering the records must demonstrate that a person created the data and the data is reliable and trustworthy—in other words, it wasn’t altered when it was acquired or afterward.\n\nCollecting evidence according to approved steps of evidence control helps ensure that the computer evidence is authentic, as does using established forensics software tools. Courts have consistently ruled that forensics investigators don’t have to be subject matter experts on the tools they use. In United States v. Salgado (250 F.3d 438, 453, 6th Cir., 2001), the court stated, “It is not necessary that the computer programmer testify in order to authenticate computer-generated records.” In other words, the witness must have first-hand knowledge only of facts relevant to the case. If you have to testify about your role in acquiring, preserving, and analyzing evidence, you don’t have to know the inner workings of the tools you use, but you should understand their purpose and operation. For\n\nthe inner workings of the tools you use, but you should understand their purpose and operation. For example, Message Digest 5 (MD5) and Secure Hash Algorithm (SHA-1) tools use complex algorithms. During a cross-examination, an opposing attorney might ask you to describe how these forensics tools work. You can safely testify that you don’t know how the MD5 hashing algorithm works, but you can describe the steps for using the MD5 function in a specific tool, for instance.\n\nNote\n\nEven though research has forced collisions (meaning duplicate values) of the MD5 hash, it’s still useful for forensic validation. Keep in mind that you can’t generate the source string from the hash value. In addition, the probability of collisions affecting a case is remote.\n\nWhen attorneys challenge digital evidence, often they raise the issue of whether computer-generated records were altered or damaged after they were created. In the case of American Express v. Vinhnee (9th Cir. Bk. App. Panel, 2005), the judge determined that American Express hadn’t established that the records presented in court were authentic and the same as the original bill sent to Mr. Vinhnee. The company lost on appeal, too.\n\nAttorneys might also question the authenticity of computer-generated records by challenging the program that created them. FRE 902, for example, refers to self-authenticating evidence, which includes public documents that are sealed and signed or certified. It also includes publications such as newspapers. Proposed changes to FRE 902 (b) are attempting to put an end to challenges based on computer-generated records being unreliable or having been tampered with. (For more information, see www.jdsupra.com/legalnews/new-amendments-to-federal-rule-of-22539/.)\n\nTo date, courts have been skeptical of unsupported claims about digital evidence. Asserting that the data changed without specific evidence isn’t sufficient grounds to discredit the digital evidence’s authenticity. Most federal courts that evaluate digital evidence from computer-generated records assume that the records contain hearsay. Federal courts then apply the business-records exception to hearsay as it relates to digital evidence.\n\nAs mentioned, one test to prove that computer-stored records are authentic is to demonstrate that a specific person created the records. Establishing who created digital evidence can be difficult, however, because records recovered from slack space or unallocated disk space usually don’t identify the author. The same is true for other records, such as anonymous e-mails or text messages. To establish authorship of digital evidence in these cases, attorneys can use circumstantial evidence, which requires finding other clues associated with the suspect’s computer or location. The circumstantial evidence might be that the computer has a password consistent with the password the suspect used on other systems, a witness saw the suspect at the computer at the time the offense occurred, or\n\non other systems, a witness saw the suspect at the computer at the time the offense occurred, or additional trace evidence associates the suspect with the computer at the time of the incident. In a recent case, the attorney chose not to use the digital evidence because although it could be proved that a particular camera was used to create the suspect’s movies, CDs, and DVDs, there was no way to prove that the suspect was the person using the camera. Therefore, there was no circumstantial or corroborating evidence to prove that the suspect was guilty.\n\nAlthough some files might not contain the author’s name, in the arrest of the BTK strangler, the author of a Microsoft Word document was identified by using file metadata. In February 2005, the man claiming to be the BTK strangler sent a floppy disk to FOX News in Wichita. The police he had been taunting told him that they wouldn’t be able to trace him via the floppy disk. Forensic examination of the disk came back with the name of the church and a user named Dennis, who turned out to be Dennis Rader, president of the congregation. The police had enough physical evidence to link him to the crimes. They arrested him, and he confessed to murdering 10 people over the course of 30 years. He was sentenced to 10 life terms. (For the full story, see the ABA Journal article at\n\nof 30 years. He was sentenced to 10 life terms. (For the full story, see the ABA Journal article at www.abajournal.com/magazine/article/how_the_cops_caught_btk/.)\n\nThe following activity shows an easy way to identify this file metadata. Before starting this activity, go to www.osforensics.com/download.html and download the trial version of OSForensics. At the time of this writing, version 4.0.1002 is current. When you’re finished, install the program, and then follow these steps.\n\nNote\n\nBefore starting, create a Work\\Chap04\\Chapter folder on your system; it’s referred to as your “work folder” in steps.\n\n1.\n\nStart Microsoft Word, and in a new document, type By creating a file, you can identify the author with file metadata. Save it in your work folder as InChap04-01.docx (or InChap04-01.doc in earlier Word versions), and then exit Microsoft Word.\n\n2.\n\nStart OSForensics by clicking Start, OSForensics. If Windows prompts you to confirm that you trust this program, click OK or Yes. Click Continue Using Trial Version, if prompted.\n\n3.\n\nIf you see a message asking whether you want to upgrade to the professional version, click the Continue Using Trial Version button.\n\n4.\n\nIn the OSForensics main window, notice the Viewers section in the right pane. Click File and Hex Viewer. In the “Select a file to open” dialog box that opens, navigate to your work folder and double-click the file you created in Step 1.\n\n5.\n\nThe dialog box that opens (see Figure 4-1) has five tabs. Click the File Info tab. You can see where the file is located along with the date and time it was created. Notice that the file size and its size on the disk are different.\n\n6.\n\nClick the Metadata tab. The information in this tab includes file permissions, file type, file size, and other items. Scroll to the bottom of this tab, where you can see who created the file and who last modified the file (see Figure 4-2).\n\n7.\n\nClose the dialog box, and exit OSForensics by scrolling to the bottom of the left pane and clicking the Exit button.\n\nIn addition to revealing the author, computer-stored records must be proved authentic, which is the most difficult requirement when you’re trying to qualify evidence as an exception to the hearsay rule. The process of establishing digital evidence’s trustworthiness originated with written documents and the “best evidence rule,” which states that to prove the content of a written document, a recording, or a photograph, ordinarily the original file is required (as stated in Article X, Rule 1001, of the FRE). In addition, the original of a document is preferred to a duplicate. The best evidence, therefore, is the document created and saved on a computer’s hard disk. However, Rule 1001, section (e), defines a duplicate done in a manner, including electronic, that “accurately reproduces the\n\n(e), defines a duplicate done in a manner, including electronic, that “accurately reproduces the original.” Moreover, Rule 1003 states that the duplicate can be used unless the original’s authenticity is challenged.\n\nAgents and prosecutors occasionally express concern that a printout of a computer-stored electronic file might not qualify as an original document, according to the best evidence rule. In its most fundamental form, the original file is a collection of 0s and 1s; in contrast, the printout is the result of manipulating the file through a complicated series of electronic and mechanical processes (FRE, 803(6); see “Searching and Seizing from Computers and Obtaining Electronic Evidence in Criminal Investigations,” 2009). To address this concern about original evidence, the FRE states: “[I]f data are stored in a computer or similar device, any printout or other output readable by sight, shown to reflect the data accurately, is an ‘original.’” Instead of producing hard disks in court, attorneys\n\nreflect the data accurately, is an ‘original.’” Instead of producing hard disks in court, attorneys can submit printed copies of files as evidence. In contrast, some countries and even some U.S. states used to allow only the printed version to be presented in court, not hard disks.\n\nIn addition, the FRE allows duplicates instead of originals when the duplicate is “produced by the same impression as the original … by mechanical or electronic re-recording … or by other equivalent techniques which accurately reproduce the original.” Therefore, as long as bit-stream copies of data are created and maintained correctly, the copies can be admitted in court, although they aren’t considered best evidence. The copied evidence can be a reliable working copy, but it’s not considered the original. Courts understand that the original evidence might not be available, however. For example, you could make one image of the evidence drive successfully but lose access to the original drive because it has a head crash when you attempt to make a backup image. Your first successful copy\n\nbecause it has a head crash when you attempt to make a backup image. Your first successful copy then becomes secondary evidence. The attorney must be able to explain to the judge that circumstances beyond the examiner’s control resulted in loss of the original evidence; in this case, the hard drive is no longer available to be examined or imaged. Mishaps with evidence happen routinely in all aspects of evidence recovery; the majority are caused by user error. Adhering to approved procedures can help prevent these mishaps.\n\nAnother example of not being able to use original evidence is investigations involving network servers. Removing a server from the network to acquire evidence data could cause harm to a business or its owner, who might be an innocent bystander to a crime or civil wrong. For example, Steve Jackson Games was the innocent party in a case in which evidence of criminal activity had been stored in e-mail on company computers. The network administrator had reported evidence of a crime committed by users of the company’s bulletin board system (BBS) to the Secret Service. Secret Service agents seized all the computers at Steve Jackson Games and effectively put the company out of business. Steve Jackson Games sued the Secret Service, which was found liable for damages under the Privacy Protection\n\nGames sued the Secret Service, which was found liable for damages under the Privacy Protection Act and Title II of the Electronic Communications Privacy Act. For more information, see Steve Jackson Games v. United States Secret Service and United States of America (36 F.3d 457, USCA 5, 1994). (You can read about it at https://w2.eff.org/legal/cases/SJG/.) This case set the precedent for not resorting to such drastic measures, and as a result, they are no longer used. In this situation, you might not have the authority to create an image or remove the original drive. Instead, make your best effort to acquire the digital evidence with a less intrusive or disruptive method. In this context, the recovered materials become the best evidence because of the circumstances.\n\nIn summary, computer-generated records, such as system logs or the results of a mathematical formula in a spreadsheet, aren’t hearsay. Computer-stored records that a person generates are subject to rules governing hearsay, however. For the evidence to qualify as a business record exception to the hearsay rule, a person must have created the computer-stored records, and the records must be original. The FRE treats images and printouts of digital files as original evidence.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Identifying Digital Evidence (Interactive Activity)",
+                "toc_id": 145,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Securing a Digital Incident or Crime Scene",
+              "toc_id": 159,
+              "chunk_count": 9,
+              "total_chunks_in_branch": 9,
+              "budget_slides_content": 1,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 2,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 8
+              },
+              "chunks_sorted": [
+                2025,
+                2026,
+                2027,
+                2028,
+                2029,
+                2030,
+                2031,
+                2032,
+                2033
+              ],
+              "content": "Securing a Digital Incident or Crime Scene\n\nInvestigators secure an incident or crime scene to preserve the evidence and to keep information about the incident or crime confidential. Information made public could jeopardize the investigation. If you’re in charge of securing a digital incident or crime scene, use barrier tape to prevent bystanders from entering the scene accidentally, and ask police officers or security guards to prevent others from entering the scene or taking photos and videos with smartphones and other digital devices. Legal authority for an incident scene includes trespassing violations; for a crime scene, it includes obstructing justice or failing to comply with a police officer. Access to the scene should be restricted to only those people who have a specific reason to be there. The reason for the standard\n\nrestricted to only those people who have a specific reason to be there. The reason for the standard practice of securing an incident or a crime scene is to expand the area of control beyond the scene’s immediate location. In this way, you avoid overlooking an area that might be part of the scene. Shrinking the scene’s perimeter is easier than expanding it.\n\nFor major crime scenes, digital investigators aren’t usually responsible for defining a scene’s security perimeter. These cases involve other specialists and detectives who are collecting physical evidence and recording the scene. For incidents involving mostly computers, the computers can be a crime scene within a crime scene or a secondary crime scene, containing evidence to be processed. The evidence is in the computer, but the courts consider it physical evidence. Computers and other digital devices can also contain actual physical evidence, such as DNA evidence or fingerprints on keyboards. Crime labs can use special vacuums to extract DNA residue from a keyboard to compare with other DNA samples. In a major crime scene, law enforcement usually retains the keyboard and other\n\nother DNA samples. In a major crime scene, law enforcement usually retains the keyboard and other peripherals.\n\nEvidence is commonly lost or corrupted because of professional curiosity The motivation for law enforcement and other professional personnel to examine an incident or crime scene to see what happened. , which involves the presence of police officers and other professionals who aren’t part of the crime scene–processing team. They just have a compelling interest in seeing what happened, but their presence could contaminate the scene directly or indirectly. Keep in mind that even those authorized and trained to search crime scenes can alter the scene or evidence inadvertently.\n\nFor example, during one homicide investigation, the lead detective collected a good latent fingerprint from the crime scene. He compared it with the victim’s fingerprints and those of others who knew the victim, but he couldn’t find a matching fingerprint. The detective suspected he had the murderer’s fingerprint and kept it on file for several years until his police department purchased an Automated Fingerprint Identification System (AFIS) A computerized system for identifying fingerprints that’s connected to a central database; used to identify criminal suspects and review thousands of fingerprint samples at high speed. computer. During acceptance testing, the software vendor processed sample fingerprints to see how quickly and accurately the system could match fingerprints in the\n\nsample fingerprints to see how quickly and accurately the system could match fingerprints in the database. The detective asked the testing team to run the fingerprint he found at the homicide scene. He believed the suspect’s fingerprints were in the AFIS database. The testing team complied and within minutes, AFIS found a near-perfect match of the latent fingerprint: It belonged to the detective.\n\nAlways remember that professional curiosity can destroy or corrupt evidence, including digital evidence. When working at an incident or crime scene, be aware of what you’re doing and what you have touched, physically or virtually. A police detective can take elimination prints of everyone who had access to the crime scene to identify the fingerprints of known people; digital evidence doesn’t have an equivalent elimination process. You must protect all digital evidence, so make sure no one examines a suspect’s computer before you can capture and preserve an image of the hard disk. For example, starting a computer without forensic boot media alters important data, such as the date and timestamps of last access to certain files.",
+              "children": [],
+              "interactive_activity": {
+                "title": "Securing a Digital Incident or Crime Scene (Interactive Activity)",
+                "toc_id": 159,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Seizing Digital Evidence at the Scene",
+              "toc_id": 160,
+              "chunk_count": 4,
+              "total_chunks_in_branch": 72,
+              "budget_slides_content": 8,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 8,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 26
+              },
+              "chunks_sorted": [
+                2034,
+                2035,
+                2036,
+                2037
+              ],
+              "content": "Seizing Digital Evidence at the Scene\n\nWith proper search warrants, law enforcement can seize all digital systems and peripherals. In private-sector investigations, you might have similar authority; however, you might have the authority only to make an image of the suspect’s drive. Depending on company policies, private-sector investigators rarely have the authority to seize all computers and peripherals.\n\nWhen seizing digital evidence in criminal investigations, follow the U.S. DOJ standards for seizing digital data (described later in this chapter, or see www.justice.gov/criminal/cybercrime/docs/ssmanual2009.pdf). Another good source for both criminal and civil procedures is ISO standard 27037, which sets international standards for identifying, collecting, acquiring, and preserving digital evidence (www.iso27001security.com/html/27037.html). For civil investigations, you follow the same rules of evidence as for criminal investigations. You might be looking for specific evidence, such as a particular e-mail or spreadsheet. In a criminal matter, investigators seize entire drives to preserve as much information as possible and make sure no evidence is overlooked. If you have any questions,\n\nas much information as possible and make sure no evidence is overlooked. If you have any questions, doubts, or concerns, consult with your attorney for additional guidance.",
+              "children": [
+                {
+                  "title": "Preparing to Acquire Digital Evidence",
+                  "toc_id": 161,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2038,
+                    2039,
+                    2040,
+                    2041,
+                    2042,
+                    2043,
+                    2044,
+                    2045
+                  ],
+                  "content": "Preparing to Acquire Digital Evidence\n\nThe evidence you acquire at the scene depends on the nature of the case and the alleged crime or violation. For a criminal case involving a drug dealer’s computer, for example, you need to take the entire computer along with any peripherals and media in the area, including smartphones, USB devices, CDs/DVDs, printers, cameras, and scanners. You might also need to seize smart TVs, gaming systems, and other devices attached to the network. Seizing peripherals and other media ensures that you leave no necessary system components behind, but predicting what components might be critical to the system’s operation is often difficult. On the other hand, if you’re investigating employee misconduct, you might need only a few specific items.\n\nBefore you collect digital evidence, ask your supervisor or senior forensics examiner in the organization the following questions:\n\nDo you need to take the entire computer and all peripherals and media in the immediate area? How are you going to protect the computer and media while transporting them to your lab? This precaution includes blocking devices from accessing wireless networks while in transport.\n\nIs the computer powered on when you arrive? (This question is discussed in more detail later in “Processing Incident or Crime Scenes .”)\n\nIs the suspect you’re investigating in the immediate area of the computer? Is it possible the suspect damaged or destroyed the computer, peripherals, or media? Will you have to separate the suspect from the computer?\n\nFor example, suppose an employee, Edward Braun, is suspected of using a company computer at his desk to write a book. You suspect that Edward is saving personal files on the computer’s hard drive. Using imaging software, you can copy the hard drive onto another drive, install the duplicate hard drive in the computer, and take the original drive to your forensics lab for examination. This procedure doesn’t create a bit-for-bit copy; you’re creating a working copy for continued business operations and taking the original for examination.\n\nBecause Edward’s supervisors don’t want him to know he’s being investigated, you must create the working copy when he’s not at his desk and isn’t expected to return. Because most people notice when something is out of order on their desks, you should photograph the scene, measure the height of his chair, and record the position of items on his desk you need to move before removing the hard drive. (The following section has more tips on photographing and documenting the scene.) After you create an image of his hard drive and substitute the copy, return Edward’s belongings to their original locations.",
+                  "children": []
+                },
+                {
+                  "title": "Processing Incident or Crime Scenes",
+                  "toc_id": 162,
+                  "chunk_count": 34,
+                  "total_chunks_in_branch": 34,
+                  "budget_slides_content": 4,
+                  "direct_slides_content": 4,
+                  "total_slides_in_branch": 4,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 12,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 12
+                  },
+                  "chunks_sorted": [
+                    2046,
+                    2047,
+                    2048,
+                    2049,
+                    2050,
+                    2051,
+                    2052,
+                    2053,
+                    2054,
+                    2055,
+                    2056,
+                    2057,
+                    2058,
+                    2059,
+                    2060,
+                    2061,
+                    2062,
+                    2063,
+                    2064,
+                    2065,
+                    2066,
+                    2067,
+                    2068,
+                    2069,
+                    2070,
+                    2071,
+                    2072,
+                    2073,
+                    2074,
+                    2075,
+                    2076,
+                    2077,
+                    2078,
+                    2079
+                  ],
+                  "content": "Processing Incident or Crime Scenes\n\nThe following guidelines offer suggestions on how to process incident or crime scenes. As you gain experience in performing searches and seizures, you can add to or modify these guidelines to meet the needs of specific cases. Use your judgment to determine what steps to take when processing a civil or criminal investigation. For any difficult issues, seek out legal counsel or other technical experts.\n\nKeep a journal to document your activities. Include the date and time you arrive on the scene, the people you encounter, and notes on every important task you perform. Update the journal as you process the scene. With mobile devices, you can easily record a log of what you’re doing; just be sure to check who has access to your mobile device.\n\nTo secure the scene, use whatever is practical to make sure only authorized people can access the area. Remove anyone who isn’t investigating the scene unless you need his or her help to process the scene. For example, the company’s network administrator might need to help you collect and recover data. As mentioned, you should secure a wider scene perimeter than necessary. Make sure nothing in this area, including digital evidence, moves until you have had time to record it. Be professional and courteous to any curious onlookers, but don’t offer information about the investigation or incident or answer questions. Refer journalists to a public information officer or the organization’s public relations manager.\n\nTake video and still recordings of the area around the computer or digital device. Start by recording the overall scene, and then record details with close-up shots, including the back of all computers. Before recording the back of each computer, place numbered or lettered labels on each cable to help identify which cable is connected to which plug, in case you need to reassemble components at the lab. Make sure you take close-ups of all cable connections, including keyloggers (devices used to record keystrokes) and dongle devices used with software as part of the licensing agreement. Record the area around the computer, including the floor and ceiling, and all access points to the computer, such as doors and windows. Be sure to look under any tables or desks for anything taped to the\n\nsuch as doors and windows. Be sure to look under any tables or desks for anything taped to the underside of a table or desk drawer or on the floor out of view. If the area has ceiling panels—false ceiling tiles—remove them and record that area, too. Slowly pan or zoom the camera to prevent blurring in the video image, and maintain a camera log for all shots you take.\n\nWhen you finish videotaping or photographing the scene, sketch the incident or crime scene. This sketch is usually a rough draft with notes on objects’ dimensions and distances between fixed objects. For example, a note might read “The suspect’s computer is on the south wall, three meters from the southeast corner of the room.” When you prepare your report, you can make a clean, detailed drawing from your sketch, preferably using drawing software so that the sketch is in electronic form.\n\nBecause digital data is volatile, check the state of each computer or device at the scene as soon as possible. Determine whether the computer is powered on or off or in hibernation or sleep mode. If it’s off, leave it off. If it’s on, use your professional judgment on what to do next. Standard digital forensics practice has been to kill the computer’s power to make sure data doesn’t become corrupt through covert means. Typically, this procedure is still acceptable on older Windows and MS-DOS systems because turning off the power usually preserves data. On most Windows, UNIX, and Linux computers, generally you should do an orderly shutdown first. Every shutdown process has inherent risks, however; to avoid data loss, you or your supervisor might have to determine the best shutdown\n\nhowever; to avoid data loss, you or your supervisor might have to determine the best shutdown procedure.\n\nIn addition, there are many urban legends about criminals placing self-destruct mechanisms—both hardware and software devices—in computers. Many years ago, a common trick was altering the DOS program command.com by changing the dir (directory) command to the deltree (delete the directory tree) command. When an investigator entered the dir command on a suspect’s computer, he would inadvertently start the deltree command, which deletes all files and folders and their contents. More advanced criminals have been known to create similar command-altering methods that overwrite a drive’s contents. In addition, computer owners who suspect someone will investigate their computers might set the computer to delete the hard drive’s contents if the correct screensaver password isn’t entered.\n\nAs a general rule, don’t cut electrical power to a running system unless it’s an older Windows or MS-DOS system. However, it’s a judgment call because of recent trends in digital crimes. More digital investigations now revolve around network and Internet-related cases, which rely heavily on log file data. Certain files, such as the Event log and Security log in Windows, might lose essential network activity records if power is terminated without a proper shutdown. Some government agencies, however, still teach investigators to “pull the plug”; it’s the Digital Evidence First Responder’s (DEFR’s) judgment call.\n\nIf you’re working on a network or Internet investigation and the computer is on, save data in any current applications as safely as possible and record all active windows or shell sessions. Don’t examine folders or network connections or press any keys unless it’s necessary. For systems that are powered on and running, photograph the screens. If windows are open but minimized, expanding them so that you can photograph them is safe. As a precaution, write down each window’s contents.\n\nAs you’re copying data on a live suspect computer, make notes in your journal about everything you do so that you can explain your actions in your formal report to prosecutors and other attorneys. When you’ve finished recording screen contents, save them to external media. For example, if one screen shows a Word file, save it to an external drive. Keep in mind that the suspect might have changed the file since last using the Save command. If another screen is a Web browser, take a screenshot or save the Web page to a USB drive or an external hard drive. If the suspect computer has an active connection to a network server with enough storage, you can save large files to a folder on the server. To do so, you need the network administrator’s cooperation to direct you to the correct server and\n\nTo do so, you need the network administrator’s cooperation to direct you to the correct server and folder for storing the file.\n\nIf you can’t save an open application to external media, save it to the suspect drive with a new filename. Changing the filename avoids overwriting an existing file that might not have been updated already. This method isn’t ideal and should be done only in extreme emergency conditions. Remember that your goal is to preserve as much evidence in as good a condition as is practical.\n\nAfter you have saved all active files on the suspect computer, you can close all applications. If an application prompts you to save before closing, don’t save the files. When all applications are closed, perform an orderly shutdown. If you’re not familiar with the correct shutdown method for the system you’re examining, consult someone who has expertise in this procedure.\n\nAfter you record the scene, shut down the system, and bag and tag the evidence, follow these steps:\n\n1.\n\nAssign one person, if possible, to collect and log all evidence. Minimize the number of people handling evidence to ensure its integrity.\n\n2.\n\nTag all the evidence you collect with the current date and time, serial numbers or unique features, make and model, and name of the person who collected it.\n\n3.\n\nMaintain two separate logs of collected evidence to be reconciled for audit control purposes and to verify everything you have collected.\n\n4.\n\nMaintain constant control of the collected evidence and the crime or incident scene.\n\nIf the nature of the case doesn’t permit you to seize the computer or digital device, create an image of the hard drive, as you learned in Chapter 3. Be sure to use critical investigative methods and look for other physical drives, and verify that the image you created corresponds to the device’s physical size.\n\nNote\n\nIn Chapter 10, you learn how to use forensics tools to acquire RAM. Many studies are being conducted on how to analyze RAM systematically, in an effort to find relevant information in what seems to look like random garbage data.\n\nDuring the data acquisition or immediately after collecting the evidence, look for information related to the investigation, such as passwords, passphrases, personal identification numbers (PINs), and bank account numbers (particularly offshore bank accounts, often used to hide evidence of financial transactions). This information might be in plain view or out of sight in a drawer or trashcan. At the scene, collect as much personal information as possible about the suspect or victim. Collect all information related to facts about the crime or incident, particularly anything that connects the suspect to the victim.\n\nTo finish your analysis and processing of a scene, collect all documentation and media related to the investigation, including the following material:\n\nHardware, including mobile and peripheral devices\n\nSoftware, including OSs and applications\n\nAll media, such as USB drives, backup tapes, and disks\n\nAll documentation, manuals, printouts, and handwritten notes",
+                  "children": []
+                },
+                {
+                  "title": "Processing Data Centers with RAID Systems",
+                  "toc_id": 163,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 2,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2080,
+                    2081
+                  ],
+                  "content": "Processing Data Centers with RAID Systems\n\nDigital investigators sometimes perform forensics analysis on RAID systems or server farms, which are rooms filled with extremely large disk systems and are typical of large business data centers, such as banks, insurance companies, and ISPs. As you learned in Chapter 3, one technique for extracting evidence from large systems is sparse acquisition. This technique extracts only data related to evidence for your case from allocated files and minimizes how much data you need to analyze. A drawback of this technique is that it doesn’t recover data in free or slack space. If you have a digital forensics tool that accesses unallocated space on a RAID system, work with the tool on a test system first to make sure it doesn’t corrupt the RAID system.",
+                  "children": []
+                },
+                {
+                  "title": "Using a Technical Advisor",
+                  "toc_id": 164,
+                  "chunk_count": 9,
+                  "total_chunks_in_branch": 9,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2082,
+                    2083,
+                    2084,
+                    2085,
+                    2086,
+                    2087,
+                    2088,
+                    2089,
+                    2090
+                  ],
+                  "content": "Using a Technical Advisor\n\nWhen working with advanced technologies, recruit a technical advisor who can help you list the tools you need to process the incident or crime scene. At large data centers, the technical advisor is the person guiding you about where to locate data and helping you extract log records or other evidence from large RAID servers. In law enforcement cases, the technical advisor can help create the search warrant by itemizing what you need for the warrant. If you use a technical advisor for this purpose, you should list his or her name in the warrant. At the scene, a technical advisor can help direct other investigators to collect evidence correctly. Technical advisors have the following responsibilities:\n\nKnow all aspects of the system being seized and searched.\n\nDirect investigators on how to handle sensitive media and systems to prevent damage.\n\nHelp ensure security of the scene.\n\nHelp document the planning strategy for the search and seizure.\n\nConduct ad hoc training for investigators on the technologies and components being seized and searched.\n\nDocument activities during the search and seizure.\n\nHelp conduct the search and seizure.",
+                  "children": []
+                },
+                {
+                  "title": "Documenting Evidence in the Lab",
+                  "toc_id": 165,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2091,
+                    2092,
+                    2093,
+                    2094
+                  ],
+                  "content": "Documenting Evidence in the Lab\n\nAfter you collect digital evidence at the scene, you transport it to a forensics lab, which should be a controlled environment that ensures the security and integrity of digital evidence. In any investigative work, be sure to record your activities and findings as you work. To do so, you can maintain a journal to record the steps you take as you process evidence. Your goal is to be able to reproduce the same results when you or another investigator repeat the steps you took to collect evidence.\n\nIf you get different results when you repeat the steps, the credibility of your evidence becomes questionable. At best, the evidence’s value is compromised; at worst, the evidence will be disqualified. Because of the nature of electronic components, failures do occur. For example, you might not be able to repeat a data recovery because of a hardware failure, such as a disk drive head crash. Be sure to report all facts and events as they occur.\n\nBesides verifying your work, a journal serves as a reference that documents the methods you used to process digital evidence. You and others can use it for training and guidance on other investigations.",
+                  "children": []
+                },
+                {
+                  "title": "Processing and Handling Digital Evidence",
+                  "toc_id": 166,
+                  "chunk_count": 11,
+                  "total_chunks_in_branch": 11,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2095,
+                    2096,
+                    2097,
+                    2098,
+                    2099,
+                    2100,
+                    2101,
+                    2102,
+                    2103,
+                    2104,
+                    2105
+                  ],
+                  "content": "Processing and Handling Digital Evidence\n\nYou must maintain the integrity of digital evidence in the lab as you do when collecting it in the field. Your first task is to preserve the disk data. If you have a suspect computer that hasn’t been copied with an imaging tool, you must create a copy. When you do, be sure to make the suspect drive read-only (typically by using a write-blocking device), and document this step. If the disk has been copied with an imaging tool, you must preserve the image files. With most imaging tools, you can create smaller, compressed volume sets to make archiving your data easier.\n\nIn Chapter 3, you learned how to use imaging tools, and in Chapter 1, you examined the steps for preserving digital evidence with chain-of-custody controls. You use the following steps to create image files:\n\n1.\n\nCopy all image files to a terabyte drive or a storage area network (SAN). Most forensics labs have several machines set up with disk-imaging software and multiple hard drives that can be exchanged as needed for your cases. You can use these resources to copy image files to large drives. Some might be equipped with large network storage devices for ongoing cases.\n\n2.\n\nStart your forensics tool to access and open the image files.\n\n3.\n\nRun an MD5 or SHA-1 hashing algorithm on the image files to get a digital hash. Later in “Obtaining a Digital Hash,” you learn how to compare MD5 or SHA-1 hashes to make sure the evidence hasn’t changed.\n\n4.\n\nWhen you finish copying image files to a larger drive, secure the original media in an evidence locker. Don’t work with the original media; it should be stored in a locker that has an evidence custody form. Be sure to fill out the form and date it.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Seizing Digital Evidence at the Scene (Interactive Activity)",
+                "toc_id": 160,
+                "slides_allocated": 1
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          }
+        }
+      ]
+    },
+    {
+      "deck_number": 2,
+      "total_slides_in_deck": 24,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 15,
+        "interactive": 5
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 70,
+        "total_deck_time": 76
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Processing Crime and Incident Scenes.",
+            "deck_title": "Week 4, Lecture 2"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Collecting Evidence in Private-Sector Incident Scenes",
+              "Processing Law Enforcement Crime Scenes",
+              "Preparing for a Search",
+              "Storing Digital Evidence",
+              "Obtaining a Digital Hash"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Collecting Evidence in Private-Sector Incident Scenes",
+              "toc_id": 147,
+              "chunk_count": 24,
+              "total_chunks_in_branch": 24,
+              "budget_slides_content": 3,
+              "direct_slides_content": 3,
+              "total_slides_in_branch": 4,
+              "time_allocation_minutes": {
+                "direct_content_time": 9,
+                "direct_interactive_time": 5,
+                "total_branch_time": 14
+              },
+              "chunks_sorted": [
+                1937,
+                1938,
+                1939,
+                1940,
+                1941,
+                1942,
+                1943,
+                1944,
+                1945,
+                1946,
+                1947,
+                1948,
+                1949,
+                1950,
+                1951,
+                1952,
+                1953,
+                1954,
+                1955,
+                1956,
+                1957,
+                1958,
+                1959,
+                1960
+              ],
+              "content": "Collecting Evidence in Private-Sector Incident Scenes\n\nPrivate-sector organizations include small to medium businesses, large corporations, and non-government organizations (NGOs), which might get funding from the government or other agencies. In the United States, NGOs and similar agencies must comply with state public disclosure and federal Freedom of Information Act (FOIA) laws and make certain documents available as public records. State public disclosure laws define state public records as open and available for inspection. For example, divorces recorded in a public office, such as a courthouse, become matters of public record unless a judge orders the documents sealed. Anyone can request a copy of a public divorce decree. Figure 4-3 shows an excerpt of a public disclosure law for the state of Idaho.\n\nState public disclosure laws apply to state records, but the FOIA allows citizens to request copies of public documents created by federal agencies. The FOIA was originally enacted in the 1960s, and several subsequent amendments have broadened its laws. Some Web sites now provide copies of publicly accessible records for a fee.\n\nISPs and other communication companies make up a special category of private-sector businesses. ISPs can investigate computer abuse committed by their employees but not by customers. They must preserve customer privacy, especially when dealing with e-mail. However, federal regulations related to the Homeland Security Act and the PATRIOT Act of 2001 have redefined how ISPs and large organizations operate and maintain their records. ISPs and other communication companies can be called on to investigate customers’ activities that are deemed to create an emergency situation. An emergency situation under the PATRIOT Act is defined as the immediate risk of death or personal injury, such as finding a bomb threat in an e-mail.\n\nAs recent events have shown, the government monitors e-mails for the occurrence of keywords. Incidents such as the Edward Snowden case have made public the amount of electronic surveillance done by the U.S. government and the governments of other countries. Some provisions of these federal regulations have been revised over the past few years, so you should stay abreast of their implications. For example, in March 2017, the U.S. Congress voted to allow ISPs to sell customers’ browsing histories without their explicit permission. (See www.congress.gov/bill/115th-congress/senate-joint-resolution/34 for more details.)\n\nInvestigating and controlling computer incident scenes in private-sector environments is much easier than in crime scenes. In the private sector, the incident scene is often a workplace, such as a contained office or manufacturing area, where a policy violation is being investigated. Everything from the computers used to violate a company policy to the surrounding facility is under a controlled authority—that is, company management. Typically, businesses have inventory databases of computer hardware and software. Having access to these databases and knowing what applications are on suspected computers help identify the forensics tools needed to analyze a policy violation and the best way to conduct the analysis. For example, companies might have a preferred Web browser, such as Microsoft\n\nconduct the analysis. For example, companies might have a preferred Web browser, such as Microsoft Internet Explorer, Microsoft Edge, Mozilla Firefox, or Google Chrome. Knowing which browser a suspect used helps you develop standard examination procedures to identify data downloaded to the suspect’s workstation.\n\nTo investigate employees suspected of improper use of company digital assets, a company policy statement about misuse of digital assets allows private-sector investigators to conduct covert surveillance with little or no cause and access company computer systems and digital devices without a warrant, which is an advantage. Law enforcement investigators can’t do the same, however, without sufficient reason for a warrant.\n\nHowever, if a company doesn’t display a warning banner or publish a policy stating that it reserves the right to inspect digital assets at will, employees have an expectation of privacy (as explained in Chapter 1). When an employee is being investigated, this expected privacy prevents the employer from legally conducting an intrusive investigation. A well-defined company policy, therefore, should state that an employer has the right to examine, inspect, or access any company-owned digital assets. If a company issues a policy statement to all employees, the employer can investigate digital assets at will without any privacy right restrictions; this practice might violate the privacy laws of countries in the EU, for example. As a standard practice, companies should use both warning banners\n\ncountries in the EU, for example. As a standard practice, companies should use both warning banners and policy statements. For example, if an incident is escalated to a criminal complaint, prosecutors prefer showing juries warning banners instead of policy manuals. A warning banner leaves a much stronger impression on a jury.\n\nIn addition to making sure a company has a policy statement or a warning banner, private-sector investigators should know under what circumstances they can examine an employee’s computer. With a policy statement, an employer can freely initiate any inquiry necessary to protect the company or organization. However, organizations must also have a well-defined process describing when an investigation can be initiated. At a minimum, most company policies require that employers have a “reasonable suspicion” that a law or policy is being violated. For example, if a policy states that employees can’t use company computers for outside business and a supervisor notices a change in work behavior that could indicate an employee is violating this rule, generally it’s enough to warrant an\n\nthat could indicate an employee is violating this rule, generally it’s enough to warrant an investigation. However, some countries require notifying employees that they’re being investigated if they’re suspected of criminal behavior at work.\n\nIf a private-sector investigator finds that an employee is committing or has committed a crime, the employer can file a criminal complaint with the police. Some businesses, such as banks, have a regulatory requirement to report crimes. In the United States, the employer must turn over all evidence to the police for prosecution. If this evidence had been collected by a law enforcement officer, it would require a warrant, which would be difficult to get without sufficient probable cause. In “Processing Law Enforcement Crime Scenes” later in this chapter, you learn more about probable cause and how it applies to a criminal investigation.\n\nEmployers are usually interested in enforcing company policy, not seeking out and prosecuting employees, so typically they approve digital investigations only to identify employees who are misusing company assets. Private-sector investigators are, therefore, concerned mainly with protecting company assets, such as intellectual property. Finding evidence of a criminal act during an investigation escalates the investigation from an internal civil matter to an external criminal complaint. In some situations, such as the discovery of child pornography, the company or its agents must notify law enforcement immediately.\n\nIf you discover evidence of a crime during a company policy investigation, first determine whether the incident meets the elements of criminal law. You might have to consult with your organization’s attorney to determine whether the situation is a potential crime. Next, inform management of the incident; they might have other concerns, such as protecting confidential business data that could be included with the criminal evidence (called “commingled data”). In this case, coordinate with management and the organization’s attorney to determine the best way to protect commingled data. After you submit evidence containing sensitive information to the police, it becomes public record. Public record laws do include exceptions for protecting sensitive company information; ultimately, however, a\n\nlaws do include exceptions for protecting sensitive company information; ultimately, however, a judge decides what to protect.\n\nAfter you discover illegal activity and document and report the crime, stop your investigation to make sure you don’t violate Fourth Amendment restrictions on obtaining evidence. If the information you supply is specific enough to meet the criteria for a search warrant, the police are responsible for obtaining a warrant that requests any new evidence. If you follow police instructions to gather additional evidence without a search warrant after you have reported the crime, you run the risk of becoming an agent of law enforcement. Instead, consult with your organization’s attorney on how to respond to a police request for information. The police and prosecutor should issue a subpoena for any additional new evidence, which minimizes your exposure to potential civil liability. In addition,\n\nadditional new evidence, which minimizes your exposure to potential civil liability. In addition, you should keep all documentation of evidence collected to investigate an internal company policy violation. Later in this section, you learn more about using affidavits in an internal investigation.\n\nOne example of a company policy violation involves employees observing another employee accessing pornographic Web sites. If your organization’s policy requires you to determine whether any evidence supports this accusation, you could start by extracting log file data from the proxy server (used to connect a company LAN to the Internet) and conducting a forensic examination of the subject’s computer. Suppose that during your examination, you find adult and child pornography. Further examination of the subject’s hard disk reveals that the employee has been collecting child pornography in separate folders on his workstation’s hard drive. In the United States, possessing child pornography is a crime under federal and state criminal statutes. These situations aren’t uncommon and make life\n\na crime under federal and state criminal statutes. These situations aren’t uncommon and make life difficult for investigators who don’t want to be guilty of possession of this contraband on their forensic workstations.\n\nYou survey the remaining content of the subject’s drive and find that he’s a lead engineer for the team developing your company’s latest high-tech bicycle. He placed the child pornography images in a subfolder where the bicycle plans are stored. By doing so, he has commingled contraband with the company’s confidential design plans for the bicycle. Your discovery poses two problems in dealing with this contraband evidence. First, you must report the crime to the police; all U.S. states and most countries have legal and moral codes when evidence of sexual exploitation of children is found. Second, you must also protect sensitive company information. Letting the high-tech bicycle plans become part of the criminal evidence might make it public record, and the design work will then be available\n\nof the criminal evidence might make it public record, and the design work will then be available to competitors. Your first step is to ask your organization’s attorney how to deal with the commingled contraband data and sensitive design plans.\n\nYour next step is to work with the attorney to write an affidavit confirming your findings. The attorney should indicate in the affidavit that the evidence is commingled with company secrets, and releasing the information will be detrimental to the company’s financial health. When the affidavit is completed, you sign it before a notary, and then deliver the affidavit and the recovered evidence with log files to the police, where you make a criminal complaint. At the same time, the attorney goes to court and requests that all evidence recovered from the hard disk that’s not related to the complaint and is a company trade secret be protected from public viewing. You and the attorney have reported the crime and taken steps to protect the sensitive data.\n\nNow suppose the detective assigned to the case calls you. In the evidence you’ve turned over to the police, the detective notices that the suspect is collecting most of his contraband from e-mail attachments. The prosecutor needs you to collect more evidence to determine whether the suspect is transmitting contraband pictures to other potential suspects. The detective realizes that collecting more evidence might make you an agent of law enforcement and violate the employee’s Fourth Amendment rights, so she writes an affidavit for a search warrant, ensuring that any subsequent instructions to you are legal. Before collecting any additional information, you wait until you or your organization’s attorney gets a subpoena, search warrant, or other court order.",
+              "children": [],
+              "interactive_activity": {
+                "title": "Collecting Evidence in Private-Sector Incident Scenes (Interactive Activity)",
+                "toc_id": 147,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Processing Law Enforcement Crime Scenes",
+              "toc_id": 148,
+              "chunk_count": 6,
+              "total_chunks_in_branch": 24,
+              "budget_slides_content": 3,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 4,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 14
+              },
+              "chunks_sorted": [
+                1961,
+                1962,
+                1963,
+                1964,
+                1965,
+                1966
+              ],
+              "content": "Processing Law Enforcement Crime Scenes\n\nTo process a crime scene correctly, you must be familiar with criminal rules of search and seizure. You should also understand how a search warrant works and what to do when you process one. For all criminal investigations in the United States, the Fourth Amendment limits how governments search and seize evidence. A law enforcement officer can search for and seize criminal evidence only with probable cause. Probable cause The standard specifying whether a police officer has the right to make an arrest, conduct a personal or property search, or obtain a warrant for arrest. is the standard specifying whether a police officer has the right to make an arrest, conduct a personal or property search, or obtain a warrant for arrest. With probable cause, a police officer can obtain a search warrant\n\nor obtain a warrant for arrest. With probable cause, a police officer can obtain a search warrant from a judge to authorize a search and the seizure of specific evidence related to the criminal complaint.\n\nThe Fourth Amendment states that only warrants “particularly describing the place to be searched and the persons or things to be seized” can be issued. Note that this excerpt uses the word “particularly.” The courts have determined that it means a warrant can authorize a search only of a specific place for a specific thing. Without specific evidence and the description of a particular location, a warrant might be weak and create problems later during prosecution. For example, stating that the evidence is in a house on Elm Avenue between Broadway and Main Street is too general, unless only one house fits that description, because several houses might be located in this area. Instead, provide specific information, such as “123 Elm Avenue.” Most courts have allowed more general wording for\n\nspecific information, such as “123 Elm Avenue.” Most courts have allowed more general wording for digital evidence, however. For example, you can state that you want to seize a “computer and all associated parts” instead of specifying a “Dell Optiplex GXA.” The DOJ document “Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations” (www.justice.gov/criminal/cybercrime/docs/ssmanual2009.pdf, 2009) has an example of a search warrant affidavit for computer searches on the premises.\n\nAlthough several court cases have allowed latitude when searching and seizing digital evidence, making your warrant as specific as possible to avoid challenges from defense attorneys is a good practice. Often a warrant is written and issued in haste because of the nature of the investigation. Law enforcement officers might not have the time to research the correct language for stating the nature of the complaint to meet probable cause requirements. However, because a judge can exclude evidence obtained from a poorly worded warrant, you should review these issues with your local prosecutor before investigating a case.",
+              "children": [
+                {
+                  "title": "Understanding Concepts and Terms Used in Warrants",
+                  "toc_id": 149,
+                  "chunk_count": 18,
+                  "total_chunks_in_branch": 18,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "chunks_sorted": [
+                    1967,
+                    1968,
+                    1969,
+                    1970,
+                    1971,
+                    1972,
+                    1973,
+                    1974,
+                    1975,
+                    1976,
+                    1977,
+                    1978,
+                    1979,
+                    1980,
+                    1981,
+                    1982,
+                    1983,
+                    1984
+                  ],
+                  "content": "Understanding Concepts and Terms Used in Warrants\n\nYou should be familiar with warrant terminology governing the type of evidence that can be seized. Many digital investigations involve large amounts of data you must sort through to find evidence; the Enron case, for example, involved terabytes of information. Unrelated information (referred to as innocent information Data that doesn’t contribute to evidence of a crime or violation. ) is often included with the evidence you’re trying to recover. It might be personal records of innocent people or confidential business information, for example. When you find commingled evidence, judges often issue a limiting phrase Wording in a search warrant that limits the scope of a search for evidence. to the warrant, which allows the police to separate innocent information from evidence. The warrant\n\nto the warrant, which allows the police to separate innocent information from evidence. The warrant must list which items can be seized.\n\nWhen approaching or investigating a crime scene, you might find evidence related to the crime but not in the location the warrant specifies. You might also find evidence of another unrelated crime. In these situations, this evidence is subject to the plain view doctrine. The plain view doctrine When conducting a search and seizure, objects in plain view of a law enforcement officer, who has the right to be in position to have that view, are subject to seizure without a warrant and can be introduced as evidence. Applied to conducting searches of computers, the plain view doctrine’s limitations are less clear. states that objects falling in the direct sight of an officer who has the right to be in a location are subject to seizure without a warrant and can be introduced into evidence. For\n\nbe in a location are subject to seizure without a warrant and can be introduced into evidence. For the plain view doctrine to apply, three criteria must be met:\n\nThe officer is where he or she has a legal right to be.\n\nOrdinary senses must not be enhanced by advanced technology in any way, such as with binoculars.\n\nAny discovery must be by chance.\n\nFor the officer to seize the item, he or she must have probable cause to believe the item is evidence of a crime or is contraband. In addition, the police aren’t permitted to move objects to get a better view. In Arizona v. Hicks (480 U.S. 321, 1987), the officer was found to have acted unlawfully because he moved stereo equipment, without probable cause, to record the serial numbers. The plain view doctrine has also been expanded to include the subdoctrines of plain feel, plain smell, and plain hearing.\n\nIn Horton v. California (496 U.S. 128, 1990), the court eliminated the requirement that the discovery of evidence in plain view be inadvertent. Previously, “inadvertent discovery” was required, which led to difficulties in defining this term. The three-prong Horton test requires the following:\n\nThe officer must be lawfully present at the place where the evidence can be plainly viewed.\n\nThe officer must have a lawful right of access to the object.\n\nThe incriminating character of the object must be “immediately apparent.”\n\nNote\n\nThe plain view doctrine doesn’t extend to supporting a general exploratory search from one object to another unless something incriminating is found (Coolidge v. New Hampshire, 403 U.S. 443, 466, 1971).\n\nHowever, the plain view doctrine’s applicability in the digital forensics world is being rejected. The U.S. Court of Appeals for the Ninth Circuit has directly addressed this doctrine and used it to give wide latitude to law enforcement (United States v. Wong, 334 F.3d 831, 9th Cir., 2003). Other circuit courts have been less willing to address applying the doctrine to computer searches. For example, police investigating a case have a search warrant authorizing the search of a computer for evidence related to illegal drug trafficking; during the search, the examiner observes an .avi file, opens it, and sees that it’s child pornography. At that point, she must get an additional warrant or an expansion of the existing warrant to continue the search for child pornography. This approach is\n\nan expansion of the existing warrant to continue the search for child pornography. This approach is consistent with rulings in United States v. Carey (172 F.3d 1268, 10th Cir., 1999) and United States v. Walser (275 F.3d 981, 10th Cir., 2001). In a more recent case that went to the Ninth Circuit Court of Appeals, the original search warrant was for 10 major league baseball players suspected of steroid use (United States v. Comprehensive Drug Testing, 2010). During the examination of files and e-mails, 200 more players were implicated. Forensics investigators see many files when they’re searching for evidence, so in this case, their opinion was that the data was in plain view. However, the court disagreed. As with the example of discovering child pornography, a separate warrant for all\n\ncourt disagreed. As with the example of discovering child pornography, a separate warrant for all other players should have been issued.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Processing Law Enforcement Crime Scenes (Interactive Activity)",
+                "toc_id": 148,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Preparing for a Search",
+              "toc_id": 150,
+              "chunk_count": 2,
+              "total_chunks_in_branch": 40,
+              "budget_slides_content": 4,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "chunks_sorted": [
+                1985,
+                1986
+              ],
+              "content": "Preparing for a Search\n\nPreparing for search and seizure of computers or digital devices is probably the most important step in digital investigations. The better you prepare, the smoother your investigation will be. The following sections discuss the tasks you should perform before you search for evidence. For these tasks, you might need to get answers from the victim (the complainant) and an informant, who could be a police detective assigned to the case, a law enforcement witness, or a manager or co-worker of the person of interest Someone who might be a suspect or someone with additional knowledge that can provide enough evidence of probable cause for a search warrant or arrest. to the investigation.",
+              "children": [
+                {
+                  "title": "Identifying the Nature of the Case",
+                  "toc_id": 151,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 3,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    1987,
+                    1988,
+                    1989
+                  ],
+                  "content": "Identifying the Nature of the Case\n\nRecall from Chapter 1 that when you’re assigned a digital investigation case, you start by identifying the nature of the case, including whether it involves the private or public sector. For example, a private-sector investigation might involve an employee abusing Internet privileges by surfing the Web excessively or an employee who has filed an equal employment opportunity (EEO), e-mail harassment, or other ethics complaint. Serious cases might involve an employee abusing company digital assets to acquire or deliver contraband. Law enforcement cases could range from a check fraud ring to a homicide. The nature of the case dictates how you proceed and what types of assets or resources you need to use in the investigation (discussed in more detail in “Determining the Tools You Need” later\n\nto use in the investigation (discussed in more detail in “Determining the Tools You Need” later in this chapter).",
+                  "children": []
+                },
+                {
+                  "title": "Identifying the Type of OS or Digital Device",
+                  "toc_id": 152,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    1990,
+                    1991,
+                    1992,
+                    1993
+                  ],
+                  "content": "Identifying the Type of OS or Digital Device\n\nNext, determine the type of OSs involved in the investigation. For law enforcement, this step might be difficult because the crime scene isn’t controlled. You might not know what kinds of digital devices were used to commit a crime or how or where they were used. In this case, you must draw on your skills, creativity, and sources of knowledge, such as the Uniform Crime Report discussed in Chapter 2, to deal with the unknown.\n\nIf you can identify the OS or device, estimate the size of the storage device on suspect computers and determine how many digital devices you have to process at the scene. Also, determine what hardware might be involved, such as PCs or mobile devices, including smartphones, tablets, Fitbits, and laptops. Then you need to determine the OS: Microsoft, Linux, macOS, Apple iOS, Android, and so forth. For private-sector investigators, configuration management databases (discussed in Chapter 2) make this step easier. Consultants to the private sector or law enforcement officers might have to investigate more thoroughly to determine these details. You also need to consider cloud storage, which has become more widespread. Most smartphones, for example, are automatically backed up to the cloud, and\n\nmore widespread. Most smartphones, for example, are automatically backed up to the cloud, and people often store their files, music, and pictures in the cloud. You might need a separate warrant or subpoena to access this information.",
+                  "children": []
+                },
+                {
+                  "title": "Determining Whether You Can Seize Computers and Digital Devices",
+                  "toc_id": 153,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    1994,
+                    1995,
+                    1996,
+                    1997
+                  ],
+                  "content": "Determining Whether You Can Seize Computers and Digital Devices\n\nGenerally, the ideal situation for incident or crime scenes is seizing computers and digital devices and taking them to your lab for further processing. However, the type of case and location of the evidence determine whether you can remove digital equipment from the scene. Law enforcement investigators need a warrant to remove computers from a crime scene and transport them to a lab. If removing the computers will irreparably harm a business, the computers shouldn’t be taken offsite, unless you have disclosed the effect of the seizure to the judge. An additional complication is files stored offsite that are accessed remotely. You must decide whether the drives containing these files need to be examined. Another consideration is the availability of cloud storage, which essentially can’t be\n\nbe examined. Another consideration is the availability of cloud storage, which essentially can’t be located physically. The data is stored on drives where data from many other subscribers might be stored.\n\nIf you aren’t allowed to take the computers and digital devices to your lab, determine the resources you need to acquire digital evidence and which tools can speed data acquisition. With large drives, such as a terabyte or more, acquisition times can increase to several hours. In Chapter 3, you examined data acquisition software and learned which tools meet needs for acquiring disk images. Some software compresses data while making forensic images. For large drives, this compression might be necessary.",
+                  "children": []
+                },
+                {
+                  "title": "Getting a Detailed Description of the Location",
+                  "toc_id": 154,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    1998,
+                    1999,
+                    2000,
+                    2001,
+                    2002,
+                    2003,
+                    2004
+                  ],
+                  "content": "Getting a Detailed Description of the Location\n\nThe more information you have about the location of a digital crime, the more efficiently you can gather evidence from the crime scene. Environmental and safety issues are the main concerns during this process. Before arriving at incident or crime scenes, identify potential hazards to your safety as well as that of other examiners.\n\nSome cases involve dangerous settings, such as a drug bust of a methamphetamine lab or a terrorist attack using biological, chemical, or nuclear contaminants. For these types of investigations, you must rely on the skills of hazardous materials (HAZMAT) Chemical, biological, or radiological substances that can cause harm to people. teams to recover evidence from the scene. The recovery process might include decontaminating digital components needed for the investigation, if possible. If the decontamination procedure might destroy electronic evidence, a HAZMAT specialist or an investigator in HAZMAT gear should make an image of a suspect’s drive. If you have to rely on a HAZMAT specialist to acquire data, coach the specialist on how to connect cables and how to run the software. You must be\n\ndata, coach the specialist on how to connect cables and how to run the software. You must be exact and articulate in your instructions. Ambiguous or incorrect instructions could destroy evidence. Ideally, a digital forensics investigator trained in dealing with HAZMAT environments should acquire drive images. However, not all organizations have funds available for this training.\n\nWhether you or a HAZMAT technician is the one acquiring an image, you should keep some guidelines in mind. Before acquiring the data, a HAZMAT technician might suggest that you put the target drive in a special HAZMAT bag, leaving the data and power cables out of the bag but creating an airtight seal around the cables to prevent any contaminants from entering the bag and affecting the target drive. When the data acquisition is finished, power down the computer and then disconnect the data and power cables from the target drive. The HAZMAT technician can then decontaminate the bag. When dealing with extreme conditions, such as biological or chemical hazardous contaminants, you might have to sacrifice equipment, such as data and power cables, to perform a task. In certain instances, such as\n\nequipment, such as data and power cables, to perform a task. In certain instances, such as a methamphetamine lab bust, the contaminants might be so toxic that hazards to the safety of others prohibit acquiring any digital evidence.\n\nIn addition, if the temperature in the contaminated room is higher than 80 degrees, you should take measures to avoid damage to the drive from overheating. In a dry desert region, consider cooling the target drive by using sealed ice packs or double-wrapped bags of ice so that moisture doesn’t leak out and damage the drive. In extreme conditions, consider the risks to evidence and your equipment. You’ll need to brainstorm for solutions to overcome these problems. Moving the equipment to a controlled environment is ideal; however, doing so isn’t always possible.",
+                  "children": []
+                },
+                {
+                  "title": "Determining Who Is in Charge",
+                  "toc_id": 155,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 2,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2005,
+                    2006
+                  ],
+                  "content": "Determining Who Is in Charge\n\nAs discussed in Chapter 1, a company needs an established line of authority to specify who can instigate or authorize an investigation. Private-sector investigations usually require only one person to respond to an incident or crime scene. Processing evidence usually involves acquiring an image of a suspect’s drive. In law enforcement, however, many investigations need additional staff to collect all evidence quickly. For large-scale investigations, a crime or incident scene leader should be designated. Anyone assigned to a large-scale investigation scene should cooperate with the designated leader to ensure that the team addresses all details when collecting evidence.",
+                  "children": []
+                },
+                {
+                  "title": "Using Additional Technical Expertise",
+                  "toc_id": 156,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2007,
+                    2008,
+                    2009,
+                    2010
+                  ],
+                  "content": "Using Additional Technical Expertise\n\nAfter you collect evidence data, determine whether you need specialized help to process the incident or crime scene. For example, suppose you’re assigned to process a crime scene at a data center running Windows servers with several RAID drives and high-end Linux servers. If you’re the lead on this investigation, you must identify the additional skills needed to process the crime scene, such as enlisting help with a high-end server OS. Other concerns are how to acquire data from RAID drives and how much data you can acquire. RAID servers typically process several terabytes of data, and standard imaging tools might not be able to handle such large data sets.\n\nWhen working at high-end computing facilities, identify the applications the suspect uses, such as Oracle databases. You might need to recruit an Oracle specialist or site support staff to help extract data for the investigation. In addition, mobile devices (covered in Chapter 12) are found at most incident scenes, so having someone on hand who knows how to handle them is essential. Finding the right person with the necessary technical expertise can be an even bigger challenge than conducting the investigation.\n\nIf you do need to recruit a specialist who’s not an investigator, develop a training program to educate the specialist in investigative techniques. This advice also applies to specialists you plan to supervise during search-and-seizure tasks. When dealing with digital evidence, an untrained specialist could destroy evidence unintentionally, no matter how careful you are in giving instructions and monitoring his or her activities.",
+                  "children": []
+                },
+                {
+                  "title": "Determining the Tools You Need",
+                  "toc_id": 157,
+                  "chunk_count": 11,
+                  "total_chunks_in_branch": 11,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2011,
+                    2012,
+                    2013,
+                    2014,
+                    2015,
+                    2016,
+                    2017,
+                    2018,
+                    2019,
+                    2020,
+                    2021
+                  ],
+                  "content": "Determining the Tools You Need\n\nAfter you have gathered as much information as possible about the incident or crime scene, you can start listing what you need at the scene. Being overprepared is better than being underprepared, especially when you determine that you can’t transfer the computer to your lab for processing.\n\nTo manage your tools, consider creating an initial-response field kit and an extensive-response field kit. Using the right kit makes processing an incident or crime scene much easier and minimizes how much you have to carry from your vehicle to the scene.\n\nYour initial-response field kit A portable kit containing only the minimum tools needed to perform disk acquisitions and preliminary forensics analysis in the field. should be lightweight and easy to transport. With this kit, you can arrive at a scene, acquire the data you need, and return to the lab as quickly as possible. Figure 4-4 shows some items you might need, and Table 4-1 lists the tools you might need in an initial-response field kit.\n\nTable 4-1. Tools in an Initial-Response Field Kit\n\nNumber needed Tools 1 Small computer\ntoolkit 1 Large-capacity\ndrive 1 Set of Japanese\nIndustrial Standard (JIS) screwdrivers 1 Set of ANSI\nscrewdrivers 2 Antistatic wrist\nbands 1 IDE ribbon cable\n(ATA-33 or ATA-100) 1 SATA cables 1 Forensic boot\nmedia containing an acquisition utility 1 Laptop IDE 40- to\n44-pin adapter, other adapter cables 1 Laptop or tablet\ncomputer 1 FireWire or USB\ndual write-protect external bay 1 Flashlight 1 Digital camera\nwith extra batteries or 35mm camera with film and flash 10 Evidence log\nforms 1 Notebook or\ndigital dictation recorder 10 Computer evidence\nbags (antistatic bags) 20 Evidence labels,\ntape, and tags 1 Permanent ink\nmarker 10 USB drives (or a\nportable hard drive)\n\nAn extensive-response field kit A portable kit designed to process several computers and a variety of operating systems at a crime or incident scene involving computers. This kit should contain two or more types of software or hardware forensics tools, such as extra storage drives. should include all the tools you can afford to take to the field. When you arrive at the scene, you should extract only those items you need to acquire evidence. Doing so protects your equipment and minimizes how many items you have to keep track of at the scene. Table 4-2 lists the tools you might need in an extensive-response field kit, including external USB drives.\n\nTable 4-2. Tools in an Extensive-Response Field Kit\n\nNumber needed Tools Varies Assorted\ntechnical manuals, ranging from OS references to forensic analysis\nguides 1 Initial-response\nfield kit 1 Laptop or tablet\nwith cables and connectors 2 Electrical power\nstrips 1 Additional hand\ntools, including bolt cutters, pry bar, and hacksaw 1 Leather gloves\nand disposable latex gloves (assorted sizes) 1 Set of JIS\nscrewdrivers 1 Set of ANSI\nscrewdrivers 2 Antistatic\nwristbands 1 Hand truck and\nluggage cart 10 Large garbage\nbags and large cardboard boxes with packaging tape 1 Rubber bands of\nassorted sizes 1 Magnifying\nglass 1 Ream of printer\npaper 1 Small brush for\ncleaning dust from digital devices 10 USB drives of\nvarying sizes 2 External hard\ndrives (1 TB or larger) with power cables Assorted Converter\ncables 5 Additional\n\ndrives (1 TB or larger) with power cables Assorted Converter\ncables 5 Additional\nassorted hard drives or USB drives for data acquisition\n\nWhen deciding what items to include in initial-response and extensive-response field kits, you should also analyze needs specific to your region or organization. Refer to Tables 4-1 and 4-2 for guidelines.",
+                  "children": []
+                },
+                {
+                  "title": "Preparing the Investigation Team",
+                  "toc_id": 158,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 3,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2022,
+                    2023,
+                    2024
+                  ],
+                  "content": "Preparing the Investigation Team\n\nBefore you initiate the search and seizure of digital evidence at incident or crime scenes, you must review all the available facts, plans, and objectives with the investigation team you have assembled. The goal of scene processing is to collect and secure digital evidence successfully. The better prepared you are, the fewer problems you encounter when you carry out the plan to collect data.\n\nKeep in mind that digital evidence is volatile. Develop the skills to assess the facts quickly, make your plan, gather the needed resources, and collect data from the incident or crime scene. In some digital investigations, responding slowly might result in the loss of important evidence for the case.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Preparing for a Search (Interactive Activity)",
+                "toc_id": 150,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Storing Digital Evidence",
+              "toc_id": 167,
+              "chunk_count": 7,
+              "total_chunks_in_branch": 18,
+              "budget_slides_content": 2,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "chunks_sorted": [
+                2106,
+                2107,
+                2108,
+                2109,
+                2110,
+                2111,
+                2112
+              ],
+              "content": "Storing Digital Evidence\n\nWith digital evidence, you need to consider how and on what type of media to save it and what type of storage device is recommended to secure it. The choice of media for storing digital evidence usually depends on how long you need to keep it. If you investigate criminal matters, store the evidence as long as you can. The ideal storage media for digital data used to be CDs and DVDs. (CDs from the 1980s could last up to 5 years. The expected lifespan of CDs and DVDs is now 2 to 5 years.) The optimum choice now is solid-state USB drives. Although they’re more expensive than CDs and DVDs, they’re more durable.\n\nYou can also use magnetic tape to preserve evidence data. The 4-mm DAT magnetic tapes store from 40 to 72 GB or more of data, but they’re slow at reading and writing data. If you’re using these tapes, test stored data by copying the contents from the tape back to a disk drive. Then verify that the data is good by examining it with forensics tools or doing an MD5 hash comparison of the original data and the newly restored data.\n\nEvidence is routinely kept for long periods. In the United States, for example, tens of thousands of rape kits kept in storage have never been processed, and as you’ve probably heard, cold cases from 20, 30, or even 50 years ago are now being solved because of advances in technology. You never know when a case might be solved or go to trial, so you need to make sure evidence is preserved for the long term. If a 30-year lifespan for data storage is acceptable for your digital evidence, older DLT magnetic tape cartridge systems are a good choice. Keep in mind that you never know how long it will take for a case to go to trial. DLT systems have been used with mainframe computers for several decades and are reliable data-archiving systems. Depending on the size of the DLT cartridge, one\n\ndecades and are reliable data-archiving systems. Depending on the size of the DLT cartridge, one cartridge can store up to 80 GB of data in compressed mode. Speed of data transfer from a hard drive to a DLT tape is also faster than transferring data to a CD or DVD. The only major drawback of a DLT drive and tapes is cost. A drive can cost from $400 to $800, and each tape is about $40. However, with the current large disk drives, the DLT system does offer substantial labor savings over other systems.\n\nManufacturers such as Quantum Corp. introduced a high-speed, high-capacity tape cartridge drive system called Super Digital Linear Tape (Super-DLT or SDLT). These systems are specifically designed for large RAID data backups and can store more than 1 TB of data. Smaller external SDLT drives can connect to a workstation through a SCSI card. In addition, many external USB drives can hold 1 or more TB of information. Reliable offsite storage and encrypted cloud storage are other options.\n\nDon’t rely on one media storage method to preserve your evidence, however. Be sure to make two copies of every image to prevent data loss. Also, if practical, use different tools to create the two images because every tool has strengths and weaknesses. For example, you can use the Linux dd command to create the first image and FTK Imager Lite to create the second image.",
+              "children": [
+                {
+                  "title": "Evidence Retention and Media Storage Needs",
+                  "toc_id": 168,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "chunks_sorted": [
+                    2113,
+                    2114,
+                    2115,
+                    2116
+                  ],
+                  "content": "Evidence Retention and Media Storage Needs\n\nTo help maintain the chain of custody for digital evidence so that it’s accepted in court or by arbitration, restrict access to your lab and evidence storage area. When your lab is open for operations, authorized personnel must keep these areas under constant supervision. When your lab is closed, at least two security workers should guard evidence storage cabinets and lab facilities.\n\nAs a good security practice, your lab should have a sign-in roster for all visitors. Most labs use a manual log system that an authorized technician maintains when an evidence storage container is opened and closed. Some facilities have upgraded to electronic systems that meet statutes, but many prefer the tried-and-true manual logs. These logs should be maintained for a period based on legal requirements, including the statute of limitations, the maximum sentence, and expiration of appeal periods. Make the logs available for management to inspect. The evidence custody form should contain an entry for every person who handles the evidence (see Figure 4-5).\n\nIf you’re supporting a law enforcement agency, you might need to retain evidence indefinitely, depending on the type of crime. Check with your local prosecuting attorney’s office or state laws to make sure you’re in compliance. For the private sector, check with the organization’s legal department (the general counsel), which is responsible for setting standards for evidence retention. Cases in which child pornography is discovered are the exception: The evidence must be examined by law enforcement. As a private-sector investigator, you aren’t allowed to examine these files. You have to stop what you’re doing and call federal investigators. This material is contraband and must not be stored by any person or organization other than a law enforcement agency.",
+                  "children": []
+                },
+                {
+                  "title": "Documenting Evidence",
+                  "toc_id": 169,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "chunks_sorted": [
+                    2117,
+                    2118,
+                    2119,
+                    2120,
+                    2121,
+                    2122,
+                    2123
+                  ],
+                  "content": "Documenting Evidence\n\nTo document evidence, create or use an evidence custody form (shown in Chapter 1). Because of constant changes in technologies and methods for acquiring data, create an electronic evidence custody form that you can modify as needed. An evidence custody form serves the following functions:\n\nIdentifies the evidence\n\nIdentifies who has handled the evidence\n\nLists dates and times the evidence was handled\n\nAfter you have established these pieces of information, you can add others to your form, such as a section listing MD5 and SHA-1 hash values. Include any detailed information you might need to reference.\n\nEvidence bags also include labels or evidence forms you can use to document your evidence. Commercial companies offer a variety of sizes and styles of paper and plastic evidence bags. Be sure to write on the bag when it’s empty, not when it contains digital evidence, to make sure your writing is legible and to avoid damaging the evidence. You should use antistatic bags for electronic components.",
+                  "children": []
+                }
+              ],
+              "interactive_activity": {
+                "title": "Storing Digital Evidence (Interactive Activity)",
+                "toc_id": 167,
+                "slides_allocated": 1
+              }
+            },
+            {
+              "title": "Obtaining a Digital Hash",
+              "toc_id": 170,
+              "chunk_count": 42,
+              "total_chunks_in_branch": 42,
+              "budget_slides_content": 5,
+              "direct_slides_content": 5,
+              "total_slides_in_branch": 6,
+              "time_allocation_minutes": {
+                "direct_content_time": 15,
+                "direct_interactive_time": 5,
+                "total_branch_time": 20
+              },
+              "chunks_sorted": [
+                2124,
+                2125,
+                2126,
+                2127,
+                2128,
+                2129,
+                2130,
+                2131,
+                2132,
+                2133,
+                2134,
+                2135,
+                2136,
+                2137,
+                2138,
+                2139,
+                2140,
+                2141,
+                2142,
+                2143,
+                2144,
+                2145,
+                2146,
+                2147,
+                2148,
+                2149,
+                2150,
+                2151,
+                2152,
+                2153,
+                2154,
+                2155,
+                2156,
+                2157,
+                2158,
+                2159,
+                2160,
+                2161,
+                2162,
+                2163,
+                2164,
+                2165
+              ],
+              "content": "Obtaining a Digital Hash\n\nTo verify data integrity, different methods of obtaining a unique identity for file data have been developed. One of the first methods was the Cyclic Redundancy Check (CRC) A mathematical algorithm that translates a file into a unique hexadecimal value. , a mathematical algorithm that determines whether a file’s contents have changed. The most recent version is CRC-32. CRC, however, is not considered a forensic hashing algorithm. The first algorithm used for digital forensics was Message Digest 5 (MD5) An algorithm that produces a hexadecimal value of a file or storage media. Used to determine whether data has been changed. . Like CRC, MD5 is a mathematical formula that generates a hexadecimal code, or hash value A unique hexadecimal value that identifies a file or drive. , based on the\n\ncode, or hash value A unique hexadecimal value that identifies a file or drive. , based on the contents of a file, a folder, or an entire drive. If a bit or byte in the file changes, it alters the hash value, a unique hexadecimal value that can be used to verify that a file or drive hasn’t changed or been tampered with. Before you process or analyze a file, you can use a software tool to calculate its hash value. After you process the file, you produce another digital hash. If it’s the same as the original one, you can verify the integrity of your digital evidence with mathematical proof that the file didn’t change.\n\nAccording to work done by Wang Xiaoyun and her associates from Beijing’s Tsinghua University and Shandong University of Technology, there are three rules for forensic hashes:\n\nYou can’t predict the hash value of a file or device.\n\nNo two hash values can be the same. (Note that collisions have occurred in research using supercomputers.)\n\nIf anything changes in the file or device, the hash value must change.\n\nAnother hashing algorithm is Secure Hash Algorithm version 1 (SHA-1) A forensic hashing algorithm created by NIST to determine whether data in a file or on storage media has been altered. See also National Institute of Standards and Technology (NIST). , developed by the National Institute of Standards and Technology (NIST) One of the governing bodies responsible for setting standards for some U.S. industries. . SHA-1 has slowly replaced MD5 and CRC-32, although MD5 is still widely used. (For more information on SHA-1, see http://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf.) In both MD5 and SHA-1, collisions have occurred, meaning two different files have the same hash value. Collisions are rare, however, and despite flaws in MD5 and SHA-1, both are still used for validating\n\nare rare, however, and despite flaws in MD5 and SHA-1, both are still used for validating digital evidence collected from files and storage media. If a collision is suspected, you can do a byte-by-byte comparison to verify that all bytes are identical. Byte-by-byte comparisons can be done with the MS-DOS comp command or the Linux/UNIX diff command. New developments in this field happen constantly, however, so staying current by investigating the NIST Web site and reading related journals is a good idea. New versions, such as SHA 256, are already being used.\n\nMost digital forensics hashing needs can be satisfied with a nonkeyed hash set A unique hash number generated by a software tool and used to identify files. , which is a unique hash number generated by a software tool, such as the Linux md5sum command. The advantage of this type of hash is that it can identify known files, such as executable programs or viruses, that hide themselves by changing their names. For example, many people who view or transmit pornographic material change filenames and extensions to obscure the nature of the contents. However, even if a file’s name and extension change, the hash value doesn’t.\n\nThe alternative to a nonkeyed hash is a keyed hash set A value created by an encryption utility’s secret key. , which is created by an encryption utility’s secret key. You can use the secret key to create a unique hash value for a file. Although a keyed hash set can’t identify files as nonkeyed hash methods can, it can produce a unique hash set for digital evidence.\n\nYou can use the MD5 function in FTK Imager to obtain the digital signature of a file or an entire drive. In the following activity, you use a USB drive, although you often work with hard drives in actual investigations. First, you create a test file and then generate an MD5 hash value for it. Then you change the file and produce another MD5 hash value, this time noting the change in the hash value. You need a blank, formatted USB drive and a Windows computer for the following steps:\n\n1.\n\nPower on your forensic workstation, booting it to Windows.\n\n2.\n\nInsert a blank, formatted USB drive into your computer.\n\n3.\n\nStart Notepad. In a new text file, type This is a test to see how an MD5 digital hash works.\n\n4.\n\nClick File, Save As from the menu. In the File name text box, type InChap04.txt . Navigate to your USB drive, and then click Save.\n\n5.\n\nExit Notepad.\n\nNext, you use FTK Imager Lite to determine the MD5 and SHA-1 hash values:\n\nNote\n\nIf you didn’t install FTK Imager Lite in Chapter 3, do so before performing these steps.\n\n1.\n\nStart FTK Imager Lite. Click Yes in the UAC message box, if necessary.\n\n2.\n\nClick File, Add Evidence Item from the menu. In the Select Source dialog box, click the Logical Drive option button, and then click Next.\n\n3.\n\nIn the Select Drive dialog box, click the Source Drive Selection list arrow, click your USB drive in the drop-down list, and then click Finish.\n\n4.\n\nRight-click the USB drive at the upper left and click Verify Drive/Image. The verification process takes a few minutes. When it finishes, you should see a dialog box similar to Figure 4-6. Copy the MD5 and SHA-1 hash values for this file to a text file in Notepad, and then click Close. Click Save, and save the text file in your work folder with a filename of your choosing. Close the Drive/Image Verify Results dialog box.\n\n5.\n\nIn FTK Imager, click File, Remove Evidence Item from the menu. (You’re about to make changes to the file and don’t want it open in FTK Imager while you do so.) Leave FTK Imager running for the next set of steps.\n\nNow you change the text file:\n\n1.\n\nStart Notepad, and open the InChap04.txt file.\n\n2.\n\nDelete one word from the sentence. Click File, Save, and save the file with the same filename.\n\n3.\n\nRepeat the previous activity’s steps in FTK Imager to generate MD5 and SHA-1 hash values. Open the file containing the original hash values from Step 4 in the preceding activity to compare the hash values. They should be different from the original hash values you found for this file. When you’re finished, exit FTK Imager.",
+              "children": [],
+              "interactive_activity": {
+                "title": "Obtaining a Digital Hash (Interactive Activity)",
+                "toc_id": 170,
+                "slides_allocated": 1
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          }
+        }
+      ]
+    }
+  ]
+}
