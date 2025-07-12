@@ -11,7 +11,7 @@
     "time_for_framework_slides_min": 6
   },
   "week_session_setup": {
-    "sessions_per_week": 2,
+    "sessions_per_week": 6,
     "distribution_strategy": "even",
     "session_time_duration_in_hour": 1,
     "interactive_time_in_hour": 0,
@@ -19,7 +19,7 @@
   },
   "slide_count_strategy": {
     "method": "per_week",
-    "target_total_slides": 36,
+    "target_total_slides": 108,
     "slides_content_per_session": 18,
     "interactive_slides_per_week": 0,
     "interactive_slides_per_session": 0,
@@ -28,18 +28,7 @@
   },
   "generation_scope": {
     "weeks": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12
+      1
     ]
   }
 }

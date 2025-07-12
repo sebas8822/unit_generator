@@ -1,0 +1,19 @@
+{
+  "standard_lecture": {
+    "name": "Standard Lecture Flow",
+    "slide_types": ["Title", "Agenda", "Content", "Summary", "End"],
+    "prompts": {
+      "content_generation": "You are an expert university lecturer. The topic for this slide is '{sub_topic}'. Based ONLY on the following context, create a slide providing a detailed explanation. Do not use any external knowledge.\n\nCONTEXT:\n---\n{context}\n---\n\nThe content should be structured with bullet points for key details. Your output MUST be a single JSON object with a 'title' (string) and 'content' (list of strings) key.",
+      "summary_generation": "You are an expert university lecturer creating a summary slide. Based on the following list of topics covered in this session, generate a concise summary of the key takeaways. The topics are: {topic_list}. Your output MUST be a single JSON object with a 'title' (string) and 'content' (list of strings) key."
+    }
+  },
+  "apply_topic_interactive": {
+    "name": "Interactive Lecture Flow",
+    "slide_types": ["Title", "Agenda", "Content", "Application", "Summary", "End"],
+    "prompts": {
+      "content_generation": "You are an expert university lecturer in Digital Forensics. The topic for this slide is '{sub_topic}'. Based ONLY on the following context, create a slide explaining the concept. Do not use any external knowledge.\n\nCONTEXT:\n---\n{context}\n---\n\nThe content should be clear, concise, and structured with bullet points for easy understanding. Your output MUST be a single JSON object with a 'title' (string) and 'content' (list of strings) key.",
+      "interactive_activity": "You are an engaging university lecturer. Based ONLY on the following context about the topic '{sub_topic}', create a multiple-choice question with exactly 4 options (A, B, C, D) to test understanding. The slide title must be 'Let's Apply This!'. Clearly indicate the correct answer.\n\nCONTEXT:\n---\n{context}\n---\n\nYour output MUST be a single JSON object with a 'title' (string) and 'content' (list of strings) key.",
+      "summary_generation": "You are an expert university lecturer creating a summary slide. Based on the following list of concepts and applications covered in this session, generate a concise summary of the key takeaways. The topics are: {topic_list}. Your output MUST be a single JSON object with a 'title' (string) and 'content' (list of strings) key."
+    }
+  }
+}

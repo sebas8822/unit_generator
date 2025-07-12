@@ -11,7 +11,7 @@
     "time_for_framework_slides_min": 6
   },
   "week_session_setup": {
-    "sessions_per_week": 2,
+    "sessions_per_week": 6,
     "distribution_strategy": "even",
     "session_time_duration_in_hour": 1,
     "interactive_time_in_hour": 0,
