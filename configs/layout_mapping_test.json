@@ -1,0 +1,376 @@
+{
+    "//_INSTRUCTIONS": "This file describes the available slide layouts. The 'available_layouts' section is for an LLM to read. The 'user_selections' section is for you to edit. Please verify the 'selected_layout_index' for each slide type.",
+    "template_file": "slide_style_test_2.pptx",
+    "user_selections": {
+        "Title": {
+            "description": "Main title slide of the deck.",
+            "selected_layout_index": 0
+        },
+        "Agenda": {
+            "description": "Agenda/Table of Contents slide.",
+            "selected_layout_index": 1
+        },
+        "Content": {
+            "description": "Default slide for a standard topic with bullet points.",
+            "selected_layout_index": 1
+        },
+        "Content_Two_Column": {
+            "description": "Slide for side-by-side content, like comparisons.",
+            "selected_layout_index": 2
+        },
+        "Content_child": {
+            "description": "Default slide for a standard topic with bullet points.",
+            "selected_layout_index": 1
+        },
+        "Content_Two_Column_child": {
+            "description": "Slide for side-by-side content, like comparisons.",
+            "selected_layout_index": 2
+        },
+        "Application": {
+            "description": "Slide for interactive questions ('Let's Apply This!').",
+            "selected_layout_index": 1
+        },
+        "Application_Two_Column ": {
+            "description": "Slide for side-by-side content ('Let's Apply This!').",
+            "selected_layout_index": 2
+        },
+        "Summary": {
+            "description": "The final summary slide of the deck.",
+            "selected_layout_index": 1
+        },
+        "End": {
+            "description": "The final 'Thank You / Questions?' slide.",
+            "selected_layout_index": 7
+        },
+        "Divider": {
+            "description": "Slide that divide sections general use base on the agenda.",
+            "selected_layout_index": 7
+        }
+    },
+    "available_layouts": [
+        {
+            "layout_index": 0,
+            "layout_name": "Intro Slide (Center Title + Subtitle)",
+            "capabilities": {
+                "title_support": "centered_title_with_subtitle",
+                "body_layout": "no_body",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "CENTER_TITLE",
+                    "name": "Title 1",
+                    "left": 1.67,
+                    "top": 2.91,
+                    "width": 10.0,
+                    "height": 1.57
+                },
+                {
+                    "idx": 1,
+                    "type": "SUBTITLE",
+                    "name": "Subtitle 2",
+                    "left": 1.67,
+                    "top": 4.77,
+                    "width": 10.0,
+                    "height": 1.24
+                }
+            ]
+        },
+        {
+            "layout_index": 1,
+            "layout_name": "General Content 1 column",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "single_column",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE",
+                    "name": "Title 2",
+                    "left": 2.49,
+                    "top": 0.5,
+                    "width": 10.11,
+                    "height": 0.77
+                },
+                {
+                    "idx": 10,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 4",
+                    "left": 0.52,
+                    "top": 1.48,
+                    "width": 12.09,
+                    "height": 5.4
+                }
+            ]
+        },
+        {
+            "layout_index": 2,
+            "layout_name": "General content 2 Columns",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "2_column",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE",
+                    "name": "Title 3",
+                    "left": 2.51,
+                    "top": 0.4,
+                    "width": 10.26,
+                    "height": 0.97
+                },
+                {
+                    "idx": 10,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 5",
+                    "left": 0.57,
+                    "top": 1.54,
+                    "width": 5.73,
+                    "height": 5.43
+                },
+                {
+                    "idx": 11,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 7",
+                    "left": 6.49,
+                    "top": 1.54,
+                    "width": 6.27,
+                    "height": 5.43
+                }
+            ]
+        },
+        {
+            "layout_index": 3,
+            "layout_name": "Child content 1 column",
+            "capabilities": {
+                "title_support": "standard_title_with_subtitle",
+                "body_layout": "single_column",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE",
+                    "name": "Title 1",
+                    "left": 2.6,
+                    "top": 0.43,
+                    "width": 10.33,
+                    "height": 0.46
+                },
+                {
+                    "idx": 1,
+                    "type": "SUBTITLE",
+                    "name": "Subtitle 2",
+                    "left": 2.6,
+                    "top": 0.91,
+                    "width": 10.33,
+                    "height": 0.46
+                },
+                {
+                    "idx": 10,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 6",
+                    "left": 0.61,
+                    "top": 1.48,
+                    "width": 12.0,
+                    "height": 5.42
+                }
+            ]
+        },
+        {
+            "layout_index": 4,
+            "layout_name": "Child Content 2 columns",
+            "capabilities": {
+                "title_support": "standard_title_with_subtitle",
+                "body_layout": "2_column",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE",
+                    "name": "Title 1",
+                    "left": 2.6,
+                    "top": 0.45,
+                    "width": 10.34,
+                    "height": 0.4
+                },
+                {
+                    "idx": 1,
+                    "type": "SUBTITLE",
+                    "name": "Subtitle 2",
+                    "left": 2.6,
+                    "top": 0.85,
+                    "width": 10.33,
+                    "height": 0.52
+                },
+                {
+                    "idx": 10,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 4",
+                    "left": 0.54,
+                    "top": 1.56,
+                    "width": 5.97,
+                    "height": 5.34
+                },
+                {
+                    "idx": 11,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 6",
+                    "left": 6.67,
+                    "top": 1.56,
+                    "width": 6.13,
+                    "height": 5.34
+                }
+            ]
+        },
+        {
+            "layout_index": 5,
+            "layout_name": "Interactive Activity 1 Column",
+            "capabilities": {
+                "title_support": "standard_title_with_subtitle",
+                "body_layout": "stacked_sections",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE",
+                    "name": "Title 4",
+                    "left": 0.79,
+                    "top": 0.66,
+                    "width": 4.11,
+                    "height": 1.35
+                },
+                {
+                    "idx": 10,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 6",
+                    "left": 0.79,
+                    "top": 2.01,
+                    "width": 11.63,
+                    "height": 4.71
+                },
+                {
+                    "idx": 11,
+                    "type": "BODY",
+                    "name": "Text Placeholder 8",
+                    "left": 0.64,
+                    "top": 6.97,
+                    "width": 12.15,
+                    "height": 0.44
+                },
+                {
+                    "idx": 1,
+                    "type": "SUBTITLE",
+                    "name": "Subtitle 2",
+                    "left": 8.85,
+                    "top": 0.82,
+                    "width": 3.57,
+                    "height": 0.72
+                }
+            ]
+        },
+        {
+            "layout_index": 6,
+            "layout_name": "Interactive Activity 2 columns",
+            "capabilities": {
+                "title_support": "standard_title_with_subtitle",
+                "body_layout": "stacked_sections",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE",
+                    "name": "Title 5",
+                    "left": 0.74,
+                    "top": 0.98,
+                    "width": 4.04,
+                    "height": 0.45
+                },
+                {
+                    "idx": 11,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 9",
+                    "left": 0.74,
+                    "top": 2.02,
+                    "width": 5.75,
+                    "height": 4.76
+                },
+                {
+                    "idx": 12,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 11",
+                    "left": 6.69,
+                    "top": 2.02,
+                    "width": 5.75,
+                    "height": 4.76
+                },
+                {
+                    "idx": 13,
+                    "type": "BODY",
+                    "name": "Text Placeholder 2",
+                    "left": 0.64,
+                    "top": 6.95,
+                    "width": 12.13,
+                    "height": 0.45
+                },
+                {
+                    "idx": 1,
+                    "type": "SUBTITLE",
+                    "name": "Subtitle 2",
+                    "left": 8.88,
+                    "top": 0.85,
+                    "width": 3.57,
+                    "height": 0.72
+                }
+            ]
+        },
+        {
+            "layout_index": 7,
+            "layout_name": "Close",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "no_body",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE",
+                    "name": "Title 6",
+                    "left": 0.78,
+                    "top": 5.09,
+                    "width": 11.5,
+                    "height": 1.45
+                }
+            ]
+        },
+        {
+            "layout_index": 8,
+            "layout_name": "Divider",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "no_body",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE",
+                    "name": "Title 7",
+                    "left": 0.92,
+                    "top": 3.03,
+                    "width": 11.5,
+                    "height": 1.45
+                }
+            ]
+        }
+    ]
+}

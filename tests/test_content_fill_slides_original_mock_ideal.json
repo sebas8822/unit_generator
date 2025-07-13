@@ -1,0 +1,163 @@
+{
+  "unit_code": "ICT312",
+  "week": 1,
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "sections": [
+        {
+          "section_type": "Title",
+          "seq_id": 0,
+          "content_for_placeholders": {
+            "CENTER_TITLE": "Understanding the Digital Forensics Profession and Investigations.",
+            "SUBTITLE": "ICT312: Digital Forensic\nWeek 1, Lecture 1"
+          }
+        },
+        {
+          "section_type": "Agenda",
+          "seq_id": 1,
+          "content_for_placeholders": {
+            "TITLE": "Today's Agenda",
+            "OBJECT": [
+              "An Overview of Digital Forensics",
+              "-> Disciplines & History",
+              "-> Case Law & Resources",
+              "Key Principles & Summary"
+            ]
+          }
+        },
+        {
+          "section_type": "Content",
+          "seq_id": 2,
+          "content_for_placeholders": {
+            "TITLE": "An Overview of Digital Forensics",
+            "OBJECT": [
+              "Definition: Applying investigative procedures for a legal purpose involving digital evidence.",
+              "Key Principles (per Ken Zatyko): Proper search authority, chain of custody, mathematical validation (hashing), and use of validated tools.",
+              "Global Standardization: ISO 27037 provides guidelines for identifying, collecting, and preserving digital evidence.",
+              "Legal Framework: The Fourth Amendment protects against unreasonable search and seizure, heavily influencing digital evidence collection."
+            ]
+          }
+        },
+        {
+          "section_type": "Content_child",
+          "seq_id": 3,
+          "parent_title": "An Overview of Digital Forensics",
+          "content_for_placeholders": {
+            "TITLE": "An Overview of Digital Forensics",
+            "SUBTITLE": "Digital Forensics vs. Related Disciplines",
+            "OBJECT": [
+              "Digital Forensics: Focuses on recovering hidden or deleted data as valid evidence.",
+              "Network Forensics: Traces attacker access and monitors network logs.",
+              "Data Recovery: Retrieves information lost accidentally; the target is known.",
+              "The Investigations Triad: Combines Investigations, Vulnerability Assessment, and Incident Response."
+            ]
+          }
+        },
+        {
+          "section_type": "Application",
+          "seq_id": 4,
+          "content_for_placeholders": {
+            "TITLE": "Activity for 'Related Disciplines'",
+            "OBJECT": [
+              "A company's server crashes, and the accounting department needs to retrieve last month's financial reports. Is this primarily an act of digital forensics or data recovery?"
+            ],
+            "BODY": "Answer: Data Recovery, because the goal is to restore known, non-hidden data lost accidentally."
+          }
+        },
+        {
+          "section_type": "Content_child",
+          "seq_id": 5,
+          "parent_title": "An Overview of Digital Forensics",
+          "content_for_placeholders": {
+            "TITLE": "An Overview of Digital Forensics",
+            "SUBTITLE": "A Brief History of Digital Forensics",
+            "OBJECT": {
+              "smart_art_type": "Basic_Timeline",
+              "items": [
+                {"time": "1970s", "event": "Rise of electronic white-collar crime."},
+                {"time": "1980s", "event": "First forensics tools from government agencies emerge with PCs."},
+                {"time": "1990s", "event": "First commercial GUI tools like 'Expert Witness' appear."},
+                {"time": "Modern Era", "event": "Tools like EnCase and FTK handle large-scale storage."}
+              ]
+            }
+          }
+        },
+        {
+          "section_type": "Application",
+          "seq_id": 6,
+          "content_for_placeholders": {
+            "TITLE": "Activity for 'History'",
+            "OBJECT": [
+              "Why did PC growth in the 1980s necessitate formal digital forensics tools?",
+              "A) Mainframes were immune to electronic crime.",
+              "B) The variety of new OS and file types created new challenges.",
+              "C) All PCs came with built-in encryption."
+            ],
+            "BODY": "Answer: B"
+          }
+        },
+        {
+            "section_type": "Content_Two_Column_child",
+            "seq_id": 7,
+            "parent_title": "An Overview of Digital Forensics",
+            "content_for_placeholders": {
+                "TITLE": "An Overview of Digital Forensics",
+                "SUBTITLE": "The Role of Case Law",
+                "OBJECT_LEFT": {
+                    "title": "Key Principles",
+                    "content": [
+                        "Case law is used when statutes don't exist for new tech.",
+                        "Applies rulings from similar past cases to current ones.",
+                        "Balances search needs with privacy expectations (4th Amendment)."
+                    ]
+                },
+                "OBJECT_RIGHT": {
+                    "title": "Example: Commonwealth v. Copenhefer",
+                    "content": [
+                        "Established that attempting to delete files does not automatically create a legally protected expectation of privacy.",
+                        "A 'mere hope for secrecy' is not enough."
+                    ]
+                }
+            }
+        },
+        {
+          "section_type": "Application_Two_Column",
+          "seq_id": 8,
+          "content_for_placeholders": {
+            "TITLE": "Activity for 'Case Law'",
+            "OBJECT_LEFT": {
+                "title": "Scenario",
+                "content": ["What is the primary function of case law in digital forensics?"]
+            },
+            "OBJECT_RIGHT": {
+                "title": "Answer",
+                "content": ["To interpret how existing laws apply to new technologies and ambiguous situations, setting precedents for future cases."]
+            },
+            "BODY": "The answer highlights the adaptive nature of the legal system."
+          }
+        },
+        {
+          "section_type": "Summary",
+          "seq_id": 12,
+          "content_for_placeholders": {
+            "TITLE": "Summary & Key Takeaways",
+            "OBJECT": [
+              "Digital forensics is a scientific process for legal purposes, distinct from data recovery.",
+              "The field has evolved from mainframe crimes to handling complex modern systems, guided by standards like ISO 27037.",
+              "Case law continuously adapts constitutional principles to new digital scenarios.",
+              "A successful investigator relies on a triad of skills: investigations, vulnerability assessment, and incident response."
+            ]
+          }
+        },
+        {
+          "section_type": "End",
+          "seq_id": 13,
+          "content_for_placeholders": {
+            "TITLE": "Thank You\nQuestions?"
+          }
+        }
+      ]
+    }
+  ]
+}

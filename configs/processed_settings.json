@@ -2,7 +2,7 @@
   "course_id": "ICT312",
   "unit_name": "Digital Forensic",
   "interactive": true,
-  "interactive_deep": false,
+  "interactive_deep": true,
   "teaching_flow_id": "apply_topic_interactive",
   "parameters_slides": {
     "slides_per_hour": 18,

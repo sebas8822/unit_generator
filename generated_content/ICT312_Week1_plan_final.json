@@ -2,30 +2,30 @@
   "week": 1,
   "overall_topic": "Understanding the Digital Forensics Profession and Investigations.",
   "weekly_slide_summary": {
-    "total_slides_for_week": 137,
+    "total_slides_for_week": 158,
     "total_framework_slides": 24,
-    "total_content_slides": 106,
+    "total_content_slides": 127,
     "total_interactive_slides": 7,
     "number_of_decks": 6
   },
   "weekly_time_summary_minutes": {
-    "total_time_for_week_minutes": 389,
+    "total_time_for_week_minutes": 494,
     "total_framework_time": 36,
-    "total_content_and_interactive_time": 353
+    "total_content_and_interactive_time": 458
   },
   "deck_plans": [
     {
       "deck_number": 1,
-      "total_slides_in_deck": 17,
+      "total_slides_in_deck": 21,
       "slide_count_breakdown": {
         "framework": 4,
-        "content": 12,
+        "content": 16,
         "interactive": 1
       },
       "time_breakdown_minutes": {
         "framework": 6,
-        "content_and_interactive": 41,
-        "total_deck_time": 47
+        "content_and_interactive": 61,
+        "total_deck_time": 67
       },
       "sections": [
         {
@@ -58,11 +58,11 @@
               "total_chunks_in_branch": 60,
               "budget_slides_content": 12,
               "direct_slides_content": 4,
-              "total_slides_in_branch": 13,
+              "total_slides_in_branch": 17,
               "time_allocation_minutes": {
                 "direct_content_time": 12,
                 "direct_interactive_time": 5,
-                "total_branch_time": 41
+                "total_branch_time": 61
               },
               "children": [
                 {
@@ -72,13 +72,19 @@
                   "total_chunks_in_branch": 18,
                   "budget_slides_content": 3,
                   "direct_slides_content": 3,
-                  "total_slides_in_branch": 3,
+                  "total_slides_in_branch": 4,
                   "time_allocation_minutes": {
                     "direct_content_time": 9,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 9
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 14
                   },
                   "children": [],
+                  "interactive_activity": {
+                    "title": "Digital Forensics and Other Related Disciplines (Deep-Dive Activity)",
+                    "toc_id": 10,
+                    "slides_allocated": 1,
+                    "seq_id": 4
+                  },
                   "seq_id": 3,
                   "chunks_sorted": [
                     174,
@@ -109,14 +115,20 @@
                   "total_chunks_in_branch": 13,
                   "budget_slides_content": 2,
                   "direct_slides_content": 2,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 3,
                   "time_allocation_minutes": {
                     "direct_content_time": 6,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 6
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 11
                   },
                   "children": [],
-                  "seq_id": 4,
+                  "interactive_activity": {
+                    "title": "A Brief History of Digital Forensics (Deep-Dive Activity)",
+                    "toc_id": 11,
+                    "slides_allocated": 1,
+                    "seq_id": 6
+                  },
+                  "seq_id": 5,
                   "chunks_sorted": [
                     192,
                     193,
@@ -141,14 +153,20 @@
                   "total_chunks_in_branch": 3,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 1,
+                  "total_slides_in_branch": 2,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 3
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 8
                   },
                   "children": [],
-                  "seq_id": 5,
+                  "interactive_activity": {
+                    "title": "Understanding Case Law (Deep-Dive Activity)",
+                    "toc_id": 12,
+                    "slides_allocated": 1,
+                    "seq_id": 8
+                  },
+                  "seq_id": 7,
                   "chunks_sorted": [
                     205,
                     206,
@@ -163,14 +181,20 @@
                   "total_chunks_in_branch": 8,
                   "budget_slides_content": 2,
                   "direct_slides_content": 2,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 3,
                   "time_allocation_minutes": {
                     "direct_content_time": 6,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 6
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 11
                   },
                   "children": [],
-                  "seq_id": 6,
+                  "interactive_activity": {
+                    "title": "Developing Digital Forensics Resources (Deep-Dive Activity)",
+                    "toc_id": 13,
+                    "slides_allocated": 1,
+                    "seq_id": 10
+                  },
+                  "seq_id": 9,
                   "chunks_sorted": [
                     208,
                     209,
@@ -185,10 +209,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "An Overview of Digital Forensics (Interactive Activity)",
+                "title": "An Overview of Digital Forensics (General Activity)",
                 "toc_id": 9,
                 "slides_allocated": 1,
-                "seq_id": 7
+                "seq_id": 11
               },
               "seq_id": 2,
               "chunks_sorted": [
@@ -221,7 +245,7 @@
             "title": "Summary & Key Takeaways",
             "placeholder": "Auto-generate based on covered topics."
           },
-          "seq_id": 8
+          "seq_id": 12
         },
         {
           "section_type": "End",
@@ -229,22 +253,22 @@
             "title": "Thank You",
             "text": "Questions?"
           },
-          "seq_id": 9
+          "seq_id": 13
         }
       ]
     },
     {
       "deck_number": 2,
-      "total_slides_in_deck": 23,
+      "total_slides_in_deck": 26,
       "slide_count_breakdown": {
         "framework": 4,
-        "content": 18,
+        "content": 21,
         "interactive": 1
       },
       "time_breakdown_minutes": {
         "framework": 6,
-        "content_and_interactive": 59,
-        "total_deck_time": 65
+        "content_and_interactive": 74,
+        "total_deck_time": 80
       },
       "sections": [
         {
@@ -277,11 +301,11 @@
               "total_chunks_in_branch": 84,
               "budget_slides_content": 17,
               "direct_slides_content": 1,
-              "total_slides_in_branch": 19,
+              "total_slides_in_branch": 22,
               "time_allocation_minutes": {
                 "direct_content_time": 3,
                 "direct_interactive_time": 5,
-                "total_branch_time": 59
+                "total_branch_time": 74
               },
               "children": [
                 {
@@ -291,13 +315,19 @@
                   "total_chunks_in_branch": 10,
                   "budget_slides_content": 2,
                   "direct_slides_content": 2,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 3,
                   "time_allocation_minutes": {
                     "direct_content_time": 6,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 6
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 11
                   },
                   "children": [],
+                  "interactive_activity": {
+                    "title": "Understanding Law Enforcement Agency Investigations (Deep-Dive Activity)",
+                    "toc_id": 15,
+                    "slides_allocated": 1,
+                    "seq_id": 4
+                  },
                   "seq_id": 3,
                   "chunks_sorted": [
                     221,
@@ -320,14 +350,20 @@
                   "total_chunks_in_branch": 13,
                   "budget_slides_content": 3,
                   "direct_slides_content": 3,
-                  "total_slides_in_branch": 3,
+                  "total_slides_in_branch": 4,
                   "time_allocation_minutes": {
                     "direct_content_time": 9,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 9
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 14
                   },
                   "children": [],
-                  "seq_id": 4,
+                  "interactive_activity": {
+                    "title": "Following Legal Processes (Deep-Dive Activity)",
+                    "toc_id": 16,
+                    "slides_allocated": 1,
+                    "seq_id": 6
+                  },
+                  "seq_id": 5,
                   "chunks_sorted": [
                     231,
                     232,
@@ -352,11 +388,11 @@
                   "total_chunks_in_branch": 56,
                   "budget_slides_content": 11,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 12,
+                  "total_slides_in_branch": 13,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 36
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 41
                   },
                   "children": [
                     {
@@ -373,7 +409,7 @@
                         "total_branch_time": 3
                       },
                       "children": [],
-                      "seq_id": 6,
+                      "seq_id": 8,
                       "chunks_sorted": [
                         247,
                         248,
@@ -397,7 +433,7 @@
                         "total_branch_time": 12
                       },
                       "children": [],
-                      "seq_id": 7,
+                      "seq_id": 9,
                       "chunks_sorted": [
                         252,
                         253,
@@ -435,7 +471,7 @@
                         "total_branch_time": 6
                       },
                       "children": [],
-                      "seq_id": 8,
+                      "seq_id": 10,
                       "chunks_sorted": [
                         271,
                         272,
@@ -463,7 +499,7 @@
                         "total_branch_time": 9
                       },
                       "children": [],
-                      "seq_id": 9,
+                      "seq_id": 11,
                       "chunks_sorted": [
                         280,
                         281,
@@ -497,7 +533,7 @@
                         "total_branch_time": 3
                       },
                       "children": [],
-                      "seq_id": 10,
+                      "seq_id": 12,
                       "chunks_sorted": [
                         295,
                         296,
@@ -508,7 +544,13 @@
                       "content": "Distinguishing Personal and Company Property\n\nMany company policies distinguish between personal and company computer property; however, making this distinction can be difficult with cell phones, smartphones, personal notebooks, and tablet computers. For example, an employee brings her personal tablet to work and connects it to the company’s wireless network. As the employee synchronizes information on the tablet with information in the company network, she copies some data in the tablet to the company network. During the synchronization, data on the company computer or network might be placed on the tablet, too. In this case, at least one question is “Does the information on the tablet belong to the company or the employee?”\n\nNow suppose the company gave the employee the tablet as a holiday bonus. Can the company claim rights to this device? Similar issues come up when an employee brings in a smartphone and connects it to the company network. What rules apply? Because digital devices are part of daily life, you’ll encounter these issues often. These questions are still being debated, however, and companies are establishing their own policies to handle them. In today’s bring your own device (BYOD) environment, more companies are forced to address the issue of personal devices accessing the company network. Some companies simply state that if you connect a personal device to the business network, it falls under the same rules as company property.\n\nNote\n\nBYOD is a major challenge in company security, digital investigations, and compliance with regulations, including company policies."
                     }
                   ],
-                  "seq_id": 5,
+                  "interactive_activity": {
+                    "title": "Understanding Private-Sector Investigations (Deep-Dive Activity)",
+                    "toc_id": 17,
+                    "slides_allocated": 1,
+                    "seq_id": 13
+                  },
+                  "seq_id": 7,
                   "chunks_sorted": [
                     244,
                     245,
@@ -518,10 +560,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "Preparing for Digital Investigations (Interactive Activity)",
+                "title": "Preparing for Digital Investigations (General Activity)",
                 "toc_id": 14,
                 "slides_allocated": 1,
-                "seq_id": 11
+                "seq_id": 14
               },
               "seq_id": 2,
               "chunks_sorted": [
@@ -541,7 +583,7 @@
             "title": "Summary & Key Takeaways",
             "placeholder": "Auto-generate based on covered topics."
           },
-          "seq_id": 12
+          "seq_id": 15
         },
         {
           "section_type": "End",
@@ -549,22 +591,22 @@
             "title": "Thank You",
             "text": "Questions?"
           },
-          "seq_id": 13
+          "seq_id": 16
         }
       ]
     },
     {
       "deck_number": 3,
-      "total_slides_in_deck": 31,
+      "total_slides_in_deck": 36,
       "slide_count_breakdown": {
         "framework": 4,
-        "content": 25,
+        "content": 30,
         "interactive": 2
       },
       "time_breakdown_minutes": {
         "framework": 6,
-        "content_and_interactive": 85,
-        "total_deck_time": 91
+        "content_and_interactive": 110,
+        "total_deck_time": 116
       },
       "sections": [
         {
@@ -606,7 +648,7 @@
               },
               "children": [],
               "interactive_activity": {
-                "title": "Maintaining Professional Conduct (Interactive Activity)",
+                "title": "Maintaining Professional Conduct (General Activity)",
                 "toc_id": 23,
                 "slides_allocated": 1,
                 "seq_id": 3
@@ -633,11 +675,11 @@
               "total_chunks_in_branch": 109,
               "budget_slides_content": 22,
               "direct_slides_content": 2,
-              "total_slides_in_branch": 24,
+              "total_slides_in_branch": 29,
               "time_allocation_minutes": {
                 "direct_content_time": 6,
                 "direct_interactive_time": 5,
-                "total_branch_time": 74
+                "total_branch_time": 99
               },
               "children": [
                 {
@@ -647,13 +689,19 @@
                   "total_chunks_in_branch": 14,
                   "budget_slides_content": 3,
                   "direct_slides_content": 3,
-                  "total_slides_in_branch": 3,
+                  "total_slides_in_branch": 4,
                   "time_allocation_minutes": {
                     "direct_content_time": 9,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 9
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 14
                   },
                   "children": [],
+                  "interactive_activity": {
+                    "title": "Gathering the Evidence (Deep-Dive Activity)",
+                    "toc_id": 41,
+                    "slides_allocated": 1,
+                    "seq_id": 6
+                  },
                   "seq_id": 5,
                   "chunks_sorted": [
                     576,
@@ -680,11 +728,11 @@
                   "total_chunks_in_branch": 8,
                   "budget_slides_content": 2,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 3,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 6
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 11
                   },
                   "children": [
                     {
@@ -701,7 +749,7 @@
                         "total_branch_time": 3
                       },
                       "children": [],
-                      "seq_id": 7,
+                      "seq_id": 8,
                       "chunks_sorted": [
                         596,
                         597
@@ -709,7 +757,13 @@
                       "content": "Acquiring an Image of Evidence Media\n\nAfter you retrieve and secure the evidence, you’re ready to copy the evidence media and analyze the data. The first rule of digital forensics is to preserve the original evidence. Then conduct your analysis only on a copy of the data—the image of the original medium. Several vendors offer Windows and Linux acquisition tools. These tools, however, require a write-blocking device (discussed in Chapter 3) when acquiring data from disks and USB drives; you also learn about acquiring forensic images in this chapter."
                     }
                   ],
-                  "seq_id": 6,
+                  "interactive_activity": {
+                    "title": "Understanding Bit-stream Copies (Deep-Dive Activity)",
+                    "toc_id": 42,
+                    "slides_allocated": 1,
+                    "seq_id": 9
+                  },
+                  "seq_id": 7,
                   "chunks_sorted": [
                     590,
                     591,
@@ -727,11 +781,11 @@
                   "total_chunks_in_branch": 48,
                   "budget_slides_content": 10,
                   "direct_slides_content": 9,
-                  "total_slides_in_branch": 10,
+                  "total_slides_in_branch": 11,
                   "time_allocation_minutes": {
                     "direct_content_time": 27,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 30
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 35
                   },
                   "children": [
                     {
@@ -748,7 +802,7 @@
                         "total_branch_time": 3
                       },
                       "children": [],
-                      "seq_id": 9,
+                      "seq_id": 11,
                       "chunks_sorted": [
                         642,
                         643,
@@ -758,7 +812,13 @@
                       "content": "Some Additional Features of Autopsy\n\nIf you find a file of interest that displays binary (nonprintable) data in the Content Viewer, there are six available viewing options in Autopsy: Hex, Strings, File Metadata, Results, Indexed Text, and Media. To view an unallocated sector for its hexadecimal values, click the Hex tab in the Content Viewer, as shown in Figure 1-20.\n\nIf you want to examine an Office file, such as an Excel spreadsheet, right-click the file and click Open in External Viewer. To use this option, you must have the external viewer’s software installed on your computer. To export a file from Autopsy, select it, and then right-click the file and click Extract File. In the Save dialog box that opens, you can copy the file to a work folder.\n\nIn the next section, you learn how to complete the case. In later chapters, you learn how to apply more search and analysis techniques."
                     }
                   ],
-                  "seq_id": 8,
+                  "interactive_activity": {
+                    "title": "Analyzing Your Digital Evidence (Deep-Dive Activity)",
+                    "toc_id": 44,
+                    "slides_allocated": 1,
+                    "seq_id": 12
+                  },
+                  "seq_id": 10,
                   "chunks_sorted": [
                     598,
                     599,
@@ -814,11 +874,11 @@
                   "total_chunks_in_branch": 22,
                   "budget_slides_content": 4,
                   "direct_slides_content": 2,
-                  "total_slides_in_branch": 4,
+                  "total_slides_in_branch": 5,
                   "time_allocation_minutes": {
                     "direct_content_time": 6,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 12
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 17
                   },
                   "children": [
                     {
@@ -835,7 +895,7 @@
                         "total_branch_time": 6
                       },
                       "children": [],
-                      "seq_id": 11,
+                      "seq_id": 14,
                       "chunks_sorted": [
                         658,
                         659,
@@ -851,7 +911,13 @@
                       "content": "Autopsy’s Report Generator\n\nAutopsy has several styles of reports, including a plain text file, an HTML Web page with links to artifacts, and an Excel spreadsheet. To generate a report, you can follow this general procedure:\n\n1.\n\nIf you exited Autopsy, start it again, and click Open Recent Case. Click InChap01 and then click Open in the Recent Case window. In Autopsy’s main window, click the Generate Report button at the top.\n\n2.\n\nIn the Generate Report window, select the report format you want in the Report Modules section (see Figure 1-21). The Results - HTML option, for example, produces a linkable Web page with tagged artifacts, and the Files - Text option creates a plain text output file. When you’re finished, click Next.\n\n3.\n\nIf you select Results - HTML, the Configure Artifacts Report window opens, where you can select what data to add to the report. After you make your selections, click Finish to generate the report.\n\n4.\n\nAfter the report is generated, Autopsy displays the Report Generation Progress window. Click the link to open the report, and then click Close after you’ve reviewed it."
                     }
                   ],
-                  "seq_id": 10,
+                  "interactive_activity": {
+                    "title": "Completing the Case (Deep-Dive Activity)",
+                    "toc_id": 46,
+                    "slides_allocated": 1,
+                    "seq_id": 15
+                  },
+                  "seq_id": 13,
                   "chunks_sorted": [
                     646,
                     647,
@@ -875,14 +941,20 @@
                   "total_chunks_in_branch": 9,
                   "budget_slides_content": 2,
                   "direct_slides_content": 2,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 3,
                   "time_allocation_minutes": {
                     "direct_content_time": 6,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 6
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 11
                   },
                   "children": [],
-                  "seq_id": 12,
+                  "interactive_activity": {
+                    "title": "Critiquing the Case (Deep-Dive Activity)",
+                    "toc_id": 48,
+                    "slides_allocated": 1,
+                    "seq_id": 17
+                  },
+                  "seq_id": 16,
                   "chunks_sorted": [
                     668,
                     669,
@@ -898,10 +970,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "Conducting an Investigation (Interactive Activity)",
+                "title": "Conducting an Investigation (General Activity)",
                 "toc_id": 40,
                 "slides_allocated": 1,
-                "seq_id": 13
+                "seq_id": 18
               },
               "seq_id": 4,
               "chunks_sorted": [
@@ -924,7 +996,7 @@
             "title": "Summary & Key Takeaways",
             "placeholder": "Auto-generate based on covered topics."
           },
-          "seq_id": 14
+          "seq_id": 19
         },
         {
           "section_type": "End",
@@ -932,22 +1004,22 @@
             "title": "Thank You",
             "text": "Questions?"
           },
-          "seq_id": 15
+          "seq_id": 20
         }
       ]
     },
     {
       "deck_number": 4,
-      "total_slides_in_deck": 24,
+      "total_slides_in_deck": 27,
       "slide_count_breakdown": {
         "framework": 4,
-        "content": 19,
+        "content": 22,
         "interactive": 1
       },
       "time_breakdown_minutes": {
         "framework": 6,
-        "content_and_interactive": 62,
-        "total_deck_time": 68
+        "content_and_interactive": 77,
+        "total_deck_time": 83
       },
       "sections": [
         {
@@ -980,11 +1052,11 @@
               "total_chunks_in_branch": 97,
               "budget_slides_content": 19,
               "direct_slides_content": 1,
-              "total_slides_in_branch": 20,
+              "total_slides_in_branch": 23,
               "time_allocation_minutes": {
                 "direct_content_time": 3,
                 "direct_interactive_time": 5,
-                "total_branch_time": 62
+                "total_branch_time": 77
               },
               "children": [
                 {
@@ -994,13 +1066,19 @@
                   "total_chunks_in_branch": 12,
                   "budget_slides_content": 2,
                   "direct_slides_content": 2,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 3,
                   "time_allocation_minutes": {
                     "direct_content_time": 6,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 6
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 11
                   },
                   "children": [],
+                  "interactive_activity": {
+                    "title": "An Overview of a Computer Crime (Deep-Dive Activity)",
+                    "toc_id": 25,
+                    "slides_allocated": 1,
+                    "seq_id": 4
+                  },
                   "seq_id": 3,
                   "chunks_sorted": [
                     314,
@@ -1025,14 +1103,20 @@
                   "total_chunks_in_branch": 4,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 1,
+                  "total_slides_in_branch": 2,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 3
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 8
                   },
                   "children": [],
-                  "seq_id": 4,
+                  "interactive_activity": {
+                    "title": "An Overview of a Company Policy Violation (Deep-Dive Activity)",
+                    "toc_id": 26,
+                    "slides_allocated": 1,
+                    "seq_id": 6
+                  },
+                  "seq_id": 5,
                   "chunks_sorted": [
                     326,
                     327,
@@ -1048,11 +1132,11 @@
                   "total_chunks_in_branch": 77,
                   "budget_slides_content": 15,
                   "direct_slides_content": 3,
-                  "total_slides_in_branch": 15,
+                  "total_slides_in_branch": 16,
                   "time_allocation_minutes": {
                     "direct_content_time": 9,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 45
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 50
                   },
                   "children": [
                     {
@@ -1069,7 +1153,7 @@
                         "total_branch_time": 6
                       },
                       "children": [],
-                      "seq_id": 6,
+                      "seq_id": 8,
                       "chunks_sorted": [
                         346,
                         347,
@@ -1099,7 +1183,7 @@
                         "total_branch_time": 24
                       },
                       "children": [],
-                      "seq_id": 7,
+                      "seq_id": 9,
                       "chunks_sorted": [
                         357,
                         358,
@@ -1159,7 +1243,7 @@
                         "total_branch_time": 6
                       },
                       "children": [],
-                      "seq_id": 8,
+                      "seq_id": 10,
                       "chunks_sorted": [
                         398,
                         399,
@@ -1174,7 +1258,13 @@
                       "content": "Securing Your Evidence\n\nDigital investigations demand that you adjust your procedures to suit the case. For example, if the evidence for a case includes an entire computer system and associated storage media, such as flash drives and large external hard drives, you must be flexible when you account for all these items. Some evidence is small enough to fit into an evidence bag. Other items, such as CPU cabinets, monitors, keyboards, and printers, are too large.\n\nTo secure and catalog the evidence contained in large computer components, you can use large evidence bags Nonstatic bags used to transport computer components and other digital devices. , tape, tags, labels, and other products available from police supply vendors or office supply stores. When gathering products to secure your computer evidence, make sure they are safe and effective to use on computer components. Be cautious when handling any computer component to avoid damaging the component or coming into contact with static electricity, which can destroy digital data. For this reason, make sure you use antistatic bags when collecting computer evidence. Consider using an antistatic pad with an attached wrist strap, too. Both help prevent damage to computer evidence.\n\nNote\n\nThis section focuses on securing computers and related hardware. Devices such as smartphones and cell phones are covered later in Chapter 12.\n\nBe sure to place computer evidence in a well-padded container. Padding prevents damage to the evidence as you transport it to your secure evidence locker, evidence room, or computer lab. Save discarded hard drive boxes, antistatic bags, and packing material for computer hardware when you or others acquire computer devices.\n\nBecause you might not have everything needed to secure your evidence, you have to improvise. Securing evidence often requires building secure containers. If the computer component is large and contained in its own casing, you can use evidence tape to seal all openings on the cabinet. Placing evidence tape over drive bays, insertion slots for power supply cords and USB cables, and any other openings ensures the security of evidence. As a standard practice, you should write your initials on the tape before applying it to the evidence. This practice makes it possible to prove later in court that the evidence hasn’t been tampered with because the casing couldn’t have been opened nor could power have been supplied to the closed casing with this tape in place. If the tape had been replaced, your\n\nbeen supplied to the closed casing with this tape in place. If the tape had been replaced, your initials wouldn’t be present, which would indicate tampering. If you transport a computer, place new disks in disk drives to reduce possible drive damage while you’re moving it.\n\nComputer components require specific temperature and humidity ranges. If it’s too cold, hot, or wet, computer components and magnetic media can be damaged. Even heated car seats can damage digital media, and placing a computer on top of a two-way car radio in the trunk can damage magnetic media. When collecting computer evidence, make sure you have a safe environment for transporting and storing it until a secure evidence container is available."
                     }
                   ],
-                  "seq_id": 5,
+                  "interactive_activity": {
+                    "title": "Taking a Systematic Approach (Deep-Dive Activity)",
+                    "toc_id": 27,
+                    "slides_allocated": 1,
+                    "seq_id": 11
+                  },
+                  "seq_id": 7,
                   "chunks_sorted": [
                     330,
                     331,
@@ -1197,10 +1287,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "Preparing a Digital Forensics Investigation (Interactive Activity)",
+                "title": "Preparing a Digital Forensics Investigation (General Activity)",
                 "toc_id": 24,
                 "slides_allocated": 1,
-                "seq_id": 9
+                "seq_id": 12
               },
               "seq_id": 2,
               "chunks_sorted": [
@@ -1219,7 +1309,7 @@
             "title": "Summary & Key Takeaways",
             "placeholder": "Auto-generate based on covered topics."
           },
-          "seq_id": 10
+          "seq_id": 13
         },
         {
           "section_type": "End",
@@ -1227,22 +1317,22 @@
             "title": "Thank You",
             "text": "Questions?"
           },
-          "seq_id": 11
+          "seq_id": 14
         }
       ]
     },
     {
       "deck_number": 5,
-      "total_slides_in_deck": 30,
+      "total_slides_in_deck": 35,
       "slide_count_breakdown": {
         "framework": 4,
-        "content": 25,
+        "content": 30,
         "interactive": 1
       },
       "time_breakdown_minutes": {
         "framework": 6,
-        "content_and_interactive": 80,
-        "total_deck_time": 86
+        "content_and_interactive": 105,
+        "total_deck_time": 111
       },
       "sections": [
         {
@@ -1275,11 +1365,11 @@
               "total_chunks_in_branch": 124,
               "budget_slides_content": 25,
               "direct_slides_content": 0,
-              "total_slides_in_branch": 26,
+              "total_slides_in_branch": 31,
               "time_allocation_minutes": {
                 "direct_content_time": 0,
                 "direct_interactive_time": 5,
-                "total_branch_time": 80
+                "total_branch_time": 105
               },
               "children": [
                 {
@@ -1289,13 +1379,19 @@
                   "total_chunks_in_branch": 2,
                   "budget_slides_content": 0,
                   "direct_slides_content": 0,
-                  "total_slides_in_branch": 0,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 0,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 0
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 5
                   },
                   "children": [],
+                  "interactive_activity": {
+                    "title": "Employee Termination Cases (Deep-Dive Activity)",
+                    "toc_id": 32,
+                    "slides_allocated": 1,
+                    "seq_id": 4
+                  },
                   "seq_id": 3,
                   "chunks_sorted": [
                     409,
@@ -1310,14 +1406,20 @@
                   "total_chunks_in_branch": 19,
                   "budget_slides_content": 4,
                   "direct_slides_content": 4,
-                  "total_slides_in_branch": 4,
+                  "total_slides_in_branch": 5,
                   "time_allocation_minutes": {
                     "direct_content_time": 12,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 12
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 17
                   },
                   "children": [],
-                  "seq_id": 4,
+                  "interactive_activity": {
+                    "title": "Internet Abuse Investigations (Deep-Dive Activity)",
+                    "toc_id": 33,
+                    "slides_allocated": 1,
+                    "seq_id": 6
+                  },
+                  "seq_id": 5,
                   "chunks_sorted": [
                     411,
                     412,
@@ -1348,14 +1450,20 @@
                   "total_chunks_in_branch": 16,
                   "budget_slides_content": 3,
                   "direct_slides_content": 3,
-                  "total_slides_in_branch": 3,
+                  "total_slides_in_branch": 4,
                   "time_allocation_minutes": {
                     "direct_content_time": 9,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 9
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 14
                   },
                   "children": [],
-                  "seq_id": 5,
+                  "interactive_activity": {
+                    "title": "E-mail Abuse Investigations (Deep-Dive Activity)",
+                    "toc_id": 34,
+                    "slides_allocated": 1,
+                    "seq_id": 8
+                  },
+                  "seq_id": 7,
                   "chunks_sorted": [
                     430,
                     431,
@@ -1383,14 +1491,20 @@
                   "total_chunks_in_branch": 33,
                   "budget_slides_content": 7,
                   "direct_slides_content": 7,
-                  "total_slides_in_branch": 7,
+                  "total_slides_in_branch": 8,
                   "time_allocation_minutes": {
                     "direct_content_time": 21,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 21
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 26
                   },
                   "children": [],
-                  "seq_id": 6,
+                  "interactive_activity": {
+                    "title": "Attorney-Client Privilege Investigations (Deep-Dive Activity)",
+                    "toc_id": 35,
+                    "slides_allocated": 1,
+                    "seq_id": 10
+                  },
+                  "seq_id": 9,
                   "chunks_sorted": [
                     446,
                     447,
@@ -1435,11 +1549,11 @@
                   "total_chunks_in_branch": 52,
                   "budget_slides_content": 11,
                   "direct_slides_content": 8,
-                  "total_slides_in_branch": 11,
+                  "total_slides_in_branch": 12,
                   "time_allocation_minutes": {
                     "direct_content_time": 24,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 33
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 38
                   },
                   "children": [
                     {
@@ -1456,7 +1570,7 @@
                         "total_branch_time": 9
                       },
                       "children": [],
-                      "seq_id": 8,
+                      "seq_id": 12,
                       "chunks_sorted": [
                         520,
                         521,
@@ -1473,7 +1587,13 @@
                       "content": "Interviews and Interrogations in High-Tech Investigations\n\nBecoming a skilled interviewer and interrogator can take many years of experience. Typically, a private-sector digital investigator is a technical person acquiring the evidence for an investigation. Many large organizations have full-time security investigators with years of training and experience in criminal and civil investigations and interviewing techniques. Few of these investigators have any computing or network technical skills, so you might be asked to assist in interviewing or interrogating a suspect when you have performed a forensic disk analysis on that suspect’s machine.\n\nAn interrogation is different from an interview. An interview A conversation conducted to collect information from a witness or suspect about specific facts related to an investigation. is usually conducted to collect information from a witness or suspect about specific facts related to an investigation. An interrogation The process of trying to get a suspect to confess to a specific incident or crime. is the process of trying to get a suspect to confess to a specific incident or crime. An investigator might change from an interview to an interrogation when talking to a witness or suspect. The more experience and training investigators have in the art of interviewing and interrogating, the more easily they can determine whether a witness is credible and possibly a suspect.\n\nYour role as a digital investigator is to instruct the investigator conducting the interview on what questions to ask and what the answers should be. As you build rapport with the investigator, he or she might ask you to question the suspect. Watching a skilled interrogator is a learning experience in human relations skills. If you’re asked to assist in an interview or interrogation, prepare yourself by answering the following questions:\n\nWhat questions do I need to ask the suspect to get the vital information about the case?\n\nDo I know what I’m talking about, or will I have to research the topic or technology related to the investigation?\n\nDo I need additional questions to cover other indirect issues related to the investigation?\n\nCommon interview and interrogation errors include being unprepared for the interview or interrogation and not having the right questions or enough questions to increase your depth of knowledge. Make sure you don’t run out of conversation topics; you need to keep the conversation friendly to gain the suspect’s confidence. Avoid doubting your own skills, which might show the suspect you lack confidence in your ability. The ingredients for a successful interview or interrogation include the following:\n\nBeing patient throughout the session\n\nRepeating or rephrasing questions to zero in on specific facts from a reluctant witness or suspect\n\nBeing tenacious"
                     }
                   ],
-                  "seq_id": 7,
+                  "interactive_activity": {
+                    "title": "Industrial Espionage Investigations (Deep-Dive Activity)",
+                    "toc_id": 36,
+                    "slides_allocated": 1,
+                    "seq_id": 13
+                  },
+                  "seq_id": 11,
                   "chunks_sorted": [
                     479,
                     480,
@@ -1521,10 +1641,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "Procedures for Private-Sector High-Tech Investigations (Interactive Activity)",
+                "title": "Procedures for Private-Sector High-Tech Investigations (General Activity)",
                 "toc_id": 31,
                 "slides_allocated": 1,
-                "seq_id": 9
+                "seq_id": 14
               },
               "seq_id": 2,
               "chunks_sorted": [
@@ -1541,7 +1661,7 @@
             "title": "Summary & Key Takeaways",
             "placeholder": "Auto-generate based on covered topics."
           },
-          "seq_id": 10
+          "seq_id": 15
         },
         {
           "section_type": "End",
@@ -1549,22 +1669,22 @@
             "title": "Thank You",
             "text": "Questions?"
           },
-          "seq_id": 11
+          "seq_id": 16
         }
       ]
     },
     {
       "deck_number": 6,
-      "total_slides_in_deck": 12,
+      "total_slides_in_deck": 13,
       "slide_count_breakdown": {
         "framework": 4,
-        "content": 7,
+        "content": 8,
         "interactive": 1
       },
       "time_breakdown_minutes": {
         "framework": 6,
-        "content_and_interactive": 26,
-        "total_deck_time": 32
+        "content_and_interactive": 31,
+        "total_deck_time": 37
       },
       "sections": [
         {
@@ -1597,11 +1717,11 @@
               "total_chunks_in_branch": 37,
               "budget_slides_content": 7,
               "direct_slides_content": 3,
-              "total_slides_in_branch": 8,
+              "total_slides_in_branch": 9,
               "time_allocation_minutes": {
                 "direct_content_time": 9,
                 "direct_interactive_time": 5,
-                "total_branch_time": 26
+                "total_branch_time": 31
               },
               "children": [
                 {
@@ -1611,13 +1731,19 @@
                   "total_chunks_in_branch": 19,
                   "budget_slides_content": 4,
                   "direct_slides_content": 4,
-                  "total_slides_in_branch": 4,
+                  "total_slides_in_branch": 5,
                   "time_allocation_minutes": {
                     "direct_content_time": 12,
-                    "direct_interactive_time": 0,
-                    "total_branch_time": 12
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 17
                   },
                   "children": [],
+                  "interactive_activity": {
+                    "title": "Setting Up Your Workstation for Digital Forensics (Deep-Dive Activity)",
+                    "toc_id": 39,
+                    "slides_allocated": 1,
+                    "seq_id": 4
+                  },
                   "seq_id": 3,
                   "chunks_sorted": [
                     549,
@@ -1644,10 +1770,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "Understanding Data Recovery Workstations and Software (Interactive Activity)",
+                "title": "Understanding Data Recovery Workstations and Software (General Activity)",
                 "toc_id": 38,
                 "slides_allocated": 1,
-                "seq_id": 4
+                "seq_id": 5
               },
               "seq_id": 2,
               "chunks_sorted": [
@@ -1680,7 +1806,7 @@
             "title": "Summary & Key Takeaways",
             "placeholder": "Auto-generate based on covered topics."
           },
-          "seq_id": 5
+          "seq_id": 6
         },
         {
           "section_type": "End",
@@ -1688,7 +1814,7 @@
             "title": "Thank You",
             "text": "Questions?"
           },
-          "seq_id": 6
+          "seq_id": 7
         }
       ]
     }

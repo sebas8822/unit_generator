@@ -1,0 +1,390 @@
+{
+    "//_INSTRUCTIONS": "This file describes the available slide layouts. The 'available_layouts' section is for an LLM to read. The 'user_selections' section is for you to edit. Please verify the 'selected_layout_index' for each slide type.",
+    "template_file": "slide_style_test.pptx",
+    "user_selections": {
+        "Title": {
+            "description": "Main title slide of the deck.",
+            "selected_layout_index": 0
+        },
+        "Agenda": {
+            "description": "Agenda/Table of Contents slide.",
+            "selected_layout_index": 1
+        },
+        "Content": {
+            "description": "Default slide for a standard topic with bullet points.",
+            "selected_layout_index": 1
+        },
+        "Content_Two_Column": {
+            "description": "Slide for side-by-side content, like comparisons.",
+            "selected_layout_index": 2
+        },
+        "Content_child": {
+            "description": "Default slide for a standard topic with bullet points.",
+            "selected_layout_index": 3
+        },
+        "Content_Two_Column_child": {
+            "description": "Slide for side-by-side content, like comparisons.",
+            "selected_layout_index": 4
+        },
+        "Application": {
+            "description": "Slide for interactive questions ('Let's Apply This!').",
+            "selected_layout_index": 5
+        },
+        "Application_Two_Column ": {
+            "description": "Slide for side-by-side content ('Let's Apply This!').",
+            "selected_layout_index": 6
+        },
+        "Summary": {
+            "description": "The final summary slide of the deck.",
+            "selected_layout_index": 1
+        },
+        "End": {
+            "description": "The final 'Thank You / Questions?' slide.",
+            "selected_layout_index": 8
+        },
+        "Divider": {
+            "description": "Slide that divide sections general use base on the agenda.",
+            "selected_layout_index": 7
+        }
+    },
+    "available_layouts": [
+        {
+            "layout_index": 0,
+            "layout_name": "Intro Slide (Center Title + Subtitle)",
+            "capabilities": {
+                "title_support": "centered_title_with_subtitle",
+                "body_layout": "no_body",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "CENTER_TITLE", --> Title topics ( "week_topic": "Understanding the Digital Forensics Profession and Investigations.")
+                    "name": "Title 1",
+                    "left": 1.67,
+                    "top": 2.91,
+                    "width": 10.0,
+                    "height": 1.57
+                },
+                {
+                    "idx": 1,
+                    "type": "SUBTITLE", --> subtitle ("deck_title": "Week 1, Lecture 1", "unit_code": "ICT312", "unit_name": "Digital Forensic",)
+                    "name": "Subtitle 2",
+                    "left": 1.67,
+                    "top": 4.77,
+                    "width": 10.0,
+                    "height": 1.24
+                }
+            ]
+        },
+        {
+            "layout_index": 1,
+            "layout_name": "TOC (Title + Body Object)",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "single_column",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE", --> title topic or agenda ("title": "Today's Agenda")
+                    "name": "Title 1",
+                    "left": 2.77,
+                    "top": 0.59,
+                    "width": 10.34,
+                    "height": 0.79
+                },
+                {
+                    "idx": 1,
+                    "type": "OBJECT", --> Items from "section_type": "Agenda"( "items": ["An Overview of Digital Forensics"] this can be presented with a vertical courve list from smartart
+                    "name": "Content Placeholder 2",
+                    "left": 0.86,
+                    "top": 1.83,
+                    "width": 11.62,
+                    "height": 5.08
+                }
+            ]
+        },
+        {
+            "layout_index": 1,
+            "layout_name": "Content (Title + Body Object)",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "single_column",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE", --> parent title ("title": "An Overview of Digital Forensics",)
+                    "name": "Title 1",
+                    "left": 2.77,
+                    "top": 0.59,
+                    "width": 10.34,
+                    "height": 0.79
+                },
+                {
+                    "idx": 1,
+                    "type": "OBJECT", 
+                    "name": "Content Placeholder 2",
+                    "left": 0.86,
+                    "top": 1.83,
+                    "width": 11.62,
+                    "height": 5.08
+                }
+            ]
+        },
+        {
+            "layout_index": 2,
+            "layout_name": "Two-Column (Title + Body Object Left + Body Object Right)",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "2_column",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 1,
+                    "type": "OBJECT", --> defined before 
+                    "name": "Content Placeholder 2",
+                    "left": 0.92,
+                    "top": 1.74,
+                    "width": 5.67,
+                    "height": 5.02
+                },
+                {
+                    "idx": 2,
+                    "type": "OBJECT", --> defined before 
+                    "name": "Content Placeholder 3",
+                    "left": 6.75,
+                    "top": 1.74,
+                    "width": 5.67,
+                    "height": 5.02
+                },
+                {
+                    "idx": 0,
+                    "type": "TITLE", --> same as before jsut the content change by the presentattion
+                    "name": "Title 1",
+                    "left": 2.77,
+                    "top": 0.59,
+                    "width": 10.11,
+                    "height": 0.79
+                }
+            ]
+        },
+        {
+            "layout_index": 3,
+            "layout_name": "Child Slide (Title + Subtitle + Body Object)",
+            "capabilities": {
+                "title_support": "standard_title_with_subtitle",
+                "body_layout": "single_column",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE", --> Parent "title": "An Overview of Digital Forensics",
+                    "name": "Title 1",
+                    "left": 2.77,
+                    "top": 0.59,
+                    "width": 10.34,
+                    "height": 0.79
+                },
+                {
+                    "idx": 1,
+                    "type": "OBJECT", --> defined before
+                    "name": "Content Placeholder 2",
+                    "left": 0.86,
+                    "top": 1.83,
+                    "width": 11.62,
+                    "height": 5.08
+                },
+                {
+                    "idx": 12,
+                    "type": "SUBTITLE", --> children "title": "Understanding Case Law"
+                    "name": "Subtitle 2",
+                    "left": 0.86,
+                    "top": 1.41,
+                    "width": 11.62,
+                    "height": 0.41
+                }
+            ]
+        },
+        {
+            "layout_index": 4,
+            "layout_name": "Two-Column Child (Title + Subtitle + Body Object Left + Body Object Right)",
+            "capabilities": {
+                "title_support": "standard_title_with_subtitle",
+                "body_layout": "2_column",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE",  --> Parent "title": "An Overview of Digital Forensics",
+                    "name": "Title 1",
+                    "left": 2.77,
+                    "top": 0.59,
+                    "width": 10.34,
+                    "height": 0.79
+                },
+                {
+                    "idx": 1,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 2",
+                    "left": 0.86,
+                    "top": 1.83,
+                    "width": 5.56,
+                    "height": 5.08
+                },
+                {
+                    "idx": 12,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 2",
+                    "left": 6.67,
+                    "top": 1.83,
+                    "width": 5.81,
+                    "height": 5.08
+                },
+                {
+                    "idx": 13,
+                    "type": "SUBTITLE", --> children "title": "Understanding Case Law"
+                    "name": "Subtitle 2",
+                    "left": 0.86,
+                    "top": 1.41,
+                    "width": 11.62,
+                    "height": 0.41
+                }
+            ]
+        },
+        {
+            "layout_index": 5,
+            "layout_name": "General Interactive (Title + Body Object + Text Answer)",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "stacked_sections",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 1,
+                    "type": "OBJECT", --> 
+                    "name": "Content Placeholder 2",
+                    "left": 0.74,
+                    "top": 2.19,
+                    "width": 11.86,
+                    "height": 4.76
+                },
+                {
+                    "idx": 0,
+                    "type": "TITLE", --> title interactive activity - "interactive_activity": { "title": "Digital Forensics and Other Related Disciplines (Deep-Dive Activity)"
+                    "name": "Title 1",
+                    "left": 0.74,
+                    "top": 1.26,
+                    "width": 11.86,
+                    "height": 0.79
+                },
+                {
+                    "idx": 10,
+                    "type": "BODY", --> Interactive activity Answer or guide
+                    "name": "Text Placeholder 5",
+                    "left": 0.29,
+                    "top": 7.19,
+                    "width": 12.73,
+                    "height": 0.31
+                }
+            ]
+        },
+        {
+            "layout_index": 6,
+            "layout_name": "Two-Column Stacked Interactive (Title + Body Object L/R + Text Answer )",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "stacked_sections",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 1,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 2",
+                    "left": 0.74,
+                    "top": 2.19,
+                    "width": 5.66,
+                    "height": 4.76
+                },
+                {
+                    "idx": 0,
+                    "type": "TITLE", --> title interactive activity - "interactive_activity": { "title": "Digital Forensics and Other Related Disciplines (Deep-Dive Activity)"
+                    "name": "Title 1",
+                    "left": 0.74,
+                    "top": 1.26,
+                    "width": 11.86,
+                    "height": 0.79
+                },
+                {
+                    "idx": 10,
+                    "type": "OBJECT",
+                    "name": "Content Placeholder 2",
+                    "left": 6.67,
+                    "top": 2.2,
+                    "width": 6.09,
+                    "height": 4.76
+                },
+                {
+                    "idx": 11,
+                    "type": "BODY", --> Interactive activity Answer or guide this is hidde in the slide 
+                    "name": "Text Placeholder 5",
+                    "left": 0.29,
+                    "top": 7.19,
+                    "width": 12.73,
+                    "height": 0.31
+                }
+            ]
+        },
+        {
+            "layout_index": 7,
+            "layout_name": "Section Divider (Centered Title)",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "no_body",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE", --> Parent title so use it every time when is parent
+                    "name": "Title 1",
+                    "left": 1.52,
+                    "top": 3.41,
+                    "width": 10.29,
+                    "height": 0.68
+                }
+            ]
+        },
+        {
+            "layout_index": 8,
+            "layout_name": "Closing Slide (Title)",
+            "capabilities": {
+                "title_support": "standard_title",
+                "body_layout": "no_body",
+                "specific_content_types": []
+            },
+            "placeholders": [
+                {
+                    "idx": 0,
+                    "type": "TITLE", --> "section_type": "End", "content": {  "title": "Thank You", "text": "Questions?")
+                    "name": "Title 1",
+                    "left": 1.46,
+                    "top": 5.08,
+                    "width": 10.29,
+                    "height": 0.68
+                }
+            ]
+        }
+    ]
+}
+
+
+

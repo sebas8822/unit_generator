@@ -1,0 +1,168 @@
+{
+  "unit_code": "ICT312",
+  "week": 1,
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Understanding the Digital Forensics Profession and Investigations.",
+            "deck_title": "Week 1, Lecture 1"
+          },
+          "seq_id": 0
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "An Overview of Digital Forensics",
+              "-> Disciplines & History",
+              "-> Case Law & Resources",
+              "Key Principles & Summary"
+            ]
+          },
+          "seq_id": 1
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "An Overview of Digital Forensics",
+              "toc_id": 9,
+              "seq_id": 2,
+              "llm_generated_content": {
+                "title": "An Overview of Digital Forensics",
+                "content": [
+                  "Definition: Applying investigative procedures for a legal purpose involving digital evidence.",
+                  "Key Principles (per Ken Zatyko): Proper search authority, chain of custody, mathematical validation (hashing), and use of validated tools.",
+                  "Global Standardization: ISO 27037 provides guidelines for identifying, collecting, and preserving digital evidence.",
+                  "Legal Framework: The Fourth Amendment protects against unreasonable search and seizure, heavily influencing digital evidence collection."
+                ]
+              },
+              "children": [
+                {
+                  "title": "Digital Forensics and Other Related Disciplines",
+                  "toc_id": 10,
+                  "seq_id": 3,
+                  "llm_generated_content": {
+                    "title": "Digital Forensics vs. Related Disciplines",
+                    "content": [
+                      "Digital Forensics: Focuses on recovering hidden or deleted data as valid evidence for legal proceedings.",
+                      "Network Forensics: Traces attacker access, monitors network logs, and analyzes network traffic.",
+                      "Data Recovery: Retrieves information lost accidentally or due to system failure; the target data is typically known.",
+                      "The Investigations Triad: Combines Digital Investigations, Vulnerability Assessment, and Incident Response."
+                    ]
+                  },
+                  "interactive_activity": {
+                    "title": "Activity for 'Related Disciplines'",
+                    "seq_id": 4,
+                    "llm_generated_content": {
+                      "title": "Let's Apply This! (Deep-Dive)",
+                      "content": [
+                        "A company's server crashes, and the accounting department needs to retrieve last month's financial reports. Is this primarily an act of digital forensics or data recovery?",
+                        "Answer: Data Recovery, because the goal is to restore known, non-hidden data lost accidentally."
+                      ]
+                    }
+                  }
+                },
+                {
+                  "title": "A Brief History of Digital Forensics",
+                  "toc_id": 11,
+                  "seq_id": 5,
+                  "llm_generated_content": {
+                    "title": "A Brief History of Digital Forensics",
+                    "content": [
+                      "1970s: Rise of electronic white-collar crime in the financial sector.",
+                      "1980s: Proliferation of PCs and various OSs led to the first forensics tools from government agencies (e.g., RCMP, IRS).",
+                      "Early 1990s: First commercial GUI tools like 'Expert Witness' appear.",
+                      "Modern Era: Tools like EnCase and FTK handle large storage devices and complex file systems."
+                    ]
+                  },
+                  "interactive_activity": {
+                    "title": "Activity for 'History'",
+                    "seq_id": 6,
+                    "llm_generated_content": {
+                      "title": "Let's Apply This! (Deep-Dive)",
+                      "content": [
+                        "Why did the growth of PC usage in the 1980s necessitate the development of formal digital forensics tools?",
+                        "A) Mainframes were immune to electronic crime.",
+                        "B) The variety of new operating systems and file types created new challenges for investigation.",
+                        "C) All PCs came with built-in encryption.",
+                        "Answer: B"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "title": "Understanding Case Law",
+                  "toc_id": 12,
+                  "seq_id": 7,
+                  "llm_generated_content": {
+                    "title": "The Role of Case Law",
+                    "content": [
+                      "Case law is used when statutes don't exist for new technologies.",
+                      "It allows courts to apply rulings from similar past cases to current situations.",
+                      "Key issue: Balancing law enforcement's need to search with an individual's expectation of privacy (Fourth Amendment).",
+                      "Example Case: Commonwealth v. Copenhefer established that attempting to delete files does not automatically create a legally protected expectation of privacy."
+                    ]
+                  },
+                  "interactive_activity": {
+                    "title": "Activity for 'Case Law'",
+                    "seq_id": 8,
+                    "llm_generated_content": {
+                      "title": "Let's Apply This! (Deep-Dive)",
+                      "content": [
+                        "What is the primary function of case law in digital forensics?",
+                        "Answer: To interpret how existing laws (like the Fourth Amendment) apply to new technologies and ambiguous situations, setting precedents for future cases."
+                      ]
+                    }
+                  }
+                }
+              ],
+              "interactive_activity": {
+                "title": "General Activity for 'An Overview'",
+                "seq_id": 11,
+                "llm_generated_content": {
+                  "title": "Let's Apply This! (General)",
+                  "content": [
+                    "What is the purpose of using a mathematical hash function (e.g., SHA-256) on a piece of digital evidence?",
+                    "A) To encrypt the evidence so no one can read it.",
+                    "B) To compress the evidence to save storage space.",
+                    "C) To create a unique digital 'fingerprint' to verify that the evidence has not been altered.",
+                    "Answer: C"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "seq_id": 12,
+          "llm_generated_content": {
+            "title": "Summary & Key Takeaways",
+            "content": [
+              "Digital forensics is a scientific process for legal purposes, distinct from simple data recovery.",
+              "The field has evolved from mainframe crimes to handling complex modern systems, guided by standards like ISO 27037.",
+              "Case law continuously adapts constitutional principles, like the right to privacy, to new digital scenarios.",
+              "A successful investigator relies on a triad of skills: investigations, vulnerability assessment, and incident response."
+            ]
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          },
+          "seq_id": 13
+        }
+      ]
+    }
+  ]
+}
