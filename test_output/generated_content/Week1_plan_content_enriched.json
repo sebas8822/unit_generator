@@ -1,0 +1,44 @@
+{
+  "week": 1,
+  "overall_topic": "Understanding the Digital Forensics Profession and Investigations.",
+  "deck_plans": [
+    {
+      "sections": [
+        {
+          "section_type": "Title",
+          "seq_id": 0,
+          "content": {}
+        },
+        {
+          "section_type": "Agenda",
+          "seq_id": 1,
+          "content": {}
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "An Overview of Digital Forensics",
+              "toc_id": 9,
+              "seq_id": 2,
+              "direct_slides_content": 2,
+              "content": "Digital forensics is the application of computer science... It involves analyzing digital evidence... The Fourth Amendment protects against unreasonable searches..."
+            },
+            {
+              "title": "A Brief History of Digital Forensics",
+              "toc_id": 11,
+              "seq_id": 5,
+              "direct_slides_content": 1,
+              "content": "The history begins in the 1970s with mainframe crimes... In the 1980s, PC use grew... Specialized tools like EnCase emerged in the 90s..."
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "seq_id": 12,
+          "content": {}
+        }
+      ]
+    }
+  ]
+}

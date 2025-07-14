@@ -28,6 +28,33 @@ Interactive Purposes
 3. data: The actual content, formatted according to its content_type.
 This section contains the specific, structured data that the PresentationAgent will render onto the slide based on the rules defined by the content_type and content_purpose.
 
+1. content_type: What is the fundamental format of the data?
+Standard Content Types
+"bullet_points": A list of text items, which can be simple strings or nested objects to create multi-level lists. This is the most common and versatile content type.
+"table": Structured tabular data, containing headers and rows. Ideal for presenting data sets, feature comparisons, or any information best organized in a grid.
+
+Interactive Content Types
+"multiple_choice_question": A self-contained quiz item, including a question, a set of answer options, and the correct answer. Designed for knowledge checks.
+"matching_activity": An activity where users must match items from one list (e.g., terms) to corresponding items in a second list (e.g., definitions). The system will shuffle one of the lists for presentation.
+2. content_purpose: What is the semantic goal of this content?
+Descriptive Purposes
+"description": Used for providing concise, factual information. Standard bullet points, lists of features, or simple statements.
+"explanation": Used for breaking down a concept in more detail. Explains the 'how' or 'why' behind a topic, often with more elaborated points than a simple description.
+"timeline": Represents a sequence of events ordered chronologically. Ideal for historical overviews or project milestones.
+"process": Describes a series of steps or stages in a sequential order to achieve a specific outcome. Example: The steps of a digital forensics investigation.
+"cycle": A process where the steps loop back to the beginning, illustrating a continuous or repeating sequence. Example: The Plan-Do-Check-Act cycle.
+"comparison" / "contrast": Used to highlight the similarities (comparison) and differences (contrast) between two or more items. Best used in a two-column layout.
+"hierarchy": Shows the relationship between items at different levels of organization. Perfect for organizational charts, topic breakdowns, or nested structures.
+"case_study" / "example": Illustrates a concept, principle, or theory with a specific, real-world instance or story. Grounds abstract ideas in tangible reality.
+Interactive Purposes
+"knowledge_check": The purpose is to test the audience's understanding or recall of information presented. Directly associated with the multiple_choice_question type.
+"terminology_review": The purpose is to test the audience's familiarity with key terms and their definitions. Directly associated with the matching_activity type.
+"case_analysis": The purpose is to ask the audience to apply their knowledge to interpret or make a judgment about a given scenario or case study. Often paired with a case_study in a two-column layout.
+3. data: The actual content, formatted according to its content_type.
+This section contains the specific, structured data that the PresentationAgent will render onto the slide based on the rules defined by the content_type and content_purpose.
+
+
+
 
 (content_type: The Data's Format
 "bullet_points": A list of text items, which can be nested for multiple levels.

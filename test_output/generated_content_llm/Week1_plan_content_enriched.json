@@ -1,0 +1,157 @@
+{
+  "week": 1,
+  "overall_topic": "Understanding the Digital Forensics Profession and Investigations.",
+  "deck_plans": [
+    {
+      "sections": [
+        {
+          "section_type": "Title",
+          "seq_id": 0,
+          "content": {}
+        },
+        {
+          "section_type": "Agenda",
+          "seq_id": 1,
+          "content": {}
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "An Overview of Digital Forensics",
+              "toc_id": 9,
+              "seq_id": 2,
+              "direct_slides_content": 2,
+              "content": "Digital forensics is the application of computer science... It involves analyzing digital evidence... The Fourth Amendment protects against unreasonable searches...",
+              "slides": [
+                {
+                  "seq_id": 2.1,
+                  "llm_generated_content": {
+                    "title": "An Overview of Digital Forensics",
+                    "subtitle": "Key Concepts and Legal Framework",
+                    "objects": [
+                      {
+                        "content_type": "bullet_points",
+                        "content_purpose": "description",
+                        "data": {
+                          "text": "Digital forensics is the application of computer science...",
+                          "children": [
+                            {
+                              "text": "It involves analyzing digital evidence...",
+                              "children": [
+                                {
+                                  "text": "The Fourth Amendment protects against unreasonable searches..."
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "seq_id": 2.2,
+                  "llm_generated_content": {
+                    "title": "An Overview of Digital Forensics",
+                    "subtitle": "Techniques and Tools",
+                    "objects": [
+                      {
+                        "content_type": "bullet_points",
+                        "content_purpose": "description",
+                        "data": {
+                          "text": "Digital forensics involves the following key techniques and tools:",
+                          "children": [
+                            {
+                              "text": "Data Recovery: Retrieving deleted or lost data from storage devices.",
+                              "children": [
+                                {
+                                  "text": "Tools: dd, foremost, Scalpel",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "text": "Disk Imaging: Creating exact copies of digital storage media.",
+                              "children": [
+                                {
+                                  "text": "Tools: FTK Imager, EnCase Imager",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "text": "File Carving: Extracting files from unallocated space on a disk.",
+                              "children": [
+                                {
+                                  "text": "Tools: Autopsy, SleuthKit",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "text": "Network Forensics: Analyzing network traffic for digital evidence.",
+                              "children": [
+                                {
+                                  "text": "Tools: Wireshark, tcpdump",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "title": "A Brief History of Digital Forensics",
+              "toc_id": 11,
+              "seq_id": 5,
+              "direct_slides_content": 1,
+              "content": "The history begins in the 1970s with mainframe crimes... In the 1980s, PC use grew... Specialized tools like EnCase emerged in the 90s...",
+              "slides": [
+                {
+                  "seq_id": 5.1,
+                  "llm_generated_content": {
+                    "title": "A Brief History of Digital Forensics",
+                    "subtitle": "Early Development and Key Milestones",
+                    "objects": [
+                      {
+                        "content_type": "bullet_points",
+                        "content_purpose": "timeline",
+                        "data": {
+                          "points": [
+                            {
+                              "text": "1970s: Origins in mainframe crimes and early computer investigations",
+                              "children": []
+                            },
+                            {
+                              "text": "1980s: Rise of personal computing and increased digital crime",
+                              "children": []
+                            },
+                            {
+                              "text": "1990s: Emergence of specialized tools like EnCase and formalization of digital forensics",
+                              "children": []
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "seq_id": 12,
+          "content": {}
+        }
+      ]
+    }
+  ]
+}
