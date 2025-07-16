@@ -2,30 +2,30 @@
   "week": 1,
   "overall_topic": "Understanding the Digital Forensics Profession and Investigations.",
   "weekly_slide_summary": {
-    "total_slides_for_week": 65,
+    "total_slides_for_week": 44,
     "total_framework_slides": 4,
-    "total_content_slides": 54,
+    "total_content_slides": 33,
     "total_interactive_slides": 7,
     "number_of_decks": 1
   },
   "weekly_time_summary_minutes": {
-    "total_time_for_week_minutes": 245,
+    "total_time_for_week_minutes": 140,
     "total_framework_time": 6,
-    "total_content_and_interactive_time": 239
+    "total_content_and_interactive_time": 134
   },
   "deck_plans": [
     {
       "deck_number": 1,
-      "total_slides_in_deck": 65,
+      "total_slides_in_deck": 44,
       "slide_count_breakdown": {
         "framework": 4,
-        "content": 54,
+        "content": 33,
         "interactive": 7
       },
       "time_breakdown_minutes": {
         "framework": 6,
-        "content_and_interactive": 239,
-        "total_deck_time": 245
+        "content_and_interactive": 134,
+        "total_deck_time": 140
       },
       "sections": [
         {
@@ -64,11 +64,11 @@
               "total_chunks_in_branch": 60,
               "budget_slides_content": 4,
               "direct_slides_content": 1,
-              "total_slides_in_branch": 9,
+              "total_slides_in_branch": 5,
               "time_allocation_minutes": {
                 "direct_content_time": 3,
                 "direct_interactive_time": 5,
-                "total_branch_time": 37
+                "total_branch_time": 17
               },
               "children": [
                 {
@@ -78,80 +78,30 @@
                   "total_chunks_in_branch": 18,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Digital Forensics and Other Related Disciplines (Deep-Dive Activity)",
-                    "toc_id": 10,
-                    "slides_allocated": 1,
-                    "seq_id": 4,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Digital Forensics and Other Related Disciplines",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following is a key distinction between digital forensics and traditional forensic science?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "Digital forensics focuses on physical evidence, while traditional forensics deals with digital evidence."
-                              },
-                              {
-                                "label": "B",
-                                "text": "Digital forensics involves the analysis of electronic data, while traditional forensics deals with physical evidence."
-                              },
-                              {
-                                "label": "C",
-                                "text": "Digital forensics is limited to computer systems, whereas traditional forensics includes all types of evidence."
-                              },
-                              {
-                                "label": "D",
-                                "text": "Digital forensics is a subset of traditional forensic science, with no distinct methodologies."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "B",
-                              "explanation": "Digital forensics specifically deals with the analysis of electronic data, such as digital devices and networks, whereas traditional forensic science typically involves physical evidence like fingerprints or DNA."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
                   "seq_id": 3,
                   "slides": [
                     {
                       "seq_id": 3.1,
                       "llm_generated_content": {
                         "title": "Digital Forensics and Other Related Disciplines",
-                        "subtitle": null,
+                        "subtitle": "Overview of Key Concepts",
                         "objects": [
                           {
                             "content_type": "bullet_points",
                             "content_purpose": "description",
                             "data": [
-                              "Digital forensics is the process of identifying, preserving, analyzing, and presenting digital evidence in a manner that is legally admissible.",
-                              "Key areas within digital forensics include:",
-                              "  - Cybercrime investigation",
-                              "  - Data recovery",
-                              "  - Network forensics",
-                              "  - Mobile device forensics",
-                              "  - Email and instant messaging forensics",
-                              "Related disciplines that intersect with digital forensics include:",
-                              "  - Computer science",
-                              "  - Cybersecurity",
-                              "  - Legal and ethical considerations",
-                              "  - Information technology",
-                              "  - Criminology",
-                              "  - Data privacy and protection laws"
+                              "Digital Forensics: The process of collecting, preserving, analyzing, and presenting digital evidence in a legal context.",
+                              "Related Disciplines: Cybersecurity, Computer Science, Law, and Criminology.",
+                              "Key Areas of Focus: Data recovery, network forensics, mobile device forensics, and digital evidence analysis.",
+                              "Interdisciplinary Nature: Requires expertise in technology, law, and investigative techniques.",
+                              "Importance: Critical in cybercrime investigations, legal proceedings, and corporate security."
                             ]
                           }
                         ]
@@ -166,71 +116,29 @@
                   "total_chunks_in_branch": 13,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "A Brief History of Digital Forensics (Deep-Dive Activity)",
-                    "toc_id": 11,
-                    "slides_allocated": 1,
-                    "seq_id": 6,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: A Brief History of Digital Forensics",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best describes the evolution of digital forensics as a discipline?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "It emerged solely from the need to investigate cybercrime in the 1980s."
-                              },
-                              {
-                                "label": "B",
-                                "text": "It developed in parallel with the growth of computer technology and the internet."
-                              },
-                              {
-                                "label": "C",
-                                "text": "It was formalized in the 1950s with the advent of mainframe computers."
-                              },
-                              {
-                                "label": "D",
-                                "text": "It became a standardized field only after the invention of the World Wide Web."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "B",
-                              "explanation": "Digital forensics evolved alongside advancements in computer technology and the internet, reflecting the increasing need to investigate digital evidence as these technologies grew."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 5,
+                  "seq_id": 4,
                   "slides": [
                     {
-                      "seq_id": 5.1,
+                      "seq_id": 4.1,
                       "llm_generated_content": {
                         "title": "A Brief History of Digital Forensics",
-                        "subtitle": "Origins and Evolution",
+                        "subtitle": "Origins and Early Development",
                         "objects": [
                           {
                             "content_type": "bullet_points",
                             "content_purpose": "description",
                             "data": [
-                              "Digital forensics emerged in the late 20th century with the rise of digital technology.",
-                              "Early developments were driven by the need to investigate computer crimes and data breaches.",
-                              "The field was formalized in the 1980s with the establishment of the first digital forensics labs.",
-                              "Key milestones include the creation of forensic tools like EnCase and the development of standardized procedures.",
-                              "The evolution of digital forensics has been shaped by advancements in computing, storage, and cybersecurity threats."
+                              "Digital forensics emerged in the late 20th century as computer use became widespread.",
+                              "Early challenges included data storage limitations and the lack of standardized procedures.",
+                              "The field was influenced by the need to investigate computer crimes and cyber incidents.",
+                              "Key milestones include the development of forensic tools and the establishment of digital forensics as a formal discipline."
                             ]
                           }
                         ]
@@ -245,55 +153,14 @@
                   "total_chunks_in_branch": 3,
                   "budget_slides_content": 0,
                   "direct_slides_content": 0,
-                  "total_slides_in_branch": 1,
+                  "total_slides_in_branch": 0,
                   "time_allocation_minutes": {
                     "direct_content_time": 0,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 5
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Understanding Case Law (Deep-Dive Activity)",
-                    "toc_id": 12,
-                    "slides_allocated": 1,
-                    "seq_id": 8,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Understanding Case Law",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best describes the role of precedent in case law?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "It allows courts to ignore previous rulings when making decisions."
-                              },
-                              {
-                                "label": "B",
-                                "text": "It requires courts to follow the decisions of lower courts in all cases."
-                              },
-                              {
-                                "label": "C",
-                                "text": "It enables courts to establish new legal principles that override previous rulings."
-                              },
-                              {
-                                "label": "D",
-                                "text": "It obliges courts to follow the rulings of higher courts in the same jurisdiction."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "D",
-                              "explanation": "Precedent, or stare decisis, requires courts to follow the rulings of higher courts in the same jurisdiction to ensure consistency and predictability in the law."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 7
+                  "seq_id": 5
                 },
                 {
                   "title": "Developing Digital Forensics Resources",
@@ -302,58 +169,17 @@
                   "total_chunks_in_branch": 8,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Developing Digital Forensics Resources (Deep-Dive Activity)",
-                    "toc_id": 13,
-                    "slides_allocated": 1,
-                    "seq_id": 10,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Developing Digital Forensics Resources",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following is a primary consideration when developing digital forensics resources?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "Ensuring resources are compatible with all operating systems"
-                              },
-                              {
-                                "label": "B",
-                                "text": "Prioritizing speed over accuracy in data recovery"
-                              },
-                              {
-                                "label": "C",
-                                "text": "Maintaining the chain of custody for digital evidence"
-                              },
-                              {
-                                "label": "D",
-                                "text": "Minimizing the cost of forensic tools without regard to functionality"
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "C",
-                              "explanation": "Maintaining the chain of custody is critical in digital forensics to ensure the integrity and admissibility of evidence. It directly impacts the reliability of findings and legal outcomes."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 9,
+                  "seq_id": 6,
                   "slides": [
                     {
-                      "seq_id": 9.1,
+                      "seq_id": 6.1,
                       "llm_generated_content": {
                         "title": "Developing Digital Forensics Resources",
                         "subtitle": null,
@@ -362,11 +188,11 @@
                             "content_type": "bullet_points",
                             "content_purpose": "description",
                             "data": [
-                              "Identify key areas for resource development: digital forensics tools, legal frameworks, training programs, and documentation standards.",
-                              "Assess current gaps in existing resources to prioritize development efforts.",
-                              "Collaborate with industry experts and academic institutions to ensure relevance and quality.",
-                              "Establish clear objectives and timelines for resource creation and implementation.",
-                              "Evaluate the impact of developed resources through feedback and performance metrics."
+                              "Define digital forensics resources: Tools, techniques, and methodologies used to investigate digital evidence.",
+                              "Identify key components: Data acquisition, preservation, analysis, and reporting.",
+                              "Outline the importance of standardized protocols for ensuring reliability and admissibility in legal contexts.",
+                              "Discuss the role of digital forensics in cybersecurity, incident response, and legal investigations.",
+                              "Highlight challenges such as data integrity, encryption, and evolving technologies."
                             ]
                           }
                         ]
@@ -376,10 +202,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "An Overview of Digital Forensics (General Activity)",
+                "title": "An Overview of Digital Forensics (Interactive Activity)",
                 "toc_id": 9,
                 "slides_allocated": 1,
-                "seq_id": 11,
+                "seq_id": 7,
                 "llm_generated_content": {
                   "title": "Let's Apply This!",
                   "subtitle": "Knowledge Check: An Overview of Digital Forensics",
@@ -396,7 +222,7 @@
                           },
                           {
                             "label": "B",
-                            "text": "To analyze and preserve digital evidence for legal proceedings"
+                            "text": "To investigate and analyze digital evidence in a legally admissible manner"
                           },
                           {
                             "label": "C",
@@ -404,12 +230,12 @@
                           },
                           {
                             "label": "D",
-                            "text": "To develop encryption algorithms for secure data transmission"
+                            "text": "To improve user experience through digital interface design"
                           }
                         ],
                         "correct_answer": {
                           "label": "B",
-                          "explanation": "The primary goal of digital forensics is to analyze and preserve digital evidence in a manner that is admissible in legal proceedings. While options A, C, and D are related to digital investigations, they represent specific tasks or applications rather than the overarching objective of the field."
+                          "explanation": "The primary goal of digital forensics is to investigate and analyze digital evidence in a manner that is legally admissible, ensuring that findings can be used in legal proceedings."
                         }
                       }
                     }
@@ -422,17 +248,17 @@
                   "seq_id": 2.1,
                   "llm_generated_content": {
                     "title": "An Overview of Digital Forensics",
-                    "subtitle": "Introduction to Digital Forensics",
+                    "subtitle": null,
                     "objects": [
                       {
                         "content_type": "bullet_points",
                         "content_purpose": "description",
                         "data": [
-                          "Digital forensics is the process of identifying, preserving, analyzing, and presenting digital evidence in a legal context.",
-                          "It involves the recovery and analysis of data from digital devices such't as computers, smartphones, and storage media.",
-                          "The field encompasses various specializations including computer forensics, network forensics, and mobile device forensics.",
+                          "Digital forensics is the process of identifying, preserving, analyzing, and presenting digital evidence in a manner that is legally admissible.",
+                          "It involves the recovery and analysis of data from digital devices such't as computers, mobile phones, and storage media.",
+                          "The field encompasses various domains including computer forensics, network forensics, mobile device forensics, and cloud forensics.",
                           "Digital forensics plays a crucial role in criminal investigations, corporate security, and incident response.",
-                          "The primary goal is to uncover the truth and provide evidence that can be used in legal proceedings."
+                          "Key principles include maintaining the integrity of evidence, ensuring chain of custody, and adhering to legal standards."
                         ]
                       }
                     ]
@@ -447,11 +273,11 @@
               "total_chunks_in_branch": 84,
               "budget_slides_content": 5,
               "direct_slides_content": 0,
-              "total_slides_in_branch": 9,
+              "total_slides_in_branch": 6,
               "time_allocation_minutes": {
                 "direct_content_time": 0,
                 "direct_interactive_time": 5,
-                "total_branch_time": 35
+                "total_branch_time": 20
               },
               "children": [
                 {
@@ -461,58 +287,17 @@
                   "total_chunks_in_branch": 10,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Understanding Law Enforcement Agency Investigations (Deep-Dive Activity)",
-                    "toc_id": 15,
-                    "slides_allocated": 1,
-                    "seq_id": 14,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Understanding Law Enforcement Agency Investigations",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best describes the role of law enforcement agencies in criminal investigations?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "To primarily focus on public education about crime prevention."
-                              },
-                              {
-                                "label": "B",
-                                "text": "To conduct investigations solely based on citizen tips without any legal oversight."
-                              },
-                              {
-                                "label": "C",
-                                "text": "To gather evidence, interview witnesses, and ensure the legality of the investigation process."
-                              },
-                              {
-                                "label": "D",
-                                "text": "To handle all aspects of a case from arrest to prosecution without collaboration with other agencies."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "C",
-                              "explanation": "Law enforcement agencies are responsible for gathering evidence, interviewing witnesses, and ensuring that all investigative actions comply with legal standards and procedures."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 13,
+                  "seq_id": 9,
                   "slides": [
                     {
-                      "seq_id": 13.1,
+                      "seq_id": 9.1,
                       "llm_generated_content": {
                         "title": "Understanding Law Enforcement Agency Investigations",
                         "subtitle": null,
@@ -521,10 +306,10 @@
                             "content_type": "bullet_points",
                             "content_purpose": "description",
                             "data": [
-                              "Law enforcement agencies conduct investigations to gather evidence, identify suspects, and determine the nature of criminal activities.",
-                              "Investigations typically involve collecting physical and digital evidence, interviewing witnesses, and analyzing data.",
-                              "The process is governed by legal frameworks to ensure compliance with constitutional rights and procedural standards.",
-                              "Key objectives include maintaining public safety, upholding the rule of law, and ensuring justice through accurate case resolution."
+                              "Law enforcement investigations are systematic processes conducted by agencies to gather evidence, identify suspects, and determine the circumstances of a crime.",
+                              "These investigations are governed by legal frameworks, including constitutional rights, statutes, and procedural rules.",
+                              "Key objectives include ensuring public safety, upholding justice, and maintaining the integrity of the legal system.",
+                              "Investigations may involve multiple stages such as initial response, evidence collection, witness interviews, and case preparation for prosecution."
                             ]
                           }
                         ]
@@ -539,70 +324,29 @@
                   "total_chunks_in_branch": 13,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Following Legal Processes (Deep-Dive Activity)",
-                    "toc_id": 16,
-                    "slides_allocated": 1,
-                    "seq_id": 16,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Following Legal Processes",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best describes the purpose of following legal processes in a court case?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "To ensure the defendant's rights are violated"
-                              },
-                              {
-                                "label": "B",
-                                "text": "To guarantee the outcome is predetermined"
-                              },
-                              {
-                                "label": "C",
-                                "text": "To uphold the rule of law and ensure fair treatment under the law"
-                              },
-                              {
-                                "label": "D",
-                                "text": "To expedite the legal process regardless of fairness"
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "C",
-                              "explanation": "Following legal processes ensures that all parties are treated fairly and that the law is applied consistently, which upholds the rule of law and protects individual rights."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 15,
+                  "seq_id": 10,
                   "slides": [
                     {
-                      "seq_id": 15.1,
+                      "seq_id": 10.1,
                       "llm_generated_content": {
                         "title": "Following Legal Processes",
-                        "subtitle": "Overview of Legal Compliance",
+                        "subtitle": null,
                         "objects": [
                           {
                             "content_type": "bullet_points",
                             "content_purpose": "description",
                             "data": [
-                              "Understanding legal processes is essential for compliance with laws and regulations.",
-                              "Legal processes involve a series of steps that must be followed to ensure adherence to the law.",
-                              "These processes can vary depending on the jurisdiction, type of law, and specific legal procedures.",
-                              "Compliance with legal processes helps prevent legal disputes and ensures fair treatment under the law."
+                              "Understanding legal processes is essential for compliance and accountability.",
+                              "Legal processes involve a series of structured steps that must be followed to ensure validity and fairness.",
+                              "These steps may include documentation, notification, hearings, and appeals, depending on the jurisdiction and case type.",
+                              "Adherence to legal procedures protects the rights of all parties involved and maintains the integrity of the legal system."
                             ]
                           }
                         ]
@@ -617,11 +361,11 @@
                   "total_chunks_in_branch": 56,
                   "budget_slides_content": 4,
                   "direct_slides_content": 0,
-                  "total_slides_in_branch": 4,
+                  "total_slides_in_branch": 3,
                   "time_allocation_minutes": {
                     "direct_content_time": 0,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 14
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
                   },
                   "children": [
                     {
@@ -638,7 +382,7 @@
                         "total_branch_time": 0
                       },
                       "children": [],
-                      "seq_id": 18
+                      "seq_id": 12
                     },
                     {
                       "title": "Displaying Warning Banners",
@@ -654,10 +398,10 @@
                         "total_branch_time": 3
                       },
                       "children": [],
-                      "seq_id": 19,
+                      "seq_id": 13,
                       "slides": [
                         {
-                          "seq_id": 19.1,
+                          "seq_id": 13.1,
                           "llm_generated_content": {
                             "title": "Displaying Warning Banners",
                             "subtitle": null,
@@ -666,18 +410,11 @@
                                 "content_type": "bullet_points",
                                 "content_purpose": "description",
                                 "data": [
-                                  "Purpose of Warning Banners: To alert users of potential dangers, hazards, or risks in a clear and visible manner.",
-                                  {
-                                    "text": "Key Elements of Effective Warning Banners:",
-                                    "children": [
-                                      "High-visibility colors (e.g., red, yellow)",
-                                      "Clear and concise warning messages",
-                                      "Icons or symbols for quick recognition",
-                                      "Placement in high-risk areas or near hazardous equipment",
-                                      "Compliance with safety standards and regulations"
-                                    ]
-                                  },
-                                  "Best Practices: Ensure banners are easily readable, use standardized symbols, and regularly inspect for damage or wear."
+                                  "Warning banners are critical for alerting users to potential hazards or risks in digital environments.",
+                                  "They should be prominently displayed in areas where users may encounter danger, such as near hazardous equipment or in high-risk zones.",
+                                  "Effective warning banners must be visually distinct, using color, symbols, and clear text to ensure visibility and comprehension.",
+                                  "The placement of warning banners is essential to ensure they are noticed before users interact with potentially dangerous elements.",
+                                  "Consistency in design and messaging across all warning banners helps reinforce safety awareness and reduces confusion."
                                 ]
                               }
                             ]
@@ -699,10 +436,10 @@
                         "total_branch_time": 3
                       },
                       "children": [],
-                      "seq_id": 20,
+                      "seq_id": 14,
                       "slides": [
                         {
-                          "seq_id": 20.1,
+                          "seq_id": 14.1,
                           "llm_generated_content": {
                             "title": "Designating an Authorized Requester",
                             "subtitle": null,
@@ -711,11 +448,11 @@
                                 "content_type": "bullet_points",
                                 "content_purpose": "description",
                                 "data": [
-                                  "An authorized requester is an individual or entity authorized to submit requests on behalf of an organization.",
-                                  "Designation process typically involves formal approval from organizational leadership.",
-                                  "Requester must have appropriate authority and responsibility for the request.",
-                                  "Designation may require documentation and formal record-keeping.",
-                                  "Authorized requester must understand and comply with relevant policies and procedures."
+                                  "An authorized requester is an individual or entity granted the authority to act on behalf of the principal in requesting services or information.",
+                                  "Designation of an authorized requester must be done through a formal process to ensure accountability and compliance with institutional policies.",
+                                  "The process typically involves submitting a written request that includes the principal's name, the requester's name, and the scope of authority granted.",
+                                  "Authorization may be granted for specific tasks, projects, or ongoing periods, depending on institutional guidelines.",
+                                  "It is essential to document the designation and maintain records for audit and transparency purposes."
                                 ]
                               }
                             ]
@@ -737,10 +474,10 @@
                         "total_branch_time": 3
                       },
                       "children": [],
-                      "seq_id": 21,
+                      "seq_id": 15,
                       "slides": [
                         {
-                          "seq_id": 21.1,
+                          "seq_id": 15.1,
                           "llm_generated_content": {
                             "title": "Conducting Security Investigations",
                             "subtitle": null,
@@ -752,9 +489,8 @@
                                   "Define the scope and objectives of the investigation",
                                   "Gather and analyze digital evidence",
                                   "Identify potential threats and vulnerabilities",
-                                  "Perform forensic analysis of systems and data",
                                   "Document findings and prepare a report",
-                                  "Present findings to stakeholders and recommend remediation"
+                                  "Recommend mitigation strategies and remediation plans"
                                 ]
                               }
                             ]
@@ -776,58 +512,17 @@
                         "total_branch_time": 0
                       },
                       "children": [],
-                      "seq_id": 22
+                      "seq_id": 16
                     }
                   ],
-                  "interactive_activity": {
-                    "title": "Understanding Private-Sector Investigations (Deep-Dive Activity)",
-                    "toc_id": 17,
-                    "slides_allocated": 1,
-                    "seq_id": 23,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Understanding Private-Sector Investigations",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best describes the primary purpose of private-sector investigations?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "To enforce government regulations and penalties for violations."
-                              },
-                              {
-                                "label": "B",
-                                "text": "To conduct internal audits and ensure compliance with legal and ethical standards."
-                              },
-                              {
-                                "label": "C",
-                                "text": "To replace public-sector law enforcement in all criminal investigations."
-                              },
-                              {
-                                "label": "D",
-                                "text": "To provide legal representation for individuals accused of crimes."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "B",
-                              "explanation": "Private-sector investigations primarily focus on internal audits and ensuring compliance with legal and ethical standards, often conducted by organizations to protect their interests and maintain operational integrity."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 17
+                  "seq_id": 11
                 }
               ],
               "interactive_activity": {
-                "title": "Preparing for Digital Investigations (General Activity)",
+                "title": "Preparing for Digital Investigations (Interactive Activity)",
                 "toc_id": 14,
                 "slides_allocated": 1,
-                "seq_id": 24,
+                "seq_id": 17,
                 "llm_generated_content": {
                   "title": "Let's Apply This!",
                   "subtitle": "Knowledge Check: Preparing for Digital Investigations",
@@ -836,11 +531,11 @@
                       "content_type": "multiple_choice_question",
                       "content_purpose": "knowledge_check",
                       "data": {
-                        "question_text": "Which of the following is a critical step in preparing for digital investigations to ensure legal compliance and data integrity?",
+                        "question_text": "Which of the following is a critical step in preparing for a digital investigation?",
                         "options": [
                           {
                             "label": "A",
-                            "text": "Conducting a preliminary search without obtaining proper authorization"
+                            "text": "Ignoring the legal requirements for data collection"
                           },
                           {
                             "label": "B",
@@ -848,23 +543,23 @@
                           },
                           {
                             "label": "C",
-                            "text": "Using personal devices to access and analyze digital data"
+                            "text": "Using personal devices to access and analyze the data"
                           },
                           {
                             "label": "D",
-                            "text": "Sharing all collected data with third parties without restrictions"
+                            "text": "Sharing all findings with the public without prior review"
                           }
                         ],
                         "correct_answer": {
                           "label": "B",
-                          "explanation": "Establishing a secure and documented chain of custody ensures that digital evidence remains untampered, traceable, and legally admissible, which is fundamental to maintaining data integrity and compliance with legal standards."
+                          "explanation": "Establishing a secure and documented chain of custody ensures the integrity and admissibility of digital evidence, which is fundamental to any legal or formal investigation."
                         }
                       }
                     }
                   ]
                 }
               },
-              "seq_id": 12
+              "seq_id": 8
             },
             {
               "title": "Maintaining Professional Conduct",
@@ -881,10 +576,10 @@
               },
               "children": [],
               "interactive_activity": {
-                "title": "Maintaining Professional Conduct (General Activity)",
+                "title": "Maintaining Professional Conduct (Interactive Activity)",
                 "toc_id": 23,
                 "slides_allocated": 1,
-                "seq_id": 26,
+                "seq_id": 19,
                 "llm_generated_content": {
                   "title": "Let's Apply This!",
                   "subtitle": "Knowledge Check: Maintaining Professional Conduct",
@@ -914,17 +609,17 @@
                         ],
                         "correct_answer": {
                           "label": "C",
-                          "explanation": "Respecting intellectual property and citing sources properly is fundamental to maintaining professional conduct, as it upholds academic integrity and acknowledges the work of others."
+                          "explanation": "Respecting intellectual property and citing sources properly is fundamental to maintaining professional conduct. It upholds academic integrity, acknowledges the work of others, and ensures transparency in research."
                         }
                       }
                     }
                   ]
                 }
               },
-              "seq_id": 25,
+              "seq_id": 18,
               "slides": [
                 {
-                  "seq_id": 25.1,
+                  "seq_id": 18.1,
                   "llm_generated_content": {
                     "title": "Maintaining Professional Conduct",
                     "subtitle": null,
@@ -934,9 +629,9 @@
                         "content_purpose": "description",
                         "data": [
                           "Professional conduct refers to the ethical behavior and standards expected of professionals in their work environment.",
-                          "It encompasses adherence to codes of ethics, legal compliance, and respect for organizational policies.",
-                          "Maintaining professional conduct is crucial for building trust with clients, colleagues, and the public.",
-                          "It also contributes to a positive work environment and enhances the reputation of the profession."
+                          "It encompasses adherence to codes of ethics, legal obligations, and organizational policies.",
+                          "Maintaining professional conduct is crucial for building trust, ensuring accountability, and upholding the reputation of the profession.",
+                          "Key aspects include integrity, confidentiality, respect, and responsibility in all professional interactions."
                         ]
                       }
                     ]
@@ -951,11 +646,11 @@
               "total_chunks_in_branch": 97,
               "budget_slides_content": 6,
               "direct_slides_content": 0,
-              "total_slides_in_branch": 11,
+              "total_slides_in_branch": 8,
               "time_allocation_minutes": {
                 "direct_content_time": 0,
                 "direct_interactive_time": 5,
-                "total_branch_time": 41
+                "total_branch_time": 26
               },
               "children": [
                 {
@@ -965,58 +660,17 @@
                   "total_chunks_in_branch": 12,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "An Overview of a Computer Crime (Deep-Dive Activity)",
-                    "toc_id": 25,
-                    "slides_allocated": 1,
-                    "seq_id": 29,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: An Overview of a Computer Crime",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best defines a computer crime?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "The unauthorized use of a computer to access confidential data."
-                              },
-                              {
-                                "label": "B",
-                                "text": "The illegal interception of electronic communications."
-                              },
-                              {
-                                "label": "C",
-                                "text": "The deliberate creation of computer viruses to disrupt systems."
-                              },
-                              {
-                                "label": "D",
-                                "text": "Any act that involves the use of a computer as a tool to commit a crime."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "D",
-                              "explanation": "A computer crime is broadly defined as any act that involves the use of a computer as a tool to commit a crime, which encompasses various types of cyber offenses such as hacking, data theft, and malware distribution."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 28,
+                  "seq_id": 21,
                   "slides": [
                     {
-                      "seq_id": 28.1,
+                      "seq_id": 21.1,
                       "llm_generated_content": {
                         "title": "An Overview of a Computer Crime",
                         "subtitle": null,
@@ -1029,11 +683,13 @@
                               "Types of Computer Crimes:",
                               "  - Unauthorized Access (Hacking): Gaining unauthorized entry to computer systems.",
                               "  - Data Theft: Stealing sensitive information such as personal data or financial records.",
-                              "  - Cyber Fraud: Deception for financial gain through electronic means.",
-                              "  - Malware Attacks: Using malicious software to disrupt, damage, or gain control of systems.",
-                              "  - Cyber Terrorism: Using computer systems to intimidate or threaten governments or populations.",
-                              "  - Online Fraud: Deceptive practices conducted via the internet to defraud individuals or organizations.",
-                              "Legal and Ethical Implications: Violations of laws such as the Computer Fraud and Abuse Act (CFAA) and ethical guidelines for digital behavior."
+                              "  - Cyber Fraud: Deception for financial gain through online means.",
+                              "  - Malware Attacks: Using malicious software to disrupt or damage systems.",
+                              "  - Phishing: Deceiving users to reveal confidential information through fraudulent emails or websites.",
+                              "  - Cyber Espionage: Stealing confidential information from governments or organizations.",
+                              "  - Denial-of-Service (DoS) Attacks: Overloading systems to make them unavailable.",
+                              "  - Identity Theft: Illegally obtaining and using someone's personal information.",
+                              "Legal and Ethical Implications: Violates laws such as the Computer Fraud and Abuse Act (CFAA) and raises ethical concerns about privacy and security."
                             ]
                           }
                         ]
@@ -1048,55 +704,14 @@
                   "total_chunks_in_branch": 4,
                   "budget_slides_content": 0,
                   "direct_slides_content": 0,
-                  "total_slides_in_branch": 1,
+                  "total_slides_in_branch": 0,
                   "time_allocation_minutes": {
                     "direct_content_time": 0,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 5
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "An Overview of a Company Policy Violation (Deep-Dive Activity)",
-                    "toc_id": 26,
-                    "slides_allocated": 1,
-                    "seq_id": 31,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: An Overview of a Company Policy Violation",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best describes the primary consequence of violating a company's policy?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "Automatic termination of employment without review"
-                              },
-                              {
-                                "label": "B",
-                                "text": "A formal written warning and mandatory policy retraining"
-                              },
-                              {
-                                "label": "C",
-                                "text": "A one-time verbal reprimand with no further action"
-                              },
-                              {
-                                "label": "D",
-                                "text": "A financial penalty without any impact on job performance"
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "B",
-                              "explanation": "Violating company policy typically results in a formal written warning and mandatory policy retraining to ensure the employee understands the consequences and the necessary steps to comply with company guidelines."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 30
+                  "seq_id": 22
                 },
                 {
                   "title": "Taking a Systematic Approach",
@@ -1105,11 +720,11 @@
                   "total_chunks_in_branch": 77,
                   "budget_slides_content": 5,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 7,
+                  "total_slides_in_branch": 6,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 23
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 18
                   },
                   "children": [
                     {
@@ -1126,10 +741,10 @@
                         "total_branch_time": 3
                       },
                       "children": [],
-                      "seq_id": 33,
+                      "seq_id": 24,
                       "slides": [
                         {
-                          "seq_id": 33.1,
+                          "seq_id": 24.1,
                           "llm_generated_content": {
                             "title": "Assessing the Case",
                             "subtitle": null,
@@ -1138,12 +753,11 @@
                                 "content_type": "bullet_points",
                                 "content_purpose": "description",
                                 "data": [
-                                  "Identify the key facts and issues in the case",
-                                  "Determine the stakeholders involved and their interests",
-                                  "Analyze the context and background of the case",
-                                  "Evaluate the potential consequences of different actions",
-                                  "Consider ethical, legal, and practical implications",
-                                  "Formulate a clear understanding of the problem and its scope"
+                                  "Define the case: Clearly outline the situation, including key facts, stakeholders, and context.",
+                                  "Identify the problem: Determine the core issue or challenge that needs to be addressed.",
+                                  "Analyze the context: Examine relevant background information, historical data, and external factors.",
+                                  "Determine the scope: Establish the boundaries of the case, including what is included and excluded.",
+                                  "Recognize constraints: Identify limitations such as time, resources, or ethical considerations."
                                 ]
                               }
                             ]
@@ -1165,10 +779,10 @@
                         "total_branch_time": 9
                       },
                       "children": [],
-                      "seq_id": 34,
+                      "seq_id": 25,
                       "slides": [
                         {
-                          "seq_id": 34.1,
+                          "seq_id": 25.1,
                           "llm_generated_content": {
                             "title": "Planning Your Investigation",
                             "subtitle": "Defining the Purpose and Scope",
@@ -1177,18 +791,18 @@
                                 "content_type": "bullet_points",
                                 "content_purpose": "description",
                                 "data": [
-                                  "Identify the central research question or hypothesis",
-                                  "Determine the objectives of the investigation",
-                                  "Define the boundaries of the study (e.g., time frame, population, geographic area)",
-                                  "Clarify the scope to avoid overextension",
-                                  "Establish the significance of the research question"
+                                  "Identify the central research question or hypothesis.",
+                                  "Determine the objectives of the investigation.",
+                                  "Define the boundaries of the study (e.g., population, time frame, geographic area).",
+                                  "Clarify the scope to avoid overextension or underdevelopment of the topic.",
+                                  "Consider the resources and constraints (time, budget, equipment) that will shape the investigation."
                                 ]
                               }
                             ]
                           }
                         },
                         {
-                          "seq_id": 34.2,
+                          "seq_id": 25.2,
                           "llm_generated_content": {
                             "title": "Planning Your Investigation",
                             "subtitle": "Identifying Research Questions and Variables",
@@ -1198,17 +812,17 @@
                                 "content_purpose": "explanation",
                                 "data": [
                                   "Formulate clear and focused research questions that align with the investigation's purpose.",
-                                  "Distinguish between independent and dependent variables.",
-                                  "Identify controlled variables that should remain constant during the experiment.",
-                                  "Consider potential confounding variables and how to minimize their impact.",
-                                  "Ensure variables are measurable and operationalized appropriately."
+                                  "Distinguish between independent variables (factors you manipulate) and dependent variables (outcomes you measure).",
+                                  "Identify controlled variables (constants) to ensure the validity of results.",
+                                  "Consider potential confounding variables that might influence the outcome and plan ways to minimize their impact.",
+                                  "Use operational definitions to specify how variables will be measured or manipulated."
                                 ]
                               }
                             ]
                           }
                         },
                         {
-                          "seq_id": 34.3,
+                          "seq_id": 25.3,
                           "llm_generated_content": {
                             "title": "Planning Your Investigation",
                             "subtitle": "Selecting Appropriate Methods",
@@ -1218,9 +832,9 @@
                                 "content_purpose": "explanation",
                                 "data": [
                                   "Choose research methods that align with your research questions and objectives.",
-                                  "Quantitative methods: Use numerical data and statistical analysis (e.g., surveys, experiments).",
-                                  "Qualitative methods: Use non-numerical data and thematic analysis (e.g., interviews, observations).",
-                                  "Mixed methods: Combine quantitative and qualitative approaches for comprehensive insights.",
+                                  "Quantitative methods (e.g., surveys, experiments) are suitable for testing hypotheses and measuring variables.",
+                                  "Qualitative methods (e.g., interviews, observations) are useful for exploring concepts and gaining insights.",
+                                  "Mixed methods combine both quantitative and qualitative approaches for a comprehensive analysis.",
                                   "Consider the feasibility, resources, and ethical implications of your chosen methods."
                                 ]
                               }
@@ -1243,10 +857,10 @@
                         "total_branch_time": 3
                       },
                       "children": [],
-                      "seq_id": 35,
+                      "seq_id": 26,
                       "slides": [
                         {
-                          "seq_id": 35.1,
+                          "seq_id": 26.1,
                           "llm_generated_content": {
                             "title": "Securing Your Evidence",
                             "subtitle": null,
@@ -1255,11 +869,11 @@
                                 "content_type": "bullet_points",
                                 "content_purpose": "description",
                                 "data": [
-                                  "Secure evidence is crucial to maintain its integrity and ensure it can be used effectively in legal or investigative contexts.",
-                                  "Key principles include: authenticity, confidentiality, and traceability.",
-                                  "Authenticity ensures the evidence has not been altered or tampered with.",
-                                  "Confidentiality protects sensitive information from unauthorized access.",
-                                  "Traceability allows for the tracking of evidence from collection to presentation."
+                                  "Secure your evidence to maintain its integrity and authenticity.",
+                                  "Use proper storage methods to protect physical and digital evidence.",
+                                  "Implement access controls to prevent unauthorized access.",
+                                  "Document all handling and transfer procedures to ensure accountability.",
+                                  "Regularly back up digital evidence to prevent data loss."
                                 ]
                               }
                             ]
@@ -1268,51 +882,10 @@
                       ]
                     }
                   ],
-                  "interactive_activity": {
-                    "title": "Taking a Systematic Approach (Deep-Dive Activity)",
-                    "toc_id": 27,
-                    "slides_allocated": 1,
-                    "seq_id": 36,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Taking a Systematic Approach",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best describes the purpose of a systematic approach in problem-solving?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "To ensure all possible solutions are explored simultaneously"
-                              },
-                              {
-                                "label": "B",
-                                "text": "To eliminate the need for creativity in finding solutions"
-                              },
-                              {
-                                "label": "C",
-                                "text": "To provide a structured and repeatable method for addressing problems"
-                              },
-                              {
-                                "label": "D",
-                                "text": "To guarantee the discovery of the optimal solution within a single attempt"
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "C",
-                              "explanation": "A systematic approach provides a structured and repeatable method for addressing problems, ensuring clarity, consistency, and efficiency in the problem-solving process."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 32,
+                  "seq_id": 23,
                   "slides": [
                     {
-                      "seq_id": 32.1,
+                      "seq_id": 23.1,
                       "llm_generated_content": {
                         "title": "Taking a Systematic Approach",
                         "subtitle": null,
@@ -1321,9 +894,10 @@
                             "content_type": "bullet_points",
                             "content_purpose": "description",
                             "data": [
-                              "A systematic approach involves a structured and methodical process to achieve a goal.",
-                              "It typically includes defining objectives, gathering information, analyzing data, and implementing solutions.",
-                              "This approach ensures clarity, reduces errors, and improves decision-making through organized steps."
+                              "A systematic approach is a methodical and organized way of analyzing problems and solving them.",
+                              "It involves breaking down complex issues into smaller, manageable components.",
+                              "Key characteristics include clarity, consistency, and the use of established procedures.",
+                              "This approach ensures that all aspects of a problem are considered and that solutions are reliable and repeatable."
                             ]
                           }
                         ]
@@ -1333,10 +907,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "Preparing a Digital Forensics Investigation (General Activity)",
+                "title": "Preparing a Digital Forensics Investigation (Interactive Activity)",
                 "toc_id": 24,
                 "slides_allocated": 1,
-                "seq_id": 37,
+                "seq_id": 27,
                 "llm_generated_content": {
                   "title": "Let's Apply This!",
                   "subtitle": "Knowledge Check: Preparing a Digital Forens, Investigation",
@@ -1353,27 +927,27 @@
                           },
                           {
                             "label": "B",
-                            "text": "Creating a duplicate copy of the evidence without proper documentation"
+                            "text": "Documenting all findings immediately after the investigation"
                           },
                           {
                             "label": "C",
-                            "text": "Establishing a secure and controlled environment for evidence handling"
+                            "text": "Ensuring the preservation of digital evidence to prevent data alteration"
                           },
                           {
                             "label": "D",
-                            "text": "Using unverified tools for data extraction without validation"
+                            "text": "Using personal devices to access the evidence without prior authorization"
                           }
                         ],
                         "correct_answer": {
                           "label": "C",
-                          "explanation": "Establishing a secure and controlled environment is essential to maintain the integrity of evidence, prevent contamination, and ensure the investigation adheres to legal and procedural standards."
+                          "explanation": "Preserving digital evidence is crucial to maintain its integrity and admissibility in legal proceedings. Altering or mishandling evidence can compromise the investigation and lead to invalid conclusions."
                         }
                       }
                     }
                   ]
                 }
               },
-              "seq_id": 27
+              "seq_id": 20
             },
             {
               "title": "Procedures for Private-Sector High-Tech Investigations",
@@ -1382,11 +956,11 @@
               "total_chunks_in_branch": 124,
               "budget_slides_content": 8,
               "direct_slides_content": 0,
-              "total_slides_in_branch": 13,
+              "total_slides_in_branch": 8,
               "time_allocation_minutes": {
                 "direct_content_time": 0,
                 "direct_interactive_time": 5,
-                "total_branch_time": 51
+                "total_branch_time": 26
               },
               "children": [
                 {
@@ -1396,55 +970,14 @@
                   "total_chunks_in_branch": 2,
                   "budget_slides_content": 0,
                   "direct_slides_content": 0,
-                  "total_slides_in_branch": 1,
+                  "total_slides_in_branch": 0,
                   "time_allocation_minutes": {
                     "direct_content_time": 0,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 5
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Employee Termination Cases (Deep-Dive Activity)",
-                    "toc_id": 32,
-                    "slides_allocated": 1,
-                    "seq_id": 40,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Employee Termination Cases",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following is a valid legal reason for terminating an employee under most employment laws?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "Employee's personal religious beliefs conflicting with company policies"
-                              },
-                              {
-                                "label": "B",
-                                "text": "Employee's failure to meet performance expectations despite training and support"
-                              },
-                              {
-                                "label": "C",
-                                "text": "Employee's refusal to attend a mandatory company event"
-                              },
-                              {
-                                "label": "D",
-                                "text": "Employee's use of personal social media accounts during work hours"
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "B",
-                              "explanation": "Performance issues that persist after training and support are a common, legally permissible reason for termination. The other options typically constitute protected categories or minor infractions, unless they directly impact job performance or safety."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 39
+                  "seq_id": 29
                 },
                 {
                   "title": "Internet Abuse Investigations",
@@ -1453,58 +986,17 @@
                   "total_chunks_in_branch": 19,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Internet Abuse Investigations (Deep-Dive Activity)",
-                    "toc_id": 33,
-                    "slides_allocated": 1,
-                    "seq_id": 42,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Internet Abuse Investigations",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following is a critical step in investigating internet abuse involving encrypted communications?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "Ignoring encryption and focusing on metadata alone"
-                              },
-                              {
-                                "label": "B",
-                                "text": "Obtaining a court order to access encrypted data"
-                              },
-                              {
-                                "label": "C",
-                                "text": "Using brute-force methods to decrypt all communications"
-                              },
-                              {
-                                "label": "D",
-                                "text": "Collaborating with telecom providers to bypass encryption"
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "B",
-                              "explanation": "A court order is often required to legally access encrypted data, as many jurisdictions require law enforcement to obtain a warrant before accessing private communications, even when encrypted."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 41,
+                  "seq_id": 30,
                   "slides": [
                     {
-                      "seq_id": 41.1,
+                      "seq_id": 30.1,
                       "llm_generated_content": {
                         "title": "Internet Abuse Investigations",
                         "subtitle": null,
@@ -1514,32 +1006,9 @@
                             "content_purpose": "description",
                             "data": [
                               "Definition: Internet abuse investigations involve examining digital evidence to identify, track, and prosecute individuals who misuse the internet for harmful activities.",
-                              {
-                                "text": "Key Areas of Focus",
-                                "children": [
-                                  "Cybercrime (e.g., hacking, phishing, identity theft)",
-                                  "Online harassment and bullying",
-                                  "Child exploitation and pornography",
-                                  "Fraud and financial crimes",
-                                  "Terrorism and extremist activities"
-                                ]
-                              },
-                              {
-                                "text": "Legal and Ethical Considerations",
-                                "children": [
-                                  "Compliance with digital privacy laws (e.g., GDPR, CCPA)",
-                                  "Balancing law enforcement needs with individual rights",
-                                  "Ethical use of surveillance and data collection techniques"
-                                ]
-                              },
-                              {
-                                "": "",
-                                "children": [
-                                  "Collaboration between law enforcement, cybersecurity experts, and legal authorities",
-                                  "Use of forensic tools and digital evidence analysis",
-                                  "Challenges in cross-border investigations and jurisdictional issues"
-                                ]
-                              }
+                              "Scope: Includes cybercrime such as hacking, phishing, identity theft, online harassment, and illegal content distribution.",
+                              "Key Objectives: To gather digital evidence, trace the origin of malicious activities, and support legal proceedings against offenders.",
+                              "Challenges: Rapidly evolving technologies, encryption, jurisdictional complexities, and the need for specialized digital forensics expertise."
                             ]
                           }
                         ]
@@ -1554,71 +1023,30 @@
                   "total_chunks_in_branch": 16,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "E-mail Abuse Investigations (Deep-Dive Activity)",
-                    "toc_id": 34,
-                    "slides_allocated": 1,
-                    "seq_id": 44,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: E-mail Abuse Investigations",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following is a primary method used by investigators to trace the origin of an email in an abuse investigation?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "Analyzing the email's subject line for keywords"
-                              },
-                              {
-                                "label": "B",
-                                "text": "Examining the email headers for IP addresses and routing information"
-                              },
-                              {
-                                "label": "C",
-                                "text": "Checking the recipient's spam filter logs"
-                              },
-                              {
-                                "label": "D",
-                                "text": "Reviewing the sender's social media profiles for clues"
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "B",
-                              "explanation": "Email headers contain critical metadata such as IP addresses and routing paths, which are essential for tracing the origin of an email during an abuse investigation."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 43,
+                  "seq_id": 31,
                   "slides": [
                     {
-                      "seq_id": 43.1,
+                      "seq_id": 31.1,
                       "llm_generated_content": {
                         "title": "E-mail Abuse Investigations",
-                        "subtitle": "Overview and Key Concepts",
+                        "subtitle": "Overview of Key Concepts",
                         "objects": [
                           {
                             "content_type": "bullet_points",
                             "content_purpose": "description",
                             "data": [
                               "Definition of E-mail Abuse: Unauthorized use of email systems for malicious purposes such as spamming, phishing, or identity theft.",
-                              "Common Types of Email Abuse: Spam, phishing, spoofing, malware distribution, and email spoofing.",
-                              "Legal and Regulatory Frameworks: GDPR, CAN-SPAM Act, and other relevant laws governing email usage and data protection.",
-                              "Investigation Objectives: Trace the origin of abuse, identify perpetrators, recover stolen data, and prevent future incidents.",
-                              "Tools and Techniques: Email headers analysis, IP tracking, forensic email analysis, and digital footprint examination."
+                              "Common Types of E-mail Abuse: Spam, phishing, spoofing, malware distribution, and email-based scams.",
+                              "Legal and Regulatory Framework: Compliance with laws like CAN-SPAM Act, GDPR, and anti-fraud statutes.",
+                              "Investigation Process: Forensic analysis, data collection, tracing email origins, and identifying perpetrators.",
+                              "Tools and Techniques: Email headers analysis, IP tracking, digital forensics, and network monitoring."
                             ]
                           }
                         ]
@@ -1633,58 +1061,17 @@
                   "total_chunks_in_branch": 33,
                   "budget_slides_content": 2,
                   "direct_slides_content": 2,
-                  "total_slides_in_branch": 3,
+                  "total_slides_in_branch": 2,
                   "time_allocation_minutes": {
                     "direct_content_time": 6,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 11
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Attorney-Client Privilege Investigations (Deep-Dive Activity)",
-                    "toc_id": 35,
-                    "slides_allocated": 1,
-                    "seq_id": 46,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Attorney-Client Privilege Investigations",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following statements accurately describes the scope of attorney-client privilege in investigations?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "It applies only to communications between a client and their attorney regarding legal strategy."
-                              },
-                              {
-                                "label": "B",
-                                "text": "It protects all communications between a client and any third-party representative, not just attorneys."
-                              },
-                              {
-                                "label": "C",
-                                "text": "It is automatically waived if the client is under investigation for a crime."
-                              },
-                              {
-                                "label": "D",
-                                "text": "It extends to communications between a client and their attorney's assistant, even if the assistant is not an attorney."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "D",
-                              "explanation": "Attorney-client privilege extends to communications with the attorney's assistant, even if the assistant is not a licensed attorney, as long as the communication is made in confidence and for the purpose of seeking legal advice."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 45,
+                  "seq_id": 32,
                   "slides": [
                     {
-                      "seq_id": 45.1,
+                      "seq_id": 32.1,
                       "llm_generated_content": {
                         "title": "Attorney-Client Privilege Investigations",
                         "subtitle": "Overview and Key Concepts",
@@ -1694,30 +1081,31 @@
                             "content_purpose": "description",
                             "data": [
                               "Attorney-client privilege protects confidential communications between a client and their attorney for legal advice.",
-                              "This privilege is essential for ensuring open communication and trust in the attorney-client relationship.",
+                              "This privilege is essential for maintaining trust in the attorney-client relationship.",
                               "It applies to all forms of communication, including written, oral, and electronic.",
                               "The privilege is not absolute and may be waived if the client discloses information to third parties.",
-                              "It is a fundamental principle in legal ethics and is recognized in most jurisdictions."
+                              "In investigations, the privilege can be challenged if there is a legitimate need for information.",
+                              "The burden of proof lies with the party seeking to overcome the privilege."
                             ]
                           }
                         ]
                       }
                     },
                     {
-                      "seq_id": 45.2,
+                      "seq_id": 32.2,
                       "llm_generated_content": {
                         "title": "Attorney-Client Privilege Investigations",
-                        "subtitle": "Legal Framework and Scope",
+                        "subtitle": "Legal Framework and Application",
                         "objects": [
                           {
                             "content_type": "bullet_points",
                             "content_purpose": "explanation",
                             "data": [
                               "Attorney-client privilege protects confidential communications between a client and their attorney for legal advice.",
-                              "This privilege applies to all forms of communication, including written, oral, and electronic.",
-                              "The privilege is not absolute and may be waived if the client voluntarily discloses information to third parties.",
-                              "It is essential in investigations to determine if communications were made in confidence and whether exceptions apply.",
-                              "The legal framework includes statutes, case law, and ethical guidelines that define the scope and limitations of the privilege."
+                              "The privilege applies to communications made in confidence, with the intent of seeking legal advice.",
+                              "Exceptions include when communications are made to third parties, or when the client waives the privilege.",
+                              "Legal frameworks like the attorney-client privilege are crucial in investigations to protect sensitive information.",
+                              "In legal investigations, privilege may be challenged or waived, affecting the admissibility of evidence."
                             ]
                           }
                         ]
@@ -1732,11 +1120,11 @@
                   "total_chunks_in_branch": 52,
                   "budget_slides_content": 3,
                   "direct_slides_content": 3,
-                  "total_slides_in_branch": 4,
+                  "total_slides_in_branch": 3,
                   "time_allocation_minutes": {
                     "direct_content_time": 9,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 14
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
                   },
                   "children": [
                     {
@@ -1753,73 +1141,36 @@
                         "total_branch_time": 0
                       },
                       "children": [],
-                      "seq_id": 48
+                      "seq_id": 34
                     }
                   ],
-                  "interactive_activity": {
-                    "title": "Industrial Espionage Investigations (Deep-Dive Activity)",
-                    "toc_id": 36,
-                    "slides_allocated": 1,
-                    "seq_id": 49,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Industrial Espionage Investigations",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following is a primary legal challenge in industrial espionage investigations?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "Ensuring the confidentiality of trade secrets during the investigation"
-                              },
-                              {
-                                "label": "B",
-                                "text": "Proving the existence of a trade secret"
-                              },
-                              {
-                                "label": "C",
-                                "text": "Determining the exact date of the espionage activity"
-                              },
-                              {
-                                "label": "D",
-                                "text": "Identifying the source of the stolen information"
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "B",
-                              "explanation": "Proving the existence of a trade secret is a primary legal challenge because, under many jurisdictions, a trade secret must be demonstrated to have been protected and that its disclosure caused harm, which can be complex to establish in court."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 47,
+                  "seq_id": 33,
                   "slides": [
                     {
-                      "seq_id": 47.1,
+                      "seq_id": 33.1,
                       "llm_generated_content": {
                         "title": "Industrial Espionage Investigations",
-                        "subtitle": "Overview and Key Concepts",
+                        "subtitle": "Understanding the Scope and Nature",
                         "objects": [
                           {
                             "content_type": "bullet_points",
                             "content_purpose": "description",
                             "data": [
-                              "Definition: Unauthorized acquisition of trade secrets or confidential business information by competitors or third parties.",
-                              "Common methods: Theft of data, cyber attacks, insider leaks, industrial espionage.",
-                              "Impact: Financial loss, competitive disadvantage, reputational damage.",
-                              "Legal implications: Violation of intellectual property laws, potential criminal charges."
+                              "Industrial espionage refers to the illegal acquisition of trade secrets, confidential business information, or proprietary knowledge by competitors or foreign entities.",
+                              "Common methods include:",
+                              "  - Stealing digital data through hacking or insider threats",
+                              "  - Physical theft of documents or equipment",
+                              "  - Reverse engineering of products",
+                              "  - Social engineering and phishing attacks",
+                              "Key industries targeted: Technology, pharmaceuticals, aerospace, and manufacturing.",
+                              "Legal implications involve violations of trade secret laws and international agreements like the TRIPS Agreement."
                             ]
                           }
                         ]
                       }
                     },
                     {
-                      "seq_id": 47.2,
+                      "seq_id": 33.2,
                       "llm_generated_content": {
                         "title": "Industrial Espionage Investigations",
                         "subtitle": "Legal and Ethical Considerations",
@@ -1828,30 +1179,33 @@
                             "content_type": "bullet_points",
                             "content_purpose": "explanation",
                             "data": [
-                              "Legal Frameworks: International agreements like the WTO's TRIPS Agreement and national laws (e.g., U.S. Economic Espionage Act) govern intellectual property protection and penalties for espionage.",
-                              "Ethical Dilemmas: Balancing corporate interests with employee rights, privacy concerns, and the potential for misuse of investigative techniques.",
-                              "Due Process: Ensuring fair treatment of suspects, including access to legal representation and protection against unlawful surveillance or coercion.",
-                              "Global Variations: Differences in legal standards and enforcement across jurisdictions, impacting cross-border investigations and international cooperation."
+                              "Legal Frameworks: International agreements like the Budapest Convention on Cybercrime and national laws (e.g., U.S. Economic Espionage Act) govern investigations.",
+                              "Ethical Dilemmas: Balancing corporate interests with individual privacy rights, especially when gathering evidence through surveillance or hacking.",
+                              "Due Process: Ensuring that investigations comply with legal standards to avoid wrongful accusations and protect reputations.",
+                              "International Jurisdiction: Challenges in prosecuting cross-border espionage due to differing legal systems and enforcement capabilities."
                             ]
                           }
                         ]
                       }
                     },
                     {
-                      "seq_id": 47.3,
+                      "seq_id": 33.3,
                       "llm_generated_content": {
                         "title": "Industrial Espionage Investigations",
-                        "subtitle": "Investigation Techniques and Tools",
+                        "subtitle": "Preventive Measures and Counterintelligence Strategies",
                         "objects": [
                           {
                             "content_type": "bullet_points",
-                            "content_purpose": "description",
+                            "content_purpose": "explanation",
                             "data": [
-                              "Digital Forensics: Analysis of digital devices to recover deleted files, track data transfers, and identify unauthorized access.",
-                              "Network Monitoring: Continuous surveillance of internal and external networks to detect unusual data flows or unauthorized access attempts.",
-                              "Employee Surveillance: Use of monitoring tools to track employee activities, including email, internet usage, and file access.",
-                              "Physical Security Measures: Implementation of surveillance cameras, biometric access controls, and secure data storage to prevent physical breaches.",
-                              "Third-Party Audits: Engaging external experts to conduct independent assessments of security protocols and identify vulnerabilities."
+                              "Implement robust cybersecurity protocols to protect sensitive data",
+                              "Conduct regular internal audits and risk assessments",
+                              "Establish employee training programs on data security and ethical behavior",
+                              "Deploy advanced monitoring systems to detect unauthorized data access",
+                              "Develop and enforce strict access control policies",
+                              "Maintain comprehensive incident response plans for potential breaches",
+                              "Engage in continuous threat intelligence gathering and analysis",
+                              "Foster a culture of security awareness within the organization"
                             ]
                           }
                         ]
@@ -1861,10 +1215,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "Procedures for Private-Sector High-Tech Investigations (General Activity)",
+                "title": "Procedures for Private-Sector High-Tech Investigations (Interactive Activity)",
                 "toc_id": 31,
                 "slides_allocated": 1,
-                "seq_id": 50,
+                "seq_id": 35,
                 "llm_generated_content": {
                   "title": "Let's Apply This!",
                   "subtitle": "Knowledge Check: Procedures for Private-Sector High-Tech Investigations",
@@ -1873,35 +1227,35 @@
                       "content_type": "multiple_choice_question",
                       "content_purpose": "knowledge_check",
                       "data": {
-                        "question_text": "Which of the following is a critical step in conducting a private-sector high-tech investigation?",
+                        "question_text": "Which of the following is a critical step in the initial phase of a private-sector high-tech investigation?",
                         "options": [
                           {
                             "label": "A",
-                            "text": "Ignoring data privacy regulations to expedite the investigation"
+                            "text": "Conducting a public records search"
                           },
                           {
                             "label": "B",
-                            "text": "Establishing a secure and isolated investigation environment"
+                            "text": "Engaging in reverse engineering of the target's technology"
                           },
                           {
                             "label": "C",
-                            "text": "Publicly disclosing all findings to stakeholders immediately"
+                            "text": "Implementing a data breach response plan"
                           },
                           {
                             "label": "D",
-                            "text": "Relying solely on unverified sources for evidence collection"
+                            "text": "Establishing a secure, isolated testing environment for analysis"
                           }
                         ],
                         "correct_answer": {
-                          "label": "B",
-                          "explanation": "Establishing a secure and isolated investigation environment is critical to protect sensitive data, prevent contamination of evidence, and ensure the integrity of the investigation process."
+                          "label": "A",
+                          "explanation": "Conducting a public records search is a critical initial step as it helps gather preliminary information about the target's intellectual property, litigation history, and potential vulnerabilities before more invasive investigative methods are employed."
                         }
                       }
                     }
                   ]
                 }
               },
-              "seq_id": 38
+              "seq_id": 28
             },
             {
               "title": "Understanding Data Recovery Workstations and Software",
@@ -1910,11 +1264,11 @@
               "total_chunks_in_branch": 37,
               "budget_slides_content": 2,
               "direct_slides_content": 1,
-              "total_slides_in_branch": 4,
+              "total_slides_in_branch": 3,
               "time_allocation_minutes": {
                 "direct_content_time": 3,
                 "direct_interactive_time": 5,
-                "total_branch_time": 16
+                "total_branch_time": 11
               },
               "children": [
                 {
@@ -1924,58 +1278,17 @@
                   "total_chunks_in_branch": 19,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Setting Up Your Workstation for Digital Forensics (Deep-Dive Activity)",
-                    "toc_id": 39,
-                    "slides_allocated": 1,
-                    "seq_id": 53,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Setting Up Your Workstation for Digital Forensics",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following is a critical consideration when setting up a digital forensics workstation to ensure data integrity and prevent contamination?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "Using a single, shared user account for all forensic tools"
-                              },
-                              {
-                                "label": "B",
-                                "text": "Connecting the workstation to the internet for real-time updates"
-                              },
-                              {
-                                "label": "C",
-                                "text": "Implementing write-blocking techniques when handling storage media"
-                              },
-                              {
-                                "label": "D",
-                                "text": "Installing non-forensic software to enhance system performance"
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "C",
-                              "explanation": "Write-blocking is essential to prevent any modifications to the original evidence, ensuring data integrity and avoiding contamination during digital forensics investigations."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 52,
+                  "seq_id": 37,
                   "slides": [
                     {
-                      "seq_id": 52.1,
+                      "seq_id": 37.1,
                       "llm_generated_content": {
                         "title": "Setting Up Your Workstation for Digital Forensics",
                         "subtitle": "Overview",
@@ -1990,11 +1303,12 @@
                                 "children": [
                                   "Hardware requirements",
                                   "Software tools",
-                                  "Network and storage considerations",
-                                  "Security and compliance standards"
+                                  "Network and security configurations",
+                                  "Data storage and management"
                                 ]
                               },
-                              "Importance of a secure and efficient setup for forensic investigations"
+                              "Importance of a secure and reliable environment",
+                              "Best practices for maintaining workstation integrity"
                             ]
                           }
                         ]
@@ -2004,10 +1318,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "Understanding Data Recovery Workstations and Software (General Activity)",
+                "title": "Understanding Data Recovery Workstations and Software (Interactive Activity)",
                 "toc_id": 38,
                 "slides_allocated": 1,
-                "seq_id": 54,
+                "seq_id": 38,
                 "llm_generated_content": {
                   "title": "Let's Apply This!",
                   "subtitle": "Knowledge Check: Understanding Data Recovery Workstations and Software",
@@ -2020,34 +1334,34 @@
                         "options": [
                           {
                             "label": "A",
-                            "text": "To provide a secure environment for user authentication and access control."
+                            "text": "To provide a secure environment for user authentication"
                           },
                           {
                             "label": "B",
-                            "text": "To perform low-level data analysis and recovery from damaged storage media."
+                            "text": "To enable the recovery of data from damaged or failed storage devices"
                           },
                           {
                             "label": "C",
-                            "text": "To manage cloud storage and synchronize data across devices."
+                            "text": "To manage network traffic and ensure data integrity"
                           },
                           {
                             "label": "D",
-                            "text": "To encrypt and decrypt data for secure transmission over networks."
+                            "text": "To encrypt data for secure transmission over the internet"
                           }
                         ],
                         "correct_answer": {
                           "label": "B",
-                          "explanation": "A data recovery workstation is primarily used for low-level data analysis and recovery from damaged or failed storage media, such as hard drives or SSDs. It enables technicians to access and retrieve data that is no longer accessible through normal means."
+                          "explanation": "A data recovery workstation is primarily used to recover data from damaged or failed storage devices. It provides the necessary tools and environment for data retrieval, analysis, and restoration."
                         }
                       }
                     }
                   ]
                 }
               },
-              "seq_id": 51,
+              "seq_id": 36,
               "slides": [
                 {
-                  "seq_id": 51.1,
+                  "seq_id": 36.1,
                   "llm_generated_content": {
                     "title": "Understanding Data Recovery Workstations and Software",
                     "subtitle": null,
@@ -2056,11 +1370,18 @@
                         "content_type": "bullet_points",
                         "content_purpose": "description",
                         "data": [
-                          "Data recovery workstations are specialized computing systems designed for retrieving lost, corrupted, or deleted data from various storage media.",
-                          "These workstations typically include hardware components such as high-capacity storage drives, RAID configurations, and forensic-grade hardware tools.",
-                          "Software components include data recovery tools like R-Studio, GetDataBack, and professional forensic software like EnCase and FTK.",
-                          "Workstations may also feature secure data erasure tools and encryption utilities for data protection and compliance.",
-                          "The integration of hardware and software enables efficient, reliable, and secure data recovery operations."
+                          "Data recovery workstations are specialized computing systems designed for recovering lost, corrupted, or deleted data from various storage media.",
+                          "Key components of a data recovery workstation include:",
+                          "High-performance hardware (e.g., multi-core processors, large RAM, dedicated GPUs for image processing)",
+                          "Specialized software tools for data extraction, analysis, and reconstruction",
+                          "Redundant storage systems for data safety and backup",
+                          "Environmental controls (e.g., temperature regulation, ESD protection) to ensure data integrity",
+                          "Data recovery software typically includes features such as:",
+                          "Disk imaging for creating exact copies of storage media",
+                          "File carving for recovering files without relying on file system metadata",
+                          "Sector-level data recovery for damaged or physically damaged drives",
+                          "Data analysis tools for identifying and reconstructing file fragments",
+                          "Integration with forensic tools for legal and investigative purposes"
                         ]
                       }
                     ]
@@ -2075,11 +1396,11 @@
               "total_chunks_in_branch": 109,
               "budget_slides_content": 7,
               "direct_slides_content": 1,
-              "total_slides_in_branch": 13,
+              "total_slides_in_branch": 8,
               "time_allocation_minutes": {
                 "direct_content_time": 3,
                 "direct_interactive_time": 5,
-                "total_branch_time": 51
+                "total_branch_time": 26
               },
               "children": [
                 {
@@ -2089,58 +1410,17 @@
                   "total_chunks_in_branch": 14,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Gathering the Evidence (Deep-Dive Activity)",
-                    "toc_id": 41,
-                    "slides_allocated": 1,
-                    "seq_id": 57,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Gathering the Evidence",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best describes the primary purpose of gathering evidence in research?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "To collect data that supports the researcher's personal beliefs."
-                              },
-                              {
-                                "label": "B",
-                                "text": "To ensure the research findings are statistically significant."
-                              },
-                              {
-                                "label": "C",
-                                "text": "To provide a factual basis for drawing conclusions and making decisions."
-                              },
-                              {
-                                "label": "D",
-                                "text": "To increase the number of citations in the research paper."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "C",
-                              "explanation": "Gathering evidence in research is primarily aimed at providing a factual basis for drawing conclusions and making informed decisions. This ensures that the research is grounded in objective data rather than subjective opinions or biases."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 56,
+                  "seq_id": 40,
                   "slides": [
                     {
-                      "seq_id": 56.1,
+                      "seq_id": 40.1,
                       "llm_generated_content": {
                         "title": "Gathering the Evidence",
                         "subtitle": null,
@@ -2150,10 +1430,10 @@
                             "content_purpose": "description",
                             "data": [
                               "Identify the type of evidence required for the research question or hypothesis.",
-                              "Determine the appropriate sources of evidence (e.g., primary, secondary, tertiary sources).",
-                              "Select credible and relevant sources that align with the research objectives.",
-                              "Assess the reliability, validity, and bias of the sources.",
-                              "Organize and document the evidence systematically for further analysis."
+                              "Determine the sources of evidence (e.g., primary, secondary, tertiary sources).",
+                              "Select appropriate data collection methods (e.g., surveys, interviews, experiments).",
+                              "Consider ethical and legal considerations in evidence gathering.",
+                              "Plan for data storage, organization, and accessibility."
                             ]
                           }
                         ]
@@ -2168,11 +1448,11 @@
                   "total_chunks_in_branch": 8,
                   "budget_slides_content": 0,
                   "direct_slides_content": 0,
-                  "total_slides_in_branch": 1,
+                  "total_slides_in_branch": 0,
                   "time_allocation_minutes": {
                     "direct_content_time": 0,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 5
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
                   },
                   "children": [
                     {
@@ -2189,51 +1469,10 @@
                         "total_branch_time": 0
                       },
                       "children": [],
-                      "seq_id": 59
+                      "seq_id": 42
                     }
                   ],
-                  "interactive_activity": {
-                    "title": "Understanding Bit-stream Copies (Deep-Dive Activity)",
-                    "toc_id": 42,
-                    "slides_allocated": 1,
-                    "seq_id": 60,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Understanding Bit-stream Copies",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best describes a bit-stream copy?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "A copy that replicates data at the file level, preserving directory structures and metadata."
-                              },
-                              {
-                                "label": "B",
-                                "text": "A copy that duplicates data at the sector level, capturing every byte of the source drive."
-                              },
-                              {
-                                "label": "C",
-                                "text": "A copy that only replicates the contents of files, excluding any metadata or directory information."
-                              },
-                              {
-                                "label": "D",
-                                "text": "A copy that transfers data in compressed form, reducing storage requirements."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "B",
-                              "explanation": "A bit-stream copy captures data at the sector level, replicating every byte of the source drive, including unallocated space and raw data. This is distinct from file-level copies, which only replicate files and metadata."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 58
+                  "seq_id": 41
                 },
                 {
                   "title": "Analyzing Your Digital Evidence",
@@ -2242,11 +1481,11 @@
                   "total_chunks_in_branch": 48,
                   "budget_slides_content": 3,
                   "direct_slides_content": 3,
-                  "total_slides_in_branch": 4,
+                  "total_slides_in_branch": 3,
                   "time_allocation_minutes": {
                     "direct_content_time": 9,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 14
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
                   },
                   "children": [
                     {
@@ -2263,54 +1502,13 @@
                         "total_branch_time": 0
                       },
                       "children": [],
-                      "seq_id": 62
+                      "seq_id": 44
                     }
                   ],
-                  "interactive_activity": {
-                    "title": "Analyzing Your Digital Evidence (Deep-Dive Activity)",
-                    "toc_id": 44,
-                    "slides_allocated": 1,
-                    "seq_id": 63,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Analyzing Your Digital Evidence",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "When analyzing digital evidence, which of the following is a critical step to ensure the integrity of the data?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "Deleting unnecessary files to free up storage space"
-                              },
-                              {
-                                "label": "B",
-                                "text": "Modifying timestamps to align with the suspect's alibi"
-                              },
-                              {
-                                "label": "C",
-                                "text": "Creating a forensic image of the storage medium"
-                              },
-                              {
-                                "label": "D",
-                                "text": "Sharing the evidence with unauthorized parties for cross-verification"
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "C",
-                              "explanation": "Creating a forensic image of the storage medium ensures that the original data remains untouched and preserved for legal and investigative purposes. This step is crucial to maintain the chain of custody and prevent data tampering."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 61,
+                  "seq_id": 43,
                   "slides": [
                     {
-                      "seq_id": 61.1,
+                      "seq_id": 43.1,
                       "llm_generated_content": {
                         "title": "Analyzing Your Digital Evidence",
                         "subtitle": "Introduction to Digital Evidence",
@@ -2320,15 +1518,16 @@
                             "content_purpose": "description",
                             "data": [
                               "Digital evidence refers to any data stored or transmitted in digital form that can be used to prove or disprove a fact in a legal or investigative context.",
-                              "Examples include emails, text messages, social media posts, browsing history, and digital documents.",
-                              "This evidence is critical in modern investigations due to its volume, accessibility, and potential to reveal hidden patterns or connections."
+                              "This includes emails, text messages, social media posts, digital documents, and metadata.",
+                              "The integrity, authenticity, and relevance of digital evidence are critical to its admissibility in legal proceedings.",
+                              "Proper handling and preservation of digital evidence are essential to maintain its evidentiary value."
                             ]
                           }
                         ]
                       }
                     },
                     {
-                      "seq_id": 61.2,
+                      "seq_id": 43.2,
                       "llm_generated_content": {
                         "title": "Analyzing Your Digital Evidence",
                         "subtitle": "Understanding Digital Evidence",
@@ -2338,15 +1537,21 @@
                             "content_purpose": "description",
                             "data": [
                               "Digital evidence refers to any data stored or transmitted in digital form that can be used to prove or disprove a fact in a legal or investigative context.",
-                              "Examples include emails, text messages, social media posts, browser history, and digital documents.",
-                              "It is crucial to preserve the integrity of digital evidence to ensure its admissibility in legal proceedings."
+                              "Types of digital evidence include:",
+                              "  - Emails and instant messages",
+                              "  - Text messages and call logs",
+                              "  - Social media posts and metadata",
+                              "  - Computer files and logs",
+                              "  - Mobile device data",
+                              "  - Internet browsing history and cookies",
+                              "Digital evidence must be collected, preserved, and analyzed following strict protocols to maintain its integrity and admissibility in legal proceedings."
                             ]
                           }
                         ]
                       }
                     },
                     {
-                      "seq_id": 61.3,
+                      "seq_id": 43.3,
                       "llm_generated_content": {
                         "title": "Analyzing Your Digital Evidence",
                         "subtitle": "Preservation and Legal Considerations",
@@ -2356,15 +1561,14 @@
                             "content_purpose": "explanation",
                             "data": [
                               "Preservation of digital evidence is critical to maintain its integrity and admissibility in legal proceedings.",
-                              "Key principles include:",
-                              "  - Chain of custody: Documenting who handled the evidence and when to prevent tampering or contamination.",
-                              "  - Hashing: Using cryptographic hashes (e.g., MD5, SHA-1) to verify data integrity and detect unauthorized changes.",
-                              "  - Legal compliance: Adhering to laws like the Electronic Communications Privacy Act (ECPA) and the Stored Communications Act (SCA) to ensure proper handling.",
-                              "  - Forensic imaging: Creating exact copies of digital media to preserve original data without alteration.",
-                              "Legal considerations involve:",
-                              "  - Chain of custody documentation to establish authenticity and prevent disputes.",
-                              "  - Adhering to legal standards for evidence collection and analysis to avoid exclusion in court.",
-                              "  - Understanding the role of digital evidence in legal cases, such as criminal investigations or civil litigation."
+                              "Key steps in preservation include:",
+                              "  - Identifying and securing all relevant digital devices and media.",
+                              "  - Creating exact copies (bit-level images) of the data to prevent tampering.",
+                              "  - Maintaining a chain of custody to document who handled the evidence and when.",
+                              "Legal considerations include:",
+                              "  - Adhering to laws such as the Electronic Communications Privacy Act (ECPA) and the Stored Communications Act (SCA).",
+                              "  - Ensuring compliance with search warrants and subpoenas when accessing private data.",
+                              "  - Understanding the implications of data privacy regulations like GDPR and CCPA."
                             ]
                           }
                         ]
@@ -2379,11 +1583,11 @@
                   "total_chunks_in_branch": 22,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [
                     {
@@ -2400,54 +1604,13 @@
                         "total_branch_time": 0
                       },
                       "children": [],
-                      "seq_id": 65
+                      "seq_id": 46
                     }
                   ],
-                  "interactive_activity": {
-                    "title": "Completing the Case (Deep-Dive Activity)",
-                    "toc_id": 46,
-                    "slides_allocated": 1,
-                    "seq_id": 66,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Completing the Case",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "In the context of completing the case, which of the following best describes the role of the 'case' in the problem-solving process?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "It is a set of predefined steps to follow for any problem."
-                              },
-                              {
-                                "label": "B",
-                                "text": "It is a structured framework that guides the analysis and resolution of a specific issue."
-                              },
-                              {
-                                "label": "C",
-                                "text": "It is a list of potential solutions to be considered."
-                              },
-                              {
-                                "label": "D",
-                                "text": "It is a collection of tools and techniques used for data analysis."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "B",
-                              "explanation": "The 'case' serves as a structured framework that guides the analysis and resolution of a specific issue, providing a systematic approach to problem-solving."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 64,
+                  "seq_id": 45,
                   "slides": [
                     {
-                      "seq_id": 64.1,
+                      "seq_id": 45.1,
                       "llm_generated_content": {
                         "title": "Completing the Case",
                         "subtitle": null,
@@ -2456,12 +1619,12 @@
                             "content_type": "bullet_points",
                             "content_purpose": "process",
                             "data": [
-                              "1. Review Case Details: Ensure all information from the case study is thoroughly understood, including background, context, and key issues.",
-                              "2. Identify Key Issues: Pinpoint the main problems or questions that need to be addressed in the case.",
-                              "3. Gather Relevant Information: Collect data, facts, and any supporting materials that are critical to analyzing the case.",
-                              "4. Analyze the Situation: Apply theoretical frameworks, models, or concepts to evaluate the case and generate insights.",
-                              "5. Develop Recommendations: Formulate actionable solutions or strategies based on the analysis.",
-                              "6. Present Findings: Clearly communicate the analysis, recommendations, and their implications in a structured manner."
+                              "1. Review Case Details: Revisit the case to ensure all information is accurate and complete.",
+                              "2. Identify Key Issues: Pinpoint the main problems or challenges presented in the case.",
+                              "3. Gather Additional Information: Collect any missing data or context needed for analysis.",
+                              "4. Analyze the Situation: Apply relevant theories, models, or frameworks to understand the case.",
+                              "5. Develop Recommendations: Propose actionable solutions or strategies based on the analysis.",
+                              "6. Present Findings: Clearly communicate the analysis and recommendations to stakeholders."
                             ]
                           }
                         ]
@@ -2476,58 +1639,17 @@
                   "total_chunks_in_branch": 9,
                   "budget_slides_content": 1,
                   "direct_slides_content": 1,
-                  "total_slides_in_branch": 2,
+                  "total_slides_in_branch": 1,
                   "time_allocation_minutes": {
                     "direct_content_time": 3,
-                    "direct_interactive_time": 5,
-                    "total_branch_time": 8
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
                   },
                   "children": [],
-                  "interactive_activity": {
-                    "title": "Critiquing the Case (Deep-Dive Activity)",
-                    "toc_id": 48,
-                    "slides_allocated": 1,
-                    "seq_id": 68,
-                    "llm_generated_content": {
-                      "title": "Let's Apply This!",
-                      "subtitle": "Knowledge Check: Critiquing the Case",
-                      "objects": [
-                        {
-                          "content_type": "multiple_choice_question",
-                          "content_purpose": "knowledge_check",
-                          "data": {
-                            "question_text": "Which of the following best describes the central critique of the case study?",
-                            "options": [
-                              {
-                                "label": "A",
-                                "text": "The failure to consider alternative explanations for the observed outcomes."
-                              },
-                              {
-                                "label": "B",
-                                "text": "The overreliance on qualitative data without quantitative validation."
-                              },
-                              {
-                                "label": "C",
-                                "text": "The lack of a control group in the experimental design."
-                              },
-                              {
-                                "label": "D",
-                                "text": "The absence of peer review prior to publication."
-                              }
-                            ],
-                            "correct_answer": {
-                              "label": "C",
-                              "explanation": "The central critique of the case study is the lack of a control group, which undermines the validity of the experimental results by not accounting for confounding variables."
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "seq_id": 67,
+                  "seq_id": 47,
                   "slides": [
                     {
-                      "seq_id": 67.1,
+                      "seq_id": 47.1,
                       "llm_generated_content": {
                         "title": "Critiquing the Case",
                         "subtitle": null,
@@ -2551,10 +1673,10 @@
                 }
               ],
               "interactive_activity": {
-                "title": "Conducting an Investigation (General Activity)",
+                "title": "Conducting an Investigation (Interactive Activity)",
                 "toc_id": 40,
                 "slides_allocated": 1,
-                "seq_id": 69,
+                "seq_id": 48,
                 "llm_generated_content": {
                   "title": "Let's Apply This!",
                   "subtitle": "Knowledge Check: Conducting an Investigation",
@@ -2563,15 +1685,15 @@
                       "content_type": "multiple_choice_question",
                       "content_purpose": "knowledge_check",
                       "data": {
-                        "question_text": "Which of the following is a crucial step in the process of conducting a scientific investigation?",
+                        "question_text": "Which of the following is a crucial step in conducting a scientific investigation?",
                         "options": [
                           {
                             "label": "A",
-                            "text": "Ignoring all background information"
+                            "text": "Ignoring all background research"
                           },
                           {
                             "label": "B",
-                            "text": "Formulating a hypothesis without prior research"
+                            "text": "Formulating a hypothesis without prior knowledge"
                           },
                           {
                             "label": "C",
@@ -2579,22 +1701,22 @@
                           },
                           {
                             "label": "D",
-                            "text": "Defining the problem or research question clearly"
+                            "text": "Defining the problem and research question clearly"
                           }
                         ],
                         "correct_answer": {
                           "label": "D",
-                          "explanation": "Defining the problem or research question clearly is essential as it sets the direction for the entire investigation, guiding the formulation of hypotheses, experimental design, and data analysis."
+                          "explanation": "Defining the problem and research question clearly is essential to ensure the investigation is focused, relevant, and addresses a specific scientific question."
                         }
                       }
                     }
                   ]
                 }
               },
-              "seq_id": 55,
+              "seq_id": 39,
               "slides": [
                 {
-                  "seq_id": 55.1,
+                  "seq_id": 39.1,
                   "llm_generated_content": {
                     "title": "Conducting an Investigation",
                     "subtitle": null,
@@ -2603,15 +1725,14 @@
                         "content_type": "bullet_points",
                         "content_purpose": "process",
                         "data": [
-                          "Define the scope and objectives of the investigation",
-                          "Identify the target population or sample",
-                          "Select appropriate research methods (e.g., surveys, interviews, experiments)",
-                          "Develop a research plan with timelines and resources",
-                          "Collect and organize data systematically",
-                          "Analyze data using appropriate statistical or qualitative methods",
-                          "Interpret findings and draw conclusions",
-                          "Report results through written or oral presentations",
-                          "Evaluate the effectiveness of the investigation and suggest improvements"
+                          "Define the Purpose and Scope: Clearly outline the objectives, questions to be answered, and the boundaries of the investigation.",
+                          "Identify the Target Audience: Determine who the investigation is for, such as stakeholders, end-users, or regulatory bodies.",
+                          "Select Appropriate Methods: Choose between qualitative (e.g., interviews, focus groups) and quantitative (e.g., surveys, experiments) methods based on the research goals.",
+                          "Design the Investigation Plan: Outline the steps, timeline, resources, and tools needed to execute the investigation effectively.",
+                          "Collect Data: Gather information through selected methods, ensuring accuracy, reliability, and ethical standards.",
+                          "Analyze Data: Interpret the collected data to identify patterns, trends, and insights that address the initial research questions.",
+                          "Report Findings: Present the results in a clear, concise manner, using appropriate formats such as reports, presentations, or visualizations.",
+                          "Evaluate and Refine: Assess the effectiveness of the investigation and identify areas for improvement in future studies."
                         ]
                       }
                     ]
@@ -2627,7 +1748,7 @@
             "title": "Summary & Key Takeaways",
             "placeholder": "Auto-generate based on covered topics."
           },
-          "seq_id": 70,
+          "seq_id": 49,
           "llm_generated_content": {
             "title": "Summary & Key Takeaways",
             "subtitle": null,
@@ -2636,11 +1757,11 @@
                 "content_type": "bullet_points",
                 "content_purpose": "description",
                 "data": [
-                  "Digital evidence is crucial in modern investigations due to its volume and potential to reveal hidden patterns.",
-                  "Preserving the integrity of digital evidence through forensic imaging and hashing is essential for legal admissibility.",
-                  "A structured case analysis framework guides the systematic evaluation and resolution of complex issues.",
-                  "Critiquing case studies involves assessing assumptions, biases, and logical consistency to enhance analytical rigor.",
-                  "Effective case completion requires thorough review, evidence analysis, and clear communication of findings and recommendations."
+                  "Define clear objectives and research questions to ensure focused and relevant investigations.",
+                  "Use appropriate methods and tools for data collection, ensuring ethical and legal compliance.",
+                  "Preserve digital evidence rigorously to maintain its integrity and admissibility in legal contexts.",
+                  "Analyze data systematically to extract meaningful insights and support evidence-based conclusions.",
+                  "Maintain a secure and reliable digital forensics environment to ensure accurate and trustworthy results."
                 ]
               }
             ]
@@ -2652,7 +1773,7 @@
             "title": "Thank You",
             "text": "Questions?"
           },
-          "seq_id": 71
+          "seq_id": 50
         }
       ]
     }

@@ -2,7 +2,7 @@
   "course_id": "",
   "unit_name": "",
   "interactive": true,
-  "interactive_deep": true,
+  "interactive_deep":false,
   "teaching_flow_id": "Standard Lecture Flow",
   "parameters_slides": {
     "slides_per_hour": 18,

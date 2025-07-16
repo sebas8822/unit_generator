@@ -1,0 +1,401 @@
+{
+  "week": 1,
+  "overall_topic": "Understanding the Digital Forensics Profession and Investigations.",
+  "weekly_slide_summary": {
+    "total_slides_for_week": 158,
+    "total_framework_slides": 24,
+    "total_content_slides": 127,
+    "total_interactive_slides": 7,
+    "number_of_decks": 6
+  },
+  "weekly_time_summary_minutes": {
+    "total_time_for_week_minutes": 494,
+    "total_framework_time": 36,
+    "total_content_and_interactive_time": 458
+  },
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "total_slides_in_deck": 21,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 16,
+        "interactive": 1
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 61,
+        "total_deck_time": 67
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Understanding the Digital Forensics Profession and Investigations.",
+            "deck_title": "Week 1, Lecture 1"
+          },
+          "seq_id": 0
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "An Overview of Digital Forensics"
+            ]
+          },
+          "seq_id": 1
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "An Overview of Digital Forensics",
+              "toc_id": 9,
+              "chunk_count": 18,
+              "total_chunks_in_branch": 60,
+              "budget_slides_content": 12,
+              "direct_slides_content": 4,
+              "total_slides_in_branch": 17,
+              "time_allocation_minutes": {
+                "direct_content_time": 12,
+                "direct_interactive_time": 5,
+                "total_branch_time": 61
+              },
+              "children": [
+                {
+                  "title": "Digital Forensics and Other Related Disciplines",
+                  "toc_id": 10,
+                  "chunk_count": 18,
+                  "total_chunks_in_branch": 18,
+                  "budget_slides_content": 3,
+                  "direct_slides_content": 3,
+                  "total_slides_in_branch": 4,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 9,
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 14
+                  },
+                  "children": [],
+                  "interactive_activity": {
+                    "title": "Digital Forensics and Other Related Disciplines (Deep-Dive Activity)",
+                    "toc_id": 10,
+                    "slides_allocated": 1,
+                    "seq_id": 4,
+                    "llm_generated_content": {
+                      "title": "Let's Apply This!",
+                      "content": [
+                        "Which of the following best describes the primary goal of digital forensics as defined by NIST?",
+                        "A) To recover deleted files for data recovery purposes",
+                        "B) To examine and analyze data from computer storage media for use as evidence in court",
+                        "C) To secure an organization's computers and networks through vulnerability assessments",
+                        "D) To monitor network firewall logs for intrusion detection",
+                        "B"
+                      ]
+                    }
+                  },
+                  "seq_id": 3,
+                  "chunks_sorted": [
+                    174,
+                    175,
+                    176,
+                    177,
+                    178,
+                    179,
+                    180,
+                    181,
+                    182,
+                    183,
+                    184,
+                    185,
+                    186,
+                    187,
+                    188,
+                    189,
+                    190,
+                    191
+                  ],
+                  "content": "Digital Forensics and Other Related Disciplines\n\nAccording to DIBS USA, Inc., a privately owned corporation specializing in digital forensics since the 1990s (www.dibsforensics.com), digital forensics involves scientifically examining and analyzing data from computer storage media so that it can be used as evidence in court. In the National Institute of Standards and Technology (NIST) document “Guide to Integrating Forensic Techniques into Incident Response” (http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-86.pdf, 2006), digital forensics is defined as “the application of science to the identification, collection, examination, and analysis of data while preserving the integrity of the information and maintaining a strict chain of custody for the data.” Typically, investigating digital devices includes collecting data\n\nchain of custody for the data.” Typically, investigating digital devices includes collecting data securely, examining suspect data to determine details such as origin and content, presenting digital information to courts, and applying laws to digital device practices.\n\nIn general, digital forensics is used to investigate data that can be retrieved from a computer’s hard drive or other storage media. Like an archaeologist excavating a site, digital forensics examiners retrieve information from a computer or its components. The information retrieved might already be on the drive, but it might not be easy to find or decipher. On the other hand, network forensics yields information about how attackers gain access to a network along with files they might have copied, examined, or tampered with. Network forensics examiners use log files to determine when users logged on and determine which URLs users accessed, how they logged on to the network, and from what location. Network forensics also tries to determine what tracks or new files were left behind on a\n\nlocation. Network forensics also tries to determine what tracks or new files were left behind on a victim’s computer and what changes were made. In Chapter 10, you explore when and how network forensics should be used in an investigation.\n\nDigital forensics is also different from data recovery Retrieving files that were deleted accidentally or purposefully. , which involves retrieving information that was deleted by mistake or lost during a power surge or server crash, for example. In data recovery, typically you know what you’re looking for. Digital forensics is the task of recovering data that users have hidden or deleted, with the goal of ensuring that the recovered data is valid so that it can be used as evidence. In this regard, digital forensics differs from other types of evidence recovered from a scene. When investigators in a crime scene unit retrieve blood or hair or bullets, they can identify what it is. When a laptop, smartphone, or other digital device is retrieved, its contents are unknown and pose a challenge\n\nsmartphone, or other digital device is retrieved, its contents are unknown and pose a challenge to the examiner. The evidence can be inculpatory evidence Evidence that indicates a suspect is guilty of the crime he or she is charged with. (in criminal cases, the expression is “incriminating”) or exculpatory evidence Evidence that indicates the suspect is innocent of the crime. , meaning it tends to clear the suspect. Examiners often approach a digital device not knowing whether it contains evidence. They must search storage media and piece together any data they find. Forensics software tools can be used for most cases. In extreme cases, examiners can use electron microscopes and other sophisticated equipment to retrieve information from machines that have been damaged or reformatted\n\nsophisticated equipment to retrieve information from machines that have been damaged or reformatted purposefully. This method is usually cost prohibitive, so it’s not normally used.\n\nForensics investigators often work as part of a team to secure an organization’s computers and networks. The digital investigation function can be viewed as part of a triad that makes up computing security. Rapid progress in technology has resulted in an expansion of the skills needed and varies depending on the organization using practitioners in this field. Figure 1-1 shows the investigations triad made up of these functions:\n\nVulnerability/threat assessment and risk management\n\nNetwork intrusion detection and incident response\n\nDigital investigations\n\nEach side of the triad in Figure 1-1 represents a group or department responsible for performing the associated tasks. Although each function operates independently, all three groups draw from one another when a large-scale digital investigation is being conducted. By combining these three groups into a team, all aspects of a digital technology investigation can be addressed without calling in outside specialists. In smaller companies, one group might perform all the tasks shown in the investigations triad, or a small company might contract with service providers to perform these tasks.\n\nWhen you work in the vulnerability/threat assessment and risk management The group that determines the weakest points in a system. It covers physical security and the security of OSs and applications. group, you test and verify the integrity of stand-alone workstations and network servers. This integrity check covers the physical security of systems and the security of operating systems (OSs) and applications. People working in this group (often known as penetration testers) test for vulnerabilities of OSs and applications used in the network and conduct authorized attacks on the network to assess vulnerabilities. Typically, people performing this task have several years of experience in system administration. Their job is to poke holes in the network to help an organization be better\n\nsystem administration. Their job is to poke holes in the network to help an organization be better prepared for a real attack.\n\nProfessionals in the vulnerability assessment and risk management group also need skills in network intrusion detection and incident response Detecting attacks from intruders by using automated tools; also includes the manual process of monitoring network firewall logs. . This group detects intruder attacks by using automated tools and monitoring network firewall logs. When an external attack is detected, the response team tracks, locates, and identifies the intrusion method and denies further access to the network. If an intruder launches an attack that causes damage or potential damage, this team collects the necessary evidence, which can be used for civil or criminal litigation against the intruder and to prevent future intrusions. If an internal user is engaged in illegal acts or\n\nthe intruder and to prevent future intrusions. If an internal user is engaged in illegal acts or policy violations, the network intrusion detection and incident response group might assist in locating the user. For example, someone at a community college sends e-mails containing a worm to other users on the network. The network team realizes the e-mails are coming from a node on the internal network, and the security team focuses on that node. The digital investigations The process of conducting forensic analysis of systems suspected of containing evidence related to an incident or a crime. group manages investigations and conducts forensics analysis of systems suspected of containing evidence related to an incident or a crime. For complex casework, this group draws on resources from\n\nrelated to an incident or a crime. For complex casework, this group draws on resources from personnel in vulnerability assessment, risk management, and network intrusion detection and incident response. However, the digital investigations group typically resolves or terminates case investigations.",
+                  "llm_generated_content": {
+                    "title": "Digital Forensics and Other Related Disciplines",
+                    "content": [
+                      "Digital Forensics: Scientific examination and analysis of data from computer storage media for use as evidence in court.",
+                      "Key aspects: Identification, collection, examination, analysis of data; preserving data integrity and maintaining chain of custody.",
+                      "Investigation steps: Secure data collection, examine suspect data for origin and content, present digital information to courts, apply laws to digital practices.",
+                      "Digital forensics vs. Data Recovery: Data recovery focuses on retrieving deleted or lost data (e.g., accidental deletion, power surge), while digital forensics recovers hidden or deleted data for legal evidence.",
+                      "Digital forensics vs. Network Forensics: Network forensics examines how attackers access networks, tracks files copied or tampered with, uses logs to determine user activity and network access points.",
+                      "Digital forensics vs. Physical Evidence: Unlike physical evidence (e.g., blood, hair), digital evidence is unknown and requires searching storage media to find inculpatory or exculpatory information.",
+                      "Tools and Techniques: Forensics software is commonly used; in extreme cases, electron microscopes and other equipment may be used for damaged or reformatted devices.",
+                      "Investigation Triad: Computing security is divided into three functions: Vulnerability/Threat Assessment and Risk Management, Network Intrusion Detection and Incident Response, Digital Investigations.",
+                      "Vulnerability/Threat Assessment: Identifies system weaknesses, tests OS and application security, conducts authorized attacks to assess vulnerabilities.",
+                      "Network Intrusion Detection: Uses automated tools and monitors firewall logs to detect attacks, tracks intrusions, collects evidence for litigation, and prevents future attacks.",
+                      "Digital Investigations: Conducts forensic analysis of systems with potential evidence, collaborates with other triad groups for complex cases, resolves or terminates investigations."
+                    ]
+                  }
+                },
+                {
+                  "title": "A Brief History of Digital Forensics",
+                  "toc_id": 11,
+                  "chunk_count": 13,
+                  "total_chunks_in_branch": 13,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 11
+                  },
+                  "children": [],
+                  "interactive_activity": {
+                    "title": "A Brief History of Digital Forensics (Deep-Dive Activity)",
+                    "toc_id": 11,
+                    "slides_allocated": 1,
+                    "seq_id": 6,
+                    "llm_generated_content": {
+                      "title": "Let's Apply This!",
+                      "content": [
+                        "Which of the following best describes the primary reason for the development of digital forensics tools in the 1980s?",
+                        "A) The need to recover deleted files and analyze digital evidence as computer crime became more prevalent.",
+                        "B) The demand for more powerful mainframe computers to handle financial transactions.",
+                        "C) The requirement to create new operating systems for personal computers.",
+                        "D) The necessity to replace older forensic tools with more advanced government-developed software.",
+                        "A"
+                      ]
+                    }
+                  },
+                  "seq_id": 5,
+                  "chunks_sorted": [
+                    192,
+                    193,
+                    194,
+                    195,
+                    196,
+                    197,
+                    198,
+                    199,
+                    200,
+                    201,
+                    202,
+                    203,
+                    204
+                  ],
+                  "content": "A Brief History of Digital Forensics\n\nFifty years ago, few people imagined that computers would be an integral part of everyday life. Now computer technology is commonplace, as are crimes in which a digital device is the instrument of the crime, the target of the crime, and, by its nature, the location where evidence is stored.\n\nBy the 1970s, electronic crimes were increasing, especially in the financial sector. Most computers in that era were mainframes, used by trained people with specialized skills who worked in finance, engineering, and academia. White-collar fraud began when people in these industries saw a way to make money by manipulating computer data. One of the most well-known crimes of the mainframe era is the one-half cent crime. Banks commonly tracked money in accounts to the third decimal place or more. They used and still use the rounding-up accounting method when paying interest. If the interest applied to an account resulted in a fraction of a cent, that fraction was used in the calculation for the next account until the total resulted in a whole cent. It was assumed that eventually every customer\n\naccount until the total resulted in a whole cent. It was assumed that eventually every customer would benefit from this averaging. Some computer programmers corrupted this method by opening an account for themselves and writing programs that diverted all the fractional monies into their accounts. In small banks, this practice amounted to only a few hundred dollars a month. In large banks with millions of accounts, however, the amount could reach hundreds of thousands of dollars.\n\nDuring this time, most law enforcement officers didn’t know enough about computers to ask the right questions or to preserve evidence for trial. Many began to attend Federal Law Enforcement Training Center (FLETC) programs designed to train law enforcement in handling digital data.\n\nAs PCs gained popularity and began to replace mainframe computers in the 1980s, many different OSs emerged. Apple released the Apple IIe in 1983 and then the Macintosh in 1984. Computers such as the TRS-80 and Commodore 64 were the machines of the day. CP/M machines, such as the Kaypro and Zenith, were also in demand.\n\nDisk Operating System (DOS) was available in many varieties, including PC-DOS, QDOS, DR-DOS, IBM-DOS, and MS-DOS. Forensics tools at that time were simple, and most were generated by government agencies, such as the Royal Canadian Mounted Police (RCMP, which had its own investigative tools) and the U.S. Internal Revenue Service (IRS). Most tools were written in C and assembly language and weren’t available to the general public.\n\nIn the mid-1980s, a new tool, Xtree Gold, appeared on the market. It recognized file types and retrieved lost or deleted files. Norton DiskEdit soon followed and became the preferred tool for finding and recovering deleted files. You could use these tools on the most powerful PCs of that time; IBM-compatible computers had hard disks of 10 to 40 MB and two floppy drives, as shown in Figure 1-2.\n\nIn 1987, Apple produced the Mac SE, a Macintosh with an external EasyDrive hard disk with 60 MB of storage (see Figure 1-3). At this time, the popular Commodore 64 still used standard audiotapes to record data, so the Mac SE represented an important advance in computer technology.\n\nBy the early 1990s, specialized tools for digital forensics were available. The International Association of Computer Investigative Specialists (IACIS) An organization created to provide training and software for law enforcement in the digital forensics field. introduced training on software for digital forensics examinations, and the IRS created search-warrant programs. However, no commercial GUI software for digital forensics was available until ASR Data created Expert Witness for Macintosh. This software could recover deleted files and fragments of deleted files. One of the ASR Data partners later left and developed EnCase, which became a popular digital forensics tool.\n\nAs computer technology continued to evolve, more digital forensics software was developed. The introduction of large hard disks posed new problems for investigators. Most DOS-based software didn’t recognize a hard disk larger than 8 GB. Because contemporary computers have hard disks of 500 GB and often much larger, changes in forensics software were needed. Later in this book, you explore the challenges of examining older software and hardware.\n\nOther tools, such as ILook, which is currently maintained by the IRS Criminal Investigation Division and limited to law enforcement, can analyze and read special files that are copies of a disk. AccessData Forensic Toolkit (FTK) has become a popular commercial product that performs similar tasks in the law enforcement and civilian markets.\n\nAs software companies become savvier about digital forensics and investigations, they are producing more forensics tools to keep pace with technology. This book describes several tools but by no means all available tools. You should refer to trade publications, e-zines, and Web sites to stay current.",
+                  "llm_generated_content": {
+                    "title": "A Brief History of Digital Forensics",
+                    "content": [
+                      "Fifty years ago, computers were not part of everyday life, but now they are central to crime and evidence storage.",
+                      "By the 1970s, electronic crimes increased, especially in finance, with mainframes being used by trained professionals.",
+                      "White-collar fraud emerged, such as the one-half cent crime, where programmers manipulated rounding methods to siphon money.",
+                      "Law enforcement lacked computer knowledge, leading to FLETC programs to train officers in handling digital data.",
+                      "In the 1980s, PCs replaced mainframes, leading to diverse OSs like Apple IIe, Macintosh, TRS-80, and Commodore 64.",
+                      "DOS varieties (PC-DOS, MS-DOS, etc.) were common, with forensics tools developed by agencies like RCMP and IRS.",
+                      "Mid-1980s saw tools like Xtree Gold and Norton DiskEdit for file recovery, used on early PCs with small hard drives.",
+                      "1987 introduced the Mac SE with a 60 MB hard drive, marking an advancement in storage technology.",
+                      "By the early 1990s, IACIS provided training, and IRS created search-warrant programs. Commercial tools like Expert Witness and EnCase emerged.",
+                      "Larger hard drives (up to 500 GB) required updated forensics software, highlighting the need for evolving tools.",
+                      "Tools like ILook (used by IRS) and AccessData FTK became popular for analyzing special files and disk copies.",
+                      "Software companies continue developing tools to keep pace with technology, with this book covering several but not all available options."
+                    ]
+                  }
+                },
+                {
+                  "title": "Understanding Case Law",
+                  "toc_id": 12,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 3,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 8
+                  },
+                  "children": [],
+                  "interactive_activity": {
+                    "title": "Understanding Case Law (Deep-Dive Activity)",
+                    "toc_id": 12,
+                    "slides_allocated": 1,
+                    "seq_id": 8,
+                    "llm_generated_content": {
+                      "title": "Let's Apply This!",
+                      "content": [
+                        "Which of the following best describes the role of case law in addressing ambiguities in existing statutes related to digital forensics?",
+                        "A) Case law is used to replace existing statutes when they are outdated.",
+                        "B) Case law allows legal counsel to apply previous similar cases to current ones to address ambiguities in laws.",
+                        "C) Case law is only applicable in criminal cases and not in civil matters.",
+                        "D) Case law is primarily used to create new laws rather than interpret existing ones.",
+                        "Correct Answer: B"
+                      ]
+                    }
+                  },
+                  "seq_id": 7,
+                  "chunks_sorted": [
+                    205,
+                    206,
+                    207
+                  ],
+                  "content": "Understanding Case Law\n\nExisting laws and statutes simply can’t keep up with the rate of technological change. Therefore, when statutes or regulations don’t exist, case law is used. In common law nations, such as the United States, case law allows legal counsel to apply previous similar cases to current ones in an effort to address ambiguity in laws. Examiners must be familiar with recent court rulings on search and seizure in the electronic environment to avoid mistakes such as exceeding a search warrant’s authority. Recent events involving privacy incursions by government agencies have resulted in new laws and policies. Developments in technology have changed how everyday events are viewed. For example, what should be considered private conversations? Which devices are actually protected?\n\nAlthough law enforcement can certainly confiscate anything an arrested person is carrying and log that a device, such as a smartphone, was on the person, they don’t necessarily have the right or authority to search the device. These actions are being challenged in courts constantly. Remaining vigilant in keeping up with changing case law is critical to being an effective digital forensics investigator.",
+                  "llm_generated_content": {
+                    "title": "Understanding Case Law",
+                    "content": [
+                      "Case law is used when statutes or regulations do not exist to address technological changes.",
+                      "In common law nations like the U.S., case law applies previous similar cases to current ones to resolve legal ambiguities.",
+                      "Digital forensics examiners must be aware of recent court rulings on search and seizure in the electronic environment.",
+                      "Law enforcement can confiscate items on a person but may not have authority to search devices like smartphones.",
+                      "Court challenges often arise regarding the legality of searching electronic devices during arrests.",
+                      "Staying updated with evolving case law is essential for effective digital forensics investigation."
+                    ]
+                  }
+                },
+                {
+                  "title": "Developing Digital Forensics Resources",
+                  "toc_id": 13,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 5,
+                    "total_branch_time": 11
+                  },
+                  "children": [],
+                  "interactive_activity": {
+                    "title": "Developing Digital Forensics Resources (Deep-Dive Activity)",
+                    "toc_id": 13,
+                    "slides_allocated": 1,
+                    "seq_id": 10,
+                    "llm_generated_content": {
+                      "title": "Let's Apply This!",
+                      "content": [
+                        "Which of the following is a key strategy for developing digital forensics resources?",
+                        "A) Avoiding all social media interactions to ensure security",
+                        "B) Joining user groups and building professional networks",
+                        "C) Focusing solely on one computing platform to become an expert",
+                        "D) Relying entirely on internal resources without external collaboration",
+                        "Correct Answer: B"
+                      ]
+                    }
+                  },
+                  "seq_id": 9,
+                  "chunks_sorted": [
+                    208,
+                    209,
+                    210,
+                    211,
+                    212,
+                    213,
+                    214,
+                    215
+                  ],
+                  "content": "Developing Digital Forensics Resources\n\nTo be a successful digital forensics investigator, you must be familiar with more than one computing platform. In addition to older platforms, such as DOS, Windows 9x, and Windows XP, you should be familiar with Linux, macOS, and current Windows platforms. However, no one can be an expert in every aspect of computing. Likewise, you can’t know everything about the technology you’re investigating. To supplement your knowledge, you should develop and maintain contact with digital, network, and investigative professionals.\n\nJoin computer user groups in both the public and private sectors. In the Pacific Northwest, for example, Computer Technology Investigators Network (CTIN) A nonprofit group based in Seattle-Tacoma, WA, composed of law enforcement members, private corporation security professionals, and other security professionals whose aim is to improve the quality of high-technology investigations in the Pacific Northwest. meets to discuss problems that digital forensics examiners encounter. This nonprofit organization also conducts training. IACIS is an excellent group for law enforcement personnel but doesn’t have local chapters. However, groups such as the High Technology Crime Investigation Association, International Information Systems Security Certification Consortium (ISC)2, and InfraGard have\n\nInternational Information Systems Security Certification Consortium (ISC)2, and InfraGard have local chapters open to professionals in most major cities. Build your own network of digital forensics experts, and keep in touch through e-mail. Cultivate professional relationships with people who specialize in technical areas different from your own specialty. If you’re a Windows expert, for example, maintain contact with experts in Linux, UNIX, and macOS. If you’re using social media to interact with experts, exercise caution and good judgment when communicating with people you haven’t met in person or whose backgrounds you don’t know.\n\nUser groups can be especially helpful when you need information about obscure OSs. For example, a user group helped convict a child molester in Pierce County, Washington, in 1996. The suspect installed video cameras throughout his house, served alcohol to young women to intoxicate them, and secretly filmed them playing strip poker. When he was accused of molesting a child, police seized his computers and other physical evidence. The investigator discovered that the computers used CoCo DOS, an OS that had been out of use for years. The investigator contacted a local user group, which supplied the standard commands and other information needed to access the system. On the suspect’s computer, the investigator found a diary detailing the suspect’s actions over 15 years, including the\n\nthe investigator found a diary detailing the suspect’s actions over 15 years, including the molestation of more than 400 young women. As a result, the suspect received a longer sentence than if he had been convicted of molesting only one child.\n\nOutside experts can also give you detailed information you need to retrieve digital evidence. For example, a recent murder case involved a husband and wife who owned a Macintosh store. When the wife was discovered dead, apparently murdered, investigators found that she had wanted to leave her husband but didn’t because of her religious beliefs. The police got a search warrant and confiscated the home and office computers. When the detective on the case examined the home system, he found that the hard drive had been compressed and erased. He contacted a Macintosh engineer, who determined the two software programs used to compress the drive. With this knowledge, the detective could retrieve information from the hard drive, including text files indicating that the husband spent $35,000 in\n\ninformation from the hard drive, including text files indicating that the husband spent $35,000 in business funds to purchase cocaine and prostitution services. This evidence proved crucial in making it possible to convict the husband of murder.",
+                  "llm_generated_content": {
+                    "title": "Developing Digital Forensics Resources",
+                    "content": [
+                      "To be a successful digital forensics investigator, you must be familiar with more than one computing platform.",
+                      "Familiarize yourself with older platforms (e.g., DOS, Windows 9x, Windows XP) and modern platforms (Linux, macOS, current Windows).",
+                      "No one can be an expert in every aspect of computing or technology.",
+                      "Supplement your knowledge by developing and maintaining contact with digital, network, and investigative professionals.",
+                      "Join computer user groups in both public and private sectors. Examples include:",
+                      "  - Computer Technology Investigators Network (CTIN): Nonprofit in Seattle-Tacoma, WA; focuses on improving high-technology investigations in the Pacific Northwest.",
+                      "  - IACIS: Excellent for law enforcement but lacks local chapters.",
+                      "  - High Technology Crime Investigation Association, (ISC)2, and InfraGard: Have local chapters in most major cities.",
+                      "Build your own network of digital forensics experts and maintain communication through email.",
+                      "Cultivate relationships with professionals in different technical areas (e.g., Windows experts should maintain contact with Linux, UNIX, and macOS experts).",
+                      "Exercise caution and good judgment when using social media to interact with unknown individuals.",
+                      "User groups can be especially helpful for information on obscure operating systems.",
+                      "Example: A user group helped convict a child molester in Pierce County, Washington, by providing information on CoCo DOS, an outdated OS.",
+                      "Outside experts can provide detailed information needed to retrieve digital evidence.",
+                      "Example: A Macintosh engineer helped retrieve evidence from a compressed and erased hard drive in a murder case, revealing financial evidence of the husband's wrongdoing."
+                    ]
+                  }
+                }
+              ],
+              "interactive_activity": {
+                "title": "An Overview of Digital Forensics (General Activity)",
+                "toc_id": 9,
+                "slides_allocated": 1,
+                "seq_id": 11,
+                "llm_generated_content": {
+                  "title": "Let's Apply This!",
+                  "content": [
+                    "Which of the following best describes the primary purpose of digital forensics?",
+                    "A) To secure and analyze digital information for use as evidence in legal cases",
+                    "B) To develop new technologies for digital data storage",
+                    "C) To provide cybersecurity training for corporate employees",
+                    "D) To create global standards for digital evidence handling",
+                    "A"
+                  ]
+                }
+              },
+              "seq_id": 2,
+              "chunks_sorted": [
+                156,
+                157,
+                158,
+                159,
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167,
+                168,
+                169,
+                170,
+                171,
+                172,
+                173
+              ],
+              "content": "An Overview of Digital Forensics\n\nAs the world has become more of a level playing field, with more people online who have access to the same information (Thomas L. Freidman, The World Is Flat, Farrar, Straus, and Giroux, 2005), the need to standardize digital forensics processes has become more urgent. The definition of digital forensics Applying investigative procedures for a legal purpose; involves the analysis of digital evidence as well as obtaining search warrants, maintaining a chain of custody, validating with mathematical hash functions, using validated tools, ensuring repeatability, reporting, and presenting evidence as an expert witness. has also evolved over the years from simply involving securing and analyzing digital information stored on a computer for use as evidence in civil, criminal, or administrative\n\ndigital information stored on a computer for use as evidence in civil, criminal, or administrative cases. The former director of the Defense Computer Forensics Laboratory, Ken Zatyko, wrote a treatise on the many specialties including computer forensics, network forensics, video forensics, and a host of others. He defined it as “[t]he application of computer science and investigative procedures for a legal purpose involving the analysis of digital evidence (information of probative value that is stored or transmitted in binary form) after proper search authority, chain of custody, validation with mathematics (hash function), use of validated tools, repeatability, reporting and possible expert presentation” (“Commentary: Defining Digital Forensics,” Forensic Magazine, 2007).\n\nThe field of digital forensics can also encompass items such as research and incident response. With incident response, most organizations are concerned with protecting their assets and containing the situation, not necessarily prosecuting or finding the person responsible. Research in digital forensics also isn’t concerned with prosecution or validity of evidence. This book is intended for digital forensics investigators and examiners at the civil, criminal, and administrative levels. Other facets of digital forensics are beyond the scope of this book. Keep in mind that depending on the jurisdiction and situation, forensic investigators and examiners might be the same or different personnel. In this book, the terms are used interchangeably.\n\nNote\n\nFor a more in-depth discussion of what the term “digital forensics” means, see “Digital Forensic Evidence Examination” (Fred Cohen, www.fredcohen.net/Books/2013-DFE-Examination.pdf, 2012).\n\nMany groups have tried to create digital forensics certifications that could be recognized worldwide but have failed in this attempt. However, they have created certifications for specific categories of practitioners, such as government investigators. With the ubiquitous access to mobile devices now, digital evidence is everywhere, so the need for a global standardized method is even more critical so that companies and governments can share and use digital evidence. In October 2012, an International Organization for Standardization (ISO) standard for digital forensics was ratified. This standard, ISO 27037 “Information technology – Security techniques – Guidelines for identification, collection, acquisition and preservation of digital evidence” (see www.iso.org/standard/44381.html),\n\nacquisition and preservation of digital evidence” (see www.iso.org/standard/44381.html), defines the personnel and methods for acquiring and preserving digital evidence. To address the multinational cases that continue to emerge, agencies in every country should develop policies and procedures that meet this standard.\n\nThe Federal Rules of Evidence (FRE), signed into law in 1973, was created to ensure consistency in federal proceedings, but many states’ rules map to the FRE, too. In another attempt to standardize procedures, the FBI Computer Analysis and Response Team (CART) was formed in 1984 to handle the increase in cases involving digital evidence. By the late 1990s, CART had teamed up with the Department of Defense Computer Forensics Laboratory (DCFL) for research and training. Much of the early curriculum in this field came from the DCFL. For more information on the FBI’s cybercrime investigation services, see www.fbi.gov/investigate/cyber.\n\nFiles maintained on a computer are covered by different rules, depending on the nature of the documents. Many court cases in state and federal courts have developed and clarified how the rules apply to digital evidence. The Fourth Amendment The Fourth Amendment to the U.S. Constitution in the Bill of Rights dictates that the government and its agents must have probable cause for search and seizure. to the U.S. Constitution (and each state’s constitution) protects everyone’s right to be secure in their person, residence, and property from search and seizure. Continuing development of the jurisprudence of this amendment has played a role in determining whether the search for digital evidence has established a different precedent, so separate search warrants Legal documents that allow law\n\nhas established a different precedent, so separate search warrants Legal documents that allow law enforcement to search an office, a home, or other locale for evidence related to an alleged crime. might not be necessary. However, when preparing to search for evidence in a criminal case, many investigators still include the suspect’s computer and its components in the search warrant to avoid later admissibility problems.\n\nIn an important case involving these issues, the Pennsylvania Supreme Court addressed expectations of privacy and whether evidence is admissible (see Commonwealth v. Copenhefer, 587 A.2d 1353, 526 Pa. 555 [1991]). Initial investigations by the FBI, state police, and local police resulted in discovering computer-generated notes and instructions—some of which had been deleted—that had been concealed in hiding places around Corry, Pennsylvania. The investigation also produced several possible suspects, including David Copenhefer, who owned a nearby bookstore and apparently had bad relationships with the victim and her husband. Examination of trash discarded from Copenhefer’s store revealed drafts of the ransom note and directions. Subsequent search warrants resulted in seizure of evidence\n\nof the ransom note and directions. Subsequent search warrants resulted in seizure of evidence against him. Copenhefer’s computer contained several drafts and amendments of the text of phone calls to the victim and the victim’s husband the next day, the ransom note, the series of hidden notes, and a plan for the entire kidnapping scheme (Copenhefer, p. 559).\n\nOn direct appeal, the Pennsylvania Supreme Court concluded that the physical evidence, including the digital forensics evidence, was sufficient to support the bookstore owner’s conviction. Copenhefer’s argument was that “[E]ven though his computer was validly seized pursuant to a warrant, his attempted deletion of the documents in question created an expectation of privacy protected by the Fourth Amendment. Thus, he claims, under Katz v. United States, 389 U.S. 347, 357, 88 S.Ct. 507, 19 L.Ed.2d 576 (1967), and its progeny, Agent Johnson’s retrieval of the documents, without first obtaining another search warrant, was unreasonable under the Fourth Amendment and the documents thus seized should have been suppressed” (Copenhefer, p. 561).\n\nThe Pennsylvania Supreme Court rejected this argument, stating, “A defendant’s attempt to secrete evidence of a crime is not synonymous with a legally cognizable expectation of privacy. A mere hope for secrecy is not a legally protected expectation. If it were, search warrants would be required in a vast number of cases where warrants are clearly not necessary” (Copenhefer, p. 562).\n\nEvery U.S. jurisdiction has case law related to the admissibility of evidence recovered from computers and other digital devices. As you learn in this book, however, the laws on digital evidence vary between states as well as between provinces and countries.\n\nNote\n\nThe U.S. Department of Justice offers a useful guide to search and seizure procedures for computers and computer evidence at https://pdfs.semanticscholar.org/aabb/8b0caf982a0aa211f932252af38d4c9376fb.pdf.",
+              "llm_generated_content": {
+                "title": "An Overview of Digital Forensics",
+                "content": [
+                  "Digital forensics involves investigative procedures for a legal purpose, focusing on the analysis of digital evidence.",
+                  "Key aspects include obtaining search warrants, maintaining chain of custody, validating with mathematical hash functions, using validated tools, ensuring repeatability, reporting, and presenting evidence as an expert witness.",
+                  "The field has evolved from securing and analyzing digital information on computers for use as evidence in civil, criminal, or administrative cases.",
+                  "Specialties include computer forensics, network forensics, video forensics, and others.",
+                  "Digital forensics also encompasses research and incident response, though incident response focuses on protecting assets and containing situations rather than prosecution.",
+                  "Research in digital forensics is not concerned with prosecution or validity of evidence.",
+                  "The ISO 27037 standard provides guidelines for identifying, collecting, acquiring, and preserving digital evidence.",
+                  "The Federal Rules of Evidence (FRE) and state rules ensure consistency in legal proceedings involving digital evidence.",
+                  "The Fourth Amendment protects against unreasonable searches and seizures, influencing the admissibility of digital evidence.",
+                  "Case law, such as Commonwealth v. Copenhefer, highlights the legal challenges and precedents in handling digital evidence."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          },
+          "seq_id": 12,
+          "llm_generated_content": {
+            "title": "Summary & Key Takeaways",
+            "content": [
+              "Digital forensics involves the systematic collection, preservation, analysis, and presentation of digital evidence to investigate cybercrimes and other digital-related incidents."
+            ]
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          },
+          "seq_id": 13
+        }
+      ]
+    }
+  ]
+}
