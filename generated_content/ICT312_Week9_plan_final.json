@@ -1,0 +1,802 @@
+{
+  "week": 9,
+  "overall_topic": "Email and Social Media.",
+  "weekly_slide_summary": {
+    "total_slides_for_week": 43,
+    "total_framework_slides": 4,
+    "total_content_slides": 33,
+    "total_interactive_slides": 6,
+    "number_of_decks": 1
+  },
+  "weekly_time_summary_minutes": {
+    "total_time_for_week_minutes": 135,
+    "total_framework_time": 6,
+    "total_content_and_interactive_time": 129
+  },
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "total_slides_in_deck": 43,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 33,
+        "interactive": 6
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 129,
+        "total_deck_time": 135
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Email and Social Media.",
+            "deck_title": "Week 9, Lecture 1"
+          },
+          "seq_id": 0
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Exploring the Role of E-mail in Investigations",
+              "Exploring the Roles of the Client and Server in E-mail",
+              "Investigating E-mail Crimes and Violations",
+              "Understanding E-mail Servers",
+              "Using Specialized E-mail Forensics Tools",
+              "Applying Digital Forensics Methods to Social Media Communications"
+            ]
+          },
+          "seq_id": 1
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Exploring the Role of E-mail in Investigations",
+              "toc_id": 379,
+              "chunk_count": 11,
+              "total_chunks_in_branch": 11,
+              "budget_slides_content": 1,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 2,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 8
+              },
+              "children": [],
+              "interactive_activity": {
+                "title": "Exploring the Role of E-mail in Investigations (Interactive Activity)",
+                "toc_id": 379,
+                "slides_allocated": 1,
+                "seq_id": 3
+              },
+              "seq_id": 2,
+              "chunks_sorted": [
+                5388,
+                5389,
+                5390,
+                5391,
+                5392,
+                5393,
+                5394,
+                5395,
+                5396,
+                5397,
+                5398
+              ],
+              "content": "Exploring the Role of E-mail in Investigations\n\nE-mail evidence is an important part of any computing investigation, so digital forensics investigators must know how e-mail is processed to collect this essential evidence. In addition, with the increase in e-mail scams and fraud attempts with phishing or spoofing, investigators need to know how to examine and interpret the unique content of e-mail messages.\n\nAs a digital forensics investigator, you might be called on to examine a phishing e-mail to see whether it’s authentic. Later, in “Tracing an E-mail Message,” you learn about resources for looking up e-mail and Web addresses to verify whether they’re associated with a spoofed message. The Internet links in a phishing e-mail often appear to be correct, such as the U.S. Internal Revenue Service’s Web page, www.irs.gov. Typically, phishing A type of e-mail scam that’s typically sent as spam soliciting personal identity information that fraudsters can use for identity theft. e-mails contain links to text on a Web page. By using this technique, a phishing message attempts to get personal information by luring readers with false promises. When pharming A type of e-mail scam that uses DNS\n\nby luring readers with false promises. When pharming A type of e-mail scam that uses DNS poisoning to redirect readers to a fake Web site. is used, readers might go to the correct Web site address, but DNS poisoning takes them to a fake site. To determine whether redirection has been used, you need to view the message’s HTML source code and check whether an Internet link is a label with a redirect to a different Web address.\n\nTip\n\nFor more information on phishing, see www.phishing.org/what-is-phishing.\n\nOne of the most noteworthy e-mail scams was 419, or the Nigerian Scam, which originated as chain letters from Nigeria, Africa, in the 1970s and 1980s before switching to fax machines and then e-mail. Fraudsters need only access to Internet e-mail to solicit victims, thus saving the costs of international mail and phone calls. Unlike newer, more sophisticated phishing e-mail frauds, 419 messages have certain characteristic ploys and a typical writing style. For example, the sender asks for access to your bank account so that he can transfer his money to it as a way to prevent corrupt government officials in his homeland from confiscating it. In a more current version, a woman says her husband has died and left her millions of dollars, but she wants to give the money to a church. The sender\n\nhas died and left her millions of dollars, but she wants to give the money to a church. The sender often promises to reward you financially if you make a minor payment or allow access to your bank account. The messages are usually in uppercase letters and use poor grammar. Another common scam is a sender stating you have won a sweepstake and asking you to send money to claim the prize. You can find samples of 419 scam messages at www.hoax-slayer.com/nigerian-scam-list.shtml.\n\nA landmark example of a lawsuit involving spoofing Transmitting an e-mail message with its header information altered so that its point of origin appears to be from a different sender; typically used in phishing and spamming to hide the sender’s identity. See also phishing. e-mail occurred in February 2001 in the Superior Court of Massachusetts: Suni Munshani v. Signal Lake Venture Fund II, LP et al. Suni Munshani claimed he received an e-mail from the CEO of Signal Lake Venture Fund instructing him to purchase options (financial warrants) for a total of $25 million. Signal Lake Venture Fund investigated its e-mail servers and didn’t find the e-mail Munshani claimed he received.\n\nIn preparation for the trial, Signal Lake Venture Fund conducted a discovery demand for all of Munshani’s e-mail. Because of the sensitive information Munshani had on his e-mail server, the court appointed an impartial discovery firm to examine the e-mail. The discovery firm found that Munshani had used a text editor to alter an e-mail the CEO of Signal Lake Venture Fund had sent. The clue to the e-mail being a fake was the Enhanced/Extended Simple Mail Transfer Protocol (ESMTP) An enhancement of SMTP for sending and receiving e-mail messages. ESMTP generates a unique, nonrepeatable number that’s added to a transmitted e-mail. No two messages transmitted from an e-mail server have the same ESMTP value. See also Simple Mail Transfer Protocol (SMTP). number in the message’s header, which is\n\nvalue. See also Simple Mail Transfer Protocol (SMTP). number in the message’s header, which is unique to each message an e-mail server transmits. The e-mail Munshani claimed was a legitimate message instructing him to purchase options had the same ESMTP value as the other message the CEO sent. This level of examination revealed that Munshani committed fraud. For more information on this case, see http://signallake.com/email_forensics_library/SMunshaniVsSL.pdf."
+            },
+            {
+              "title": "Exploring the Roles of the Client and Server in E-mail",
+              "toc_id": 380,
+              "chunk_count": 10,
+              "total_chunks_in_branch": 10,
+              "budget_slides_content": 1,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 2,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 8
+              },
+              "children": [],
+              "interactive_activity": {
+                "title": "Exploring the Roles of the Client and Server in E-mail (Interactive Activity)",
+                "toc_id": 380,
+                "slides_allocated": 1,
+                "seq_id": 5
+              },
+              "seq_id": 4,
+              "chunks_sorted": [
+                5399,
+                5400,
+                5401,
+                5402,
+                5403,
+                5404,
+                5405,
+                5406,
+                5407,
+                5408
+              ],
+              "content": "Exploring the Roles of the Client and Server in E-mail\n\nYou can send and receive e-mail in two environments: via the Internet or an intranet (an internal network). In both e-mail environments, messages are distributed from a central server to many connected client computers, a configuration called a client/server architecture A network architecture in which each computer or process on the network is a client or server. Clients request services from a server, and a server processes requests from clients. . The server runs an e-mail server program, such as Microsoft Exchange Server, to provide e-mail services. Client computers use e-mail programs (also called e-mail clients), such as Microsoft Outlook, to contact the e-mail server and send and retrieve e-mail messages (see Figure 11-1).\n\nRegardless of the OS or e-mail program, users access their e-mail based on permissions the e-mail server administrator grants. These permissions prevent users from accessing each other’s e-mail. To retrieve messages from the e-mail server, users identify themselves to the server, as when logging on to the network. Then e-mails are delivered to their computers.\n\nE-mail services on both the Internet and an intranet use a client/server architecture, but they differ in how client accounts are assigned, used, and managed and in how users access their e-mail. Overall, an intranet e-mail system is for the private use of network users, and Internet e-mail systems are for public use. On an intranet, the e-mail server is generally part of the local network, and an administrator manages the server and its services. In most cases, an intranet e-mail system is specific to a company, used only by its employees, and regulated by its business practices, which usually include strict security and acceptable use policies. For example, network users can’t create their own e-mail accounts, and usernames tend to follow a naming convention that the e-mail administrator\n\nown e-mail accounts, and usernames tend to follow a naming convention that the e-mail administrator determines. For example, for John Smith at Some Company, jsmith is the username, and it’s followed by the company’s domain name, somecompany.com, to create the e-mail address jsmith@somecompany.com.\n\nNote\n\nIn an e-mail address, everything after the @ symbol represents the domain name. You need to know the domain information when you investigate e-mail to identify the point of contact at a domain, and you need the domain administrator’s assistance to collect evidence.\n\nIn contrast, a company that provides public e-mail services, such as Google, GMX, or Yahoo!, owns the e-mail server and accepts everyone who signs up for the service by providing a username and password. E-mail companies also provide their own servers and administrators. After users sign up, they can access their e-mail from any computer connected to the Internet. In most cases, Internet e-mail users aren’t required to follow a standardized naming convention for usernames. They can choose their own usernames (but not the domain name), as long as they aren’t already in use.\n\nFor digital investigators, tracking intranet e-mail is easier because accounts use standard names the administrator establishes. For example, jane.smith@mycompany.com is easily recognized as the e-mail address for an employee named Jane Smith. Tracking Internet e-mail users is more difficult because these accounts don’t always use standard naming schemes, and e-mail administrators aren’t familiar with all the user accounts on their servers. Identifying the owner of an e-mail account with an address such as itty_bitty@gmail.com, for example, isn’t easy.\n\nWith the expansion of cloud service providers, many companies are migrating their e-mail services to the cloud. This setup is convenient because employees can easily access their e-mail from anywhere in the world, but it adds a layer of complexity for investigations, depending on the service level agreement with the cloud provider (covered in Chapter 13)."
+            },
+            {
+              "title": "Investigating E-mail Crimes and Violations",
+              "toc_id": 381,
+              "chunk_count": 4,
+              "total_chunks_in_branch": 101,
+              "budget_slides_content": 11,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 13,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 41
+              },
+              "children": [
+                {
+                  "title": "Understanding Forensic Linguistics",
+                  "toc_id": 382,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 7,
+                  "chunks_sorted": [
+                    5413,
+                    5414,
+                    5415,
+                    5416,
+                    5417,
+                    5418
+                  ],
+                  "content": "Understanding Forensic Linguistics\n\nA related field that has developed in the past few decades is forensic linguistics A field where language and the law intersect to determine the author of e-mails, text messages, and other online communications. The International Association of Forensic Linguists divides this field into four categories: language and law, language in the legal process, language as evidence, and research/teaching. Digital forensics focuses on language as evidence. , which is where language and the law intersect. The International Association of Forensic Linguists (www.iafl.org/forensic.php) divides this field into four categories: language and law, language in the legal process, language as evidence, and research/teaching. For the purposes of this book, language as evidence is of the most importance. Think\n\nFor the purposes of this book, language as evidence is of the most importance. Think about getting e-mails from people you know. Based on the words that are used, you can almost picture the senders’ facial expressions, such as smiles or frowns, and you can probably tell when the language doesn’t sound like them, which might indicate they didn’t write the e-mails.\n\nForensic linguistics goes a step further by training people to listen to voice recordings to determine who’s speaking or read e-mail and other writings known to be by a certain person and determine whether that person wrote the e-mail or letter in question. Can you tell by looking at a string of e-mails whether they all came from the same person? Would you be able to tell if one had been spoofed? Keep in mind that as a forensic linguist, you might also have to analyze chats, voicemail, and text messages. Often in crime dramas and even crime reenactments, investigators were able to deduce that a missing person hadn’t written an e-mail or text message because of differences in tone or style.\n\nIn the article “How forensic linguistics can aid investigations” (www.securityinfowatch.com/article/12078050/how-forensic-linguistics-can-aid-investigations), Liz Martinez explores what forensic linguistics can and can’t do. What’s most important is that it’s accepted in many courts around the globe as a valid science. A linguist can determine a speaker’s original dialect and sometimes even where a person is from based on the phrases he or she uses. It’s been especially useful in determining whether suicide notes have been faked and can be used to examine text messages and social media communications, too. What forensic linguistics can’t do yet is determine an author’s veracity or gender.\n\nForensic linguistics encompasses civil cases, criminal cases, cyberterrorism cases, and other legal proceedings. The median income for a forensic linguist is approximately U.S. $65,000 per year. There are several bachelor’s and master’s degrees in this field."
+                },
+                {
+                  "title": "Examining E-mail Messages",
+                  "toc_id": 383,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 28,
+                  "budget_slides_content": 3,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
+                  },
+                  "children": [
+                    {
+                      "title": "Copying an E-mail Message",
+                      "toc_id": 384,
+                      "chunk_count": 20,
+                      "total_chunks_in_branch": 20,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "children": [],
+                      "seq_id": 9,
+                      "chunks_sorted": [
+                        5427,
+                        5428,
+                        5429,
+                        5430,
+                        5431,
+                        5432,
+                        5433,
+                        5434,
+                        5435,
+                        5436,
+                        5437,
+                        5438,
+                        5439,
+                        5440,
+                        5441,
+                        5442,
+                        5443,
+                        5444,
+                        5445,
+                        5446
+                      ],
+                      "content": "Copying an E-mail Message\n\nBefore you start an e-mail investigation, you need to copy and print the e-mail involved in the crime or policy violation. You might also want to forward the message as an attachment to another e-mail address, depending on your organization’s guidelines. This section gives procedures for different e-mail programs. You might not have access to all of them, but these procedures can serve as a guideline for when you encounter them in investigations.\n\nThe following activity shows you how to use Outlook, included with Microsoft Office, to copy an e-mail message to a USB drive. (Note: Depending on the Outlook version you use, the steps might vary slightly.) You use a similar procedure to copy messages in other e-mail programs. If Outlook or Outlook Express is installed on your computer, follow these steps:\n\n1.\n\nInsert a USB drive into a USB port.\n\n2.\n\nOpen File Explorer, navigate to the USB drive, and leave this window open.\n\n3.\n\nStart Outlook by going to the Start screen, typing Outlook, and pressing Enter.\n\n4.\n\nIn the Mail Folders pane, click the folder containing the message you want to copy. For example, click the Inbox folder. A list of messages in that folder is displayed in the pane in the middle. Click the message you want to copy.\n\n5.\n\nResize the Outlook window so that you can see the message you want to copy and the USB drive icon in File Explorer.\n\n6.\n\nDrag the message from the Outlook window to the USB drive icon in File Explorer.\n\n7.\n\nClick the File tab, and then click Print to open the Print pane. After printing the e-mail so that you have a copy to include in your final report, exit Outlook.\n\nTip\n\nInstead of dragging, you can click a message in the Inbox, click the File tab, and click Save As. In the Save As dialog box, navigate to where you want to copy the message, making sure you select Outlook Message Format if you want to make a copy. (The Text Only format strips everything but the message contents, including formatting and attachments.) Finally, click the Save button.\n\nWith many GUI e-mail programs, you can copy an e-mail by dragging it to a storage medium, such as a folder or drive, or by saving it in a different location. For e-mail programs you run from the command line, however, open the message, and then use the option to copy it, usually located at the bottom of the screen. After you copy an e-mail, work only with the copy, not the original version, to avoid altering the original evidence by mistake."
+                    }
+                  ],
+                  "seq_id": 8,
+                  "chunks_sorted": [
+                    5419,
+                    5420,
+                    5421,
+                    5422,
+                    5423,
+                    5424,
+                    5425,
+                    5426
+                  ],
+                  "content": "Examining E-mail Messages\n\nAfter you have determined that a crime has been committed involving e-mail, access the victim’s computer or mobile device to recover the evidence on it. Using the victim’s e-mail client, find and copy any potential evidence. It might be necessary to log on to the e-mail service and access any protected or encrypted files or folders. With a corporate investigation, be sure policies are in place for this action. For a criminal investigation, you need warrants to access or get copies of files on a server. When dealing with a stalker, if you can’t actually sit down at the victim’s computer, you might have to guide the victim on the phone to open and print a copy of an offending message, including the header. The header contains unique identifying numbers, such as the IP address of the server\n\nthe header. The header contains unique identifying numbers, such as the IP address of the server that sent the message. This information helps you trace the e-mail to the suspect.\n\nEarlier in this chapter, you read about the Munshani case, which was solved by examining the e-mail header. As you probably know, an e-mail consists of the header, the e-mail, and the closing. The header contains the date and time, the sender, the recipient, the subject line, and information about the route the e-mail took through e-mail servers. In the Munshani case, Kenneth Shear was able to determine that the suspect e-mail was fake because its ESMTP ID was identical to one used for another e-mail sent earlier. UNIX servers assign unique codes to e-mails based on the precise date and time they’re sent, so no two ESMTP IDs are the same. In addition, there was no record of the suspect e-mail on the company’s e-mail server.\n\nInvestigators can use headers and the encoding at the beginning and ending of e-mails to trace the route e-mails take through servers. They can also use this information to determine who really sent an e-mail or at least pinpoint the sender’s location, which can be especially useful in cases when threats have been made. For a more in-depth examination of e-mail headers, see The E-mail Forensics GuideBook (www.freeviewer.org/email-forensics/).\n\nTip\n\nBefore you work with a victim on the phone, create written procedures for opening and printing an e-mail header and message text with a variety of e-mail programs, according to your state, county, or company’s laws or policies. These steps help you give consistent instructions and can be useful when training new investigators.\n\nIn some cases, you might have to recover e-mail after a suspect has deleted it and tried to hide it. You see how to recover these messages later in “Using Magnet AXIOM to Recover E-mail.” For now, you continue working with a victim’s computer as a digital investigator."
+                },
+                {
+                  "title": "Viewing E-mail Headers",
+                  "toc_id": 385,
+                  "chunk_count": 33,
+                  "total_chunks_in_branch": 33,
+                  "budget_slides_content": 4,
+                  "direct_slides_content": 4,
+                  "total_slides_in_branch": 4,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 12,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 12
+                  },
+                  "children": [],
+                  "seq_id": 10,
+                  "chunks_sorted": [
+                    5447,
+                    5448,
+                    5449,
+                    5450,
+                    5451,
+                    5452,
+                    5453,
+                    5454,
+                    5455,
+                    5456,
+                    5457,
+                    5458,
+                    5459,
+                    5460,
+                    5461,
+                    5462,
+                    5463,
+                    5464,
+                    5465,
+                    5466,
+                    5467,
+                    5468,
+                    5469,
+                    5470,
+                    5471,
+                    5472,
+                    5473,
+                    5474,
+                    5475,
+                    5476,
+                    5477,
+                    5478,
+                    5479
+                  ],
+                  "content": "Viewing E-mail Headers\n\nAfter you copy and print a message, use the e-mail program that created it to find the e-mail header. This section includes instructions for viewing e-mail headers in a variety of e-mail programs, including Windows GUI clients and some common Web-based e-mail providers. After you open e-mail headers, copy and paste them into a text document so that you can read them with a text editor, such as Windows Notepad+, Linux vim, Nano (used with UNIX), or macOS TextEdit. You examine headers in the next section.\n\nWhether you’re working in a forensics lab or elsewhere, installing and becoming familiar with as many e-mail programs as possible is beneficial. Often more than one e-mail program is installed on a computer, and you need to find out which one the suspect is using. Keep in mind, too, that most people now have one or more Web-based e-mail accounts, such as Gmail and Yahoo!, so you need to look for evidence of these accounts.\n\nNote\n\nBefore beginning the next activity, create a Work\\Chap11\\Chapter work folder on your system. Download to this work folder any files in this chapter’s downloads section on the student companion site for this book. The work folder path shown in screenshots might differ slightly from yours.\n\nTo retrieve an Outlook e-mail header, follow these steps:\n\n1.\n\nStart Outlook, and then select the message you copied in the previous section.\n\n2.\n\nDouble-click the message, and then click File, Properties. The “Internet headers” text box at the bottom contains the message header, shown in Figure 11-2.\n\n3.\n\nSelect the message header text, and then press Ctrl+C to copy it to the Clipboard.\n\n4.\n\nStart Notepad, and then press Ctrl+V in a new document window to paste the message header text.\n\n5.\n\nSave the document as Outlook header.txt in your work folder. Then close the document and exit Outlook.\n\nSome popular Web-based e-mail service providers are Gmail, Zoho, Outlook Online, and Yahoo!, and you work with a couple in the following activities. You can use any computer and most Internet-connected devices to send and receive e-mail, which makes Web-based e-mail messages more difficult to trace. To view Gmail Web e-mail headers, follow these steps:\n\n1.\n\nStart your Web browser, and log on to Gmail.\n\n2.\n\nOpen an e-mail, click the down arrow next to the Reply circular arrow, and click Show original.\n\n3.\n\nA new tab opens in your browser that shows basic information at the top, such as the message ID, from, to, and subject line. As you scroll down, you can see the header details along with the original message and encoding. Click the Download Original link to open the “Opening original_msg.txt” dialog box. Click Open with Notepad (default) and click Okay. Save the file in your work folder with the default name.\n\nFollow these steps to view e-mail headers in Yahoo!:\n\n1.\n\nLog on to your Yahoo! mail account, click Inbox to view a list of incoming e-mails, and then open an e-mail.\n\n2.\n\nAbove the message window, click the More list arrow, and click View Raw Message (see Figure 11-3).\n\n3.\n\nIn the Full Header window, select all the text, press Ctrl+C to copy it, and then click OK.\n\n4.\n\nStart Notepad, and then press Ctrl+V in a new document window to paste the message header text. Save the document as Yahoo Header.txt in your work folder. Log off Yahoo!, and exit your Web browser.\n\nThe e-mail programs reviewed in this section supply similar information in the message header. The methods for retrieving headers vary, but you can usually find information about displaying message headers in the program’s Help files."
+                },
+                {
+                  "title": "Examining E-mail Headers",
+                  "toc_id": 386,
+                  "chunk_count": 14,
+                  "total_chunks_in_branch": 14,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "children": [],
+                  "seq_id": 11,
+                  "chunks_sorted": [
+                    5480,
+                    5481,
+                    5482,
+                    5483,
+                    5484,
+                    5485,
+                    5486,
+                    5487,
+                    5488,
+                    5489,
+                    5490,
+                    5491,
+                    5492,
+                    5493
+                  ],
+                  "content": "Examining E-mail Headers\n\nThe next step is examining the e-mail header you saved to gather information about the e-mail and track the suspect to the e-mail’s originating location. The main piece of information you’re looking for is the originating e-mail’s domain address or an IP address. Other helpful information includes the date and time the message was sent, filenames of any attachments, and unique message number, if it’s supplied.\n\nNote\n\nFor more detailed information on e-mail headers, see www.stopspam.org/index.php.\n\nTo open and examine an e-mail header, follow these steps:\n\n1.\n\nOpen File Explorer and navigate to your work folder.\n\n2.\n\nDouble-click a .txt file containing message header text, such as Outlook header.txt . The message header opens in Notepad.\n\nFigure 11-4 shows a message header copied from an Outlook e-mail. (The e-mail addresses are not real addresses.) Line numbers have been added for reference.\n\nThe e-mail header in Figure 11-4 supplies useful information. Lines 1 and 2 show the servers the message passed through. Line 3 shows “DKIM-Signature,” which stands for DomainKeys Identified Mail (www.dkim.org). It’s a way to verify the names of domains a message is flowing through and was developed to help cut down on spam. Lines 4 through 6 show other servers the message passed through. Typically, these lines are followed by the From, To, Subject, and Date fields in the e-mail.\n\nIf there were an attachment, it would be listed in a later line. An attachment can be any type of file, from a program to a picture. If a message includes an attachment, investigate it as a supporting piece of evidence. If you’re working with the victim, the attachment is usually still attached to the e-mail. If you’re investigating a suspect’s computer, remember to work with the copied version. On a suspect’s computer or a forensic image, search for the attached file with a forensics tool or the OS’s Search or Find feature to determine whether the file was saved and still exists on the drive. If you’re investigating an e-mail attachment with an unfamiliar file extension, such as .mdf, you can search the Internet to find out what program creates a file of this type.\n\nTip\n\nTo search for specific files in e-mail headers, use a forensics tool. You can also use a forensics tool to search for unique header information, such as an ID number."
+                },
+                {
+                  "title": "Examining Additional E-mail Files",
+                  "toc_id": 387,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 12,
+                  "chunks_sorted": [
+                    5494,
+                    5495,
+                    5496,
+                    5497,
+                    5498,
+                    5499
+                  ],
+                  "content": "Examining Additional E-mail Files\n\nE-mail programs save messages on the client computer or leave them on the server. How e-mails are stored depends on settings on the client and server. On the client computer, you could save all your e-mail in a separate folder for record-keeping purposes. For example, in Outlook, you can save sent, draft, deleted, and received e-mails in a .pst file, or you can save offline files in an .ost file. With these client files (.pst and .ost), users can access and read their e-mail offline (when their computers aren’t connected to the central e-mail server). With many companies having their Exchange servers hosted in the cloud, you might find that only the .ost files are stored on a device, and the .pst files are kept on the server. In this case, you need to contact the network administrator to\n\n.pst files are kept on the server. In this case, you need to contact the network administrator to get access to the .pst files.\n\nMost e-mail programs also include an address book of contacts, and many offer calendars, task lists, and memos. A suspect’s address book, calendar, task list, and memos can contain valuable information that links e-mail crimes or abuse to other parties and reveal the suspect’s physical address and even involvement in other crimes.\n\nIn Web-based e-mail, messages are displayed and saved as Web pages in the browser’s cache folders. Many Web-based e-mail providers offer instant messaging (IM) services, such as Yahoo! Messenger and Google Talk, that can save message contents in proprietary and nonproprietary file formats. Facebook Messenger is an example of a social media site that provides an instant-messaging service. These files are usually stored in different folders than Internet data files are. For example, in Windows 8.1, you can find IM files and folders under Users\\username\\AppData or under Program Files. IM and chat programs usually have their own folder names. Because some of these programs create proprietary files, you might need special tools to read their contents.\n\nSome IM programs are configured to not save chat content unless users change the default setting, so you might need to search the suspect’s Pagefile.sys file to find message fragments. Unlike Yahoo!’s proprietary file format, Windows Messenger stored messages in RTF format that most word processors could read. Although Microsoft no longer supports Windows Messenger, some vendor still distribute it, and as an investigator, you might still encounter it. When you’re working on the victim’s computer, these types of files can help you document corroborating evidence for the investigation."
+                },
+                {
+                  "title": "Tracing an E-mail Message",
+                  "toc_id": 388,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 13,
+                  "chunks_sorted": [
+                    5500,
+                    5501,
+                    5502,
+                    5503,
+                    5504,
+                    5505,
+                    5506
+                  ],
+                  "content": "Tracing an E-mail Message\n\nAs part of the investigation, you need to determine an e-mail’s origin by further examining the header with one of many free Internet tools. Determining message origin is referred to as “tracing.” In this section, you learn about some Internet lookup tools that can be used to trace where an e-mail originated.\n\nFor example, if a company is listed in an e-mail address, you can visit the company’s site to find out who administers the domain. If the point of contact isn’t listed on the Web site or the domain doesn’t have a Web site, you need to use a registry site, such as those in the following list, to determine the point of contact:\n\nwww.arin.net—Use the American Registry for Internet Numbers (ARIN) to map an IP address to a domain name and find the domain’s point of contact.\n\nwww.internic.com—Like www.arin.net, you use this site to find a domain’s IP address and point of contact.\n\nwww.google.com—Use this search engine and others to look for more information and additional postings on discussion boards.\n\nUsing one of these Web sites, you can find the suspect’s full e-mail address, such as jim.shu@superiorbicycles.biz, and contact information. Keep in mind that the suspect might have posted false information, so verify your findings by checking network e-mail logs against e-mail addresses, as described in the next section."
+                },
+                {
+                  "title": "Using Network E-mail Logs",
+                  "toc_id": 389,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 3,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "children": [],
+                  "seq_id": 14,
+                  "chunks_sorted": [
+                    5507,
+                    5508,
+                    5509
+                  ],
+                  "content": "Using Network E-mail Logs\n\nNetwork administrators maintain logs of the inbound and outbound traffic routers handle. Routers have rules to allow or deny traffic based on source or destination IP address. In most cases, a router is set up to track all traffic flowing through its ports. Using these logs, you can determine the path a transmitted e-mail has taken. The network administrator who manages routers can supply the log files you need. Review the router logs to find the victim’s (recipient’s) e-mail, and look for the unique ID number. Network administrators also maintain logs for firewalls that filter Internet traffic; these logs can help verify whether an e-mail message passed through the firewall. Firewalls maintain log files that track Internet traffic destined for other networks or the network the firewall is\n\nlog files that track Internet traffic destined for other networks or the network the firewall is protecting. When a network administrator provides firewall log files, you can open them in a text editor, such as Notepad in Windows or vim in Linux. (Some firewalls, however, require special programs to read their log files.) Figure 11-5 shows a typical Windows firewall log."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Investigating E-mail Crimes and Violations (Interactive Activity)",
+                "toc_id": 381,
+                "slides_allocated": 1,
+                "seq_id": 15
+              },
+              "seq_id": 6,
+              "chunks_sorted": [
+                5409,
+                5410,
+                5411,
+                5412
+              ],
+              "content": "Investigating E-mail Crimes and Violations\n\nInvestigating crimes or policy violations involving e-mail is similar to investigating other types of computer abuse and crimes. Your goal is to find out who’s behind the crime or policy violation, collect the evidence, and present your findings to build a case for reprimands, prosecution, or arbitration. Make sure you know the applicable privacy laws for your jurisdiction; for example, in the United States, the Electronic Communications Privacy Act (ECPA) A law enacted in 1986 to extend the Wiretap Act to cover e-mail and other data transmitted via the Internet. and the Stored Communications Act (SCA) Part of the Electronic Communications Privacy Act that extends to the privacy of stored communications, such as e-mail. apply to e-mail.\n\nE-mail crimes and violations depend on the city, state, and country in which the e-mail originated. For example, in Washington State, sending unsolicited e-mail is illegal. However, in other states, it isn’t considered a crime. Consult with an attorney for your organization to determine what constitutes an e-mail crime.\n\nCommitting crimes with e-mail is common, and more investigators are finding communications that link suspects to a crime or policy violation through e-mail. For example, some people use e-mail when committing crimes such as narcotics trafficking, extortion, sexual harassment, stalking, fraud, child abductions, terrorism, child pornography, and so on. Because e-mail is a major communication medium, any crime or policy violation can involve e-mail as well as text messages and social media communication."
+            },
+            {
+              "title": "Understanding E-mail Servers",
+              "toc_id": 390,
+              "chunk_count": 13,
+              "total_chunks_in_branch": 33,
+              "budget_slides_content": 4,
+              "direct_slides_content": 2,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 6,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "children": [
+                {
+                  "title": "Examining UNIX E-mail Server Logs",
+                  "toc_id": 391,
+                  "chunk_count": 12,
+                  "total_chunks_in_branch": 12,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 17,
+                  "chunks_sorted": [
+                    5523,
+                    5524,
+                    5525,
+                    5526,
+                    5527,
+                    5528,
+                    5529,
+                    5530,
+                    5531,
+                    5532,
+                    5533,
+                    5534
+                  ],
+                  "content": "Examining UNIX E-mail Server Logs\n\nMore than a dozen UNIX e-mail server programs are available. Most produce log files similar to the ones discussed previously. Postfix and Sendmail are two common UNIX e-mail servers. Sendmail is the default for FreeBSD systems, such as CentOS.\n\nLog files and configuration files can provide helpful information. The configuration file for Sendmail is /etc/mail/sendmail.cf, which can help you determine where log files are stored. Sendmail refers to the sendmail.cf file to find out what to do with an e-mail after it’s received. For example, if the server receives an e-mail from an unsolicited site, a line in the sendmail.cf file can tell the Sendmail server to discard it.\n\nTip\n\nRecall that the forward slash (/) is used in UNIX/Linux file paths, and the backslash (\\) is used in Windows file paths.\n\nSimilar to the sendmail.cf file, the /etc/syslog.conf file includes e-mail logging instructions so that you can determine how Sendmail is set up to log e-mail events and which events are logged. The syslog.conf file’s configuration in the /etc directory contains three pieces of information that tell you what happened to an e-mail when it was logged: the event, the priority level of concern, and the action taken when it was logged. By default, Sendmail can display an event message, log the event message to a log file, or send an event message to a remote log host. E-mail files are typically found at /var/mail.\n\nPostfix is another common UNIX e-mail server. Similar to Sendmail, it has configuration files, master.cf and main.cf, in the /etc/postfix directory, and e-mails are stored in /var/spool/postfix.\n\nBecause a UNIX system has a variety of e-mail servers available, the syslog.conf file simply specifies where to save different types of e-mail log files. The first log file it configures is /var/log/maillog, which usually contains a record of Simple Mail Transfer Protocol (SMTP) A protocol for sending e-mail messages between servers. communication between servers.\n\nThe IP address (10.0.1.1) and the timestamp in the maillog file are important information in an e-mail investigation. You can compare this information with the header of the e-mail the victim received to confirm the sender. The maillog file also contains information about Post Office Protocol version 3 (POP3) A protocol for retrieving e-mail messages from an e-mail server. and Internet Message Access Protocol 4 (IMAP4) A protocol for retrieving e-mail messages; it’s slowly replacing POP3. See also Post Office Protocol 3 (POP3). events. This information includes an IP address and a timestamp that you can compare with the e-mail the victim received.\n\nTypically, UNIX systems are set to store log files in the /var/log directory. However, an administrator can change the log location, especially when an e-mail service specifies a different location. If you’re examining a UNIX computer and don’t find the e-mail logs in /var/log, you can use the find or locate command to find them. For example, type locate .log at a UNIX command prompt.\n\nIf you need more assistance to find where a file is created by default, you can use the UNIX man pages for the e-mail service running on the computer. A new directory—/home/username/mail—is created on the client computer when a user logs on for the first time and runs the e-mail program. If the server has been configured to deliver e-mail to client machines but not store copies of e-mails on the server, the only copy of the e-mail is on the client computer in the user’s mail folder.\n\nIf the UNIX e-mail server is set to store all messages on the server, you can access them by requesting that the UNIX administrator create e-mail groups and add you to the same group as the suspect. UNIX e-mail servers don’t usually use groups to prevent users from accidentally viewing e-mail that doesn’t belong to them. However, e-mail groups can be useful for investigative purposes, as long as you have secured a warrant."
+                },
+                {
+                  "title": "Examining Microsoft E-mail Server Logs",
+                  "toc_id": 392,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 18,
+                  "chunks_sorted": [
+                    5535,
+                    5536,
+                    5537,
+                    5538,
+                    5539,
+                    5540,
+                    5541,
+                    5542
+                  ],
+                  "content": "Examining Microsoft E-mail Server Logs\n\nExchange Server, generally called Exchange, is the Microsoft e-mail server software. Exchange uses an Exchange database and is based on the Microsoft Extensible Storage Engine (ESE), which uses several files in different combinations to provide e-mail service. The files most useful to an investigation are .edb database files, checkpoint files, and temporary files.\n\nIn older versions of Exchange, .edb files were the database files you needed. An .edb file is responsible for messages formatted with Messaging Application Programming Interface (MAPI) The Microsoft system that enables other e-mail applications to work with each other. , a Microsoft system that enables different e-mail applications to work together. As a database server, Exchange logs information about changes to its data, also called transactions, in a transaction log. To prevent loss of data from the most recent backup, a checkpoint file, or marker, is inserted in the transaction log to mark the last point at which the database was written to disk. With these files, e-mail administrators can recover lost or deleted messages in the event of a disaster, such as a power failure. Exchange\n\ncan recover lost or deleted messages in the event of a disaster, such as a power failure. Exchange also creates .tmp (temporary) files to prevent loss when it’s busy converting binary data to readable text.\n\nLike UNIX e-mail servers, Exchange maintains logs to track e-mails. To retrieve them, you can use the Windows PowerShell cmdlet GetTransactionLogStats.ps1 -Gather (https://blogs.technet.microsoft.com/exchange/2017/01/31/analyzing-exchange-transaction-log-generation-statistics-revisited/).\n\nExchange servers can also maintain a log called Tracking.log that tracks messages. If the Message Tracking feature has been enabled and the e-mail administrator selects verbose (detailed) logging, you can see the timestamp, IP address of the sending computer, and the e-mail’s contents or body. Except for special forensics tools, the message-tracking log in verbose mode provides the most information about messages sent and received in Exchange.\n\nAnother log used for troubleshooting and investigating the Exchange environment is the troubleshooting log. You can read this log, also known as a “diagnostic log,” by using Windows Event Viewer, shown in Figure 11-6, which is available in Administrative Tools. Each event logged has an ID number and a severity level.\n\nTo examine the details of an e-mail event, double-click the event to open its Event Properties dialog box. This dialog box shows date and time information that might be useful if, for example, you suspect the e-mail server has been tampered with to alter its contents."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding E-mail Servers (Interactive Activity)",
+                "toc_id": 390,
+                "slides_allocated": 1,
+                "seq_id": 19
+              },
+              "seq_id": 16,
+              "chunks_sorted": [
+                5510,
+                5511,
+                5512,
+                5513,
+                5514,
+                5515,
+                5516,
+                5517,
+                5518,
+                5519,
+                5520,
+                5521,
+                5522
+              ],
+              "content": "Understanding E-mail Servers\n\nAn e-mail server is loaded with software that uses e-mail protocols for its services and maintains logs you can examine and use in your investigation. As a digital forensics investigator, you can’t know everything about e-mail servers. Your focus is not to learn how a particular e-mail server works but how to retrieve information about e-mails for an investigation. Usually, you must work closely with the network administrator or e-mail administrator, who is often willing to help you find the data or files you need and might even suggest new ways to find this information. If you can’t work with an administrator, conduct research on the Internet or use the forensics tools discussed later in this chapter to investigate the e-mail server software.\n\nTo investigate e-mail abuse, you should know how an e-mail server records and handles the e-mail it receives. Some e-mail servers use databases that store users’ e-mails, and others use a flat file system. All e-mail servers can maintain a log of e-mails that are processed. Some e-mail servers are set up to log e-mail transactions by default; others must be configured to do so. Most e-mail administrators log system operations and message traffic for the following reasons:\n\nRecover e-mails in case of a disaster.\n\nMake sure the firewall and e-mail filters are working correctly.\n\nEnforce company policy.\n\nHowever, the e-mail administrator can disable logging or use circular logging (also called “log rotation”), which overwrites the log file when it reaches a specified size or at the end of a specified time frame. It’s similar to the standard backup rotations used for file servers. Circular logging saves valuable server space, but you can’t recover a log after it’s overwritten. For example, on Monday the e-mail server records traffic in the Mon.log file. For the next six days, the e-mail server uses a log for each day, such as Tues.log, Wed.log, and so forth. On Sunday at midnight, the e-mail server starts recording e-mail traffic in Mon.log, overwriting the information logged the previous Monday. The only way to access the log file information is from a backup file, which many e-mail\n\nMonday. The only way to access the log file information is from a backup file, which many e-mail administrators create before a log file is overwritten.\n\nE-mail logs generally identify the e-mail messages an account received, the IP address from which they were sent, the time and date the e-mail server received them, the time and date the client computer accessed the e-mail, the e-mail contents, system-specific information, and any other information the e-mail administrator wants to track. These e-mail logs are usually formatted in plain text and can be read with a basic text editor, such as Notepad or vim.\n\nAdministrators usually set e-mail servers to continuous logging mode. They can also log all e-mail information in the same file, or use one log file to record, for example, date and time information, the size of the e-mail, and the IP address. These separate log files are extremely useful when you have an e-mail header with a date and time stamp and an IP address, and you want to filter or sort the log files to narrow your search.\n\nAfter you have identified the source of the e-mail, contact the network or e-mail administrator of the suspect’s network as soon as possible. Some e-mail providers, especially Internet e-mail providers, don’t keep logs for more than 30 days (and some keep logs for less time), and their logs might contain key information for your investigation.\n\nIn addition to logging e-mail traffic, e-mail servers maintain copies of clients’ e-mail, even if the users have deleted messages from their inboxes. Some e-mail servers don’t completely delete messages until the system is backed up. Sometimes the e-mail administrator can recover deleted e-mail without restoring the entire e-mail server, but some e-mail servers require recovering the entire server to retrieve one deleted message.\n\nThis process is similar to deleting files on a hard drive; the file is marked for deletion, but it’s not truly unrecoverable until another piece of data is written in the same place. E-mail servers wait to overwrite disk space until the server has been backed up. If you have a date and time stamp for an e-mail, the e-mail administrator should be able to recover it from backup media if the message is no longer on the e-mail server."
+            },
+            {
+              "title": "Using Specialized E-mail Forensics Tools",
+              "toc_id": 393,
+              "chunk_count": 22,
+              "total_chunks_in_branch": 91,
+              "budget_slides_content": 10,
+              "direct_slides_content": 2,
+              "total_slides_in_branch": 12,
+              "time_allocation_minutes": {
+                "direct_content_time": 6,
+                "direct_interactive_time": 5,
+                "total_branch_time": 38
+              },
+              "children": [
+                {
+                  "title": "Using Magnet AXIOM to Recover E-mail",
+                  "toc_id": 394,
+                  "chunk_count": 14,
+                  "total_chunks_in_branch": 14,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "children": [],
+                  "seq_id": 21,
+                  "chunks_sorted": [
+                    5565,
+                    5566,
+                    5567,
+                    5568,
+                    5569,
+                    5570,
+                    5571,
+                    5572,
+                    5573,
+                    5574,
+                    5575,
+                    5576,
+                    5577,
+                    5578
+                  ],
+                  "content": "Using Magnet AXIOM to Recover E-mail\n\nMagnet AXIOM is designed to combine evidence retrieval from PCs, mobile devices, and the cloud. Many other tools are also moving in this direction. In this activity, you learn how to use Magnet AXIOM to recover e-mails. Magnet AXIOM has two modules: Process and Examine. You start Process first to enter the case details and add the evidence. When you finish these procedures, Magnet AXIOM Examine starts.\n\n1.\n\nStart Magnet AXIOM Process, and click the CREATE NEW CASE button. On the left is the navigation pane to show where you are in processing a case, and on the right is where you enter or select details. In the Case number text box, type InChap11. In the LOCATION FOR CASE FILES section, type InChapter11 in the Folder name text box, as shown in Figure 11-7. Click the BROWSE button next to the File path text box, navigate to and click your work folder, and click Select Folder. Click the GO TO EVIDENCE SOURCES button.\n\n2.\n\nIn the EVIDENCE SOURCES window, you can choose COMPUTER, MOBILE, or CLOUD in the SELECT EVIDENCE SOURCE section. Click the COMPUTER icon. In the next window, click the LOAD EVIDENCE icon, and then click NEXT. In the next window, you can specify loading a drive, an image, a file, or a volume shadow copy. Click IMAGE. Navigate to your work folder where you downloaded this chapter’s data files, click the hard drive file Jim Shu001.vhd , and click OK.\n\n3.\n\nIn the Add Files and Folders window, notice the listed partitions, and then click NEXT. In the next window, you can select the search type: full, sector level, or unpartitioned space. Leave all these search types selected, and click NEXT. The next window shows you the evidence that has been added to the case. Click GO TO PROCESSING DETAILS, where you could add keyword lists, hash values, and other details to customize your case. For now, you’re not adding anything else, so click GO TO ARTIFACT DETAILS. The MOBILE ARTIFACTS and CLOUD ARTIFACTS sections are grayed out because you haven’t added any evidence from these sources.\n\n4.\n\nClick GO TO ANALYZE EVIDENCE. This window shows the evidence sources to be processed (see Figure 11-8). Click ANALYZE EVIDENCE . This process takes around two hours, depending on your workstation. When it’s finished, Magnet AXIOM Examine starts automatically.\n\n5.\n\nOn the left, click to expand EMAIL. Notice the two subfolders under it. Next, click an e-mail with the j_shu@gmx.us address in the EVIDENCE pane in the middle (see Figure 11-9). Copy the e-mail header in the pane on the far right.\n\n6.\n\nStart a Web browser, and go to https://mxtoolbox.com/EmailHeaders.aspx. Paste the e-mail header into the E-mail Header Analyzer text box, and click Analyze Header. What information can you get from the MXToolBox tool? When you’re finished examining the e-mail, exit Magnet AXIOM."
+                },
+                {
+                  "title": "Using a Hex Editor to Carve E-mail Messages",
+                  "toc_id": 395,
+                  "chunk_count": 41,
+                  "total_chunks_in_branch": 41,
+                  "budget_slides_content": 5,
+                  "direct_slides_content": 5,
+                  "total_slides_in_branch": 5,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 15,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 15
+                  },
+                  "children": [],
+                  "seq_id": 22,
+                  "chunks_sorted": [
+                    5579,
+                    5580,
+                    5581,
+                    5582,
+                    5583,
+                    5584,
+                    5585,
+                    5586,
+                    5587,
+                    5588,
+                    5589,
+                    5590,
+                    5591,
+                    5592,
+                    5593,
+                    5594,
+                    5595,
+                    5596,
+                    5597,
+                    5598,
+                    5599,
+                    5600,
+                    5601,
+                    5602,
+                    5603,
+                    5604,
+                    5605,
+                    5606,
+                    5607,
+                    5608,
+                    5609,
+                    5610,
+                    5611,
+                    5612,
+                    5613,
+                    5614,
+                    5615,
+                    5616,
+                    5617,
+                    5618,
+                    5619
+                  ],
+                  "content": "Using a Hex Editor to Carve E-mail Messages\n\nFew vendors have products for analyzing e-mail in systems other than Microsoft, such as macOS Mail or Evolution. In this section, you learn about a method for acquiring Evolution e-mail directories and extracting messages with Hex Workshop. These techniques can be used with all e-mail systems that create flat plaintext files, known as an mbox A method of storing e-mail messages in a flat plaintext file. format, to store messages. Vendor-unique e-mail file systems, such as Microsoft .pst or .ost, typically use Multipurpose Internet Mail Extensions (MIME) A specification for formatting non- ASCII messages, such as graphics, audio, and video, for transmission over the Internet. formatting, which can be difficult to read with a text or hexadecimal editor.\n\nTo carve e-mails from Evolution, you need to copy the .evolution directory, its subdirectories, and content to another storage medium that can be transported to your forensic workstation. One way is to export this directory and subdirectories from an image file to a target drive path you designate by using a forensics tool. For an e-mail recovery that requires extracting only e-mail data from a computer, the Linux tar command is easy to use. You can create a tarball of the entire .evolution directory and uncompress it so that a hexadecimal editor on any OS can read it.\n\nFor this case, you’re acquiring the .evolution directory from Martha Dax’s Linux computer to see whether you can find the same e-mail you found in the Jim_shu's.pst file. Then you compare the message headers of the two e-mails to detect any differences and perhaps discover e-mail addresses other than Terry Sadler’s and Martha Dax’s. The following steps explain how to make a tarball of the .evolution directory:\n\nNote\n\nBecause you don’t have an .evolution directory on your system, just read through these steps as an example of extracting this file to a USB drive.\n\n1.\n\nStart Linux and open a terminal window.\n\n2.\n\nConnect a USB drive to your computer and mount it, if it’s not mounted automatically.\n\n3.\n\nNavigate to the user’s home directory. For example, type cd /home/martha and press Enter.\n\n4.\n\nTo determine whether the .evolution directory is in this location, type ls -a and press Enter. Examine the output. If you don’t see an .evolution directory in the home directory, type ls -aR to list all subdirectories. When you have found the .evolution directory, use the cd command to navigate to the parent directory so that you can copy the .evolution directory and its subdirectories.\n\n5.\n\nType tar cf martha-evolution.tar .evolution and press Enter. If you get an error of insufficient authority, repeat the command, but precede it with sudo. When prompted, enter your password.\n\n6.\n\nUsing File Manager or another GUI utility, copy martha-evolution.tar to a USB drive.\n\n7.\n\nType exit and press Enter, and then log out of your Linux computer.\n\nAll mbox-formatted messages start with the word “From” followed by a space (the character 0x20). To carve e-mails from martha-evolution.tar (which you downloaded to your work folder earlier), follow these steps:\n\n1.\n\nStart WinHex. Click File, Open from the menu, navigate to your work folder, click martha-evolution.tar , and then click Open. Click View, Text Display Only from the menu, and then click View, point to Character Set, and click ANSI ASCII.\n\n2.\n\nTo locate the e-mail from Terry Sadler, click Search, Find Text from the menu.\n\n3.\n\nIn the Find Text dialog box, type terrysadler in the “The following text string will be searched” text box, make sure ASCII/Code page is selected in the drop-down list, and then click OK. If necessary, click OK in the “Search complete” message box.\n\n4.\n\nPlace the cursor in front of the letter “F” in the word “From” (see the fifth line in Figure 11-10). Notice the offset byte count 710EF at the bottom.\n\n5.\n\nClick at offset 710EF in the middle pane and drag down until you reach the end of the e-mail, as shown in Figure 11-11 (Note: Your screen might look a little different.)\n\n6.\n\nRight-click the highlighted text and click Edit, point to Copy Block, and click Into New File.\n\n7.\n\nIn the Save File As dialog box that opens, save the file as Martha-evolution.txt in your work folder, and exit Hex Workshop.\n\n8.\n\nStart Notepad and open the Martha-evolution.txt file (see Figure 11-12) so that you can refer to it in the next few paragraphs, and then exit Notepad when you’ve finished reading this section.\n\nNote\n\nThe ending position of this message is at offset 720F1. With mbox-formatted files, typically you find the end of the message at the next “From_” occurrence. Because this message is the last in the inbox, it terminates with “0A, 0A, 0A.”\n\nAfter carving an e-mail message from a tarball .evolution file, you have a plaintext file with no line breaks. The text pasted into Notepad wraps, making it difficult to find reference points. To make this file’s header and content readable, you need to enter line breaks at logical places, which can be tedious. The effort pays off, however, because you can find information of interest to your investigation more easily.\n\nFor example, you might notice that the only addresses visible are terrysadler@goowy.com and martha.dax@superiorbicycles.biz. The next step is to see whether you can find Jim Shu’s e-mail. His e-mail address hasn’t been listed in the results so far. By comparing these two messages from the Jim_shu's.pst file and Martha Dax’s .evolution inbox, you determine that Terry Sadler blind-copied (bcc) Jim Shu. This information might be of interest to Martha Dax because it shows that Jim Shu and Terry Sadler have a relationship involving a business proposal. By further examining Jim Shu’s e-mail and other Superior Bicycles employees’ e-mail, you might be able to learn what the relationship is and whether it should be of concern to Martha Dax and Superior Bicycles."
+                },
+                {
+                  "title": "Recovering Outlook Files",
+                  "toc_id": 396,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 23,
+                  "chunks_sorted": [
+                    5620,
+                    5621,
+                    5622,
+                    5623,
+                    5624,
+                    5625,
+                    5626
+                  ],
+                  "content": "Recovering Outlook Files\n\nAs a forensics examiner recovering e-mail messages from Outlook, you might need to reconstruct .pst files and messages. With many advanced forensics tools, such as Magnet AXIOM, OSForensics, X-Ways Forensics, AccessData FTK, and Guidance Software EnCase, deleted .pst files can be partially or completely recovered. Typically, additional effort is required to reconstruct these recovered files so that their content can be extracted as part of a data recovery or forensics examination.\n\nThe scanpst.exe recovery tool comes with Microsoft Office and can repair .ost files as well as .pst files. You can run this tool from File Explorer or a command prompt and use it with any data that looks like a .pst or an .ost file. It processes the data and rebuilds it into a .pst file that can be accessed with Outlook or other tools discussed in this chapter.\n\nTip\n\nFor more information on scanpst.exe, see http://office.microsoft.com/en-001/outlook-help/repair-outlook-data-files-pst-and-ost-HA010075831.aspx and www.slipstick.com/outlook/config/recover-deleted-messages-pst-files/.\n\nGuidance Software uses the SysTools plug-in (www.guidancesoftware.com/app/SysTools-Outlook-Exporter-v-Demo-Version-) for Outlook e-mail through version 2013. SysTools extracts .pst files from EnCase Forensic for analysis. An advantage of this plug-in is that you don’t have to install Outlook to examine Outlook e-mails.\n\nOther recovery tools are designed to reconstruct e-mail data in Outlook and other e-mail formats. One tool that has been well tested is DataNumen Outlook Repair (www.datanumen.com/outlook-repair); it’s one of the better e-mail recovery tools on the market. It can recover files from VMware and Virtual PC as well as ISO images and other types of file backups. You install and use it later in the hands-on projects."
+                },
+                {
+                  "title": "E-mail Case Studies",
+                  "toc_id": 397,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 24,
+                  "chunks_sorted": [
+                    5627,
+                    5628,
+                    5629,
+                    5630,
+                    5631,
+                    5632,
+                    5633
+                  ],
+                  "content": "E-mail Case Studies\n\nThroughout this book, you have been using the M57 case, and in the hands-on projects, you work with some .pst files in this case. Another major case involving corporate e-mail is the Enron case, which required retrieving thousands of e-mails at a time when few policies for collecting this information existed. When the Electronic Discovery Reference Model (EDRM; www.edrm.net) group acquired the right to store and distribute these e-mails, it discovered how much personally identifiable information they contained. Another company worked with the EDRM to correct the problem by removing the personal information. In the end, more than 10,000 e-mails were collected (http://info.nuix.com/Enron.html). The following list gives you an idea of how much personal information these e-mails contained:\n\n60 containing credit card numbers\n\n572 containing thousands of Social Security or other identity numbers\n\n292 containing birth dates\n\n532 containing information of a highly personal nature, such as medical or legal matters\n\nAs a regular part of doing business, employees sent internal e-mails with spreadsheet attachments containing personal information about employees and customers. Now spreadsheets are typically password-protected or encrypted, but these documents weren’t. In the hands-on projects, you download some .pst files of Enron employees and examine them with tools discussed in this chapter to get an idea of what kind of information can be found in corporate e-mails."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Using Specialized E-mail Forensics Tools (Interactive Activity)",
+                "toc_id": 393,
+                "slides_allocated": 1,
+                "seq_id": 25
+              },
+              "seq_id": 20,
+              "chunks_sorted": [
+                5543,
+                5544,
+                5545,
+                5546,
+                5547,
+                5548,
+                5549,
+                5550,
+                5551,
+                5552,
+                5553,
+                5554,
+                5555,
+                5556,
+                5557,
+                5558,
+                5559,
+                5560,
+                5561,
+                5562,
+                5563,
+                5564
+              ],
+              "content": "Using Specialized E-mail Forensics Tools\n\nFor many e-mail investigations, you can rely on e-mail message files, e-mail headers, and e-mail server log files. However, if you can’t find an e-mail administrator willing to help with the investigation, or you encounter a highly customized e-mail environment, you can use data recovery tools and forensics tools designed to recover e-mail files.\n\nAs technology has progressed in e-mail and other services, so have the tools for recovering information lost or deleted from a hard drive. In previous chapters, you have reviewed many tools for data recovery, such as Magnet AXIOM, Autopsy, and OSForensics. You can also use these tools to investigate and recover e-mail files. Other tools, such as the ones in the following list, are specifically created for e-mail recovery, including recovering deleted attachments from a hard drive:\n\nDataNumen for Outlook and Outlook Express (www.datanumen.com/products.htm)\n\nFINALeMAIL for Outlook Express and Eudora (http://finalemail-1-2.en.softonic.com)\n\nSawmill-Novell GroupWise for log analysis (www.sawmill.net/formats/groupwise_post_office_agent.html)\n\nMailXaminer for multiple e-mail formats and large data sets (www.mailxaminer.com/)\n\nFookes Aid4Mail and MailBag Assistant for Outlook, Thunderbird, and Eudora (www.fookes.com)\n\nParaben E-Mail Examiner, configured to recover several e-mail formats (www.paraben.com/products/e3-emx)\n\nAccessData FTK for Outlook and Outlook Express (www.accessdata.com)\n\nOntrack EasyRecovery EmailRepair for Outlook and Outlook Express (www.ontrackdatarecovery.ie/data-recovery/email-recovery/)\n\nR-Tools R-Mail for Outlook and Outlook Express (www.r-tt.com/outlook_mail_recovery/)\n\nOfficeRecovery’s MailRecovery for Outlook, Outlook Express, Exchange, Exchange Server, and IBM Notes (www.officerecovery.com)\n\nMXToolBox for decoding e-mail headers (https://mxtoolbox.com/EmailHeaders.aspx)\n\nFreeViewer with free tools for Outlook, Windows Live Mail, Thunderbird, and other servers (www.freeviewer.org/email-forensics/free-tools.html)\n\nWhen you use a third-party tool to search for a .db file, for example, you can find where the administrator stores these files for the e-mail server; they could be on the server or in a remote location for backup. To find log files, use .log as the search criteria. You’re likely to find at least two logs related to e-mail—one listing logged events for messages and the other listing logged events for accounts accessing e-mail.\n\nForensics tools enable you to find e-mail database files, personal e-mail files, offline storage files, and log files. With some tools, you use a special viewer to see messages and other files; others require using a text editor to compare information, such as the timestamp, username, domain, and message contents, to determine whether it matches what was found on the victim’s computer.\n\nOne advantage of using data recovery tools is that you don’t need to know how the e-mail server or e-mail client operates to extract data from these computers. Data recovery tools do the work for you and allow you to view evidence on the computer. However, if you’re serving as an expert witness, you do need to understand the e-mail system’s functions and be able to explain them to laypeople.\n\nAfter you compare e-mail logs with the messages, you should verify the e-mail account, message ID, IP address, and date and time stamp to determine whether there’s enough evidence for a warrant. If so, you can obtain and serve your warrant for the suspect’s computer equipment. Remember to follow the evidence-handling rules and control measures your organization uses, as described in previous chapters.\n\nTip\n\nWhen requesting a search warrant, consider whether you’re looking for evidence of more than one crime. If you intend to investigate different crimes, make sure to include probable cause for each crime so that you need only a single warrant covering all areas of interest. Your investigation might require a second warrant, however. For example, if you’re investigating a drive for evidence of harassment and you come across e-mail suggesting that the suspect is also selling controlled substances over the Internet, you need a second warrant to investigate this crime.\n\nAfter collecting evidence, you begin copying it to another source for the examination while documenting everything you’re doing. If you create an image, document the procedure and tool you use. If you’re just collecting a specific folder, such as the .evolution directory, document the command you use to copy data. With some tools, you can scan e-mail database files on a suspect’s Windows computer, locate any e-mails the suspect has deleted—these messages don’t have data location information—and restore them to their original state. You can also search a computer for other files associated with e-mail, such as databases, and see whether any attachments were sent with an e-mail and view them."
+            },
+            {
+              "title": "Applying Digital Forensics Methods to Social Media Communications",
+              "toc_id": 398,
+              "chunk_count": 23,
+              "total_chunks_in_branch": 36,
+              "budget_slides_content": 4,
+              "direct_slides_content": 3,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 9,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "children": [
+                {
+                  "title": "Forensics Tools for Social Media Investigations",
+                  "toc_id": 399,
+                  "chunk_count": 13,
+                  "total_chunks_in_branch": 13,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 27,
+                  "chunks_sorted": [
+                    5657,
+                    5658,
+                    5659,
+                    5660,
+                    5661,
+                    5662,
+                    5663,
+                    5664,
+                    5665,
+                    5666,
+                    5667,
+                    5668,
+                    5669
+                  ],
+                  "content": "Forensics Tools for Social Media Investigations\n\nSoftware for social media forensics is being developed, but not many tools are available. A number of social media tools that were free or inexpensive have now been incorporated into forensics suites, such as FTK Social Analyzer, or offer only 14-day to 30-day trials. In addition, there are many questions about how the information these tools gather can be used in court or in arbitration. Investigators often run into the problem of finding information unrelated to a case, and sometimes they must stop to get another warrant or subpoena, such as investigating a claim of fraud and finding evidence of corporate espionage. Using social media forensics software might also require getting the permission of people whose information is being examined.\n\nMany OSN tools use customized Web crawlers to find data, but they take too long to find information to make them efficient. A few helpful software packages are available, however. For example, X1 Social Discovery (www.x1.com/products/x1_social_discovery/) can be used in two modes in Facebook: a credentialed user account (which requires the username and password of the person under investigation) and a public account (created to examine the publicly accessible posts of people or groups). X1 also has tools for Twitter and YouTube. In addition, researchers created an open-source tool to target Facebook accounts (Huber, Mulazzani, et al, “Social Snapshots: Digital Forensics for Online Social Networks,” ACSAC ’11, Proceedings of the 27th Annual Computer Security Applications Conference,\n\nNetworks,” ACSAC ’11, Proceedings of the 27th Annual Computer Security Applications Conference, December 2011, www.sba-research.org/wp-content/uploads/publications/social_snapshots_preprint.pdf).\n\nAs with any investigation, you need a warrant or subpoena to ask an OSN to produce its records. There are other approaches you can take, however. If people are cooperating with your investigation, they might give you the usernames and passwords to their social media accounts. If not, you can access only their public profile or become friends with one of their friends, which might give you limited information. For this approach, there are a few steps you need to take:\n\n1.\n\nBegin with a workstation that doesn’t contain any of your personal information, or create a virtual machine with a bridged network (meaning it has a different IP address from the host computer).\n\n2.\n\nMany people link their cell phone numbers to their Facebook accounts, so try looking up the suspect’s cell phone number in Facebook, which shows you the person’s username, too. People often use the same username in all platforms, including Twitter, Instagram, LinkedIn, and so forth.\n\n3.\n\nNext, you should do a Google search on this username, making sure to use your investigation workstation. Disable Google’s Safe Search feature and “instant results,” which Google uses to guess what you’re searching for. Last, but not least, turn off location-based searches so that Google doesn’t use your location to filter results. For example, if you’re searching for a restaurant serving pizza and you’re in New York City, Google won’t return search results for Miami—or any other city.\n\n4.\n\nCollect as much information as possible on Google, and use it to find friends of the suspect and then attempt to friend these people. With some social media tools, you need to create a decoy account. Remember that it’s against the law to use someone else’s likeness as your own for a social media account, and operating within the law is crucial in any investigation."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Applying Digital Forensics Methods to Social Media Communications (Interactive Activity)",
+                "toc_id": 398,
+                "slides_allocated": 1,
+                "seq_id": 28
+              },
+              "seq_id": 26,
+              "chunks_sorted": [
+                5634,
+                5635,
+                5636,
+                5637,
+                5638,
+                5639,
+                5640,
+                5641,
+                5642,
+                5643,
+                5644,
+                5645,
+                5646,
+                5647,
+                5648,
+                5649,
+                5650,
+                5651,
+                5652,
+                5653,
+                5654,
+                5655,
+                5656
+              ],
+              "content": "Applying Digital Forensics Methods to Social Media Communications\n\nSocial media sites, such as Twitter, Facebook, LinkedIn, and YouTube, aren’t just a way of communicating with friends and family. These online social networks (OSNs) A term researchers use for social media. are also used to conduct business, brag about criminal activities, raise money, and have class discussions. You can also use OSNs to build a profile of a prospective client, a business partner, a suspect in a murder trial, and more.\n\nSocial media can contain a lot of information, including the following:\n\nEvidence of cyberbullying and witness tampering\n\nA company’s position on an issue\n\nWhether intellectual property rights have been violated\n\nWho posted information and when\n\nThe number of cases involving social media is growing, and social media evidence often substantiates a party’s claims. For example, in an early intellectual property case involving social media, evidence gathered from the public side of an employee’s LinkedIn profile showed that she had copied thousands of records from her company laptop to a USB drive and started working at a competing company before quitting her job (“Elephant in the Room: Case Studies of Social Media in Civil and Criminal Cases,” Mark Lanterman, https://blog.x1discovery.com/2014/06/10/elephant-in-the-room-case-studies-of-social-media-in-civil-and-criminal-cases/, June 2014). In his article on social media forensics (http://mashable.com/2012/02/13/social-media-forensics/), Todd Piett noted that 88% of the law enforcement\n\nTodd Piett noted that 88% of the law enforcement groups surveyed use social media as a tool for doing background checks, corroborating data, verifying alibis, and finding suspects and witnesses. For example, in one case, a 19-year-old was accused of a crime, but police were able to use his Facebook posts as proof he was somewhere else when the crime occurred (http://edition.cnn.com/2009/CRIME/11/12/facebook.alibi/index.html, 2009).\n\nNote\n\nIn another case, police were able to arrest a gang member because one of his friends boasted about a murder on his MySpace page (“Police embrace social media as crime-fighting tool,” www.cnn.com/2012/08/30/tech/social-media/fighting-crime-social-media/, 2012).\n\nA challenge with using social media data in court is authenticating the author and the information. In this age of accusations of “fake news,” investigators must be careful to verify their data. In “Authentication of Social Media Evidence: 2 Cases To Know” (www.law360.com/articles/897947/authentication-of-social-media-evidence-2-cases-to-know), Beth Rose examines what constitutes “discoverable” versus “admissible” by examining the case U.S. v. Brown, in which the prosecutor presented enough circumstantial evidence to prove that Facebook chats had been written by the defendant. The defendant claimed the chats couldn’t be authenticated and, therefore, couldn’t be used in court. However, Facebook could authenticate that the chats had taken place and gave a certificate of authenticity, as it\n\ncould authenticate that the chats had taken place and gave a certificate of authenticity, as it was a normal business record. In addition, the other people involved in the case (who were minors) could testify as to the content of the chats and state they had met the defendant in person. Four of the five chats were allowed as admissible in court.\n\nDigital investigators can mine social media sites to find information, too. The challenge is that even though much of YouTube and Facebook content is public, the data is spread over many servers, providers, and users. By January 2017, Facebook alone had two billion monthly users. The amount of data on social media sites is staggering: 250 million pictures and 200 million tweets a day, for example. There’s so much information that analyzing it requires techniques referred to as “big data analytics,” which is the study of dissimilar types of data in huge quantities. Investigators might have to sift through videos, pictures, GPS locations, text messages, e-mails, tweets, and posts in just one case, and trying to analyze so many types of data has an effect on what approach is used.\n\nIn addition, OSNs involve multiple jurisdictions that might even cross national boundaries, and social media vendors prohibit access to their servers. As an investigator, you’re not allowed to physically touch or retrieve information from these machines. A warrant or subpoena is needed to get the information, and then vendors have to supply the information for you. In cases involving imminent danger, law enforcement can file for emergency requests; however. Facebook, SnapChat, and other OSNs usually have legal staff who evaluate these requests. SnapChat, for example, has a downloadable guide for law enforcement. Twitter vehemently opposes government requests and cites the U.S. Fourth Amendment to refuse all requests. Facebook, however, has begun accommodating international requests.\n\nFacebook has two types of profiles: basic subscriber info and extended subscriber info (called Neoprint). Basic subscriber info simply tells you the last time a person logged on, his or her e-mail address and associated mobile number, and whether the account can be viewed publicly. The Neoprint profile includes friends, groups, video feeds, and undeleted photos (“U.S. Law Enforcement obtaining warrants to search Facebook Profiles,” www.foxnews.com/tech/2011/07/12/us-law-enforcement-obtain-warrants-to-search-facebook-profiles/, 2011). Typically, this profile is given to law enforcement only with a warrant.\n\nNote\n\nStroz-Freidburg, an established company specializing in e-discovery, digital forensics, and fraud accounting, has created procedures on how to approach social media forensics (www.strozfriedberg.com/how-we-help/capture-emerging-data-types/), such as collecting and validating social media content, determining what data should be collected, and maintaining the chain of custody with evidence that’s variable in nature.\n\nMany types of cases involve social media. For example, a company selling illegal knock-offs might use social media to sell its merchandise. As an investigator, you need a big-picture perspective to determine what evidence might apply to a case and where to look for information. With the advent of social media and the cloud, locations to examine for evidence are no longer limited to physical devices, such as cell phones and laptops.\n\nSocial Media Forensics on Mobile Devices\n\nIn mid-2017, Facebook had 2 billion users worldwide. Of those, 1.74 billion, or 87%, were mobile users (www.statista.com/statistics/264810/number-of-monthly-active-facebook-users-worldwide/). Although Twitter has only 328 million monthly users, 80% of them are mobile users (www.statista.com/statistics/282087/number-of-monthly-active-twitter-users/). A study in 2012 examined Facebook, Twitter, and MySpace use on BlackBerries, iPhones, and Android devices and discovered, for example, that physical acquisitions of iPhones required “jailbreaking,” meaning they got root access to the device’s OS to bypass the provider’s codes for preventing users from switching to other providers and preventing unauthorized people from taking actions an investigator would take (Noora Al Mutawa, et al, “Forensic\n\npeople from taking actions an investigator would take (Noora Al Mutawa, et al, “Forensic analysis of social networking applications on mobile devices,” Digital Investigation 9, 2012, www.dfrws.org/2012/proceedings/DFRWS2012-3.pdf).\n\nIn addition, they found that evidence artifacts vary depending on the social media channel and the device. For example, on iPhones, a SQLite database for Facebook was found that lists friends, their ID numbers, and phone numbers as well as files that tracked all uploads, including pictures. Similar databases were found on Twitter. On Android devices, Facebook friends were found in the contacts list because these devices synchronized with Facebook. Forensic analysis also showed that iPhone and Android devices yielded the most information, and much of the data was stored in SQLite databases. Following standard procedures—doing a logical acquisition followed by a physical acquisition—can yield solid evidence, especially with devices that aren’t locked."
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          },
+          "seq_id": 29
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          },
+          "seq_id": 30
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1998 @@
+{
+  "week": 2,
+  "overall_topic": "The Investigator's Office and Laboratory.",
+  "weekly_slide_summary": {
+    "total_slides_for_week": 36,
+    "total_framework_slides": 4,
+    "total_content_slides": 28,
+    "total_interactive_slides": 4,
+    "number_of_decks": 1
+  },
+  "weekly_time_summary_minutes": {
+    "total_time_for_week_minutes": 110,
+    "total_framework_time": 6,
+    "total_content_and_interactive_time": 104
+  },
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "total_slides_in_deck": 36,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 28,
+        "interactive": 4
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 104,
+        "total_deck_time": 110
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "The Investigator's Office and Laboratory.",
+            "deck_title": "Week 2, Lecture 1"
+          },
+          "seq_id": 0
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Understanding Forensics Lab Accreditation Requirements",
+              "Determining the Physical Requirements for a Digital Forensics Lab",
+              "Selecting a Basic Forensic Workstation",
+              "Building a Business Case for Developing a Forensics Lab"
+            ]
+          },
+          "seq_id": 1
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Understanding Forensics Lab Accreditation Requirements",
+              "toc_id": 57,
+              "chunk_count": 7,
+              "total_chunks_in_branch": 86,
+              "budget_slides_content": 8,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 9,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 29
+              },
+              "children": [
+                {
+                  "title": "Identifying Duties of the Lab Manager and Staff",
+                  "toc_id": 58,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 3,
+                  "chunks_sorted": [
+                    951,
+                    952,
+                    953,
+                    954,
+                    955,
+                    956,
+                    957
+                  ],
+                  "content": "Identifying Duties of the Lab Manager and Staff\n\nThe ANAB states that each lab should have specific objectives that a parent organization and the lab’s director or manager have determined. The lab manager sets up processes for managing cases and reviews them regularly. Besides performing general management tasks, such as promoting group consensus in decision making, maintaining fiscal responsibility for lab needs, and enforcing ethical standards (covered in Chapters 15 and 16) among staff members, the lab manager plans updates for the lab, such as new hardware and software purchases.\n\nThe lab manager also establishes and promotes quality assurance processes for the lab’s staff to follow, such as outlining what to do when a case arrives, logging evidence, specifying who can enter the lab, and establishing guidelines for filing reports. To ensure the lab’s efficiency, the lab manager also sets reasonable production schedules for processing work.\n\nA typical investigation involves seizing a hard disk and other media, such as USB drives; making forensic copies of them; evaluating evidence; and filing a report. A forensics analysis of a 6 TB disk, for example, can take several days or weeks and often involves running imaging software overnight and on weekends. This means one of the forensic workstations in the lab is occupied for that time, which can be 20 hours or more. Based on past experience, the lab manager can estimate how many cases each investigator can handle and when to expect a preliminary and final report for each case.\n\nThe lab manager creates and monitors lab policies for staff and provides a safe and secure workplace for staff and evidence. Above all, the lab manager accounts for all activities the lab’s staff conducts to complete its work. Tracking cases such as e-mail abuse, Internet misuse, and illicit activities can justify the funds spent on a lab.\n\nStaff members in a forensics lab should have enough training to perform their tasks. Necessary skills include hardware and software knowledge, including OSs and file types, and deductive reasoning. Their work is reviewed regularly by the lab manager and their peers to ensure quality. Staff members are also responsible for continuing technical training to update their investigative and computer skills and maintaining a record of the training they have completed. Many vendors and organizations hold annual or quarterly training seminars that offer certification exams.\n\nThe ANAB Web site summarizes the requirements of managing a digital forensics lab, handling and preserving evidence, performing laboratory procedures, setting personnel requirements, and encouraging professional development. The site also provides a user license for printed and online manuals of lab management guidelines. ANAB stresses that each lab should maintain an up-to-date library of resources in its field. For digital forensics, these resources include software, hardware information, and technical journals.",
+                  "slides": [
+                    {
+                      "seq_id": 3.1,
+                      "llm_generated_content": {
+                        "title": "Identifying Duties of the Lab Manager and Staff",
+                        "subtitle": "Lab Manager Responsibilities",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Establishes and maintains lab processes for managing cases",
+                              "Promotes group consensus in decision making",
+                              "Maintains fiscal responsibility for lab needs",
+                              "Enforces ethical standards among staff",
+                              "Plans updates for the lab (e.g., hardware/software purchases)",
+                              "Establishes quality assurance processes for staff",
+                              "Outlines procedures for handling incoming cases",
+                              "Logs evidence and specifies access guidelines",
+                              "Sets production schedules for processing work",
+                              "Monitors lab policies and ensures a safe workplace",
+                              "Tracks all staff activities to ensure accountability",
+                              "Estimates case handling capacity based on past experience",
+                              "Manages resources to justify lab funding through case tracking"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Lab Budget Planning",
+                  "toc_id": 59,
+                  "chunk_count": 18,
+                  "total_chunks_in_branch": 18,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "children": [],
+                  "seq_id": 4,
+                  "chunks_sorted": [
+                    958,
+                    959,
+                    960,
+                    961,
+                    962,
+                    963,
+                    964,
+                    965,
+                    966,
+                    967,
+                    968,
+                    969,
+                    970,
+                    971,
+                    972,
+                    973,
+                    974,
+                    975
+                  ],
+                  "content": "Lab Budget Planning\n\nTo conduct a professional digital investigation, you need to understand the cost of your lab operation. Lab costs can be broken down into monthly, quarterly, and annual expenses. The better you understand these expenses, the better you can delegate resources for each investigation. Using a spreadsheet program helps you keep track of past investigation expenses so that you can extrapolate expected future costs. Remember that expenses include purchasing computer hardware and software, renting facility space, and training personnel.\n\nWhen creating a budget, start by estimating the number of cases your lab expects to examine and identifying the types of computers you’re likely to examine, such as Windows PCs, Apple systems, or Linux workstations. For example, suppose you work for a state police agency that’s planning to provide digital investigation services for the entire state. You could start by collecting state crime statistics for the current year and several previous years to determine types of computers or other devices associated with these crimes. Criminal behavior often reflects sales trends for certain computing systems. Because most consumers use Intel and AMD PCs, and most of these computers run Windows, the same is likely true of computers used in crimes. Verify this trend by determining how often each\n\nsame is likely true of computers used in crimes. Verify this trend by determining how often each type of system is used in a crime. List the number of crimes committed that involve Windows, Linux/UNIX, and Apple computers. In addition to estimating resources for digital investigations, you should also determine what resources will be needed to examine mobile devices, such as smartphones and tablets.\n\nIf you can’t find detailed information on the types of computers and OSs used in digital crimes, gather enough information to make an educated guess. Your goal is to build a baseline for the types and numbers of systems you can expect to investigate. In addition to the historical data you compile, identify any future trends that could affect your lab, such as a new version of an OS or an increase in the number of computers involved in crime.\n\nNext, estimate how many investigations you might conduct involving computer systems used less often to help determine how many tools you need to examine these systems. For example, if you learn that on average, one Macintosh is involved in a criminal investigation each month, you probably need only one or two software tools to conduct a forensic analysis on Macintosh file systems.\n\nFigure 2-1 shows a table of statistics from a Uniform Crime Report Information collected at the federal, state, and local levels to determine the types and frequencies of crimes committed. that identifies the number of hard disk types, such as SATA or SCSI, and the OS used to commit crimes. Annual Uniform Crime Reports are generated at the federal, state, and local levels to show the types and frequency of crimes committed. For federal reports, see https://ucr.fbi.gov/ucr-publications, and for a summary of crimes committed at different levels, see www.bjs.gov.\n\nYou can also identify specialized software used with certain crimes. For example, if you find a check-writing software tool used in several counterfeiting cases, you should consider adding this specialized software to your inventory.\n\nIf you’re preparing to set up a forensics lab for a private company, you can determine your needs more easily because you’re working in a contained environment. Start by getting an inventory of all known computing systems and applications used in the business. For example, an insurance company often has a network of Intel PCs and servers and specialized insurance software using a database for data storage. A large manufacturing company might use Intel PCs, UNIX workstations running a computer-aided design (CAD) system, super minicomputers, and mainframes. A publishing company might have a combination of Intel PCs and Macintosh systems and a variety of word processing, imaging, and composition packages. Many other organizations use cloud-based storage or supervisory control and data\n\npackages. Many other organizations use cloud-based storage or supervisory control and data acquisition (SCADA) systems for data and applications.\n\nNext, check with your Management, Human Resource, and Security departments to determine the types of complaints and problems reported in the past year. Most companies using Internet connections, for example, get complaints about employees accessing the Web excessively or for personal use, which generate investigations of Web misuse. Be sure to distinguish investigations of excessive Web use from inappropriate Web site access and e-mail harassment.\n\nYour budget should also take future developments in digital technology into account because drive storage capabilities improve constantly. When examining a disk, you need a target disk to copy evidence data to. This disk should be at least one and a half times the size of the evidence (suspect) disk. For example, a lab equipped with 4 TB disks can effectively analyze disks up to 3 TB. If your company upgrades its computers to 3 TB disks, however, you need disks that are 6 TB or more or a central secure server with at least 100 TB or more of storage. One forensic server, the Digital Intelligence FREDC (www.digitalintelligence.com/products/fredc/), includes a private cloud that starts at 96 TB, with options for installing more storage. Many businesses replace their desktop computers every 18\n\nwith options for installing more storage. Many businesses replace their desktop computers every 18 months to three years. You must be informed of computer upgrades and other changes in the computing environment so that you can prepare and submit your budget for needed resources.\n\nWhen considering a central forensic server, such as the FREDC, your network should be designed to support higher speeds. The faster the network, the faster data can be transferred to and from the forensic server and workstations. This increase in speed reduces the time needed to process cases.\n\nAn alternative to digital forensics data storage is cloud storage. The cost savings are considerably higher than you get when purchasing storage hardware; however, you need to consider the throughput speeds of retrieving data and the levels of security. For more information on cloud security, see the Cloud Security Alliance (CSA) Security as a Service (SecaaS) Working Group (https://cloudsecurityalliance.org/group/security-as-a-service/#_downloads), which offers several papers and implementation guides.\n\nLike hardware, OSs change periodically. If your current digital forensics tool doesn’t work with the next release of an OS or a file system, you must upgrade your software tools. You should also monitor or contact vendor product development teams to learn about upgrades. File systems change, too. Forensics tools had their birth in DOS, and over the years, Windows hard disks used a variety of file systems, including FAT16, FAT32, New Technology File System (NTFS), Resilient File System (ReFS), and others. Most DOS-based tools can’t read NTFS disks. In addition, the popularity and prevalence of the Xbox requires investigators to be familiar with the FATX file system.\n\nTime management is a major factor when choosing software and hardware to purchase. For example, you’ve decided to purchase eight machines for your lab. Many commercial forensics software packages require a USB dongle to operate or have a site license of five concurrent users. You or the budget manager must decide whether you’re using all the machines or need only two licensed copies of each software package. Your choices depend on what tools you have verified and what’s needed for your casework.\n\nAnother option for viewing file systems is to use a Linux Live CD or WinFE (modified version of WinPE, the automated installation kit), which are CD or DVD disk acquisition tools discussed in Chapter 3. These tools don’t mount the hard drive automatically and, therefore, don’t write to the drive. (A hardware write-blocker is still recommended to prevent errors caused by the forensics technician, if nothing else.) Examining tablets, USB drives, and smartphones is routine now in cases from criminal investigations to civil litigation discovery demands. Digital investigators must be prepared to deal with constant change in these devices and know what tools are available to extract data from them safely for an investigation. In Chapter 12, you learn how to acquire data from these devices.",
+                  "slides": [
+                    {
+                      "seq_id": 4.1,
+                      "llm_generated_content": {
+                        "title": "Lab Budget Planning",
+                        "subtitle": "Understanding Lab Costs and Resource Allocation",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Lab costs include monthly, quarterly, and annual expenses such as hardware/software purchases, facility rentals, and personnel training.",
+                              "Use a spreadsheet to track past expenses and predict future costs.",
+                              "Estimate the number of cases and types of computers (Windows, Apple, Linux) involved in investigations.",
+                              "Analyze historical crime data to identify trends in computer usage for criminal activities.",
+                              "Consider future trends like OS updates or increased device usage in crimes.",
+                              "Determine resource needs for mobile devices (smartphones, tablets) in addition to computer systems."
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "seq_id": 4.2,
+                      "llm_generated_content": {
+                        "title": "Lab Budget Planning",
+                        "subtitle": "Estimating System Requirements and Future Trends",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "explanation",
+                            "data": [
+                              "Estimate the number of cases and types of computers (Windows, Apple, Linux) involved in investigations.",
+                              "Use historical crime statistics to identify trends in computer usage for crimes.",
+                              "Consider future trends like OS upgrades or increased device usage in crimes.",
+                              "Determine resource needs for less common systems (e.g., Macintosh) and specialized software.",
+                              "Account for storage requirements based on disk sizes (e.g., 1.5x evidence disk size).",
+                              "Plan for hardware upgrades and network speed to support forensic processing.",
+                              "Evaluate cloud storage options with security and throughput considerations.",
+                              "Monitor OS and file system changes to ensure software compatibility (e.g., FATX for Xbox).",
+                              "Balance cost and licensing needs for software tools based on lab usage."
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Acquiring Certification and Training",
+                  "toc_id": 60,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 54,
+                  "budget_slides_content": 5,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 4,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 12
+                  },
+                  "children": [
+                    {
+                      "title": "International Association of Computer Investigative Specialists",
+                      "toc_id": 61,
+                      "chunk_count": 13,
+                      "total_chunks_in_branch": 13,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "children": [],
+                      "seq_id": 6,
+                      "chunks_sorted": [
+                        980,
+                        981,
+                        982,
+                        983,
+                        7774,
+                        7775,
+                        7776,
+                        7777,
+                        7778,
+                        7779,
+                        7780,
+                        7781,
+                        7782
+                      ],
+                      "content": "International Association of Computer Investigative Specialists\n\nCreated by police officers who wanted to formalize credentials in digital investigations, the International Association of Computer Investigative Specialists (IACIS) is one of the oldest professional digital forensics organizations. For more information about IACIS, visit its Web site (www.iacis.com) to verify the current membership requirements.\n\nCandidates who complete the IACIS test successfully are designated as a Certified Forensic Computer Examiner (CFCE) A certificate awarded by IACIS at completion of all portions of the exam. . The CFCE process changes as technology changes. The description here is current as of this writing. IACIS requires recertification every three years to demonstrate continuing work in the field of digital forensics. Recertification is less intense than the original certification but does test examiners to make sure they’re continuing their education and are still active in the field of digital forensics. For the latest information about the CFCE certification, or IACIS membership, visit the IACIS Web site.\n\nIn addition to the CFCE, IACIS has two specialized certification programs: Certified Advanced Windows Forensic Examiner (CAWFE) and the IACIS Certified Mobile Device Examiner (ICMDE).\n\nInternational Association of Computer Investigative Specialists\n\nThe International Association of Computer Investigative Specialists (IACIS) provides a well-defined, simple guide for expected behavior of forensics examiners. These standards follow the principles defined by other professional organizations for investigations and testimony. The standards for IACIS members that apply to testifying include the following:\n\nMaintain the highest level of objectivity in all forensic examinations and accurately present the facts involved.\n\nExamine and analyze evidence in a case thoroughly.\n\nConduct examinations based on established, validated principles.\n\nRender opinions having a basis that is demonstratively reasonable.\n\nNot withhold any findings, whether inculpatory or exculpatory, that would cause the facts of a case to be misrepresented or distorted.\n\nNote\n\nFor more information on the IACIS code of ethics, see www.iacis.com/membership-2/membership-overview/.",
+                      "slides": [
+                        {
+                          "seq_id": 6.1,
+                          "llm_generated_content": {
+                            "title": "International Association of Computer Investigative Specialists",
+                            "subtitle": "Overview and Certification",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Established by police officers to formalize credentials in digital investigations",
+                                  "One of the oldest professional digital forensics organizations",
+                                  "Certification Programs: Certified Forensic Computer Examiner (CFCE), Certified Advanced Windows Forensic Examiner (CAWFE), IACIS Certified Mobile Device Examiner (ICMDE)",
+                                  "CFCE Certification: Requires passing the IACIS test, recertification every three years, and ongoing education",
+                                  "Recertification: Less intense than initial certification but ensures continued expertise in digital forensics",
+                                  "Code of Ethics: Maintains objectivity, thorough analysis, adherence to validated principles, and transparency in findings"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "ISC2 Certified Cyber Forensics Professional",
+                      "toc_id": 62,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 7,
+                      "chunks_sorted": [
+                        984,
+                        985
+                      ],
+                      "content": "ISC2 Certified Cyber Forensics Professional\n\nThe Certified Cyber Forensics Professional (CCFP) A certification from ISC2 for completing the education and work experience requirements and passing the exam. program, sponsored by ISC2, requires knowledge of digital forensics, malware analysis, incident response, e-discovery, and other disciplines related to cyber investigations. The CCFP Web site (www.isc2.org/ccfp/default.aspx) lists requirements and processes needed for this certification."
+                    },
+                    {
+                      "title": "High Tech Crime Network",
+                      "toc_id": 63,
+                      "chunk_count": 19,
+                      "total_chunks_in_branch": 19,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "children": [],
+                      "seq_id": 8,
+                      "chunks_sorted": [
+                        986,
+                        987,
+                        988,
+                        989,
+                        990,
+                        991,
+                        992,
+                        993,
+                        994,
+                        995,
+                        996,
+                        997,
+                        998,
+                        999,
+                        1000,
+                        1001,
+                        1002,
+                        1003,
+                        1004
+                      ],
+                      "content": "High Tech Crime Network\n\nThe High Tech Crime Network (HTCN) A national organization that provides certification for computer crime investigators and digital forensics technicians. also offers several levels of certification. Unlike IACIS, however, HTCN requires a review of all related training, including training in one of its approved courses, and a review of the candidate’s work history. HTCN certification is open to anyone meeting the criteria in the profession of computing investigations. At the time of this writing, the HTCN Web site (www.htcn.org) specifies requirements for the certification levels discussed in the following paragraphs. Requirements are updated without notice, so make sure you check the site periodically.\n\nCertified Computer Crime Investigator, Basic\n\nCandidates must have three years of experience directly related to investigating computer-related incidents or crimes.\n\nCandidates have successfully completed 40 hours of training from an approved agency, organization, or training company.\n\nCandidates must provide documentation of at least 10 cases in which they participated.\n\nCertified Computer Crime Investigator, Advanced\n\nCandidates must have five years of experience directly related to investigating computer-related incidents or crimes.\n\nCandidates have successfully completed 80 hours of training from an approved agency, organization, or company.\n\nCandidates have served as lead investigator in at least 20 cases during the past three years and were involved in at least 40 other cases as a lead investigator or supervisor or in a supportive capacity. Candidates have at least 60 hours of involvement in cases in the past three years.\n\nCertified Computer Forensic Technician, Basic\n\nCandidates must have three years of experience in computing investigations for law enforcement or corporate cases.\n\nCandidates must have completed 40 hours of computer forensics training from an approved organization.\n\nCandidates must provide documentation of at least 10 computing investigations.\n\nCertified Computer Forensic Technician, Advanced\n\nCandidates must have five years of hands-on experience in computer forensics investigations for law enforcement or corporate cases.\n\nCandidates must have completed 80 hours of computer forensics training from an approved organization.\n\nCandidates must provide documentation of at least 15 computing investigations.\n\nCandidates must have been the lead computer forensics investigator in 20 or more investigations in the past three years and in 40 or more additional computing investigations as lead computer forensics technician, supervisor, or contributor. The candidate must have completed at least 60 investigations in the past three years.",
+                      "slides": [
+                        {
+                          "seq_id": 8.1,
+                          "llm_generated_content": {
+                            "title": "High Tech Crime Network",
+                            "subtitle": "Overview and Certification Overview",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "High Tech Crime Network (HTCN) is a national organization providing certification for computer crime investigators and digital forensics technicians.",
+                                  "HTCN offers multiple certification levels, requiring training and work experience.",
+                                  "Unlike IACIS, HTCN requires review of all related training and work history.",
+                                  "Certification is open to anyone meeting the profession criteria in computing investigations.",
+                                  "HTCN website (www.htcn.org) specifies requirements, which may change without notice."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 8.2,
+                          "llm_generated_content": {
+                            "title": "High Tech Crime Network",
+                            "subtitle": "Certification Requirements",
+                            "objects": [
+                              {
+                                "content_type": "table",
+                                "content_purpose": "description",
+                                "data": {
+                                  "headers": [
+                                    "Certification Level",
+                                    "Experience",
+                                    "Training Hours",
+                                    "Case Documentation"
+                                  ],
+                                  "rows": [
+                                    [
+                                      "Certified Computer Crime Investigator, Basic",
+                                      "3 years of experience",
+                                      "40 hours of training",
+                                      "10 cases"
+                                    ],
+                                    [
+                                      "Certified Computer Crime Investigator, Advanced",
+                                      "5 years of experience",
+                                      "80 hours of training",
+                                      "20 lead cases + 40 other cases"
+                                    ],
+                                    [
+                                      "Certified Computer Forensic Technician, Basic",
+                                      "3 years of experience",
+                                      "40 hours of training",
+                                      "10 computing investigations"
+                                    ],
+                                    [
+                                      "Certified Computer Forensic Technician, Advanced",
+                                      "5 years of experience",
+                                      "80 hours of training",
+                                      "20 lead cases + 40 other cases + 60 total cases"
+                                    ]
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "EnCase Certified Examiner Certification",
+                      "toc_id": 64,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 9,
+                      "chunks_sorted": [
+                        1005,
+                        1006
+                      ],
+                      "content": "EnCase Certified Examiner Certification\n\nGuidance Software, the creator of EnCase, sponsors the EnCase Certified Examiner (EnCE) certification program. EnCE certification is open to the public and private sectors and is specific to use and mastery of EnCase forensics analysis. Requirements for taking the EnCE certification exam don’t depend on taking the Guidance Software EnCase training courses. Candidates for this certification are required to have a licensed copy of EnCase. For more information on EnCE certification requirements, visit www.guidancesoftware.com/training/certifications?cmpid=nav_r. Additional certifications offered by Guidance Software are Certified Forensic Security Responder (CFSR) and EnCase Certified eDiscovery Practitioner (EnCEP)."
+                    },
+                    {
+                      "title": "AccessData Certified Examiner",
+                      "toc_id": 65,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 10,
+                      "chunks_sorted": [
+                        1007,
+                        1008
+                      ],
+                      "content": "AccessData Certified Examiner\n\nAccessData sponsors the AccessData Certified Examiner (ACE) certification program. ACE certification is open to the public and private sectors and is specific to use and mastery of AccessData Ultimate Toolkit. To help prepare for the ACE exam, applicants can attend the AccessData BootCamp and advanced FTK courses. The exam has a knowledge base component and a practical skills component. For more information on this certification, visit www.syntricate.com/computer-forensics-certification.html."
+                    },
+                    {
+                      "title": "Other Training and Certifications",
+                      "toc_id": 66,
+                      "chunk_count": 12,
+                      "total_chunks_in_branch": 12,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "children": [],
+                      "seq_id": 11,
+                      "chunks_sorted": [
+                        1009,
+                        1010,
+                        1011,
+                        1012,
+                        1013,
+                        1014,
+                        1015,
+                        1016,
+                        1017,
+                        1018,
+                        1019,
+                        1020
+                      ],
+                      "content": "Other Training and Certifications\n\nThe following are other organizations to consider for certification or training:\n\nEC-Council, www.eccouncil.org/Certification\n\nSysAdmin, Audit, Network, Security (SANS) Institute, www.sans.org or https://digital-forensics.sans.org/certification\n\nDefense Cyber Investigations Training Academy (DCITA), www.dcita.edu\n\nInternational Society of Forensic Computer Examiners (ISFCE, www.isfce.com) for the Certified Computer Examiner (CCE) A certification from the International Society of Forensic Computer Examiners. certification\n\nComputer Technology Investigators Network (CTIN), www.ctin.org\n\nDigital Forensics Certification Board (DFCB), www.dfcb.org/certification.html\n\nCloud Security Alliance (CSA), https://cloudsecurityalliance.org/education/\n\nOrganizations that offer training and certification for law enforcement personnel or qualified civilian government personnel include the following:\n\nFederal Law Enforcement Training Centers (FLETC), www.fletc.gov\n\nNational White Collar Crime Center (NW3C), www.nw3c.org",
+                      "slides": [
+                        {
+                          "seq_id": 11.1,
+                          "llm_generated_content": {
+                            "title": "Other Training and Certifications",
+                            "subtitle": null,
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "EC-Council (www.eccouncil.org/Certification)",
+                                  "SysAdmin, Audit, Network, Security (SANS) Institute (www.sans.org or https://digital-forensics.sans.org/certification)",
+                                  "Defense Cyber Investigations Training Academy (DCITA) (www.dcita.edu)",
+                                  "International Society of Forensic Computer Examiners (ISFCE) for Certified Computer Examiner (CCE) (www.isfce.com)",
+                                  "Computer Technology Investigators Network (CTIN) (www.ctin.org)",
+                                  "Digital Forensics Certification Board (DFCB) (www.dfcb.org/certification.html)",
+                                  "Cloud Security Alliance (CSA) (https://cloudsecurityalliance.org/education/)",
+                                  "Federal Law Enforcement Training Centers (FLETC) (www.fletc.gov)",
+                                  "National White Collar Crime Center (NW3C) (www.nw3c.org)"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "seq_id": 5,
+                  "chunks_sorted": [
+                    976,
+                    977,
+                    978,
+                    979
+                  ],
+                  "content": "Acquiring Certification and Training\n\nTo continue a career in digital investigations and forensic analysis, you need to upgrade your skills through training. Several organizations have developed certification programs for digital forensics that usually test you after you have completed one or more training sessions successfully. Certifying organizations range from nonprofit associations to vendor-sponsored groups. All these programs charge fees for certification, and some require candidates to take vendor-sponsored or organization-sponsored training to qualify for the certification. Some U.S. state legislatures now require digital forensics examiners working in a private practice or business to have a private investigator’s license. These states typically require some level of training and certification in both digital\n\nlicense. These states typically require some level of training and certification in both digital forensics and investigations before you apply for a license.\n\nBefore enlisting in a certification program, thoroughly research the requirements, cost, and acceptability in your area of employment. Most certification programs require continuing education credits or reexamination of candidates’ skills, which can become costly."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Understanding Forensics Lab Accreditation Requirements (Interactive Activity)",
+                "toc_id": 57,
+                "slides_allocated": 1,
+                "seq_id": 12,
+                "llm_generated_content": {
+                  "title": "Let's Apply This!",
+                  "subtitle": "Knowledge Check: Understanding Forensics Lab Accreditation Requirements",
+                  "objects": [
+                    {
+                      "content_type": "multiple_choice_question",
+                      "content_purpose": "knowledge_check",
+                      "data": {
+                        "question_text": "Which of the following is a key function of the ANSI-ASQ National Accreditation Board (ANAB) in the context of digital forensics labs?",
+                        "options": [
+                          {
+                            "label": "A",
+                            "text": "To provide training programs for forensic analysts"
+                          },
+                          {
+                            "label": "B",
+                            "text": "To develop proprietary forensic software for labs"
+                          },
+                          {
+                            "label": "C",
+                            "text": "To audit and accredit forensics labs globally"
+                          },
+                          {
+                            "label": "D",
+                            "text": "To manage the day-to-day operations of forensic labs"
+                          }
+                        ],
+                        "correct_answer": {
+                          "label": "C",
+                          "explanation": "The ANAB is responsible for auditing and accrediting forensics labs worldwide, including those that analyze digital evidence, to ensure quality and integrity of their work."
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "seq_id": 2,
+              "chunks_sorted": [
+                944,
+                945,
+                946,
+                947,
+                948,
+                949,
+                950
+              ],
+              "content": "Understanding Forensics Lab Accreditation Requirements\n\nA digital forensics lab A lab dedicated to digital investigations; typically, it has a variety of computers, OSs, and forensics software. is where you conduct investigations, store evidence, and do most of your work. You use the lab to house your instruments, current and legacy software, and forensic workstations. In general, you need a variety of digital forensics hardware and software to do your work.\n\nYou also need to make sure you have defined policies, processes, and prescribed procedures before beginning any casework to ensure the integrity of an analysis and its results. A number of organizations have created guidelines for devising your own processes and procedures. What’s most important is that you follow the policies and procedures you have created to ensure consistency in your output. Checklists are a good way to ensure consistent methods of operations for staff.\n\nCaution\n\nBe sure to research accrediting bodies thoroughly before pursuing any accreditation. Many accreditations are offered by software vendors; others are specific for law enforcement or started by local groups.\n\nThe ANSI-ASQ National Accreditation Board (ANAB) A wholly owned subsidiary of ANSI (American National Standards Institute) and ASQ (American Society for Quality) that provides accreditation of crime and forensics labs worldwide. (www.anab.org), a wholly owned subsidiary of ANSI (American National Standards Institute) and ASQ (American Society for Quality), provides accreditation of crime and forensics labs worldwide. This accreditation includes forensics labs that analyze digital evidence. For a lab to be accredited, ANAB audits the lab’s tasks and functions to ensure correct and consistent results for all cases. These audits are done on subscribing members’ forensics labs to ensure the quality and integrity of their work. The following sections discuss several key guidelines from the ANAB\n\nand integrity of their work. The following sections discuss several key guidelines from the ANAB program that you can apply to managing, configuring, and auditing your forensics lab. For additional information on how ANAB conforms to an international standard, see www.anab.org/forensics-accreditation/iso-iec-17025-forensic-labs.",
+              "slides": [
+                {
+                  "seq_id": 2.1,
+                  "llm_generated_content": {
+                    "title": "Understanding Forensics Lab Accreditation Requirements",
+                    "subtitle": "Overview of Digital Forensics Labs and Accreditation Importance",
+                    "objects": [
+                      {
+                        "content_type": "bullet_points",
+                        "content_purpose": "description",
+                        "data": [
+                          "A digital forensics lab is a dedicated space for conducting digital investigations, housing computers, OSs, and forensic software.",
+                          "Key components include: hardware, software, instruments, workstations, and storage for evidence.",
+                          "Defined policies, processes, and procedures are essential to ensure analysis integrity and consistent results.",
+                          "Checklists help maintain standardized operational methods across staff.",
+                          "Accreditation ensures quality and consistency in lab operations, with ANAB being a key accrediting body for forensics labs globally."
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Determining the Physical Requirements for a Digital Forensics Lab",
+              "toc_id": 67,
+              "chunk_count": 3,
+              "total_chunks_in_branch": 68,
+              "budget_slides_content": 7,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 9,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 29
+              },
+              "children": [
+                {
+                  "title": "Identifying Lab Security Needs",
+                  "toc_id": 68,
+                  "chunk_count": 9,
+                  "total_chunks_in_branch": 9,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 14,
+                  "chunks_sorted": [
+                    1024,
+                    1025,
+                    1026,
+                    1027,
+                    1028,
+                    1029,
+                    1030,
+                    1031,
+                    1032
+                  ],
+                  "content": "Identifying Lab Security Needs\n\nAll digital forensics labs need an enclosed room where a forensic workstation can be set up. You shouldn’t use an open cubicle because it allows easy access to your evidence. You need a room you can lock to control your evidence and attest to its integrity. In particular, your lab should be secure during data analysis, even if it takes several weeks to analyze a disk drive. To preserve the integrity of evidence, your lab should function as an evidence locker or safe, making it a secure facility A facility that can be locked and allows limited access to the room’s contents. or a secure storage safe.\n\nThe following are the minimum requirements for a digital forensics lab of any size:\n\nSmall room with true floor-to-ceiling walls\n\nDoor access with a locking mechanism (limited to authorized users, including cleaning crews), which can be a regular key lock, combination lock, or an electronic lock capable of logging who accessed it\n\nSecure container, such as a safe or heavy-duty file cabinet with a quality padlock that prevents drawers from opening\n\nVisitor’s log with legible entries listing all people who have accessed the lab and showing the date, time in, and time out\n\nFor daily work production, several examiners can work together in a large open area, as long as they all have the same level of authority and access need. This area should also have floor-to-ceiling walls and a locking door. In many public and private organizations, several investigators share a door to the lab that requires an ID card and entry code.\n\nDigital investigators and forensics examiners must be briefed on the lab’s security policy. Share information about a case investigation only with other examiners and personnel who need to know about the investigation.",
+                  "slides": [
+                    {
+                      "seq_id": 14.1,
+                      "llm_generated_content": {
+                        "title": "Identifying Lab Security Needs",
+                        "subtitle": "Key Requirements for a Secure Digital Forensics Lab",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Enclosed room with floor-to-ceiling walls for forensic workstation setup",
+                              "Lockable door with access control (keys, combination locks, or electronic locks with logging)",
+                              "Secure container (safe or heavy-duty file cabinet with quality padlock)",
+                              "Visitor log with legible entries (date, time in/out, and names of individuals accessing the lab)",
+                              "Shared lab space with controlled access for multiple examiners (same authority level)",
+                              "ID card and entry code access for lab doors in many organizations",
+                              "Security policy briefing for all digital investigators and forensics examiners",
+                              "Restricted case information sharing to authorized personnel only"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Conducting High-Risk Investigations",
+                  "toc_id": 69,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 15,
+                  "chunks_sorted": [
+                    1033,
+                    1034,
+                    1035,
+                    1036,
+                    1037,
+                    1038,
+                    1039
+                  ],
+                  "content": "Conducting High-Risk Investigations\n\nHigh-risk investigations, such as those involving national security or murder, demand more security than the minimum lab requirements provide. As technology improves and information circulates among computer attackers, keeping an investigation secure can be more difficult. For example, detecting computer eavesdropping is difficult and expensive, but sophisticated criminals and intelligence services in foreign countries can use equipment that detects network transmissions, wireless devices, phone conversations, and the use of computer equipment. Instructions for building a sniffing device that can collect computer emanations illegally can be found online and, therefore, are available to anyone. These devices can pick up anything you type on your computer.\n\nMost electronic devices emit electromagnetic radiation (EMR). Certain kinds of equipment can intercept EMR, which can be used to determine the data the device is transmitting or displaying. The EMR from a computer monitor can be picked up as far away as a half mile.\n\nDuring the Cold War, defense contractors were required to shield sensitive computing systems and prevent electronic eavesdropping of any computer emissions. The U.S. Department of Defense calls this special computer-emission shielding TEMPEST A term referring to facilities that have been hardened so that electrical signals from digital devices, computer networks, and telephone systems can’t be monitored or accessed easily by someone outside the facility. . (For a brief description of TEMPEST, see the National Industrial Security Program Operating Manual [NISPOM]. DoD 5220.22-M, Chapter 11, Section 1, TEMPEST, www.dss.mil/documents/odaa/nispom2006-5220.pdf or SANS Institute, InfoSec Reading Room’s article “An Introduction to TEMPEST,”\n\nor SANS Institute, InfoSec Reading Room’s article “An Introduction to TEMPEST,” www.sans.org/reading-room/whitepapers/privacy/introduction-tempest-981. Another site listing reliable sources is www.jammed.com/~jwa/tempest.html.)\n\nTo protect your investigations, you might consider constructing a TEMPEST-qualified lab, which requires lining the walls, ceiling, floor, and doors with specially grounded conductive metal sheets. Typically, copper sheeting is used because it conducts electricity well. TEMPEST facilities must include special filters for electrical power that prevent power cables from transmitting computer emanations. All heating and ventilation ducts must have special baffles to trap emanations. Likewise, telephones inside the TEMPEST facility must have special line filters. A TEMPEST facility usually has two doors separated by dead space. The first exterior door must be shut before opening the interior door. Each door also has special copper molding to enhance electricity conduction.\n\nBecause a TEMPEST-qualified lab facility is expensive and requires routine inspection and testing, it should be considered only for large regional digital forensics labs that demand absolute security from illegal eavesdropping. To avoid these costs, some vendors have built low-emanating workstations instead of TEMPEST facilities. These workstations are more expensive than average workstations but less expensive than a TEMPEST lab.",
+                  "slides": [
+                    {
+                      "seq_id": 15.1,
+                      "llm_generated_content": {
+                        "title": "Conducting High-Risk Investigations",
+                        "subtitle": "Security Challenges and TEMPEST Standards",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "High-risk investigations (e.g., national security, murder) require enhanced security beyond minimum lab requirements.",
+                              "Modern technology and information sharing among attackers complicate investigation security.",
+                              "EMR interception risks: Devices emit electromagnetic radiation (EMR) that can be intercepted to reveal data.",
+                              "TEMPEST standards: U.S. Department of Defense's approach to shield against electronic eavesdropping.",
+                              "TEMPE-qualified labs: Require conductive metal shielding, power filters, and specialized equipment to prevent emanation leaks."
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Using Evidence Containers",
+                  "toc_id": 70,
+                  "chunk_count": 24,
+                  "total_chunks_in_branch": 24,
+                  "budget_slides_content": 3,
+                  "direct_slides_content": 3,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 9,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
+                  },
+                  "children": [],
+                  "seq_id": 16,
+                  "chunks_sorted": [
+                    1040,
+                    1041,
+                    1042,
+                    1043,
+                    1044,
+                    1045,
+                    1046,
+                    1047,
+                    1048,
+                    1049,
+                    1050,
+                    1051,
+                    1052,
+                    1053,
+                    1054,
+                    1055,
+                    1056,
+                    1057,
+                    1058,
+                    1059,
+                    1060,
+                    1061,
+                    1062,
+                    1063
+                  ],
+                  "content": "Using Evidence Containers\n\nEvidence storage containers, also known as evidence lockers, must be secure so that no unauthorized person can access your evidence easily. You must use high-quality locks, such as padlocks, with limited duplicate-key distribution. Also, inspect the contents of evidence storage containers routinely to make sure only current evidence is stored. The evidence custody forms should indicate what’s still in the locker. Evidence for closed cases should be moved to a secure off-site facility.\n\nChapter 5, Section 3, of the NISPOM (www.dss.mil/documents/odaa/nispom2006-5220.pdf) describes the characteristics of a safe storage container. Consult with facility management or legal counsel, such as corporate or prosecuting attorneys, to determine what your lab should do to maintain evidence integrity. The following are recommendations for securing storage containers:\n\nThe evidence container should be located in a restricted area that’s accessible only to lab personnel.\n\nThe number of people authorized to open the evidence container should be kept to a minimum. Maintain records on who’s authorized to access each container.\n\nAll evidence containers should remain locked when they aren’t under the direct supervision of an authorized person.\n\nIf a combination locking system is used for your evidence container, follow these practices:\n\nProvide the same level of security for the combination as for the container’s contents. Store the combination in another equally secure container.\n\nDestroy any previous combinations after setting up a new combination.\n\nAllow only authorized personnel to change lock combinations.\n\nChange the combination every six months, when any authorized personnel leave the organization, and immediately after finding an unsecured container—that is, one that’s open and unattended.\n\nIf you’re using a keyed padlock, follow these practices:\n\nAppoint a key custodian who’s responsible for distributing keys.\n\nStamp sequential numbers on each duplicate key.\n\nMaintain a registry listing which key is assigned to which authorized person.\n\nConduct a monthly audit to ensure that no authorized person has lost a key.\n\nTake an inventory of all keys when the custodian changes.\n\nPlace keys in a lockable container accessible only to the lab manager and designated key custodian.\n\nMaintain the same level of security for keys as for evidence containers.\n\nChange locks and keys annually; if a key is missing, replace all associated locks and the key.\n\nDo not use a master key for several locks.\n\nThe storage container or cabinet should be made of steel and include an internal cabinet lock or external padlock. If possible, purchase a safe, which provides superior security and protects your evidence from fire damage. Look for specialized safes, called “media safes,” designed to protect electronic media. Media safes are rated by the number of hours it takes before fire damages the contents. The higher the rating, the better the safe protects evidence.\n\nAn evidence storage room is also convenient, especially if it’s part of your forensics lab. Security for an evidence room must integrate the same construction and securing devices as the general lab does. Large digital forensics operations also need an evidence custodian and a service counter with a securable metal roll-up window to control evidence. With a secure evidence room, you can store large computer components, such as computers, monitors, and other peripheral devices.\n\nBe sure to maintain a log listing every time an evidence container is opened and closed. Each time the container is accessed, the log should indicate the date it was opened and the initials of the authorized person. These records should be maintained for at least three years or longer, as prescribed by your prosecuting or corporate attorneys. Logs are discussed in more detail in Chapter 4.",
+                  "slides": [
+                    {
+                      "seq_id": 16.1,
+                      "llm_generated_content": {
+                        "title": "Using Evidence Containers",
+                        "subtitle": "Secure Storage and Access Control",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Evidence storage containers (evidence lockers) must be secure to prevent unauthorized access.",
+                              "Use high-quality locks (e.g., padlocks) with limited duplicate-key distribution.",
+                              "Inspect contents regularly to ensure only current evidence is stored; evidence custody forms should reflect what’s in the locker.",
+                              "Evidence from closed cases should be moved to secure off-site facilities.",
+                              "Storage containers should be in restricted areas accessible only to lab personnel.",
+                              "Limit the number of authorized individuals who can open containers and maintain access records.",
+                              "Keep containers locked when unattended by authorized personnel."
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "seq_id": 16.2,
+                      "llm_generated_content": {
+                        "title": "Using Evidence Containers",
+                        "subtitle": "Secure Storage and Access Control",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "explanation",
+                            "data": [
+                              "Evidence containers must be secure with high-quality locks (e.g., padlocks) and limited duplicate-key distribution.",
+                              "Containers should be located in restricted areas accessible only to lab personnel.",
+                              "Authorized access should be limited to a minimum number of personnel, with records maintained for each container.",
+                              "Containers must remain locked when unattended and under the supervision of authorized personnel.",
+                              "Combination locks require secure storage of combinations, regular changes (every 6 months, after personnel changes, or unsecured incidents), and restricted access to change combinations.",
+                              "Keyed padlocks require a key custodian, sequential key numbering, key registry, monthly audits, and secure key storage in lockable containers.",
+                              "Keys must be secured with the same level of protection as evidence containers, with annual lock/key changes and no master keys for multiple locks."
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "seq_id": 16.3,
+                      "llm_generated_content": {
+                        "title": "Using Evidence Containers",
+                        "subtitle": "Secure Storage and Access Control",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "explanation",
+                            "data": [
+                              "Secure storage containers must be in restricted areas accessible only to lab personnel.",
+                              "Limit the number of authorized personnel who can open containers and maintain access records.",
+                              "Containers should remain locked when unattended, with logs of all access events.",
+                              "Logs must include date and initials of authorized users, retained for at least three years.",
+                              "Consult legal counsel to ensure compliance with evidence integrity standards."
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Overseeing Facility Maintenance",
+                  "toc_id": 71,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "children": [],
+                  "seq_id": 17,
+                  "chunks_sorted": [
+                    1064,
+                    1065,
+                    1066,
+                    1067
+                  ],
+                  "content": "Overseeing Facility Maintenance\n\nYour lab should be maintained at all times to ensure the safety and health of lab personnel. Any damage to the floor, walls, ceilings, or furniture should be repaired immediately. Also, be sure to escort cleaning crews into the facility and monitor them as they work.\n\nBecause static electricity is a major problem when handling computer parts, placing antistatic pads around electronic workbenches and workstations is recommended. In addition, floors and carpets should be cleaned at least once a week to help minimize dust that can cause static electricity.\n\nMaintain two separate trash containers, one to store items unrelated to an investigation, such as discarded CDs, and the other for sensitive material that requires special handling to make sure it’s destroyed. Using separate trash containers maintains the integrity of criminal investigation processes and protects trade secrets and attorney-client privileged communication in a private company. Several commercially bonded firms specialize in disposing of sensitive materials, and you should hire one to help maintain the integrity of your investigations."
+                },
+                {
+                  "title": "Considering Physical Security Needs",
+                  "toc_id": 72,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 18,
+                  "chunks_sorted": [
+                    1068,
+                    1069,
+                    1070,
+                    1071,
+                    1072,
+                    1073
+                  ],
+                  "content": "Considering Physical Security Needs\n\nIn addition to your lab’s physical design and construction, you need to enhance security by setting security policies. How much physical security you implement depends on the nature of your lab. A regional computer crime lab has high physical security needs because of the risks of losing, corrupting, or damaging evidence. The physical security needs of a large corporation are probably not as high because the risk of evidence loss or compromise is much lower. Determining the risk for your organization dictates how much security you integrate into your digital forensics lab.\n\nNote\n\nWhen considering digital security needs, many companies neglect physical security.\n\nRegardless of the security risk to your lab, maintain a paper or electronic sign-in log for all visitors. The log should list the visitor’s name, date and time of arrival and departure, employer’s name, purpose of the visit, and name of the lab member receiving the visitor. Consider anyone who’s not assigned to the lab to be a visitor, including cleaning crews, facility maintenance personnel, friends, and family. All visitors should be escorted by an assigned authorized staff member throughout their visit to the lab to ensure that they don’t accidentally or intentionally tamper with an investigation or evidence. As an added precaution, use a visible or audible alarm, such as a visitor badge, to let all investigators know that a visitor is in the area. If possible, hire a security guard or\n\nto let all investigators know that a visitor is in the area. If possible, hire a security guard or have an intrusion alarm system with a guard to ensure your lab’s security. Alarm systems with guards can also be used after business hours to monitor your lab.",
+                  "slides": [
+                    {
+                      "seq_id": 18.1,
+                      "llm_generated_content": {
+                        "title": "Considering Physical Security Needs",
+                        "subtitle": "Key Considerations for Digital Forensics Labs",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Physical security policies are essential for digital forensics labs.",
+                              "Security measures depend on the lab's nature and risk level:",
+                              "  - Regional computer crime labs require high security due to evidence risks.",
+                              "  - Large corporations may have lower physical security needs.",
+                              "Risk assessment determines the level of security integration.",
+                              "All visitors must be logged with details: name, date/time, employer, purpose, and escorting staff.",
+                              "Visitors include cleaning crews, maintenance, friends, and family.",
+                              "Use visible/alarm systems (e.g., visitor badges) to notify investigators.",
+                              "Consider hiring security guards or intrusion alarm systems with guards for 24/7 monitoring."
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Auditing a Digital Forensics Lab",
+                  "toc_id": 73,
+                  "chunk_count": 8,
+                  "total_chunks_in_branch": 8,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 19,
+                  "chunks_sorted": [
+                    1074,
+                    1075,
+                    1076,
+                    1077,
+                    1078,
+                    1079,
+                    1080,
+                    1081
+                  ],
+                  "content": "Auditing a Digital Forensics Lab\n\nTo make sure security policies and practices are followed, conduct routine inspections to audit your lab and evidence storage containers. Audits should include, but aren’t limited to, the following facility components and practices:\n\nInspect the lab’s ceiling, floor, roof, and exterior walls at least once a month, looking for anything unusual or new.\n\nInspect doors to make sure they close and lock correctly.\n\nCheck locks to see whether they need to be replaced or changed.\n\nReview visitor logs to see whether they’re being used properly.\n\nReview log sheets for evidence containers to determine when they have been opened and closed.\n\nAt the end of every workday, secure any evidence that’s not being processed on a forensic workstation.",
+                  "slides": [
+                    {
+                      "seq_id": 19.1,
+                      "llm_generated_content": {
+                        "title": "Auditing a Digital Forensics Lab",
+                        "subtitle": "Key Components and Practices",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "process",
+                            "data": [
+                              "Inspect the lab’s ceiling, floor, roof, and exterior walls at least once a month, looking for anything unusual or new.",
+                              "Inspect doors to make sure they close and lock correctly.",
+                              "Check locks to see whether they need to be replaced or changed.",
+                              "Review visitor logs to see whether they’re being used properly.",
+                              "Review log sheets for evidence containers to determine when they have been opened and closed.",
+                              "At the end of every workday, secure any evidence that’s not being processed on a forensic workstation."
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Determining Floor Plans for Digital Forensics Labs",
+                  "toc_id": 74,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 20,
+                  "chunks_sorted": [
+                    1082,
+                    1083,
+                    1084,
+                    1085,
+                    1086,
+                    1087,
+                    1088
+                  ],
+                  "content": "Determining Floor Plans for Digital Forensics Labs\n\nHow you configure the work area for your digital forensics lab depends on your budget, the amount of available floor space, and the number of computers you assign to each computing investigator. For a small operation handling two or three cases a month, one forensic workstation should be enough to handle the workload. One workstation requires only the space an average desk takes up. If you’re handling many more cases per month, you can probably process two or three investigations at a time, which requires more than one workstation. The ideal configuration for multiple workstations is to have two forensic workstations plus one non-forensic workstation with Internet access.\n\nBecause you need plenty of room around each workstation, a work area containing three workstations requires approximately 150 square feet of space, meaning the work area should be about 10 feet by 15 feet. This amount of space allows for two chairs so that the digital investigator can brief another investigator, paralegal, or attorney on the case.\n\nSmall labs usually consist of one or two forensic workstations, a research computer with Internet access, a workbench (if space allows), and storage cabinets, as shown in Figure 2-2.\n\nMid-size digital forensics labs, such as those in a private business, have more workstations. For safety reasons, the lab should have at least two exits, as shown in Figure 2-3. If possible, cubicles or even separate offices should be part of the layout to reinforce the need-to-know policy. These labs usually have more library space for software and hardware storage.\n\nState law enforcement or the FBI usually runs most large or regional digital forensics labs. As shown in Figure 2-4, these labs have a separate evidence room, which is typical in police investigations, except this room is limited to digital evidence. One or more custodians might be assigned to manage and control traffic in and out of the evidence room.\n\nAs discussed, the evidence room needs to be secure. The lab should have at least two controlled exits and no windows. Separate offices for supervisors and cubicles for investigators are more practical in this configuration. Remember that forensic workstations are connected to an isolated local area network (LAN), and only a few machines are connected to an organization’s intranet or the Internet.",
+                  "slides": [
+                    {
+                      "seq_id": 20.1,
+                      "llm_generated_content": {
+                        "title": "Determining Floor Plans for Digital Forensics Labs",
+                        "subtitle": "Factors Influencing Workstation Configuration",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Workstation configuration depends on: budget, floor space, and number of computers per investigator",
+                              "Small operations (2-3 cases/month): 1 forensic workstation",
+                              "High case volume: 2-3 workstations",
+                              "Ideal setup: 2 forensic + 1 non-forensic workstation with internet access"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "interactive_activity": {
+                "title": "Determining the Physical Requirements for a Digital Forensics Lab (Interactive Activity)",
+                "toc_id": 67,
+                "slides_allocated": 1,
+                "seq_id": 21,
+                "llm_generated_content": {
+                  "title": "Let's Apply This!",
+                  "subtitle": "Knowledge Check: Determining the Physical Requirements for a Digital Forensics Lab",
+                  "objects": [
+                    {
+                      "content_type": "multiple_choice_question",
+                      "content_purpose": "knowledge_check",
+                      "data": {
+                        "question_text": "Which of the following is a key physical requirement for ensuring the safety and security of a digital forensics lab?",
+                        "options": [
+                          {
+                            "label": "A",
+                            "text": "Maintaining a complete inventory of all hardware and software items"
+                          },
+                          {
+                            "label": "B",
+                            "text": "Using high-speed internet for data transfer"
+                          },
+                          {
+                            "label": "C",
+                            "text": "Providing comfortable seating for long hours of work"
+                          },
+                          {
+                            "label": "D",
+                            "text": "Installing energy-efficient lighting systems"
+                          }
+                        ],
+                        "correct_answer": {
+                          "label": "A",
+                          "explanation": "Maintaining a complete inventory of all hardware and software items is crucial for tracking computing assets and ensuring that evidence is not lost, corrupted, or destroyed. This directly supports the physical security and safety of the lab environment."
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "seq_id": 13,
+              "chunks_sorted": [
+                1021,
+                1022,
+                1023
+              ],
+              "content": "Determining the Physical Requirements for a Digital Forensics Lab\n\nAfter you have the training to become a digital forensics investigator, you conduct most of your investigations in a lab. This section discusses the physical requirements for a forensics lab. Addressing these requirements can make a lab safer, more secure, and more productive.\n\nYour lab facility must be physically secure so that evidence isn’t lost, corrupted, or destroyed. As with hardware and software costs, you must consider what’s needed to maintain a safe and secure environment when determining physical lab expenses. You must also use inventory control methods to track your computing assets, which means you should maintain a complete and up-to-date inventory of all major hardware and software items in the lab. For consumable items, such as cables and storage media, maintain an inventory so that you know when to order more supplies."
+            },
+            {
+              "title": "Selecting a Basic Forensic Workstation",
+              "toc_id": 75,
+              "chunk_count": 2,
+              "total_chunks_in_branch": 51,
+              "budget_slides_content": 5,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "children": [
+                {
+                  "title": "Selecting Workstations for a Lab",
+                  "toc_id": 76,
+                  "chunk_count": 12,
+                  "total_chunks_in_branch": 12,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 23,
+                  "chunks_sorted": [
+                    1091,
+                    1092,
+                    1093,
+                    1094,
+                    1095,
+                    1096,
+                    1097,
+                    1098,
+                    1099,
+                    1100,
+                    1101,
+                    1102
+                  ],
+                  "content": "Selecting Workstations for a Lab\n\nIf you’re managing a lab for a police department in a major city, you probably have the most diverse needs for digital investigation tools because the communities it serves use a wide assortment of computing systems. Not all computer users have the latest technology, so a lab might need legacy systems and software, such as computers running CP/M or Minix, to match what’s used in the community. For small, local police departments, however, most work involves Windows PCs, Macintosh systems, and mobile devices. A small police department’s digital forensics lab could be limited to one multipurpose forensic workstation with one or two basic workstations or high-end laptops.\n\nOne way to investigate older and unusual computing systems is to keep track of forums and blogs that you can find through an online search. These groups can be a valuable source of support for recovering and analyzing uncommon systems. Entering “computer forensics” or “digital forensics” as a search keyword produces several links you can follow to further your knowledge in this profession. You can also coordinate with or subcontract to larger forensics labs. Like large police departments, a regional digital forensics lab must have diverse systems to serve its community and often receives work from smaller labs involving unusual computers or OSs.\n\nComputing systems in a lab should be able to process typical cases in a timely manner. The time it takes to process a case usually depends on the size and type of industries in the region. For example, suppose your lab is located in a region with a large manufacturing firm that employs 50,000 people. Based on crime reports you’ve consulted, 1% of those employees might be involved in criminal behavior, meaning 500 employees will commit crimes such as fraud, embezzlement, and so on. These statistics can help you estimate how much time is involved in processing these types of cases.\n\nImprovements in hardware technology offer more flexibility in digital forensics. You can now use a laptop system with USB 3.0 or SATA hard disks to create a lightweight, mobile forensic workstation. Improved throughput speeds of data transfer on laptops also make it easier to create images of suspect drives, especially in the field.\n\nAnother consideration is the need to perform password cracking to access a suspect’s encrypted data. For this task, desktop computers that can use multiple graphics processing units (GPUs) are helpful. For the latest information on password recovery, search online for “password cracking systems and clusters.”\n\nFor white papers about password clusters, consult the following resources:\n\nhttp://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.70.2420&rep=rep1&type=pdf\n\nwww.emc.com/collateral/software/white-papers/h5936-recoverpoint-cluster-enabler-wp.pdf\n\nwww.whitehatsec.com/blog/cracking-aes-256-dmgs-and-epic-self-pwnage/\n\nwww.picocomputing.com/pdf/Pico_White_Paper_Crypto_Nov_09.pdf\n\nwww.blackhat.com/docs/us-15/materials/us-15-Morris-CrackLord-Maximizing-Password-Cracking-wp.pdf",
+                  "slides": [
+                    {
+                      "seq_id": 23.1,
+                      "llm_generated_content": {
+                        "title": "Selecting Workstations for a Lab",
+                        "subtitle": "Key Considerations",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Diverse computing systems required for police departments: Windows PCs, Macintosh systems, mobile devices, legacy systems (CP/M, Minix).",
+                              "Regional industry size impacts processing time: Example - 50,000 employees in manufacturing may result in 500 criminal cases requiring analysis.",
+                              "Hardware improvements enable mobile forensic workstations: USB 3.0, SATA hard disks, improved data transfer speeds.",
+                              "Password cracking needs specialized hardware: Multiple GPUs for desktop systems, resources for latest password recovery techniques.",
+                              "Additional resources: White papers on password clusters available at specified URLs."
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Selecting Workstations for Private-Sector Labs",
+                  "toc_id": 77,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "children": [],
+                  "seq_id": 24,
+                  "chunks_sorted": [
+                    1103,
+                    1104,
+                    1105,
+                    1106
+                  ],
+                  "content": "Selecting Workstations for Private-Sector Labs\n\nFor the private sector, such as a business conducting internal investigations or a commercial business providing digital forensics services to private parties, equipment resources are generally easy to determine.\n\nCommercial businesses providing forensics analysis for other companies can tailor their services to specific markets. They can specialize in one or two platforms, such as an Intel PC running a Microsoft OS. They can also gather a variety of tools to meet a wider market. The type of equipment they need depends on their specialty, if any. For general digital forensics facilities, a multipurpose forensic workstation is enough.\n\nPrivate companies conducting their own internal digital investigations can determine the type of forensic workstation they need based on the types of computers they use. If a company uses only Windows PCs, internal investigators don’t need a wide variety of specialized equipment. If a company uses many kinds of computers, its internal investigators need systems and equipment that support the same types of computers. With some digital forensics programs, you can work from a Windows PC and examine both Windows and Macintosh disk drives."
+                },
+                {
+                  "title": "Stocking Hardware Peripherals",
+                  "toc_id": 78,
+                  "chunk_count": 14,
+                  "total_chunks_in_branch": 14,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 25,
+                  "chunks_sorted": [
+                    1107,
+                    1108,
+                    1109,
+                    1110,
+                    1111,
+                    1112,
+                    1113,
+                    1114,
+                    1115,
+                    1116,
+                    1117,
+                    1118,
+                    1119,
+                    1120
+                  ],
+                  "content": "Stocking Hardware Peripherals\n\nIn addition to workstations and software, all labs should have a wide assortment of cables and spare expansion slot cards. Consider stocking your forensics lab with the following peripheral devices:\n\nA digital camera capable of still and motion recording\n\nAssorted antistatic bags\n\nAn external CD/DVD drive\n\n40-pin 18-inch and 36-inch IDE cables, both ATA-33 and ATA-100 or faster\n\nRibbon cables for floppy disks\n\nExtra USB 3.0 or newer cables and SATA cards and associated cables\n\nExtra SCSI cards, preferably ultrawide\n\nGraphics cards, both Peripheral Component Interconnect (PCI) and Accelerated Graphics Port (AGP)\n\nAssorted FireWire and USB adapters\n\nA variety of hard drives and USB drives (as many as you can afford and in as wide a variety as possible)\n\nAt least two 2.5-inch adapters from notebook IDE hard drives to standard IDE/ATA drives, SATA drives, and so on\n\nComputer hand tools, such as Phillips and flathead screwdrivers, a socket wrench, any vendor-specific tools, a small flashlight, and an antistatic wrist strap",
+                  "slides": [
+                    {
+                      "seq_id": 25.1,
+                      "llm_generated_content": {
+                        "title": "Stocking Hardware Peripherals",
+                        "subtitle": "Essential Peripheral Devices for Forensics Labs",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Digital Camera: Capable of still and motion recording",
+                              {
+                                "text": "Antistatic Supplies",
+                                "children": [
+                                  "Assorted antistatic bags",
+                                  "Antistatic wrist strap"
+                                ]
+                              },
+                              "External Storage Devices",
+                              {
+                                "text": "Cables and Adapters",
+                                "children": [
+                                  "40-pin IDE cables (ATA-33 and ATA-100+)",
+                                  "Ribbon cables for floppy disks",
+                                  "USB 3.0+ cables",
+                                  "SATA cards and cables",
+                                  "SCSI cards (preferably ultrawide)",
+                                  "FireWire and USB adapters"
+                                ]
+                              },
+                              "Graphics Cards",
+                              {
+                                "text": "Hard Drive Adapters",
+                                "children": [
+                                  "2.5-inch notebook IDE to standard IDE/SATA adapters"
+                                ]
+                              },
+                              "Computer Hand Tools",
+                              {
+                                " ": "Computer hand tools: Phillips and flathead screwdrivers, socket wrench, vendor-specific tools, small flashlight"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Maintaining Operating Systems and Software Inventories",
+                  "toc_id": 79,
+                  "chunk_count": 9,
+                  "total_chunks_in_branch": 9,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 26,
+                  "chunks_sorted": [
+                    1121,
+                    1122,
+                    1123,
+                    1124,
+                    1125,
+                    1126,
+                    1127,
+                    1128,
+                    1129
+                  ],
+                  "content": "Maintaining Operating Systems and Software Inventories\n\nOperating systems are an essential part of your lab’s inventory. You should maintain licensed copies of as many legacy OSs as possible to handle cases involving unusual systems. Microsoft OSs should include, in addition to the most current OS, Windows 10, 8.0 and 8.1, 7, Vista, XP, 2000, NT 4.0, NT 3.5, 9x, 3.11, and DOS 6.22. Macintosh OSs should include macOS, Mac OS X, 9.x, and 8 or older. Linux OSs can include Linux Mint, DeftZ, Fedora, Ubuntu, Slackware, and Debian.\n\nAlthough most high-end digital forensics tools can open or display data files created with commonly used programs, they don’t support all programs. Your software inventory should include current and older versions of the following programs. If you deal with Windows PCs, Macintosh systems, and Linux systems, you should have programs for all these OSs.\n\nMicrosoft Office (including current and older versions)\n\nHexadecimal editor, such as WinHex or Hex Workshop\n\nProgramming languages, such as Visual Studio, Perl, or Python\n\nSpecialized image viewers, such as Quick View, ACDSee, ThumbsPlus, and IrfanView\n\nWPS Office, WordPerfect, and a third-party or open-source office suite\n\nAccounting applications, such as Quicken and QuickBooks",
+                  "slides": [
+                    {
+                      "seq_id": 26.1,
+                      "llm_generated_content": {
+                        "title": "Maintaining Operating Systems and Software Inventories",
+                        "subtitle": "Operating System Inventory",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Maintain licensed copies of legacy operating systems to handle unusual systems.",
+                              "Microsoft OSs: Windows 10, 8.0, 8.1, 7, Vista, XP, 2000, NT 4.0, NT 3.5, 9x, 3.11, DOS 6.22",
+                              "Macintosh OSs: macOS, Mac OS X, 9.x, 8 or older",
+                              "Linux OSs: Linux Mint, DeftZ, Fedora, Ubuntu, Slackware, Debian"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Using a Disaster Recovery Plan",
+                  "toc_id": 80,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 7,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 27,
+                  "chunks_sorted": [
+                    1130,
+                    1131,
+                    1132,
+                    1133,
+                    1134,
+                    1135,
+                    1136
+                  ],
+                  "content": "Using a Disaster Recovery Plan\n\nBesides planning for equipment needs, you need to plan for disasters, such as hard disk crashes, lightning strikes, power outages, floods, earthquakes, and so forth. A disaster recovery plan ensures that you can restore your workstations and file servers to their original condition or a lab-like building if a catastrophic failure occurs.\n\nA disaster recovery plan also specifies how to rebuild a forensic workstation after it has been severely contaminated by a virus from a drive you’re analyzing. Central to any disaster recovery plan is a system for backing up investigation computers. Tools such as Norton Ghost are useful for restoring files directly. As a general precaution, you should back up your workstation once a week. You can restore programs from the original disks, USB drives, CDs/DVDs, or the cloud, but recovering lost data without up-to-date backups is difficult.\n\nStore your system backups where they are easily accessible. You should have at least one copy of backups on site and a duplicate or a previous copy of backups stored in a safe off-site facility. Off-site backups are usually rotated on a schedule that varies according to your needs, such as every day, week, or month.\n\nIn addition, record all updates you make to your workstation by using a process called configuration management The process of keeping track of all upgrades and patches you apply to your computer’s OS and applications. . Some companies log updates in a configuration management database to maintain compliance with lab policy. Every time you add or update software on your workstation, enter the change in the database or in a simple notebook with handwritten entries to document the change. A useful tool to run regularly is Belarc Advisor (www.belarc.com/free_download.html), which inventories applications, hardware, and system configurations.\n\nA disaster recovery plan can also address how to restore a workstation you reconfigured for a specific investigation. For example, if you install a suite of applications, you might not have enough disk space for normal processing needs, so you could encounter problems during reconfigurations or even simple upgrades. The disaster recovery plan should outline how to uninstall software and delete any files the uninstall program hasn’t removed so that you can restore your system to its original configuration.\n\nFor labs using high-end RAID servers or a private cloud (such as a Dell PowerEdge or Digital Intelligence FREDC), you need methods for restoring large data sets. These servers must have adequate data backup systems in case of a major failure of more than one drive. When planning a recovery procedure for RAID servers, consider whether the amount of downtime it takes to restore backup data is acceptable to the lab operation.",
+                  "slides": [
+                    {
+                      "seq_id": 27.1,
+                      "llm_generated_content": {
+                        "title": "Using a Disaster Recovery Plan",
+                        "subtitle": "Key Components and Considerations",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Plan for disasters such as hard disk crashes, lightning strikes, power outages, floods, earthquakes, etc.",
+                              "A disaster recovery plan ensures restoration of workstations and file servers to original condition or a lab-like environment.",
+                              "Tools like Norton Ghost are useful for file restoration.",
+                              "Backup workstations weekly using original disks, USB drives, CDs/DVDs, or cloud storage.",
+                              "Store backups on-site and off-site for redundancy.",
+                              "Implement configuration management to track updates and maintain compliance with lab policies.",
+                              "Use tools like Belarc Advisor to inventory system configurations.",
+                              "Outline procedures for restoring reconfigured workstations to original settings.",
+                              "For RAID servers or private clouds, ensure robust backup systems and assess acceptable downtime for recovery."
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Planning for Equipment Upgrades",
+                  "toc_id": 81,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 3,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "children": [],
+                  "seq_id": 28,
+                  "chunks_sorted": [
+                    1137,
+                    1138,
+                    1139
+                  ],
+                  "content": "Planning for Equipment Upgrades\n\nRisk management The process of determining how much risk is acceptable for any process or operation, such as replacing equipment. involves determining how much risk is acceptable for any process or operation, such as replacing equipment. Identify the equipment your lab depends on, and create a schedule to replace this equipment. Also, identify equipment that you can replace when it fails.\n\nComputing components are designed to last 18 to 36 months in normal business operations, and new versions of OSs and applications that take up more disk space are released frequently. Therefore, systems periodically need more RAM, disk space, and processing speed. To keep your lab current with updates in hardware technology, schedule hardware replacements at least every 18 months and preferably every 12 months."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Selecting a Basic Forensic Workstation (Interactive Activity)",
+                "toc_id": 75,
+                "slides_allocated": 1,
+                "seq_id": 29,
+                "llm_generated_content": {
+                  "title": "Let's Apply This!",
+                  "subtitle": "Knowledge Check: Selecting a Basic Forensic Workstation",
+                  "objects": [
+                    {
+                      "content_type": "multiple_choice_question",
+                      "content_purpose": "knowledge_check",
+                      "data": {
+                        "question_text": "According to the text, what is the recommended approach for selecting a forensic workstation?",
+                        "options": [
+                          {
+                            "label": "A",
+                            "text": "Use the same workstation for all tasks regardless of resource demands."
+                          },
+                          {
+                            "label": "B",
+                            "text": "Use less powerful workstations for resource-heavy analysis tasks."
+                          },
+                          {
+                            "label": "C",
+                            "text": "Prioritize the most powerful processor, RAM, and storage for all workstations."
+                          },
+                          {
+                            "label": "D",
+                            "text": "Only use dedicated forensic workstations for mundane tasks."
+                          }
+                        ],
+                        "correct_answer": {
+                          "label": "C",
+                          "explanation": "The text emphasizes selecting the most powerful processor, RAM, and storage to improve productivity, indicating that prioritizing these components is key for effective forensic analysis."
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "seq_id": 22,
+              "chunks_sorted": [
+                1089,
+                1090
+              ],
+              "content": "Selecting a Basic Forensic Workstation\n\nThe workstation you use as a forensics analysis system depends on your budget and specific needs. You can find many well-designed forensic workstations that can handle most digital investigation needs. When acquiring a workstation, try to get the most powerful processor and the most RAM and disk storage available to improve the productivity of digital examinations. When you start processing a case, you use a workstation for the duration of the examination. Use less powerful workstations for mundane tasks and multipurpose workstations for resource-heavy analysis tasks."
+            },
+            {
+              "title": "Building a Business Case for Developing a Forensics Lab",
+              "toc_id": 82,
+              "chunk_count": 11,
+              "total_chunks_in_branch": 104,
+              "budget_slides_content": 10,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 9,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 29
+              },
+              "children": [
+                {
+                  "title": "Preparing a Business Case for a Digital Forensics Lab",
+                  "toc_id": 83,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 93,
+                  "budget_slides_content": 9,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 7,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 21
+                  },
+                  "children": [
+                    {
+                      "title": "Justification",
+                      "toc_id": 84,
+                      "chunk_count": 8,
+                      "total_chunks_in_branch": 8,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "children": [],
+                      "seq_id": 32,
+                      "chunks_sorted": [
+                        1153,
+                        1154,
+                        1155,
+                        1156,
+                        1157,
+                        1158,
+                        1159,
+                        1160
+                      ],
+                      "content": "Justification\n\nBefore you can start, you need to justify to the person controlling the budget the reason a lab is needed. This justification step requires asking the following questions:\n\nWhat type of digital investigation service is needed for your organization?\n\nWho are the potential customers for this service, and how will it be budgeted—as an internal operation (police department or company security department, for instance) or an external operation (a for-profit business venture)?\n\nHow will you advertise your services to customers?\n\nWhat time-management techniques will you use?\n\nWhere will the initial and sustaining budget for business operations come from?\n\nNo matter what type of organization you work for—a public agency or a private business—operating a digital forensics lab successfully requires constant efforts to market the lab’s services to previous, current, and future customers and clients. By using marketing to attract new customers or clients, you can justify future budgets for the lab’s operation and staff.",
+                      "slides": [
+                        {
+                          "seq_id": 32.1,
+                          "llm_generated_content": {
+                            "title": "Justification",
+                            "subtitle": "Key Considerations for Justifying a Digital Forensics Lab",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "process",
+                                "data": [
+                                  "What type of digital investigation service is needed for your organization?",
+                                  "Who are the potential customers for this service, and how will it be budgeted—as an internal operation (e.g., police department or company security department) or an external operation (e.g., a for-profit business venture)?",
+                                  "How will you advertise your services to customers?",
+                                  "What time-management techniques will you use?",
+                                  "Where will the initial and sustaining budget for business operations come from?"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Budget Development",
+                      "toc_id": 85,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 33,
+                      "chunks_sorted": [
+                        1161,
+                        1162
+                      ],
+                      "content": "Budget Development\n\nThe budget needs to include all items described in the following sections. You must be as exact as possible when determining the true cost of these items. Making a mistake could cause delays and possible loss of the opportunity to start or improve your lab."
+                    },
+                    {
+                      "title": "Facility Cost",
+                      "toc_id": 86,
+                      "chunk_count": 15,
+                      "total_chunks_in_branch": 15,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "children": [],
+                      "seq_id": 34,
+                      "chunks_sorted": [
+                        1163,
+                        1164,
+                        1165,
+                        1166,
+                        1167,
+                        1168,
+                        1169,
+                        1170,
+                        1171,
+                        1172,
+                        1173,
+                        1174,
+                        1175,
+                        1176,
+                        1177
+                      ],
+                      "content": "Facility Cost\n\nFor a new forensics lab, startup costs might take most of the budget. Depending on how large the lab is, you must determine first how much floor space is needed. As mentioned, a good rule of thumb is 150 square feet per person. This amount of space might seem a bit larger than necessary, but you need to factor in how much storage space is needed to preserve evidence and to have enough supplies in stock. Check with your organization’s facility manager on per-square-foot costs for your area or building. Here are some sample questions to get you started on calculating a budget:\n\nHow many digital forensics examiners do you need?\n\nHow much training does each examiner require per year, and what are the estimated costs?\n\nDo you need more than one lab?\n\nHow many digital forensics examiners are going to use each lab? Is there a need to accommodate other nonexaminers temporarily to inspect recovered evidence?\n\nWhat are the costs to construct a secure lab?\n\nIs there a suitable room that can be converted into a lab?\n\nDoes the designated room have enough electrical power and heating, ventilation, and air-conditioning (HVAC) systems?\n\nDoes the designated room have existing phone lines and network cables? If not, how much would it cost to install these items?\n\nIs there an adequate lock on the designated room’s door?\n\nWhat are the furniture costs?\n\nDo you need to install an alarm system?\n\nAre there any other facility costs, such as fees for janitorial services and facility maintenance services?\n\nIf IT support is needed, how many hours of support are estimated?",
+                      "slides": [
+                        {
+                          "seq_id": 34.1,
+                          "llm_generated_content": {
+                            "title": "Facility Cost",
+                            "subtitle": "Key Considerations for Budgeting",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Determine required floor space based on 150 sq ft per person, including storage and supplies",
+                                  "Calculate per-square-foot costs by consulting facility manager",
+                                  "Estimate costs for digital forensics examiners (number needed, training requirements)",
+                                  "Assess lab construction costs and suitability of existing rooms",
+                                  "Evaluate electrical, HVAC, and network infrastructure requirements",
+                                  "Check for adequate security features (locks, alarm systems)",
+                                  "Account for furniture, janitorial, and maintenance costs",
+                                  "Estimate IT support hours if required"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Hardware Requirements",
+                      "toc_id": 87,
+                      "chunk_count": 21,
+                      "total_chunks_in_branch": 21,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "children": [],
+                      "seq_id": 35,
+                      "chunks_sorted": [
+                        1178,
+                        1179,
+                        1180,
+                        1181,
+                        1182,
+                        1183,
+                        1184,
+                        1185,
+                        1186,
+                        8250,
+                        8251,
+                        8252,
+                        8253,
+                        8254,
+                        8255,
+                        8256,
+                        8257,
+                        8258,
+                        8259,
+                        8260,
+                        8261
+                      ],
+                      "content": "Hardware Requirements\n\nDetermining the types of investigations and data that will be analyzed in your forensics lab dictates what hardware equipment you need. If your organization is using Intel-based PCs with Windows 10 or later, for instance, your forensic workstation should be a high-end Intel-based PC, too. For a small police department, determining the types of computers the public uses is more difficult. The diversity of a community’s computer systems requires a police department to be more versatile in the tools needed to conduct investigations. To determine hardware budget needs, here are some questions to consider in your planning:\n\nWhat types of investigations and data recovery will be performed in the lab?\n\nHow many investigations can be expected per month of operation?\n\nAre there any time-sensitive investigations that demand rapid analysis of disk data?\n\nHow many drives (and what sizes) are needed to support a typical investigation?\n\nDo you need a high-speed backup system, such as tape backup or DVD burners?\n\nWhat’s the predominant type of computer system you will investigate?\n\nWhat will you use to store digital evidence? How long do you need to store it?\n\nHardware Requirements\n\nUse a standard installation of Windows 10. The computer running Windows should be a fairly current model that meets the following minimum requirements:\n\nUSB ports\n\nCD-ROM/DVD-ROM drive\n\nVGA or higher monitor\n\nHard disk partition of 500 GB or more\n\nMouse or other pointing device\n\nKeyboard\n\nAt least 6 GB RAM (more recommended)\n\nFor labs done in Linux, it’s assumed you’re using an Ubuntu 16.04 or later standard installation, although other Linux distributions will work with minor modifications. Some labs use specialized “live” Linux distributions, such as Kali Linux. The hardware requirements are as follows:\n\nA DVD or a USB drive of 6 GB or more\n\nOther hardware requirements are the same as those listed for Windows computers",
+                      "slides": [
+                        {
+                          "seq_id": 35.1,
+                          "llm_generated_content": {
+                            "title": "Hardware Requirements",
+                            "subtitle": "Planning Considerations",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "What types of investigations and data recovery will be performed in the lab?",
+                                  "How many investigations can be expected per month of operation?",
+                                  "Are there any time-sensitive investigations that demand rapid analysis of disk data?",
+                                  "How many drives (and what sizes) are needed to support a typical investigation?",
+                                  "Do you need a high-speed backup system, such as tape backup or DVD burners?",
+                                  "What’s the predominant type of computer system you will investigate?",
+                                  "What will you use to store digital evidence? How long do you need to store it?"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 35.2,
+                          "llm_generated_content": {
+                            "title": "Hardware Requirements",
+                            "subtitle": null,
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Standard Windows 10 installation requires: USB ports, CD-ROM/DVD-ROM drive, VGA or higher monitor, 500 GB or larger hard disk partition, mouse/pointing device, keyboard, and at least 6 GB RAM (more recommended).",
+                                  "For Linux (Ubuntu 16.04 or later), hardware needs include a 6 GB or larger DVD/USB drive, with other requirements matching Windows systems.",
+                                  "Specialized live Linux distributions like Kali Linux may be used for certain labs."
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Software Requirements",
+                      "toc_id": 88,
+                      "chunk_count": 23,
+                      "total_chunks_in_branch": 23,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "children": [],
+                      "seq_id": 36,
+                      "chunks_sorted": [
+                        1187,
+                        1188,
+                        1189,
+                        1190,
+                        1191,
+                        1192,
+                        1193,
+                        1194,
+                        1195,
+                        8262,
+                        8263,
+                        8264,
+                        8265,
+                        8266,
+                        8267,
+                        8268,
+                        8269,
+                        8270,
+                        8271,
+                        8272,
+                        8273,
+                        8274,
+                        8275
+                      ],
+                      "content": "Software Requirements\n\nIn the past few years, many more digital forensics tools have become available. For the private sector, the cost for these tools is about $1100 and up. For the public sector, many forensics software vendors offer discounts. However, just as you select hardware for your digital forensics lab to fit specific needs, you must determine what type of OSs and applications will be investigated and then make purchases accordingly. Keep in mind that the more you spend on a forensics software package, the more function and flexibility you’ll have. To determine software budget needs, here are some questions to consider in your planning:\n\nWhat types of OSs will be examined?\n\nFor less popular, uncommon, or older OSs (such as Mac OS 9.x, OS/2, and CP/M), how often is there a need to investigate them?\n\nWhat are the minimum needs for forensics software tools? For example, how many copies of each tool are needed? How often is each tool used in an average week?\n\nWhat types of OSs are needed to conduct routine examinations?\n\nIs there a need for specialized software, such as QuickBooks, FreshBooks, Xero, or Sage 50c?\n\nIs there a budget to purchase more than one forensics software tool?\n\nWhich disk-editing tool should be selected for general data analysis?\n\nSoftware Requirements\n\nThe following is a list of the freeware, shareware, and demo software used in this lab manual:\n\nNote\n\nAlthough efforts have been made to supply information that’s current at the time of writing, Web site addresses change often, so search online to find the following software if URLs are no longer valid. Demoware tools typically have limited functions and strict time limits on their use. See their licensing information for restrictions.\n\nVendor Tool Version License Download Link Igor Pavlov 7-Zip 18.04 beta Freeware www.7-zip.org AccessData Group, Inc. FTK Imager Lite 3.1.1 Demoware https://accessdata.com/product-download/ftk-imager-lite-version-3.1.1 AccessData Group, Inc. Registry Viewer 1.8.0.5 Demoware https://accessdata.com/product-download/registry-viewer-1-8-0-5 Resin.io Etcher v1.4.4, 2018-04-24 Open-source https://etcher.io/#downloads mh-nexus HxD 2.0 RC Freeware https://mh-nexus.de/en/downloads.php?product=HxD20 KRyLack Software KRyLaCK Zip Password Recovery 3.70.69 Demoware www.krylack.com/products/ Deft Linux DEFT Zero 2017.1 Open-source www.deftlinux.net/download/ Deft Linux DART v2-2014 Open-source www.deftlinux.net/2014/04/16/deft-8-1-and-dart-2-2014/ Briggs Software Directory Snoop Demoware\n\nwww.deftlinux.net/2014/04/16/deft-8-1-and-dart-2-2014/ Briggs Software Directory Snoop Demoware www.briggsoft.com/ Kali.org Kali 2017.3 Open-source www.kali.org/downloads/ PassMark OSForensics 4.0.1002 Demoware (30-day free use limit) www.osforensics.com/download.html Reboot.pro Mini-WinFE ISO Mini-WinFE.2017.04.27 Freeware http://reboot.pro/files/download/375-miniwinfe/ Sleuthkit.org Autopsy 4.3.0 Open-source https://sourceforge.net/projects/autopsy/files/autopsy/4.3.0/ Sleuthkit.org Autopsy 4.7.0 Open-source www.autopsy.com/download/ X-Ways WinHex 19.5 Demoware www.x-ways.net/winhex/ Mirek’s Free Software MWSnap 3.0.0.74 3.0.0.74 Freeware www.tucows.com/preview/222629 Ted Smith QuickHash v3.0.2 Freeware http://quickhash-gui.org/downloads/ Qt Company SQL Lite 3.10.1 Freeware\n\nQuickHash v3.0.2 Freeware http://quickhash-gui.org/downloads/ Qt Company SQL Lite 3.10.1 Freeware http://sqlitebrowser.org Parmavex Services WinAudit 3.2.1 Freeware www.parmavex.co.uk/winaudit.html\n\nIn addition, you use Microsoft Office Word, Notepad, and Excel (or open-source office software) and a Web browser.\n\nNote\n\nOSForensics from PassMark Software has a 30-day trial for download. If you aren’t purchasing its license or are planning to do the labs at home, it’s recommended that you wait until Chapter 8 or later to begin using this tool so that your trial doesn’t expire before you finish the projects.\n\nClassroom Setup Guidelines\n\nThis lab manual assumes Windows has been installed and doesn’t require computers to be networked unless shared resources (such as printers), ExamView exams, or Internet access are needed. Lab managers can install the software in the preceding list ahead of time, if needed. As mentioned, some tools have time limits on their use, so plan lab assignments to make sure they can be done before licenses expire. Several labs use very large forensic images from 2 to 8 GB, and processing them might take up to 6 hours, depending on computer performance. Starting these labs before the end of the class day and allowing them to run overnight is the recommended method.\n\nAbout the Author\n\nBill Nelson has worked for more than 32 years for two global Fortune 100 companies in information technologies, with more than 20 years in corporate digital forensics and information security. In addition, he has been an instructor of digital forensics classes at the City University of Seattle and the University of Washington’s Professional and Continuing Education Department for 10 years. His previous experience includes Automated Fingerprint Identification System software engineering and reserve police work. Bill has served as president and vice president for Computer Technology Investigators Northwest. He routinely lectures at several colleges and universities in the Pacific Northwest.",
+                      "slides": [
+                        {
+                          "seq_id": 36.1,
+                          "llm_generated_content": {
+                            "title": "Software Requirements",
+                            "subtitle": "Selecting Forensic Tools and Budget Considerations",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "Select hardware and software based on specific investigation needs.",
+                                  "Consider OS types to be examined (e.g., Mac OS 9.x, OS/2, CP/M) and their frequency of use.",
+                                  "Determine minimum tool requirements: number of copies, weekly usage frequency.",
+                                  "Identify routine OS needs for examinations.",
+                                  "Assess need for specialized software (QuickBooks, Xero, etc.).",
+                                  "Evaluate budget for multiple forensic tools.",
+                                  "Choose disk-editing tools for general data analysis."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 36.2,
+                          "llm_generated_content": {
+                            "title": "Software Requirements",
+                            "subtitle": "Software Tools and Budget Considerations",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "Select OSs and applications to investigate based on lab needs.",
+                                  "Consider cost-effectiveness: higher-priced tools offer more functionality.",
+                                  "Key questions for budget planning:",
+                                  "  - What OSs will be examined?",
+                                  "  - How often are less common OSs (e.g., Mac OS 9.x, OS/2) needed?",
+                                  "  - What are the minimum tool requirements (number of copies, usage frequency)?",
+                                  "  - Are specialized software tools (e.g., QuickBooks, Xero) required?",
+                                  "  - Is a multi-tool budget feasible?",
+                                  "  - Which disk-editing tool is best for general data analysis?",
+                                  "  - Are there budget constraints for purchasing multiple tools?",
+                                  "  - What is the need for freeware, shareware, or demo tools?",
+                                  "  - Are there licensing restrictions for demo tools (e.g., time limits)?",
+                                  "  - How to handle software with limited use periods (e.g., OSForensics 30-day trial)?",
+                                  "  - What are the recommended download links for tools like 7-Zip, FTK Imager Lite, etc.?"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Miscellaneous Budget Needs",
+                      "toc_id": 89,
+                      "chunk_count": 4,
+                      "total_chunks_in_branch": 4,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 37,
+                      "chunks_sorted": [
+                        1196,
+                        1197,
+                        1198,
+                        1199
+                      ],
+                      "content": "Miscellaneous Budget Needs\n\nFor this section of the budget, you need to brainstorm on other items, tools, and supplies to consider purchasing for the lab, from general office supplies to specific needs for daily operations. To determine miscellaneous budget needs, here are some questions to consider in your planning:\n\nIs there a need for errors and omission insurance for the lab’s operation and staff?\n\nDo you need a budget for office supplies?"
+                    },
+                    {
+                      "title": "Approval and Acquisition",
+                      "toc_id": 90,
+                      "chunk_count": 4,
+                      "total_chunks_in_branch": 4,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 38,
+                      "chunks_sorted": [
+                        1200,
+                        1201,
+                        1202,
+                        1203
+                      ],
+                      "content": "Approval and Acquisition\n\nThe approval and acquisition phase for a digital forensics lab is a management function. It’s your responsibility to create a business case with a budget to present to upper management for approval. As part of the approval process, you should include a risk analysis describing how the lab will minimize the risk of litigation, which is a persuasive argument for supporting the lab. You also need to make an educated guess of how many investigations are anticipated and how long they will take on average. Remember that part of the approval process requires using negotiation skills to justify the business case. You might need to revise your case to get approval.\n\nAs part of the business case, acquisition planning requires researching different products to determine which one is the best and most cost effective. You need to contact several vendors’ sales staff and design engineers to learn more about each product and service. Another factor to investigate is annual maintenance costs. You need to budget for this expense, too, so that you can get support if you run into problems during an investigation. An additional item to research from others in the profession is the vendor’s maintenance history. Do other forensics labs use the same product, and have they had any problems getting support for problems they encounter?\n\nAnother consideration is vendors’ pricing structures. Vendor pricing isn’t based on the cost of creating CDs and DVDs and packaging them. Product prices are based on cost for development, testing, documentation support, shipping, and research and development for future improvements. In addition, vendors are for-profit organizations; they have investors to pay, too. Keep in mind that for vendors to be around next year to provide products and services for you, they need to make money."
+                    },
+                    {
+                      "title": "Implementation",
+                      "toc_id": 91,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 39,
+                      "chunks_sorted": [
+                        1204,
+                        1205
+                      ],
+                      "content": "Implementation\n\nAfter approval and acquisition, you need to plan the implementation of facilities and tools. As part of your business case, describe how you plan to incorporate and install all approved items. A timeline showing expected delivery or installation dates and expected completion dates must be included. You should also have a coordination plan for delivery dates and times for materials and tools. Include inspection of facility construction, equipment (including furniture and benches), and software tools in the schedule. Make sure you schedule inspection dates, too, to ensure that what you ordered arrived and is functional."
+                    },
+                    {
+                      "title": "Acceptance Testing",
+                      "toc_id": 92,
+                      "chunk_count": 6,
+                      "total_chunks_in_branch": 6,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "children": [],
+                      "seq_id": 40,
+                      "chunks_sorted": [
+                        1206,
+                        1207,
+                        1208,
+                        1209,
+                        1210,
+                        1211
+                      ],
+                      "content": "Acceptance Testing\n\nFollowing the implementation scheduling and inspection, you need to develop an acceptance test plan for the digital forensics lab to make sure everything works correctly. When writing the acceptance test plan, make sure you include the following tasks:\n\nInspect the facility to see whether it meets the security criteria for containing and controlling digital evidence.\n\nTest all communications, such as phone and network connections, to make sure they work as expected.\n\nTest all hardware to verify that it operates correctly; for example, test a computer to make sure it boots to Windows.\n\nInstall and start all software tools; make sure all software can run on the computers and OSs you have in the lab.",
+                      "slides": [
+                        {
+                          "seq_id": 40.1,
+                          "llm_generated_content": {
+                            "title": "Acceptance Testing",
+                            "subtitle": "Key Tasks for Digital Forensics Lab",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "process",
+                                "data": [
+                                  "Inspect facility to ensure it meets security criteria for containing and controlling digital evidence.",
+                                  "Test all communications (phone, network connections) to verify they function as expected.",
+                                  "Test all hardware to confirm correct operation (e.g., verify computers boot to Windows).",
+                                  "Install and start all software tools; ensure compatibility with lab computers and OSs."
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Correction for Acceptance",
+                      "toc_id": 93,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 41,
+                      "chunks_sorted": [
+                        1212,
+                        1213
+                      ],
+                      "content": "Correction for Acceptance\n\nThe better you plan for your lab, the less likely you’ll have problems. However, any lab operation has some problems during startup. Your business case must anticipate problems that can cause delays in lab production. In the business case, you need to develop contingencies to deal with system or facility failures. For example, devise workarounds for problems such as the wrong locks being installed on lab doors or electrical power needing additional filtering."
+                    },
+                    {
+                      "title": "Production",
+                      "toc_id": 94,
+                      "chunk_count": 4,
+                      "total_chunks_in_branch": 4,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 42,
+                      "chunks_sorted": [
+                        1214,
+                        1215,
+                        1216,
+                        1217
+                      ],
+                      "content": "Production\n\nAfter all essential corrections have been made, your digital forensics lab can then go into production. At this time, you carry out the lab operations and procedures that have been described in this chapter.\n\nTip\n\nFor additional information on how to write a business case, see www.sba.gov/tools/sba-learning-center/training/how-write-business-plan."
+                    }
+                  ],
+                  "seq_id": 31,
+                  "chunks_sorted": [
+                    1151,
+                    1152
+                  ],
+                  "content": "Preparing a Business Case for a Digital Forensics Lab\n\nIt’s important to understand the need for planning in the creation and continued maintenance of a forensics lab. The reason is the constant cost-cutting efforts of upper management. Because of organizations’ tendencies to look for ways to reduce costs, you must plan ahead to ensure that money is available for facilities, tools, supplies, and training for your forensics lab. The following sections describe some key elements for creating a digital forensics business case. It’s a good idea to maintain a business case with annual updates."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Building a Business Case for Developing a Forensics Lab (Interactive Activity)",
+                "toc_id": 82,
+                "slides_allocated": 1,
+                "seq_id": 43,
+                "llm_generated_content": {
+                  "title": "Let's Apply This!",
+                  "subtitle": "Knowledge Check: Building a Business Case for Developing a Forensics Lab",
+                  "objects": [
+                    {
+                      "content_type": "multiple_choice_question",
+                      "content_purpose": "knowledge_check",
+                      "data": {
+                        "question_text": "Which of the following best illustrates how a digital forensics lab can improve a company's profitability?",
+                        "options": [
+                          {
+                            "label": "A",
+                            "text": "Reducing the cost of employee training programs"
+                          },
+                          {
+                            "label": "B",
+                            "text": "Preventing litigation costs by uncovering evidence of intellectual property theft"
+                          },
+                          {
+                            "label": "C",
+                            "text": "Increasing the number of employees who use free web-based email services"
+                          },
+                          {
+                            "label": "D",
+                            "text": "Eliminating the need for cybersecurity measures"
+                          }
+                        ],
+                        "correct_answer": {
+                          "label": "B",
+                          "explanation": "The business case should demonstrate how digital investigations can prevent costly lawsuits, such as those related to intellectual property theft. The example of Skateboard International highlights how digital forensics can protect trade secrets and prevent competitors from profiting from stolen information, directly impacting a company's profitability."
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "seq_id": 30,
+              "chunks_sorted": [
+                1140,
+                1141,
+                1142,
+                1143,
+                1144,
+                1145,
+                1146,
+                1147,
+                1148,
+                1149,
+                1150
+              ],
+              "content": "Building a Business Case for Developing a Forensics Lab\n\nBefore you can set up a digital forensics lab, you must enlist the support of managers and other team members. To do so, you build a business case A document that provides justification to upper management or a lender for purchasing new equipment, software, or other tools when upgrading your facility. , a plan you can use to sell your services to management or clients. In the business case, you justify acquiring newer and better resources to investigate digital forensics cases.\n\nHow you develop a business case depends on the organization you support. If you’re the sole proprietor, creating a business case is fairly simple. If you need money to buy tools, you can save your money for the purchase or negotiate with your bank for a loan. For a public entity such as a police department, business requirements can change drastically because budgets are planned a year or more in advance. Public agency department managers present their budget proposals to upper management. If the proposal is approved, upper management makes money available to acquire resources outlined in the budget. Some public organizations might have other funds available that can be spent immediately for special needs. Managers can divert these funds for emergency or unforeseen needs.\n\nNote\n\nLike private-sector companies, police departments usually have to justify expenses to upper management. The important difference is that police departments don’t always have to show cost recovery for the additional capabilities new resources and equipment offer.\n\nKeep in mind that a private-sector business, especially a large corporation, is motivated by the need to make money. A business case should demonstrate how digital investigations could save money and avoid risks that can damage profits, such as by preventing litigation involving the company. For example, court decisions have defined viewing pornographic images in the workplace as creating a hostile environment for other employees, which is related to employee harassment and computer misuse. An employer is responsible for preventing and investigating harassment of employees and nonemployees associated with the workplace. A company is also liable if it doesn’t actively prevent creating a hostile workplace by providing employee training and investigating allegations of computer misuse. A\n\nworkplace by providing employee training and investigating allegations of computer misuse. A lawsuit, regardless of who wins, can cost an employer several hundred thousand dollars. In your business case, compare the cost of training and conducting digital investigations with the cost of a lawsuit.\n\nThe Internet makes it difficult for employers to provide a safe and secure environment for employees. In particular, employees can misuse free Web-based e-mail services. These free services give senders anonymity, making it possible for employees to send inappropriate e-mails, often in the form of sexual harassment. Because training rarely prevents this type of behavior, an employer needs to institute an investigation program that involves collecting network logs, such as proxy server logs, and examining computer disks to locate traces of message evidence. Chapter 11 discusses e-mail abuse and using e-mail server and network logs.\n\nYour business case should also show how digital investigations can improve profits, such as by protecting intellectual property, trade secrets, and future business plans. For example, when employees leave one company for a competing company, they can reveal vital competitive information to their new employers. Suppose a company called Skateboard International (SI) has invested research and development funds into a new product that improves the stability of skateboards. Its main competitor is Better Skateboard; this company contacts Gwen Smith, a disgruntled SI employee, via e-mail and offers her a job. When Gwen leaves SI, she takes with her the plans for the new product. A few months later, Better Skateboard introduces a product similar to the skateboard Gwen had been researching at SI.\n\nBetter Skateboard introduces a product similar to the skateboard Gwen had been researching at SI. SI recognizes that the new, improved skateboard is similar to the one Gwen had been developing and consults the noncompete agreement Gwen signed when she was hired. SI thinks that Better Skateboard might have gotten its new product from Gwen and suspects that Better Skateboard stole its trade secret and intellectual property.\n\nSI could sue Better Skateboard and demand discovery on internal documents. Because Gwen and Better Skateboard corresponded via e-mail, a digital investigator needs to find data related to hiring and research engineering at Better Skateboard. Better Skateboard can also demand discovery on SI’s research records to determine whether any discrepancies in product design could disprove the lawsuit. In this example, digital investigations can allow one company to generate revenue from a new product and prevent the other company from doing so. Information related to profit and loss makes a persuasive argument in a business case.",
+              "slides": [
+                {
+                  "seq_id": 30.1,
+                  "llm_generated_content": {
+                    "title": "Building a Business Case for Developing a Forensics Lab",
+                    "subtitle": "Key Considerations and Justification",
+                    "objects": [
+                      {
+                        "content_type": "bullet_points",
+                        "content_purpose": "explanation",
+                        "data": [
+                          "A business case is a document that justifies acquiring resources for digital forensics investigations.",
+                          "Private-sector businesses focus on cost savings and risk avoidance (e.g., preventing litigation, protecting intellectual property).",
+                          "Public entities (e.g., police departments) must justify expenses to upper management but may not require cost recovery for new capabilities.",
+                          "Digital investigations can protect profits by preventing intellectual property theft and trade secret leaks.",
+                          "Examples: Litigation costs vs. investigation costs; recovering stolen trade secrets to maintain competitive advantage."
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          },
+          "seq_id": 44,
+          "llm_generated_content": {
+            "title": "Summary & Key Takeaways",
+            "subtitle": null,
+            "objects": [
+              {
+                "content_type": "bullet_points",
+                "content_purpose": "description",
+                "data": [
+                  "Implement strict physical and digital security measures to protect digital evidence and prevent unauthorized access.",
+                  "Prioritize cost-effective hardware and software solutions tailored to specific forensic investigation needs, including support for diverse operating systems.",
+                  "Develop a clear business case that highlights cost savings and risk mitigation, such as preventing litigation and protecting intellectual property.",
+                  "Plan for comprehensive facility requirements, including space, infrastructure, and security, to ensure operational efficiency and compliance.",
+                  "Ensure robust backup and disaster recovery strategies, along with thorough acceptance testing, to maintain data integrity and system reliability."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          },
+          "seq_id": 45
+        }
+      ]
+    }
+  ]
+}

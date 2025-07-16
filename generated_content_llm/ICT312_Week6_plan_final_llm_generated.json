@@ -1,0 +1,2097 @@
+{
+  "week": 6,
+  "overall_topic": "Current Computer Forensics Tools.",
+  "weekly_slide_summary": {
+    "total_slides_for_week": 36,
+    "total_framework_slides": 4,
+    "total_content_slides": 28,
+    "total_interactive_slides": 4,
+    "number_of_decks": 1
+  },
+  "weekly_time_summary_minutes": {
+    "total_time_for_week_minutes": 110,
+    "total_framework_time": 6,
+    "total_content_and_interactive_time": 104
+  },
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "total_slides_in_deck": 36,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 28,
+        "interactive": 4
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 104,
+        "total_deck_time": 110
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Current Computer Forensics Tools.",
+            "deck_title": "Week 6, Lecture 1"
+          },
+          "seq_id": 0
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Evaluating Digital Forensics Tool Needs",
+              "Digital Forensics Software Tools",
+              "Digital Forensics Hardware Tools",
+              "Validating and Testing Forensics Software"
+            ]
+          },
+          "seq_id": 1
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Evaluating Digital Forensics Tool Needs",
+              "toc_id": 233,
+              "chunk_count": 10,
+              "total_chunks_in_branch": 184,
+              "budget_slides_content": 19,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 19,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 59
+              },
+              "children": [
+                {
+                  "title": "Types of Digital Forensics Tools",
+                  "toc_id": 234,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 11,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [
+                    {
+                      "title": "Hardware Forensics Tools",
+                      "toc_id": 235,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 4,
+                      "chunks_sorted": [
+                        3164,
+                        3165
+                      ],
+                      "content": "Hardware Forensics Tools\n\nHardware forensics tools range from simple, single-purpose components to complete computer systems and servers. For example, the Tableau T35es-R2 SATA/IDE eSATA bridge is a single-purpose component that makes it possible to access a SATA or an IDE drive with one device. Some examples of complete systems are Digital Intelligence F.R.E.D. systems (www.digitalintelligence.com/forensichardware.php), DIBS Advanced Forensic Workstations (www.dibsforensics.com/index.html), Forensic Computers’ Forensic Examination Stations and portable units (www.forensic-computers.com), and Ace Laboratory systems (www.acelaboratory.com/catalog/), designed for data recovery of failed drives, a feature that comes in handy in many situations."
+                    },
+                    {
+                      "title": "Software Forensics Tools",
+                      "toc_id": 236,
+                      "chunk_count": 5,
+                      "total_chunks_in_branch": 5,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "children": [],
+                      "seq_id": 5,
+                      "chunks_sorted": [
+                        3166,
+                        3167,
+                        3168,
+                        3169,
+                        3170
+                      ],
+                      "content": "Software Forensics Tools\n\nSoftware forensics tools are grouped into command-line applications and GUI applications. Some tools are specialized to perform one task. For example, SafeBack, from New Technologies, Inc. (NTI), was designed as a command-line disk acquisition tool. It’s no longer supported, but you can still find it distributed online. However, it’s used more as a reliable fallback when all else fails than a primary tool. Other tools are designed to perform many different tasks. For example, PassMark Software OSForensics, X-Ways Forensics, Guidance Software EnCase, Magnet Forensics AXIOM, and AccessData FTK are GUI tools designed to perform most forensics acquisition and analysis functions.\n\nNote\n\nAnother widely used GUI tool, Technology Pathways ProDiscover Forensics Edition, has been acquired by ARC Group, a cybersecurity company. At the time of this writing, the tool was being incorporated into a new product that hasn’t been announced yet (www.arcgroupny.com/products/prodiscover-forensic-edition/). As the digital forensics field continues to grow, these kinds of mergers will continue to occur.\n\nSoftware forensics tools are commonly used to copy data from a suspect’s drive to an image file. Many GUI acquisition tools can read all structures in an image file as though the image were the original drive and have the capability to analyze image files. In Chapter 5, you learned how some of these tools are used to acquire data from suspects’ drives.",
+                      "slides": [
+                        {
+                          "seq_id": 5.1,
+                          "llm_generated_content": {
+                            "title": "Software Forensics Tools",
+                            "subtitle": "Overview of Command-Line and GUI Tools",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Software forensics tools are categorized into command-line applications and GUI applications.",
+                                  "Specialized tools perform single tasks (e.g., SafeBack for disk acquisition).",
+                                  "General-purpose tools handle multiple tasks (e.g., OSForensics, X-Ways Forensics).",
+                                  "SafeBack is a legacy command-line tool no longer supported but still used as a fallback.",
+                                  "GUI tools like EnCase, AXIOM, and FTK provide comprehensive acquisition and analysis functions."
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "seq_id": 3,
+                  "chunks_sorted": [
+                    3160,
+                    3161,
+                    3162,
+                    3163
+                  ],
+                  "content": "Types of Digital Forensics Tools\n\nDigital forensics tools are divided into two major categories: hardware and software. Each category has subcategories discussed in more depth later in this chapter. The following sections outline basic features required and expected of most digital forensics tools.\n\nNote\n\nTwo trends will no doubt have an effect on your future choice of forensics tools. The field of digital forensics is predicted to grow at 11% per year between now and 2020 (www.marketsandmarkets.com/PressReleases/digital-forensics.asp), and the variety of tools available will probably grow to match this trend. In addition, with the growth of the Internet of Things (IoT), investigations are going to get more challenging, and more specialized tools might become essential."
+                },
+                {
+                  "title": "Tasks Performed by Digital Forensics Tools",
+                  "toc_id": 237,
+                  "chunk_count": 3,
+                  "total_chunks_in_branch": 153,
+                  "budget_slides_content": 16,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 15,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 45
+                  },
+                  "children": [
+                    {
+                      "title": "Acquisition",
+                      "toc_id": 238,
+                      "chunk_count": 22,
+                      "total_chunks_in_branch": 22,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "children": [],
+                      "seq_id": 7,
+                      "chunks_sorted": [
+                        3174,
+                        3175,
+                        3180,
+                        3181,
+                        3182,
+                        3183,
+                        3184,
+                        3185,
+                        3186,
+                        3187,
+                        3188,
+                        3189,
+                        3190,
+                        3191,
+                        3192,
+                        3193,
+                        3194,
+                        3195,
+                        3196,
+                        3197,
+                        3198,
+                        3409
+                      ],
+                      "content": "Acquisition\n\nValidation and verification\n\nAcquisition\n\nAcquisition The process of creating a duplicate image of data; one of the required functions of digital forensics tools. , the first task in digital forensics investigations, is making a copy of the original drive. As described in Chapter 3, this procedure preserves the original drive to make sure it doesn’t become corrupt and damage the digital evidence. Subfunctions in the acquisition category include the following:\n\nPhysical data copy\n\nLogical data copy\n\nData acquisition format\n\nCommand-line acquisition\n\nGUI acquisition\n\nRemote, live, and memory acquisitions\n\nISO standard 27037 states that the most important factors in data acquisition are the DEFR’s competency and the use of validated tools, and it includes guidelines on how to approach acquisition in different situations. What’s most important is documenting what was done and why. For example, if you’re acquiring data at a scene with hazardous materials, clearly speed is critical, so you might decide to forgo acquiring RAM and focus on collecting devices. You can also find decision-making flowcharts on whether to copy an entire physical disk or concentrate on only a partition or folder, for instance. Section 7 of the standard addresses acquiring volatile memory, an important part of live acquisitions. Other situations that affect acquisitions include encrypted devices or mission-critical\n\nOther situations that affect acquisitions include encrypted devices or mission-critical systems that can’t be turned off.\n\nSome digital forensics software suites, such as AccessData FTK, have separate tools for acquiring an image. Magnet AXIOM, for example, enables you to acquire the forensic image and process it in the same step. However, some investigators opt to use hardware devices, such as Tableau TD2, Logicube Talon, VOOM HardCopy 3P, or Image MASSter Solo-4 Forensic unit from Intelligent Computer Solutions, Inc., for acquiring an image. These hardware devices have built-in software for data acquisition. No other device or program is needed to make a duplicate drive; however, you still need forensics software to analyze the data.\n\nNote\n\nTo see specifications for the Logicube Talon, go to www.logicube.com/shop/talon-ultimate/. To see the Image MASSter Solo-4 unit, search at www.ics-iq.com. To see VOOM HardCopy 3, search at www.voomtech.com.\n\nOther acquisition tools require combining hardware devices and software programs to make disk acquisitions. For example, many software tools mount drives as read-only, and others might require a physical write-blocker. Any tool that has a built-in software write-blocker should be verified to make sure evidence hasn’t been altered.\n\nTwo types of data-copying methods are used in software acquisitions: physical copying of the entire drive and logical copying of a disk partition. Most software acquisition tools include the option of imaging an entire physical drive or just a logical partition. Usually, the situation dictates whether you make a physical or logical acquisition. One reason to choose a logical acquisition is drive encryption. With the increasing emphasis on data security, drive encryption is used more commonly now. As mentioned in Chapter 5, making a physical acquisition of a drive with whole disk encryption can result in unreadable data. With a logical acquisition, however, you can still read and analyze the files. Of course, this method requires a live acquisition (covered in Chapter 10) because you need\n\nfiles. Of course, this method requires a live acquisition (covered in Chapter 10) because you need to log on to the system.\n\nDisk acquisition formats vary from raw data to vendor-specific proprietary, as you learned in Chapter 5. The raw data format, typically created with the Linux dd command, is a simple bit-for-bit copy of a data file, a disk partition, or an entire drive. A raw-format imaging tool can copy data from one drive to another disk or to segmented files. Because it’s a true unaltered copy, you can view a raw image file’s contents with any hexadecimal editor, such as Hex Workshop or WinHex. These tools give you a hexadecimal view (see Figure 6-1) or a plaintext view of the data.\n\nCreating smaller segmented files is a typical feature in vendor acquisition tools. Their purpose is to make it easier to store acquired data on smaller media, such as CDs and USB drives.\n\nRemote acquisition of files is common in larger organizations. Enterprise-level companies are geographically diverse, so investigators might not be able to get physical access to systems without traveling long distances. Popular tools, such as AccessData and EnCase, can do remote acquisitions of forensic drive images on a network, and these acquisitions can also be done with a dd command.\n\nAcquisition",
+                      "slides": [
+                        {
+                          "seq_id": 7.1,
+                          "llm_generated_content": {
+                            "title": "Acquisition",
+                            "subtitle": "Validation and Verification",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Acquisition is the process of creating a duplicate image of data, a core function in digital forensics.",
+                                  "Key subfunctions include: Physical data copy, Logical data copy, Data acquisition format, Command-line acquisition, GUI acquisition, Remote, live, and memory acquisitions.",
+                                  "ISO standard 27037 emphasizes DEFR competency and validated tools, with guidelines for different scenarios.",
+                                  "Documentation is critical: e.g., prioritizing speed in hazardous environments may involve forgoing RAM acquisition.",
+                                  "Decision-making flowcharts help determine whether to copy entire disks, partitions, or folders."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 7.2,
+                          "llm_generated_content": {
+                            "title": "Acquisition",
+                            "subtitle": "Data Acquisition Methods and Tools",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Physical Data Copy: Full drive duplication preserving original data integrity.",
+                                  "Logical Data Copy: Copying specific partitions or folders instead of entire drives.",
+                                  "Data Acquisition Formats: Includes raw data (e.g., Linux dd command) and vendor-specific proprietary formats.",
+                                  "Command-line Acquisition: Utilizes terminal commands for data imaging.",
+                                  "GUI Acquisition: User-friendly interfaces for data acquisition processes.",
+                                  "Remote, Live, and Memory Acquisitions: Capturing volatile data from active systems.",
+                                  "Tools: AccessData FTK, Magnet AXIOM, Tableau TD2, Logicube Talon, VOOM HardCopy 3P, Image MASSter Solo-4 Forensic unit.",
+                                  "Hardware Devices: Built-in software for data acquisition without additional programs.",
+                                  "Write-blocker Verification: Ensuring no evidence alteration during acquisition.",
+                                  "Live Acquisition Requirement: Necessary for encrypted drives to access files."
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Validation and Verification",
+                      "toc_id": 239,
+                      "chunk_count": 14,
+                      "total_chunks_in_branch": 14,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "children": [],
+                      "seq_id": 8,
+                      "chunks_sorted": [
+                        3199,
+                        3200,
+                        3201,
+                        3202,
+                        3203,
+                        3204,
+                        3205,
+                        3206,
+                        3207,
+                        3208,
+                        3209,
+                        3210,
+                        3211,
+                        3212
+                      ],
+                      "content": "Validation and Verification\n\nValidation and verification functions work hand in hand. Validation A way to confirm that a tool is functioning as intended; one of the functions of digital forensics tools. is a way to confirm that a tool is functioning as intended, and verification The process of proving that two sets of data are identical by calculating hash values or using another similar method. proves that two sets of data are identical by calculating hash values or using another similar method. Another related process is filtering, which involves sorting and searching through investigation findings to separate good data and suspicious data. Validating tools and verifying data are what allow filtering.\n\nTo validate a tool, you can use forensic images that have been created for desktop and mobile devices; these files are posted on Web sites such as NIST’s CFTT or the Scientific Working Group on Digital Evidence (SWGDE) and tell you what the tool should find as evidence on the drives. They can also give you ranges of results so that you can determine, for example, that a tool works well for acquiring Linux images but has problems with older Windows versions. These groups also publish the results of testing hardware acquisition tools. After validating a tool, you must also make sure all forensic copies of a particular device have the same hash value.\n\nAll forensics acquisition tools have a method for verification of the data-copying process that compares the original drive with the image. For example, EnCase prompts you to calculate the MD5 hash value of acquired data, and FTK validates MD5 and SHA-1 hash sets during data acquisition. Hardware acquisition tools, such as Image MASSter Solo-4, can perform simultaneous MD5 and CRC-32 hashing during data acquisition. Whether you choose a software or hardware solution for acquisition, make sure the tool has a hashing function for verification purposes. How data hashing is used depends on the investigation, but using a hashing algorithm on the entire suspect drive and all its files is a standard practice. This method produces a unique hexadecimal value for ensuring that the original data\n\npractice. This method produces a unique hexadecimal value for ensuring that the original data hasn’t changed and copies are of the same unchanged data or image.\n\nWhen performing filtering, you separate good data from suspicious data. Good data consists of known files, such as OS files, common applications (Microsoft Word, for example), and standard files used in a company’s day-to-day business. You can also use hash values to create a known good hash value list of a fresh installation of an OS, all applications, and known good images and documents (spreadsheets, text files, and so on). With this information, an investigator could ignore all files on this known good list and focus on other files that aren’t on this list. Filtering can also be used to find data for evidence in criminal investigations or to build a case for terminating an employee. The National Software Reference Library (NSRL) A NIST project with the goal of collecting all known hash\n\nSoftware Reference Library (NSRL) A NIST project with the goal of collecting all known hash values for commercial software and OS files. has compiled a list of known file hashes for a variety of OSs, applications, and images that you can download (see Figure 6-2). It’s also adding hash values for mobile apps, specifically iOS and Android. You learn more about the NSRL in “Validating and Testing Forensics Software” later in this chapter.\n\nNote\n\nOrganizations such as the National Center for Missing and Exploited Children maintain hash sets of photos of known victims. These files are sorted into the “suspicious” or known bad category.\n\nSeveral digital forensics tools can integrate known good file hash sets and compare them with file hashes from a suspect drive to see whether they match. With this process, you can eliminate large amounts of data quickly so that you can focus your evidence analysis. You can also begin building your own hash sets. Another feature to consider is hashing and comparing sectors of data. It’s useful for identifying fragments of data in slack and free disk space that might be partially overwritten.\n\nAnother way to filter data is analyzing and verifying header values for known file types. Each file type has a header value associated with a file extension, and many forensics tools include a list of common file headers. To view these file headers, you use a hexadecimal editor, which can tell you whether a file extension is incorrect for the file type. Renaming file extensions is often done to disguise or hide data, and you could miss pertinent data if you don’t check file headers. A standard indicator for graphics files is the hex value “FF D8,” shown in the first line of output in the Bayshot.docx file shown in Figure 6-3. (You examine graphics files in more detail in Chapter 8.) After some practice in viewing file headers, you’ll learn to recognize common header values.\n\nBecause the Bayshot.docx file has “FF D8” in the header, it’s a .jpeg image, not a .docx file. If you try to open this file in Microsoft Word, you see the error message shown in Figure 6-4, if you’re using Windows 7 or 8.1. Windows 10, however, automatically detects that the file is a JPEG and adds the correct extension.\n\nIf you open the file with an image viewer, such as Microsoft Paint, you see the image shown in Figure 6-5.\n\nSearching and comparing file headers rather than file extensions improves filtering. With this feature, you can locate files that might have been altered intentionally. In Chapters 8 and 9, you see how to use this feature to locate hidden data.",
+                      "slides": [
+                        {
+                          "seq_id": 8.1,
+                          "llm_generated_content": {
+                            "title": "Validation and Verification",
+                            "subtitle": "Key Concepts and Processes",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Validation: Confirming a tool functions as intended (e.g., forensic tools)",
+                                  "Verification: Proving data identity through hash values (MD5, SHA-1, CRC-32)",
+                                  "Filtering: Separating good data from suspicious data using hash lists and file headers",
+                                  "Hashing: Ensuring data integrity by generating unique hexadecimal values",
+                                  "NSRL: NIST project collecting known file hashes for OS and applications",
+                                  "Header Analysis: Identifying file types via hex values (e.g., JPEG with 'FF D8')"
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Extraction",
+                      "toc_id": 240,
+                      "chunk_count": 25,
+                      "total_chunks_in_branch": 25,
+                      "budget_slides_content": 3,
+                      "direct_slides_content": 3,
+                      "total_slides_in_branch": 3,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 9,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 9
+                      },
+                      "children": [],
+                      "seq_id": 9,
+                      "chunks_sorted": [
+                        3176,
+                        3213,
+                        3214,
+                        3215,
+                        3216,
+                        3217,
+                        3218,
+                        3219,
+                        3220,
+                        3221,
+                        3222,
+                        3223,
+                        3224,
+                        3225,
+                        3226,
+                        3227,
+                        3228,
+                        3229,
+                        3230,
+                        3231,
+                        3232,
+                        3233,
+                        3234,
+                        3235,
+                        3410
+                      ],
+                      "content": "Extraction\n\nExtraction\n\nThe extraction The process of pulling relevant data from an image and recovering or reconstructing data fragments; one of the required functions of digital forensics tools. function is the recovery task in a digital investigation and is the most challenging of all tasks to master. In Chapter 1, you learned how system analysis applies to an investigation. Recovering data is the first step in analyzing an investigation’s data. The following subfunctions of extraction are used in investigations:\n\nData viewing\n\nKeyword searching\n\nDecompressing or uncompressing\n\nCarving\n\nDecrypting\n\nBookmarking or tagging\n\nNote\n\nMobile devices have added some complexity to forensic extraction because so much data can be retrieved from them: call records, URLs, GPS data, SMS and text messages, and more. You explore mobile device forensics in Chapter 12.\n\nMany digital forensics tools include a data-viewing mechanism for digital evidence and offer several ways to view data, including logical drive structures, such as folders and files. These tools also display allocated file data and unallocated disk areas with special file and disk viewers. Being able to view this data in its normal form makes analyzing and collecting clues for the investigation easier.\n\nA common task in digital investigations is searching for and recovering relevant data. Forensics tools have functions for searching for keywords of interest to the investigation. Using a keyword search A method of finding files or other information by entering relevant characters, words, or phrases in a search tool. speeds up the analysis process, if used correctly; however, a poor selection of keywords generates too much information. Another way to narrow down a search is by using word lists created for a specific case. Figure 6-6 shows an OSForensics built-in file called “banned sports drugs” used to do an indexed search for the keyword “nucleic acids” in Charlie’s hard drive (from the M57 Patents case).\n\nWith some tools, you can set filters to select file types to search, such as searching only PDF files. Another function in some forensics tools, such as X-Ways Forensics and OSForensics, is indexing all words on a drive. These features speed up keyword searches, which speeds up analysis.\n\nAnother feature to consider for extraction is the format the forensics tool can read. For example, OSForensics has a feature for reading and indexing data from Microsoft .pst and .ost files, and EnCase has a third-party add-on that indexes and analyzes Microsoft .pst files. In addition, EnCase and X-Ways Forensics enable you to create scripts for extracting data, but older versions of FTK don’t have this feature. Often you have to use a combination of tools to retrieve and report on evidence from digital devices accurately.\n\nThe investigation process also involves reconstructing fragments of files that have been deleted from a suspect drive. In North America, this reconstruction is called “carving”; in Europe, it’s called “salvaging.” (Carving is covered in more depth in Chapters 8 and 16.) Investigators often need to be able to extract data from unallocated disk space. Locating file header information, as mentioned in “Validation and Verification,” is a reliable method for carving data. Most forensics tools analyze unallocated areas of a drive or a forensic image and locate fragments or entire file structures that can be carved and copied into a newly reconstructed file. Some investigators prefer carving fragmented data manually with a command-line tool, but advanced GUI tools with built-in carving functions\n\ndata manually with a command-line tool, but advanced GUI tools with built-in carving functions are more common now. Figure 6-7 shows the data-carving feature in OSForensics.\n\nSome tools, such as Simple Carver Suite (www.simplecarver.com) and DataLifter (http://downloads.informer.com/datalifter-with-file-extractor-pro/), are specifically designed to carve known data types from exported unallocated disk space. DataLifter includes a feature that enables you to add other header values.\n\nThere are many compression or zip utilities, such as WinZip, 7Zip, and pzip. When a forensics tool encounters a compressed file or zip archive as part of a forensic image, it applies the correct algorithm for uncompressing the files. For example, uncompressing Windows files is done with the Lempel-Ziv algorithm, Lz32.dll. Other OSs and compression utilities use other algorithms.\n\nA major challenge in digital investigations is analyzing, recovering, and decrypting data from encrypted files or systems. Encryption can be used on a drive, disk partition, or file. Many e-mail services, such as Microsoft Outlook, provide encryption protection for .pst folders and messages. Encryption can be platform specific, such as Windows Encrypting File System (EFS) and BitLocker, or done with third-party tools, such as Pretty Good Privacy (PGP) and GnuPG.\n\nFrom an investigation perspective, encrypted files and systems are a problem. Many password recovery tools have a feature for generating potential password lists for a password dictionary attack An attack that uses a collection of words or phrases that might be passwords for an encrypted file. Password recovery programs can use a password dictionary to compare potential passwords to an encrypted file’s password or passphrase hash values. . Passwords are typically stored as hash values, not in plaintext, and are meant to be one-way hashes, meaning you can’t apply an algorithm to break them. Password lists give you a starting point for guessing passwords; in addition, you can try words related to a suspect’s profession and hobbies. Passwords are sometimes written to a temporary file or\n\nto a suspect’s profession and hobbies. Passwords are sometimes written to a temporary file or system file, such as Pagefile.sys, so examining these files is a useful technique, too. OSForensics, like many forensics tools, has a built-in password cracker. First, it attempts to retrieve browser and OS passwords, especially if you’re examining a live system. Next, it generates rainbow tables (files containing password hash values; explained in Chapter 9) and compares hash values to see whether it can find a match with the password. If it fails, the next step is to run a brute-force attack The process of trying every combination of characters—letters, numbers, and special characters typically found on a keyboard—to find a matching password or passphrase value for an encrypted file. on the\n\nfound on a keyboard—to find a matching password or passphrase value for an encrypted file. on the encrypted file. OSForensics, for example, attempts to recover Windows logon passwords and has additional features, such as recovering browser passwords. With the proliferation of mobile devices, the ability to access passwords depends on how secure users’ passphrases are. After you get into a smartphone, most apps open automatically.\n\nAfter finding the evidence, the next task is to bookmark or tag it so that you can refer to it later when needed. Many forensics tools use bookmarks to insert digital evidence into a report generator, which produces a technical report in HTML or RTF format of the examination’s findings. When the report generator is started, bookmarks are loaded into the report.\n\nExtraction",
+                      "slides": [
+                        {
+                          "seq_id": 9.1,
+                          "llm_generated_content": {
+                            "title": "Extraction in Digital Forensics",
+                            "subtitle": "Overview of Key Functions",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Extraction is the process of pulling relevant data from an image and recovering or reconstructing data fragments.",
+                                  "It is a core function of digital forensics tools and the most challenging task in digital investigations.",
+                                  "Key subfunctions include: Data viewing, Keyword searching, Decompressing, Carving, Decrypting, Bookmarking or tagging.",
+                                  "Mobile devices add complexity due to the volume of data (call records, URLs, GPS, SMS, etc.)",
+                                  "Tools like OSForensics and EnCase support various file formats and extraction methods."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 9.2,
+                          "llm_generated_content": {
+                            "title": "Extraction",
+                            "subtitle": "Key Functions and Techniques",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Data Viewing: Tools display logical drive structures, allocated file data, and unallocated disk areas for analysis.",
+                                  "Keyword Searching: Speeds up analysis by searching for relevant terms, though poor keyword selection can generate excessive data.",
+                                  "Decompression/Compression: Tools handle compressed files using algorithms like Lempel-Ziv for Windows files.",
+                                  "Carving: Reconstructs deleted files by locating file headers, common in both North America (carving) and Europe (salvaging).",
+                                  "Decryption: Analyzes encrypted files, using password recovery tools with dictionary attacks, rainbow tables, and brute-force methods.",
+                                  "Bookmarking/Tagging: Marks evidence for later reference in reports generated by forensic tools."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 9.3,
+                          "llm_generated_content": {
+                            "title": "Extraction",
+                            "subtitle": "Advanced Techniques and Tools",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "Carving: Reconstructing deleted files by locating file headers (commonly called 'carving' in North America and 'salvaging' in Europe).",
+                                  "Tools like OSForensics and X-Ways Forensics support built-in carving functions for efficient data recovery.",
+                                  "Specialized tools such as Simple Carver Suite and DataLifter are designed for carving specific data types from unallocated disk space.",
+                                  "DataLifter allows adding custom header values for enhanced carving capabilities.",
+                                  "Compression/Decompression: Forensics tools use algorithms like Lempel-Ziv (Lz32.dll) to uncompress files, with support for various OS-specific formats.",
+                                  "Encryption and Decryption: Tools like OSForensics include password crackers and rainbow table generation for password recovery. Brute-force attacks are used when passwords are not found through dictionary attacks.",
+                                  "Password Recovery Techniques: Tools examine temporary files (e.g., Pagefile.sys) and use built-in password crackers to recover hashes and passwords, including browser and system passwords."
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Reconstruction",
+                      "toc_id": 241,
+                      "chunk_count": 66,
+                      "total_chunks_in_branch": 66,
+                      "budget_slides_content": 7,
+                      "direct_slides_content": 7,
+                      "total_slides_in_branch": 7,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 21,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 21
+                      },
+                      "children": [],
+                      "seq_id": 10,
+                      "chunks_sorted": [
+                        3177,
+                        3236,
+                        3237,
+                        3238,
+                        3239,
+                        3240,
+                        3241,
+                        3242,
+                        3243,
+                        3244,
+                        3245,
+                        3246,
+                        3247,
+                        3411,
+                        3412,
+                        3413,
+                        3414,
+                        3415,
+                        3416,
+                        3417,
+                        3418,
+                        3419,
+                        3420,
+                        3421,
+                        3422,
+                        3423,
+                        3424,
+                        3425,
+                        3426,
+                        3427,
+                        3428,
+                        3429,
+                        3430,
+                        3431,
+                        3432,
+                        3433,
+                        3434,
+                        3435,
+                        3436,
+                        3437,
+                        3438,
+                        3439,
+                        3440,
+                        3441,
+                        3442,
+                        3443,
+                        3444,
+                        3445,
+                        3446,
+                        3447,
+                        3448,
+                        3449,
+                        3450,
+                        3451,
+                        3452,
+                        3453,
+                        3454,
+                        3455,
+                        3456,
+                        3457,
+                        3458,
+                        3459,
+                        3460,
+                        3461,
+                        3462,
+                        3463
+                      ],
+                      "content": "Reconstruction\n\nReconstruction\n\nThe purpose of having a reconstruction The process of rebuilding data files; one of the required functions of digital forensics tools. function in a forensics tool is to re-create a suspect drive to show what happened during a crime or an incident. Another reason for duplicating a suspect drive is to create a copy for other digital investigators, who might need a fully functional copy of the drive so that they can perform their own acquisition, test, and analysis of the evidence. Reconstruction is also done if a drive has been compromised by malware or a suspect’s actions. The following are methods of reconstruction:\n\nDisk-to-disk copy\n\nPartition-to-partition copy\n\nImage-to-disk copy\n\nImage-to-partition copy\n\nDisk-to-image copy\n\nRebuilding files from data runs and carving\n\nThere are several ways to re-create an image of a suspect drive. A decade ago, the ideal method was using the same make and model disk as the suspect disk, as discussed in Chapter 3, but disk-to-disk copies are rarely used now. (A partition-to-partition copy is very similar, but you use partitions instead of disks.) Typically, you copy an image to another location, such as a partition, a physical disk, or a virtual machine (covered in Chapter 10). The simplest method of duplicating a drive is using a tool that makes a direct disk-to-image copy from the suspect disk to the target location. Many tools can perform this task. One free tool is the Linux dd command, but it has a major disadvantage: It produces a flat, uncompressed file that’s the same size as the source drive.\n\nSome tools have proprietary formats that can be restored only by the same application that created them. For example, a ProDiscover image (.eve format) can be restored only by using ProDiscover. Most tools, however, can convert files to the .E01 or .001 format so that you can use files in a variety of tools to take advantage of their different strengths.\n\nForensics analysis is often complicated by time-critical cases, such as those involving kidnapping or homicides, but shadowing drives is a useful technique in these situations. It requires a hardware device, such as Voom Technologies Shadow Drive, that connects a suspect’s drive to a read-only IDE port and another drive to a read-write port that’s called a “shadow drive.” When the Voom device is connected to a computer, you can access and run applications on the suspect’s drive. All data that would normally be written to the suspect’s drive is redirected to the shadow drive (“Voom Technologies’ Shadow 3 said to provide a quick way to investigate computers without compromising evidence,” Government Security News, February 2014). This tool has been used in court so that expert witnesses\n\nGovernment Security News, February 2014). This tool has been used in court so that expert witnesses could easily show evidence on a drive and how a suspect could have used the information.\n\nReconstruction\n\nHardware acquisition tools typically have built-in software for data analysis. True or False?\n\n6.\n\nThe reconstruction function is needed for which of the following purposes? (Choose all that apply.)\n\nRe-create a suspect drive to show what happened.\n\nCreate a copy of a drive for other investigators.\n\nRecover file headers.\n\nRe-create a drive compromised by malware.\n\n7.\n\nList three subfunctions of the extraction function.\n\nData can’t be written to disk with a command-line tool. True or False?\n\n9.\n\nHash values are used for which of the following purposes? (Choose all that apply.)\n\nDetermining file size\n\nFiltering known good files from potentially suspicious data\n\nReconstructing file fragments\n\nValidating that the original data hasn’t changed\n\nIn testing tools, the term “reproducible results” means that if you work in the same lab on the same machine, you generate the same results. True or False?\n\n11.\n\nThe verification function does which of the following?\n\nProves that a tool performs as intended\n\nCreates segmented files\n\nProves that two sets of data are identical via hash values\n\nVerifies hex editors\n\n12.\n\nWhat’s the advantage of a write-blocking device that connects to a computer through a FireWire or USB controller?\n\nBuilding a forensic workstation is more expensive than purchasing one. True or False?\n\nA live acquisition can be replicated. True or False?\n\n15.\n\nWhich of the following is true of most drive-imaging tools? (Choose all that apply.)\n\nThey perform the same function as a backup.\n\nThey ensure that the original drive doesn’t become corrupt and damage the digital evidence.\n\nThey create a copy of the original drive.\n\nThey must be run from the command line.\n\n16.\n\nThe standards for testing forensics tools are based on which criteria?\n\nU.S. Title 18\n\nASTD 1975\n\nISO 17025\n\nAll of the above\n\n17.\n\nA log report in forensics tools does which of the following?\n\nTracks file types\n\nMonitors network intrusion attempts\n\nRecords an investigator’s actions in examining a case\n\nLists known good files\n\n18.\n\nWhen validating the results of a forensic analysis, you should do which of the following? (Choose all that apply.)\n\nCalculate the hash value with two different tools.\n\nUse a different tool to compare the results of evidence you find.\n\nRepeat the steps used to obtain the digital evidence, using the same tool, and recalculate the hash value to verify the results.\n\nUse a command-line tool and then a GUI tool.\n\nThe primary hashing algorithm the NSRL project uses is SHA-1. True or False?",
+                      "slides": [
+                        {
+                          "seq_id": 10.1,
+                          "llm_generated_content": {
+                            "title": "Reconstruction in Digital Forensics",
+                            "subtitle": "Purpose and Methods",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Reconstruction is a core function in digital forensics tools, used to rebuild data files and recreate a suspect drive to investigate crimes or incidents.",
+                                  "Key purposes include:",
+                                  "  - Re-creating a suspect drive to demonstrate what occurred during an incident.",
+                                  "  - Creating a copy for other investigators to analyze evidence independently.",
+                                  "  - Rebuilding drives compromised by malware or suspect actions.",
+                                  "Common reconstruction methods include:",
+                                  "  - Disk-to-disk copy",
+                                  "  - Partition-to-partition copy",
+                                  "  - Image-to-disk copy",
+                                  "  - Image-to-partition copy",
+                                  "  - Disk-to-image copy",
+                                  "  - Rebuilding files from data runs and carving"
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 10.2,
+                          "llm_generated_content": {
+                            "title": "Reconstruction",
+                            "subtitle": "Purpose and Methods",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "The purpose of reconstruction is to rebuild data files and recreate a suspect drive to demonstrate what occurred during a crime or incident.",
+                                  "Reconstruction is also used to create copies of drives for other investigators and to recover data from compromised drives.",
+                                  "Common methods include disk-to-disk, partition-to-partition, image-to-disk, image-to-partition, and disk-to-image copies.",
+                                  "Rebuilding files from data runs and carving are additional techniques used in reconstruction."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 10.3,
+                          "llm_generated_content": {
+                            "title": "Reconstruction",
+                            "subtitle": "Methods and Tools",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Disk-to-disk copy",
+                                  "Partition-to-partition copy",
+                                  "Image-to-disk copy",
+                                  "Image-to-partition copy",
+                                  "Disk-to-image copy",
+                                  "Rebuilding files from data runs and carving"
+                                ]
+                              },
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "Disk-to-image copies are the simplest method, using tools like Linux dd command (produces flat, uncompressed files).",
+                                  "Proprietary formats (.eve) require specific tools (e.g., ProDiscover) for restoration.",
+                                  "Most tools can convert files to .E01 or .001 format for compatibility across different applications."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 10.4,
+                          "llm_generated_content": {
+                            "title": "Reconstruction",
+                            "subtitle": "Reconstruction Techniques and Tools",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Disk-to-disk copy",
+                                  "Partition-to-partition copy",
+                                  "Image-to-disk copy",
+                                  "Image-to-partition copy",
+                                  "Disk-to-image copy",
+                                  "Rebuilding files from data runs and carving"
+                                ]
+                              },
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "Disk-to-image copies are the simplest method, often using tools like Linux dd command.",
+                                  "Proprietary formats (e.g., .eve) require specific tools for restoration, but .E01/.001 formats are widely compatible.",
+                                  "Shadow drives (e.g., Voom Technologies) allow real-time access to suspect drives without altering data, used in court for evidence presentation."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 10.5,
+                          "llm_generated_content": {
+                            "title": "Reconstruction",
+                            "subtitle": "Reconstruction Techniques and Tools",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "Disk-to-disk copy",
+                                  "Partition-to-partition copy",
+                                  "Image-to-disk copy",
+                                  "Image-to-partition copy",
+                                  "Disk-to-image copy",
+                                  "Rebuilding files from data runs and carving"
+                                ]
+                              },
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "Disk-to-disk copies are rarely used now.",
+                                  "Partition-to-partition copy uses partitions instead of disks.",
+                                  "Images can be copied to partitions, physical disks, or virtual machines.",
+                                  "Tools like Linux dd command create flat, uncompressed files.",
+                                  "Proprietary formats (e.g., .eve) require specific tools for restoration.",
+                                  "Conversion to .E01 or .001 formats enables compatibility across tools."
+                                ]
+                              },
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "example",
+                                "data": [
+                                  "Voom Technologies Shadow Drive: Redirects write operations to a shadow drive for live analysis.",
+                                  "Used in court to demonstrate evidence and suspect activities."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 10.6,
+                          "llm_generated_content": {
+                            "title": "Reconstruction",
+                            "subtitle": "Reconstruction Techniques and Tools",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Disk-to-disk copy",
+                                  "Partition-to-partition copy",
+                                  "Image-to-disk copy",
+                                  "Image-to-partition copy",
+                                  "Disk-to-image copy",
+                                  "Rebuilding files from data runs and carving"
+                                ]
+                              },
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "Disk-to-disk copies are rarely used now, but partition-to-partition copies are similar, using partitions instead of disks.",
+                                  "Tools like Linux dd command can create direct disk-to-image copies, but produce flat, uncompressed files.",
+                                  "Proprietary formats like .eve can only be restored by specific applications, but most tools can convert to .E01 or .001 formats for compatibility.",
+                                  "Shadow drives (e.g., Voom Technologies) redirect data writes to a read-only drive for investigation without compromising evidence."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 10.7,
+                          "llm_generated_content": {
+                            "title": "Reconstruction",
+                            "subtitle": "Verification and Standards",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "Verification function proves that two sets of data are identical via hash values.",
+                                  "Hash values are used to validate that the original data hasn’t changed.",
+                                  "Hash values filter known good files from potentially suspicious data.",
+                                  "The NSRL project uses SHA-1 as the primary hashing algorithm.",
+                                  "Testing standards include U.S. Title 18, ASTD 1975, and ISO 17025.",
+                                  "Reproducible results mean consistent outcomes when using the same tool in the same lab.",
+                                  "Verification ensures that a tool performs as intended."
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Reporting",
+                      "toc_id": 242,
+                      "chunk_count": 23,
+                      "total_chunks_in_branch": 23,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "children": [],
+                      "seq_id": 11,
+                      "chunks_sorted": [
+                        3178,
+                        3179,
+                        3248,
+                        3249,
+                        3250,
+                        3251,
+                        3252,
+                        3253,
+                        3254,
+                        3255,
+                        3256,
+                        9731,
+                        9732,
+                        9733,
+                        9734,
+                        9735,
+                        9736,
+                        9737,
+                        9738,
+                        9739,
+                        9740,
+                        9741,
+                        9742
+                      ],
+                      "content": "Reporting\n\nNIST’s CFTT and other groups include additional functions, such as data acquisition, data extraction from mobile devices, file reconstruction, and string searching, that aren’t included in these guidelines (“Verification of Digital Forensics Tools,” Jim Lyle, May 2010, Montana Supreme Court Spring Training Conference). In the following sections, you learn how these functions and subfunctions apply to digital investigations.\n\nReporting\n\nTo perform a forensics disk analysis and examination, you need to create a report. Before Windows forensics tools were available, this process required copying data from a suspect drive and extracting the digital evidence manually. The investigator then copied the evidence to a separate program, such as a word processor, to create a report. File data that couldn’t be read in a word processor—databases, spreadsheets, and graphics, for example—made it difficult to insert nonprintable characters, such as binary data, into a report. Typically, these reports weren’t stored electronically because investigators had to collect printouts from several different applications to consolidate everything into one large paper report.\n\nNewer forensics tools can produce electronic reports in a variety of formats, such as word-processing documents, HTML Web pages, and Acrobat PDF files. The following are subfunctions of the reporting function:\n\nBookmarking or tagging\n\nLog reports\n\nTimelines\n\nReport generator\n\nAs part of the validation process, often you need to document the steps you took to acquire data from a suspect drive. Many forensics tools can produce a log report that records an investigator’s activities and incorporates evidence that was bookmarked or tagged during extraction. Then a built-in report generator is used to create a report in a variety of formats. Some tools with report generators that display bookmarked evidence are EnCase, FTK, OSForensics, ILookIX, and X-Ways Forensics.\n\nYou can add a log report to your final report as documentation of the steps you took during the examination, which can be useful if repeating the examination is necessary. For a case that requires peer review, log reports confirm what activities were performed and what results were found in the original analysis and examination. Keep in mind that reports generated by forensics tools are no substitute for an investigator’s report. Investigators need to be able to explain their decisions and the output in more detail than a tool-generated report can produce.\n\nReporting\n\nWhat are the hexadecimal values for the optional unique disk ID in the MBR for the charlie-2009-12-03.001 image?\n\n00 2C 44 63 A9 EA A9 EA 00 00\n\n33 C0 8E D0 BC 00 7C FB\n\n80 01 01 00 07 FE FF FF 3F 00 00 00 DC B2 30 01\n\n33 C0 8E D0 BC 00 7C 8E\n\nWhat’s the starting offset for a drive’s second partition table?\n\n0000001B4\n\n0000001BE\n\n0000001CE\n\n0000001FF\n\nFTK Imager Lite can mount both the physical and logical drives of a forensic image. True or False?",
+                      "slides": [
+                        {
+                          "seq_id": 11.1,
+                          "llm_generated_content": {
+                            "title": "Reporting in Digital Forensics",
+                            "subtitle": "Overview of Reporting Functions",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "NIST’s CFTT and other groups include additional functions such as data acquisition, data extraction from mobile devices, file reconstruction, and string searching.",
+                                  "These functions are not included in the guidelines mentioned in 'Verification of Digital Forensics Tools' by Jim Lyle (May 2010, Montana Supreme Court Spring Training Conference).",
+                                  "Reporting functions include: bookmarking or tagging, log reports, timelines, and report generator.",
+                                  "Newer forenssics tools can produce electronic reports in formats like word-processing documents, HTML Web pages, and Acrobat PDF files."
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "seq_id": 11.2,
+                          "llm_generated_content": {
+                            "title": "Reporting",
+                            "subtitle": "Advanced Reporting Features and Tools",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "explanation",
+                                "data": [
+                                  "Modern forensics tools generate electronic reports in formats like Word, HTML, and PDF.",
+                                  "Key subfunctions include: bookmarking/tagging, log reports, timelines, and report generators.",
+                                  "Log reports document investigator activities and bookmarked evidence, used for peer review and reproducibility.",
+                                  "Report generators (e.g., EnCase, FTK, OSForenss, ILookIX, X-Ways) create structured reports.",
+                                  "Forensic tool-generated reports are supplementary; investigators must provide detailed explanations.",
+                                  "Example questions: Hex values for MBR disk ID, offset for second partition table, and FTK Imager Lite capabilities."
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "seq_id": 6,
+                  "chunks_sorted": [
+                    3171,
+                    3172,
+                    3173
+                  ],
+                  "content": "Tasks Performed by Digital Forensics Tools\n\nAll digital forensics tools, both hardware and software, perform specific functions. When you’re testing new tools, you might find it helpful to follow guidelines set up by NIST’s Computer Forensics Tool Testing (CFTT) A project sponsored by the National Institute of Standards and Technology to manage research on digital forensics tools. program, ASTM International’s (formerly the American Society of Testing and Materials) E2678 standard, and the International Organization on Computer Evidence (IOCE). In addition, ISO standard 27037 (www.iso.org/standard/44381.html) states that Digital Evidence First Responders (DEFRs) should use validated tools. The following categories of functions are meant as guidelines for evaluating digital forensics tools, with subfunctions for refining data\n\nare meant as guidelines for evaluating digital forensics tools, with subfunctions for refining data analysis and recovery and ensuring data quality:"
+                },
+                {
+                  "title": "Tool Comparisons",
+                  "toc_id": 243,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 12,
+                  "chunks_sorted": [
+                    3257,
+                    3258,
+                    3259,
+                    3260,
+                    3261,
+                    3262
+                  ],
+                  "content": "Tool Comparisons\n\nTo help determine which forensics tool to purchase, a comparison table of functions, subfunctions, and vendor products is useful. Cross-referencing functions and subfunctions with vendor products makes it easier to identify the forensics tool that best meets your needs. Table 6-1 is an example of how to compare forensics vendors’ tools. Your needs might differ from the functions and subfunctions listed in this table. When developing your own table, add other functions and subfunctions you think are necessary to determine which tools you should acquire for an investigation.\n\nTable 6-1. Comparison of Forensics Tool Functions\n\nFunction Magnet\nForensics AXIOM, demo version OSForensics,\ndemo version AccessData\nFTK Guidance\n\ndemo version AccessData\nFTK Guidance\nSoftware EnCase Acquisition Physical data copy ✓ ✓ ✓ ✓ Logical data copy ✓ ✓ ✓ Data acquisition formats ✓ ✓ ✓ ✓ Command-line processes ✓ GUI processes ✓ ✓ ✓ ✓ Remote acquisition ✓ ✓ ✓ Validation and verification Hashing ✓ ✓ ✓ ✓ Verification ✓ ✓ ✓ ✓ Filtering ✓ ✓ ✓ ✓ Analyzing file headers ✓ ✓ ✓ ✓ Extraction Data viewing ✓ ✓ ✓ ✓ Keyword searching ✓ ✓ ✓ ✓ Decompressing ✓ ✓ ✓ Carving ✓ ✓ ✓ ✓ Decrypting ✓ ✓ ✓ Bookmarking ✓ ✓ ✓ ✓ Reconstruction Disk-to-disk copy ✓ ✓ ✓ ✓ Partition-to-partition copy ✓ ✓ ✓ ✓ Image-to-disk copy ✓ ✓ ✓ ✓ Image-to-partition copy ✓ ✓ ✓ ✓ Disk-to-image copy ✓ ✓ ✓ ✓ Rebuilding files ✓ ✓ ✓ ✓ Reporting Bookmarking/tagging ✓ ✓ ✓ ✓ Log reports ✓ ✓ ✓ ✓ Timeline ✓ ✓ ✓ ✓ Report generator ✓ ✓ ✓ ✓ Automation and other\n\nfeatures Scripting language ✓ Mount virtual machines ✓ ✓ ✓ E-discovery ✓ ✓ ✓",
+                  "slides": [
+                    {
+                      "seq_id": 12.1,
+                      "llm_generated_content": {
+                        "title": "Tool Comparisons",
+                        "subtitle": "Creating a Comparison Table for Forensics Tools",
+                        "objects": [
+                          {
+                            "content_type": "table",
+                            "content_purpose": "comparison",
+                            "data": {
+                              "headers": [
+                                "Function",
+                                "Magnet Forensics",
+                                "AXIOM (demo)",
+                                "OSForensics (demo)",
+                                "AccessData FTK Guidance (demo)",
+                                "EnCase"
+                              ],
+                              "rows": [
+                                [
+                                  "Software EnCase Acquisition Physical data copy",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Logical data copy",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Data acquisition formats",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Command-line processes",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "GUI processes",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Remote acquisition",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Validation and verification",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Hashing",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Verification",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Filtering",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Analyzing file headers",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Extraction",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Data viewing",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Keyword searching",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Decompressing",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Carving",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Decrypting",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Bookmarking",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Reconstruction",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Disk-to-disk copy",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Partition-to-partition copy",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Image-to-disk copy",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Image-to-partition copy",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Disk-to-image copy",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Rebuilding files",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Reporting",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Bookmarking/tagging",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Log reports",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Timeline",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Report generator",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Automation and other features",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Scripting language",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "Mount virtual machines",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ],
+                                [
+                                  "E-discovery",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓",
+                                  "✓"
+                                ]
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Other Considerations for Tools",
+                  "toc_id": 244,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "children": [],
+                  "seq_id": 13,
+                  "chunks_sorted": [
+                    3263,
+                    3264,
+                    3265,
+                    3266
+                  ],
+                  "content": "Other Considerations for Tools\n\nAs part of the business planning for your lab, you should determine which tools offer the most flexibility, reliability, and future expandability. The software tools you select should be compatible with the next generation of OSs; for example, Windows 7 and later added features for compatibility with mobile devices. As an investigator, it’s your responsibility to find information on changes in new hardware or software releases and changes planned for the next release. Because OS vendors don’t always supply adequate information about future file system upgrades, you must research and prepare for these changes and develop resources for finding new specifications if the vendor fails to provide them. For example, when NTFS was introduced with Windows NT, forensics software vendors revised\n\nthem. For example, when NTFS was introduced with Windows NT, forensics software vendors revised their products for this new file system, but addressing the file system changes took some time. Therefore, investigators had to look for alternatives to getting the data they needed, such as consulting Microsoft resource kits for Windows NT. Similar compatibility issues have occurred as people have moved from Windows 8.1 to Windows 10 and Windows Server 2012 to 2016.\n\nAnother consideration when maintaining a forensics lab is creating a software library containing older versions of forensics utilities, OSs, and other programs. When purchasing newer and more versatile tools, you should also ensure that your lab maintains older versions of software and OSs. If a new software version fixes one bug but introduces another, you can use the previous version to overcome problems caused by the new bug."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Evaluating Digital Forensics Tool Needs (Interactive Activity)",
+                "toc_id": 233,
+                "slides_allocated": 1,
+                "seq_id": 14,
+                "llm_generated_content": {
+                  "title": "Let's Apply This!",
+                  "subtitle": "Knowledge Check: Evaluating Digital Forenss Tool Needs",
+                  "objects": [
+                    {
+                      "content_type": "multiple_choice_question",
+                      "content_purpose": "knowledge_check",
+                      "data": {
+                        "question_text": "When evaluating digital forensics tools, which of the following is a key consideration for ensuring compatibility with different file systems?",
+                        "options": [
+                          {
+                            "label": "A",
+                            "text": "The tool's ability to run on multiple operating systems"
+                          },
+                          {
+                            "label": "B",
+                            "text": "The tool's support for scripting languages like Python"
+                          },
+                          {
+                            "label": "C",
+                            "text": "The tool's capability to analyze multiple file systems such as FAT, NTFS, and Ext4"
+                          },
+                          {
+                            "label": "D",
+                            "text": "The vendor's reputation for providing technical support"
+                          }
+                        ],
+                        "correct_answer": {
+                          "label": "C",
+                          "explanation": "The ability to analyze multiple file systems is crucial for compatibility with various storage formats, ensuring the tool can handle different types of data sources commonly encountered in digital investigations."
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "seq_id": 2,
+              "chunks_sorted": [
+                3150,
+                3151,
+                3152,
+                3153,
+                3154,
+                3155,
+                3156,
+                3157,
+                3158,
+                3159
+              ],
+              "content": "Evaluating Digital Forensics Tool Needs\n\nAs described in Chapter 2, you need to develop a business plan to justify the acquisition of digital forensics hardware and software. When researching options, consider open-source tools, which sometimes include technical support. The goal is to find the best value for as many features as possible. Some questions to ask when evaluating tools include the following:\n\nOn which OS does the forensics tool run? Does the tool run on multiple OSs?\n\nIs the tool versatile? For example, does it work in both Windows and Linux? Does it work in macOS?\n\nCan the tool analyze more than one file system, such as FAT, NTFS, and Ext4?\n\nCan a scripting language be used with the tool to automate repetitive functions and tasks?\n\nDoes the tool have any automated features that can help reduce the time needed to analyze data?\n\nWhat’s the vendor’s reputation for providing product support? For open-source tools, how good are the support forums?\n\nAs you learn more about digital investigations, you’ll have more questions about tools for conducting these investigations. When you search for tools, keep in mind what OSs and file types you’ll be analyzing. For example, if you need to analyze Microsoft Access or SQL Server databases, look for a product designed to read these files. If you’re analyzing e-mail messages, look for a forensics tool that specializes in reading e-mail content.\n\nWhen you’re selecting tools for your lab, keep an open mind, and compare platforms and applications for different tasks. Although many investigators are most comfortable using Windows tools, check into other options, such as Linux and macOS platforms (covered in Chapter 7).",
+              "slides": [
+                {
+                  "seq_id": 2.1,
+                  "llm_generated_content": {
+                    "title": "Evaluating Digital Forensics Tool Needs",
+                    "subtitle": "Key Considerations for Tool Selection",
+                    "objects": [
+                      {
+                        "content_type": "bullet_points",
+                        "content_purpose": "explanation",
+                        "data": [
+                          "What operating systems does the tool support? (e.g., Windows, Linux, macOS)",
+                          "Does the tool support multiple file systems (e.g., FAT, NTFS, Ext4)?",
+                          "Can the tool be automated using scripting languages?",
+                          "Does the tool offer automated analysis features?",
+                          "What is the vendor's reputation for support? (including open-source community forums)",
+                          "Consider specific file types (e.g., Microsoft Access, SQL Server, email formats) when selecting tools",
+                          "Compare different platforms and applications for various tasks",
+                          "Evaluate both Windows and non-Windows (Linux/macOS) options"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Digital Forensics Software Tools",
+              "toc_id": 245,
+              "chunk_count": 4,
+              "total_chunks_in_branch": 41,
+              "budget_slides_content": 4,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "children": [
+                {
+                  "title": "Command-Line Forensics Tools",
+                  "toc_id": 246,
+                  "chunk_count": 14,
+                  "total_chunks_in_branch": 14,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "children": [],
+                  "seq_id": 16,
+                  "chunks_sorted": [
+                    3271,
+                    3272,
+                    3273,
+                    3274,
+                    3275,
+                    3276,
+                    3277,
+                    3278,
+                    3279,
+                    3280,
+                    3281,
+                    3282,
+                    3283,
+                    3284
+                  ],
+                  "content": "Command-Line Forensics Tools\n\nAs mentioned in Chapter 1, computers used several OSs before Windows and MS-DOS dominated the market. During this time, digital forensics wasn’t a major concern. After people started using PCs, however, they figured out how to use them for illegal and destructive purposes and to commit crimes and civil infractions with them. Software developers began releasing forensics tools to help private-sector and public-sector investigators examine PCs. The first tools that analyzed and extracted data from floppy disks and hard disks were MS-DOS tools for IBM PC file systems.\n\nOne of the first MS-DOS tools used for digital investigations was Norton DiskEdit. This tool used manual processes that required investigators to spend considerable time on a typical 500 MB drive. Eventually, programs designed for digital forensics were developed for DOS, Windows, Apple, NetWare, and UNIX systems. Some of these early programs could extract data from slack and free disk space; others were capable only of retrieving deleted files. Current programs are more powerful and can search for specific words or characters, import a keyword list to search, calculate hash values, recover deleted items, conduct physical and logical analyses, and more.\n\nOne advantage of using command-line tools for an investigation is that they require few system resources because they’re designed to run in minimal configurations. In fact, most tools fit on bootable media (USB drives, CDs, and DVDs). Conducting an initial inquiry or a complete investigation with bootable media can save time and effort. Most tools also produce a text report that fits on a USB drive or other removable media.\n\nSome command-line forensics tools are created specifically for Windows command-line interface (CLI) platforms; others are created for macOS and Linux. Because there are many different versions of UNIX and Linux, these OSs are often referred to as “Linux platforms.” In Chapter 5, you were introduced to using some command-line tools in Linux, such as the dd and dcfldd commands. For Windows platforms, a number of companies, such as NTI, Digital Intelligence, Maresware, DataLifter, and ByteBack, are recognized for their work in command-line forensics tools.\n\nSome tools that are readily available in the command line are often overlooked. For example, in Windows 2000 and later, the dir command shows you the file owner if you have multiple users on the system or network. Try it by following these steps:\n\n1.\n\nOpen a command prompt window.\n\n2.\n\nAt the command prompt, type cd / and press Enter to take you to the root directory. Create a work folder for this chapter by typing md Work \\Chap06\\Chapter (replacing Work with the name of your work folder) and pressing Enter.\n\n3.\n\nMake sure you’re at the root directory, and type dir /q > C:\\ Work \\Chap06\\Chapter\\Fileowner.txt and press Enter.\n\n4.\n\nIn any text editor, open Fileowner.txt to see the results. You should see your file structure and whether the files were generated by the system or by a user. When you’re finished, exit the text editor and close the command prompt window.",
+                  "slides": [
+                    {
+                      "seq_id": 16.1,
+                      "llm_generated_content": {
+                        "title": "Command-Line Forensics Tools",
+                        "subtitle": "Historical Context and Early Tools",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Early digital forensics tools emerged with the rise of PCs and the need to investigate illegal activities.",
+                              "First tools were MS-DOS-based, targeting IBM PC file systems and floppy/hard disk analysis.",
+                              "Norton DiskEdit was one of the first MS-DOS tools for digital investigations, requiring manual processes.",
+                              "Early tools could extract data from slack and free disk space or recover deleted files.",
+                              "Modern tools offer advanced features like keyword searches, hash calculations, and physical/logical analysis."
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "seq_id": 16.2,
+                      "llm_generated_content": {
+                        "title": "Command-Line Forensics Tools",
+                        "subtitle": "Advantages and Tool Availability",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Advantages of command-line tools:",
+                              "  - Low system resource requirements",
+                              "  - Compatibility with minimal configurations",
+                              "  - Ability to run from bootable media (USB, CD, DVD)",
+                              "  - Generate text reports suitable for removable media",
+                              "Tool availability across platforms:",
+                              "  - Windows CLI: NTI, Digital Intelligence, Maresware, DataLifter, ByteBack",
+                              "  - macOS/Linux: Command-line tools like dd, dcfldd",
+                              "  - Note: UNIX/Linux systems are often referred to as Linux platforms"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Linux Forensics Tools",
+                  "toc_id": 247,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 19,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "children": [
+                    {
+                      "title": "Smart",
+                      "toc_id": 248,
+                      "chunk_count": 4,
+                      "total_chunks_in_branch": 4,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "children": [],
+                      "seq_id": 18,
+                      "chunks_sorted": [
+                        3289,
+                        3290,
+                        3291,
+                        3292
+                      ],
+                      "content": "Smart\n\nSMART is designed to be installed on numerous Linux versions, including Gentoo, Fedora, SUSE, Debian, Knoppix, Ubuntu, and Slackware. You can analyze a variety of file systems with SMART; for a list of file systems or to download an evaluation ISO image for SMART and SMART Linux, go to www.asrdata.com/forensic-software/software-download/.\n\nSMART includes several plug-in utilities. This modular approach makes it possible to upgrade SMART components easily and quickly. SMART can also take advantage of multithreading capabilities in OSs and hardware, a feature lacking in other forensics utilities. This tool is one of the few that can mount different file systems, such as journaling file systems, in a read-only format.\n\nAnother useful option in SMART is the hex viewer, which color-codes hex values to make it easier to see where a file begins and ends. SMART also offers a reporting feature. Everything you do during your investigation with SMART is logged, so you can select what you want to include in a report, such as bookmarks.",
+                      "slides": [
+                        {
+                          "seq_id": 18.1,
+                          "llm_generated_content": {
+                            "title": "Smart",
+                            "subtitle": "Overview",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "SMART is compatible with multiple Linux distributions including Gentoo, Fedora, SUSE, Debian, Knoppix, Ubuntu, and Slackware.",
+                                  "Supports analysis of various file systems and provides an evaluation ISO download link at www.asrdata.com/forensic-software/software-download/",
+                                  "Features modular plug-in utilities for easy component upgrades and multithreading capabilities for enhanced performance.",
+                                  "Can mount different file systems, such as journaling file systems, in read-only mode.",
+                                  "Includes a color-coded hex viewer for easier file identification and a reporting feature that logs all investigation activities."
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Helix 3",
+                      "toc_id": 249,
+                      "chunk_count": 3,
+                      "total_chunks_in_branch": 3,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 19,
+                      "chunks_sorted": [
+                        3293,
+                        3294,
+                        3295
+                      ],
+                      "content": "Helix 3\n\nOne of the easiest suites to use is Helix because of its user interface. Although Helix is no longer a free package, you can go to www.e-fense.com/products.php to learn more about it. What’s unique about Helix is that you can load it on a live Windows system, and it loads as a bootable Linux OS from a cold boot. Its Windows component is used for live acquisitions. Be aware, however, that some international courts haven’t accepted live acquisitions as a valid forensics practice.\n\nDuring private-sector investigations, often you need to retrieve RAM and other data, such as the suspect’s user profile, from a workstation or server that can’t be seized or turned off. This data is extracted while the system is running and captured in its state at the time of extraction. Make sure to keep a journal to record what you’re doing, however. To do a live acquisition, insert the Helix DVD into the suspect’s machine."
+                    },
+                    {
+                      "title": "Kali Linux",
+                      "toc_id": 250,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 20,
+                      "chunks_sorted": [
+                        3296,
+                        3297
+                      ],
+                      "content": "Kali Linux\n\nKali Linux, formerly known as BackTrack, is another Linux Live product used by many security professionals and forensics investigators. It includes a variety of tools and has an easy-to-use KDE interface. You can download the ISO image from www.kali.org. Kali includes several tools, such as Autopsy and Sleuth Kit (discussed next), ophcrack, dcfldd, MemFetch, and MBoxGrep."
+                    },
+                    {
+                      "title": "Autopsy and Sleuth Kit",
+                      "toc_id": 251,
+                      "chunk_count": 4,
+                      "total_chunks_in_branch": 4,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "children": [],
+                      "seq_id": 21,
+                      "chunks_sorted": [
+                        3298,
+                        3299,
+                        3300,
+                        3301
+                      ],
+                      "content": "Autopsy and Sleuth Kit\n\nSleuth Kit was designed as a Linux forensics tool, and Autopsy was the browser interface for accessing Sleuth Kit’s command-line tools. The Linux version hasn’t been updated in several years, but a version for Windows is available and has the most current updates. Chapter 7 explains how to use the Linux version, but if you’re accessing these tools from Kali, for example, shut down your Windows computer with the Kali disc in the CD/DVD drive or with a Kali installation on a USB drive, making sure your system is set to boot from the CD/DVD or USB drive before the hard drive. Then do a hard boot to the computer. In the options that are displayed, select Expert Mode, which is a forensically sound mode. If you’re booting from a laptop, you might have display issues. You can click Scan to have\n\nmode. If you’re booting from a laptop, you might have display issues. You can click Scan to have Kali find the correct settings. (If Kali fails to find these settings, experiment until you find a setting that works.) After the correct display setting is applied, a GUI is displayed. If prompted, specify whether to load SCSI modules or additional modules from a floppy disk.\n\nOn your desktop, you should see what drives have been detected. For example, you see /dev/sda1 and /dev/sda2 displayed at the upper left. If you click the Kali button, which is similar to the Start button in Windows, you see the GUI selection. When you select Forensic Tools, the Autopsy option is displayed. From here, you can open an existing case or start a new case. For more information on these tools, visit www.sleuthkit.org.",
+                      "slides": [
+                        {
+                          "seq_id": 21.1,
+                          "llm_generated_content": {
+                            "title": "Autopsy and Sleuth Kit",
+                            "subtitle": "Overview and Setup",
+                            "objects": [
+                              {
+                                "content_type": "bullet_points",
+                                "content_purpose": "description",
+                                "data": [
+                                  "Sleuth Kit is a Linux forensics tool with a Windows version available for current updates.",
+                                  "Autopsy provides a browser interface for Sleuth Kit's command-line tools.",
+                                  "To use with Kali Linux: Boot from CD/DVD or USB, select Expert Mode for forensically sound operations.",
+                                  "Address potential display issues by scanning for correct settings or manual experimentation.",
+                                  "After setup, access drives like /dev/sda1 and /dev/sda2, and launch Autopsy from Forensic Tools menu."
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Forcepoint Threat Protection",
+                      "toc_id": 252,
+                      "chunk_count": 2,
+                      "total_chunks_in_branch": 2,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 22,
+                      "chunks_sorted": [
+                        3302,
+                        3303
+                      ],
+                      "content": "Forcepoint Threat Protection\n\nForcepoint Threat Protection, formerly known as Second Look, is a Linux memory analysis tool that was developed under a grant from the Air Force Research Lab for Pikewerks Corporation. It was designed to do both onsite and remote (enterprise) memory acquisitions to determine whether malware is present. You can find this tool at www.forcepoint.com/product/cloud-security/forcepoint-threat-protection-for-linux (hosted by Raytheon). Products such as this one show that the fields of digital forensics and network security are merging."
+                    }
+                  ],
+                  "seq_id": 17,
+                  "chunks_sorted": [
+                    3285,
+                    3286,
+                    3287,
+                    3288
+                  ],
+                  "content": "Linux Forensics Tools\n\nAlthough UNIX has been around for many decades, it’s been mostly replaced by Linux; however, you might still encounter systems running UNIX. Linux platforms have become more common, and the GUIs that are readily available with them make them increasingly popular with home and business users. Because most are free, they’re widely used in developing and emerging nations. This newfound popularity and the staggering number of versions give investigators more challenges, such as learning the Linux command line and investigating the Linux environment. In Chapter 7, you learn more about several Linux tools for forensics analysis, such as Kali Linux and DEFT.\n\nNote\n\nThis book isn’t geared toward the Linux platform for forensics analysis, but using a Linux tool for the processes described in this book works as well as on a Microsoft platform. Also, keep in mind that Linux tools work well on Windows systems, as you see in Chapter 7."
+                },
+                {
+                  "title": "Other GUI Forensics Tools",
+                  "toc_id": 253,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "children": [],
+                  "seq_id": 23,
+                  "chunks_sorted": [
+                    3304,
+                    3305,
+                    3306,
+                    3307
+                  ],
+                  "content": "Other GUI Forensics Tools\n\nSeveral software vendors have introduced forensics tools that work in Windows. Because GUI forensics tools don’t require the same understanding of the Windows CLI and file systems that command-line tools do, they can simplify digital forensics investigations. These GUI tools have also simplified training for beginning examiners; however, you should continue to learn about and use command-line tools because some GUI tools might miss critical evidence.\n\nMost GUI tools are put together as suites of tools. For example, the largest GUI tool vendors—AccessData and Guidance Software—offer tools that perform most of the tasks discussed in this chapter. Another example is Magnet AXIOM, which is designed to work with FTK, EnCase, X-Ways Forensics, and NUIX and has hundreds of Samsung mobile frameworks to assist in acquiring mobile devices. It also offers features for working with IoT devices, social media, and cloud services. (You have a chance to see how these features work in Chapter 12.) As with all software, each suite has its strengths and weaknesses.\n\nGUI tools have several advantages, such as ease of use, the capability to perform multiple tasks, and no requirement to learn older OSs. Their disadvantages range from excessive resource requirements (needing large amounts of RAM, for example) and producing inconsistent results because of the type of OS used. Another concern with using GUI tools is that they create investigators’ dependence on using only one tool. In some situations, GUI tools don’t work and a command-line tool is required, so it’s essential for investigators to be familiar with more than one type of tool."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Digital Forensics Software Tools (Interactive Activity)",
+                "toc_id": 245,
+                "slides_allocated": 1,
+                "seq_id": 24,
+                "llm_generated_content": {
+                  "title": "Let's Apply This!",
+                  "subtitle": "Knowledge Check: Digital Forensics Software Tools",
+                  "objects": [
+                    {
+                      "content_type": "multiple_choice_question",
+                      "content_purpose": "knowledge_check",
+                      "data": {
+                        "question_text": "Which of the following statements accurately reflects the information provided about using digital forensics tools on macOS?",
+                        "options": [
+                          {
+                            "label": "A",
+                            "text": "macOS users cannot use any digital forensics tools without installing Windows."
+                          },
+                          {
+                            "label": "B",
+                            "text": "macOS users can use most forensics tools by installing Windows on their Apple machines."
+                          },
+                          {
+                            "label": "C",
+                            "text": "macOS users must exclusively use command-line tools for forensics analysis."
+                          },
+                          {
+                            "label": "D",
+                            "text": "macOS users are advised to avoid using Windows for forensics tasks due to compatibility issues."
+                          }
+                        ],
+                        "correct_answer": {
+                          "label": "B",
+                          "explanation": "The text states that installing Windows on Apple machines is fairly easy, allowing most forensics tools to be used on macOS."
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "seq_id": 15,
+              "chunks_sorted": [
+                3267,
+                3268,
+                3269,
+                3270
+              ],
+              "content": "Digital Forensics Software Tools\n\nWhether you use a suite of tools or a task-specific tool, you have the option of selecting one that enables you to analyze digital evidence through the command line or in a GUI. The following sections explore some options for command-line and GUI tools in both Windows and Linux.\n\nNote\n\nMacintosh has made a comeback, and more people are using it. Installing Windows on Apple machines is fairly easy, so you can use most forensics tools in macOS."
+            },
+            {
+              "title": "Digital Forensics Hardware Tools",
+              "toc_id": 254,
+              "chunk_count": 3,
+              "total_chunks_in_branch": 38,
+              "budget_slides_content": 4,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 5,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 17
+              },
+              "children": [
+                {
+                  "title": "Forensic Workstations",
+                  "toc_id": 255,
+                  "chunk_count": 7,
+                  "total_chunks_in_branch": 13,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [
+                    {
+                      "title": "Building Your Own Workstation",
+                      "toc_id": 256,
+                      "chunk_count": 6,
+                      "total_chunks_in_branch": 6,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 27,
+                      "chunks_sorted": [
+                        3318,
+                        3319,
+                        3320,
+                        3321,
+                        3322,
+                        3323
+                      ],
+                      "content": "Building Your Own Workstation\n\nTo decide whether you want to build your own workstation, first ask “How much do I have to spend?” Building a forensic workstation isn’t as difficult as it sounds but can quickly become expensive if you aren’t careful. If you have the time and skill to build your own forensic workstation, you can customize it to your needs and save money, although you might have trouble finding support for problems that develop. For example, peripheral devices might conflict with one another, or components might fail. If you build your own forensic workstation, you should be able to support the hardware. You also need to identify what you intend to analyze. If you’re analyzing SPARC disks from workstations in a company network, for example, you need to include a SPARC drive with a write-protector on your\n\nin a company network, for example, you need to include a SPARC drive with a write-protector on your forensic workstation. (SPARC disks are commonly used with Sun Solaris systems.)\n\nIf you decide that building a forensic workstation is beyond your skills, some vendors still offer workstations designed for digital forensics, such as the F.R.E.D. unit from Digital Intelligence or hardware mounts from ForensicPC that convert a standard server or PC into a forensic workstation. Having a vendor-supplied workstation has its advantages. If you aren’t skilled in hardware maintenance and repair, having vendor support can save you time and frustration when you have problems. Of course, you can always mix and match components to get the capabilities you need for your forensic workstation.\n\nNote\n\nIf you don’t have the skills to build and support a PC, you might want to consider taking an A+ certification course."
+                    }
+                  ],
+                  "seq_id": 26,
+                  "chunks_sorted": [
+                    3311,
+                    3312,
+                    3313,
+                    3314,
+                    3315,
+                    3316,
+                    3317
+                  ],
+                  "content": "Forensic Workstations\n\nMany hardware vendors offer a wide range of forensic workstations that you can tailor to meet your investigation needs. The more diverse your investigation environment, the more options you need. In general, forensic workstations can be divided into the following categories:\n\nStationary workstation—A tower with several bays and many peripheral devices\n\nPortable workstation—A laptop computer with almost as many bays and peripherals as a stationary workstation\n\nLightweight workstation—Usually a laptop computer built into a carrying case with a small selection of peripheral options\n\nWhen considering options to add to a basic workstation, keep in mind that PCs have limitations on how many peripherals they can handle. The more peripherals you add, the more potential problems you might have, especially if you’re using an older version of Windows. You must learn to balance what you actually need with what your system can handle. In addition, remember that RAM and storage need updating as technology advances.\n\nIf you’re operating a digital forensics lab for a police agency, you need as many options as possible to handle any investigation. If possible, use two or three hardware configurations to handle diverse investigations. You should also keep a hardware inventory in addition to your software library. In the private sector, however, consider streamlining your workstation to meet the needs of only the types of systems used in your business.",
+                  "slides": [
+                    {
+                      "seq_id": 26.1,
+                      "llm_generated_content": {
+                        "title": "Forensic Workstations",
+                        "subtitle": "Types and Considerations",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Stationary workstation: Tower with multiple bays and peripherals",
+                              "Portable workstation: Laptop with extensive bays and peripherals",
+                              "Lightweight workstation: Laptop in a carrying case with limited peripherals",
+                              "Considerations: Balance peripherals with system capabilities, update RAM/storage as technology advances",
+                              "Lab requirements: Multiple hardware configurations for diverse investigations",
+                              "Private sector: Streamlined workstations for specific system types"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Using a Write-Blocker",
+                  "toc_id": 257,
+                  "chunk_count": 17,
+                  "total_chunks_in_branch": 17,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "children": [],
+                  "seq_id": 28,
+                  "chunks_sorted": [
+                    3324,
+                    3325,
+                    3326,
+                    3327,
+                    3328,
+                    3329,
+                    3330,
+                    3331,
+                    3332,
+                    3333,
+                    3334,
+                    3335,
+                    3336,
+                    3337,
+                    3338,
+                    3339,
+                    3340
+                  ],
+                  "content": "Using a Write-Blocker\n\nThe first item you should consider for a forensic workstation is a write-blocker A hardware device or software program that prevents a computer from writing data to an evidence drive. Software write-blockers typically alter interrupt-13 write functions to a drive in a PC’s BIOS. Hardware write-blockers are usually bridging devices between a drive and the forensic workstation. . Write-blockers protect evidence disks by preventing data from being written to them. Software and hardware write-blockers perform the same function but in a different fashion.\n\nSoftware write-blockers, such as PDBlock from Digital Intelligence, typically run in a shell mode (such as a Windows CLI). PDBlock changes interrupt-13 of a workstation’s BIOS to prevent writing to the specified drive. If you attempt to write data to the blocked drive, an alarm sounds, advising that no writes have occurred. PDBlock can run only in a true DOS mode, however, not in a Windows CLI.\n\nWith hardware write-blockers, you can connect the evidence drive to your workstation and start the OS as usual. Hardware write-blockers, which act as a bridge between the suspect drive and the forensic workstation, are ideal for GUI forensics tools. They prevent Windows or Linux from writing data to the blocked drive.\n\nIn the Windows environment, when a write-blocker is installed on an attached drive, the drive appears as any other attached disk. You can navigate to the blocked drive with any Windows application, such as File Explorer, to view files or use Word to read files. When you copy data to the blocked drive or write updates to a file with Word, Windows shows that the data copy is successful. However, the write-blocker actually discards the written data—in other words, data is written to null. When you restart the workstation and examine the blocked drive, you won’t see the data or files you copied to it previously.\n\nMany vendors have developed write-blocking devices that connect to a computer through FireWire, USB 2.0 and 3.0, SATA, PATA, and SCSI controllers. Most of these write-blockers enable you to remove and reconnect drives without having to shut down your workstation, which saves time in processing the evidence drive. For more information on write-blocker specifications, visit www.cftt.nist.gov. The following vendors offer write-blocking devices:\n\nwww.digitalintelligence.com\n\nwww.forensicpc.com\n\nwww.guidancesoftware.com\n\nwww.voomtech.com\n\nwww.mykeytech.com\n\nwww.lc-tech.com\n\nwww.logicube.com\n\nwww.forensic-computers.com\n\nwww.cru-inc.com\n\nwww.paraben.com\n\nwww.usbgear.com/USB-FORENSIC.html",
+                  "slides": [
+                    {
+                      "seq_id": 28.1,
+                      "llm_generated_content": {
+                        "title": "Using a Write-Blocker",
+                        "subtitle": "Overview of Write-Blocker Functionality",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "A write-blocker is a hardware device or software program that prevents a computer from writing data to an evidence drive.",
+                              "Software write-blockers alter interrupt-13 write functions in a PC’s BIOS to block writes.",
+                              "Hardware write-blockers act as a bridge between the suspect drive and the forensic workstation.",
+                              "Both types prevent data from being written to the evidence disk, but they operate differently."
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "seq_id": 28.2,
+                      "llm_generated_content": {
+                        "title": "Using a Write-Blocker",
+                        "subtitle": "Types and Implementation",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Software Write-Blockers: Run in shell mode (e.g., Windows CLI), alter interrupt-13 BIOS functions to prevent writes. Example: PDBlock from Digital Intelligence. Operates only in true DOS mode.",
+                              "Hardware Write-Blockers: Act as bridges between suspect drive and workstation, ideal for GUI tools. Allow OS to run normally while preventing writes to the drive.",
+                              "Windows Environment: Blocked drive appears as a normal disk. Data copy attempts are shown as successful, but data is discarded (written to null).",
+                              "Connectivity Options: FireWire, USB 2.0/3.0, SATA, PATA, SCSI. Enable hot-swapping without shutting down workstation.",
+                              "Vendor Examples: Digital Intelligence, ForensicPC, Guidance Software, VoomTech, MyKeyTech, LC-Tech, Logicube, Forensic-Computers, CRU Inc., Paraben, USBGear"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Recommendations for a Forensic Workstation",
+                  "toc_id": 258,
+                  "chunk_count": 5,
+                  "total_chunks_in_branch": 5,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 29,
+                  "chunks_sorted": [
+                    3341,
+                    3342,
+                    3343,
+                    3344,
+                    3345
+                  ],
+                  "content": "Recommendations for a Forensic Workstation\n\nBefore you purchase or build a forensic workstation, determine where your data acquisitions will take place. If you acquire data in the field, consider streamlining the tools you use. With the newer FireWire and USB write-blocking devices, you can acquire data easily with Digital Intelligence FireChief and a laptop, for example. If you want to reduce the hardware you carry, consider a product such as the WiebeTech Forensic DriveDock with its regular DriveDock FireWire bridge or the Logicube Talon.\n\nWhen choosing a computer as a stationary or lightweight forensic workstation, you want a full tower to allow for expansion devices, such as a 2.5-inch drive converter to analyze a laptop hard drive on a 3.5-inch IDE write-protected drive controller. You want as much memory and processor power as your budget allows and different sizes of hard drives. In addition, consider a 400-watt or better power supply with battery backup, extra power and data cables, a SCSI controller card, external FireWire and USB ports, an assortment of drive adapter bridges to connect SATA to IDE (PATA) drives, an ergonomic keyboard and mouse, and a good video card with at least a 17-inch monitor. If you plan to conduct many investigations, a high-end video card and dual monitors are recommended. If you have a\n\nconduct many investigations, a high-end video card and dual monitors are recommended. If you have a limited budget, one option for outfitting your lab is to use high-end game PCs from a local computer store. With some minor modifications and additions of hardware components, these systems perform extremely well.\n\nAs with any technology, what your forensic workstation includes is often a matter of preference. Whatever vendor you choose, make sure the devices you select perform the functions you expect to need as an investigator.",
+                  "slides": [
+                    {
+                      "seq_id": 29.1,
+                      "llm_generated_content": {
+                        "title": "Recommendations for a Forensic Workstation",
+                        "subtitle": "Hardware and Component Selection",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "Choose a full tower chassis for expansion capabilities, including 2.5-inch drive converters for analyzing laptop hard drives on 3.5-inch IDE write-protected drive controllers.",
+                              "Prioritize high memory and processor power based on budget, along with various hard drive sizes.",
+                              "Include a 400-watt or higher power supply with battery backup, extra power/data cables, SCSI controller card, and external FireWire/USB ports.",
+                              "Use drive adapter bridges to connect SATA to IDE (PATA) drives.",
+                              "Select an ergonomic keyboard and mouse, and a high-quality video card with at least a 17-inch monitor.",
+                              "For multiple investigations, recommend a high-end video card and dual monitors.",
+                              "Consider repurposing high-end game PCs with minor hardware modifications for cost-effective solutions."
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "interactive_activity": {
+                "title": "Digital Forensics Hardware Tools (Interactive Activity)",
+                "toc_id": 254,
+                "slides_allocated": 1,
+                "seq_id": 30,
+                "llm_generated_content": {
+                  "title": "Let's Apply This!",
+                  "subtitle": "Knowledge Check: Digital Forensics Hardware Tools",
+                  "objects": [
+                    {
+                      "content_type": "multiple_choice_question",
+                      "content_purpose": "knowledge_check",
+                      "data": {
+                        "question_text": "According to the text, what is the recommended frequency for replacing forensic hardware components to account for their typical lifespan?",
+                        "options": [
+                          {
+                            "label": "A",
+                            "text": "Every 6 months"
+                          },
+                          {
+                            "label": "B",
+                            "text": "Every 12 months"
+                          },
+                          {
+                            "label": "C",
+                            "text": "Every 18 months"
+                          },
+                          {
+                            "label": "D",
+                            "text": "Every 24 months"
+                          }
+                        ],
+                        "correct_answer": {
+                          "label": "C",
+                          "explanation": "The text states that hardware manufacturers design components to last about 18 months between failures, so replacing every 18 months is recommended to account for this typical lifespan."
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "seq_id": 25,
+              "chunks_sorted": [
+                3308,
+                3309,
+                3310
+              ],
+              "content": "Digital Forensics Hardware Tools\n\nThis section discusses computer hardware used for forensics investigations. Technology changes rapidly, and hardware manufacturers have designed most computer components to last about 18 months between failures. Whether hardware is a rack-mounted server or a forensic workstation, eventually it fails. For this reason, you should schedule equipment replacements periodically—ideally, every 18 months if you use the hardware full time. Most digital forensics operations use a workstation 24 hours a day for a week or longer between complete shutdowns.\n\nYou should plan your hardware needs carefully, especially if you have budget limitations. Include the amount of time you expect the forensic workstation to be running, how often you expect hardware failures, consultant and vendor fees to support the hardware, and how often to anticipate replacing forensic workstations. The longer you expect the forensic workstation to be running, the more you need to anticipate physical equipment failure and the expense of replacement equipment."
+            },
+            {
+              "title": "Validating and Testing Forensics Software",
+              "toc_id": 259,
+              "chunk_count": 2,
+              "total_chunks_in_branch": 30,
+              "budget_slides_content": 3,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "children": [
+                {
+                  "title": "Using National Institute of Standards and Technology Tools",
+                  "toc_id": 260,
+                  "chunk_count": 13,
+                  "total_chunks_in_branch": 13,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 32,
+                  "chunks_sorted": [
+                    3348,
+                    3349,
+                    3350,
+                    3351,
+                    3352,
+                    3353,
+                    3354,
+                    3355,
+                    3356,
+                    3357,
+                    3358,
+                    3359,
+                    3360
+                  ],
+                  "content": "Using National Institute of Standards and Technology Tools\n\nThe National Institute of Standards and Technology (NIST) publishes articles, provides tools, and creates procedures for testing and validating computer forensics software. Software should be verified to improve evidence admissibility in judicial proceedings. NIST sponsors the CFTT project to manage research on forensics tools. For additional information on this testing project, visit www.cftt.nist.gov. The Computer Forensic Reference Data Sets (CFReDS; www.cfreds.nist.gov) has been created recently to provide data sets for tools, training, and hardware testing.\n\nNIST also created criteria for testing forensics tools, which are included in the article “General Test Methodology for Computer Forensic Tools” (version 1.9, November 7, 2001), available at www.cftt.nist.gov/testdocs.html. This article addresses the lack of specifications for what forensics tools should do and the importance of tools meeting judicial scrutiny. The criteria are based on standard testing methods and ISO 17025 criteria for testing when no current standards are available. Your lab must meet the following criteria and keep accurate records so that when new software and hardware become available, testing standards are in place for your lab:\n\nEstablish categories for digital forensics tools—Group digital forensics software according to categories, such as forensics tools designed to retrieve and trace e-mail.\n\nIdentify forensics category requirements—For each category, describe the technical features or functions a forensics tool must have.\n\nDevelop test assertions—Based on the requirements, create tests that prove or disprove the tool’s capability to meet the requirements.\n\nIdentify test cases—Find or create types of cases to investigate with the forensics tool, and identify information to retrieve from a sample drive or other media. For example, use the image of a closed case file created with a trusted forensics tool to test a new tool in the same category and see whether it produces the same results.\n\nEstablish a test method—Considering the tool’s purpose and design, specify how to test it.\n\nReport test results—Describe the test results in a report that complies with ISO 17025, which requires accurate, clear, unambiguous, and objective test reports.\n\nAnother standards document, ISO 5725, demands accuracy for all aspects of the testing process, so results must be repeatable and reproducible. “Repeatable results” means that if you work in the same lab on the same machine, you generate the same results. “Reproducible results” means that if you’re in a different lab working on a different machine, the tool still retrieves the same information.\n\nNote\n\nNIST has also developed several tools for evaluating drive-imaging tools. These tools are posted on the CFTT Web site at www.cftt.nist.gov/disk_imaging.htm.\n\nIn addition, NIST created the NSRL project (www.nsrl.nist.gov) with the goal of collecting all known hash values for commercial software and OS files. The primary hash NSRL uses is SHA-1, which generates known digital signatures called the Reference Data Set (RDS). SHA-1 has better accuracy than other hashing methods, such as MD5. The purpose of collecting known hash values is to reduce the number of known files, such as OS or program files, included in a forensics examination of a drive so that only unknown files are left. You can also use the RDS to locate and identify known bad files, such as illegal images and malware, on a suspect drive.",
+                  "slides": [
+                    {
+                      "seq_id": 32.1,
+                      "llm_generated_content": {
+                        "title": "Using National Institute of Standards and Technology Tools",
+                        "subtitle": "NIST Tools and Testing Criteria",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "description",
+                            "data": [
+                              "NIST provides tools, articles, and procedures for testing and validating computer forensics software.",
+                              "NIST sponsors the CFTT project for research on forensics tools (www.cftt.nist.gov).",
+                              "CFReDS (Computer Forensic Reference Data Sets) offers data sets for tools, training, and hardware testing (www.cfreds.nist.gov).",
+                              "NIST developed criteria for testing forensics tools based on standard testing methods and ISO 17025 standards.",
+                              "The article 'General Test Methodology for Computer Forensic Tools' (version 1.9, November 7, 2001) outlines testing requirements for judicial scrutiny.",
+                              "Lab must meet testing criteria, maintain accurate records, and ensure testing standards for new software/hardware."
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "title": "Using Validation Protocols",
+                  "toc_id": 261,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 15,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [
+                    {
+                      "title": "Digital Forensics Examination Protocol",
+                      "toc_id": 262,
+                      "chunk_count": 5,
+                      "total_chunks_in_branch": 5,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 34,
+                      "chunks_sorted": [
+                        3367,
+                        3368,
+                        3369,
+                        3370,
+                        3371
+                      ],
+                      "content": "Digital Forensics Examination Protocol\n\nFirst, conduct your investigation of the digital evidence with one GUI tool.\n\nThen perform the same investigation with a disk editor to verify that the GUI tool is seeing the same digital evidence in the same places on the test or suspect drive’s image.\n\nIf a file is recovered, obtain the hash value with the GUI tool and the disk editor, and then compare the results to verify whether the file has the same value in both tools.\n\nMany investigators in both the public and private sectors use FTK and EnCase as their choice of “flagship” forensics software suites, but they don’t rely on them solely; investigators’ software libraries often include other forensics utilities to supplement these tools’ capabilities."
+                    },
+                    {
+                      "title": "Digital Forensics Tool Upgrade Protocol",
+                      "toc_id": 263,
+                      "chunk_count": 4,
+                      "total_chunks_in_branch": 4,
+                      "budget_slides_content": 0,
+                      "direct_slides_content": 0,
+                      "total_slides_in_branch": 0,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 0,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 0
+                      },
+                      "children": [],
+                      "seq_id": 35,
+                      "chunks_sorted": [
+                        3372,
+                        3373,
+                        3374,
+                        3375
+                      ],
+                      "content": "Digital Forensics Tool Upgrade Protocol\n\nIn addition to verifying your results by using two disk-analysis tools, you should test all new releases and OS patches and upgrades to make sure they’re reliable and don’t corrupt evidence data. New releases and OS upgrades and patches can affect the way your forensics tools perform. If you determine that a patch or upgrade isn’t reliable, don’t use it on your forensic workstation until the problem has been fixed. If you have a problem, such as not being able to read old image files with the new release or the disk editor generating errors after you apply the latest service pack, you can file an error report with the vendor. In most cases, the vendor addresses the problem and provides a new patch, which you should check with another round of validation testing.\n\nOne of the best ways to test patches and upgrades is to build a test hard disk to store data in unused space allocated for a file, also known as file slack. You can then use a forensics tool to retrieve it. If you can retrieve the data with that tool and verify your findings with a second tool, you know the tool is reliable.\n\nAs digital forensics tools continue to evolve, you should check the Web for new editions, updates, patches, and validation tests for your tools. Always validate what the hardware or software tool is doing as opposed to what it’s supposed to be doing, and remember to test and document why a tool does or doesn’t work the way it’s supposed to."
+                    }
+                  ],
+                  "seq_id": 33,
+                  "chunks_sorted": [
+                    3361,
+                    3362,
+                    3363,
+                    3364,
+                    3365,
+                    3366
+                  ],
+                  "content": "Using Validation Protocols\n\nAfter retrieving and examining evidence data with one tool, you should verify your results by performing the same tasks with other similar forensics tools. For example, after you use one forensics tool to retrieve disk data, you use another to see whether you retrieve the same information. Although this step might seem unnecessary, you might be asked “How did you verify your results?” on the witness stand. To satisfy the need for verification, you need at least two tools to validate software or hardware upgrades. The tool you use to validate the results should be well tested and documented. A hands-on project at the end of this chapter gives you a chance to validate tools.\n\nInvestigators must be confident in a tool’s capability to produce consistent and accurate findings during analysis. Understanding how the tool works is equally important, as you might not have vendor support in a courtroom. One way to compare results and verify a new tool is by using a disk editor, such as Hex Workshop or WinHex, to view data on a disk in its raw format. Disk editors typically show files, file headers, file slack, and other data on the physical disk. Although disk editors aren’t known for their flashy interfaces, they’re reliable and capable of accessing sectors of the digital evidence to verify your findings.\n\nNote\n\nAlthough a disk editor gives you the most flexibility in testing, it might not be capable of examining a compressed file’s contents, such as a .zip file or an Outlook .pst file. This is another reason that testing and validating your tools’ capabilities are essential.\n\nIf you decide to use a GUI forensics tool, use the recommended steps in the following sections to validate your findings.",
+                  "slides": [
+                    {
+                      "seq_id": 33.1,
+                      "llm_generated_content": {
+                        "title": "Using Validation Protocols",
+                        "subtitle": "Verifying Results with Multiple Tools",
+                        "objects": [
+                          {
+                            "content_type": "bullet_points",
+                            "content_purpose": "explanation",
+                            "data": [
+                              "Verify results by using multiple forensics tools to ensure consistency and accuracy.",
+                              "Use at least two tools to validate software/hardware upgrades; ensure tools are well-tested and documented.",
+                              "Example: Use one tool to retrieve disk data, then another to confirm the same information is retrieved.",
+                              "Validation is crucial for legal proceedings; be prepared to explain verification methods in court."
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "interactive_activity": {
+                "title": "Validating and Testing Forensics Software (Interactive Activity)",
+                "toc_id": 259,
+                "slides_allocated": 1,
+                "seq_id": 36,
+                "llm_generated_content": {
+                  "title": "Let's Apply This!",
+                  "subtitle": "Knowledge Check: Validating and Testing Forenssics Software",
+                  "objects": [
+                    {
+                      "content_type": "multiple_choice_question",
+                      "content_purpose": "knowledge_check",
+                      "data": {
+                        "question_text": "Why is it essential to validate and test forensics software before using it in legal proceedings?",
+                        "options": [
+                          {
+                            "label": "A",
+                            "text": "To ensure the software is aesthetically pleasing and user-friendly."
+                          },
+                          {
+                            "label": "B",
+                            "text": "To guarantee the software's results are admissible in court and reliable."
+                          },
+                          {
+                            "label": "C",
+                            "text": "To increase the software's cost-effectiveness for large organizations."
+                          },
+                          {
+                            "label": "D",
+                            "text": "To make the software compatible with all operating systems."
+                          }
+                        ],
+                        "correct_answer": {
+                          "label": "B",
+                          "explanation": "Validation and testing ensure the software's results are reliable and meet legal standards, making them admissible in court. This is critical for maintaining the integrity of digital evidence in legal cases."
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "seq_id": 31,
+              "chunks_sorted": [
+                3346,
+                3347
+              ],
+              "content": "Validating and Testing Forensics Software\n\nNow that you have selected some tools to use, you need to make sure the evidence you recover and analyze can be admitted in court. To do this, you must test and validate your software. The following sections discuss validation tools available at the time of this writing and how to develop your own validation protocols."
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          },
+          "seq_id": 37,
+          "llm_generated_content": {
+            "title": "Summary & Key Takeaways",
+            "subtitle": null,
+            "objects": [
+              {
+                "content_type": "bullet_points",
+                "content_purpose": "description",
+                "data": [
+                  "Digital forensics requires a combination of specialized software and hardware tools to ensure data integrity and legal admissibility of evidence.",
+                  "Write-blockers are essential to prevent data modification during evidence collection, available in both software and hardware configurations.",
+                  "Forensic workstations should be configured with high-performance components, proper expansion capabilities, and ergonomic setups for efficient investigations.",
+                  "Validation and testing of forensic tools are critical to ensure reliability and compliance with legal standards, often guided by NIST protocols and multi-tool verification.",
+                  "Hardware components in forensic systems should be replaced every 18 months to maintain operational reliability and account for typical lifespan limitations."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          },
+          "seq_id": 38
+        }
+      ]
+    }
+  ]
+}

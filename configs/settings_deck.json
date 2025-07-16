@@ -5,7 +5,7 @@
   "interactive_deep":false,
   "teaching_flow_id": "Standard Lecture Flow",
   "parameters_slides": {
-    "slides_per_hour": 18,
+    "slides_per_hour": 16,
     "time_per_content_slides_min": 3,
     "time_per_interactive_slide_min": 5,
     "time_for_framework_slides_min": 6
@@ -27,6 +27,6 @@
     "total_slides_session": 0    
   },  
   "generation_scope": {
-    "weeks": [1]
+    "weeks": [3,4,5,6,7,8,9,10,11,12]
   }
 }

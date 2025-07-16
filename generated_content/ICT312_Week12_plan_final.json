@@ -1,0 +1,860 @@
+{
+  "week": 12,
+  "overall_topic": "Ethics for the Digital Forensic Examiner and Expert Witness.",
+  "weekly_slide_summary": {
+    "total_slides_for_week": 39,
+    "total_framework_slides": 4,
+    "total_content_slides": 31,
+    "total_interactive_slides": 4,
+    "number_of_decks": 1
+  },
+  "weekly_time_summary_minutes": {
+    "total_time_for_week_minutes": 119,
+    "total_framework_time": 6,
+    "total_content_and_interactive_time": 113
+  },
+  "deck_plans": [
+    {
+      "deck_number": 1,
+      "total_slides_in_deck": 39,
+      "slide_count_breakdown": {
+        "framework": 4,
+        "content": 31,
+        "interactive": 4
+      },
+      "time_breakdown_minutes": {
+        "framework": 6,
+        "content_and_interactive": 113,
+        "total_deck_time": 119
+      },
+      "sections": [
+        {
+          "section_type": "Title",
+          "content": {
+            "unit_name": "Digital Forensic",
+            "unit_code": "ICT312",
+            "week_topic": "Ethics for the Digital Forensic Examiner and Expert Witness.",
+            "deck_title": "Week 12, Lecture 1"
+          },
+          "seq_id": 0
+        },
+        {
+          "section_type": "Agenda",
+          "content": {
+            "title": "Today's Agenda",
+            "items": [
+              "Applying Ethics and Codes to Expert Witnesses",
+              "Organizations with Codes of Ethics",
+              "Ethical Difficulties in Expert Testimony",
+              "An Ethics Exercise"
+            ]
+          },
+          "seq_id": 1
+        },
+        {
+          "section_type": "Content",
+          "content_blocks": [
+            {
+              "title": "Applying Ethics and Codes to Expert Witnesses",
+              "toc_id": 526,
+              "chunk_count": 11,
+              "total_chunks_in_branch": 58,
+              "budget_slides_content": 6,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 7,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 23
+              },
+              "children": [
+                {
+                  "title": "Forensics Examiners’ Roles in Testifying",
+                  "toc_id": 527,
+                  "chunk_count": 5,
+                  "total_chunks_in_branch": 5,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 3,
+                  "chunks_sorted": [
+                    7708,
+                    7709,
+                    7710,
+                    7711,
+                    7712
+                  ],
+                  "content": "Forensics Examiners’ Roles in Testifying\n\nAs you learned in Chapter 15, forensics examiners have two roles in testifying: testifying to facts found during evidence recovery (fact witness) and rendering an opinion based on education, training, and experience (expert witness).\n\nAs an expert witness, you can testify even if you weren’t present when the event occurred or didn’t handle the data storage device personally. Because of an expert’s important role in litigation, attorneys often shop for experts who can support their cases, and experts’ fees might be only a secondary consideration. Criticism of expert witnesses is widespread in the legal community because it’s possible to find and hire an expert to testify to almost any opinion on any topic. As a result, the impartiality of expert testimony and the potential for misconduct have become concerns.\n\nIf you’re going to have a long and productive career as an expert witness, beware of attorneys’ opinion shopping. An attorney might be willing to risk your career to improve the prospect of success in a case—and can always find another expert for the next case. The most effective way to prevent opinion shopping is to require that the attorney retaining your services send you enough material on the case for you to make an evaluation. Distinguishing opinion shopping from the process of attempting to disqualify experts by creating conflicts can be difficult, however.\n\nConversely, attorneys should be cautious of expert witnesses who will tailor an opinion. If witnesses will tailor opinions for you, they might have tailored opinions for somebody else. When an expert witness is discredited, it can affect the attorney’s credibility, too."
+                },
+                {
+                  "title": "Considerations in Disqualification",
+                  "toc_id": 528,
+                  "chunk_count": 22,
+                  "total_chunks_in_branch": 22,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "children": [],
+                  "seq_id": 4,
+                  "chunks_sorted": [
+                    7713,
+                    7714,
+                    7715,
+                    7716,
+                    7717,
+                    7718,
+                    7719,
+                    7720,
+                    7721,
+                    7722,
+                    7723,
+                    7724,
+                    7725,
+                    7726,
+                    7727,
+                    7728,
+                    7729,
+                    7730,
+                    7731,
+                    7732,
+                    7733,
+                    7734
+                  ],
+                  "content": "Considerations in Disqualification\n\nOne of the effects of violating court rules or laws is disqualification The process by which an expert witness is excluded from testifying. . This outcome isn’t usually punitive, but it can be embarrassing for you as a professional and potentially for the attorney who retained you. A disqualification based on an ethical lapse could effectively be a death sentence for a career as an expert witness, as you can expect it to come up in any case you’re involved in.\n\nOpposing counsel might attempt to disqualify you based on any deviations from opinions you’ve given in previous cases. Any testimony you give at trials or depositions is on record and available to attorneys. (As mentioned in Chapter 14, attorneys search deposition banks for information on expert witnesses.) If there’s a change in your position on a point, be sure to explain why you have changed it, such as recent developments in technology, new tools with new capabilities, or the facts of the current case differing from a previous case. An apparent change of position could be a subject for cross-examination, and you must be able to explain what appears to be contradictory opinions, or you’ll be seen as tailoring testimony to your client’s needs.\n\nSome attorneys contact many experts as a ploy to disqualify them or prevent opposing counsel from hiring them; as explained in Chapter 15, this practice is called “conflicting out.” Although attorneys might merely be scouting the field for information, you should always note calls from attorneys and the nature of the communication. Have a standard response, such as “Before we go beyond the general nature of the case and my expertise, you need to complete a client questionnaire and send me an investigation retainer.” The retainer can be small, perhaps 2 to 8 hours of your usual billable rate for a simple case; the purpose of requesting the retainer is to deter attorneys from communicating with you solely for the purpose of disqualifying you. No explicit rule in the code of professional\n\nwith you solely for the purpose of disqualifying you. No explicit rule in the code of professional conduct prohibits attorneys from engaging in this process, but there are general prohibitions on engaging in actions designed to delay or be obstructive without legitimate purpose. These types of actions are unlikely to result in a bar association taking disciplinary action against attorneys, however.\n\nBefore allowing an attorney to describe any case details, determine who the parties are to reduce the possibility of a conflict. Although you aren’t bound by the rigid rules on conflict of interest that bind attorneys, you might be working for an attorney on a case opposing the attorney who called you, and this conflict could reflect on the attorney.\n\nWhen you’re aware of a possible disqualification issue, bring it to the attention of the attorney who has retained you. The attorney then can get an early determination on the disqualification issue. There are rules to determine whether you can be disqualified from working on a case merely because you discussed general aspects of it. The rules for disqualification are derived from court decisions. Factors courts have used in determining whether to disqualify an expert include the following:\n\nWhether the attorney informed the expert that their discussions were confidential\n\nWhether the expert reviewed materials marked as confidential or attorney work product\n\nWhether the expert was asked to sign a confidentiality agreement\n\nNumber of discussions held over a period of time\n\nThe type of documents that were reviewed (publicly filed or confidential)\n\nThe type of information conveyed to the expert—whether it included general or specific data or included confidential information, trial strategies, plans for method of proof, and so forth\n\nThe amount of time involved in discussions or meetings between the expert and attorney\n\nWhether the expert provided the attorney with confidential information\n\nWhether the attorney formally retained the expert\n\nWhether the expert voiced concerns about being retained\n\nWhether the expert was requested to perform services for the attorney\n\nWhether the attorney compensated the expert\n\nNumerous cases describe disqualification under the communication standards. For example, in Wang Laboratories, Inc. v. Toshiba Corp. (762 F. Supp. 1246 [E.D. Va. 1991]), the court summarized the process of determining whether an expert should be disqualified because of previous contact with an opposing party. The test is in two parts. First, was it objectively reasonable for the first party who claims to have previously retained the consultant to conclude that a confidential relationship existed? Second, was any confidential or privileged information disclosed by the first party to the consultant?\n\nSimilarly, there’s extensive case law in which experts weren’t disqualified and were allowed to testify over the objection of opposing counsel. For example, in Hewlett-Packard Co. v. EMC Corp. (330 F. Supp. 2d 1087 [N.D. Cal. 2004]) and Tidemann v. Nadler Golf Car Sales, Inc. (224 F.3d 719 [7th Cir. 2000]), the other side’s lawyer merely served a subpoena on the expert to get factual testimony. If you don’t know which standards for disqualification are being applied or how they are being applied in your jurisdiction, you should research the applicable state’s court rulings on these issues. States often refer to already established rulings in other states or federal courts, and you can use an online search to find cases in the applicable jurisdiction. You might also want to have a standing\n\nonline search to find cases in the applicable jurisdiction. You might also want to have a standing relationship with an attorney who can advise you on these issues."
+                },
+                {
+                  "title": "Traps for Unwary Experts",
+                  "toc_id": 529,
+                  "chunk_count": 16,
+                  "total_chunks_in_branch": 16,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "children": [],
+                  "seq_id": 5,
+                  "chunks_sorted": [
+                    7735,
+                    7736,
+                    7737,
+                    7738,
+                    7739,
+                    7740,
+                    7741,
+                    7742,
+                    7743,
+                    7744,
+                    7745,
+                    7746,
+                    7747,
+                    7748,
+                    7749,
+                    7750
+                  ],
+                  "content": "Traps for Unwary Experts\n\nExpert witnesses should be cautious about the following potential traps, even though some aren’t laid deliberately:\n\nWhat are some differences between the attorney’s motives and the investigator’s duty that might affect how the investigator acts, or is expected to act, as an expert witness?\n\nIs the function of the expert witness in conflict with the investigator’s code of professional responsibility?\n\nAttorneys look at witnesses’ codes of professional responsibility based on organizations they are members of. As an expert witness, you should anticipate that the opposing counsel will look at your organization memberships and those organizations’ codes of professional responsibility.\n\nContingency fees Payments that depend on the content of the expert’s testimony or the outcome of the case. aren’t allowed except in certain limited circumstances; for example, consultants who don’t testify can earn a contingency fee for finding testifying experts or investigative leads. However, an expert’s activities leading to testimony can’t be compensated on a contingent basis. Even the appearance of testimony on a contingent basis is dangerous. Therefore, experts should be paid in full for all previous work and for the anticipated time required for testimony.\n\nIt’s unlikely you will encounter these situations, but if you do, it’s wise to ask the hiring attorney to file a motion with the court requesting a ruling on disqualification. This process protects you from future liability or ethical complaints. If the attorney doesn’t want to follow this procedure, consider withdrawing from the employment.\n\nIn addition, avoid obvious ethical errors, such as the following:\n\nDon’t alter data or present false data.\n\nDon’t report work that wasn’t done.\n\nDon’t ignore available contradictory data.\n\nDon’t do work beyond your expertise or competence.\n\nDon’t allow the attorney who retained you to influence your opinion in an unauthorized way. (Keep in mind that there are authorized points of influence, such as the attorney framing a hypothetical question for you or asking you to answer specific questions.)\n\nDon’t accept an assignment if it can’t be done reasonably in the allowed time.\n\nDon’t reach a conclusion before doing complete research.\n\nDon’t fail to report possible conflicts of interest."
+                },
+                {
+                  "title": "Determining Admissibility of Evidence",
+                  "toc_id": 530,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "children": [],
+                  "seq_id": 6,
+                  "chunks_sorted": [
+                    7751,
+                    7752,
+                    7753,
+                    7754
+                  ],
+                  "content": "Determining Admissibility of Evidence\n\nAlthough stating hypothetical questions during examination is no longer required in court, these questions can give you the factual structure to support and defend your opinion. You owe your client a full understanding of the facts relevant to your opinion, and you can ask him or her to establish that there’s evidence supporting the facts your opinion is based on.\n\nAlthough expert opinions can be presented without stating the underlying factual basis, the testimony isn’t admissible if the facts on which the opinion is based are inadequate or there’s not enough evidence to allow stating a legitimate opinion. FRE 702 (whether the expert is qualified and whether the expert opinion can be helpful) and FRE 703 (whether basis for the testimony is adequate) are considered in determining admissibility. If a question on admissibility arises under FRE 702 or 703, the court might require underlying facts or data to determine whether or to what extent the expert should be permitted to testify. Obviously, opposing counsel has an opportunity to explore and challenge the underlying facts and data on cross-examination. However, experts who provide explanations for\n\nthe underlying facts and data on cross-examination. However, experts who provide explanations for how they reached their conclusions are far more persuasive to a judge or jury."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Applying Ethics and Codes to Expert Witnesses (Interactive Activity)",
+                "toc_id": 526,
+                "slides_allocated": 1,
+                "seq_id": 7
+              },
+              "seq_id": 2,
+              "chunks_sorted": [
+                7697,
+                7698,
+                7699,
+                7700,
+                7701,
+                7702,
+                7703,
+                7704,
+                7705,
+                7706,
+                7707
+              ],
+              "content": "Applying Ethics and Codes to Expert Witnesses\n\nEthics Rules that you internalize and use to measure your performance; sometimes refers to external rules (codes of professional conduct or responsibility). are the rules you internalize and use to measure your performance. The standards that others apply to you or that you’re compelled to adhere to by external forces, such as licensing bodies, can be called ethics, but they’re more accurately described as rules of conduct. Many professions now call these rules codes of professional conduct or responsibility External rules that often have the effect of law in limiting professionals’ actions; breach of these rules can result in discipline, including suspension or loss of a license to practice and civil and criminal liability. . Both concepts of ethics are addressed in this chapter.\n\nPeople need ethics to help maintain their balance, especially in difficult and contentious situations, and for guidance on their values. Ethics also help you maintain self-respect and the respect of those in your profession. Because forensics examiners don’t have the same formal, detailed codes of conduct that professions such as medicine and the law have, relying on an internal code of ethics might be more critical. In addition, your internal standards, related to a philosophical, religious, or moral position, can be higher than standards established by codes of professional conduct. Laws governing codes of professional conduct or responsibility define the lowest level of action or performance required to avoid liability. Even with these low standards, there are still violations.\n\nOne of the most effective mechanisms for protecting yourself at a personal level and a legal level is to have nothing to hide. This ethical position allows people to be self-critical and critical of others. People who fear having their improper acts revealed feel as though they must protest the improper actions of others being revealed. Being able to engage in criticism of yourself or others, however, makes it possible to refine and strengthen personal codes of ethics or codes of professional responsibility.\n\nExpert witnesses are expected to present unbiased, specialized, and technical evidence to a jury. However, experts, like the attorneys who hire them, have biases and other ethical failings. As a professional, you must control your biases, not allow them to control you. Ethics are a tool you can use to identify and control your biases or prejudices.\n\nCurrently, expert witnesses testify in more than 80% of trials, and in many trials, multiple expert witnesses testify. The courts are clearly aware of the importance of expert witnesses to the legal system and are concerned about expert witnesses’ ethics and the challenges experts face in reconciling their ethical standards and court practice. Awareness of this challenge is evident in the following statement from Kenneth C. v. Delonda R. (814 N.Y.S.2d 562, 2006):\n\n. . . the topic of expert witness ethics and professionalism is largely undeveloped and there are few definitive statements about what exactly the expert witness’s ethical obligations are and how they are to handle the subtle as well as the more blatant attempts to influence them. While some expert witnesses belong to professions that have an established code . . ., many experts come from professions that are not self-governing with a uniform code of ethics. . . . Even where professional associations have established ethical guidelines for conducting investigations, forming opinions . . . very few explain how the ethical boundaries imposed on judges and lawyers may bear on the performance of their role in the legal system.\n\nIncluded in most professions’ codes of professional conduct is an admonition to adhere to or comply with the law. The most important laws applying to attorneys and witnesses are the rules of evidence. As mentioned in Chapter 15, the Federal Rules of Evidence (FRE) prescribe the methods by which experts appear before the court. Codes of professional conduct or responsibility affect attorneys who hire experts, but experts are bound by their personal ethics and the ethics of their professional organizations. Professional organizations’ guidelines are often vague and broad and might do little to enforce experts’ ethical conduct, however. Finding examples of experts’ ethically questionable behavior in court isn’t difficult. For example, in an investigation of the West Virginia State Police\n\nin court isn’t difficult. For example, in an investigation of the West Virginia State Police Crime Lab (438 S.E.2d 501, W. Va. 1993), a former officer in the Serology Division was found to have falsified evidence in criminal prosecutions. In addition, the article “Erdmann Faces New Legal Woes: Pathologist indicted for perjury in Texas murder trial” (Geoffrey A. Campbell, American Bar Association Journal, November 1995) describes how a former Texas pathologist faked autopsies to aid in criminal trials. For a general discussion of expert witness ethics, see http://ir.lawnet.fordham.edu/cgi/viewcontent.cgi?article=4332&context=flr.\n\nIn the United States, there’s no state or national licensing body for digital forensics examiners. Some states have licensing requirements for private investigators and classify forensics examiners with private investigators, but the work private investigators usually do bears little resemblance to the work of forensics examiners. Therefore, your sources for ethical standards are your internal values (ethics), the codes of professional associations you belong to, the codes of certifying bodies that have granted you a certification, and your employer’s rules of professional conduct. Most examiners rely on a combination of these standards and codes to construct their professional ethical codes.\n\nA movement is underway to create a general code of ethics for expert witnesses. At least one proposal includes the topics of confidentiality, fees, ex parte communication, conflicts of interest, and professionalism. Generally, the positions advocated for in these proposals reflect the experience of other professional organizations, court rulings, and court rules but seek to consolidate these scattered resources into a codified system. For more information, see http://blogs.findlaw.com/strategist/2011/03/should-there-be-an-expert-witness-code-of-ethics.html."
+            },
+            {
+              "title": "Organizations with Codes of Ethics",
+              "toc_id": 531,
+              "chunk_count": 2,
+              "total_chunks_in_branch": 26,
+              "budget_slides_content": 3,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 4,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 14
+              },
+              "children": [
+                {
+                  "title": "International Society of Forensic Computer Examiners",
+                  "toc_id": 532,
+                  "chunk_count": 11,
+                  "total_chunks_in_branch": 11,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 9,
+                  "chunks_sorted": [
+                    7757,
+                    7758,
+                    7759,
+                    7760,
+                    7761,
+                    7762,
+                    7763,
+                    7764,
+                    7765,
+                    7766,
+                    7767
+                  ],
+                  "content": "International Society of Forensic Computer Examiners\n\nThe International Society of Forensic Computer Examiners (ISFCE) Code of Ethics and Professional Responsibility supplies guidelines for its members on how they are expected to perform their duties as forensics examiners. These guidelines include specific instructions on how members must maintain their professional standing and define what members must do and not do when performing their duties as forensics examiners. For example, the ISFCE code of ethics includes guidelines such as the following:\n\nMaintain the utmost objectivity in all forensic examinations and present findings accurately.\n\nConduct examinations based on established, validated principles.\n\nTestify truthfully in all matters before any board, court, or proceeding.\n\nAvoid any action that would appear to be a conflict of interest.\n\nNever misrepresent training, credentials, or association membership.\n\nNever reveal any confidential matters or knowledge learned in an examination without an order from a court of competent jurisdiction or the client’s express permission.\n\nIn addition, members are expected to maintain their integrity by reporting other members who violate the code of conduct to the ISFCE.\n\nNote\n\nThe ISFCE also offers a Certified Computer Examiner (CCE) certification and includes ethical standards for examiners holding this certification. For more information on the ISFCE Code of Ethics and Professional Responsibility, see www.isfce.com/ethics2.htm."
+                },
+                {
+                  "title": "International High Technology Crime Investigation Association",
+                  "toc_id": 533,
+                  "chunk_count": 6,
+                  "total_chunks_in_branch": 6,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 10,
+                  "chunks_sorted": [
+                    7768,
+                    7769,
+                    7770,
+                    7771,
+                    7772,
+                    7773
+                  ],
+                  "content": "International High Technology Crime Investigation Association\n\nIn its bylaws, the International High Technology Crime Investigation Association (HTCIA) provides a detailed Code of Ethics of Professional Standards Conduct for its members. HTCIA core values include the following requirements related to testifying:\n\nThe HTCIA values the Truth uncovered within digital information and the effective techniques used to uncover that Truth, so that no one is wrongfully convicted.\n\nThe HTCIA values the Integrity of its members and the evidence they expose through common investigative and digital forensics best practices, including specialized techniques used to gather digital evidence.\n\nNote\n\nFor more information on the HTCIA code of ethics, see www.socalhtcia.com/about-htcia/."
+                },
+                {
+                  "title": "International Association of Computer Investigative Specialists",
+                  "toc_id": 534,
+                  "chunk_count": 0,
+                  "total_chunks_in_branch": 0,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "children": [],
+                  "seq_id": 11,
+                  "chunks_sorted": [],
+                  "content": ""
+                },
+                {
+                  "title": "American Bar Association",
+                  "toc_id": 535,
+                  "chunk_count": 5,
+                  "total_chunks_in_branch": 5,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 12,
+                  "chunks_sorted": [
+                    7783,
+                    7784,
+                    7785,
+                    7786,
+                    7787
+                  ],
+                  "content": "American Bar Association\n\nAs a forensics examiner, you deal with attorneys, so you should be aware of the basic rules of professional conduct they must follow. The American Bar Association (ABA) is not a licensing body, but the ABA’s Model Code of Professional Responsibility (Model Code) and its successor, the Model Rules of Professional Conduct (Model Rules), are the basis of state licensing bodies’ codes. In the United States, attorneys are licensed by states.\n\nNote\n\nThese codes are quite extensive, so only a few relevant sections are given here. To read the codes in their entirety, go to www.americanbar.org/content/dam/aba/migrated/cpr/mrpc/mcpr.authcheckdam.pdf for the Model Code and www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct.html for the Model Rules.\n\nThe ABA has stated that, unlike attorneys, expert witnesses do not owe a duty of loyalty to their clients. However, this doesn’t absolve them of a duty to truth in facts they’ve observed or opinions they’ve rendered."
+                },
+                {
+                  "title": "American Psychological Association",
+                  "toc_id": 536,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 2,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "children": [],
+                  "seq_id": 13,
+                  "chunks_sorted": [
+                    7788,
+                    7789
+                  ],
+                  "content": "American Psychological Association\n\nFor psychologists, the broadly accepted guidelines governing their conduct as experts are the American Psychological Association’s (APA’s) Ethical Principles of Psychologists and Code of Conduct (commonly referred to as the “Ethics Code”). These guidelines offer comprehensive regulations, with an entire section devoted to forensics activities. The Ethics Code (www.apa.org/ethics/code/index.aspx) consists of standards that are enforceable rules for the conduct of psychologists and applies only to psychologists’ activities in scientific and professional functions that are psychological in nature."
+                }
+              ],
+              "interactive_activity": {
+                "title": "Organizations with Codes of Ethics (Interactive Activity)",
+                "toc_id": 531,
+                "slides_allocated": 1,
+                "seq_id": 14
+              },
+              "seq_id": 8,
+              "chunks_sorted": [
+                7755,
+                7756
+              ],
+              "content": "Organizations with Codes of Ethics\n\nNo single source offers a definitive code of ethics for expert witnesses, so you must draw on standards from other organizations to form your own ethical standards. This section discusses the effect that other organizations’ ethical guidelines can have on expert testimony. Many professional organizations have rules to guide their members in areas such as interaction with patients and clients, objectivity, role in society, fees, solicitation, independence, and contractual relationships. The more restrictive and specific ethical rules are, the more effect they have in curbing unethical expert testimony."
+            },
+            {
+              "title": "Ethical Difficulties in Expert Testimony",
+              "toc_id": 537,
+              "chunk_count": 6,
+              "total_chunks_in_branch": 19,
+              "budget_slides_content": 2,
+              "direct_slides_content": 1,
+              "total_slides_in_branch": 3,
+              "time_allocation_minutes": {
+                "direct_content_time": 3,
+                "direct_interactive_time": 5,
+                "total_branch_time": 11
+              },
+              "children": [
+                {
+                  "title": "Ethical Responsibilities Owed to You",
+                  "toc_id": 538,
+                  "chunk_count": 9,
+                  "total_chunks_in_branch": 9,
+                  "budget_slides_content": 1,
+                  "direct_slides_content": 1,
+                  "total_slides_in_branch": 1,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 3,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 3
+                  },
+                  "children": [],
+                  "seq_id": 16,
+                  "chunks_sorted": [
+                    7796,
+                    7797,
+                    7798,
+                    7799,
+                    7800,
+                    7801,
+                    7802,
+                    7803,
+                    7804
+                  ],
+                  "content": "Ethical Responsibilities Owed to You\n\nThe attorney who has retained you, opposing counsel, and the court also owe you ethical responsibilities as an expert witness. Your attorney owes you a fair statement of the case or situation, adequate time to review evidence and prepare your report, and a reasonable opportunity to examine data, conduct testing, and investigate the matter before rendering an opinion. If the attorney wants you to render an opinion quickly and without adequate opportunity to review, be cautious. He might be trying to get you to commit based on inadequate information, or he’s trying to rush you because he hasn’t kept track of critical dates and is under pressure to meet a deadline. The attorney might also hold you under subpoena for an excessive amount of time waiting to testify. This might reflect\n\nalso hold you under subpoena for an excessive amount of time waiting to testify. This might reflect difficulties in anticipating the amount of time required for other witnesses’ testimony; however, you should be paid for the waiting time per the fee agreement. Making any portion of your fee dependent on a favorable report is inappropriate and should be a breach of the fee agreement. You are owed fair compensation for your time and work under the terms of the fee agreement.\n\nMost attorneys, including opposing counsel, are competent, courteous professionals, but if they aren’t, you can expect abuses that might include inquiry into your personal finances; unless this inquiry is about compensation terms for the current case, it’s inappropriate. In addition, some opposing counsel attempt to make discovery depositions physically uncomfortable, such as using an excessively warm or cool room, having you face into the sun, or refusing to take comfort breaks. You don’t need to endure the situation in silence, but you should be practical. Note the conditions to the attorney who set the deposition and ask him or her to correct the situation. If the situation is not corrected, you should note these conditions in the record, and continue noting them as long as the\n\ncorrected, you should note these conditions in the record, and continue noting them as long as the conditions persist.\n\nAfter you have noted a problem in the record, you can refuse to continue with the deposition; however, these situations are rare and even more rare in court. Generally, you should consult with an attorney before taking that last step. If you think the behavior was serious enough that you can justify refusing to continue, you should also consider reporting the attorney to the state bar association. Other tactics include the attorney who set the deposition neglecting to have payment ready for you; you can refuse to attend the deposition if payment isn’t tendered. An opposing attorney might also ask repetitive questions; the attorney who retained you should object to these techniques. For a testimony preservation deposition, however, you can expect that the attorney calling for your testimony\n\npreservation deposition, however, you can expect that the attorney calling for your testimony will try to make you as comfortable as possible because he or she wants your best performance.\n\nAs a measure of protection, you might want to have your personal attorney attend the deposition; this attorney can’t object to questions but is available to advise the attorney who retained you or to advise you during breaks. Whether this precaution is necessary depends on the issues involved, how confrontational opposing counsel is expected to be, and whether the retaining attorney might need immediate advice on questions. A less costly alternative is arranging to have your attorney available by phone during the deposition. In this case, you could bring your own recorder to the deposition and play back portions to your attorney, unless there’s an order to the contrary. In most jurisdictions, attendees are allowed to record depositions, so unless somebody objects, record your testimony. A\n\nattendees are allowed to record depositions, so unless somebody objects, record your testimony. A recording is also useful when you review your deposition testimony before signing the transcript."
+                },
+                {
+                  "title": "Standard Forensics Tools and Tools You Create",
+                  "toc_id": 539,
+                  "chunk_count": 4,
+                  "total_chunks_in_branch": 4,
+                  "budget_slides_content": 0,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 0,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 0
+                  },
+                  "children": [],
+                  "seq_id": 17,
+                  "chunks_sorted": [
+                    7805,
+                    7806,
+                    7807,
+                    7808
+                  ],
+                  "content": "Standard Forensics Tools and Tools You Create\n\nThe tools you use to recover, control, and track evidence are subject to review by opposing parties. If the court deems them unreliable, the evidence you recovered with them might not be admitted or might be admitted with a limiting instruction. If you use standard tools—commonly used tools or commercially available tools—you simplify the process of validating them.\n\nTools you’ve created, if they’re designed for a specific purpose and have been tested adequately to validate their accuracy for that purpose, might have advantages you can demonstrate to a judge, who ultimately determines whether evidence is admissible. For example, a tool you’ve created could be more compact or run more efficiently than other comparable tools. You’re still required to validate these personal tools, however, and might have to share their source code for analysis. Remember that “borrowing” code from other products or incorporating other tools into your own without acknowledgment or paying royalties could be a violation of copyright law and is considered theft. In addition, it can result in major embarrassment for you, could have serious criminal and civil liability\n\nit can result in major embarrassment for you, could have serious criminal and civil liability implications, and could adversely affect the attorney who retained you. (For opinions related to the advisability of using your own tools, you can read about Daubert v. Merrell Dow Pharmaceuticals, Inc., at www.law.cornell.edu/supct/html/92-102.ZS.html.)"
+                }
+              ],
+              "interactive_activity": {
+                "title": "Ethical Difficulties in Expert Testimony (Interactive Activity)",
+                "toc_id": 537,
+                "slides_allocated": 1,
+                "seq_id": 18
+              },
+              "seq_id": 15,
+              "chunks_sorted": [
+                7790,
+                7791,
+                7792,
+                7793,
+                7794,
+                7795
+              ],
+              "content": "Ethical Difficulties in Expert Testimony\n\nDespite the professional guidelines described in the previous section, problems still exist with expert witness testimony. There are inherent conflicts between the goals of attorneys and the goals of scientists or technicians (experts). Attorneys work in an adversarial system and look to sway the judge or jury with the most articulate, understandable expert, who is generally the most persuasive expert rather than the best scientist. In contrast, science requires experts to focus on the evidence without the influence of others’ objectives.\n\nAs a result, Daubert and the APA’s forensics guidelines can challenge experts to choose between complete impartiality and responsible advocacy. On one hand, an expert can appear in the role of impartial educator, whose purpose is to help the judge or jury understand a fact or an issue. According to Daubert, to provide reliable and valid testimony, the expert has the “ethical responsibility to present a complete and unbiased picture of the . . . research relevant to the case at hand.” With an adversarial system, pressures from hiring attorneys, and a tendency to identify with the side you’re working for, educating impartially is difficult. Therefore, experts should accept the position they have been placed in and act as responsible advocates. Ethical problems surface when experts decide to\n\nbeen placed in and act as responsible advocates. Ethical problems surface when experts decide to advocate for one side, as they must consider the line between using research to argue one side of an issue fairly and distorting and misrepresenting available research. Daubert cautions that if an expert falsifies, distorts, or misrepresents the facts while advocating his or her position, opinion testimony will not be deemed reliable or valid.\n\nEnforcing any professional organization’s ethical guidelines is difficult. The principles can be enforced only against members of the organization, and if the expert chooses to withdraw from the organization, there’s no effective mechanism to enforce the guidelines, unless the organization is a licensing agency. For forensics examiners testifying as experts, this means an organization has limited influence over examiners as witnesses in the form of peer pressure and reputation among peers. In addition, without a specific organization to oversee and comment on current expert testimony standards or transgressions, it’s difficult to identify and investigate violations or to apprise an organization’s members of acceptable methodologies and standards.\n\nAs a result, even the most specific guidelines, such as Section 7.0 of the APA Ethics Code, are as challenging to enforce as the broader restrictions the AMA has established. All guidelines rely primarily on internalization of the codes and witnesses’ analysis of when and how they will participate in a case. The available guidelines also fail to ensure superior quality expert testimony because along with applicable laws, they set only a minimum level of acceptable performance or competence as the standard."
+            },
+            {
+              "title": "An Ethics Exercise",
+              "toc_id": 540,
+              "chunk_count": 4,
+              "total_chunks_in_branch": 194,
+              "budget_slides_content": 20,
+              "direct_slides_content": 0,
+              "total_slides_in_branch": 21,
+              "time_allocation_minutes": {
+                "direct_content_time": 0,
+                "direct_interactive_time": 5,
+                "total_branch_time": 65
+              },
+              "children": [
+                {
+                  "title": "Performing a Cursory Exam of a Forensic Image",
+                  "toc_id": 541,
+                  "chunk_count": 18,
+                  "total_chunks_in_branch": 18,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "children": [],
+                  "seq_id": 20,
+                  "chunks_sorted": [
+                    7813,
+                    7814,
+                    7815,
+                    7816,
+                    7817,
+                    7818,
+                    7819,
+                    7820,
+                    7821,
+                    7822,
+                    7823,
+                    7824,
+                    7825,
+                    7826,
+                    7827,
+                    7828,
+                    7829,
+                    7830
+                  ],
+                  "content": "Performing a Cursory Exam of a Forensic Image\n\nA forensics examiner’s technical capability requires being able to work around problems and challenges when dealing with digital evidence. To begin examining the forensic image used for this activity, you need to check it for viruses first. To do this, you use FTK Imager Lite to mount the image as a disk drive and run antivirus software to scan the drive. Follow these steps to mount a forensic image as a disk drive:\n\n1.\n\nDownload to your work folder the Ch16Inchp01.exe file from this chapter’s downloads section on the student companion site for this book. In File Explorer, double-click the Ch16Inchp01.exe file and click Extract to uncompress it into GCFI-js02.001.\n\n2.\n\nStart FTK Imager Lite, and click File, Image Mounting from the menu. In the Mount Image To Drive dialog box, click the . . . button next to the Image File text box, navigate to your work folder, click GCFI-js02.001 , and then click Open (see the results in Figure 16-1). Click the Mount button, and keep this dialog box open. Note the drive letter assigned to the mounted forensic image; your system might have assigned a different letter.\n\nCaution\n\nWhen you mount a forensic image with the Image Mounting function, it’s mounted as a read-only drive. Don’t change the Mount Method option to writeable because it corrupts the digital evidence.\n\nNote\n\nIf you need to clear screen space, click Close and then Minimize in FTK Imager Lite. To open the Mount Image To Drive dialog box again, click File, Image Mounting from the menu. Exiting FTK Imager Lite unmounts the forensic image.\n\n3.\n\nRun your antivirus software on the drive you mounted. When the scan is finished, note whether a virus was detected.\n\nNote\n\nIf your antivirus software is Windows Defender, a scan could take several hours. For the purpose of this activity, choose the Quick Scan option to reduce the time. Some antivirus software, such as Norton Security Suite, enables you to select a specific drive to shorten the time needed to finish a scan.\n\n4.\n\nTo examine the contents of the mounted image, click the Users folder in File Explorer and then the JShu subfolder (see Figure 16-2). In the “Location is not available” error message, click OK.\n\n5.\n\nLeave FTK Imager Lite running for the next activity."
+                },
+                {
+                  "title": "Performing a Detailed Exam of a Forensic Image",
+                  "toc_id": 542,
+                  "chunk_count": 33,
+                  "total_chunks_in_branch": 33,
+                  "budget_slides_content": 3,
+                  "direct_slides_content": 3,
+                  "total_slides_in_branch": 3,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 9,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 9
+                  },
+                  "children": [],
+                  "seq_id": 21,
+                  "chunks_sorted": [
+                    7831,
+                    7832,
+                    7833,
+                    7834,
+                    7835,
+                    7836,
+                    7837,
+                    7838,
+                    7839,
+                    7840,
+                    7841,
+                    7842,
+                    7843,
+                    7844,
+                    7845,
+                    7846,
+                    7847,
+                    7848,
+                    7849,
+                    7850,
+                    7851,
+                    7852,
+                    7853,
+                    7854,
+                    7855,
+                    7856,
+                    7857,
+                    7858,
+                    7859,
+                    7860,
+                    7861,
+                    7862,
+                    7863
+                  ],
+                  "content": "Performing a Detailed Exam of a Forensic Image\n\nBecause you weren’t able to open the JShu folder in File Explorer, you need to make a detailed examination of the image in a different tool. For this examination, the first file to inspect is $MFT in the drive’s root folder. This file contains the cluster addresses of where files are stored on a disk drive. Not being able to open the JShu folder in File Explorer means the OS can’t read the folder’s cluster address and might be corrupted in the $MFT file. For this activity, you need to determine whether data can be recovered and give an opinion of what might have caused the JShu folder to be inaccessible. To examine the GCFI-js02.001 image in WinHex, follow these steps:\n\n1.\n\nStart WinHex and click Tools, Open Disk from the menu. In the Select Disk dialog box, click GCFI-js02 (G:), as shown in Figure 16-3, and then click OK. (Note: Your drive letter might be different.)\n\n2.\n\nIn the list of folders and files in the upper pane, scroll down, and then right-click $MFT and click Open, at which time a new tab opens (see Figure 16-4).\n\nNote\n\nIn the $MFT file, each record starts with the string FILE0 and is 0x400 (1024) bytes.\n\n3.\n\nTo make viewing records easier, click View, Text Display Only from the menu to eliminate hexadecimal values in the display.\n\n4.\n\nScroll through each record to determine whether any start with characters other than FILE0. When you have found a record like this, note its offset position at the start of the record, such as the 17C00 shown at the bottom of Figure 16-5.\n\n5.\n\nBecause the first 0x200 (512) bytes of the record at offset 17C00 are unreadable characters, click View, Text Display Only from the menu again to toggle the display of hexadecimal values.\n\nNext, you need to look at the binary patterns of the first byte of this record to determine what might have happened to the data. To begin your analysis, determine the binary pattern for the uppercase letter F because the first 5 bytes in an MFT record should be FILE0. Follow these steps:\n\n1.\n\nIn WinHex, click File, New from the menu. In the Create New File dialog box, click OK. When the noname tab opens, click in the ANSI ASCII column at position 00000000, and type the letter F (see Figure 16-6).\n\n2.\n\nClick the letter F, and then click Options, Data Interpreter from the menu. In the Data Interpreter Options dialog box, click the Binary (8 bits) check box, and then click OK. (To minimize the Data Interpreter window, click to clear all other check boxes.)\n\n3.\n\nIf the Data Interpreter window doesn’t open, click View from the menu, point to Show, and click the Data Interpreter check box. Note the binary pattern 01000110 in the Data Interpreter window (see Figure 16-7).\n\n4.\n\nClick the $MFT tab and click the first byte, 8C, at offset 17C00 and note the binary pattern 10001100 (see Figure 16-8).\n\nBased on this examination, it seems that the bits in the byte at offset 17C00 have shifted 1 bit to the left. As stated, all $MFT records start with the letter F. Because the first byte’s binary bit pattern at offset 17C00 is 10001100 and the letter F binary pattern is 01000110, it appears the 0s and 1s moved one position to the left. To verify that all bytes have been shifted, follow these steps:\n\n1.\n\nSelect the range of bytes from offset 17C00 to offset 17DFF (see Figure 16-9).\n\n2.\n\nClick Edit from the menu, point to Copy Block, and click Into New File. In the Save File As dialog box, navigate to and click your work folder, type MFT-test in the File name text box, and click Save.\n\n3.\n\nWhen the new MFT-test tab opens, select all data from offset 00000000 to 000001FF (see Figure 16-10), and then click Edit, Modify Data from the menu. In the Modify Block Data dialog box, click the Right shift by 1 bit option button, and then click OK. Click File, Save As from the menu. In the Save File As dialog box, type MFT-recovered in the File name text box, and then click Save. Leave WinHex running for the next activity.\n\nThis activity has shown you how to examine altered or corrupted data and then restore it. It’s a simple example of how bit-shifting can obscure data. In an MFT record, the first 5 bytes should be FILE0. By examining the bit of the first byte and other bytes, you can easily see that bits have shifted to the left. Shifting the bits to the right restored this data to its original state.\n\nMore complex bit-shifting techniques might use a combination of methods, such as reverse byte order, shifting by a certain number of bytes, circular left rotation, inverting bits, and so on. Whatever method was used, you might need to apply combinations of methods in an attempt to restore data. Running through several combinations can take a long time and might result in scope creep. You need to determine how much effort to put into this task and what the likelihood of success is for the efforts.\n\nFor this case, you’ve been asked to give an expert opinion on whether the data was intentionally or unintentionally corrupted. Because the antivirus scan failed to show any known viruses, you should state in your report that offering a reason for how the data became corrupted is premature. To follow your ethical standards, you should analyze the data in more depth to see whether you can find anything to establish how the data was corrupted."
+                },
+                {
+                  "title": "Performing the Exam",
+                  "toc_id": 543,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 76,
+                  "budget_slides_content": 8,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 8,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 24
+                  },
+                  "children": [
+                    {
+                      "title": "Preparing for an Examination",
+                      "toc_id": 544,
+                      "chunk_count": 74,
+                      "total_chunks_in_branch": 74,
+                      "budget_slides_content": 8,
+                      "direct_slides_content": 8,
+                      "total_slides_in_branch": 8,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 24,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 24
+                      },
+                      "children": [],
+                      "seq_id": 23,
+                      "chunks_sorted": [
+                        7866,
+                        7867,
+                        7868,
+                        7869,
+                        7870,
+                        7871,
+                        7872,
+                        7873,
+                        7874,
+                        7875,
+                        7876,
+                        7877,
+                        7878,
+                        7879,
+                        7880,
+                        7881,
+                        7882,
+                        7883,
+                        7884,
+                        7885,
+                        7886,
+                        7887,
+                        7888,
+                        7889,
+                        7890,
+                        7891,
+                        7892,
+                        7893,
+                        7894,
+                        7895,
+                        7896,
+                        7897,
+                        7898,
+                        7899,
+                        7900,
+                        7901,
+                        7902,
+                        7903,
+                        7904,
+                        7905,
+                        7906,
+                        7907,
+                        7908,
+                        7909,
+                        7910,
+                        7911,
+                        7912,
+                        7913,
+                        7914,
+                        7915,
+                        7916,
+                        7917,
+                        7918,
+                        7919,
+                        7920,
+                        7921,
+                        7922,
+                        7923,
+                        7924,
+                        7925,
+                        7926,
+                        7927,
+                        7928,
+                        7929,
+                        7930,
+                        7931,
+                        7932,
+                        7933,
+                        7934,
+                        7935,
+                        7936,
+                        7937,
+                        7938,
+                        7939
+                      ],
+                      "content": "Preparing for an Examination\n\nThe planning stage should cover all possibilities, including giving an opinion of whether data was corrupted intentionally or unintentionally. To create a plan for examining Jim Shu’s second computer, review the following questions and answers about the data. Be prepared to give answers to these types of questions in a report or as oral testimony.\n\nQ:\n\nWhat’s the purpose of the examination or inquiry?\n\nA:\n\nTo determine whether data was corrupted intentionally or by a virus.\n\nQ:\n\nWhat’s the scope of this examination?\n\nA:\n\nTo find corrupted files and recover them, if possible.\n\nQ:\n\nWhat do you need to look for to determine whether the corruption was intentional or caused by a virus that an antivirus program failed to identify?\n\nA:\n\nI look for any folders or files that the computer’s operating system can’t read.\n\nQ:\n\nWhat programs do you use to look for corrupted data?\n\nA:\n\nI use standard antivirus programs and a hexadecimal editor.\n\nQ:\n\nWhat are the names of the programs you used to check for viruses?\n\nA:\n\nI used Norton Security Suite.\n\nQ:\n\nWhat is a hexadecimal editor?\n\nA:\n\nIt’s a special tool that can display data’s hexadecimal values.\n\nQ:\n\nWhat does “hexadecimal” mean?\n\nA:\n\nIt’s the numbering system used by computers and is called “base-16.” Similar to the decimal numbering system, which is base-10 with values of 0 through 9, the hexadecimal system includes 0 through 9 plus the letters A, B, C, D, and F. The hexadecimal value of A is equal to the decimal value of 10, and the hexadecimal value of F is equal to the decimal value of 16.\n\nQ:\n\nWhat’s the name of the hexadecimal editor you used for this examination?\n\nA:\n\nI used WinHex.\n\nQ:\n\nHow can data become corrupted on a computer?\n\nA:\n\nData corruption can be caused by a virus attack, unknown user mishandling, or unknown hardware failure, or it can be altered intentionally by someone.\n\nQ:\n\nIn the case of Mr. Shu’s second computer, what corrupted data did you find?\n\nA:\n\nI found that the JShu user folder and all its subfolders and files couldn’t be accessed, and the data couldn’t be read.\n\nQ:\n\nWhat caused the JShu user folder to be inaccessible?\n\nA:\n\nAt this time, I don’t know what caused the folder to be inaccessible.\n\nQ:\n\nWhat is a Master File Table?\n\nA:\n\nThe Master File Table is a file containing the names and disk locations of files and folders. It functions like a table of contents for a book.\n\nQ:\n\nDo you know what caused this data to be unreadable?\n\nA:\n\nNo, not at this time.\n\nQ:\n\nWhy not at this time?\n\nA:\n\nFinding the reason requires more analysis of the entire disk drive to see what might have altered this data.\n\nQ:\n\nWill you be able to determine whether the data was altered—that is, corrupted intentionally?\n\nA:\n\nNo.\n\nQ:\n\nWhy not?\n\nA:\n\nIn my examination of the Master File Table, the only altered data I found was the record for the JShu folder. All other records were unaltered. Furthermore, I determine from my analysis that the altered data was bit-shifted 1 bit to the left.\n\nQ:\n\nWhat do you mean by bit-shifted?\n\nA:\n\nData such as letters are represented as bytes, each of which is 8 or 16 bits depending on the file system. For example, Windows 10 uses 16 bits for a byte. Bits are switches that are on, represented by 1s, or off, represented by 0s. The letter F has the bit pattern 01000110. When I examined the first byte of the corrupted record in the Master File Table, it should have been the letter F. However, the corrupted first byte has the bit pattern 0001100. By comparing the 1s and 0s of the letter F and the first byte of the corrupted record, I can see that that the byte seems to have been shifted 1 bit to the left. Therefore, I tested the first 512 bytes of the corrupted record by bit-shifting each byte 1 bit to the right. This test seemed to restore the data to its original state.\n\nQ:\n\nBecause you tested the forensic image of Mr. Shu’s second computer for viruses and found nothing, can you say that this data was corrupted intentionally?\n\nA:\n\nAt this time, I can’t determine whether the data was corrupted intentionally."
+                    }
+                  ],
+                  "seq_id": 22,
+                  "chunks_sorted": [
+                    7864,
+                    7865
+                  ],
+                  "content": "Performing the Exam\n\nTo maintain the highest possible ethical standards when conducting a forensics examination, you should develop a plan as described in Chapter 1 and review it before starting your analysis. You need to be as thorough as possible during your examination to minimize any challenges an opposing attorney could make to discredit your report or testimony."
+                },
+                {
+                  "title": "Interpreting Attribute 0x80 Data Runs",
+                  "toc_id": 545,
+                  "chunk_count": 2,
+                  "total_chunks_in_branch": 44,
+                  "budget_slides_content": 5,
+                  "direct_slides_content": 0,
+                  "total_slides_in_branch": 5,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 0,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 15
+                  },
+                  "children": [
+                    {
+                      "title": "Finding Attribute 0x80 an MFT Record",
+                      "toc_id": 546,
+                      "chunk_count": 21,
+                      "total_chunks_in_branch": 21,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "children": [],
+                      "seq_id": 25,
+                      "chunks_sorted": [
+                        7942,
+                        7943,
+                        7944,
+                        7945,
+                        7946,
+                        7947,
+                        7948,
+                        7949,
+                        7950,
+                        7951,
+                        7952,
+                        7953,
+                        7954,
+                        7955,
+                        7956,
+                        7957,
+                        7958,
+                        7959,
+                        7960,
+                        7961,
+                        7962
+                      ],
+                      "content": "Finding Attribute 0x80 an MFT Record\n\nTo find the attribute 0x80 field and its data run, first locate the starting and ending positions of attributes 0x10 and 0x30. The next attribute after attribute 0x30 is attribute 0x80. Follow these steps to find attribute 0x80:\n\nTip\n\nAll numeric values in these steps are hexadecimal. If the offset counter is in decimal mode, click anywhere in the Offset column once to change it to hexadecimal mode.\n\n1.\n\nIn WinHex, click Search, Find Text from the menu. In the Find Text dialog box, type Kayak4 in the text box at the top. In the drop-down list box under the “Match case” check box, click Unicode (see Figure 16-11), and then click OK.\n\nNote\n\nWhen searching for specific record information, sometimes you see duplicate files with the same name that have different data runs, meaning the file was written to disk more than once on separate occasions. You need to examine all search results, compute their data run values, and attempt to recover the files. If your first effort doesn’t produce successful results, continue searching for other occurrences.\n\n2.\n\nIn the main window, the cursor is in the right pane at the start of the first occurrence of the Unicode string Kayak4. From this position, scroll up until you see FILE0 and click the letter F at offset 0000BC00.\n\n3.\n\nTo find the starting position of attribute 0x10, drag down 38 hexadecimal bytes at offset 0000BC37 (see Figure 16-12), using the offset counter in the lower-right corner as a guide. Attribute 0x10 starts at offset 0000BC38.\n\n4.\n\nNext, place the cursor at the beginning of attribute 0x10 (at offset 0000BC38) and drag down 60 hexadecimal bytes until you reach the next attribute, 0x30 (see Figure 16-13). Attribute 0x30 starts at offset 0000BC98.\n\n5.\n\nPlace the cursor at the beginning of attribute 0x30 (at offset 0000BC98) and drag down 78 hexadecimal bytes until you reach the next attribute, 0x80 (see Figure 16-14). Attribute 0x80 starts at offset 0000BD10.\n\nNote\n\nThe forensic image for this activity is from an NTFS file system created in Windows 10. If you’re examining a forensic NTFS image from a Windows 7 or older system, you’ll see two attribute 0x30s: one for the short filename and one for the long filename. In that case, you must repeat Step 5 to find the starting position of attribute 0x80.\n\n6.\n\nFrom the starting position of attribute 0x80 (at offset 0000BD10), count 40 hexadecimal bytes to the beginning of the first data run at offset 0000BD50 (see Figure 16-15). Leave WinHex running for the next activity.\n\nNow that you have found the data run’s starting position, the next task is to calculate the starting and ending cluster positions of each data run fragment. (For more detailed information on calculating data runs, refer back to Figures 5-19, 5-20, 5-21, 5-22 and 5-23 in Chapter 5.)"
+                    },
+                    {
+                      "title": "Configuring Data Interpreter Options in WinHex",
+                      "toc_id": 547,
+                      "chunk_count": 6,
+                      "total_chunks_in_branch": 6,
+                      "budget_slides_content": 1,
+                      "direct_slides_content": 1,
+                      "total_slides_in_branch": 1,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 3,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 3
+                      },
+                      "children": [],
+                      "seq_id": 26,
+                      "chunks_sorted": [
+                        7963,
+                        7964,
+                        7965,
+                        7966,
+                        7967,
+                        7968
+                      ],
+                      "content": "Configuring Data Interpreter Options in WinHex\n\nTypically, when WinHex starts, the Data Interpreter window opens, where you can convert data formats into easy-to-read values, such as converting hexadecimal values into decimal values. For the following activities, you need to know how to configure settings to perform data run calculations. Follow these steps:\n\n1.\n\nStart WinHex, if necessary. If the Data Interpreter window doesn’t open, click View from the menu, point to Show, and click the Data Interpreter check box.\n\n2.\n\nClick Options, Data Interpreter from the menu to open the Data Interpreter Options dialog box. Click the 8 bit, signed, 16 bit, signed, 24 bit, signed, and 32 bit, signed check boxes (clearing any other check boxes that are selected), as shown in Figure 16-16, and then click OK. Leave WinHex running for the next activity."
+                    },
+                    {
+                      "title": "Calculating Data Runs",
+                      "toc_id": 548,
+                      "chunk_count": 15,
+                      "total_chunks_in_branch": 15,
+                      "budget_slides_content": 2,
+                      "direct_slides_content": 2,
+                      "total_slides_in_branch": 2,
+                      "time_allocation_minutes": {
+                        "direct_content_time": 6,
+                        "direct_interactive_time": 0,
+                        "total_branch_time": 6
+                      },
+                      "children": [],
+                      "seq_id": 27,
+                      "chunks_sorted": [
+                        7969,
+                        7970,
+                        7971,
+                        7972,
+                        7973,
+                        7974,
+                        7975,
+                        7976,
+                        7977,
+                        7978,
+                        7979,
+                        7980,
+                        7981,
+                        7982,
+                        7983
+                      ],
+                      "content": "Calculating Data Runs\n\nNext, determine the starting and ending cluster numbers for the MFT record’s data run. The length of this MFT record is less than 512 bytes (0x200 hexadecimal), so the data run doesn’t have an update sequence array value, as described in Chapter 5 (refer to Figure 5-13). To calculate the data run for this example, follow these steps:\n\nTip\n\nWinHex’s Data Interpreter converts hexadecimal values into decimal values.\n\n1.\n\nTo determine the number of clusters for this data run, place the cursor at offset 0000BD51 (see Figure 16-17). Because it’s only 1 byte long (8 bits), record the 8 Bit (±) value in the Data Interpreter window, which is 11.\n\n2.\n\nNext, you determine the starting logical cluster address (also called “logical cluster number,” or LCN) for this data run. Place the cursor at offset 0000BD52 (see Figure 16-18). This logical cluster address is 2 bytes long (16 bits). Record the 16 Bit (±) value in the Data Interpreter window, which is 179.\n\n3.\n\nTo compute the ending logical cluster address for this data run, add the number of clusters you found in Step 1, minus one cluster, to the starting logical cluster address you found in Step 2. For this example, it’s starting logical cluster address plus (number of clusters minus one cluster) equals the last cluster of the data run, or 179 + (11−1) = 189 . Leave WinHex running for the next activity.\n\nCaution\n\nRemember to subtract one cluster from the number of clusters in a data run. If you don’t, the correct ending cluster address will have one too many clusters that belong to another file. Later in Hands-On Project 16-1, you learn how to carve data runs into segmented files and then append them to restore a file.\n\nThe file used in this example has only one data run, so carving simply requires copying data from its starting cluster position of 179 (the logical cluster address) to its ending cluster position of 189. For files with multiple virtual cluster numbers (VCNs), additional data runs are listed in the file’s MFT record.\n\nNote\n\nTypically, disk drives that haven’t been defragmented have large files fragmented into one or more data runs."
+                    }
+                  ],
+                  "seq_id": 24,
+                  "chunks_sorted": [
+                    7940,
+                    7941
+                  ],
+                  "content": "Interpreting Attribute 0x80 Data Runs\n\nThe next task is a detailed examination of attribute 0x80 of an MFT record in WinHex. Because the JShu folder has been corrupted, files and folders in its directory tree are no longer visible. For this examination, you search through the MFT record of GCFI-js02.001 for an orphan file A file or folder that has lost its link to the parent folder. It can’t be opened in File Explorer and some forensics tools. (a file or folder that has lost its link to the parent folder) named Kayak4(1).jpg. Next, find its attribute 0x80 field and calculate the data run. Refer to Chapter 5 (in the “Interpreting a Data Run” section) for a refresher on how to find and compute data runs. After calculating the data run, you use WinHex to extract the orphaned file to a new file."
+                },
+                {
+                  "title": "Carving Data Run Clusters Manually",
+                  "toc_id": 549,
+                  "chunk_count": 19,
+                  "total_chunks_in_branch": 19,
+                  "budget_slides_content": 2,
+                  "direct_slides_content": 2,
+                  "total_slides_in_branch": 2,
+                  "time_allocation_minutes": {
+                    "direct_content_time": 6,
+                    "direct_interactive_time": 0,
+                    "total_branch_time": 6
+                  },
+                  "children": [],
+                  "seq_id": 28,
+                  "chunks_sorted": [
+                    7984,
+                    7985,
+                    7986,
+                    7987,
+                    7988,
+                    7989,
+                    7990,
+                    7991,
+                    7992,
+                    7993,
+                    7994,
+                    7995,
+                    7996,
+                    7997,
+                    7998,
+                    7999,
+                    8000,
+                    8001,
+                    8002
+                  ],
+                  "content": "Carving Data Run Clusters Manually\n\nNow that you have calculated the starting and ending cluster positions for the Kayak4(1).jpg file, it’s time to recover the fragments by using WinHex. To begin data carving, follow these steps:\n\nTip\n\nThe demo version of WinHex can save only files of less than 200 KB at a time. The licensed versions of WinHex and X-Ways Forensics have no limit on file sizes that can be saved.\n\n1.\n\nIn WinHex, click the Drive G: tab to access the entire drive, and then click Navigation, Go To Sector from the menu to open the Go To Sector dialog box. In the =Cluster text box, type 179 (see Figure 16-19), and then click OK.\n\n2.\n\nIn the hexadecimal pane, right-click the Kayak4(1).jpg file’s first byte, at offset 000B3000, and then click Beginning of block (see Figure 16-20) to mark the data run’s starting position.\n\n3.\n\nClick Navigation, Go to Sector from the menu. In the =Cluster text box, type 189, and then click OK.\n\n4.\n\nStep 3 positioned you at the beginning byte of the last cluster for this data run (offset 0000BD000). To mark the ending position for this data run, you need to include all the data in cluster 189. To do this, scroll down seven more sectors to offset 000BDFFF (the last byte in sector 1519). Right-click offset 000BDFFF and click End of block (see Figure 16-21) to mark the data run’s ending position.\n\nNote\n\nIn this forensic image, there are eight sectors per cluster. The last cluster of this data run starts at sector 1512 and ends at sector 1519.\n\n5.\n\nClick Edit from the menu, point to Copy Block, and click Into New File. In the Save File As dialog box, navigate to and click your work folder, type Kayak4(1).jpg in the File name text box, and click Save.\n\n6.\n\nTo examine the carved Kayak4(1).jpg file, open it in File Explorer. Figure 16-22 shows the results. Exit WinHex.\n\nIn your examination of Jim Shu’s second disk drive, you found one folder that was bit-shifted. Based on your examination of the $MFT file, no other records seem to have been corrupted. Reviewing the files and folders listed show that there are no known applications, such as a hexadecimal editor, that could have altered data in the JShu folder. Without any evidence showing that the JShu folder was altered intentionally or by a virus, your report to Mr. Benson should state that the cause of the folder’s corruption is unknown."
+                }
+              ],
+              "interactive_activity": {
+                "title": "An Ethics Exercise (Interactive Activity)",
+                "toc_id": 540,
+                "slides_allocated": 1,
+                "seq_id": 29
+              },
+              "seq_id": 19,
+              "chunks_sorted": [
+                7809,
+                7810,
+                7811,
+                7812
+              ],
+              "content": "An Ethics Exercise\n\nIn any investigation, examination, or expert opinion, ethical issues can arise. For this final chapter, you’re asked to analyze a forensic image from a computer that seems to have data corrupted by malware. This forensic image is of a disk drive on a second computer owned by Jim Shu, who’s suspected of receiving the intellectual property data you found in Chapter 15. The general counsel of Superior Bicycles, Inc., Ralph Benson, wants you to determine whether the data was corrupted by malware or was damaged intentionally to hide evidence. Your task is to examine the forensic image to determine the direction of the case and provide an expert opinion on whether the data’s corruption was caused by malware or intentional destruction.\n\nNote\n\nBefore beginning these activities, refer to the information in the “Examining NTFS Disks” section of Chapter 5 on record field structures in the MFT record. Then create a Work\\Chap16\\Chapter folder on your system (referred to as your “work folder” in steps). Your folder name will likely differ from what’s shown in screenshots."
+            }
+          ]
+        },
+        {
+          "section_type": "Summary",
+          "content": {
+            "title": "Summary & Key Takeaways",
+            "placeholder": "Auto-generate based on covered topics."
+          },
+          "seq_id": 30
+        },
+        {
+          "section_type": "End",
+          "content": {
+            "title": "Thank You",
+            "text": "Questions?"
+          },
+          "seq_id": 31
+        }
+      ]
+    }
+  ]
+}
