@@ -1,4 +1,6 @@
 {
+  "OLLAMA_HOST": "http://localhost:11434",
+  "OLLAMA_MODEL": "qwen3:8b",
   "course_id": "ICT312",
   "unit_name": "Digital Forensic",
   "interactive": true,
@@ -28,6 +30,8 @@
   },
   "generation_scope": {
     "weeks": [
+      1,
+      2,
       3,
       4,
       5,

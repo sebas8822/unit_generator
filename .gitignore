@@ -8,7 +8,7 @@ test/
 generated_content_llm/
 generated_content/
 final_presentations/
-
+data_output/
 
 
 *.iso

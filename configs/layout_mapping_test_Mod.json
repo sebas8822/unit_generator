@@ -1,6 +1,6 @@
 {
     "//_INSTRUCTIONS": "This file describes the available slide layouts. The 'available_layouts' section is for an LLM to read. The 'user_selections' section is for you to edit. Please verify the 'selected_layout_index' for each slide type.",
-    "template_file": "slide_style_test.pptx",
+    "template_file": "slide_style_test_2.pptx",
     "user_selections": {
         "Title": {
             "description": "Main title slide of the deck.",
@@ -30,7 +30,7 @@
             "description": "Slide for interactive questions ('Let's Apply This!').",
             "selected_layout_index": 5
         },
-        "Application_Two_Column ": {
+        "Application_Two_Column": {
             "description": "Slide for side-by-side content ('Let's Apply This!').",
             "selected_layout_index": 6
         },
@@ -166,9 +166,9 @@
                     "idx": 1,
                     "type": "SUBTITLE",
                     "name": "Subtitle 2",
-                    "left": 2.6,
+                    "left": 3.48,
                     "top": 0.91,
-                    "width": 10.33,
+                    "width": 9.44,
                     "height": 0.46
                 },
                 {
@@ -177,7 +177,7 @@
                     "name": "Content Placeholder 6",
                     "left": 0.61,
                     "top": 1.48,
-                    "width": 12.0,
+                    "width": 12.17,
                     "height": 5.42
                 }
             ]
@@ -204,9 +204,9 @@
                     "idx": 1,
                     "type": "SUBTITLE",
                     "name": "Subtitle 2",
-                    "left": 2.6,
+                    "left": 3.39,
                     "top": 0.85,
-                    "width": 10.33,
+                    "width": 9.54,
                     "height": 0.52
                 },
                 {
@@ -242,19 +242,19 @@
                     "idx": 0,
                     "type": "TITLE",
                     "name": "Title 4",
-                    "left": 0.79,
-                    "top": 0.66,
-                    "width": 4.11,
-                    "height": 1.35
+                    "left": 0.64,
+                    "top": 1.71,
+                    "width": 12.15,
+                    "height": 0.59
                 },
                 {
                     "idx": 10,
                     "type": "OBJECT",
                     "name": "Content Placeholder 6",
                     "left": 0.79,
-                    "top": 2.01,
+                    "top": 2.31,
                     "width": 11.63,
-                    "height": 4.71
+                    "height": 4.42
                 },
                 {
                     "idx": 11,
@@ -290,9 +290,9 @@
                     "type": "TITLE",
                     "name": "Title 5",
                     "left": 0.74,
-                    "top": 0.98,
-                    "width": 4.04,
-                    "height": 0.45
+                    "top": 1.74,
+                    "width": 11.7,
+                    "height": 0.4
                 },
                 {
                     "idx": 11,

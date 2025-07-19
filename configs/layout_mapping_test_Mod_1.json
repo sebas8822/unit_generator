@@ -20,19 +20,19 @@
         },
         "Content_child": {
             "description": "Default slide for a standard topic with bullet points.",
-            "selected_layout_index": 1
+            "selected_layout_index": 3
         },
         "Content_Two_Column_child": {
             "description": "Slide for side-by-side content, like comparisons.",
-            "selected_layout_index": 2
+            "selected_layout_index": 4
         },
         "Application": {
             "description": "Slide for interactive questions ('Let's Apply This!').",
-            "selected_layout_index": 1
+            "selected_layout_index": 5
         },
         "Application_Two_Column": {
             "description": "Slide for side-by-side content ('Let's Apply This!').",
-            "selected_layout_index": 2
+            "selected_layout_index": 6
         },
         "Summary": {
             "description": "The final summary slide of the deck.",
@@ -44,7 +44,7 @@
         },
         "Divider": {
             "description": "Slide that divide sections general use base on the agenda.",
-            "selected_layout_index": 7
+            "selected_layout_index": 8
         }
     },
     "available_layouts": [
