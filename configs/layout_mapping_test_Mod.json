@@ -111,7 +111,7 @@
             "layout_name": "General content 2 Columns",
             "capabilities": {
                 "title_support": "standard_title",
-                "body_layout": "2_column",
+                "body_layout": "stacked_sections",
                 "specific_content_types": []
             },
             "placeholders": [
@@ -129,18 +129,27 @@
                     "type": "OBJECT",
                     "name": "Content Placeholder 5",
                     "left": 0.57,
-                    "top": 1.54,
+                    "top": 1.77,
                     "width": 5.73,
-                    "height": 5.43
+                    "height": 5.2
                 },
                 {
                     "idx": 11,
                     "type": "OBJECT",
                     "name": "Content Placeholder 7",
                     "left": 6.49,
-                    "top": 1.54,
+                    "top": 1.77,
                     "width": 6.27,
-                    "height": 5.43
+                    "height": 5.2
+                },
+                {
+                    "idx": 12,
+                    "type": "BODY",
+                    "name": "Text Placeholder 6",
+                    "left": 0.57,
+                    "top": 1.37,
+                    "width": 12.2,
+                    "height": 0.4
                 }
             ]
         },
@@ -187,7 +196,7 @@
             "layout_name": "Child Content 2 columns",
             "capabilities": {
                 "title_support": "standard_title_with_subtitle",
-                "body_layout": "2_column",
+                "body_layout": "stacked_sections",
                 "specific_content_types": []
             },
             "placeholders": [
@@ -214,18 +223,27 @@
                     "type": "OBJECT",
                     "name": "Content Placeholder 4",
                     "left": 0.54,
-                    "top": 1.56,
+                    "top": 1.77,
                     "width": 5.97,
-                    "height": 5.34
+                    "height": 5.12
                 },
                 {
                     "idx": 11,
                     "type": "OBJECT",
                     "name": "Content Placeholder 6",
                     "left": 6.67,
-                    "top": 1.56,
+                    "top": 1.77,
                     "width": 6.13,
-                    "height": 5.34
+                    "height": 5.12
+                },
+                {
+                    "idx": 12,
+                    "type": "BODY",
+                    "name": "Text Placeholder 13",
+                    "left": 3.0,
+                    "top": 1.37,
+                    "width": 7.04,
+                    "height": 0.4
                 }
             ]
         },
@@ -299,18 +317,18 @@
                     "type": "OBJECT",
                     "name": "Content Placeholder 9",
                     "left": 0.74,
-                    "top": 2.02,
+                    "top": 2.13,
                     "width": 5.75,
-                    "height": 4.76
+                    "height": 4.65
                 },
                 {
                     "idx": 12,
                     "type": "OBJECT",
                     "name": "Content Placeholder 11",
                     "left": 6.69,
-                    "top": 2.02,
+                    "top": 2.13,
                     "width": 5.75,
-                    "height": 4.76
+                    "height": 4.65
                 },
                 {
                     "idx": 13,

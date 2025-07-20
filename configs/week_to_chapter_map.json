@@ -1,0 +1,166 @@
+[
+    {
+        "week": 1,
+        "overall_topic": "Understanding the Digital Forensics Profession and Investigations.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 1",
+        "mapped_chapters": [
+            {
+                "chapter_number": 1,
+                "title": "Chapter 1. Understanding the Digital Forensics Profession and Investigations",
+                "toc_id": 7
+            }
+        ]
+    },
+    {
+        "week": 2,
+        "overall_topic": "The Investigator's Office and Laboratory.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 2",
+        "mapped_chapters": [
+            {
+                "chapter_number": 2,
+                "title": "Chapter 2. The Investigator’s Office and Laboratory",
+                "toc_id": 55
+            }
+        ]
+    },
+    {
+        "week": 3,
+        "overall_topic": "Data Acquisition.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 3",
+        "mapped_chapters": [
+            {
+                "chapter_number": 3,
+                "title": "Chapter 3. Data Acquisition",
+                "toc_id": 101
+            }
+        ]
+    },
+    {
+        "week": 4,
+        "overall_topic": "Processing Crime and Incident Scenes.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 4",
+        "mapped_chapters": [
+            {
+                "chapter_number": 4,
+                "title": "Chapter 4. Processing Crime and Incident Scenes",
+                "toc_id": 143
+            }
+        ]
+    },
+    {
+        "week": 5,
+        "overall_topic": "Working with Windows and CLI Systems.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 5",
+        "mapped_chapters": [
+            {
+                "chapter_number": 5,
+                "title": "Chapter 5. Working with Windows and CLI Systems",
+                "toc_id": 183
+            }
+        ]
+    },
+    {
+        "week": 6,
+        "overall_topic": "Current Computer Forensics Tools.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 6",
+        "mapped_chapters": [
+            {
+                "chapter_number": 6,
+                "title": "Chapter 6. Current Digital Forensics Tools",
+                "toc_id": 231
+            }
+        ]
+    },
+    {
+        "week": 7,
+        "overall_topic": "Linux Boot Processes and File Systems. Recovering Graphics Files.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapters 7 &8",
+        "mapped_chapters": [
+            {
+                "chapter_number": 7,
+                "title": "Chapter 7. Linux and Macintosh File Systems",
+                "toc_id": 270
+            },
+            {
+                "chapter_number": 8,
+                "title": "Chapter 8. Recovering Graphics Files",
+                "toc_id": 289
+            }
+        ]
+    },
+    {
+        "week": 8,
+        "overall_topic": "Digital Forensics Analysis and Validation. Virtual Machine Forensics, Live Acquisitions and Cloud Forensics.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapters 9 &10",
+        "mapped_chapters": [
+            {
+                "chapter_number": 9,
+                "title": "Chapter 9. Digital Forensics Analysis and Validation",
+                "toc_id": 321
+            },
+            {
+                "chapter_number": 10,
+                "title": "Chapter 10. Virtual Machine Forensics, Live Acquisitions, and Network Forensics",
+                "toc_id": 347
+            }
+        ]
+    },
+    {
+        "week": 9,
+        "overall_topic": "Email and Social Media.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 11",
+        "mapped_chapters": [
+            {
+                "chapter_number": 11,
+                "title": "Chapter 11. E-mail and Social Media Investigations",
+                "toc_id": 377
+            }
+        ]
+    },
+    {
+        "week": 10,
+        "overall_topic": "Mobile Device Forensics and the Internet of Anything. Cloud Forensics.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 12 & 13",
+        "mapped_chapters": [
+            {
+                "chapter_number": 12,
+                "title": "Chapter 12. Mobile Device Forensics and the Internet of Anything",
+                "toc_id": 406
+            },
+            {
+                "chapter_number": 13,
+                "title": "Chapter 13. Cloud Forensics",
+                "toc_id": 424
+            }
+        ]
+    },
+    {
+        "week": 11,
+        "overall_topic": "Report Writing for High-Tech Investigations. Expert Testimony in Digital Forensic Investigations.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 14 & 15",
+        "mapped_chapters": [
+            {
+                "chapter_number": 14,
+                "title": "Chapter 14. Report Writing for High-Tech Investigations",
+                "toc_id": 467
+            },
+            {
+                "chapter_number": 15,
+                "title": "Chapter 15. Expert Testimony in Digital Investigations",
+                "toc_id": 495
+            }
+        ]
+    },
+    {
+        "week": 12,
+        "overall_topic": "Ethics for the Digital Forensic Examiner and Expert Witness.",
+        "required_reading_raw": "Nelson, Phillips, Steuart, Guide to Computer Forensics and Investigations, Sixth Edition, Cengage Learning 2019, ISBN:978-1-337-56894-4 Chapter 16",
+        "mapped_chapters": [
+            {
+                "chapter_number": 16,
+                "title": "Chapter 16. Ethics for the Expert Witness",
+                "toc_id": 524
+            }
+        ]
+    }
+]
