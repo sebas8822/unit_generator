@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pymupdf
+ollama
+tenacity

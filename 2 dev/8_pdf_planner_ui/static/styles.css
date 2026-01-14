@@ -1,0 +1,929 @@
+:root{
+  --bg:#0b0f17;
+  --card:#121a26;
+  --muted:#93a4b8;
+  --text:#e7eef7;
+  --line:#223044;
+  --primary:#5aa9ff;
+  --danger:#ff5a6a;
+  --ok:#51d17a;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --radius: 16px;
+}
+
+*{ box-sizing:border-box; }
+html, body{ height:100%; }
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(90,169,255,.25), transparent 60%),
+              radial-gradient(900px 500px at 90% 10%, rgba(81,209,122,.18), transparent 55%),
+              var(--bg);
+  color: var(--text);
+}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 16px 18px;
+  border-bottom:1px solid var(--line);
+  position: sticky;
+  top:0;
+  backdrop-filter: blur(10px);
+  background: rgba(11,15,23,.75);
+  z-index: 10;
+}
+
+.brand{ display:flex; gap:12px; align-items:center; }
+.logo{
+  width:42px; height:42px; border-radius:12px;
+  display:flex; align-items:center; justify-content:center;
+  background: rgba(90,169,255,.18);
+  border:1px solid rgba(90,169,255,.35);
+}
+.title{ font-weight:700; letter-spacing:.2px; }
+.subtitle{ color:var(--muted); font-size: 13px; margin-top:2px; }
+
+.actions{ display:flex; gap:10px; align-items:center; }
+
+.layout{
+  display:grid;
+  grid-template-columns: 360px 1fr 520px;
+  gap: 14px;
+  padding: 14px;
+}
+
+.panel{ min-width: 0; }
+/* Restrict the left panel height and enable scrolling */
+.panel.left {
+  /* 100vh minus ~90px accounts for the sticky topbar and padding */
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+  padding-right: 8px; /* Adds breathing room for the scrollbar */
+  
+  /* Optional: keeps the panel fixed in place while scrolling */
+  position: sticky;
+  top: 80px; 
+}
+
+/* Match the scrollbar style to the ToC scrollbar */
+.panel.left::-webkit-scrollbar {
+  width: 8px;
+}
+
+.panel.left::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 4px;
+}
+
+.panel.left::-webkit-scrollbar-thumb {
+  background: rgba(90, 169, 255, 0.2);
+  border-radius: 4px;
+}
+
+.panel.left::-webkit-scrollbar-thumb:hover {
+  background: rgba(90, 169, 255, 0.4);
+}
+
+/*------------------- Right panel -------------------*/
+.panel.right {
+  /* Matches the left panel logic: viewport minus topbar/padding */
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+  padding-right: 8px; /* Prevents text from hitting the scrollbar */
+  
+  /* Keeps the panel pinned to the top if the page layout shifts */
+  position: sticky;
+  top: 80px;
+}
+
+/* Custom Scrollbar Styling (Matches Left & ToC) */
+.panel.right::-webkit-scrollbar {
+  width: 8px;
+}
+
+.panel.right::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 4px;
+}
+
+.panel.right::-webkit-scrollbar-thumb {
+  background: rgba(90, 169, 255, 0.2);
+  border-radius: 4px;
+}
+
+.panel.right::-webkit-scrollbar-thumb:hover {
+  background: rgba(90, 169, 255, 0.4);
+}
+
+.card{
+  background: rgba(18,26,38,.88);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+
+
+.cardTitle{ font-weight: 700; margin-bottom: 10px; }
+
+
+
+
+.muted{ color: var(--muted); }
+.small{ font-size: 12px; }
+
+.dropZone{
+  border: 2px dashed rgba(90,169,255,.45);
+  border-radius: 14px;
+  padding: 18px;
+  text-align:center;
+  cursor:pointer;
+  background: rgba(90,169,255,.06);
+}
+.dropZone.drag{
+  border-color: rgba(81,209,122,.8);
+  background: rgba(81,209,122,.08);
+}
+.dropText{ line-height: 1.35; }
+.divider{ height:1px; background: var(--line); margin: 14px 0; }
+
+.btn{
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+  padding: 9px 12px;
+  border-radius: 12px;
+  cursor:pointer;
+  font-weight: 600;
+}
+.btn:hover{ background: rgba(255,255,255,.06); }
+.btn.primary{
+  border-color: rgba(90,169,255,.45);
+  background: rgba(90,169,255,.18);
+}
+.btn.danger{
+  border-color: rgba(255,90,106,.45);
+  background: rgba(255,90,106,.12);
+}
+
+.row{ display:flex; gap:10px; align-items:center; }
+select, .textInput, .numInput {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  
+  /* Use your dark card background instead of the semi-transparent black */
+  background-color: var(--card); 
+  color: var(--text);
+  
+  /* Remove default browser arrow to add a custom one (optional, but looks better) */
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  /* Add a custom arrow icon (SVG encoded) */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2393a4b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Hover & Focus States */
+select:hover, .textInput:hover, .numInput:hover {
+  border-color: var(--primary);
+  background-color: rgba(255, 255, 255, 0.03); /* Subtle lighten on hover */
+}
+
+select:focus, .textInput:focus, .numInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(90, 169, 255, 0.2);
+}
+
+/* Style the Dropdown Options (Chrome/Edge/Firefox) */
+select option {
+  background-color: var(--card);
+  color: var(--text);
+  padding: 10px;
+}
+
+.numInput{
+  width: 110px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(0,0,0,.2);
+  color: var(--text);
+}
+
+.list{ display:flex; flex-direction:column; gap:8px; }
+.listItem{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  padding:10px 10px;
+  border-radius: 12px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.02);
+}
+.badge{
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  color: var(--muted);
+}
+
+.toc {
+  margin-top: 8px;
+  /* NEW: Restrict height and enable scrolling */
+  max-height: calc(100vh - 180px); /* Adjusts dynamically with viewport */
+  overflow-y: auto;                /* Adds scrollbar only when needed */
+  padding-right: 6px;              /* Prevents text overlap with scrollbar */
+}
+
+.toc::-webkit-scrollbar {
+  width: 8px;
+}
+
+.toc::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 4px;
+}
+
+.toc::-webkit-scrollbar-thumb:hover {
+  background: rgba(90, 169, 255, 0.4);
+}
+
+.tocNode{
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.02);
+  border-radius: 14px;
+  padding: 10px;
+  margin: 8px 0;
+}
+.tocHead{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap: 10px;
+}
+.tocTitle{
+  font-weight: 700;
+  line-height: 1.25;
+}
+.tocMeta{ font-size: 12px; color: var(--muted); margin-top: 4px; }
+.tocTitleRow{ display:flex; align-items:center; gap:8px; }
+.tocToggleBtn{
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.tocToggleBtn:hover{ background: rgba(255,255,255,.10); }
+.tocChildren{ margin-left: 14px; margin-top: 8px; }
+.tagWeek {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 999px;
+
+  /* NEW: Use the dynamic hue passed from JS */
+  /* Fallback to green (120) if something goes wrong */
+  --hue: 120; 
+  
+  /* HSL creates the color: Hue (var), Saturation (85%), Lightness (75%) */
+  color: hsl(var(--hue), 85%, 75%);
+  border: 1px solid hsla(var(--hue), 85%, 75%, 0.35);
+  background: hsla(var(--hue), 85%, 75%, 0.10);
+
+  /* Keeps the oval shape perfect */
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.table{
+  width:100%;
+  border-collapse: collapse;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow:hidden;
+}
+.table th, .table td{
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  text-align: left;
+}
+.table th{
+  background: rgba(255,255,255,.03);
+  font-size: 13px;
+}
+.pill{
+  display:inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(90,169,255,.35);
+  background: rgba(90,169,255,.10);
+  margin: 2px 6px 2px 0;
+  font-size: 12px;
+}
+.hint{ margin-top: 8px; font-size: 12px; }
+
+.textInput{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(0,0,0,.2);
+  color: var(--text);
+}
+
+.grid2{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.check{
+  display:flex;
+  gap: 8px;
+  align-items:center;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.modal{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 18px;
+  z-index: 50;
+}
+.hidden{ display:none; }
+
+.modalCard{
+  width: min(980px, 100%);
+  max-height: 85vh;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(18,26,38,.96);
+  box-shadow: var(--shadow);
+  display:flex;
+  flex-direction:column;
+}
+.modalHead{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.modalHead .btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+  position: relative; /* Required for z-index */
+  z-index: 10;        /* Ensure it sits above overlapping titles */
+  cursor: pointer;
+}
+.modalTitle { 
+  font-weight: 800; 
+  min-width: 0;
+  overflow-wrap: break-word; 
+}
+.modalBody {
+  margin: 0;
+  padding: 14px;
+  overflow: auto;
+  white-space: pre-wrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   Weekly summary (tree view)
+   - removes topic input
+   - groups by PDF → chapter → subsections
+   ========================================================= */
+
+.weekBlock {
+  border: 1px solid #262626;
+  border-radius: 16px;
+  background: #111;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.weekHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.weekHead::-webkit-details-marker { display: none; }
+.weekHead::marker { content: ""; }
+.weekHead::before {
+  content: "▸";
+  color: #8a8a8a;
+  margin-right: 8px;
+}
+.weekBlock[open] > .weekHead::before { content: "▾"; }
+
+.weekBody {
+  padding: 10px 12px 12px;
+  border-top: 1px solid #222;
+}
+
+.wkNode {
+  margin: 6px 0;
+}
+
+.wkSummary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.wkSummary::-webkit-details-marker { display: none; }
+.wkSummary::marker { content: ""; }
+.wkSummary::before {
+  content: "▸";
+  color: #8a8a8a;
+  margin-right: 8px;
+}
+.wkNode[open] > .wkSummary::before { content: "▾"; }
+
+.wkLine {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  min-width: 0;
+}
+
+.wkLabel {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  color: #eaeaea;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wkCount {
+  font-size: 12px;
+  color: #a0a0a0;
+  border: 1px solid #2a2a2a;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.wkActions {
+  display: flex;
+  gap: 8px;
+}
+
+.smallBtn {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.wkChildren {
+  margin-left: 14px;
+  padding-left: 12px;
+  border-left: 1px dashed #2a2a2a;
+}
+
+
+/* ---------------- Generated plan preview ---------------- */
+.genWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.genHeader {
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.genDecks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.genDeck {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.03);
+}
+
+.genDeck > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.genDeck > summary::-webkit-details-marker { display: none; }
+
+.genDeckBody {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.genFrameworkRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.genContentTitle {
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.genRoot {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 8px 10px;
+  background: rgba(0,0,0,0.10);
+}
+
+.genRoot > summary {
+  cursor: pointer;
+  list-style: none;
+}
+.genRoot > summary::-webkit-details-marker { display: none; }
+
+.genRootBody {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.genItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.02);
+}
+
+.genItemTitle {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.smallBtn {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+
+
+/* --- LLM busy spinner --- */
+.spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255,255,255,0.35);
+  border-top-color: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+  vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+
+.layout.expand-right {
+  /* We only have 2 visible panels now, so we only need 2 columns. */
+  /* Column 1 (Left): 360px */
+  /* Column 2 (Right): Takes all remaining space (1fr) */
+  grid-template-columns: 360px 1fr;
+}
+
+/* Ensure the center panel is completely removed from the layout flow */
+.layout.expand-right .panel.center {
+  display: none;
+}
+
+.pdfActions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+  /* CHANGE THIS: Centers the badge relative to the button width */
+  align-items: center;  
+  
+  min-width: 70px;
+}
+
+/* Ensure the text inside the badge is centered */
+.pdfActions .badge {
+  font-size: 11px;
+  padding: 3px 6px;
+  
+  /* CHANGE THIS: Remove 'text-align: right' if it exists */
+  text-align: center; 
+  width: 100%; /* Optional: ensures badge takes full width if you want a pill shape */
+}
+
+.tocActions {
+  display: flex;
+  flex-direction: column; /* Stack Badge above Buttons */
+  align-items: flex-end;  /* Align to the right edge */
+  justify-content: center;
+  gap: 6px;               /* Space between Badge and Buttons */
+  min-width: 150px;       /* Reserve space so titles don't squash it */
+  flex-shrink: 0;         /* Prevent shrinking */
+}
+
+/* Helper to keep buttons side-by-side */
+.tocBtnGroup {
+  display: flex;
+  gap: 6px;
+}
+
+/* --- Step 5: Compact LLM Generation Card --- */
+
+/* Make the inputs and dropdowns smaller */
+#llmProviderSelect, 
+#llmModelSelect, 
+#llmApiKeyInput, 
+#llmHostInput {
+  font-size: 12px;       /* Reduced from 14px */
+  padding: 6px 10px;     /* Reduced from 10px 12px (slimmer height) */
+  min-height: 32px;      /* Ensures consistent compact height */
+}
+
+/* Adjust the background arrow position for the smaller dropdowns */
+#llmProviderSelect, 
+#llmModelSelect {
+  background-position: right 10px center;
+  background-size: 14px;
+}
+
+
+
+/* --- Calculator / Stats Panel Styling --- */
+.statsPanel {
+  /* Matches your input fields background */
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--line);
+  border-radius: 12px; /* Matches buttons/inputs */
+  padding: 16px;
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.statsRow.main {
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.statsLabel {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.statsValue {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary); /* Uses your primary blue #5aa9ff */
+  text-shadow: 0 0 15px rgba(90, 169, 255, 0.25);
+}
+
+.statsDivider {
+  height: 1px;
+  background: var(--line);
+  margin: 6px 0;
+}
+
+/* Align numbers to the right */
+.statsRow.small {
+  font-size: 12px;
+}
+
+.statsRow.small span:last-child {
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+}
+
+
+/* Type Labels */
+.docLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+  letter-spacing: 0.5px;
+}
+
+.docLabel.book {
+  background: rgba(168, 85, 247, 0.15);
+  color: #d8b4fe;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.docLabel.publication {
+  background: rgba(56, 189, 248, 0.15);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.docLabel.note {
+  background: rgba(250, 204, 21, 0.15);
+  color: #fde047;
+  border: 1px solid rgba(250, 204, 21, 0.3);
+}
+
+/* Delete Button */
+.btnIcon {
+  padding: 6px;
+  line-height: 1;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btnIcon:hover {
+  background: rgba(255, 90, 106, 0.15);
+  color: #ff5a6a; /* Red on hover */
+  border-color: rgba(255, 90, 106, 0.3);
+}
+
+/* Update or Add this to your CSS */
+
+.tocBtnGroup {
+  display: flex;
+  gap: 4px; /* Tight gap for icons */
+  align-items: center;
+}
+
+/* Specific styling for ToC Action Icons */
+.tocActionBtn {
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.tocActionBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.tocActionBtn svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2px;
+}
+
+/* Specific hover colors for specific actions */
+.tocActionBtn.assign:hover { color: #51d17a; background: rgba(81, 209, 122, 0.15); border-color: rgba(81, 209, 122, 0.3); }
+.tocActionBtn.view:hover { color: #5aa9ff; background: rgba(90, 169, 255, 0.15); border-color: rgba(90, 169, 255, 0.3); }
+.tocActionBtn.delete:hover { color: #ff5a6a; background: rgba(255, 90, 106, 0.15); border-color: rgba(255, 90, 106, 0.3); }
+.tocActionBtn.edit:hover { color: #fde047; background: rgba(250, 204, 21, 0.15); border-color: rgba(250, 204, 21, 0.3); }
+.tocActionBtn.general:hover { color: #fb923c; background: rgba(251, 146, 60, 0.15); border-color: rgba(251, 146, 60, 0.3); }
+
+.tocActionBtn.generalAll:hover { 
+    color: #c084fc; 
+    background: rgba(192, 132, 252, 0.15); 
+    border-color: rgba(192, 132, 252, 0.3); 
+}
+
+/* NEW: Badge for Week Summary */
+/* Add to styles.css */
+
+.badge.general {
+    background: rgba(251, 146, 60, 0.15); /* Orange background */
+    color: #fdba74;                        /* Orange text */
+    border: 1px solid rgba(251, 146, 60, 0.3);
+    font-size: 9px;                        /* Small font */
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-right: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* --- Info Box (Target Source Display) --- */
+.infoBox {
+  background: rgba(0, 0, 0, 0.25);   /* Darker than the card */
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--primary); /* Blue accent on the left */
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.infoBoxLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* The path/text container */
+#slidesSourceLabel {
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+  font-size: 12.5px;
+  word-break: break-all; /* Prevents long paths from overflowing */
+  line-height: 1.5;
+}
+
+/* Style the <code> tag injected by JS */
+#slidesSourceLabel code {
+  color: #7dd3fc; /* Light blue text */
+  background: rgba(56, 189, 248, 0.1); /* Subtle blue bg */
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.wkSectionTitle{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin: 6px 0 8px;
+  padding: 0 2px;
+}
+.wkSectionLabel{
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.wkSectionMeta{
+  font-size: 11px;
+}

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PDF Week Planner</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <div class="logo">📚</div>
+            <div>
+                <div class="title">PDF ToC → Week Planner</div>
+                <div class="subtitle">Drop PDFs, browse chapters, assign to weeks, export plan</div>
+            </div>
+        </div>
+
+        <div style="display:flex; gap:8px; align-items:center; margin: 0 20px;">
+            <div class="muted small">Project:</div>
+            <select id="projectSelect" style="width:220px;"></select>
+            <button id="newProjectBtn" class="btn">+ New</button>
+        </div>
+
+        <div class="actions">
+            <label class="btn">
+                Upload outline
+                <input id="outlineInput" type="file" accept=".json" hidden />
+            </label>
+
+            <button id="savePlanBtn" class="btn primary">Save plan</button>
+            <button id="loadPlanBtn" class="btn">Load plan</button>
+        </div>
+    </header>
+
+    <main class="layout">
+        <section class="panel left">
+            <div class="card">
+                <div class="cardTitle">1) Drop PDFs</div>
+                <div id="dropZone" class="dropZone">
+                    <div class="dropText">
+                        Drag & drop PDFs here<br />
+                        <span class="muted">or click to browse</span>
+                    </div>
+                    <input id="fileInput" type="file" accept=".pdf" hidden />
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="cardTitle">2) Uploaded PDFs</div>
+                <div id="pdfList" class="list"></div>
+            </div>
+
+            <div class="card">
+                <div class="cardTitle">3) Week selection</div>
+
+                <div class="row" style="margin-bottom:10px;">
+                    <label class="muted small" style="min-width:60px;">Weeks</label>
+                    <input id="weeksCountInput" class="numInput" type="number" min="1" max="52" step="1" value="12" />
+                    <button id="applyWeeksBtn" class="btn">Apply</button>
+                </div>
+
+                <div class="row">
+                    <select id="weekSelect"></select>
+                    <button id="clearWeekBtn" class="btn danger">Clear week</button>
+                </div>
+
+                <div class="hint muted">
+                    Tip: Select a week, then click “Assign” next to any chapter/section.
+                    Reducing week count won’t delete older weeks from plan.json—raise the number again to access them.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardTitle">4) Plan content</div>
+
+
+
+                <div class="row" style="margin-top:10px;">
+                    <label class="check">
+                        <input id="interactiveInput" type="checkbox" />
+                        interactive
+                    </label>
+
+                    <label class="check">
+                        <input id="interactiveDeepInput" type="checkbox" />
+                        interactive_deep
+                    </label>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="cardTitle" style="margin-bottom:8px;">parameters_slides</div>
+
+                <div class="grid2">
+                    <div>
+                        <div class="muted small">slides_per_hour</div>
+                        <input id="slidesPerHourInput" class="numInput" type="number" min="1" max="60" step="1" />
+                    </div>
+                    <div>
+                        <div class="muted small">time_per_content_slides_min</div>
+                        <input id="timePerContentInput" class="numInput" type="number" min="1" max="30" step="1" />
+                    </div>
+                    <div>
+                        <div class="muted small">time_per_interactive_slide_min</div>
+                        <input id="timePerInteractiveInput" class="numInput" type="number" min="1" max="60" step="1" />
+                    </div>
+                    <div>
+                        <div class="muted small">time_for_framework_slides_min</div>
+                        <input id="timeFrameworkInput" class="numInput" type="number" min="0" max="60" step="1" />
+                    </div>
+                </div>
+
+                <details style="margin-top:10px;">
+                    <summary class="muted small" style="cursor:pointer;">Advanced (optional)</summary>
+                    <div class="grid2" style="margin-top:10px;">
+                        <div>
+                            <div class="muted small">sessions_per_week</div>
+                            <input id="sessionsPerWeekInput" class="numInput" type="number" min="1" max="4" step="1" />
+                        </div>
+                        <div>
+                            <div class="muted small">session_duration_hours</div>
+                            <input id="sessionHoursInput" class="numInput" type="number" min="0.5" max="4" step="0.5" />
+                        </div>
+                    </div>
+                </details>
+
+                <div class="row" style="margin-top:12px;">
+                    <button id="generatePlanBtn" class="btn primary">Generate plan</button>
+                    <button id="downloadGeneratedBtn" class="btn" disabled>Download generated_plan.json</button>
+                </div>
+
+                <div id="genStatus" class="muted small" style="margin-top:8px;"></div>
+            </div>
+
+            <div class="card">
+                <div class="cardTitle">5) LLM generation</div>
+
+                <div class="grid2">
+                    <div>
+                        <div class="muted small">Provider</div>
+                        <select id="llmProviderSelect" class="textInput" style="height:36px;">
+                            <option value="ollama">Ollama (Local)</option>
+                            <option value="google">Google Gemini (Online)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="muted small">Model</div>
+                        <select id="llmModelSelect" class="textInput" style="height:36px;">
+                            <option value="" disabled selected>Select Provider First...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="llmApiKeyRow" style="margin-top:10px; display:none;">
+                    <div class="muted small">Google API Key</div>
+                    <input id="llmApiKeyInput" class="textInput" type="password" placeholder="AIzaSy..." />
+                </div>
+
+                <div id="llmHostRow" style="margin-top:10px;">
+                    <div class="muted small">Ollama Host</div>
+                    <input id="llmHostInput" class="textInput" value="http://localhost:11434" />
+                </div>
+
+                <div class="row" style="margin-top:15px;">
+                    <button id="llmCheckBtn" class="btn">1. Fetch Models</button>
+                    <span id="llmCostDisplay" class="badge"
+                        style="display:none; margin-left:10px; background:#eef; color:#338;">Est: $0.00</span>
+                </div>
+
+                <div class="row" style="margin-top:10px;">
+                    <button id="llmGenerateBtn" class="btn primary" disabled>Generate Current Week</button>
+                    <button id="llmGenerateAllBtn" class="btn" style="border:1px solid #666;" disabled>Generate ALL
+                        Weeks</button>
+                </div>
+
+                <div id="llmStatus" class="muted small" style="margin-top:8px;"></div>
+            </div>
+
+        </section>
+
+        <section class="panel center">
+            <div class="card">
+                <div class="cardTitle">ToC (chapters/sections)</div>
+                <div id="tocMeta" class="muted small"></div>
+                <div id="tocTree" class="toc"></div>
+            </div>
+        </section>
+
+        <section class="panel right">
+            <div class="card">
+                <div class="cardTitle">Weekly summary</div>
+                <div id="weekTableWrap"></div>
+            </div>
+
+            <div class="card">
+                <div class="cardTitle">Generated plan (preview)</div>
+                <div class="row" style="margin-bottom:8px;">
+                    <button id="generatedViewBaseBtn" class="btn primary">Base</button>
+                    <button id="generatedViewLlmBtn" class="btn">LLM</button>
+                    <div style="flex:1;"></div>
+                    <button id="downloadGeneratedLlmBtn" class="btn" disabled>Download LLM plan</button>
+                </div>
+                <div id="generatedPlanWrap" class="genWrap"></div>
+                <div id="generatedPlanHint" class="muted small">Generate a plan to see it here.</div>
+            </div>
+
+
+
+
+
+
+            <div class="card">
+                <div class="cardTitle">Export</div>
+                <button id="downloadPlanBtn" class="btn">Download plan.json</button>
+                <div class="muted small">
+                    This plan maps: week → selected ToC nodes (source_id + toc_id + title path).
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="/static/app.js" defer></script>
+    <div id="previewModal" class="modal hidden">
+        <div class="modalCard">
+            <div class="modalHead">
+                <div id="previewTitle" class="modalTitle"></div>
+                <button id="closePreviewBtn" class="btn">Close</button>
+            </div>
+            <pre id="previewBody" class="modalBody"></pre>
+        </div>
+    </div>
+
+</body>
+
+</html>
